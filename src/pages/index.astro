@@ -2,9 +2,529 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Survivalix — Prépare-toi, pas de panique">
-  <main>
-    <h1>Bienvenue sur Survivalix</h1>
-    <p>Le site de survie pour les gens normaux.</p>
-  </main>
+<Layout 
+  title="Survivalix — La survie pour les gens normaux"
+  description="Guides pratiques, recettes de survie, outils interactifs et humour post-apo. Pas besoin d'être parano pour être prêt."
+>
+
+  <!-- ============================================
+       BLOC 1 — HERO
+  ============================================ -->
+  <section class="hero">
+    <div class="hero-label">// TRANSMISSION EN COURS //</div>
+    <h1 class="hero-titre">La survie,<br/>c'est pas que pour les fous.</h1>
+    <p class="hero-accroche">
+      Guides pratiques, recettes qui ont du goût, outils interactifs 
+      et humour second degré. Tout ce qu'il faut savoir pour être prêt 
+      sans devenir parano.
+    </p>
+    <div class="hero-ctas">
+      <a href="/commencer-ici" class="btn-primary">Par où commencer ?</a>
+      <a href="/survivant/quel-survivant-suis-je" class="btn-secondary">Quel Survivant es-tu ?</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">72h</span>
+        <span class="stat-label">d'autonomie minimum</span>
+      </div>
+      <div class="stat-sep">//</div>
+      <div class="stat">
+        <span class="stat-num">3L</span>
+        <span class="stat-label">d'eau par jour par personne</span>
+      </div>
+      <div class="stat-sep">//</div>
+      <div class="stat">
+        <span class="stat-num">0€</span>
+        <span class="stat-label">pour commencer à se préparer</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       BLOC 2 — RASSURANT
+  ============================================ -->
+  <section class="reassurance">
+    <div class="reassurance-inner">
+      <div class="reassurance-label">// QUI EST CE SITE ?//</div>
+      <p class="reassurance-texte">
+        Survivalix c'est pour toi si tu as déjà pensé <em>"et si ça merde vraiment ?"</em> 
+        sans savoir quoi faire. Pas de théories complotistes, pas d'arsenal militaire, 
+        pas de sermon. Juste des infos utiles, présentées sans se prendre au sérieux.
+      </p>
+      <div class="reassurance-points">
+        <div class="point">
+          <span class="point-icon">✓</span>
+          <span>Tu habites en ville ? On a tout prévu pour toi.</span>
+        </div>
+        <div class="point">
+          <span class="point-icon">✓</span>
+          <span>Tu as 20€ à investir ? C'est largement suffisant pour commencer.</span>
+        </div>
+        <div class="point">
+          <span class="point-icon">✓</span>
+          <span>Tu aimes Fallout mais tu n'es pas survivaliste ? Tu es exactement au bon endroit.</span>
+        </div>
+        <div class="point">
+          <span class="point-icon">✓</span>
+          <span>Tu veux manger correctement même en cas de crise ? On a les recettes.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       BLOC 3 — PAR OÙ COMMENCER
+  ============================================ -->
+  <section class="demarrer">
+    <div class="section-label">// PROTOCOLE DE DÉMARRAGE //</div>
+    <h2>Tu débarques ici ?</h2>
+    <p>Trois missions prioritaires pour le citoyen qui commence.</p>
+    <div class="missions">
+      <div class="mission">
+        <div class="mission-num">01</div>
+        <h3>Découvre ton profil</h3>
+        <p>Fais le quiz et reçois ta carte Survivant personnalisée à partager.</p>
+        <a href="/survivant/quel-survivant-suis-je" class="mission-lien">Faire le quiz →</a>
+      </div>
+      <div class="mission">
+        <div class="mission-num">02</div>
+        <h3>Monte ton kit 72h</h3>
+        <p>Le strict minimum pour tenir 3 jours sans rien. Simple, sans bullshit.</p>
+        <a href="/manuel/kit-urgence-72h" class="mission-lien">Voir le guide →</a>
+      </div>
+      <div class="mission">
+        <div class="mission-num">03</div>
+        <h3>Calcule ton stock d'eau</h3>
+        <p>Combien de litres stocker pour ta famille ? L'outil fait le calcul.</p>
+        <a href="/outils/calculateur-stock-eau" class="mission-lien">Calculer →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       BLOC 4 — RUBRIQUES
+  ============================================ -->
+  <section class="rubriques">
+    <div class="section-label">// SECTEURS D'ACTIVITÉ //</div>
+    <h2>Explore le site</h2>
+    <div class="rubriques-grid">
+      <a href="/manuel" class="rubrique-card">
+        <div class="rubrique-icon">📋</div>
+        <h3>Le Manuel</h3>
+        <p>Guides de fond, checklists, méthodes éprouvées.</p>
+      </a>
+      <a href="/cantine" class="rubrique-card">
+        <div class="rubrique-icon">🍲</div>
+        <h3>La Cantine</h3>
+        <p>Recettes de survie qui ont vraiment du goût.</p>
+      </a>
+      <a href="/bazar" class="rubrique-card">
+        <div class="rubrique-icon">🎒</div>
+        <h3>Le Bazar</h3>
+        <p>Tests de matériel honnêtes, sans pub déguisée.</p>
+      </a>
+      <a href="/atelier" class="rubrique-card">
+        <div class="rubrique-icon">🔧</div>
+        <h3>L'Atelier</h3>
+        <p>DIY, autonomie, faire soi-même avec ce qu'on a.</p>
+      </a>
+      <a href="/radar" class="rubrique-card">
+        <div class="rubrique-icon">📡</div>
+        <h3>Le Radar</h3>
+        <p>Veille, signaux faibles, actu qui compte.</p>
+      </a>
+      <a href="/outils" class="rubrique-card">
+        <div class="rubrique-icon">⚙️</div>
+        <h3>Les Outils</h3>
+        <p>Calculateurs, checklists interactives, générateurs.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       BLOC 5 — CTA QUIZ VIRAL
+  ============================================ -->
+  <section class="quiz-cta">
+    <div class="quiz-cta-inner">
+      <div class="section-label">// IDENTIFICATION DU CITOYEN //</div>
+      <h2>Quel type de Survivant es-tu ?</h2>
+      <p>
+        Le Bâtisseur ? Le Nourricier ? L'Explorateur ? Le Technicien ? 
+        Fais le quiz en 2 minutes et télécharge ta carte collector personnalisée.
+      </p>
+      <a href="/survivant/quel-survivant-suis-je" class="btn-primary">Découvrir mon profil</a>
+    </div>
+  </section>
+
 </Layout>
+
+<style>
+  /* ============================================
+     HERO
+  ============================================ */
+  .hero {
+    text-align: center;
+    padding: 3rem 0 4rem;
+    border-bottom: 1px solid #222;
+  }
+
+  .hero-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #6B7C45;
+    letter-spacing: 4px;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-titre {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(2.2rem, 8vw, 4.5rem);
+    color: #F5A623;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  .hero-accroche {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: #F5E6C8;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    opacity: 0.85;
+    line-height: 1.8;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+
+  .btn-primary {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #F5A623;
+    color: #0d0d0d;
+    padding: 0.9rem 2rem;
+    border: 2px solid #F5A623;
+    transition: all 0.2s;
+    display: inline-block;
+  }
+
+  .btn-primary:hover {
+    background-color: #c4811a;
+    border-color: #c4811a;
+    color: #0d0d0d;
+  }
+
+  .btn-secondary {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: transparent;
+    color: #F5A623;
+    padding: 0.9rem 2rem;
+    border: 2px solid #F5A623;
+    transition: all 0.2s;
+    display: inline-block;
+  }
+
+  .btn-secondary:hover {
+    background-color: #F5A623;
+    color: #0d0d0d;
+  }
+
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-num {
+    display: block;
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    color: #F5A623;
+  }
+
+  .stat-label {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    color: #F5E6C8;
+    letter-spacing: 1px;
+    opacity: 0.6;
+    text-transform: uppercase;
+  }
+
+  .stat-sep {
+    font-family: 'Oswald', sans-serif;
+    color: #6B7C45;
+    font-size: 1.5rem;
+    opacity: 0.5;
+  }
+
+  /* ============================================
+     RASSURANT
+  ============================================ */
+  .reassurance {
+    padding: 4rem 0;
+    border-bottom: 1px solid #222;
+  }
+
+  .reassurance-inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .reassurance-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #6B7C45;
+    letter-spacing: 4px;
+    margin-bottom: 1.5rem;
+  }
+
+  .reassurance-texte {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    color: #F5E6C8;
+  }
+
+  .reassurance-texte em {
+    color: #F5A623;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  .reassurance-points {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .point {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    color: #F5E6C8;
+  }
+
+  .point-icon {
+    color: #F5A623;
+    font-size: 1rem;
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+  }
+
+  /* ============================================
+     DEMARRER
+  ============================================ */
+  .demarrer {
+    padding: 4rem 0;
+    border-bottom: 1px solid #222;
+  }
+
+  .section-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #6B7C45;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .demarrer h2,
+  .rubriques h2,
+  .quiz-cta h2 {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    color: #F5A623;
+    margin-bottom: 0.5rem;
+    border: none;
+    padding: 0;
+  }
+
+  .demarrer > p {
+    color: #F5E6C8;
+    opacity: 0.7;
+    margin-bottom: 2.5rem;
+  }
+
+  .missions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 600px) {
+    .missions {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .mission {
+    background-color: #0d0d0d;
+    border: 1px solid #333;
+    border-top: 4px solid #F5A623;
+    padding: 1.5rem;
+  }
+
+  .mission-num {
+    font-family: 'Special Elite', cursive;
+    font-size: 2.5rem;
+    color: #333;
+    line-height: 1;
+    margin-bottom: 0.8rem;
+  }
+
+  .mission h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #F5E6C8;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+
+  .mission p {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-bottom: 1rem;
+  }
+
+  .mission-lien {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #F5A623;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: opacity 0.2s;
+  }
+
+  .mission-lien:hover {
+    opacity: 0.7;
+  }
+
+  /* ============================================
+     RUBRIQUES
+  ============================================ */
+  .rubriques {
+    padding: 4rem 0;
+    border-bottom: 1px solid #222;
+  }
+
+  .rubriques > p {
+    color: #F5E6C8;
+    opacity: 0.7;
+    margin-bottom: 2.5rem;
+  }
+
+  .rubriques-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .rubriques-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .rubrique-card {
+    background-color: #0d0d0d;
+    border: 1px solid #333;
+    border-left: 4px solid #F5A623;
+    padding: 1.5rem 1.2rem;
+    text-decoration: none;
+    transition: border-left-color 0.2s, transform 0.2s;
+    display: block;
+  }
+
+  .rubrique-card:hover {
+    border-left-color: #8B2500;
+    transform: translateY(-2px);
+  }
+
+  .rubrique-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .rubrique-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #F5E6C8;
+    letter-spacing: 1px;
+    margin-bottom: 0.4rem;
+  }
+
+  .rubrique-card p {
+    font-size: 0.8rem;
+    color: #F5E6C8;
+    opacity: 0.6;
+    margin: 0;
+  }
+
+  /* ============================================
+     QUIZ CTA
+  ============================================ */
+  .quiz-cta {
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .quiz-cta-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    border: 2px solid #F5A623;
+    padding: 3rem 2rem;
+    position: relative;
+  }
+
+  .quiz-cta-inner::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: -8px;
+    bottom: -8px;
+    border: 1px solid #333;
+    z-index: -1;
+  }
+
+  .quiz-cta .section-label {
+    margin-bottom: 1rem;
+  }
+
+  .quiz-cta p {
+    color: #F5E6C8;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
