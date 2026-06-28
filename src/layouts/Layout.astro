@@ -117,26 +117,31 @@ const url = Astro.url;
 </script>
 
 <style>
-  /* RESET NAV — force override du global */
-  header nav,
-  header nav ul,
-  header nav ul li {
-    all: revert;
+  /* MAIN */
+  main {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
   }
 
+  @media (min-width: 768px) {
+    main { padding: 3rem 2rem; }
+  }
+
+  /* RESET NAV — empêche le global de transformer le nav en grille */
   header nav {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
   }
 
-  header nav.open { max-height: 800px; }
+  header nav.open { max-height: 900px; }
 
   header nav ul {
     list-style: none !important;
     display: flex !important;
     flex-direction: column !important;
-    padding: 0.5rem 0 !important;
+    padding: 0.8rem 0 !important;
     gap: 0 !important;
     margin: 0 !important;
     grid-template-columns: none !important;
@@ -149,6 +154,7 @@ const url = Astro.url;
     border-left: none !important;
     padding: 0 !important;
     display: block !important;
+    transform: none !important;
   }
 
   header nav ul li:hover {
@@ -160,37 +166,37 @@ const url = Astro.url;
   header nav ul a {
     display: block;
     font-family: 'Oswald', sans-serif;
-    font-size: 0.85rem;
+    font-size: 1.15rem !important;
     font-weight: 700;
     color: #F5E6C8;
     text-decoration: none;
     letter-spacing: 2px;
-    padding: 0.4rem 1rem;
+    padding: 1rem 1.5rem !important;
     border-left: 3px solid transparent;
     transition: all 0.2s;
-    background-color: transparent;
+    background-color: transparent !important;
+    line-height: 1.4;
   }
 
   header nav ul a:hover {
     color: #F5A623;
     border-left-color: #F5A623;
-    background-color: transparent;
+    background-color: transparent !important;
   }
 
   header nav ul .cta {
     background-color: #F5A623 !important;
     color: #0d0d0d !important;
     border-left-color: #F5A623 !important;
-    margin-top: 0.4rem;
+    margin-top: 0.5rem;
     text-align: center;
+    font-size: 1.15rem !important;
   }
 
-  header nav ul .cta:hover {
-    background-color: #c4811a !important;
-  }
+  header nav ul .cta:hover { background-color: #c4811a !important; }
 
   @media (min-width: 768px) {
-    .menu-toggle { display: none; }
+    .menu-toggle { display: none !important; }
 
     header nav {
       max-height: none !important;
@@ -206,44 +212,72 @@ const url = Astro.url;
     }
 
     header nav ul a {
-      padding: 0.4rem 0.8rem;
-      border-left: none;
-      border: 1px solid transparent;
-      font-size: 0.78rem;
+      padding: 0.5rem 1rem !important;
+      border-left: none !important;
+      border: 1px solid transparent !important;
+      font-size: 0.82rem !important;
+      line-height: normal !important;
     }
 
     header nav ul a:hover {
-      border-color: #F5A623;
-      border-left-color: #F5A623;
+      border-color: #F5A623 !important;
+      border-left-color: #F5A623 !important;
     }
 
-    header nav ul .cta { margin-top: 0; }
+    header nav ul .cta {
+      margin-top: 0 !important;
+      font-size: 0.82rem !important;
+    }
+
     .header-top { justify-content: center; }
     .logo { text-align: center; }
   }
 
-  /* MAIN */
-  main {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
+  /* CARTES RUBRIQUES — uniquement dans main */
+  main ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
   }
 
-  @media (min-width: 768px) {
-    main { padding: 3rem 2rem; }
+  @media (min-width: 600px) {
+    main ul { grid-template-columns: repeat(2, 1fr); }
   }
 
-  h1 {
-    font-size: clamp(1.4rem, 4vw, 2rem);
-    margin-bottom: 1rem;
-    letter-spacing: 2px;
+  @media (min-width: 900px) {
+    main ul { grid-template-columns: repeat(3, 1fr); }
   }
 
-  h2 {
-    font-size: clamp(1.3rem, 4vw, 1.8rem);
-    margin-bottom: 0.8rem;
+  main ul li {
+    background-color: #0d0d0d;
+    border: 1px solid #333;
     border-left: 4px solid #F5A623;
-    padding-left: 1rem;
-    border-bottom: none;
+    padding: 1.2rem;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+
+  main ul li:hover {
+    border-left-color: #8B2500;
+    transform: translateY(-2px);
+  }
+
+  main ul li a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #F5E6C8;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+  main ul li a:hover { color: #F5A623; }
+
+  main ul li p {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    opacity: 0.7;
+    margin-bottom: 0;
   }
 </style>
