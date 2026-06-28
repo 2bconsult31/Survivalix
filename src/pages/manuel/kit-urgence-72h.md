@@ -1,12 +1,11 @@
 ---
+layout: ../../layouts/Article.astro
 title: "Kit d'urgence 72h : la liste complète (testée, sans bullshit)"
 description: "Tout ce qu'il faut avoir dans son kit 72h. Liste complète, budget réaliste, erreurs à éviter. Pour les gens normaux qui veulent être prêts sans devenir fous."
 date: 2025-01-15
 tags: ["debutant", "kit", "urgence", "appartement"]
 rubrique: "manuel"
 ---
-
-# Kit d'urgence 72h : la liste complète (testée, sans bullshit)
 
 Soyons honnêtes une seconde.
 
@@ -67,10 +66,10 @@ La contrainte : tout doit se consommer sans cuisson ni réfrigération. Contrain
 - **Un ouvre-boîte manuel.** On te le dit maintenant parce que tout le monde l'oublie. Tout le monde.
 
 **L'approche Survivalix :**
-Stocke ce que tu manges normalement. Le piège classique du débutant : acheter des trucs "survie" spéciaux qu'on n'a jamais goûtés. En situation de stress, manger quelque chose de familier fait une différence réelle — psychologiquement et physiquement. Tes conserves préférées valent mieux que des rations militaires lyophilisées au goût de carton.
+Stocke ce que tu manges normalement. Le piège classique du débutant : acheter des trucs "survie" spéciaux qu'on n'a jamais goûtés. En situation de stress, manger quelque chose de familier fait une différence réelle — psychologiquement et physiquement.
 
 **Pour les familles avec enfants :**
-Compotes en gourde, petits gâteaux, céréales sèches. Prévois 30% de calories supplémentaires pour les enfants actifs. Et quelques petits trucs qui leur font plaisir — parce qu'un enfant qui s'ennuie dans une situation de crise, c'est un problème en plus.
+Compotes en gourde, petits gâteaux, céréales sèches. Prévois 30% de calories supplémentaires pour les enfants actifs.
 
 ---
 
@@ -101,7 +100,7 @@ Le kit de base gère 95% des problèmes courants. Coupures, brûlures légères,
 - Tes médicaments sur ordonnance — minimum 3 jours de réserve
 - Thermomètre
 - Pince à épiler (échardes, tiques)
-- Masques FFP2 — utiles lors de crises spécifiques comme les incendies industriels ou la pollution
+- Masques FFP2 — utiles lors de crises spécifiques
 
 ---
 
@@ -147,8 +146,6 @@ Scanne tous tes documents et enregistre-les dans un cloud sécurisé. Accessible
 
 ## Le budget réaliste
 
-Beaucoup repoussent la constitution du kit en imaginant une dépense énorme. La réalité :
-
 | Catégorie | Budget approximatif |
 |---|---|
 | Eau (18L pour 2 personnes) | 5-8€ |
@@ -160,8 +157,6 @@ Beaucoup repoussent la constitution du kit en imaginant une dépense énorme. La
 | Couverture de survie x2 | 5-8€ |
 | Divers (couteau, sifflet, duct tape) | 15-25€ |
 | **TOTAL pour 2 personnes** | **~120-206€** |
-
-À constituer progressivement — quelques articles par semaine. Pas besoin de tout acheter d'un coup.
 
 ---
 
@@ -177,7 +172,7 @@ En cas d'inondation, tu perds tout. Le kit doit être accessible, au rez-de-chau
 On l'a déjà dit. On le redit quand même. Parce que tu allais l'oublier.
 
 **4. Remplir le kit et ne plus y toucher.**
-Un kit non vérifié est un faux sentiment de sécurité. Check annuel — dates de péremption, batteries, médicaments.
+Un kit non vérifié est un faux sentiment de sécurité. Check annuel obligatoire.
 
 **5. Ne jamais tester.**
 Passe une nuit sans électricité chez toi volontairement. Tu vas découvrir ce qui manque avant que ça compte vraiment.
@@ -186,7 +181,7 @@ Passe une nuit sans électricité chez toi volontairement. Tu vas découvrir ce 
 
 ## Par où commencer si tu pars de zéro
 
-**Semaine 1** → L'eau. 18L de bouteilles rangées quelque part d'accessible. C'est tout.
+**Semaine 1** → L'eau. 18L de bouteilles rangées quelque part d'accessible.
 
 **Semaine 2** → La nourriture. 3 jours de conserves et de snacks non périssables.
 
@@ -196,7 +191,7 @@ Passe une nuit sans électricité chez toi volontairement. Tu vas découvrir ce 
 
 **Semaine 5** → Les documents et la trousse de premiers secours.
 
-En 5 semaines, pour moins de 200€, tu as un kit solide. Et tu peux te vanter d'être plus préparé que 80% de ta ville.
+En 5 semaines, pour moins de 200€, tu as un kit solide.
 
 ---
 
