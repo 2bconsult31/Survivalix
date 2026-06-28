@@ -46,11 +46,26 @@ const { title } = Astro.props;
     </header>
 
     <div class="hero-band">
-      <span>⚠ NIVEAU D'ALERTE : MODÉRÉ</span>
-      <span class="sep">|</span>
-      <span>STOCK EAU : VÉRIFIER</span>
-      <span class="sep">|</span>
-      <span>RESTEZ INFORMÉS. RESTEZ VIVANTS.</span>
+      <div class="ticker">
+        <div class="ticker-inner">
+          <span>⚠ NIVEAU D'ALERTE : MODÉRÉ</span>
+          <span class="sep">///</span>
+          <span>STOCK EAU : VÉRIFIER</span>
+          <span class="sep">///</span>
+          <span>RESTEZ INFORMÉS. RESTEZ VIVANTS.</span>
+          <span class="sep">///</span>
+          <span>KIT 72H : PRÉPARER DÈS MAINTENANT</span>
+          <span class="sep">///</span>
+          <span>⚠ NIVEAU D'ALERTE : MODÉRÉ</span>
+          <span class="sep">///</span>
+          <span>STOCK EAU : VÉRIFIER</span>
+          <span class="sep">///</span>
+          <span>RESTEZ INFORMÉS. RESTEZ VIVANTS.</span>
+          <span class="sep">///</span>
+          <span>KIT 72H : PRÉPARER DÈS MAINTENANT</span>
+          <span class="sep">///</span>
+        </div>
+      </div>
     </div>
 
     <main>
@@ -220,21 +235,22 @@ const { title } = Astro.props;
     list-style: none;
     display: flex;
     flex-direction: column;
-    padding: 1rem 0;
-    gap: 0.2rem;
+    padding: 0.5rem 0;
+    gap: 0;
   }
 
   nav ul a {
     display: block;
     font-family: var(--font-nav);
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     font-weight: 700;
     color: var(--creme);
     text-decoration: none;
     letter-spacing: 2px;
-    padding: 0.7rem 1rem;
+    padding: 0.4rem 1rem;
     border-left: 3px solid transparent;
     transition: all 0.2s;
+    background-color: transparent;
   }
 
   nav ul a:hover {
@@ -247,7 +263,7 @@ const { title } = Astro.props;
     background-color: var(--ambre);
     color: var(--noir) !important;
     border-left-color: var(--ambre);
-    margin-top: 0.5rem;
+    margin-top: 0.4rem;
     text-align: center;
   }
 
@@ -279,6 +295,7 @@ const { title } = Astro.props;
       border-left: none;
       border: 1px solid transparent;
       font-size: 0.78rem;
+      background-color: transparent;
     }
 
     nav ul a:hover {
@@ -300,24 +317,44 @@ const { title } = Astro.props;
     }
   }
 
-  /* HERO BAND */
+  /* TICKER */
   .hero-band {
-    background-color: var(--rouge);
-    color: var(--creme);
-    font-family: var(--font-nav);
-    font-size: clamp(0.65rem, 2vw, 0.75rem);
-    letter-spacing: 1px;
-    padding: 0.4rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.8rem;
-    flex-wrap: wrap;
-    text-align: center;
+    background-color: var(--ambre);
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0.35rem 0;
   }
 
-  .sep {
-    opacity: 0.4;
+  .ticker {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .ticker-inner {
+    display: flex;
+    gap: 2rem;
+    animation: ticker 20s linear infinite;
+    white-space: nowrap;
+  }
+
+  .ticker-inner span {
+    font-family: var(--font-nav);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--noir);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+  }
+
+  .ticker-inner .sep {
+    color: var(--ambre-fonce);
+    opacity: 1;
+  }
+
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
   }
 
   /* MAIN */
@@ -381,7 +418,7 @@ const { title } = Astro.props;
   }
 
   ul li {
-    background-color: var(--noir-clair);
+    background-color: var(--noir);
     border: 1px solid #333;
     border-left: 4px solid var(--ambre);
     padding: 1.2rem;
