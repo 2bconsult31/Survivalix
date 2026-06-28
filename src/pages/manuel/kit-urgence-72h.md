@@ -32,7 +32,7 @@ Tout le reste est secondaire. Garde ça en tête quand tu fais tes achats.
 
 ## La liste complète
 
-### 💧 Eau — La priorité que personne ne prend au sérieux
+### Eau — La priorité que personne ne prend au sérieux
 
 Jusqu'à ce que le robinet ne coule plus.
 
@@ -46,7 +46,7 @@ Le minimum recommandé est de **6 litres par personne pour 72h** — 2 litres pa
 **Le conseil qu'on ne te donne jamais :**
 Les chiffres recommandés sont calculés pour rester chez toi, immobile, dans un appartement tempéré. Si tu dois évacuer et marcher sous la pluie en novembre, multiplie par deux.
 
-### 🍱 Nourriture — Manger sans cuisiner (et sans se déprimer)
+### Nourriture — Manger sans cuisiner (et sans se déprimer)
 
 La contrainte : tout doit se consommer sans cuisson ni réfrigération. Contrainte réelle car en cas de coupure électrique prolongée, ton four vitrocéramique devient une table basse très chère.
 
@@ -65,7 +65,7 @@ Stocke ce que tu manges normalement. Le piège classique du débutant : acheter 
 **Pour les familles avec enfants :**
 Compotes en gourde, petits gâteaux, céréales sèches. Prévois 30% de calories supplémentaires pour les enfants actifs.
 
-### 🔦 Lumière & Énergie — Voir dans le noir c'est sous-coté
+### Lumière & Énergie — Voir dans le noir c'est sous-coté
 
 Une coupure d'électricité la nuit, dans un appartement, c'est immédiatement déstabilisant. La lumière, c'est le premier truc qui change tout psychologiquement.
 
@@ -78,7 +78,7 @@ Une coupure d'électricité la nuit, dans un appartement, c'est immédiatement d
 **La batterie externe c'est la nouvelle lampe de poche.**
 Ton téléphone est ta carte, ta lampe de secours, ta radio et ton seul moyen de communication. Une batterie de 20 000 mAh recharge un smartphone 5 à 6 fois. Achètes-en deux et garde-les chargées en permanence.
 
-### 🩺 Santé & Premiers secours — Pas besoin d'être médecin
+### Santé & Premiers secours — Pas besoin d'être médecin
 
 Le kit de base gère 95% des problèmes courants. Coupures, brûlures légères, fièvre, diarrhée — les situations les plus fréquentes en cas de crise ne nécessitent pas de chirurgie.
 
@@ -92,7 +92,7 @@ Le kit de base gère 95% des problèmes courants. Coupures, brûlures légères,
 - Pince à épiler (échardes, tiques)
 - Masques FFP2 — utiles lors de crises spécifiques
 
-### 🧥 Chaleur & Vêtements — L'ennemi invisible
+### Chaleur & Vêtements — L'ennemi invisible
 
 L'hypothermie est systématiquement sous-estimée en milieu urbain. Une nuit sans chauffage en hiver peut rapidement mettre en danger un enfant ou une personne âgée.
 
@@ -102,7 +102,7 @@ L'hypothermie est systématiquement sous-estimée en milieu urbain. Une nuit san
 - Chaussures de marche solides — si tu dois évacuer à pied
 - Imperméable ou poncho
 
-### 📄 Documents — Ce qu'on oublie toujours
+### Documents — Ce qu'on oublie toujours
 
 En cas d'évacuation, avoir ses documents sous la main évite les situations kafkaïennes qui transforment une crise en cauchemar administratif.
 
@@ -116,7 +116,7 @@ En cas d'évacuation, avoir ses documents sous la main évite les situations kaf
 **L'astuce numérique :**
 Scanne tous tes documents et enregistre-les dans un cloud sécurisé. Accessible depuis n'importe quel téléphone, même emprunté.
 
-### 🛠️ Divers — Petit mais indispensable
+### Divers — Petit mais indispensable
 
 - Couteau multifonction type Swiss Army
 - Sifflet — pour signaler ta présence si tu es bloqué
@@ -175,6 +175,6 @@ En 5 semaines, pour moins de 200€, tu as un kit solide.
 
 Toute cette liste en PDF prêt à imprimer — format A4, cases à cocher, design Survivalix.
 
-[⬇ Télécharger la checklist Kit 72h (PDF)](/ressources/checklist-kit-72h.pdf)
+[Télécharger la checklist Kit 72h (PDF)](/ressources/checklist-kit-72h.pdf)
 
 *Sources : Croix-Rouge française, FEMA (USA), The Prepared.*
