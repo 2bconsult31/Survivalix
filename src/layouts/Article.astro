@@ -13,7 +13,7 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet" />
     <title>{frontmatter.title} — Survivalix</title>
     <meta name="description" content={frontmatter.description} />
     <meta property="og:title" content={frontmatter.title} />
@@ -244,7 +244,13 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
     gap: 0.5rem;
     flex-wrap: wrap;
     align-items: center;
-    list-style: none;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .article-breadcrumb ul {
+    display: flex;
+    flex-direction: row;
   }
 
   .article-breadcrumb a { color: var(--ambre); text-decoration: none; }
@@ -281,6 +287,7 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
     margin-bottom: 1.2rem;
     line-height: 1.7;
     max-width: 700px;
+    font-weight: 300;
   }
 
   .article-meta {
@@ -315,7 +322,7 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
 
   .article-content h2 {
     font-size: clamp(1.2rem, 3vw, 1.7rem);
-    margin: 2.5rem 0 1rem;
+    margin: 3rem 0 1.2rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #1e1e1e;
     letter-spacing: 1px;
@@ -326,16 +333,19 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
     font-family: var(--font-nav);
     font-size: 1rem;
     font-weight: 700;
-    color: var(--creme);
-    margin: 1.8rem 0 0.6rem;
+    color: var(--ambre);
+    margin: 2rem 0 0.8rem;
     letter-spacing: 1px;
     border-left: 3px solid var(--ambre);
     padding-left: 0.8rem;
   }
 
   .article-content p {
+    font-family: var(--font-nav);
+    font-weight: 300;
+    font-size: 1rem;
     color: var(--creme);
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
     opacity: 0.88;
     line-height: 1.85;
   }
@@ -343,39 +353,53 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
   .article-content ul,
   .article-content ol {
     display: block;
-    margin: 0.8rem 0 1.5rem 1.2rem;
+    margin: 0.8rem 0 2rem 1.2rem;
     grid-template-columns: none;
   }
 
   .article-content li {
+    font-family: var(--font-nav);
+    font-weight: 300;
     color: var(--creme);
     opacity: 0.88;
     line-height: 1.8;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.4rem;
     padding-left: 0.3rem;
     background: none;
     border: none;
+    border-left: none;
   }
 
   .article-content ul li { list-style: disc; }
   .article-content ol li { list-style: decimal; }
 
-  .article-content strong { color: var(--ambre); font-weight: 700; }
-  .article-content em { font-style: italic; opacity: 0.85; }
+  .article-content strong {
+    color: var(--ambre);
+    font-weight: 700;
+  }
 
-  .article-content a { color: var(--ambre); text-decoration: underline; }
+  .article-content em {
+    font-style: italic;
+    opacity: 0.85;
+  }
+
+  .article-content a {
+    color: var(--ambre);
+    text-decoration: underline;
+  }
+
   .article-content a:hover { opacity: 0.7; }
 
   .article-content hr {
     border: none;
     border-top: 1px solid #1e1e1e;
-    margin: 2.5rem 0;
+    margin: 3rem 0;
   }
 
   .article-content blockquote {
     border-left: 4px solid var(--ambre);
     padding: 1rem 1.5rem;
-    margin: 1.5rem 0;
+    margin: 2rem 0;
     background-color: var(--noir-clair);
     font-style: italic;
     color: var(--creme);
@@ -385,7 +409,7 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
   .article-content table {
     width: 100%;
     border-collapse: collapse;
-    margin: 1.5rem 0;
+    margin: 2rem 0;
     font-family: var(--font-nav);
     font-size: 0.88rem;
   }
@@ -404,6 +428,7 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
     border-bottom: 1px solid #1e1e1e;
     color: var(--creme);
     opacity: 0.85;
+    font-weight: 300;
   }
 
   .article-content tr:hover td { background-color: var(--noir-clair); }
@@ -440,6 +465,7 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
     opacity: 0.65;
     margin-bottom: 0.9rem;
     line-height: 1.6;
+    font-weight: 300;
   }
 
   .sidebar-btn {
@@ -472,6 +498,7 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
     background: none;
     border: none;
     padding: 0;
+    display: list-item;
   }
 
   .sidebar-links a {
@@ -485,6 +512,7 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
     border-left: 2px solid transparent;
     padding-left: 0.6rem;
     transition: all 0.2s;
+    font-weight: 400;
   }
 
   .sidebar-links a:hover { border-left-color: var(--ambre); opacity: 0.7; }
