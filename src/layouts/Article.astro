@@ -1,4 +1,6 @@
 ---
+import '../../styles/global.css';
+
 const { frontmatter } = Astro.props;
 const hasImage = frontmatter.image && frontmatter.image !== '';
 ---
@@ -73,6 +75,7 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
       </div>
     </div>
 
+    <!-- HERO IMAGE -->
     <div class="article-hero">
       {hasImage ? (
         <img
@@ -114,13 +117,14 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
       )}
     </div>
 
+    <!-- ARTICLE HEADER -->
     <div class="article-header">
       <div class="article-header-inner">
         <nav class="article-breadcrumb" aria-label="Fil d'Ariane">
           <a href="/">Accueil</a>
-          <span aria-hidden="true">//</span>
+          <span>//</span>
           <a href="/manuel">Le Manuel</a>
-          <span aria-hidden="true">//</span>
+          <span>//</span>
           <span>{frontmatter.title}</span>
         </nav>
         {frontmatter.tags && (
@@ -140,6 +144,7 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
       </div>
     </div>
 
+    <!-- ARTICLE BODY -->
     <div class="article-body">
       <article class="article-content">
         <slot />
@@ -194,183 +199,6 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
 </script>
 
 <style>
-  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-  :root {
-    --noir: #0d0d0d;
-    --noir-clair: #111;
-    --ambre: #F5A623;
-    --ambre-fonce: #c4811a;
-    --kaki: #6B7C45;
-    --rouge: #8B2500;
-    --creme: #F5E6C8;
-    --gris: #666;
-    --font-titre: 'Special Elite', cursive;
-    --font-nav: 'Oswald', sans-serif;
-  }
-
-  html, body {
-    width: 100%;
-    min-height: 100%;
-    background-color: var(--noir);
-    color: var(--creme);
-    font-family: 'Georgia', serif;
-    font-size: 16px;
-    line-height: 1.7;
-  }
-
-  /* SCANLINES */
-  .scanlines {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: repeating-linear-gradient(
-      0deg, transparent, transparent 2px,
-      rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px
-    );
-    pointer-events: none;
-    z-index: 9999;
-  }
-
-  /* HEADER */
-  header {
-    background-color: var(--noir);
-    border-bottom: 3px solid var(--ambre);
-    padding: 1rem;
-  }
-
-  .header-inner { max-width: 1300px; margin: 0 auto; }
-
-  .header-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .logo { text-decoration: none; }
-
-  .logo-main {
-    display: block;
-    font-family: var(--font-titre);
-    font-size: clamp(1.4rem, 5vw, 2.8rem);
-    color: var(--ambre);
-    letter-spacing: 4px;
-    text-shadow: 0 0 20px rgba(245,166,35,0.4);
-  }
-
-  .logo-sub {
-    display: block;
-    font-family: var(--font-nav);
-    font-size: clamp(0.55rem, 1.5vw, 0.7rem);
-    color: var(--kaki);
-    letter-spacing: 2px;
-  }
-
-  .menu-toggle {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-  }
-
-  .menu-toggle span {
-    display: block;
-    width: 25px;
-    height: 2px;
-    background-color: var(--ambre);
-    transition: all 0.3s;
-  }
-
-  .menu-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-  .menu-toggle.active span:nth-child(2) { opacity: 0; }
-  .menu-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-  nav { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
-  nav.open { max-height: 800px; }
-
-  nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem 0;
-    gap: 0;
-  }
-
-  nav ul a {
-    display: block;
-    font-family: var(--font-nav);
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: var(--creme);
-    text-decoration: none;
-    letter-spacing: 2px;
-    padding: 0.4rem 1rem;
-    border-left: 3px solid transparent;
-    transition: all 0.2s;
-    background-color: transparent;
-  }
-
-  nav ul a:hover { color: var(--ambre); border-left-color: var(--ambre); }
-
-  nav ul .cta {
-    background-color: var(--ambre);
-    color: var(--noir) !important;
-    border-left-color: var(--ambre);
-    margin-top: 0.4rem;
-    text-align: center;
-  }
-
-  nav ul .cta:hover { background-color: var(--ambre-fonce); }
-
-  @media (min-width: 768px) {
-    .menu-toggle { display: none; }
-    nav { max-height: none; overflow: visible; }
-    nav ul {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 0.8rem 0 0;
-      gap: 0.2rem;
-    }
-    nav ul a {
-      padding: 0.4rem 0.8rem;
-      border-left: none;
-      border: 1px solid transparent;
-      font-size: 0.78rem;
-    }
-    nav ul a:hover { border-color: var(--ambre); }
-    nav ul .cta { margin-top: 0; }
-    .header-top { justify-content: center; }
-    .logo { text-align: center; }
-  }
-
-  /* TICKER */
-  .hero-band { background-color: var(--ambre); overflow: hidden; padding: 0.35rem 0; }
-  .ticker { display: flex; overflow: hidden; }
-  .ticker-inner {
-    display: flex;
-    gap: 2rem;
-    animation: ticker 20s linear infinite;
-    white-space: nowrap;
-  }
-  .ticker-inner span {
-    font-family: var(--font-nav);
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: var(--noir);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    flex-shrink: 0;
-  }
-  .ticker-inner .sep { color: var(--ambre-fonce); }
-  @keyframes ticker {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-
   /* HERO IMAGE */
   .article-hero {
     width: 100%;
@@ -440,9 +268,7 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
   }
 
   .article-header h1 {
-    font-family: var(--font-titre);
     font-size: clamp(1.5rem, 4vw, 2.6rem);
-    color: var(--ambre);
     line-height: 1.2;
     margin-bottom: 1rem;
     letter-spacing: 1px;
@@ -488,13 +314,12 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
   .article-content h1 { display: none; }
 
   .article-content h2 {
-    font-family: var(--font-titre);
     font-size: clamp(1.2rem, 3vw, 1.7rem);
-    color: var(--ambre);
     margin: 2.5rem 0 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #1e1e1e;
     letter-spacing: 1px;
+    border-left: none;
   }
 
   .article-content h3 {
@@ -517,7 +342,9 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
 
   .article-content ul,
   .article-content ol {
+    display: block;
     margin: 0.8rem 0 1.5rem 1.2rem;
+    grid-template-columns: none;
   }
 
   .article-content li {
@@ -526,13 +353,14 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
     line-height: 1.8;
     margin-bottom: 0.3rem;
     padding-left: 0.3rem;
+    background: none;
+    border: none;
   }
 
   .article-content ul li { list-style: disc; }
   .article-content ol li { list-style: decimal; }
 
   .article-content strong { color: var(--ambre); font-weight: 700; }
-
   .article-content em { font-style: italic; opacity: 0.85; }
 
   .article-content a { color: var(--ambre); text-decoration: underline; }
@@ -636,9 +464,15 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
+    grid-template-columns: none;
   }
 
-  .sidebar-links li { list-style: none; }
+  .sidebar-links li {
+    list-style: none;
+    background: none;
+    border: none;
+    padding: 0;
+  }
 
   .sidebar-links a {
     font-family: var(--font-nav);
@@ -653,55 +487,5 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
     transition: all 0.2s;
   }
 
-  .sidebar-links a:hover {
-    border-left-color: var(--ambre);
-    opacity: 0.7;
-  }
-
-  /* FOOTER */
-  footer {
-    background-color: var(--noir);
-    border-top: 3px solid var(--ambre);
-    padding: 2rem 1.5rem;
-  }
-
-  .footer-inner { max-width: 1300px; margin: 0 auto; text-align: center; }
-
-  .footer-logo {
-    font-family: var(--font-titre);
-    font-size: 1.8rem;
-    color: var(--ambre);
-    letter-spacing: 6px;
-    margin-bottom: 0.5rem;
-  }
-
-  .footer-tagline {
-    font-family: var(--font-nav);
-    font-size: 0.8rem;
-    color: var(--kaki);
-    letter-spacing: 2px;
-    margin-bottom: 1.5rem;
-  }
-
-  .footer-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .footer-links a {
-    font-family: var(--font-nav);
-    font-size: 0.8rem;
-    color: var(--creme);
-    text-decoration: none;
-    letter-spacing: 1px;
-    opacity: 0.6;
-    transition: opacity 0.2s;
-  }
-
-  .footer-links a:hover { opacity: 1; color: var(--ambre); }
-
-  .footer-copy { font-size: 0.72rem; color: var(--gris); opacity: 0.4; }
+  .sidebar-links a:hover { border-left-color: var(--ambre); opacity: 0.7; }
 </style>
