@@ -75,7 +75,6 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
       </div>
     </div>
 
-    <!-- HERO IMAGE -->
     <div class="article-hero">
       {hasImage ? (
         <img
@@ -113,7 +112,6 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
       )}
     </div>
 
-    <!-- ARTICLE HEADER -->
     <div class="article-header">
       <div class="article-header-inner">
         <nav class="article-breadcrumb" aria-label="Fil d'Ariane">
@@ -140,7 +138,6 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
       </div>
     </div>
 
-    <!-- ARTICLE BODY -->
     <div class="article-body">
       <article class="article-content">
         <slot />
@@ -195,104 +192,6 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
 </script>
 
 <style>
-  /* RESET NAV ARTICLE */
-  header nav,
-  header nav ul,
-  header nav ul li {
-    all: revert;
-  }
-
-  header nav {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-  }
-
-  header nav.open { max-height: 800px; }
-
-  header nav ul {
-    list-style: none !important;
-    display: flex !important;
-    flex-direction: column !important;
-    padding: 0.5rem 0 !important;
-    gap: 0 !important;
-    margin: 0 !important;
-    grid-template-columns: none !important;
-    background: none !important;
-  }
-
-  header nav ul li {
-    background: none !important;
-    border: none !important;
-    padding: 0 !important;
-    display: block !important;
-  }
-
-  header nav ul li:hover {
-    background: none !important;
-    transform: none !important;
-  }
-
-  header nav ul a {
-    display: block;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #F5E6C8;
-    text-decoration: none;
-    letter-spacing: 2px;
-    padding: 0.8rem 1.2rem;
-    border-left: 3px solid transparent;
-    transition: all 0.2s;
-    background-color: transparent;
-  }
-
-  header nav ul a:hover {
-    color: #F5A623;
-    border-left-color: #F5A623;
-    background-color: transparent;
-  }
-
-  header nav ul .cta {
-    background-color: #F5A623 !important;
-    color: #0d0d0d !important;
-    border-left-color: #F5A623 !important;
-    margin-top: 0.5rem;
-    text-align: center;
-    font-size: 1rem;
-  }
-
-  header nav ul .cta:hover { background-color: #c4811a !important; }
-
-  @media (min-width: 768px) {
-    .menu-toggle { display: none !important; }
-
-    header nav {
-      max-height: none !important;
-      overflow: visible !important;
-    }
-
-    header nav ul {
-      flex-direction: row !important;
-      flex-wrap: wrap !important;
-      justify-content: center !important;
-      padding: 0.8rem 0 0 !important;
-      gap: 0.2rem !important;
-    }
-
-    header nav ul a {
-      padding: 0.5rem 1rem;
-      border-left: none;
-      border: 1px solid transparent;
-      font-size: 0.82rem;
-    }
-
-    header nav ul a:hover { border-color: #F5A623; }
-    header nav ul .cta { margin-top: 0; }
-    .header-top { justify-content: center; }
-    .logo { text-align: center; }
-  }
-
   /* HERO IMAGE */
   .article-hero {
     width: 100%;
@@ -414,8 +313,8 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
     font-family: 'Special Elite', cursive;
     font-size: clamp(1.2rem, 3vw, 1.7rem);
     color: #F5A623;
-    margin-top: 50px;
-    margin-bottom: 1.2rem;
+    margin-top: 80px;
+    margin-bottom: 1.5rem;
     padding-bottom: 0.4rem;
     border-bottom: 1px solid #1e1e1e;
     border-left: none;
@@ -427,8 +326,8 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
     font-size: 1.05rem;
     font-weight: 700;
     color: #F5A623;
-    margin-top: 30px;
-    margin-bottom: 0.8rem;
+    margin-top: 60px;
+    margin-bottom: 1.2rem;
     letter-spacing: 1px;
     border-left: 3px solid #F5A623;
     padding-left: 0.8rem;
@@ -439,7 +338,7 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
     font-weight: 300;
     font-size: 1rem;
     color: #F5E6C8;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     opacity: 0.88;
     line-height: 1.85;
   }
