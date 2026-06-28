@@ -1,0 +1,764 @@
+---
+const { frontmatter } = Astro.props;
+const hasImage = frontmatter.image && frontmatter.image !== '';
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
+    <title>{frontmatter.title} — Survivalix</title>
+    <meta name="description" content={frontmatter.description} />
+    <meta property="og:title" content={frontmatter.title} />
+    <meta property="og:description" content={frontmatter.description} />
+    <meta property="og:image" content={frontmatter.image || '/og-image.jpg'} />
+    <meta name="robots" content="index, follow" />
+  </head>
+  <body>
+
+    <div class="scanlines"></div>
+
+    <header>
+      <div class="header-inner">
+        <div class="header-top">
+          <a href="/" class="logo">
+            <span class="logo-main">SURVIVALIX</span>
+            <span class="logo-sub">// GUIDE DE SURVIE DU CITOYEN //</span>
+          </a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav id="mainNav">
+          <ul>
+            <li><a href="/manuel">LE MANUEL</a></li>
+            <li><a href="/cantine">LA CANTINE</a></li>
+            <li><a href="/bazar">LE BAZAR</a></li>
+            <li><a href="/atelier">L'ATELIER</a></li>
+            <li><a href="/radar">LE RADAR</a></li>
+            <li><a href="/outils">LES OUTILS</a></li>
+            <li><a href="/survivant" class="cta">QUEL SURVIVANT ES-TU ?</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="hero-band">
+      <div class="ticker">
+        <div class="ticker-inner">
+          <span>⚠ NIVEAU D'ALERTE : MODÉRÉ</span>
+          <span class="sep">///</span>
+          <span>STOCK EAU : VÉRIFIER</span>
+          <span class="sep">///</span>
+          <span>RESTEZ INFORMÉS. RESTEZ VIVANTS.</span>
+          <span class="sep">///</span>
+          <span>KIT 72H : PRÉPARER DÈS MAINTENANT</span>
+          <span class="sep">///</span>
+          <span>⚠ NIVEAU D'ALERTE : MODÉRÉ</span>
+          <span class="sep">///</span>
+          <span>STOCK EAU : VÉRIFIER</span>
+          <span class="sep">///</span>
+          <span>RESTEZ INFORMÉS. RESTEZ VIVANTS.</span>
+          <span class="sep">///</span>
+          <span>KIT 72H : PRÉPARER DÈS MAINTENANT</span>
+          <span class="sep">///</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- HERO IMAGE -->
+    <div class="article-hero">
+      {hasImage ? (
+        <img 
+          src={frontmatter.image} 
+          alt={frontmatter.image_alt || frontmatter.title}
+          class="article-hero-img"
+        />
+      ) : (
+        <div class="article-hero-placeholder">
+          <svg class="placeholder-grid" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <!-- Grille de fond -->
+            <defs>
+              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#F5A623" stroke-width="0.3" opacity="0.2"/>
+              </pattern>
+              <pattern id="grid-large" width="200" height="200" patternUnits="userSpaceOnUse">
+                <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#F5A623" stroke-width="0.8" opacity="0.15"/>
+              </pattern>
+            </defs>
+            <rect width="1200" height="500" fill="#0d0d0d"/>
+            <rect width="1200" height="500" fill="url(#grid)"/>
+            <rect width="1200" height="500" fill="url(#grid-large)"/>
+            <!-- Cercle radar décoratif -->
+            <circle cx="900" cy="250" r="300" stroke="#F5A623" stroke-width="1" fill="none" opacity="0.08"/>
+            <circle cx="900" cy="250" r="200" stroke="#F5A623" stroke-width="1" fill="none" opacity="0.08"/>
+            <circle cx="900" cy="250" r="100" stroke="#F5A623" stroke-width="1" fill="none" opacity="0.08"/>
+            <line x1="900" y1="0" x2="900" y2="500" stroke="#F5A623" stroke-width="0.5" opacity="0.06"/>
+            <line x1="600" y1="250" x2="1200" y2="250" stroke="#F5A623" stroke-width="0.5" opacity="0.06"/>
+            <!-- Ligne de scan -->
+            <line x1="0" y1="250" x2="1200" y2="250" stroke="#F5A623" stroke-width="1" opacity="0.1" stroke-dasharray="8 4"/>
+            <!-- Croix centrale gauche -->
+            <line x1="180" y1="220" x2="220" y2="220" stroke="#F5A623" stroke-width="1.5" opacity="0.4"/>
+            <line x1="200" y1="200" x2="200" y2="240" stroke="#F5A623" stroke-width="1.5" opacity="0.4"/>
+            <!-- Coins décoratifs -->
+            <path d="M 40 40 L 40 80 M 40 40 L 80 40" stroke="#F5A623" stroke-width="2" opacity="0.5" fill="none"/>
+            <path d="M 1160 40 L 1160 80 M 1160 40 L 1120 40" stroke="#F5A623" stroke-width="2" opacity="0.5" fill="none"/>
+            <path d="M 40 460 L 40 420 M 40 460 L 80 460" stroke="#F5A623" stroke-width="2" opacity="0.5" fill="none"/>
+            <path d="M 1160 460 L 1160 420 M 1160 460 L 1120 460" stroke="#F5A623" stroke-width="2" opacity="0.5" fill="none"/>
+            <!-- Label rubrique -->
+            <rect x="40" y="180" width="180" height="30" fill="#F5A623" opacity="0.9"/>
+            <text x="52" y="200" font-family="Oswald, sans-serif" font-size="14" font-weight="700" fill="#0d0d0d" letter-spacing="3">// LE MANUEL //</text>
+            <!-- Texte illustration manquante -->
+            <text x="200" y="270" font-family="Special Elite, cursive" font-size="13" fill="#F5A623" opacity="0.3" letter-spacing="2">[ ILLUSTRATION À VENIR ]</text>
+          </svg>
+        </div>
+      )}
+    </div>
+
+    <!-- ARTICLE HEADER -->
+    <div class="article-header">
+      <div class="article-header-inner">
+        <div class="article-breadcrumb">
+          <a href="/">Accueil</a>
+          <span>//</span>
+          <a href="/manuel">Le Manuel</a>
+          <span>//</span>
+          <span>{frontmatter.title}</span>
+        </div>
+        <div class="article-tags">
+          {frontmatter.tags && frontmatter.tags.map((tag: string) => (
+            <span class="tag">#{tag}</span>
+          ))}
+        </div>
+        <h1>{frontmatter.title}</h1>
+        <p class="article-description">{frontmatter.description}</p>
+        <div class="article-meta">
+          <span>// SURVIVALIX</span>
+          <span class="sep">·</span>
+          <span>Lecture : ~8 min</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARTICLE BODY -->
+    <div class="article-body">
+      <div class="article-content">
+        <slot />
+      </div>
+
+      <aside class="article-sidebar">
+        <div class="sidebar-block">
+          <div class="sidebar-label">// TÉLÉCHARGER //</div>
+          <p>La checklist complète en PDF prêt à imprimer.</p>
+          <a href="/ressources/checklist-kit-72h.pdf" class="sidebar-btn">
+            ⬇ Checklist PDF
+          </a>
+        </div>
+
+        <div class="sidebar-block">
+          <div class="sidebar-label">// QUEL SURVIVANT ? //</div>
+          <p>Découvre ton profil et télécharge ta carte collector.</p>
+          <a href="/survivant/quel-survivant-suis-je" class="sidebar-btn">
+            Faire le quiz →
+          </a>
+        </div>
+
+        <div class="sidebar-block">
+          <div class="sidebar-label">// ARTICLES LIÉS //</div>
+          <ul class="sidebar-links">
+            <li><a href="/manuel/stocker-eau-appartement">Stocker l'eau en appartement</a></li>
+            <li><a href="/outils/calculateur-stock-eau">Calculer son stock d'eau</a></li>
+            <li><a href="/bazar/trousse-secours-voiture">Trousse de secours voiture</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-logo">SURVIVALIX</div>
+        <p class="footer-tagline">Le site de survie pour les gens normaux.</p>
+        <div class="footer-links">
+          <a href="/a-propos">À propos</a>
+          <a href="/contact">Contact</a>
+          <a href="/mentions-legales">Mentions légales</a>
+          <a href="/ressources">Ressources</a>
+        </div>
+        <p class="footer-copy">© 2025 Survivalix — Tous droits réservés</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('mainNav');
+  toggle?.addEventListener('click', () => {
+    nav?.classList.toggle('open');
+    toggle.classList.toggle('active');
+  });
+</script>
+
+<style>
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --noir: #0d0d0d;
+    --noir-clair: #242424;
+    --ambre: #F5A623;
+    --ambre-fonce: #c4811a;
+    --kaki: #6B7C45;
+    --rouge: #8B2500;
+    --creme: #F5E6C8;
+    --gris: #888;
+    --font-titre: 'Special Elite', cursive;
+    --font-nav: 'Oswald', sans-serif;
+  }
+
+  html, body {
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--noir);
+    color: var(--creme);
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* SCANLINES */
+  .scanlines {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: repeating-linear-gradient(
+      0deg, transparent, transparent 2px,
+      rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px
+    );
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  /* HEADER */
+  header {
+    background-color: var(--noir);
+    border-bottom: 3px solid var(--ambre);
+    padding: 1rem;
+  }
+
+  .header-inner { max-width: 1300px; margin: 0 auto; }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo { text-decoration: none; }
+
+  .logo-main {
+    display: block;
+    font-family: var(--font-titre);
+    font-size: clamp(1.4rem, 5vw, 2.8rem);
+    color: var(--ambre);
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px rgba(245,166,35,0.4);
+  }
+
+  .logo-sub {
+    display: block;
+    font-family: var(--font-nav);
+    font-size: clamp(0.55rem, 1.5vw, 0.7rem);
+    color: var(--kaki);
+    letter-spacing: 2px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--ambre);
+    transition: all 0.3s;
+  }
+
+  .menu-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .menu-toggle.active span:nth-child(2) { opacity: 0; }
+  .menu-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  nav { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+  nav.open { max-height: 800px; }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0;
+    gap: 0;
+  }
+
+  nav ul a {
+    display: block;
+    font-family: var(--font-nav);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--creme);
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 0.4rem 1rem;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+    background-color: transparent;
+  }
+
+  nav ul a:hover {
+    color: var(--ambre);
+    border-left-color: var(--ambre);
+  }
+
+  nav ul .cta {
+    background-color: var(--ambre);
+    color: var(--noir) !important;
+    border-left-color: var(--ambre);
+    margin-top: 0.4rem;
+    text-align: center;
+  }
+
+  nav ul .cta:hover { background-color: var(--ambre-fonce); }
+
+  @media (min-width: 768px) {
+    .menu-toggle { display: none; }
+    nav { max-height: none; overflow: visible; }
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0.8rem 0 0;
+      gap: 0.2rem;
+    }
+    nav ul a {
+      padding: 0.4rem 0.8rem;
+      border-left: none;
+      border: 1px solid transparent;
+      font-size: 0.78rem;
+    }
+    nav ul a:hover { border-color: var(--ambre); }
+    nav ul .cta { margin-top: 0; text-align: left; }
+    .header-top { justify-content: center; }
+    .logo { text-align: center; }
+  }
+
+  /* TICKER */
+  .hero-band {
+    background-color: var(--ambre);
+    overflow: hidden;
+    padding: 0.35rem 0;
+  }
+
+  .ticker { display: flex; overflow: hidden; }
+
+  .ticker-inner {
+    display: flex;
+    gap: 2rem;
+    animation: ticker 20s linear infinite;
+    white-space: nowrap;
+  }
+
+  .ticker-inner span {
+    font-family: var(--font-nav);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--noir);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+  }
+
+  .ticker-inner .sep { color: var(--ambre-fonce); }
+
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* HERO IMAGE */
+  .article-hero {
+    width: 100%;
+    height: clamp(200px, 35vw, 480px);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .article-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .article-hero-placeholder {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: var(--noir);
+  }
+
+  .placeholder-grid {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* ARTICLE HEADER */
+  .article-header {
+    background-color: var(--noir);
+    border-bottom: 1px solid #222;
+    padding: 2.5rem 1rem 2rem;
+  }
+
+  .article-header-inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .article-breadcrumb {
+    font-family: var(--font-nav);
+    font-size: 0.75rem;
+    color: var(--gris);
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .article-breadcrumb a {
+    color: var(--ambre);
+    text-decoration: none;
+  }
+
+  .article-breadcrumb a:hover { opacity: 0.7; }
+
+  .article-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  .tag {
+    font-family: var(--font-nav);
+    font-size: 0.7rem;
+    color: var(--kaki);
+    letter-spacing: 1px;
+    border: 1px solid var(--kaki);
+    padding: 0.2rem 0.6rem;
+  }
+
+  .article-header h1 {
+    font-family: var(--font-titre);
+    font-size: clamp(1.6rem, 4vw, 2.8rem);
+    color: var(--ambre);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .article-description {
+    font-size: 1.1rem;
+    color: var(--creme);
+    opacity: 0.8;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+
+  .article-meta {
+    font-family: var(--font-nav);
+    font-size: 0.75rem;
+    color: var(--gris);
+    letter-spacing: 2px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  /* ARTICLE BODY */
+  .article-body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  @media (min-width: 900px) {
+    .article-body {
+      grid-template-columns: 1fr 280px;
+    }
+  }
+
+  /* ARTICLE CONTENT */
+  .article-content h1 { display: none; }
+
+  .article-content h2 {
+    font-family: var(--font-titre);
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    color: var(--ambre);
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #222;
+  }
+
+  .article-content h3 {
+    font-family: var(--font-nav);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--creme);
+    margin: 1.5rem 0 0.5rem;
+    letter-spacing: 1px;
+    border-left: 3px solid var(--ambre);
+    padding-left: 0.8rem;
+  }
+
+  .article-content p {
+    color: var(--creme);
+    margin-bottom: 1.2rem;
+    opacity: 0.9;
+    line-height: 1.8;
+  }
+
+  .article-content ul,
+  .article-content ol {
+    display: block;
+    margin: 1rem 0 1.5rem 1.5rem;
+  }
+
+  .article-content ul li,
+  .article-content ol li {
+    background: none;
+    border: none;
+    border-left: none;
+    padding: 0.2rem 0;
+    color: var(--creme);
+    opacity: 0.9;
+    list-style: disc;
+    grid-template-columns: none;
+    display: list-item;
+  }
+
+  .article-content ol li { list-style: decimal; }
+
+  .article-content strong { color: var(--ambre); font-weight: 700; }
+
+  .article-content em {
+    color: var(--creme);
+    font-style: italic;
+    opacity: 0.8;
+  }
+
+  .article-content a {
+    color: var(--ambre);
+    text-decoration: underline;
+  }
+
+  .article-content a:hover { opacity: 0.7; }
+
+  .article-content hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 2rem 0;
+  }
+
+  .article-content blockquote {
+    border-left: 4px solid var(--ambre);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    background-color: #111;
+    font-style: italic;
+    color: var(--creme);
+    opacity: 0.85;
+  }
+
+  .article-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-family: var(--font-nav);
+    font-size: 0.9rem;
+  }
+
+  .article-content th {
+    background-color: var(--ambre);
+    color: var(--noir);
+    padding: 0.7rem 1rem;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .article-content td {
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid #222;
+    color: var(--creme);
+    opacity: 0.85;
+  }
+
+  .article-content tr:hover td { background-color: #111; }
+
+  /* SIDEBAR */
+  .article-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: sticky;
+    top: 2rem;
+  }
+
+  .sidebar-block {
+    background-color: var(--noir);
+    border: 1px solid #333;
+    border-top: 3px solid var(--ambre);
+    padding: 1.5rem;
+  }
+
+  .sidebar-label {
+    font-family: var(--font-nav);
+    font-size: 0.7rem;
+    color: var(--kaki);
+    letter-spacing: 3px;
+    margin-bottom: 0.8rem;
+  }
+
+  .sidebar-block p {
+    font-size: 0.85rem;
+    color: var(--creme);
+    opacity: 0.7;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .sidebar-btn {
+    display: block;
+    font-family: var(--font-nav);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--ambre);
+    color: var(--noir);
+    padding: 0.7rem 1rem;
+    transition: background-color 0.2s;
+  }
+
+  .sidebar-btn:hover { background-color: var(--ambre-fonce); }
+
+  .sidebar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+  }
+
+  .sidebar-links li {
+    background: none;
+    border: none;
+    padding: 0;
+    list-style: none;
+    display: list-item;
+  }
+
+  .sidebar-links a {
+    font-family: var(--font-nav);
+    font-size: 0.85rem;
+    color: var(--ambre);
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: opacity 0.2s;
+  }
+
+  .sidebar-links a:hover { opacity: 0.7; }
+
+  /* FOOTER */
+  footer {
+    background-color: var(--noir);
+    border-top: 3px solid var(--ambre);
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+  }
+
+  .footer-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer-logo {
+    font-family: var(--font-titre);
+    font-size: 1.8rem;
+    color: var(--ambre);
+    letter-spacing: 6px;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-tagline {
+    font-family: var(--font-nav);
+    font-size: 0.8rem;
+    color: var(--kaki);
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-links a {
+    font-family: var(--font-nav);
+    font-size: 0.8rem;
+    color: var(--creme);
+    text-decoration: none;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+
+  .footer-links a:hover { opacity: 1; color: var(--ambre); }
+
+  .footer-copy {
+    font-size: 0.75rem;
+    color: var(--gris);
+    opacity: 0.5;
+  }
+</style>
