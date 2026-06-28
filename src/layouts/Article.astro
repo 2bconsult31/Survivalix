@@ -1,10 +1,6 @@
 ---
-layout: ../../layouts/Article.astro
-title: "Kit d'urgence 72h : la liste complète (testée, sans bullshit)"
-description: "Tout ce qu'il faut avoir dans son kit 72h. Liste complète, budget réaliste, erreurs à éviter. Pour les gens normaux qui veulent être prêts sans devenir fous."
-date: 2025-01-15
-tags: ["debutant", "kit", "urgence", "appartement"]
-rubrique: "manuel"
+const { frontmatter } = Astro.props;
+const hasImage = frontmatter.image && frontmatter.image !== '';
 ---
 
 <!doctype html>
@@ -77,103 +73,89 @@ rubrique: "manuel"
       </div>
     </div>
 
-    <!-- HERO IMAGE -->
     <div class="article-hero">
       {hasImage ? (
-        <img 
-          src={frontmatter.image} 
+        <img
+          src={frontmatter.image}
           alt={frontmatter.image_alt || frontmatter.title}
           class="article-hero-img"
         />
       ) : (
         <div class="article-hero-placeholder">
-          <svg class="placeholder-grid" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <!-- Grille de fond -->
+          <svg viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:absolute;top:0;left:0;">
             <defs>
-              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#F5A623" stroke-width="0.3" opacity="0.2"/>
+              <pattern id="smallgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#F5A623" stroke-width="0.3" opacity="0.15"/>
               </pattern>
-              <pattern id="grid-large" width="200" height="200" patternUnits="userSpaceOnUse">
-                <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#F5A623" stroke-width="0.8" opacity="0.15"/>
+              <pattern id="biggrid" width="200" height="200" patternUnits="userSpaceOnUse">
+                <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#F5A623" stroke-width="0.8" opacity="0.1"/>
               </pattern>
             </defs>
-            <rect width="1200" height="500" fill="#0d0d0d"/>
-            <rect width="1200" height="500" fill="url(#grid)"/>
-            <rect width="1200" height="500" fill="url(#grid-large)"/>
-            <!-- Cercle radar décoratif -->
-            <circle cx="900" cy="250" r="300" stroke="#F5A623" stroke-width="1" fill="none" opacity="0.08"/>
-            <circle cx="900" cy="250" r="200" stroke="#F5A623" stroke-width="1" fill="none" opacity="0.08"/>
-            <circle cx="900" cy="250" r="100" stroke="#F5A623" stroke-width="1" fill="none" opacity="0.08"/>
-            <line x1="900" y1="0" x2="900" y2="500" stroke="#F5A623" stroke-width="0.5" opacity="0.06"/>
-            <line x1="600" y1="250" x2="1200" y2="250" stroke="#F5A623" stroke-width="0.5" opacity="0.06"/>
-            <!-- Ligne de scan -->
-            <line x1="0" y1="250" x2="1200" y2="250" stroke="#F5A623" stroke-width="1" opacity="0.1" stroke-dasharray="8 4"/>
-            <!-- Croix centrale gauche -->
-            <line x1="180" y1="220" x2="220" y2="220" stroke="#F5A623" stroke-width="1.5" opacity="0.4"/>
-            <line x1="200" y1="200" x2="200" y2="240" stroke="#F5A623" stroke-width="1.5" opacity="0.4"/>
-            <!-- Coins décoratifs -->
-            <path d="M 40 40 L 40 80 M 40 40 L 80 40" stroke="#F5A623" stroke-width="2" opacity="0.5" fill="none"/>
-            <path d="M 1160 40 L 1160 80 M 1160 40 L 1120 40" stroke="#F5A623" stroke-width="2" opacity="0.5" fill="none"/>
-            <path d="M 40 460 L 40 420 M 40 460 L 80 460" stroke="#F5A623" stroke-width="2" opacity="0.5" fill="none"/>
-            <path d="M 1160 460 L 1160 420 M 1160 460 L 1120 460" stroke="#F5A623" stroke-width="2" opacity="0.5" fill="none"/>
-            <!-- Label rubrique -->
-            <rect x="40" y="180" width="180" height="30" fill="#F5A623" opacity="0.9"/>
-            <text x="52" y="200" font-family="Oswald, sans-serif" font-size="14" font-weight="700" fill="#0d0d0d" letter-spacing="3">// LE MANUEL //</text>
-            <!-- Texte illustration manquante -->
-            <text x="200" y="270" font-family="Special Elite, cursive" font-size="13" fill="#F5A623" opacity="0.3" letter-spacing="2">[ ILLUSTRATION À VENIR ]</text>
+            <rect width="1200" height="420" fill="#0d0d0d"/>
+            <rect width="1200" height="420" fill="url(#smallgrid)"/>
+            <rect width="1200" height="420" fill="url(#biggrid)"/>
+            <circle cx="950" cy="210" r="280" stroke="#F5A623" stroke-width="1" fill="none" opacity="0.06"/>
+            <circle cx="950" cy="210" r="180" stroke="#F5A623" stroke-width="1" fill="none" opacity="0.06"/>
+            <circle cx="950" cy="210" r="80" stroke="#F5A623" stroke-width="1" fill="none" opacity="0.06"/>
+            <line x1="670" y1="210" x2="1230" y2="210" stroke="#F5A623" stroke-width="0.5" opacity="0.05"/>
+            <line x1="950" y1="-70" x2="950" y2="490" stroke="#F5A623" stroke-width="0.5" opacity="0.05"/>
+            <line x1="0" y1="210" x2="1200" y2="210" stroke="#F5A623" stroke-width="1" opacity="0.06" stroke-dasharray="6 4"/>
+            <path d="M 40 40 L 40 80 M 40 40 L 80 40" stroke="#F5A623" stroke-width="2" opacity="0.4" fill="none"/>
+            <path d="M 1160 40 L 1160 80 M 1160 40 L 1120 40" stroke="#F5A623" stroke-width="2" opacity="0.4" fill="none"/>
+            <path d="M 40 380 L 40 340 M 40 380 L 80 380" stroke="#F5A623" stroke-width="2" opacity="0.4" fill="none"/>
+            <path d="M 1160 380 L 1160 340 M 1160 380 L 1120 380" stroke="#F5A623" stroke-width="2" opacity="0.4" fill="none"/>
+            <line x1="160" y1="185" x2="200" y2="185" stroke="#F5A623" stroke-width="1.5" opacity="0.35"/>
+            <line x1="180" y1="165" x2="180" y2="205" stroke="#F5A623" stroke-width="1.5" opacity="0.35"/>
+            <rect x="40" y="160" width="160" height="26" fill="#F5A623" opacity="0.85"/>
+            <text x="50" y="178" font-family="Oswald,sans-serif" font-size="12" font-weight="700" fill="#0d0d0d" letter-spacing="3">// LE MANUEL //</text>
+            <text x="40" y="240" font-family="Special Elite,cursive" font-size="11" fill="#F5A623" opacity="0.2" letter-spacing="2">[ ILLUSTRATION À VENIR ]</text>
           </svg>
         </div>
       )}
     </div>
 
-    <!-- ARTICLE HEADER -->
     <div class="article-header">
       <div class="article-header-inner">
-        <div class="article-breadcrumb">
+        <nav class="article-breadcrumb" aria-label="Fil d'Ariane">
           <a href="/">Accueil</a>
-          <span>//</span>
+          <span aria-hidden="true">//</span>
           <a href="/manuel">Le Manuel</a>
-          <span>//</span>
+          <span aria-hidden="true">//</span>
           <span>{frontmatter.title}</span>
-        </div>
-        <div class="article-tags">
-          {frontmatter.tags && frontmatter.tags.map((tag: string) => (
-            <span class="tag">#{tag}</span>
-          ))}
-        </div>
+        </nav>
+        {frontmatter.tags && (
+          <div class="article-tags">
+            {frontmatter.tags.map((tag: string) => (
+              <span class="tag">#{tag}</span>
+            ))}
+          </div>
+        )}
         <h1>{frontmatter.title}</h1>
         <p class="article-description">{frontmatter.description}</p>
         <div class="article-meta">
           <span>// SURVIVALIX</span>
-          <span class="sep">·</span>
+          <span class="dot">·</span>
           <span>Lecture : ~8 min</span>
         </div>
       </div>
     </div>
 
-    <!-- ARTICLE BODY -->
     <div class="article-body">
-      <div class="article-content">
+      <article class="article-content">
         <slot />
-      </div>
+      </article>
 
       <aside class="article-sidebar">
         <div class="sidebar-block">
           <div class="sidebar-label">// TÉLÉCHARGER //</div>
           <p>La checklist complète en PDF prêt à imprimer.</p>
-          <a href="/ressources/checklist-kit-72h.pdf" class="sidebar-btn">
-            ⬇ Checklist PDF
-          </a>
+          <a href="/ressources/checklist-kit-72h.pdf" class="sidebar-btn">⬇ Checklist PDF</a>
         </div>
-
         <div class="sidebar-block">
           <div class="sidebar-label">// QUEL SURVIVANT ? //</div>
           <p>Découvre ton profil et télécharge ta carte collector.</p>
-          <a href="/survivant/quel-survivant-suis-je" class="sidebar-btn">
-            Faire le quiz →
-          </a>
+          <a href="/survivant/quel-survivant-suis-je" class="sidebar-btn">Faire le quiz →</a>
         </div>
-
         <div class="sidebar-block">
           <div class="sidebar-label">// ARTICLES LIÉS //</div>
           <ul class="sidebar-links">
@@ -212,21 +194,17 @@ rubrique: "manuel"
 </script>
 
 <style>
-  *, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
   :root {
     --noir: #0d0d0d;
-    --noir-clair: #242424;
+    --noir-clair: #111;
     --ambre: #F5A623;
     --ambre-fonce: #c4811a;
     --kaki: #6B7C45;
     --rouge: #8B2500;
     --creme: #F5E6C8;
-    --gris: #888;
+    --gris: #666;
     --font-titre: 'Special Elite', cursive;
     --font-nav: 'Oswald', sans-serif;
   }
@@ -335,10 +313,7 @@ rubrique: "manuel"
     background-color: transparent;
   }
 
-  nav ul a:hover {
-    color: var(--ambre);
-    border-left-color: var(--ambre);
-  }
+  nav ul a:hover { color: var(--ambre); border-left-color: var(--ambre); }
 
   nav ul .cta {
     background-color: var(--ambre);
@@ -367,27 +342,20 @@ rubrique: "manuel"
       font-size: 0.78rem;
     }
     nav ul a:hover { border-color: var(--ambre); }
-    nav ul .cta { margin-top: 0; text-align: left; }
+    nav ul .cta { margin-top: 0; }
     .header-top { justify-content: center; }
     .logo { text-align: center; }
   }
 
   /* TICKER */
-  .hero-band {
-    background-color: var(--ambre);
-    overflow: hidden;
-    padding: 0.35rem 0;
-  }
-
+  .hero-band { background-color: var(--ambre); overflow: hidden; padding: 0.35rem 0; }
   .ticker { display: flex; overflow: hidden; }
-
   .ticker-inner {
     display: flex;
     gap: 2rem;
     animation: ticker 20s linear infinite;
     white-space: nowrap;
   }
-
   .ticker-inner span {
     font-family: var(--font-nav);
     font-size: 0.75rem;
@@ -397,9 +365,7 @@ rubrique: "manuel"
     text-transform: uppercase;
     flex-shrink: 0;
   }
-
   .ticker-inner .sep { color: var(--ambre-fonce); }
-
   @keyframes ticker {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
@@ -408,9 +374,10 @@ rubrique: "manuel"
   /* HERO IMAGE */
   .article-hero {
     width: 100%;
-    height: clamp(200px, 35vw, 480px);
+    height: clamp(180px, 30vw, 420px);
     overflow: hidden;
     position: relative;
+    background-color: var(--noir);
   }
 
   .article-hero-img {
@@ -425,32 +392,23 @@ rubrique: "manuel"
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: var(--noir);
-  }
-
-  .placeholder-grid {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 
   /* ARTICLE HEADER */
   .article-header {
     background-color: var(--noir);
-    border-bottom: 1px solid #222;
-    padding: 2.5rem 1rem 2rem;
+    border-bottom: 1px solid #1a1a1a;
+    padding: 2.5rem 1.5rem 2rem;
   }
 
   .article-header-inner {
-    max-width: 900px;
+    max-width: 860px;
     margin: 0 auto;
   }
 
   .article-breadcrumb {
     font-family: var(--font-nav);
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     color: var(--gris);
     letter-spacing: 1px;
     margin-bottom: 1rem;
@@ -458,34 +416,32 @@ rubrique: "manuel"
     gap: 0.5rem;
     flex-wrap: wrap;
     align-items: center;
+    list-style: none;
   }
 
-  .article-breadcrumb a {
-    color: var(--ambre);
-    text-decoration: none;
-  }
-
+  .article-breadcrumb a { color: var(--ambre); text-decoration: none; }
   .article-breadcrumb a:hover { opacity: 0.7; }
 
   .article-tags {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
   }
 
   .tag {
     font-family: var(--font-nav);
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     color: var(--kaki);
     letter-spacing: 1px;
     border: 1px solid var(--kaki);
-    padding: 0.2rem 0.6rem;
+    padding: 0.15rem 0.6rem;
+    text-transform: lowercase;
   }
 
   .article-header h1 {
     font-family: var(--font-titre);
-    font-size: clamp(1.6rem, 4vw, 2.8rem);
+    font-size: clamp(1.5rem, 4vw, 2.6rem);
     color: var(--ambre);
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -493,16 +449,17 @@ rubrique: "manuel"
   }
 
   .article-description {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: var(--creme);
-    opacity: 0.8;
-    margin-bottom: 1rem;
+    opacity: 0.75;
+    margin-bottom: 1.2rem;
     line-height: 1.7;
+    max-width: 700px;
   }
 
   .article-meta {
     font-family: var(--font-nav);
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     color: var(--gris);
     letter-spacing: 2px;
     display: flex;
@@ -510,21 +467,21 @@ rubrique: "manuel"
     align-items: center;
   }
 
+  .dot { color: var(--ambre); }
+
   /* ARTICLE BODY */
   .article-body {
-    max-width: 1200px;
+    max-width: 1180px;
     margin: 0 auto;
-    padding: 3rem 1rem;
+    padding: 3rem 1.5rem 4rem;
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
     align-items: start;
   }
 
-  @media (min-width: 900px) {
-    .article-body {
-      grid-template-columns: 1fr 280px;
-    }
+  @media (min-width: 920px) {
+    .article-body { grid-template-columns: 1fr 260px; }
   }
 
   /* ARTICLE CONTENT */
@@ -532,19 +489,20 @@ rubrique: "manuel"
 
   .article-content h2 {
     font-family: var(--font-titre);
-    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-size: clamp(1.2rem, 3vw, 1.7rem);
     color: var(--ambre);
     margin: 2.5rem 0 1rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #222;
+    border-bottom: 1px solid #1e1e1e;
+    letter-spacing: 1px;
   }
 
   .article-content h3 {
     font-family: var(--font-nav);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--creme);
-    margin: 1.5rem 0 0.5rem;
+    margin: 1.8rem 0 0.6rem;
     letter-spacing: 1px;
     border-left: 3px solid var(--ambre);
     padding-left: 0.8rem;
@@ -553,57 +511,44 @@ rubrique: "manuel"
   .article-content p {
     color: var(--creme);
     margin-bottom: 1.2rem;
-    opacity: 0.9;
-    line-height: 1.8;
+    opacity: 0.88;
+    line-height: 1.85;
   }
 
   .article-content ul,
   .article-content ol {
-    display: block;
-    margin: 1rem 0 1.5rem 1.5rem;
+    margin: 0.8rem 0 1.5rem 1.2rem;
   }
 
-  .article-content ul li,
-  .article-content ol li {
-    background: none;
-    border: none;
-    border-left: none;
-    padding: 0.2rem 0;
+  .article-content li {
     color: var(--creme);
-    opacity: 0.9;
-    list-style: disc;
-    grid-template-columns: none;
-    display: list-item;
+    opacity: 0.88;
+    line-height: 1.8;
+    margin-bottom: 0.3rem;
+    padding-left: 0.3rem;
   }
 
+  .article-content ul li { list-style: disc; }
   .article-content ol li { list-style: decimal; }
 
   .article-content strong { color: var(--ambre); font-weight: 700; }
 
-  .article-content em {
-    color: var(--creme);
-    font-style: italic;
-    opacity: 0.8;
-  }
+  .article-content em { font-style: italic; opacity: 0.85; }
 
-  .article-content a {
-    color: var(--ambre);
-    text-decoration: underline;
-  }
-
+  .article-content a { color: var(--ambre); text-decoration: underline; }
   .article-content a:hover { opacity: 0.7; }
 
   .article-content hr {
     border: none;
-    border-top: 1px solid #333;
-    margin: 2rem 0;
+    border-top: 1px solid #1e1e1e;
+    margin: 2.5rem 0;
   }
 
   .article-content blockquote {
     border-left: 4px solid var(--ambre);
     padding: 1rem 1.5rem;
     margin: 1.5rem 0;
-    background-color: #111;
+    background-color: var(--noir-clair);
     font-style: italic;
     color: var(--creme);
     opacity: 0.85;
@@ -614,115 +559,113 @@ rubrique: "manuel"
     border-collapse: collapse;
     margin: 1.5rem 0;
     font-family: var(--font-nav);
-    font-size: 0.9rem;
+    font-size: 0.88rem;
   }
 
   .article-content th {
     background-color: var(--ambre);
     color: var(--noir);
-    padding: 0.7rem 1rem;
+    padding: 0.6rem 1rem;
     text-align: left;
     font-weight: 700;
     letter-spacing: 1px;
   }
 
   .article-content td {
-    padding: 0.7rem 1rem;
-    border-bottom: 1px solid #222;
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #1e1e1e;
     color: var(--creme);
     opacity: 0.85;
   }
 
-  .article-content tr:hover td { background-color: #111; }
+  .article-content tr:hover td { background-color: var(--noir-clair); }
 
   /* SIDEBAR */
   .article-sidebar {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    position: sticky;
-    top: 2rem;
+  }
+
+  @media (min-width: 920px) {
+    .article-sidebar { position: sticky; top: 2rem; }
   }
 
   .sidebar-block {
     background-color: var(--noir);
-    border: 1px solid #333;
+    border: 1px solid #1e1e1e;
     border-top: 3px solid var(--ambre);
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
 
   .sidebar-label {
     font-family: var(--font-nav);
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     color: var(--kaki);
     letter-spacing: 3px;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.7rem;
   }
 
   .sidebar-block p {
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     color: var(--creme);
-    opacity: 0.7;
-    margin-bottom: 1rem;
+    opacity: 0.65;
+    margin-bottom: 0.9rem;
     line-height: 1.6;
   }
 
   .sidebar-btn {
     display: block;
     font-family: var(--font-nav);
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     font-weight: 700;
     letter-spacing: 1px;
     text-align: center;
     text-decoration: none;
     background-color: var(--ambre);
     color: var(--noir);
-    padding: 0.7rem 1rem;
+    padding: 0.65rem 1rem;
     transition: background-color 0.2s;
   }
 
-  .sidebar-btn:hover { background-color: var(--ambre-fonce); }
+  .sidebar-btn:hover { background-color: var(--ambre-fonce); color: var(--noir); }
 
   .sidebar-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
     list-style: none;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
   }
 
-  .sidebar-links li {
-    background: none;
-    border: none;
-    padding: 0;
-    list-style: none;
-    display: list-item;
-  }
+  .sidebar-links li { list-style: none; }
 
   .sidebar-links a {
     font-family: var(--font-nav);
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     color: var(--ambre);
     text-decoration: none;
-    letter-spacing: 1px;
-    transition: opacity 0.2s;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    display: block;
+    border-left: 2px solid transparent;
+    padding-left: 0.6rem;
+    transition: all 0.2s;
   }
 
-  .sidebar-links a:hover { opacity: 0.7; }
+  .sidebar-links a:hover {
+    border-left-color: var(--ambre);
+    opacity: 0.7;
+  }
 
   /* FOOTER */
   footer {
     background-color: var(--noir);
     border-top: 3px solid var(--ambre);
-    margin-top: 4rem;
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
   }
 
-  .footer-inner {
-    max-width: 1300px;
-    margin: 0 auto;
-    text-align: center;
-  }
+  .footer-inner { max-width: 1300px; margin: 0 auto; text-align: center; }
 
   .footer-logo {
     font-family: var(--font-titre);
@@ -754,15 +697,11 @@ rubrique: "manuel"
     color: var(--creme);
     text-decoration: none;
     letter-spacing: 1px;
-    opacity: 0.7;
+    opacity: 0.6;
     transition: opacity 0.2s;
   }
 
   .footer-links a:hover { opacity: 1; color: var(--ambre); }
 
-  .footer-copy {
-    font-size: 0.75rem;
-    color: var(--gris);
-    opacity: 0.5;
-  }
+  .footer-copy { font-size: 0.72rem; color: var(--gris); opacity: 0.4; }
 </style>
