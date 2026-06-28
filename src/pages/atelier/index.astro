@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const articles = [
+  {
+    titre: "Faire son potager sur un balcon : le guide complet",
+    url: "/atelier/potager-balcon",
+    description: "Même en appartement, tu peux produire ta propre nourriture."
+  },
+  {
+    titre: "Faire du feu sans briquet : les 3 méthodes qui marchent",
+    url: "/atelier/faire-feu-sans-briquet",
+    description: "Testé, approuvé, sans se brûler les doigts."
+  }
+]
+---
+
+<Layout title="L'Atelier — Survivalix">
+  <h1>L'Atelier</h1>
+  <p>Tutoriels DIY et autonomie pratique.</p>
+
+  <ul>
+    {articles.map(article => (
+      <li>
+        <a href={article.url}>{article.titre}</a>
+        <p>{article.description}</p>
+      </li>
+    ))}
+  </ul>
+</Layout>

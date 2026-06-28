@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const articles = [
+  {
+    titre: "5 recettes de survie qui ont vraiment du goût",
+    url: "/cantine/recettes-survie-qui-ont-du-gout",
+    description: "Parce que manger bien, même en crise, c'est possible."
+  },
+  {
+    titre: "Le garde-manger anti-crise : la liste de courses",
+    url: "/cantine/garde-manger-anti-crise",
+    description: "Faire ses courses comme un prepper sans avoir l'air fou."
+  }
+]
+---
+
+<Layout title="La Cantine — Survivalix">
+  <h1>La Cantine</h1>
+  <p>Recettes de survie qui ont vraiment du goût.</p>
+
+  <ul>
+    {articles.map(article => (
+      <li>
+        <a href={article.url}>{article.titre}</a>
+        <p>{article.description}</p>
+      </li>
+    ))}
+  </ul>
+</Layout>

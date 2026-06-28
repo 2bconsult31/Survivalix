@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const outils = [
+  {
+    titre: "Calculateur de stock d'eau",
+    url: "/outils/calculateur-stock-eau",
+    description: "Combien de litres stocker pour ta famille ?"
+  },
+  {
+    titre: "Checklist kit 72h personnalisée",
+    url: "/outils/checklist-kit-72h",
+    description: "Ta liste personnalisée selon ta situation."
+  },
+  {
+    titre: "Calculateur autonomie alimentaire",
+    url: "/outils/calculateur-autonomie-alimentaire",
+    description: "Combien de jours ton stock peut tenir ?"
+  }
+]
+---
+
+<Layout title="Les Outils — Survivalix">
+  <h1>Les Outils</h1>
+  <p>Calculateurs interactifs et checklists personnalisées.</p>
+
+  <ul>
+    {outils.map(outil => (
+      <li>
+        <a href={outil.url}>{outil.titre}</a>
+        <p>{outil.description}</p>
+      </li>
+    ))}
+  </ul>
+</Layout>

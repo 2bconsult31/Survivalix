@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const articles = [
+  {
+    titre: "Kit d'urgence 72h : la liste complète",
+    url: "/manuel/kit-urgence-72h",
+    description: "Tout ce qu'il faut avoir, testé et approuvé."
+  },
+  {
+    titre: "Stocker de l'eau potable en appartement",
+    url: "/manuel/stocker-eau-appartement",
+    description: "Combien, comment, où. La méthode simple."
+  }
+]
+---
+
+<Layout title="Le Manuel — Survivalix">
+  <h1>Le Manuel</h1>
+  <p>Guides pratiques et articles de fond sur la survie quotidienne.</p>
+
+  <ul>
+    {articles.map(article => (
+      <li>
+        <a href={article.url}>{article.titre}</a>
+        <p>{article.description}</p>
+      </li>
+    ))}
+  </ul>
+</Layout>

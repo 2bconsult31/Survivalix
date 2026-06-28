@@ -1,0 +1,24 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const articles = [
+  {
+    titre: "Quelle radio d'urgence acheter ? Le test honnête",
+    url: "/bazar/radio-urgence-que-acheter",
+    description: "On a testé les meilleures radios du marché pour toi."
+  },
+  {
+    titre: "La trousse de secours voiture : ce qu'il faut vraiment",
+    url: "/bazar/trousse-secours-voiture",
+    description: "Pas la trousse inutile du supermarché. La vraie."
+  }
+]
+---
+
+<Layout title="Le Bazar — Survivalix">
+  <h1>Le Bazar</h1>
+  <p>Tests et recommandations de matériel de survie.</p>
+
+  <ul>
+    {articles.map(article => (
+      <li></li>

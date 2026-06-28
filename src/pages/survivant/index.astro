@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const profils = [
+  { nom: "Le Bâtisseur", url: "/survivant/le-batisseur", description: "Organisé, prévoyant, stock béton." },
+  { nom: "Le Chasseur", url: "/survivant/le-chasseur", description: "Instinctif, terrain, débrouillard." },
+  { nom: "Le Soigneur", url: "/survivant/le-soigneur", description: "Empathique, premiers secours, communauté." },
+  { nom: "Le Bricoleur", url: "/survivant/le-bricoleur", description: "Créatif, récup, MacGyver." },
+  { nom: "Le Stratège", url: "/survivant/le-stratege", description: "Calme, analyse, leadership." },
+  { nom: "Le Nourricier", url: "/survivant/le-nourricier", description: "Cuisine, jardinage, stockage food." },
+  { nom: "L'Explorateur", url: "/survivant/l-explorateur", description: "Mobilité, cartographie, reconnaissance." },
+  { nom: "Le Technicien", url: "/survivant/le-technicien", description: "Radio, énergie, outils." }
+]
+---
+
+<Layout title="Quel Survivant es-tu ? — Survivalix">
+  <h1>Quel Survivant es-tu ?</h1>
+  <p>Découvre ton profil et télécharge ta carte collector.</p>
+
+  <a href="/survivant/quel-survivant-suis-je">
+    → Faire le quiz
+  </a>
+
+  <h2>Les 8 profils</h2>
+  <ul>
+    {profils.map(profil => (
+      <li>
+        <a href={profil.url}>{profil.nom}</a>
+        <p>{profil.description}</p>
+      </li>
+    ))}
+  </ul>
+</Layout>
