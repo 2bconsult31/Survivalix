@@ -7,9 +7,7 @@ import Layout from '../layouts/Layout.astro';
   description="Guides pratiques, recettes de survie, outils interactifs et humour post-apo. Pas besoin d'être parano pour être prêt."
 >
 
-  <!-- ============================================
-       BLOC 1 — HERO
-  ============================================ -->
+  <!-- BLOC 1 — HERO -->
   <section class="hero">
     <div class="hero-label">// TRANSMISSION EN COURS //</div>
     <h1 class="hero-titre">La survie,<br/>c'est pas que pour les fous.</h1>
@@ -40,12 +38,10 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- ============================================
-       BLOC 2 — RASSURANT
-  ============================================ -->
+  <!-- BLOC 2 — RASSURANT -->
   <section class="reassurance">
     <div class="reassurance-inner">
-      <div class="reassurance-label">// QUI EST CE SITE ?//</div>
+      <div class="reassurance-label">// QUI EST CE SITE ? //</div>
       <p class="reassurance-texte">
         Survivalix c'est pour toi si tu as déjà pensé <em>"et si ça merde vraiment ?"</em> 
         sans savoir quoi faire. Pas de théories complotistes, pas d'arsenal militaire, 
@@ -62,7 +58,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="point">
           <span class="point-icon">✓</span>
-          <span>Tu aimes Fallout mais tu n'es pas survivaliste ? Tu es exactement au bon endroit.</span>
+          <span>Tu trouves le sujet fascinant mais tu ne te définirais jamais comme survivaliste ? Tu es exactement au bon endroit.</span>
         </div>
         <div class="point">
           <span class="point-icon">✓</span>
@@ -72,9 +68,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- ============================================
-       BLOC 3 — PAR OÙ COMMENCER
-  ============================================ -->
+  <!-- BLOC 3 — PAR OÙ COMMENCER -->
   <section class="demarrer">
     <div class="section-label">// PROTOCOLE DE DÉMARRAGE //</div>
     <h2>Tu débarques ici ?</h2>
@@ -101,49 +95,108 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- ============================================
-       BLOC 4 — RUBRIQUES
-  ============================================ -->
+  <!-- BLOC 4 — RUBRIQUES -->
   <section class="rubriques">
     <div class="section-label">// SECTEURS D'ACTIVITÉ //</div>
     <h2>Explore le site</h2>
     <div class="rubriques-grid">
+
       <a href="/manuel" class="rubrique-card">
-        <div class="rubrique-icon">📋</div>
+        <div class="rubrique-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="4" width="28" height="36" rx="1" stroke="#F5A623" stroke-width="3" fill="none"/>
+            <rect x="12" y="4" width="4" height="36" fill="#F5A623" opacity="0.15"/>
+            <line x1="14" y1="13" x2="30" y2="13" stroke="#F5A623" stroke-width="2.5" stroke-linecap="square"/>
+            <line x1="14" y1="19" x2="30" y2="19" stroke="#F5A623" stroke-width="2.5" stroke-linecap="square"/>
+            <line x1="14" y1="25" x2="30" y2="25" stroke="#F5A623" stroke-width="2.5" stroke-linecap="square"/>
+            <line x1="14" y1="31" x2="24" y2="31" stroke="#F5A623" stroke-width="2.5" stroke-linecap="square"/>
+            <line x1="36" y1="8" x2="36" y2="44" stroke="#F5A623" stroke-width="3"/>
+          </svg>
+        </div>
         <h3>Le Manuel</h3>
         <p>Guides de fond, checklists, méthodes éprouvées.</p>
       </a>
+
       <a href="/cantine" class="rubrique-card">
-        <div class="rubrique-icon">🍲</div>
+        <div class="rubrique-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 20 Q8 8 24 8 Q40 8 40 20 L38 36 Q38 40 34 40 L14 40 Q10 40 10 36 Z" stroke="#F5A623" stroke-width="3" fill="none"/>
+            <path d="M8 20 L40 20" stroke="#F5A623" stroke-width="2.5"/>
+            <path d="M18 4 L18 10" stroke="#F5A623" stroke-width="3" stroke-linecap="square"/>
+            <path d="M24 4 L24 10" stroke="#F5A623" stroke-width="3" stroke-linecap="square"/>
+            <path d="M30 4 L30 10" stroke="#F5A623" stroke-width="3" stroke-linecap="square"/>
+            <path d="M16 28 Q24 24 32 28" stroke="#F5A623" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
         <h3>La Cantine</h3>
         <p>Recettes de survie qui ont vraiment du goût.</p>
       </a>
+
       <a href="/bazar" class="rubrique-card">
-        <div class="rubrique-icon">🎒</div>
+        <div class="rubrique-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 8 L8 16 L8 40 L40 40 L40 16 L36 8 Z" stroke="#F5A623" stroke-width="3" fill="none" stroke-linejoin="miter"/>
+            <line x1="8" y1="16" x2="40" y2="16" stroke="#F5A623" stroke-width="2.5"/>
+            <path d="M18 16 Q18 24 24 24 Q30 24 30 16" stroke="#F5A623" stroke-width="2.5" fill="none"/>
+            <line x1="16" y1="8" x2="32" y2="8" stroke="#F5A623" stroke-width="2.5" stroke-linecap="square"/>
+          </svg>
+        </div>
         <h3>Le Bazar</h3>
         <p>Tests de matériel honnêtes, sans pub déguisée.</p>
       </a>
+
       <a href="/atelier" class="rubrique-card">
-        <div class="rubrique-icon">🔧</div>
+        <div class="rubrique-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M30 6 C36 6 42 12 40 18 C38 22 34 22 34 22 L12 44 L6 38 L28 16 C28 16 28 12 30 6 Z" stroke="#F5A623" stroke-width="3" fill="none" stroke-linejoin="round"/>
+            <circle cx="10" cy="40" r="3" stroke="#F5A623" stroke-width="2" fill="none"/>
+            <line x1="36" y1="10" x2="40" y2="14" stroke="#F5A623" stroke-width="3" stroke-linecap="square"/>
+            <line x1="20" y1="20" x2="28" y2="28" stroke="#F5A623" stroke-width="2"/>
+          </svg>
+        </div>
         <h3>L'Atelier</h3>
         <p>DIY, autonomie, faire soi-même avec ce qu'on a.</p>
       </a>
+
       <a href="/radar" class="rubrique-card">
-        <div class="rubrique-icon">📡</div>
+        <div class="rubrique-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="24" r="18" stroke="#F5A623" stroke-width="3" fill="none"/>
+            <circle cx="24" cy="24" r="11" stroke="#F5A623" stroke-width="2" fill="none" opacity="0.5"/>
+            <circle cx="24" cy="24" r="4" stroke="#F5A623" stroke-width="2" fill="none"/>
+            <line x1="24" y1="6" x2="24" y2="24" stroke="#F5A623" stroke-width="2.5" stroke-linecap="square"/>
+            <line x1="24" y1="24" x2="36" y2="16" stroke="#F5A623" stroke-width="2" stroke-linecap="square" opacity="0.6"/>
+            <circle cx="34" cy="14" r="2.5" fill="#F5A623"/>
+          </svg>
+        </div>
         <h3>Le Radar</h3>
         <p>Veille, signaux faibles, actu qui compte.</p>
       </a>
+
       <a href="/outils" class="rubrique-card">
-        <div class="rubrique-icon">⚙️</div>
+        <div class="rubrique-icon">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="6" width="16" height="16" stroke="#F5A623" stroke-width="3" fill="none" stroke-linejoin="miter"/>
+            <rect x="26" y="6" width="16" height="16" stroke="#F5A623" stroke-width="3" fill="none" stroke-linejoin="miter"/>
+            <rect x="6" y="26" width="16" height="16" stroke="#F5A623" stroke-width="3" fill="none" stroke-linejoin="miter"/>
+            <rect x="26" y="26" width="16" height="16" stroke="#F5A623" stroke-width="3" fill="none" stroke-linejoin="miter"/>
+            <line x1="10" y1="14" x2="18" y2="14" stroke="#F5A623" stroke-width="2" stroke-linecap="square"/>
+            <line x1="30" y1="11" x2="38" y2="11" stroke="#F5A623" stroke-width="2" stroke-linecap="square"/>
+            <line x1="30" y1="16" x2="34" y2="16" stroke="#F5A623" stroke-width="2" stroke-linecap="square"/>
+            <line x1="10" y1="34" x2="18" y2="34" stroke="#F5A623" stroke-width="2" stroke-linecap="square"/>
+            <line x1="10" y1="38" x2="14" y2="38" stroke="#F5A623" stroke-width="2" stroke-linecap="square"/>
+            <circle cx="34" cy="34" r="5" stroke="#F5A623" stroke-width="2.5" fill="none"/>
+            <line x1="38" y1="38" x2="42" y2="42" stroke="#F5A623" stroke-width="2.5" stroke-linecap="square"/>
+          </svg>
+        </div>
         <h3>Les Outils</h3>
         <p>Calculateurs, checklists interactives, générateurs.</p>
       </a>
+
     </div>
   </section>
 
-  <!-- ============================================
-       BLOC 5 — CTA QUIZ VIRAL
-  ============================================ -->
+  <!-- BLOC 5 — QUIZ CTA -->
   <section class="quiz-cta">
     <div class="quiz-cta-inner">
       <div class="section-label">// IDENTIFICATION DU CITOYEN //</div>
@@ -159,9 +212,7 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
-  /* ============================================
-     HERO
-  ============================================ */
+  /* HERO */
   .hero {
     text-align: center;
     padding: 3rem 0 4rem;
@@ -178,7 +229,7 @@ import Layout from '../layouts/Layout.astro';
 
   .hero-titre {
     font-family: 'Special Elite', cursive;
-    font-size: clamp(2.2rem, 8vw, 4.5rem);
+    font-size: clamp(1.8rem, 6vw, 3.2rem);
     color: #F5A623;
     line-height: 1.1;
     margin-bottom: 1.5rem;
@@ -188,7 +239,7 @@ import Layout from '../layouts/Layout.astro';
   .hero-accroche {
     font-size: clamp(1rem, 2.5vw, 1.2rem);
     color: #F5E6C8;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto 2.5rem;
     opacity: 0.85;
     line-height: 1.8;
@@ -279,9 +330,7 @@ import Layout from '../layouts/Layout.astro';
     opacity: 0.5;
   }
 
-  /* ============================================
-     RASSURANT
-  ============================================ */
+  /* RASSURANT */
   .reassurance {
     padding: 4rem 0;
     border-bottom: 1px solid #222;
@@ -336,9 +385,7 @@ import Layout from '../layouts/Layout.astro';
     margin-top: 0.1rem;
   }
 
-  /* ============================================
-     DEMARRER
-  ============================================ */
+  /* DEMARRER */
   .demarrer {
     padding: 4rem 0;
     border-bottom: 1px solid #222;
@@ -425,18 +472,10 @@ import Layout from '../layouts/Layout.astro';
     opacity: 0.7;
   }
 
-  /* ============================================
-     RUBRIQUES
-  ============================================ */
+  /* RUBRIQUES */
   .rubriques {
     padding: 4rem 0;
     border-bottom: 1px solid #222;
-  }
-
-  .rubriques > p {
-    color: #F5E6C8;
-    opacity: 0.7;
-    margin-bottom: 2.5rem;
   }
 
   .rubriques-grid {
@@ -468,8 +507,14 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .rubrique-icon {
-    font-size: 1.8rem;
-    margin-bottom: 0.8rem;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+  }
+
+  .rubrique-icon svg {
+    width: 100%;
+    height: 100%;
   }
 
   .rubrique-card h3 {
@@ -488,9 +533,7 @@ import Layout from '../layouts/Layout.astro';
     margin: 0;
   }
 
-  /* ============================================
-     QUIZ CTA
-  ============================================ */
+  /* QUIZ CTA */
   .quiz-cta {
     padding: 4rem 0;
     text-align: center;
