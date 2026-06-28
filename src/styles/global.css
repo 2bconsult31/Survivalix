@@ -18,7 +18,7 @@ html, body {
   min-height: 100%;
   background-color: var(--noir);
   color: var(--creme);
-  font-family: 'Georgia', serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 16px;
   line-height: 1.7;
 }
@@ -35,6 +35,26 @@ html, body {
   pointer-events: none;
   z-index: 9999;
 }
+
+/* TITRES GLOBAUX */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Special Elite', cursive;
+  color: var(--ambre);
+  line-height: 1.2;
+}
+
+/* PARAGRAPHES */
+p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  color: var(--creme);
+  opacity: 0.88;
+  line-height: 1.8;
+  margin-bottom: 1.2rem;
+  font-weight: 300;
+}
+
+a { color: var(--ambre); }
 
 /* HEADER */
 header {
@@ -103,6 +123,21 @@ nav ul {
   flex-direction: column;
   padding: 0.5rem 0;
   gap: 0;
+  margin: 0;
+  grid-template-columns: none;
+  background: none;
+}
+
+nav ul li {
+  background: none;
+  border: none;
+  border-left: none;
+  padding: 0;
+}
+
+nav ul li:hover {
+  background: none;
+  border-left-color: transparent;
 }
 
 nav ul a {
@@ -119,7 +154,11 @@ nav ul a {
   background-color: transparent;
 }
 
-nav ul a:hover { color: var(--ambre); border-left-color: var(--ambre); }
+nav ul a:hover {
+  color: var(--ambre);
+  border-left-color: var(--ambre);
+  background-color: transparent;
+}
 
 nav ul .cta {
   background-color: var(--ambre);
@@ -141,6 +180,7 @@ nav ul .cta:hover { background-color: var(--ambre-fonce); }
     justify-content: center;
     padding: 0.8rem 0 0;
     gap: 0.2rem;
+    display: flex;
   }
   nav ul a {
     padding: 0.4rem 0.8rem;
@@ -148,7 +188,7 @@ nav ul .cta:hover { background-color: var(--ambre-fonce); }
     border: 1px solid transparent;
     font-size: 0.78rem;
   }
-  nav ul a:hover { border-color: var(--ambre); }
+  nav ul a:hover { border-color: var(--ambre); border-left-color: var(--ambre); }
   nav ul .cta { margin-top: 0; }
   .header-top { justify-content: center; }
   .logo { text-align: center; }
@@ -178,17 +218,12 @@ nav ul .cta:hover { background-color: var(--ambre-fonce); }
   100% { transform: translateX(-50%); }
 }
 
-/* TITRES GLOBAUX EN JAUNE */
-h1, h2, h3, h4, h5, h6 {
-  color: var(--ambre);
-  font-family: var(--font-titre);
-}
-
 /* FOOTER */
 footer {
   background-color: var(--noir);
   border-top: 3px solid var(--ambre);
   padding: 2rem 1.5rem;
+  margin-top: 4rem;
 }
 
 .footer-inner { max-width: 1300px; margin: 0 auto; text-align: center; }
@@ -215,6 +250,7 @@ footer {
   flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 1.5rem;
+  list-style: none;
 }
 
 .footer-links a {
