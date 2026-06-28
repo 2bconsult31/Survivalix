@@ -3,22 +3,27 @@ import Layout from '../../layouts/Layout.astro';
 
 const articles = [
   {
-    titre: "On a lu le guide de survie du gouvernement français pour vous",
+    titre: "On a lu le guide de survie du gouvernement francais pour vous",
     url: "/radar/guide-gouvernement-france-2025",
     description: "Et c'est surprenant. Vraiment."
   },
   {
-    titre: "Les signaux faibles à surveiller en 2025",
+    titre: "Les signaux faibles a surveiller en 2025",
     url: "/radar/signaux-faibles-2025",
-    description: "Ce que les médias ne disent pas encore."
+    description: "Ce que les medias ne disent pas encore."
   }
 ]
 ---
 
-<Layout title="Le Radar — Survivalix">
+<Layout title="Le Radar - Survivalix">
   <h1>Le Radar</h1>
-  <p>Actualité, veille et signaux faibles.</p>
-
+  <p>Actualite, veille et signaux faibles.</p>
   <ul>
     {articles.map(article => (
-      <li></li>
+      <li>
+        <a href={article.url}>{article.titre}</a>
+        <p>{article.description}</p>
+      </li>
+    ))}
+  </ul>
+</Layout>
