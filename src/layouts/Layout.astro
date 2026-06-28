@@ -24,7 +24,7 @@ const url = Astro.url;
     <meta name="description" content={description} />
     <link rel="canonical" href={url} />
 
-    <!-- OPEN GRAPH (Facebook, WhatsApp, LinkedIn) -->
+    <!-- OPEN GRAPH -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={url} />
     <meta property="og:title" content={title} />
@@ -175,14 +175,11 @@ const url = Astro.url;
     z-index: 9999;
   }
 
-  /* HEADER */
+  /* HEADER — plus de sticky */
   header {
     background-color: var(--noir);
     border-bottom: 3px solid var(--ambre);
     padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
   }
 
   .header-inner {
@@ -400,7 +397,7 @@ const url = Astro.url;
 
   h1 {
     font-family: var(--font-titre);
-    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-size: clamp(1.4rem, 4vw, 2rem);
     color: var(--ambre);
     margin-bottom: 1rem;
     letter-spacing: 2px;
