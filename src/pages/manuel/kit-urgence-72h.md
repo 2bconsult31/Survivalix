@@ -19,8 +19,6 @@ Le kit 72h, c'est pas de la paranoia. C'est du bon sens. C'est l'équivalent de 
 
 72 heures. Trois jours d'autonomie. Voilà ce qu'on va construire ensemble.
 
----
-
 ## La règle des 4 priorités
 
 Avant de parler liste, comprends la logique. En situation de crise, tes besoins se hiérarchisent toujours dans le même ordre — peu importe la catastrophe.
@@ -31,8 +29,6 @@ Avant de parler liste, comprends la logique. En situation de crise, tes besoins 
 **4. Communiquer** — Savoir ce qui se passe et pouvoir prévenir tes proches.
 
 Tout le reste est secondaire. Garde ça en tête quand tu fais tes achats.
-
----
 
 ## La liste complète
 
@@ -48,9 +44,7 @@ Le minimum recommandé est de **6 litres par personne pour 72h** — 2 litres pa
 - Gourde filtrante type LifeStraw — optionnel, mais excellent si tu dois évacuer à pied
 
 **Le conseil qu'on ne te donne jamais :**
-Les chiffres officiels sont calculés pour rester chez toi, immobile, dans un appartement tempéré. Si tu dois évacuer et marcher sous la pluie en novembre, multiplie par deux.
-
----
+Les chiffres recommandés sont calculés pour rester chez toi, immobile, dans un appartement tempéré. Si tu dois évacuer et marcher sous la pluie en novembre, multiplie par deux.
 
 ### 🍱 Nourriture — Manger sans cuisiner (et sans se déprimer)
 
@@ -71,8 +65,6 @@ Stocke ce que tu manges normalement. Le piège classique du débutant : acheter 
 **Pour les familles avec enfants :**
 Compotes en gourde, petits gâteaux, céréales sèches. Prévois 30% de calories supplémentaires pour les enfants actifs.
 
----
-
 ### 🔦 Lumière & Énergie — Voir dans le noir c'est sous-coté
 
 Une coupure d'électricité la nuit, dans un appartement, c'est immédiatement déstabilisant. La lumière, c'est le premier truc qui change tout psychologiquement.
@@ -85,8 +77,6 @@ Une coupure d'électricité la nuit, dans un appartement, c'est immédiatement d
 
 **La batterie externe c'est la nouvelle lampe de poche.**
 Ton téléphone est ta carte, ta lampe de secours, ta radio et ton seul moyen de communication. Une batterie de 20 000 mAh recharge un smartphone 5 à 6 fois. Achètes-en deux et garde-les chargées en permanence.
-
----
 
 ### 🩺 Santé & Premiers secours — Pas besoin d'être médecin
 
@@ -102,8 +92,6 @@ Le kit de base gère 95% des problèmes courants. Coupures, brûlures légères,
 - Pince à épiler (échardes, tiques)
 - Masques FFP2 — utiles lors de crises spécifiques
 
----
-
 ### 🧥 Chaleur & Vêtements — L'ennemi invisible
 
 L'hypothermie est systématiquement sous-estimée en milieu urbain. Une nuit sans chauffage en hiver peut rapidement mettre en danger un enfant ou une personne âgée.
@@ -113,8 +101,6 @@ L'hypothermie est systématiquement sous-estimée en milieu urbain. Une nuit san
 - Pull chaud et vêtements de rechange pour 3 jours
 - Chaussures de marche solides — si tu dois évacuer à pied
 - Imperméable ou poncho
-
----
 
 ### 📄 Documents — Ce qu'on oublie toujours
 
@@ -130,8 +116,6 @@ En cas d'évacuation, avoir ses documents sous la main évite les situations kaf
 **L'astuce numérique :**
 Scanne tous tes documents et enregistre-les dans un cloud sécurisé. Accessible depuis n'importe quel téléphone, même emprunté.
 
----
-
 ### 🛠️ Divers — Petit mais indispensable
 
 - Couteau multifonction type Swiss Army
@@ -141,8 +125,6 @@ Scanne tous tes documents et enregistre-les dans un cloud sécurisé. Accessible
 - Papier hygiénique et lingettes humides
 - Savon et gel hydroalcoolique
 - Jeu de cartes ou livre — parce que l'ennui en situation de crise génère de l'anxiété, et que l'anxiété génère de mauvaises décisions
-
----
 
 ## Le budget réaliste
 
@@ -157,8 +139,6 @@ Scanne tous tes documents et enregistre-les dans un cloud sécurisé. Accessible
 | Couverture de survie x2 | 5-8€ |
 | Divers (couteau, sifflet, duct tape) | 15-25€ |
 | **TOTAL pour 2 personnes** | **~120-206€** |
-
----
 
 ## Les 5 erreurs classiques
 
@@ -177,8 +157,6 @@ Un kit non vérifié est un faux sentiment de sécurité. Check annuel obligatoi
 **5. Ne jamais tester.**
 Passe une nuit sans électricité chez toi volontairement. Tu vas découvrir ce qui manque avant que ça compte vraiment.
 
----
-
 ## Par où commencer si tu pars de zéro
 
 **Semaine 1** → L'eau. 18L de bouteilles rangées quelque part d'accessible.
@@ -193,14 +171,10 @@ Passe une nuit sans électricité chez toi volontairement. Tu vas découvrir ce 
 
 En 5 semaines, pour moins de 200€, tu as un kit solide.
 
----
-
 ## Télécharge la checklist complète
 
 Toute cette liste en PDF prêt à imprimer — format A4, cases à cocher, design Survivalix.
 
 [⬇ Télécharger la checklist Kit 72h (PDF)](/ressources/checklist-kit-72h.pdf)
-
----
 
 *Sources : Croix-Rouge française, FEMA (USA), The Prepared.*
