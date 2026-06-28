@@ -6,7 +6,7 @@ const { title } = Astro.props;
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,11 +20,18 @@ const { title } = Astro.props;
 
     <header>
       <div class="header-inner">
-        <a href="/" class="logo">
-          <span class="logo-main">SURVIVALIX</span>
-          <span class="logo-sub">// GUIDE DE SURVIE DU CITOYEN //</span>
-        </a>
-        <nav>
+        <div class="header-top">
+          <a href="/" class="logo">
+            <span class="logo-main">SURVIVALIX</span>
+            <span class="logo-sub">// GUIDE DE SURVIE DU CITOYEN //</span>
+          </a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav id="mainNav">
           <ul>
             <li><a href="/manuel">LE MANUEL</a></li>
             <li><a href="/cantine">LA CANTINE</a></li>
@@ -40,11 +47,9 @@ const { title } = Astro.props;
 
     <div class="hero-band">
       <span>⚠ NIVEAU D'ALERTE : MODÉRÉ</span>
-      <span>|</span>
+      <span class="sep">|</span>
       <span>STOCK EAU : VÉRIFIER</span>
-      <span>|</span>
-      <span>KIT 72H : PRÉPARER</span>
-      <span>|</span>
+      <span class="sep">|</span>
       <span>RESTEZ INFORMÉS. RESTEZ VIVANTS.</span>
     </div>
 
@@ -69,10 +74,16 @@ const { title } = Astro.props;
   </body>
 </html>
 
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('mainNav');
+  toggle?.addEventListener('click', () => {
+    nav?.classList.toggle('open');
+    toggle.classList.toggle('active');
+  });
+</script>
+
 <style>
-  /* ============================================
-     RESET & BASE
-  ============================================ */
   *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -103,9 +114,7 @@ const { title } = Astro.props;
     line-height: 1.7;
   }
 
-  /* ============================================
-     EFFET SCANLINES
-  ============================================ */
+  /* SCANLINES */
   .scanlines {
     position: fixed;
     top: 0;
@@ -123,13 +132,11 @@ const { title } = Astro.props;
     z-index: 9999;
   }
 
-  /* ============================================
-     HEADER
-  ============================================ */
+  /* HEADER */
   header {
     background-color: var(--noir);
     border-bottom: 3px solid var(--ambre);
-    padding: 1.2rem 2rem;
+    padding: 1rem;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -138,100 +145,197 @@ const { title } = Astro.props;
   .header-inner {
     max-width: 1300px;
     margin: 0 auto;
+  }
+
+  .header-top {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    justify-content: space-between;
   }
 
   .logo {
     text-decoration: none;
-    text-align: center;
   }
 
   .logo-main {
     display: block;
     font-family: var(--font-titre);
-    font-size: 2.8rem;
+    font-size: clamp(1.4rem, 5vw, 2.8rem);
     color: var(--ambre);
-    letter-spacing: 8px;
+    letter-spacing: 4px;
     text-shadow: 0 0 20px rgba(245, 166, 35, 0.4);
   }
 
   .logo-sub {
     display: block;
     font-family: var(--font-nav);
-    font-size: 0.7rem;
+    font-size: clamp(0.55rem, 1.5vw, 0.7rem);
     color: var(--kaki);
-    letter-spacing: 4px;
-    margin-top: -0.3rem;
+    letter-spacing: 2px;
+  }
+
+  /* BURGER MENU */
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--ambre);
+    transition: all 0.3s;
+  }
+
+  .menu-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* NAV MOBILE */
+  nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  nav.open {
+    max-height: 500px;
   }
 
   nav ul {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 0;
     gap: 0.2rem;
   }
 
   nav ul a {
     display: block;
     font-family: var(--font-nav);
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     font-weight: 700;
     color: var(--creme);
     text-decoration: none;
     letter-spacing: 2px;
-    padding: 0.4rem 0.8rem;
-    border: 1px solid transparent;
+    padding: 0.7rem 1rem;
+    border-left: 3px solid transparent;
     transition: all 0.2s;
   }
 
   nav ul a:hover {
     color: var(--ambre);
-    border-color: var(--ambre);
+    border-left-color: var(--ambre);
+    background-color: var(--noir-clair);
   }
 
   nav ul .cta {
     background-color: var(--ambre);
     color: var(--noir) !important;
-    border-color: var(--ambre);
+    border-left-color: var(--ambre);
+    margin-top: 0.5rem;
+    text-align: center;
   }
 
   nav ul .cta:hover {
     background-color: var(--ambre-fonce);
-    border-color: var(--ambre-fonce);
   }
 
-  /* ============================================
-     HERO BAND
-  ============================================ */
+  /* DESKTOP NAV */
+  @media (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
+
+    nav {
+      max-height: none;
+      overflow: visible;
+    }
+
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0.8rem 0 0;
+      gap: 0.2rem;
+    }
+
+    nav ul a {
+      padding: 0.4rem 0.8rem;
+      border-left: none;
+      border: 1px solid transparent;
+      font-size: 0.78rem;
+    }
+
+    nav ul a:hover {
+      border-color: var(--ambre);
+      background-color: transparent;
+    }
+
+    nav ul .cta {
+      margin-top: 0;
+      text-align: left;
+    }
+
+    .header-top {
+      justify-content: center;
+    }
+
+    .logo {
+      text-align: center;
+    }
+  }
+
+  /* HERO BAND */
   .hero-band {
     background-color: var(--rouge);
     color: var(--creme);
     font-family: var(--font-nav);
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    padding: 0.4rem 2rem;
+    font-size: clamp(0.65rem, 2vw, 0.75rem);
+    letter-spacing: 1px;
+    padding: 0.4rem 1rem;
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    align-items: center;
+    gap: 0.8rem;
     flex-wrap: wrap;
+    text-align: center;
   }
 
-  /* ============================================
-     MAIN
-  ============================================ */
+  .sep {
+    opacity: 0.4;
+  }
+
+  /* MAIN */
   main {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 3rem 2rem;
+    padding: 2rem 1rem;
+  }
+
+  @media (min-width: 768px) {
+    main {
+      padding: 3rem 2rem;
+    }
   }
 
   h1 {
     font-family: var(--font-titre);
-    font-size: 2.5rem;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
     color: var(--ambre);
     margin-bottom: 1rem;
     letter-spacing: 2px;
@@ -239,7 +343,7 @@ const { title } = Astro.props;
 
   h2 {
     font-family: var(--font-titre);
-    font-size: 1.8rem;
+    font-size: clamp(1.3rem, 4vw, 1.8rem);
     color: var(--creme);
     margin-bottom: 0.8rem;
     border-left: 4px solid var(--ambre);
@@ -259,16 +363,28 @@ const { title } = Astro.props;
   ul {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-top: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  @media (min-width: 600px) {
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 900px) {
+    ul {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   ul li {
     background-color: var(--noir-clair);
     border: 1px solid #333;
     border-left: 4px solid var(--ambre);
-    padding: 1.5rem;
+    padding: 1.2rem;
     transition: border-color 0.2s;
   }
 
@@ -278,7 +394,7 @@ const { title } = Astro.props;
 
   ul li a {
     font-family: var(--font-nav);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--creme);
     text-decoration: none;
@@ -290,19 +406,17 @@ const { title } = Astro.props;
   }
 
   ul li p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     margin-top: 0.5rem;
     opacity: 0.7;
   }
 
-  /* ============================================
-     FOOTER
-  ============================================ */
+  /* FOOTER */
   footer {
     background-color: var(--noir);
     border-top: 3px solid var(--ambre);
     margin-top: 4rem;
-    padding: 3rem 2rem;
+    padding: 2rem 1rem;
   }
 
   .footer-inner {
@@ -313,7 +427,7 @@ const { title } = Astro.props;
 
   .footer-logo {
     font-family: var(--font-titre);
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--ambre);
     letter-spacing: 6px;
     margin-bottom: 0.5rem;
@@ -321,7 +435,7 @@ const { title } = Astro.props;
 
   .footer-tagline {
     font-family: var(--font-nav);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: var(--kaki);
     letter-spacing: 2px;
     margin-bottom: 1.5rem;
@@ -330,9 +444,9 @@ const { title } = Astro.props;
   .footer-links {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin-bottom: 1.5rem;
     flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .footer-links a {
