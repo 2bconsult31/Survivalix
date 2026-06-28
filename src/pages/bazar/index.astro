@@ -21,4 +21,10 @@ const articles = [
 
   <ul>
     {articles.map(article => (
-      <li></li>
+      <li>
+        <a href={article.url}>{article.titre}</a>
+        <p>{article.description}</p>
+      </li>
+    ))}
+  </ul>
+</Layout>
