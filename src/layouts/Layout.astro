@@ -19,7 +19,7 @@ const url = Astro.url;
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Oswald:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={url} />
@@ -117,6 +117,111 @@ const url = Astro.url;
 </script>
 
 <style>
+  /* RESET NAV — force override du global */
+  header nav,
+  header nav ul,
+  header nav ul li {
+    all: revert;
+  }
+
+  header nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  header nav.open { max-height: 800px; }
+
+  header nav ul {
+    list-style: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 0.5rem 0 !important;
+    gap: 0 !important;
+    margin: 0 !important;
+    grid-template-columns: none !important;
+    background: none !important;
+  }
+
+  header nav ul li {
+    background: none !important;
+    border: none !important;
+    border-left: none !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+
+  header nav ul li:hover {
+    background: none !important;
+    border-left-color: transparent !important;
+    transform: none !important;
+  }
+
+  header nav ul a {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #F5E6C8;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 0.4rem 1rem;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+    background-color: transparent;
+  }
+
+  header nav ul a:hover {
+    color: #F5A623;
+    border-left-color: #F5A623;
+    background-color: transparent;
+  }
+
+  header nav ul .cta {
+    background-color: #F5A623 !important;
+    color: #0d0d0d !important;
+    border-left-color: #F5A623 !important;
+    margin-top: 0.4rem;
+    text-align: center;
+  }
+
+  header nav ul .cta:hover {
+    background-color: #c4811a !important;
+  }
+
+  @media (min-width: 768px) {
+    .menu-toggle { display: none; }
+
+    header nav {
+      max-height: none !important;
+      overflow: visible !important;
+    }
+
+    header nav ul {
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      padding: 0.8rem 0 0 !important;
+      gap: 0.2rem !important;
+    }
+
+    header nav ul a {
+      padding: 0.4rem 0.8rem;
+      border-left: none;
+      border: 1px solid transparent;
+      font-size: 0.78rem;
+    }
+
+    header nav ul a:hover {
+      border-color: #F5A623;
+      border-left-color: #F5A623;
+    }
+
+    header nav ul .cta { margin-top: 0; }
+    .header-top { justify-content: center; }
+    .logo { text-align: center; }
+  }
+
   /* MAIN */
   main {
     max-width: 1300px;
@@ -128,7 +233,6 @@ const url = Astro.url;
     main { padding: 3rem 2rem; }
   }
 
-  /* TITRES PAGES GÉNÉRIQUES */
   h1 {
     font-size: clamp(1.4rem, 4vw, 2rem);
     margin-bottom: 1rem;
@@ -138,59 +242,8 @@ const url = Astro.url;
   h2 {
     font-size: clamp(1.3rem, 4vw, 1.8rem);
     margin-bottom: 0.8rem;
-    border-left: 4px solid var(--ambre);
+    border-left: 4px solid #F5A623;
     padding-left: 1rem;
-  }
-
-  p {
-    color: var(--creme);
-    margin-bottom: 1rem;
-    opacity: 0.9;
-  }
-
-  a { color: var(--ambre); }
-
-  /* GRILLE CARTES */
-  ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
-
-  @media (min-width: 600px) {
-    ul { grid-template-columns: repeat(2, 1fr); }
-  }
-
-  @media (min-width: 900px) {
-    ul { grid-template-columns: repeat(3, 1fr); }
-  }
-
-  ul li {
-    background-color: var(--noir);
-    border: 1px solid #333;
-    border-left: 4px solid var(--ambre);
-    padding: 1.2rem;
-    transition: border-color 0.2s;
-  }
-
-  ul li:hover { border-left-color: var(--rouge); }
-
-  ul li a {
-    font-family: var(--font-nav);
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--creme);
-    text-decoration: none;
-    letter-spacing: 1px;
-  }
-
-  ul li a:hover { color: var(--ambre); }
-
-  ul li p {
-    font-size: 0.85rem;
-    margin-top: 0.5rem;
-    opacity: 0.7;
+    border-bottom: none;
   }
 </style>
