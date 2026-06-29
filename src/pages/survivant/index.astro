@@ -20,24 +20,26 @@ import Layout from '../../layouts/Layout.astro';
     </div>
   </div>
 
-  <!-- PROGRESS -->
-  <div class="quiz-progress" id="quizProgress">
-    <div class="progress-bar">
-      <div class="progress-fill" id="progressFill" style="width: 0%"></div>
-    </div>
-    <div class="progress-text">
-      <span id="progressNum">Question 1</span>
-      <span id="progressPct">0%</span>
-    </div>
-  </div>
+  <div class="quiz-wrapper">
 
-  <!-- QUIZ -->
-  <div class="quiz-container" id="quizContainer">
-    <div class="question-card" id="questionCard">
-      <div class="question-num" id="questionNum">01 / 10</div>
-      <h2 class="question-text" id="questionText"></h2>
-      <div class="answers-grid" id="answersGrid"></div>
+    <!-- PROGRESS -->
+    <div class="quiz-progress">
+      <div class="progress-header">
+        <span class="progress-label" id="progressNum">QUESTION 1 / 10</span>
+        <span class="progress-pct" id="progressPct">0%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+      </div>
     </div>
+
+    <!-- QUESTION -->
+    <div class="question-card" id="questionCard">
+      <div class="question-num" id="questionNum">01</div>
+      <h2 class="question-text" id="questionText"></h2>
+      <div class="answers-list" id="answersGrid"></div>
+    </div>
+
   </div>
 
 </Layout>
@@ -147,76 +149,16 @@ import Layout from '../../layouts/Layout.astro';
   ];
 
   const archetypes = {
-    batisseur: {
-      nom: "Le Bâtisseur",
-      slug: "batisseur",
-      tagline: "Tu construis pendant que les autres parlent.",
-      description: "En situation de crise, tu passes à l'action. Tu organises l'espace, tu construis les abris, tu prépares le terrain. Le groupe compte sur toi pour transformer le chaos en ordre. Tu n'as pas besoin qu'on te dise quoi faire — tu vois ce qui manque et tu le fais.",
-      couleur: "#8B2500"
-    },
-    chasseur: {
-      nom: "Le Chasseur",
-      slug: "chasseur",
-      tagline: "Là où les autres voient un problème, tu vois des ressources.",
-      description: "Tu connais le terrain. Tu sais trouver l'eau, la nourriture, les ressources que personne d'autre ne voit. Autonome et efficace, tu assures la survie matérielle du groupe. Sans toi, tout le monde aurait faim.",
-      couleur: "#6B7C45"
-    },
-    soigneur: {
-      nom: "Le Soigneur",
-      slug: "soigneur",
-      tagline: "Tu gardes tout le monde en vie — physiquement et moralement.",
-      description: "Tu es la colonne vertébrale humaine du groupe. Tu soignes les blessures, tu détectes la détresse psychologique, tu maintiens le moral quand tout s'effondre. Sans toi, le groupe survivrait peut-être — mais il ne tiendrait pas longtemps ensemble.",
-      couleur: "#F5A623"
-    },
-    bricoleur: {
-      nom: "Le Bricoleur",
-      slug: "bricoleur",
-      tagline: "Tu répares l'irréparable avec trois bouts de ficelle.",
-      description: "Ton superpouvoir c'est l'improvisation. Tu vois le potentiel dans les objets cassés, tu trouves des solutions là où les autres voient des obstacles. Un filtre à eau en plastique recyclé ? Un générateur de fortune ? Tu l'as déjà fait.",
-      couleur: "#c4811a"
-    },
-    stratege: {
-      nom: "Le Stratège",
-      slug: "stratege",
-      tagline: "Tu penses à demain quand les autres pensent à maintenant.",
-      description: "Tu planifies, tu anticipes, tu prends les décisions difficiles. Tu vois la situation dans son ensemble là où les autres sont dans l'urgence. Le groupe te fait confiance pour choisir la bonne direction. Parfois froid, toujours efficace.",
-      couleur: "#0d4f6b"
-    },
-    nourricier: {
-      nom: "Le Nourricier",
-      slug: "nourricier",
-      tagline: "Tu nourris le corps et l'âme du groupe.",
-      description: "La cuisine c'est ton terrain de jeu même en crise. Tu transformes des conserves en repas dignes, tu maintiens les rituels du quotidien pour garder le moral, tu gères les stocks avec une précision chirurgicale. Personne n'a faim quand tu es là.",
-      couleur: "#8B5E3C"
-    },
-    explorateur: {
-      nom: "L'Explorateur",
-      slug: "explorateur",
-      tagline: "Tu cartographies l'inconnu pour que les autres avancent.",
-      description: "Tu as besoin de savoir ce qu'il y a de l'autre côté. Tu pars en reconnaissance, tu cartographies, tu reviens avec des informations que personne d'autre n'aurait. Curieux, mobile, indépendant — tu es les yeux du groupe.",
-      couleur: "#2d6a4f"
-    },
-    technicien: {
-      nom: "Le Technicien",
-      slug: "technicien",
-      tagline: "Tu maintiens le lien avec le monde quand tout s'effondre.",
-      description: "La technologie ne te fait pas peur même quand elle est cassée. Tu répares les radios, tu crées des systèmes de communication, tu gères l'énergie et l'éclairage. Sans toi, le groupe serait aveugle et sourd.",
-      couleur: "#1a4a6b"
-    },
-    fantome: {
-      nom: "Le Fantôme",
-      slug: "fantome",
-      tagline: "Tu passes là où les autres ne peuvent pas aller.",
-      description: "Discret, observateur, insaisissable. Tu te déplaces sans laisser de traces, tu évalues les situations sans te faire repérer, tu apparais quand on a besoin de toi et disparais dans l'ombre. Ton silence est une force.",
-      couleur: "#2d2d3a"
-    },
-    touriste: {
-      nom: "Le Touriste",
-      slug: "touriste",
-      tagline: "Tu cherches le WiFi depuis le début.",
-      description: "Soyons honnêtes — la survie c'est pas vraiment ton truc. Tu as survécu à cette crise grâce aux autres, et tu leur dois probablement une fière chandelle. La bonne nouvelle : tu t'en es sorti vivant. La mauvaise : tu as mangé les réserves d'urgence un mardi soir. Il est temps de lire Survivalix sérieusement.",
-      couleur: "#555"
-    }
+    batisseur: { nom: "Le Bâtisseur", slug: "batisseur" },
+    chasseur: { nom: "Le Chasseur", slug: "chasseur" },
+    soigneur: { nom: "Le Soigneur", slug: "soigneur" },
+    bricoleur: { nom: "Le Bricoleur", slug: "bricoleur" },
+    stratege: { nom: "Le Stratège", slug: "stratege" },
+    nourricier: { nom: "Le Nourricier", slug: "nourricier" },
+    explorateur: { nom: "L'Explorateur", slug: "explorateur" },
+    technicien: { nom: "Le Technicien", slug: "technicien" },
+    fantome: { nom: "Le Fantôme", slug: "fantome" },
+    touriste: { nom: "Le Touriste", slug: "touriste" }
   };
 
   let currentQuestion = 0;
@@ -231,18 +173,23 @@ import Layout from '../../layouts/Layout.astro';
     const pct = Math.round((currentQuestion / questions.length) * 100);
 
     document.getElementById('progressFill').style.width = `${pct}%`;
-    document.getElementById('progressNum').textContent = `Question ${currentQuestion + 1}`;
+    document.getElementById('progressNum').textContent = `QUESTION ${currentQuestion + 1} / ${questions.length}`;
     document.getElementById('progressPct').textContent = `${pct}%`;
-    document.getElementById('questionNum').textContent = `${String(currentQuestion + 1).padStart(2, '0')} / ${questions.length}`;
+    document.getElementById('questionNum').textContent = String(currentQuestion + 1).padStart(2, '0');
     document.getElementById('questionText').textContent = q.text;
 
     const grid = document.getElementById('answersGrid');
     grid.innerHTML = '';
 
+    const letters = ['A', 'B', 'C', 'D', 'E'];
+
     q.answers.forEach((answer, i) => {
       const btn = document.createElement('button');
       btn.className = 'answer-btn';
-      btn.textContent = answer.text;
+      btn.innerHTML = `
+        <span class="answer-letter">${letters[i]}</span>
+        <span class="answer-text">${answer.text}</span>
+      `;
       btn.onclick = () => selectAnswer(answer.scores, btn);
       grid.appendChild(btn);
     });
@@ -261,27 +208,25 @@ import Layout from '../../layouts/Layout.astro';
       if (currentQuestion < questions.length) {
         const card = document.getElementById('questionCard');
         card.style.opacity = '0';
-        card.style.transform = 'translateY(10px)';
+        card.style.transform = 'translateY(12px)';
         setTimeout(() => {
           renderQuestion();
           card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
           card.style.opacity = '1';
           card.style.transform = 'translateY(0)';
-        }, 200);
+        }, 250);
       } else {
         showResult();
       }
-    }, 600);
+    }, 700);
   }
 
   function showResult() {
-    const winner = Object.entries(scores).reduce((a, b) => a[1] > b[1] ? a : b)[0];
-    const archetype = archetypes[winner];
-
     document.getElementById('progressFill').style.width = '100%';
-    document.getElementById('progressNum').textContent = 'Terminé';
+    document.getElementById('progressNum').textContent = 'TERMINÉ';
     document.getElementById('progressPct').textContent = '100%';
 
+    const winner = Object.entries(scores).reduce((a, b) => a[1] > b[1] ? a : b)[0];
     const params = new URLSearchParams({ profil: winner });
     window.location.href = `/survivant/resultat?${params.toString()}`;
   }
@@ -290,11 +235,12 @@ import Layout from '../../layouts/Layout.astro';
 </script>
 
 <style>
+  /* HEADER */
   .quiz-header {
     text-align: center;
-    padding: 3rem 0 2rem;
+    padding: 3rem 0 2.5rem;
     border-bottom: 1px solid #1a1a1a;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   .quiz-label {
@@ -307,7 +253,7 @@ import Layout from '../../layouts/Layout.astro';
 
   .quiz-header h1 {
     font-family: 'Special Elite', cursive;
-    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-size: clamp(1.8rem, 5vw, 3.2rem);
     color: #F5A623;
     letter-spacing: 3px;
     margin-bottom: 1rem;
@@ -317,15 +263,15 @@ import Layout from '../../layouts/Layout.astro';
     font-size: 1rem;
     font-weight: 300;
     max-width: 600px;
-    margin: 0 auto 1rem;
+    margin: 0 auto 1.2rem;
     line-height: 1.7;
     opacity: 0.8;
   }
 
   .quiz-meta {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.78rem;
-    color: #666;
+    font-size: 0.75rem;
+    color: #555;
     letter-spacing: 2px;
     display: flex;
     justify-content: center;
@@ -334,52 +280,70 @@ import Layout from '../../layouts/Layout.astro';
     flex-wrap: wrap;
   }
 
-  .quiz-meta .sep { color: #333; }
+  .quiz-meta .sep { color: #2a2a2a; }
+
+  /* WRAPPER */
+  .quiz-wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+  }
 
   /* PROGRESS */
   .quiz-progress {
-    max-width: 700px;
-    margin: 0 auto 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.6rem;
+  }
+
+  .progress-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    color: #F5A623;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+
+  .progress-pct {
+    font-family: 'Special Elite', cursive;
+    font-size: 0.9rem;
+    color: #F5A623;
   }
 
   .progress-bar {
-    height: 3px;
+    height: 4px;
     background-color: #1a1a1a;
-    margin-bottom: 0.5rem;
+    border: 1px solid #222;
     position: relative;
   }
 
   .progress-fill {
     height: 100%;
     background-color: #F5A623;
-    transition: width 0.4s ease;
+    transition: width 0.5s ease;
+    box-shadow: 0 0 8px rgba(245, 166, 35, 0.4);
   }
 
-  .progress-text {
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.72rem;
-    color: #666;
-    letter-spacing: 1px;
-  }
-
-  /* QUIZ CONTAINER */
-  .quiz-container {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-
+  /* QUESTION CARD */
   .question-card {
+    background-color: #0d0d0d;
+    border: 1px solid #1e1e1e;
+    border-top: 4px solid #F5A623;
+    padding: 2.5rem 2rem;
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
 
   .question-num {
     font-family: 'Special Elite', cursive;
-    font-size: 0.85rem;
-    color: #333;
-    letter-spacing: 2px;
+    font-size: 4rem;
+    color: #1a1a1a;
+    line-height: 1;
     margin-bottom: 1rem;
+    letter-spacing: 2px;
   }
 
   .question-text {
@@ -388,45 +352,94 @@ import Layout from '../../layouts/Layout.astro';
     color: #F5A623;
     line-height: 1.4;
     margin-bottom: 2rem;
-    border: none;
-    padding: 0;
+    border: none !important;
+    padding: 0 !important;
+    letter-spacing: 0.5px;
   }
 
   /* ANSWERS */
-  .answers-grid {
+  .answers-list {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 0.6rem;
   }
 
   .answer-btn {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.92rem;
-    font-weight: 300;
-    color: #ffffff;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
     background-color: #111;
     border: 1px solid #222;
-    border-left: 3px solid transparent;
+    border-left: 3px solid #222;
     padding: 1rem 1.2rem;
     cursor: pointer;
     text-align: left;
-    line-height: 1.5;
-    letter-spacing: 0.3px;
     transition: all 0.2s;
+    position: relative;
   }
 
   .answer-btn:hover:not(:disabled) {
     border-left-color: #F5A623;
-    color: #ffffff;
-    background-color: #1a1a1a;
+    background-color: #161600;
   }
 
-  .answer-btn:disabled { cursor: not-allowed; opacity: 0.5; }
+  .answer-btn:disabled { cursor: not-allowed; }
 
+  .answer-btn:disabled:not(.answer-selected) {
+    opacity: 0.4;
+  }
+
+  .answer-letter {
+    font-family: 'Special Elite', cursive;
+    font-size: 1rem;
+    color: #333;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+    transition: all 0.2s;
+    font-size: 0.8rem;
+  }
+
+  .answer-btn:hover:not(:disabled) .answer-letter {
+    border-color: #F5A623;
+    color: #F5A623;
+  }
+
+  .answer-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 1.55;
+    letter-spacing: 0.3px;
+    flex: 1;
+  }
+
+  /* SELECTED */
   .answer-selected {
     border-left-color: #F5A623 !important;
-    background-color: #1a1200 !important;
+    background-color: #1a1600 !important;
     opacity: 1 !important;
+  }
+
+  .answer-selected .answer-letter {
+    background-color: #F5A623;
+    border-color: #F5A623;
+    color: #0d0d0d !important;
+  }
+
+  .answer-selected .answer-text {
     color: #F5A623 !important;
+  }
+
+  @media (max-width: 600px) {
+    .question-card { padding: 1.5rem 1rem; }
+    .question-num { font-size: 2.5rem; }
   }
 </style>
