@@ -299,3 +299,8 @@ footer {
   opacity: 0.88;
   line-height: 1.85;
 }
+
+/* BLANC GLOBAL — FORCE SUR TOUT LE SITE */
+p, li, span, td, th, label, input, textarea {
+  color: #ffffff;
+}
