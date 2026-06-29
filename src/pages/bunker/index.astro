@@ -33,7 +33,7 @@ import Layout from '../../layouts/Layout.astro';
       </div>
     </div>
 
-    <div class="bunker-suggestions">
+    <div class="bunker-suggestions" id="suggestions">
       <div class="suggestions-label">// QUESTIONS FRÉQUENTES //</div>
       <div class="suggestions-grid">
         <button class="suggestion" onclick="askQuestion('Par où commencer le prepping quand on est débutant ?')">Par où commencer ?</button>
@@ -46,9 +46,9 @@ import Layout from '../../layouts/Layout.astro';
     </div>
 
     <div class="bunker-input-zone">
-      <textarea 
-        id="userInput" 
-        placeholder="Pose ta question au Bunker..." 
+      <textarea
+        id="userInput"
+        placeholder="Pose ta question au Bunker..."
         rows="1"
         onkeydown="handleKeyDown(event)"
         oninput="autoResize(this)"
@@ -65,26 +65,7 @@ import Layout from '../../layouts/Layout.astro';
 
 </Layout>
 
-<script>
-  const SYSTEM_PROMPT = `Tu es l'assistant IA de Survivalix — un site français de survie et prepping grand public avec un ton décalé et de l'humour second degré.
-
-Ton personnage :
-- Tu t'appelles "Le Bunker"
-- Tu es expert en survie, prepping, autonomie et préparation aux crises
-- Tu as de l'humour — pas clownesque, mais avec du second degré et de la légèreté
-- Tu parles en français, tutoiement, langage accessible
-- Tu ne juges jamais le niveau du débutant
-- Tu cites quand c'est pertinent : Croix-Rouge française, FEMA, The Prepared
-- Tu ne cites JAMAIS les sources gouvernementales françaises
-- Tu recommandes les articles de Survivalix quand c'est pertinent
-
-Règles absolues :
-- Jamais d'émojis
-- Jamais de listes à puces trop longues — préfère des paragraphes clairs
-- Toujours finir par une question ou une invitation à creuser le sujet
-- Maximum 3-4 paragraphes par réponse
-- Ton : sérieux mais accessible, expert mais humain`;
-
+<script is:inline>
   let messages = [];
   let isLoading = false;
 
@@ -126,7 +107,7 @@ Règles absolues :
         </div>
         <div class="message-content">
           <div class="message-name">// BUNKER IA //</div>
-          <p>${content.replace(/\n/g, '</p><p>')}</p>
+          ${content.split('\n\n').map(p => `<p>${p}</p>`).join('')}
         </div>
       `;
     } else {
@@ -139,13 +120,12 @@ Règles absolues :
 
     chat.appendChild(div);
     chat.scrollTop = chat.scrollHeight;
-    return div;
   }
 
   function addLoadingMessage() {
     const chat = document.getElementById('chat');
     const div = document.createElement('div');
-    div.className = 'message message-assistant message-loading';
+    div.className = 'message message-assistant';
     div.id = 'loadingMsg';
     div.innerHTML = `
       <div class="message-avatar">
@@ -180,7 +160,7 @@ Règles absolues :
     isLoading = true;
 
     document.getElementById('sendBtn').disabled = true;
-    document.querySelector('.bunker-suggestions').style.display = 'none';
+    document.getElementById('suggestions').style.display = 'none';
 
     addMessage('user', text);
     messages.push({ role: 'user', content: text });
@@ -188,15 +168,10 @@ Règles absolues :
     addLoadingMessage();
 
     try {
-      const response = await fetch('https://api.anthropic.com/v1/messages', {
+      const response = await fetch('/api/bunker', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          model: 'claude-sonnet-4-6',
-          max_tokens: 1000,
-          system: SYSTEM_PROMPT,
-          messages: messages
-        })
+        body: JSON.stringify({ messages: messages })
       });
 
       const data = await response.json();
@@ -217,7 +192,6 @@ Règles absolues :
 </script>
 
 <style>
-  /* BUNKER HEADER */
   .bunker-header {
     text-align: center;
     padding: 3rem 0 2rem;
@@ -244,14 +218,13 @@ Règles absolues :
   .bunker-desc {
     font-family: 'Oswald', sans-serif;
     font-size: 1rem;
-    color: #F5E6C8;
+    color: #ffffff;
     opacity: 0.7;
     font-weight: 300;
     max-width: 600px;
     margin: 0 auto;
   }
 
-  /* CONTAINER */
   .bunker-container {
     max-width: 800px;
     margin: 0 auto;
@@ -260,7 +233,6 @@ Règles absolues :
     gap: 1.5rem;
   }
 
-  /* CHAT */
   .bunker-chat {
     display: flex;
     flex-direction: column;
@@ -273,16 +245,13 @@ Règles absolues :
     scrollbar-color: #333 #0d0d0d;
   }
 
-  /* MESSAGE */
   .message {
     display: flex;
     gap: 1rem;
     align-items: flex-start;
   }
 
-  .message-user {
-    flex-direction: row-reverse;
-  }
+  .message-user { flex-direction: row-reverse; }
 
   .message-avatar {
     width: 40px;
@@ -293,10 +262,7 @@ Règles absolues :
     background-color: #0d0d0d;
   }
 
-  .message-avatar svg {
-    width: 100%;
-    height: 100%;
-  }
+  .message-avatar svg { width: 100%; height: 100%; }
 
   .message-content {
     background-color: #111;
@@ -322,7 +288,7 @@ Règles absolues :
   .message-content p {
     font-family: 'Oswald', sans-serif;
     font-size: 0.95rem;
-    color: #F5E6C8;
+    color: #ffffff;
     opacity: 0.9;
     line-height: 1.8;
     margin-bottom: 0.8rem;
@@ -331,7 +297,6 @@ Règles absolues :
 
   .message-content p:last-child { margin-bottom: 0; }
 
-  /* LOADING */
   .loading-dots {
     display: flex;
     gap: 6px;
@@ -355,9 +320,6 @@ Règles absolues :
     30% { opacity: 1; transform: scale(1); }
   }
 
-  /* SUGGESTIONS */
-  .bunker-suggestions { }
-
   .suggestions-label {
     font-family: 'Oswald', sans-serif;
     font-size: 0.7rem;
@@ -379,7 +341,7 @@ Règles absolues :
   .suggestion {
     font-family: 'Oswald', sans-serif;
     font-size: 0.78rem;
-    color: #F5E6C8;
+    color: #ffffff;
     background: none;
     border: 1px solid #222;
     padding: 0.6rem 0.8rem;
@@ -396,19 +358,15 @@ Règles absolues :
     background-color: #111;
   }
 
-  /* INPUT */
   .bunker-input-zone {
     display: flex;
-    gap: 0;
     border: 1px solid #333;
     border-bottom: 3px solid #F5A623;
     background-color: #111;
     align-items: flex-end;
   }
 
-  .bunker-input-zone:focus-within {
-    border-color: #F5A623;
-  }
+  .bunker-input-zone:focus-within { border-color: #F5A623; }
 
   #userInput {
     flex: 1;
@@ -418,7 +376,7 @@ Règles absolues :
     font-family: 'Oswald', sans-serif;
     font-size: 1rem;
     font-weight: 300;
-    color: #F5E6C8;
+    color: #ffffff;
     padding: 1rem 1.2rem;
     resize: none;
     line-height: 1.6;
@@ -426,10 +384,7 @@ Règles absolues :
     max-height: 200px;
   }
 
-  #userInput::placeholder {
-    color: #444;
-    font-weight: 300;
-  }
+  #userInput::placeholder { color: #444; font-weight: 300; }
 
   #sendBtn {
     background-color: #F5A623;
@@ -447,8 +402,5 @@ Règles absolues :
   #sendBtn:hover { background-color: #c4811a; }
   #sendBtn:disabled { opacity: 0.5; cursor: not-allowed; }
 
-  #sendBtn svg {
-    width: 20px;
-    height: 20px;
-  }
+  #sendBtn svg { width: 20px; height: 20px; }
 </style>
