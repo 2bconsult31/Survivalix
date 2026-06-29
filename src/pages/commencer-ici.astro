@@ -1,7 +1,624 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="Par où commencer ? — Survivalix">
-  <h1>Par où commencer ?</h1>
-  <p>Tu débarques sur Survivalix ? Commence ici.</p>
+
+<Layout 
+  title="Par où commencer ? — Survivalix"
+  description="Tu débarques sur Survivalix ? Voilà le chemin le plus court pour être prêt sans devenir parano. Guide de démarrage pour les débutants complets."
+>
+
+  <!-- HEADER -->
+  <div class="page-header">
+    <div class="page-label">// PROTOCOLE D'INITIALISATION //</div>
+    <h1>Par où commencer ?</h1>
+    <p class="page-desc">
+      Tu n'as jamais préparé quoi que ce soit. Tu ne sais pas ce qu'est un kit 72h. 
+      Tu penses que le prepping c'est pour les paranos. Parfait — t'es exactement au bon endroit.
+    </p>
+  </div>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <div class="intro-inner">
+      <div class="intro-texte">
+        <p>
+          La survie quotidienne, c'est pas une question de bunker ou d'arsenal. 
+          C'est juste être capable de tenir 72 heures sans dépendre de personne — 
+          parce que les crises arrivent, et les premières heures sont toujours les plus chaotiques.
+        </p>
+        <p>
+          Ce guide te donne le chemin le plus court pour aller de zéro à "je suis prêt" 
+          sans te ruiner, sans devenir parano, et sans passer ta vie à stocker des conserves.
+        </p>
+      </div>
+      <div class="intro-stats">
+        <div class="intro-stat">
+          <span class="intro-stat-num">72h</span>
+          <span class="intro-stat-label">L'autonomie minimum recommandée</span>
+        </div>
+        <div class="intro-stat">
+          <span class="intro-stat-num">5</span>
+          <span class="intro-stat-label">Semaines pour être prêt</span>
+        </div>
+        <div class="intro-stat">
+          <span class="intro-stat-num">~150€</span>
+          <span class="intro-stat-label">Le budget pour commencer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ETAPES -->
+  <section class="etapes">
+    <div class="section-label">// PLAN D'ACTION //</div>
+    <h2>Les 5 étapes dans l'ordre</h2>
+
+    <div class="etapes-list">
+
+      <div class="etape">
+        <div class="etape-left">
+          <div class="etape-num">01</div>
+          <div class="etape-line"></div>
+        </div>
+        <div class="etape-content">
+          <div class="etape-semaine">SEMAINE 1</div>
+          <h3>L'eau en premier</h3>
+          <p>
+            Sans eau tu es mort en 3 jours. C'est la priorité absolue, sans discussion. 
+            Cette semaine, tu achètes 18 litres d'eau en bouteille par personne et tu les ranges 
+            dans un endroit accessible — pas à la cave, pas au sous-sol.
+          </p>
+          <div class="etape-action">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 8 C32 8 16 24 16 36 C16 44.8 23.2 52 32 52 C40.8 52 48 44.8 48 36 C48 24 32 8 32 8Z" stroke="#F5A623" stroke-width="1.5" fill="none"/>
+              <path d="M24 38 C24 38 26 44 32 44" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span>Achète 18L d'eau par personne</span>
+          </div>
+          <a href="/outils/calculateur-stock-eau" class="etape-lien">Calculer mon stock d'eau →</a>
+        </div>
+      </div>
+
+      <div class="etape">
+        <div class="etape-left">
+          <div class="etape-num">02</div>
+          <div class="etape-line"></div>
+        </div>
+        <div class="etape-content">
+          <div class="etape-semaine">SEMAINE 2</div>
+          <h3>La nourriture pour 3 jours</h3>
+          <p>
+            Pas besoin de rations militaires. Des conserves que tu manges déjà, 
+            des biscuits, du chocolat, des fruits secs. Le tout doit se manger sans cuisson 
+            ni réfrigération. Et oui — n'oublie pas l'ouvre-boîte.
+          </p>
+          <div class="etape-action">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="16" y="20" width="32" height="36" rx="2" stroke="#F5A623" stroke-width="1.5"/>
+              <path d="M24 20 C24 14 28 10 32 10 C36 10 40 14 40 20" stroke="#F5A623" stroke-width="1.5" fill="none"/>
+              <line x1="22" y1="32" x2="42" y2="32" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="22" y1="40" x2="42" y2="40" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span>3 jours de conserves et snacks</span>
+          </div>
+          <a href="/manuel/kit-urgence-72h" class="etape-lien">Voir la liste complète →</a>
+        </div>
+      </div>
+
+      <div class="etape">
+        <div class="etape-left">
+          <div class="etape-num">03</div>
+          <div class="etape-line"></div>
+        </div>
+        <div class="etape-content">
+          <div class="etape-semaine">SEMAINE 3</div>
+          <h3>La lumière et l'énergie</h3>
+          <p>
+            Une coupure d'électricité la nuit, ça déstabilise immédiatement. 
+            Une lampe frontale, des piles de rechange, une bougie, un briquet. 
+            Et surtout — une batterie externe chargée pour ton téléphone.
+          </p>
+          <div class="etape-action">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="28" r="14" stroke="#F5A623" stroke-width="1.5"/>
+              <line x1="32" y1="8" x2="32" y2="14" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="32" y1="42" x2="32" y2="48" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="12" y1="28" x2="18" y2="28" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="46" y1="28" x2="52" y2="28" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M28 52 L36 52" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M30 56 L34 56" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span>Lampe frontale + batterie externe</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="etape">
+        <div class="etape-left">
+          <div class="etape-num">04</div>
+          <div class="etape-line"></div>
+        </div>
+        <div class="etape-content">
+          <div class="etape-semaine">SEMAINE 4</div>
+          <h3>Les documents et les médicaments</h3>
+          <p>
+            Photocopies de tes documents dans une pochette étanche, tes médicaments sur ordonnance 
+            en réserve, quelques espèces en petites coupures. Et les numéros importants 
+            écrits sur papier — si ton téléphone est mort, tu t'en souviendras pas.
+          </p>
+          <div class="etape-action">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="14" y="8" width="28" height="36" rx="2" stroke="#F5A623" stroke-width="1.5"/>
+              <line x1="20" y1="18" x2="36" y2="18" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="20" y1="24" x2="36" y2="24" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="20" y1="30" x2="30" y2="30" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M34 34 L54 54" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+              <rect x="36" y="32" width="16" height="10" rx="1" stroke="#F5A623" stroke-width="1.5"/>
+            </svg>
+            <span>Documents + médicaments + espèces</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="etape etape-last">
+        <div class="etape-left">
+          <div class="etape-num etape-num-last">05</div>
+        </div>
+        <div class="etape-content">
+          <div class="etape-semaine">SEMAINE 5</div>
+          <h3>La trousse de secours et le reste</h3>
+          <p>
+            Pansements, désinfectant, paracétamol, couverture de survie. 
+            Et un couteau multifonction, un sifflet, du duct tape. 
+            Tu as maintenant un kit 72h complet. Teste-le une nuit sans électricité 
+            chez toi — tu découvriras ce qui manque avant que ça compte.
+          </p>
+          <div class="etape-action">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="12" y="20" width="40" height="32" rx="2" stroke="#F5A623" stroke-width="1.5"/>
+              <line x1="32" y1="28" x2="32" y2="44" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+              <line x1="24" y1="36" x2="40" y2="36" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 20 C24 14 28 10 32 10 C36 10 40 14 40 20" stroke="#F5A623" stroke-width="1.5" fill="none"/>
+            </svg>
+            <span>Kit 72h complet — tu es prêt</span>
+          </div>
+          <a href="/manuel/kit-urgence-72h" class="etape-lien">Voir le guide complet →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROFIL -->
+  <section class="profil-cta">
+    <div class="profil-cta-inner">
+      <div class="section-label">// ÉTAPE BONUS //</div>
+      <h2>Découvre ton profil Survivant</h2>
+      <p>
+        Chaque personne a un profil naturel en situation de crise. 
+        Le Bâtisseur, le Nourricier, l'Explorateur, le Technicien... 
+        Fais le quiz en 2 minutes et reçois ta carte collector personnalisée.
+      </p>
+      <a href="/survivant/quel-survivant-suis-je" class="btn-primary">Faire le quiz →</a>
+    </div>
+  </section>
+
+  <!-- RESSOURCES -->
+  <section class="ressources-rapides">
+    <div class="section-label">// RESSOURCES CLÉS //</div>
+    <h2>Les pages essentielles</h2>
+    <div class="ressources-grid">
+      <a href="/manuel/kit-urgence-72h" class="ressource-card">
+        <div class="ressource-icon">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="12" y="20" width="40" height="32" rx="2" stroke="#F5A623" stroke-width="1.5"/>
+            <line x1="32" y1="28" x2="32" y2="44" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+            <line x1="24" y1="36" x2="40" y2="36" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+            <path d="M24 20 C24 14 28 10 32 10 C36 10 40 14 40 20" stroke="#F5A623" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <div class="ressource-texte">
+          <h3>Kit 72h complet</h3>
+          <p>La liste testée, le budget, les erreurs à éviter.</p>
+        </div>
+        <span class="ressource-arrow">→</span>
+      </a>
+      <a href="/outils/calculateur-stock-eau" class="ressource-card">
+        <div class="ressource-icon">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 8 C32 8 16 24 16 36 C16 44.8 23.2 52 32 52 C40.8 52 48 44.8 48 36 C48 24 32 8 32 8Z" stroke="#F5A623" stroke-width="1.5" fill="none"/>
+            <path d="M24 38 C24 38 26 44 32 44" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="ressource-texte">
+          <h3>Calculateur eau</h3>
+          <p>Combien de litres stocker pour ta famille.</p>
+        </div>
+        <span class="ressource-arrow">→</span>
+      </a>
+      <a href="/bunker" class="ressource-card">
+        <div class="ressource-icon">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="12" y="20" width="40" height="32" rx="2" stroke="#F5A623" stroke-width="1.5"/>
+            <rect x="20" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
+            <rect x="36" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
+            <line x1="24" y1="42" x2="40" y2="42" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="32" y1="12" x2="32" y2="20" stroke="#F5A623" stroke-width="1.5"/>
+            <circle cx="32" cy="10" r="3" stroke="#F5A623" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="ressource-texte">
+          <h3>Assistant IA Bunker</h3>
+          <p>Pose toutes tes questions, sans jugement.</p>
+        </div>
+        <span class="ressource-arrow">→</span>
+      </a>
+    </div>
+  </section>
+
 </Layout>
+
+<style>
+  /* PAGE HEADER */
+  .page-header {
+    text-align: center;
+    padding: 3rem 0 2.5rem;
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 3rem;
+  }
+
+  .page-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #6B7C45;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .page-header h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    color: #F5A623;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+  }
+
+  .page-desc {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.05rem;
+    color: #F5E6C8;
+    opacity: 0.75;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* INTRO */
+  .intro {
+    padding: 3rem 0;
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 3rem;
+  }
+
+  .intro-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .intro-inner { grid-template-columns: 1fr 280px; align-items: center; }
+  }
+
+  .intro-texte p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    color: #F5E6C8;
+    opacity: 0.85;
+    line-height: 1.85;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  .intro-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .intro-stat {
+    background-color: #111;
+    border: 1px solid #222;
+    border-left: 4px solid #F5A623;
+    padding: 1rem 1.2rem;
+  }
+
+  .intro-stat-num {
+    display: block;
+    font-family: 'Special Elite', cursive;
+    font-size: 2rem;
+    color: #F5A623;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+
+  .intro-stat-label {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.78rem;
+    color: #F5E6C8;
+    opacity: 0.6;
+    letter-spacing: 1px;
+  }
+
+  /* ETAPES */
+  .etapes {
+    padding: 3rem 0;
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 3rem;
+  }
+
+  .section-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #6B7C45;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .etapes h2,
+  .profil-cta h2,
+  .ressources-rapides h2 {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    color: #F5A623;
+    margin-bottom: 2.5rem;
+    border: none;
+    padding: 0;
+  }
+
+  .etapes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .etape {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 1.5rem;
+  }
+
+  .etape-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .etape-num {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.8rem;
+    color: #F5A623;
+    line-height: 1;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #F5A623;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  .etape-num-last {
+    border-color: #F5A623;
+    background-color: #F5A623;
+    color: #0d0d0d;
+  }
+
+  .etape-line {
+    width: 2px;
+    flex: 1;
+    background-color: #1e1e1e;
+    margin: 0.5rem 0;
+    min-height: 40px;
+  }
+
+  .etape-content {
+    padding-bottom: 2.5rem;
+  }
+
+  .etape-last .etape-content {
+    padding-bottom: 0;
+  }
+
+  .etape-semaine {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.68rem;
+    color: #6B7C45;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+  }
+
+  .etape-content h3 {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
+    color: #F5E6C8;
+    margin-bottom: 0.8rem;
+    border: none;
+    padding: 0;
+  }
+
+  .etape-content p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.95rem;
+    color: #F5E6C8;
+    opacity: 0.75;
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  .etape-action {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: #111;
+    border: 1px solid #1e1e1e;
+    border-left: 3px solid #F5A623;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .etape-action svg {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+  }
+
+  .etape-action span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #F5E6C8;
+    letter-spacing: 1px;
+  }
+
+  .etape-lien {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #F5A623;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: opacity 0.2s;
+  }
+
+  .etape-lien:hover { opacity: 0.7; }
+
+  /* PROFIL CTA */
+  .profil-cta {
+    padding: 3rem 0;
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .profil-cta-inner {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid #F5A623;
+    padding: 2.5rem 2rem;
+    position: relative;
+  }
+
+  .profil-cta-inner::before {
+    content: '';
+    position: absolute;
+    top: 8px; left: 8px;
+    right: -8px; bottom: -8px;
+    border: 1px solid #222;
+    z-index: -1;
+  }
+
+  .profil-cta .section-label { margin-bottom: 1rem; }
+
+  .profil-cta p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.95rem;
+    color: #F5E6C8;
+    opacity: 0.75;
+    font-weight: 300;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-primary {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background-color: #F5A623;
+    color: #0d0d0d;
+    padding: 0.9rem 2rem;
+    border: 2px solid #F5A623;
+    transition: all 0.2s;
+    display: inline-block;
+  }
+
+  .btn-primary:hover {
+    background-color: #c4811a;
+    border-color: #c4811a;
+  }
+
+  /* RESSOURCES */
+  .ressources-rapides {
+    padding: 3rem 0;
+  }
+
+  .ressources-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .ressource-card {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    background-color: #0d0d0d;
+    border: 1px solid #222;
+    border-left: 4px solid #F5A623;
+    padding: 1.2rem;
+    text-decoration: none;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+
+  .ressource-card:hover {
+    border-left-color: #8B2500;
+    transform: translateX(4px);
+  }
+
+  .ressource-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .ressource-icon svg { width: 100%; height: 100%; }
+
+  .ressource-texte { flex: 1; }
+
+  .ressource-texte h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #F5E6C8;
+    letter-spacing: 1px;
+    margin-bottom: 0.2rem;
+    border: none;
+    padding: 0;
+  }
+
+  .ressource-texte p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.78rem;
+    color: #F5E6C8;
+    opacity: 0.55;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  .ressource-arrow {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    color: #F5A623;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+
+  .ressource-card:hover .ressource-arrow { transform: translateX(4px); }
+</style>
