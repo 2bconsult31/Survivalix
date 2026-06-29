@@ -1,0 +1,454 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Le Bunker — Assistant IA Survivalix" description="Pose tes questions à l'assistant Survivalix. Conseils personnalisés, ton décalé, expertise survie.">
+
+  <div class="bunker-header">
+    <div class="bunker-label">// INTELLIGENCE ARTIFICIELLE //</div>
+    <h1>Le Bunker</h1>
+    <p class="bunker-desc">Pose tes questions à l'assistant Survivalix. Il connaît ses classiques, il a de l'humour, et il ne te jugera pas si tu ne sais pas ce qu'est un kit 72h.</p>
+  </div>
+
+  <div class="bunker-container">
+
+    <div class="bunker-chat" id="chat">
+      <div class="message message-assistant">
+        <div class="message-avatar">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="12" y="20" width="40" height="32" rx="2" stroke="#F5A623" stroke-width="1.5"/>
+            <rect x="20" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
+            <rect x="36" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
+            <line x1="24" y1="42" x2="40" y2="42" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="32" y1="12" x2="32" y2="20" stroke="#F5A623" stroke-width="1.5"/>
+            <circle cx="32" cy="10" r="3" stroke="#F5A623" stroke-width="1.5"/>
+            <line x1="16" y1="36" x2="8" y2="36" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="48" y1="36" x2="56" y2="36" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="message-content">
+          <div class="message-name">// BUNKER IA //</div>
+          <p>Citoyen, bienvenue. Je suis l'assistant Survivalix — formé pour répondre à toutes tes questions sur la survie, le prepping et l'autonomie. Sans jargon inutile, avec un peu d'humour. Qu'est-ce qui t'amène ?</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bunker-suggestions">
+      <div class="suggestions-label">// QUESTIONS FRÉQUENTES //</div>
+      <div class="suggestions-grid">
+        <button class="suggestion" onclick="askQuestion('Par où commencer le prepping quand on est débutant ?')">Par où commencer ?</button>
+        <button class="suggestion" onclick="askQuestion('Quel est le minimum pour un kit 72h en appartement ?')">Kit 72h minimum ?</button>
+        <button class="suggestion" onclick="askQuestion('Combien d\'eau stocker pour une famille de 4 personnes ?')">Stock d'eau famille</button>
+        <button class="suggestion" onclick="askQuestion('Quels aliments stocker en priorité et pour combien de temps ?')">Aliments à stocker</button>
+        <button class="suggestion" onclick="askQuestion('Comment préparer son logement pour une coupure d\'électricité longue ?')">Coupure électricité</button>
+        <button class="suggestion" onclick="askQuestion('Quelle radio acheter pour les urgences ?')">Radio d'urgence</button>
+      </div>
+    </div>
+
+    <div class="bunker-input-zone">
+      <textarea 
+        id="userInput" 
+        placeholder="Pose ta question au Bunker..." 
+        rows="1"
+        onkeydown="handleKeyDown(event)"
+        oninput="autoResize(this)"
+      ></textarea>
+      <button id="sendBtn" onclick="sendMessage()">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="4" y1="12" x2="20" y2="12" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round"/>
+          <polyline points="14,6 20,12 14,18" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+</Layout>
+
+<script>
+  const SYSTEM_PROMPT = `Tu es l'assistant IA de Survivalix — un site français de survie et prepping grand public avec un ton décalé et de l'humour second degré.
+
+Ton personnage :
+- Tu t'appelles "Le Bunker"
+- Tu es expert en survie, prepping, autonomie et préparation aux crises
+- Tu as de l'humour — pas clownesque, mais avec du second degré et de la légèreté
+- Tu parles en français, tutoiement, langage accessible
+- Tu ne juges jamais le niveau du débutant
+- Tu cites quand c'est pertinent : Croix-Rouge française, FEMA, The Prepared
+- Tu ne cites JAMAIS les sources gouvernementales françaises
+- Tu recommandes les articles de Survivalix quand c'est pertinent
+
+Règles absolues :
+- Jamais d'émojis
+- Jamais de listes à puces trop longues — préfère des paragraphes clairs
+- Toujours finir par une question ou une invitation à creuser le sujet
+- Maximum 3-4 paragraphes par réponse
+- Ton : sérieux mais accessible, expert mais humain`;
+
+  let messages = [];
+  let isLoading = false;
+
+  function askQuestion(question) {
+    document.getElementById('userInput').value = question;
+    sendMessage();
+  }
+
+  function handleKeyDown(e) {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      sendMessage();
+    }
+  }
+
+  function autoResize(el) {
+    el.style.height = 'auto';
+    el.style.height = Math.min(el.scrollHeight, 200) + 'px';
+  }
+
+  function addMessage(role, content) {
+    const chat = document.getElementById('chat');
+    const div = document.createElement('div');
+    div.className = `message message-${role}`;
+
+    if (role === 'assistant') {
+      div.innerHTML = `
+        <div class="message-avatar">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="12" y="20" width="40" height="32" rx="2" stroke="#F5A623" stroke-width="1.5"/>
+            <rect x="20" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
+            <rect x="36" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
+            <line x1="24" y1="42" x2="40" y2="42" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="32" y1="12" x2="32" y2="20" stroke="#F5A623" stroke-width="1.5"/>
+            <circle cx="32" cy="10" r="3" stroke="#F5A623" stroke-width="1.5"/>
+            <line x1="16" y1="36" x2="8" y2="36" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="48" y1="36" x2="56" y2="36" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="message-content">
+          <div class="message-name">// BUNKER IA //</div>
+          <p>${content.replace(/\n/g, '</p><p>')}</p>
+        </div>
+      `;
+    } else {
+      div.innerHTML = `
+        <div class="message-content message-content-user">
+          <p>${content}</p>
+        </div>
+      `;
+    }
+
+    chat.appendChild(div);
+    chat.scrollTop = chat.scrollHeight;
+    return div;
+  }
+
+  function addLoadingMessage() {
+    const chat = document.getElementById('chat');
+    const div = document.createElement('div');
+    div.className = 'message message-assistant message-loading';
+    div.id = 'loadingMsg';
+    div.innerHTML = `
+      <div class="message-avatar">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="12" y="20" width="40" height="32" rx="2" stroke="#F5A623" stroke-width="1.5"/>
+          <rect x="20" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
+          <rect x="36" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
+          <line x1="24" y1="42" x2="40" y2="42" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="32" y1="12" x2="32" y2="20" stroke="#F5A623" stroke-width="1.5"/>
+          <circle cx="32" cy="10" r="3" stroke="#F5A623" stroke-width="1.5"/>
+          <line x1="16" y1="36" x2="8" y2="36" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="48" y1="36" x2="56" y2="36" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="message-content">
+        <div class="message-name">// BUNKER IA //</div>
+        <div class="loading-dots"><span></span><span></span><span></span></div>
+      </div>
+    `;
+    chat.appendChild(div);
+    chat.scrollTop = chat.scrollHeight;
+  }
+
+  async function sendMessage() {
+    if (isLoading) return;
+    const input = document.getElementById('userInput');
+    const text = input.value.trim();
+    if (!text) return;
+
+    input.value = '';
+    input.style.height = 'auto';
+    isLoading = true;
+
+    document.getElementById('sendBtn').disabled = true;
+    document.querySelector('.bunker-suggestions').style.display = 'none';
+
+    addMessage('user', text);
+    messages.push({ role: 'user', content: text });
+
+    addLoadingMessage();
+
+    try {
+      const response = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: 'claude-sonnet-4-6',
+          max_tokens: 1000,
+          system: SYSTEM_PROMPT,
+          messages: messages
+        })
+      });
+
+      const data = await response.json();
+      const reply = data.content[0].text;
+
+      document.getElementById('loadingMsg')?.remove();
+      addMessage('assistant', reply);
+      messages.push({ role: 'assistant', content: reply });
+
+    } catch (error) {
+      document.getElementById('loadingMsg')?.remove();
+      addMessage('assistant', 'Connexion au bunker interrompue. Vérifie ta connexion et réessaie.');
+    }
+
+    isLoading = false;
+    document.getElementById('sendBtn').disabled = false;
+  }
+</script>
+
+<style>
+  /* BUNKER HEADER */
+  .bunker-header {
+    text-align: center;
+    padding: 3rem 0 2rem;
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 2rem;
+  }
+
+  .bunker-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #6B7C45;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .bunker-header h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    color: #F5A623;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .bunker-desc {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    color: #F5E6C8;
+    opacity: 0.7;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* CONTAINER */
+  .bunker-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* CHAT */
+  .bunker-chat {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-height: 200px;
+    max-height: 600px;
+    overflow-y: auto;
+    padding: 0.5rem 0;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #0d0d0d;
+  }
+
+  /* MESSAGE */
+  .message {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .message-user {
+    flex-direction: row-reverse;
+  }
+
+  .message-avatar {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border: 1px solid #F5A623;
+    padding: 6px;
+    background-color: #0d0d0d;
+  }
+
+  .message-avatar svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .message-content {
+    background-color: #111;
+    border: 1px solid #1e1e1e;
+    border-left: 3px solid #F5A623;
+    padding: 1rem 1.2rem;
+    flex: 1;
+  }
+
+  .message-content-user {
+    background-color: #1a1a0d;
+    border-left-color: #6B7C45;
+  }
+
+  .message-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.65rem;
+    color: #F5A623;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+  }
+
+  .message-content p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.95rem;
+    color: #F5E6C8;
+    opacity: 0.9;
+    line-height: 1.8;
+    margin-bottom: 0.8rem;
+    font-weight: 300;
+  }
+
+  .message-content p:last-child { margin-bottom: 0; }
+
+  /* LOADING */
+  .loading-dots {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    padding: 4px 0;
+  }
+
+  .loading-dots span {
+    width: 6px;
+    height: 6px;
+    background-color: #F5A623;
+    border-radius: 50%;
+    animation: dot 1.2s infinite;
+  }
+
+  .loading-dots span:nth-child(2) { animation-delay: 0.2s; }
+  .loading-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+  @keyframes dot {
+    0%, 60%, 100% { opacity: 0.2; transform: scale(0.8); }
+    30% { opacity: 1; transform: scale(1); }
+  }
+
+  /* SUGGESTIONS */
+  .bunker-suggestions { }
+
+  .suggestions-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    color: #6B7C45;
+    letter-spacing: 3px;
+    margin-bottom: 0.8rem;
+  }
+
+  .suggestions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+  }
+
+  @media (min-width: 600px) {
+    .suggestions-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .suggestion {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.78rem;
+    color: #F5E6C8;
+    background: none;
+    border: 1px solid #222;
+    padding: 0.6rem 0.8rem;
+    cursor: pointer;
+    text-align: left;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
+    line-height: 1.4;
+  }
+
+  .suggestion:hover {
+    border-color: #F5A623;
+    color: #F5A623;
+    background-color: #111;
+  }
+
+  /* INPUT */
+  .bunker-input-zone {
+    display: flex;
+    gap: 0;
+    border: 1px solid #333;
+    border-bottom: 3px solid #F5A623;
+    background-color: #111;
+    align-items: flex-end;
+  }
+
+  .bunker-input-zone:focus-within {
+    border-color: #F5A623;
+  }
+
+  #userInput {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #F5E6C8;
+    padding: 1rem 1.2rem;
+    resize: none;
+    line-height: 1.6;
+    min-height: 54px;
+    max-height: 200px;
+  }
+
+  #userInput::placeholder {
+    color: #444;
+    font-weight: 300;
+  }
+
+  #sendBtn {
+    background-color: #F5A623;
+    border: none;
+    cursor: pointer;
+    padding: 0 1.2rem;
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+    flex-shrink: 0;
+  }
+
+  #sendBtn:hover { background-color: #c4811a; }
+  #sendBtn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  #sendBtn svg {
+    width: 20px;
+    height: 20px;
+  }
+</style>
