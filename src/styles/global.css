@@ -397,14 +397,15 @@ button {
 /* LOGO SVG */
 .logo-img {
   display: block;
-  width: 500px;
+  width: 400px;
   max-width: 90vw;
   height: auto;
+  margin-bottom: 50px;
 }
 
 .footer-logo-img {
   display: block;
-  width: 500px;
+  width: 300px;
   max-width: 90vw;
   height: auto;
   margin: 0 auto 0.5rem;
