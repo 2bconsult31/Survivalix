@@ -15,7 +15,7 @@ import Layout from '../../layouts/Layout.astro';
     <div class="bunker-chat" id="chat">
       <div class="message message-assistant">
         <div class="message-avatar">
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
             <rect x="12" y="20" width="40" height="32" rx="2" stroke="#F5A623" stroke-width="1.5"/>
             <rect x="20" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
             <rect x="36" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
@@ -86,6 +86,19 @@ import Layout from '../../layouts/Layout.astro';
     el.style.height = Math.min(el.scrollHeight, 200) + 'px';
   }
 
+  function avatarSVG() {
+    return `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+      <rect x="12" y="20" width="40" height="32" rx="2" stroke="#F5A623" stroke-width="1.5"/>
+      <rect x="20" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
+      <rect x="36" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
+      <line x1="24" y1="42" x2="40" y2="42" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="32" y1="12" x2="32" y2="20" stroke="#F5A623" stroke-width="1.5"/>
+      <circle cx="32" cy="10" r="3" stroke="#F5A623" stroke-width="1.5"/>
+      <line x1="16" y1="36" x2="8" y2="36" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="48" y1="36" x2="56" y2="36" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>`;
+  }
+
   function addMessage(role, content) {
     const chat = document.getElementById('chat');
     const div = document.createElement('div');
@@ -93,21 +106,10 @@ import Layout from '../../layouts/Layout.astro';
 
     if (role === 'assistant') {
       div.innerHTML = `
-        <div class="message-avatar">
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="12" y="20" width="40" height="32" rx="2" stroke="#F5A623" stroke-width="1.5"/>
-            <rect x="20" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
-            <rect x="36" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
-            <line x1="24" y1="42" x2="40" y2="42" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="32" y1="12" x2="32" y2="20" stroke="#F5A623" stroke-width="1.5"/>
-            <circle cx="32" cy="10" r="3" stroke="#F5A623" stroke-width="1.5"/>
-            <line x1="16" y1="36" x2="8" y2="36" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="48" y1="36" x2="56" y2="36" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </div>
+        <div class="message-avatar">${avatarSVG()}</div>
         <div class="message-content">
           <div class="message-name">// BUNKER IA //</div>
-          ${content.split('\n\n').map(p => `<p>${p}</p>`).join('')}
+          ${content.split('\n\n').map(p => `<p>${p.replace(/\n/g, '<br/>')}</p>`).join('')}
         </div>
       `;
     } else {
@@ -128,18 +130,7 @@ import Layout from '../../layouts/Layout.astro';
     div.className = 'message message-assistant';
     div.id = 'loadingMsg';
     div.innerHTML = `
-      <div class="message-avatar">
-        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="12" y="20" width="40" height="32" rx="2" stroke="#F5A623" stroke-width="1.5"/>
-          <rect x="20" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
-          <rect x="36" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
-          <line x1="24" y1="42" x2="40" y2="42" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
-          <line x1="32" y1="12" x2="32" y2="20" stroke="#F5A623" stroke-width="1.5"/>
-          <circle cx="32" cy="10" r="3" stroke="#F5A623" stroke-width="1.5"/>
-          <line x1="16" y1="36" x2="8" y2="36" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
-          <line x1="48" y1="36" x2="56" y2="36" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-      </div>
+      <div class="message-avatar">${avatarSVG()}</div>
       <div class="message-content">
         <div class="message-name">// BUNKER IA //</div>
         <div class="loading-dots"><span></span><span></span><span></span></div>
@@ -236,9 +227,9 @@ import Layout from '../../layouts/Layout.astro';
   .bunker-chat {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    min-height: 200px;
-    max-height: 600px;
+    gap: 1.2rem;
+    min-height: 100px;
+    max-height: 500px;
     overflow-y: auto;
     padding: 0.5rem 0;
     scrollbar-width: thin;
@@ -247,29 +238,41 @@ import Layout from '../../layouts/Layout.astro';
 
   .message {
     display: flex;
-    gap: 1rem;
+    gap: 0.8rem;
     align-items: flex-start;
   }
 
   .message-user { flex-direction: row-reverse; }
 
   .message-avatar {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
     flex-shrink: 0;
     border: 1px solid #F5A623;
-    padding: 6px;
+    padding: 4px;
     background-color: #0d0d0d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .message-avatar svg { width: 100%; height: 100%; }
+  .message-avatar svg {
+    width: 28px !important;
+    height: 28px !important;
+    max-width: 28px;
+    max-height: 28px;
+    display: block;
+  }
 
   .message-content {
     background-color: #111;
     border: 1px solid #1e1e1e;
     border-left: 3px solid #F5A623;
-    padding: 1rem 1.2rem;
+    padding: 0.8rem 1rem;
     flex: 1;
+    min-width: 0;
   }
 
   .message-content-user {
@@ -287,12 +290,13 @@ import Layout from '../../layouts/Layout.astro';
 
   .message-content p {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     color: #ffffff;
     opacity: 0.9;
     line-height: 1.8;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.6rem;
     font-weight: 300;
+    word-wrap: break-word;
   }
 
   .message-content p:last-child { margin-bottom: 0; }
