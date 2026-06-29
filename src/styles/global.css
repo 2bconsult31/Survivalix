@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: 'Oswald', sans-serif;
   font-size: 1rem;
-  color: var(--creme);
+  color: #f0f0f0;
   opacity: 0.88;
   line-height: 1.8;
   margin-bottom: 1.2rem;
