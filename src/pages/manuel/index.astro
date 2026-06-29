@@ -3,8 +3,6 @@ import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 
 const articlesPublies = await getCollection('manuel');
-console.log('Articles trouvés:', articlesPublies.length);
-console.log('IDs:', articlesPublies.map(a => a.id));
 
 const articlesPrevus = [
   {
@@ -59,7 +57,7 @@ const articlesPrevus = [
 ]
 ---
 
-<Layout title="Le Manuel — Survivalix" description="Guides pratiques et articles de fond sur la survie quotidienne.">
+<Layout title="Le Manuel — Survivalix" description="Guides pratiques et articles de fond sur la survie quotidienne. Méthodes testées, sans bullshit.">
 
   <div class="manuel-header">
     <div class="manuel-header-label">// SECTION 01 //</div>
@@ -70,11 +68,6 @@ const articlesPrevus = [
       <span class="sep">//</span>
       <span><strong>{articlesPrevus.length}</strong> à venir</span>
     </div>
-  </div>
-
-  <div class="debug" style="background:#111;border:1px solid #F5A623;padding:1rem;margin-bottom:2rem;font-family:monospace;font-size:0.8rem;color:#F5A623;">
-    Articles trouvés : {articlesPublies.length}<br/>
-    IDs : {articlesPublies.map(a => a.id).join(', ')}
   </div>
 
   <div class="manuel-grid">
@@ -96,6 +89,7 @@ const articlesPrevus = [
                 <rect width="400" height="200" fill="#0d0d0d"/>
                 <rect width="400" height="200" fill={`url(#grid-${index})`}/>
                 <circle cx="320" cy="100" r="120" stroke="#F5A623" stroke-width="0.8" fill="none" opacity="0.05"/>
+                <circle cx="320" cy="100" r="70" stroke="#F5A623" stroke-width="0.8" fill="none" opacity="0.05"/>
                 <rect x="20" y="80" width="120" height="20" fill="#F5A623" opacity="0.8"/>
                 <text x="28" y="94" font-family="Oswald,sans-serif" font-size="10" font-weight="700" fill="#0d0d0d" letter-spacing="2">// LE MANUEL //</text>
               </svg>
@@ -266,6 +260,7 @@ const articlesPrevus = [
   }
 
   .card-image-placeholder { background-color: #080808; }
+
   .card-image-locked {
     background-color: #060606;
     display: flex;
