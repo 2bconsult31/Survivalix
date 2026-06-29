@@ -302,5 +302,5 @@ footer {
 
 /* BLANC GLOBAL — FORCE SUR TOUT LE SITE */
 p, li, span, td, th, label, input, textarea {
-  color: #ffffff;
+  color: #ffffff !important;
 }
