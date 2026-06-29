@@ -1,21 +1,14 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 
-const articles = [
-  {
-    num: "01",
-    titre: "Kit d'urgence 72h : la liste complète",
-    description: "Tout ce qu'il faut avoir dans son kit 72h. Liste complète, budget réaliste, erreurs à éviter.",
-    url: "/manuel/kit-urgence-72h",
-    tags: ["débutant", "kit", "urgence"],
-    temps: "8 min",
-    dispo: true
-  },
+const articlesPublies = await getCollection('manuel');
+
+const articlesPrevus = [
   {
     num: "02",
     titre: "Stocker l'eau potable en appartement",
     description: "Combien de litres stocker, comment, où. La méthode simple pour ne jamais être à court.",
-    url: "/manuel/stocker-eau-appartement",
     tags: ["eau", "appartement", "débutant"],
     temps: "6 min",
     dispo: false
@@ -24,7 +17,6 @@ const articles = [
     num: "03",
     titre: "Liste de courses prepper débutant",
     description: "Ce qu'il faut acheter en premier, dans quel ordre, pour quel budget.",
-    url: "/manuel/liste-courses-prepper-debutant",
     tags: ["débutant", "budget", "nourriture"],
     temps: "5 min",
     dispo: false
@@ -33,7 +25,6 @@ const articles = [
     num: "04",
     titre: "Premiers secours — les gestes qui sauvent",
     description: "Les 5 gestes de premiers secours que tout le monde devrait connaître. Sans jargon médical.",
-    url: "/manuel/premiers-secours-gestes-qui-sauvent",
     tags: ["santé", "urgence", "famille"],
     temps: "10 min",
     dispo: false
@@ -42,7 +33,6 @@ const articles = [
     num: "05",
     titre: "Préparer son logement pour une coupure longue",
     description: "Chauffage, eau, nourriture, communication — comment tenir chez soi sans infrastructure.",
-    url: "/manuel/preparer-logement-coupure-longue",
     tags: ["logement", "autonomie", "hiver"],
     temps: "7 min",
     dispo: false
@@ -51,7 +41,6 @@ const articles = [
     num: "06",
     titre: "Communiquer en situation de crise",
     description: "Quand les réseaux tombent, comment rester en contact avec ses proches.",
-    url: "/manuel/communiquer-situation-de-crise",
     tags: ["communication", "famille", "radio"],
     temps: "6 min",
     dispo: false
@@ -60,7 +49,6 @@ const articles = [
     num: "07",
     titre: "Évacuation d'urgence — le plan familial",
     description: "Comment préparer un plan d'évacuation clair pour toute la famille. Avec template.",
-    url: "/manuel/evacuation-urgence-plan-familial",
     tags: ["évacuation", "famille", "plan"],
     temps: "9 min",
     dispo: false
@@ -69,7 +57,6 @@ const articles = [
     num: "08",
     titre: "Comprendre les risques près de chez soi",
     description: "Inondations, séismes, risques industriels — comment identifier les dangers de ta zone.",
-    url: "/manuel/comprendre-risques-pres-de-chez-soi",
     tags: ["risques", "local", "anticipation"],
     temps: "8 min",
     dispo: false
@@ -84,47 +71,102 @@ const articles = [
     <h1>Le Manuel</h1>
     <p class="manuel-header-desc">Guides pratiques et articles de fond. Méthodes testées, sans bullshit.</p>
     <div class="manuel-stats">
-      <span><strong>{articles.filter(a => a.dispo).length}</strong> article{articles.filter(a => a.dispo).length > 1 ? 's' : ''} disponible{articles.filter(a => a.dispo).length > 1 ? 's' : ''}</span>
+      <span><strong>{articlesPublies.length}</strong> article{articlesPublies.length > 1 ? 's' : ''} disponible{articlesPublies.length > 1 ? 's' : ''}</span>
       <span class="sep">//</span>
-      <span><strong>{articles.filter(a => !a.dispo).length}</strong> à venir</span>
+      <span><strong>{articlesPrevus.length}</strong> à venir</span>
     </div>
   </div>
 
   <div class="manuel-grid">
-    {articles.map(article => (
-      <div class={`article-card ${!article.dispo ? 'card-locked' : ''}`}>
-        <div class="card-top">
-          <span class="card-num">{article.num}</span>
-          <span class="card-temps">{article.temps}</span>
-        </div>
-        <div class="card-tags">
-          {article.tags.map(tag => (
-            <span class="card-tag">#{tag}</span>
-          ))}
-        </div>
-        <h2 class="card-titre">{article.titre}</h2>
-        <p class="card-desc">{article.description}</p>
-        <div class="card-footer">
-          {article.dispo ? (
-            <a href={article.url} class="card-lien">
-              Lire l'article
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="4" y1="12" x2="20" y2="12" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
-                <polyline points="14,6 20,12 14,18" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
+
+    <!-- ARTICLES PUBLIÉS — lus depuis content/manuel/ -->
+    {articlesPublies
+      .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+      .map((article, index) => (
+        <a href={`/manuel/${article.slug}`} class="article-card article-card-link">
+          {article.data.image ? (
+            <div class="card-image">
+              <img src={article.data.image} alt={article.data.image_alt || article.data.title} />
+            </div>
           ) : (
-            <span class="card-soon">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="3" y="11" width="18" height="11" rx="1" stroke="#666" stroke-width="1.5"/>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#666" stroke-width="1.5" stroke-linecap="round"/>
+            <div class="card-image card-image-placeholder">
+              <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:absolute;top:0;left:0;">
+                <defs>
+                  <pattern id={`grid-${index}`} width="30" height="30" patternUnits="userSpaceOnUse">
+                    <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#F5A623" stroke-width="0.3" opacity="0.15"/>
+                  </pattern>
+                </defs>
+                <rect width="400" height="200" fill="#0d0d0d"/>
+                <rect width="400" height="200" fill={`url(#grid-${index})`}/>
+                <circle cx="320" cy="100" r="120" stroke="#F5A623" stroke-width="0.8" fill="none" opacity="0.05"/>
+                <circle cx="320" cy="100" r="70" stroke="#F5A623" stroke-width="0.8" fill="none" opacity="0.05"/>
+                <rect x="20" y="75" width="120" height="20" fill="#F5A623" opacity="0.8"/>
+                <text x="28" y="89" font-family="Oswald,sans-serif" font-size="10" font-weight="700" fill="#0d0d0d" letter-spacing="2">// LE MANUEL //</text>
               </svg>
+            </div>
+          )}
+          <div class="card-body">
+            <div class="card-top">
+              <span class="card-num">0{index + 1}</span>
+              <span class="card-temps">~8 min</span>
+            </div>
+            <div class="card-tags">
+              {article.data.tags.map((tag: string) => (
+                <span class="card-tag">#{tag}</span>
+              ))}
+            </div>
+            <h2 class="card-titre">{article.data.title}</h2>
+            <p class="card-desc">{article.data.description}</p>
+            <div class="card-footer">
+              <span class="card-lien">
+                Lire l'article
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="4" y1="12" x2="20" y2="12" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+                  <polyline points="14,6 20,12 14,18" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </a>
+      ))
+    }
+
+    <!-- ARTICLES À VENIR — en dur -->
+    {articlesPrevus.map(article => (
+      <div class="article-card card-locked">
+        <div class="card-image card-image-placeholder card-image-locked">
+          <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:absolute;top:0;left:0;">
+            <rect width="400" height="200" fill="#080808"/>
+            <rect width="400" height="200" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+          </svg>
+          <div class="card-lock-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="11" width="18" height="11" rx="1" stroke="#333" stroke-width="1.5"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <span class="card-num card-num-locked">{article.num}</span>
+            <span class="card-temps card-temps-locked">{article.temps}</span>
+          </div>
+          <div class="card-tags">
+            {article.tags.map((tag: string) => (
+              <span class="card-tag card-tag-locked">#{tag}</span>
+            ))}
+          </div>
+          <h2 class="card-titre card-titre-locked">{article.titre}</h2>
+          <p class="card-desc">{article.description}</p>
+          <div class="card-footer">
+            <span class="card-soon">
               Bientôt disponible
             </span>
-          )}
+          </div>
         </div>
       </div>
     ))}
+
   </div>
 
 </Layout>
@@ -200,31 +242,76 @@ const articles = [
     background-color: #0d0d0d;
     border: 1px solid #222;
     border-top: 3px solid #F5A623;
-    padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
     transition: border-color 0.2s, transform 0.2s;
     position: relative;
+    text-decoration: none;
   }
 
-  .article-card:hover {
-    border-top-color: #F5A623;
+  .article-card-link:hover {
     border-color: #333;
     transform: translateY(-3px);
   }
 
   .card-locked {
-    border-top-color: #222;
-    opacity: 0.6;
+    border-top-color: #1a1a1a;
+    opacity: 0.5;
   }
 
-  .card-locked:hover {
-    transform: none;
-    border-color: #222;
+  /* CARD IMAGE */
+  .card-image {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+    background-color: #0d0d0d;
   }
 
-  /* CARD TOP */
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+  }
+
+  .article-card-link:hover .card-image img {
+    transform: scale(1.03);
+  }
+
+  .card-image-placeholder {
+    background-color: #080808;
+  }
+
+  .card-image-locked {
+    background-color: #060606;
+  }
+
+  .card-lock-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+    height: 32px;
+    opacity: 0.4;
+  }
+
+  .card-lock-icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* CARD BODY */
+  .card-body {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    flex: 1;
+  }
+
   .card-top {
     display: flex;
     justify-content: space-between;
@@ -233,23 +320,23 @@ const articles = [
 
   .card-num {
     font-family: 'Special Elite', cursive;
-    font-size: 2rem;
-    color: #222;
+    font-size: 1.8rem;
+    color: #2a2a2a;
     line-height: 1;
   }
 
-  .article-card:not(.card-locked) .card-num {
-    color: #333;
-  }
+  .card-num-locked { color: #1a1a1a; }
 
   .card-temps {
     font-family: 'Oswald', sans-serif;
     font-size: 0.7rem;
-    color: #666;
+    color: #555;
     letter-spacing: 1px;
     border: 1px solid #222;
     padding: 0.2rem 0.6rem;
   }
+
+  .card-temps-locked { color: #333; border-color: #1a1a1a; }
 
   /* TAGS */
   .card-tags {
@@ -267,75 +354,66 @@ const articles = [
     padding: 0.1rem 0.5rem;
   }
 
+  .card-tag-locked { color: #2a2a2a; border-color: #2a2a2a; }
+
   /* TITRE */
   .card-titre {
     font-family: 'Special Elite', cursive;
-    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    font-size: clamp(0.9rem, 2vw, 1rem);
     color: #F5E6C8;
     line-height: 1.3;
     letter-spacing: 0.5px;
-    border: none;
-    padding: 0;
-    margin: 0;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
-  .article-card:not(.card-locked) .card-titre {
-    color: #F5E6C8;
-  }
+  .card-titre-locked { color: #333; }
 
   /* DESC */
   .card-desc {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     color: #F5E6C8;
-    opacity: 0.6;
+    opacity: 0.55;
     line-height: 1.6;
     font-weight: 300;
     flex: 1;
-    margin: 0;
+    margin: 0 !important;
   }
 
   /* FOOTER */
   .card-footer {
     margin-top: 0.5rem;
-    padding-top: 1rem;
+    padding-top: 0.8rem;
     border-top: 1px solid #1a1a1a;
   }
 
   .card-lien {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     font-weight: 700;
     color: #F5A623;
-    text-decoration: none;
     letter-spacing: 1px;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     transition: gap 0.2s;
+    text-decoration: none;
   }
 
   .card-lien svg {
-    width: 16px;
-    height: 16px;
-    flex-shrink: 0;
-  }
-
-  .card-lien:hover { gap: 0.8rem; }
-
-  .card-soon {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.78rem;
-    color: #444;
-    letter-spacing: 1px;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .card-soon svg {
     width: 14px;
     height: 14px;
     flex-shrink: 0;
+  }
+
+  .article-card-link:hover .card-lien { gap: 0.8rem; }
+
+  .card-soon {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #333;
+    letter-spacing: 1px;
   }
 </style>

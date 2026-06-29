@@ -1,10 +1,11 @@
 ---
-layout: ../../layouts/Article.astro
 title: "Kit d'urgence 72h : la liste complète (testée, sans bullshit)"
 description: "Tout ce qu'il faut avoir dans son kit 72h. Liste complète, budget réaliste, erreurs à éviter. Pour les gens normaux qui veulent être prêts sans devenir fous."
 date: 2025-01-15
 tags: ["debutant", "kit", "urgence", "appartement"]
 rubrique: "manuel"
+image: ""
+image_alt: "Kit d'urgence 72h"
 ---
 
 Soyons honnêtes une seconde.
