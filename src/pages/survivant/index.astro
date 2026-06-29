@@ -355,6 +355,7 @@ import Layout from '../../layouts/Layout.astro';
   }
 
   .answer-btn {
+    all: unset;
     display: flex;
     align-items: flex-start;
     gap: 1rem;
@@ -366,6 +367,7 @@ import Layout from '../../layouts/Layout.astro';
     cursor: pointer;
     text-align: left;
     transition: all 0.2s;
+    box-sizing: border-box;
   }
 
   .answer-btn:hover:not(:disabled) {
