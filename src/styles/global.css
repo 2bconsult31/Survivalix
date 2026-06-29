@@ -304,3 +304,11 @@ footer {
 p, li, td, th, label {
   color: #ffffff !important;
 }
+
+/* RESET BOUTONS NAVIGATEUR */
+button {
+  all: unset;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+}
