@@ -83,7 +83,7 @@ const articlesPrevus = [
     {articlesPublies
       .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
       .map((article, index) => (
-        <a href={`/manuel/${article.slug}`} class="article-card article-card-link">
+        <a href={`/manuel/${article.id}`} class="article-card article-card-link">
           {article.data.image ? (
             <div class="card-image">
               <img src={article.data.image} alt={article.data.image_alt || article.data.title} />

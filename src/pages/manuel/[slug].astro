@@ -1,11 +1,11 @@
 ---
-import { getCollection, getEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
 import Article from '../../layouts/Article.astro';
 
 export async function getStaticPaths() {
   const articles = await getCollection('manuel');
   return articles.map(article => ({
-    params: { slug: article.slug },
+    params: { slug: article.id },
     props: { article }
   }));
 }
