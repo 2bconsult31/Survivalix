@@ -1,0 +1,588 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="Calculateur de stock d'eau — Survivalix"
+  description="Combien de litres d'eau stocker pour ta famille ? Calcule ton stock idéal en fonction de ta situation personnelle."
+>
+
+  <div class="page-header">
+    <div class="page-label">// OUTIL INTERACTIF //</div>
+    <h1>Calculateur de stock d'eau</h1>
+    <p class="page-desc">
+      Combien de litres stocker pour tenir 72h ? Et pour 2 semaines ? 
+      Remplis le formulaire — on calcule tout.
+    </p>
+  </div>
+
+  <div class="calc-container">
+
+    <!-- FORMULAIRE -->
+    <div class="calc-form">
+
+      <div class="form-section">
+        <div class="form-section-label">// TON FOYER //</div>
+
+        <div class="form-group">
+          <label for="adultes">Adultes</label>
+          <div class="counter">
+            <button type="button" onclick="decrement('adultes')">−</button>
+            <span id="adultes-val">2</span>
+            <button type="button" onclick="increment('adultes')">+</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="enfants">Enfants (moins de 12 ans)</label>
+          <div class="counter">
+            <button type="button" onclick="decrement('enfants')">−</button>
+            <span id="enfants-val">0</span>
+            <button type="button" onclick="increment('enfants')">+</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="animaux">Animaux de compagnie</label>
+          <div class="counter">
+            <button type="button" onclick="decrement('animaux')">−</button>
+            <span id="animaux-val">0</span>
+            <button type="button" onclick="increment('animaux')">+</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-label">// OPTIONS //</div>
+
+        <div class="form-group">
+          <label for="duree">Durée d'autonomie visée</label>
+          <div class="select-wrapper">
+            <select id="duree" onchange="calculer()">
+              <option value="3">72h — minimum recommandé</option>
+              <option value="7">1 semaine</option>
+              <option value="14" selected>2 semaines — recommandé</option>
+              <option value="30">1 mois — niveau avancé</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="climat">Climat / saison</label>
+          <div class="select-wrapper">
+            <select id="climat" onchange="calculer()">
+              <option value="1">Tempéré — printemps/automne</option>
+              <option value="1.3">Chaud — été / région chaude</option>
+              <option value="0.9">Froid — hiver</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group form-group-checkbox">
+          <label>
+            <input type="checkbox" id="senior" onchange="calculer()" />
+            <span>Personne âgée ou vulnérable dans le foyer</span>
+          </label>
+        </div>
+
+        <div class="form-group form-group-checkbox">
+          <label>
+            <input type="checkbox" id="activite" onchange="calculer()" />
+            <span>Activité physique prévue (évacuation à pied)</span>
+          </label>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- RÉSULTATS -->
+    <div class="calc-result" id="result">
+
+      <div class="result-header">
+        <div class="result-label">// RÉSULTAT //</div>
+        <div class="result-total" id="result-total">42 L</div>
+        <p class="result-desc" id="result-desc">Pour 2 adultes sur 2 semaines</p>
+      </div>
+
+      <div class="result-breakdown">
+        <div class="breakdown-item">
+          <span class="breakdown-label">Boisson</span>
+          <span class="breakdown-val" id="breakdown-boisson">28 L</span>
+        </div>
+        <div class="breakdown-item">
+          <span class="breakdown-label">Hygiène de base</span>
+          <span class="breakdown-val" id="breakdown-hygiene">14 L</span>
+        </div>
+        <div class="breakdown-item breakdown-item-total">
+          <span class="breakdown-label">TOTAL</span>
+          <span class="breakdown-val" id="breakdown-total">42 L</span>
+        </div>
+      </div>
+
+      <div class="result-stockage">
+        <div class="result-label">// COMMENT STOCKER //</div>
+        <div class="stockage-grid">
+          <div class="stockage-item">
+            <div class="stockage-num" id="stock-bouteilles">28</div>
+            <div class="stockage-desc">Bouteilles 1,5L</div>
+          </div>
+          <div class="stockage-sep">//</div>
+          <div class="stockage-item">
+            <div class="stockage-num" id="stock-bidons">5</div>
+            <div class="stockage-desc">Bidons 10L</div>
+          </div>
+          <div class="stockage-sep">//</div>
+          <div class="stockage-item">
+            <div class="stockage-num" id="stock-packs">4</div>
+            <div class="stockage-desc">Packs 6×1,5L</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-conseil" id="result-conseil">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="10" stroke="#F5A623" stroke-width="1.5"/>
+          <line x1="12" y1="8" x2="12" y2="12" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="12" cy="16" r="1" fill="#F5A623"/>
+        </svg>
+        <p id="conseil-texte">Prévois aussi des pastilles de purification Micropur en cas d'urgence.</p>
+      </div>
+
+      <div class="result-actions">
+        <a href="/manuel/kit-urgence-72h" class="btn-lien">Voir le guide complet →</a>
+        <a href="/bunker" class="btn-lien">Poser une question au Bunker →</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</Layout>
+
+<script>
+  const vals = { adultes: 2, enfants: 0, animaux: 0 };
+
+  function increment(key) {
+    const max = key === 'animaux' ? 5 : 10;
+    if (vals[key] < max) { vals[key]++; }
+    document.getElementById(`${key}-val`).textContent = vals[key];
+    calculer();
+  }
+
+  function decrement(key) {
+    const min = key === 'adultes' ? 1 : 0;
+    if (vals[key] > min) { vals[key]--; }
+    document.getElementById(`${key}-val`).textContent = vals[key];
+    calculer();
+  }
+
+  function calculer() {
+    const duree = parseInt(document.getElementById('duree').value);
+    const climat = parseFloat(document.getElementById('climat').value);
+    const senior = document.getElementById('senior').checked ? 1.2 : 1;
+    const activite = document.getElementById('activite').checked ? 1.3 : 1;
+
+    const litresAdulte = 2 * climat * senior * activite;
+    const litresEnfant = 1.5 * climat * senior;
+    const litresAnimal = 0.5;
+
+    const boisson = Math.ceil(
+      (vals.adultes * litresAdulte + vals.enfants * litresEnfant + vals.animaux * litresAnimal) * duree
+    );
+    const hygiene = Math.ceil((vals.adultes + vals.enfants * 0.7) * 0.5 * duree);
+    const total = boisson + hygiene;
+
+    document.getElementById('result-total').textContent = `${total} L`;
+    document.getElementById('result-desc').textContent = buildDesc(duree);
+    document.getElementById('breakdown-boisson').textContent = `${boisson} L`;
+    document.getElementById('breakdown-hygiene').textContent = `${hygiene} L`;
+    document.getElementById('breakdown-total').textContent = `${total} L`;
+    document.getElementById('stock-bouteilles').textContent = Math.ceil(total / 1.5);
+    document.getElementById('stock-bidons').textContent = Math.ceil(total / 10);
+    document.getElementById('stock-packs').textContent = Math.ceil(total / 9);
+
+    updateConseil(total, duree);
+  }
+
+  function buildDesc(duree) {
+    const parts = [];
+    if (vals.adultes > 0) parts.push(`${vals.adultes} adulte${vals.adultes > 1 ? 's' : ''}`);
+    if (vals.enfants > 0) parts.push(`${vals.enfants} enfant${vals.enfants > 1 ? 's' : ''}`);
+    if (vals.animaux > 0) parts.push(`${vals.animaux} animal${vals.animaux > 1 ? 'aux' : ''}`);
+    const dureeLabel = { 3: '72h', 7: '1 semaine', 14: '2 semaines', 30: '1 mois' }[duree];
+    return `Pour ${parts.join(', ')} sur ${dureeLabel}`;
+  }
+
+  function updateConseil(total, duree) {
+    let conseil = '';
+    if (total > 200) {
+      conseil = 'Pour un tel volume, envisage des jerricans de 20L ou une citerne. Les bouteilles individuelles deviendraient ingérables.';
+    } else if (duree >= 14) {
+      conseil = 'Pour un stock longue durée, préfère les bouteilles en verre ou PET épais. Vérifie les dates de péremption et renouvelle tous les 6 mois.';
+    } else if (vals.animaux > 0) {
+      conseil = 'N\'oublie pas que les animaux ont aussi besoin d\'eau fraîche. Stocke séparément leur réserve dans des contenants adaptés.';
+    } else {
+      conseil = 'Prévois aussi des pastilles de purification Micropur — indispensables si tu dois utiliser une source d\'eau douteuse.';
+    }
+    document.getElementById('conseil-texte').textContent = conseil;
+  }
+
+  calculer();
+</script>
+
+<style>
+  .page-header {
+    text-align: center;
+    padding: 3rem 0 2.5rem;
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 3rem;
+  }
+
+  .page-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #6B7C45;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .page-header h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    color: #F5A623;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+  }
+
+  .page-desc {
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.7;
+    opacity: 0.8;
+  }
+
+  /* CONTAINER */
+  .calc-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    .calc-container { grid-template-columns: 1fr 1fr; align-items: start; }
+  }
+
+  /* FORM */
+  .calc-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .form-section {
+    background-color: #111;
+    border: 1px solid #1e1e1e;
+    border-top: 3px solid #F5A623;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .form-section-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    color: #6B7C45;
+    letter-spacing: 3px;
+    margin-bottom: 0.3rem;
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .form-group label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    flex: 1;
+  }
+
+  .form-group-checkbox {
+    flex-direction: row;
+  }
+
+  .form-group-checkbox label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    cursor: pointer;
+  }
+
+  .form-group-checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #F5A623;
+    flex-shrink: 0;
+    margin-top: 2px;
+    cursor: pointer;
+  }
+
+  .form-group-checkbox span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.88rem;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+
+  /* COUNTER */
+  .counter {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    border: 1px solid #333;
+    flex-shrink: 0;
+  }
+
+  .counter button {
+    background: none;
+    border: none;
+    color: #F5A623;
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .counter button:hover { background-color: #1a1a1a; }
+
+  .counter span {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.2rem;
+    color: #ffffff;
+    width: 36px;
+    text-align: center;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    line-height: 36px;
+  }
+
+  /* SELECT */
+  .select-wrapper {
+    flex-shrink: 0;
+    min-width: 180px;
+  }
+
+  .select-wrapper select {
+    width: 100%;
+    background-color: #0d0d0d;
+    border: 1px solid #333;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+    appearance: none;
+    font-weight: 300;
+  }
+
+  .select-wrapper select:focus {
+    outline: none;
+    border-color: #F5A623;
+  }
+
+  /* RESULT */
+  .calc-result {
+    background-color: #111;
+    border: 1px solid #1e1e1e;
+    border-top: 3px solid #F5A623;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: sticky;
+    top: 2rem;
+  }
+
+  .result-header { text-align: center; }
+
+  .result-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    color: #6B7C45;
+    letter-spacing: 3px;
+    margin-bottom: 0.8rem;
+  }
+
+  .result-total {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(3rem, 8vw, 5rem);
+    color: #F5A623;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .result-desc {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    color: #ffffff;
+    opacity: 0.6;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  /* BREAKDOWN */
+  .result-breakdown {
+    border: 1px solid #1e1e1e;
+  }
+
+  .breakdown-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #1a1a1a;
+  }
+
+  .breakdown-item:last-child { border-bottom: none; }
+
+  .breakdown-item-total {
+    background-color: #0d0d0d;
+  }
+
+  .breakdown-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    color: #ffffff;
+    opacity: 0.7;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  .breakdown-item-total .breakdown-label {
+    color: #F5A623;
+    opacity: 1;
+    font-weight: 700;
+  }
+
+  .breakdown-val {
+    font-family: 'Special Elite', cursive;
+    font-size: 0.95rem;
+    color: #ffffff;
+  }
+
+  .breakdown-item-total .breakdown-val {
+    color: #F5A623;
+    font-size: 1.1rem;
+  }
+
+  /* STOCKAGE */
+  .result-stockage {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .stockage-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .stockage-item { text-align: center; flex: 1; }
+
+  .stockage-num {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.8rem;
+    color: #F5A623;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+
+  .stockage-desc {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    color: #ffffff;
+    opacity: 0.55;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+  }
+
+  .stockage-sep {
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  /* CONSEIL */
+  .result-conseil {
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+    background-color: #0d0d0d;
+    border: 1px solid #1e1e1e;
+    border-left: 3px solid #F5A623;
+    padding: 0.8rem 1rem;
+  }
+
+  .result-conseil svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .result-conseil p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    color: #ffffff;
+    opacity: 0.75;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* ACTIONS */
+  .result-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .btn-lien {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #F5A623;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 0.6rem 1rem;
+    border: 1px solid #333;
+    text-align: center;
+    transition: all 0.2s;
+  }
+
+  .btn-lien:hover {
+    border-color: #F5A623;
+    background-color: #111;
+  }
+</style>
