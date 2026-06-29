@@ -2,7 +2,7 @@ import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
 const manuel = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/manuel' }),
+  loader: glob({ pattern: '**/*.md', base: 'src/content/manuel' }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
