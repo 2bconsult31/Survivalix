@@ -1,33 +1,432 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-
-const profils = [
-  { nom: "Le Bâtisseur", url: "/survivant/le-batisseur", description: "Organisé, prévoyant, stock béton." },
-  { nom: "Le Chasseur", url: "/survivant/le-chasseur", description: "Instinctif, terrain, débrouillard." },
-  { nom: "Le Soigneur", url: "/survivant/le-soigneur", description: "Empathique, premiers secours, communauté." },
-  { nom: "Le Bricoleur", url: "/survivant/le-bricoleur", description: "Créatif, récup, MacGyver." },
-  { nom: "Le Stratège", url: "/survivant/le-stratege", description: "Calme, analyse, leadership." },
-  { nom: "Le Nourricier", url: "/survivant/le-nourricier", description: "Cuisine, jardinage, stockage food." },
-  { nom: "L'Explorateur", url: "/survivant/l-explorateur", description: "Mobilité, cartographie, reconnaissance." },
-  { nom: "Le Technicien", url: "/survivant/le-technicien", description: "Radio, énergie, outils." }
-]
 ---
 
-<Layout title="Quel Survivant es-tu ? — Survivalix">
-  <h1>Quel Survivant es-tu ?</h1>
-  <p>Découvre ton profil et télécharge ta carte collector.</p>
+<Layout
+  title="Quel Survivant es-tu ? — Survivalix"
+  description="Découvre ton profil de survivant en 10 questions. Bâtisseur, Stratège, Soigneur ou Touriste ? Télécharge ta carte collector personnalisée."
+>
 
-  <a href="/survivant/quel-survivant-suis-je">
-    → Faire le quiz
-  </a>
+  <div class="quiz-header">
+    <div class="quiz-label">// IDENTIFICATION DU CITOYEN //</div>
+    <h1>Quel Survivant es-tu ?</h1>
+    <p class="quiz-desc">10 questions. 10 archétypes. Un seul profil — le tien. Découvre ton rôle naturel en situation de crise et télécharge ta carte collector.</p>
+    <div class="quiz-meta">
+      <span>10 questions</span>
+      <span class="sep">//</span>
+      <span>2 minutes</span>
+      <span class="sep">//</span>
+      <span>Carte collector à télécharger</span>
+    </div>
+  </div>
 
-  <h2>Les 8 profils</h2>
-  <ul>
-    {profils.map(profil => (
-      <li>
-        <a href={profil.url}>{profil.nom}</a>
-        <p>{profil.description}</p>
-      </li>
-    ))}
-  </ul>
+  <!-- PROGRESS -->
+  <div class="quiz-progress" id="quizProgress">
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+    </div>
+    <div class="progress-text">
+      <span id="progressNum">Question 1</span>
+      <span id="progressPct">0%</span>
+    </div>
+  </div>
+
+  <!-- QUIZ -->
+  <div class="quiz-container" id="quizContainer">
+    <div class="question-card" id="questionCard">
+      <div class="question-num" id="questionNum">01 / 10</div>
+      <h2 class="question-text" id="questionText"></h2>
+      <div class="answers-grid" id="answersGrid"></div>
+    </div>
+  </div>
+
 </Layout>
+
+<script is:inline>
+  const questions = [
+    {
+      text: "La tempête coupe l'électricité. Ton premier réflexe ?",
+      answers: [
+        { text: "Je sors mes lampes frontales et ma radio à piles — tout est dans le tiroir prévu.", scores: { batisseur: 2, stratege: 1 } },
+        { text: "Je vérifie les blessés et l'état de santé de tout le monde.", scores: { soigneur: 2, nourricier: 1 } },
+        { text: "Je cherche ce qui peut être récupéré ou réparé dans la maison.", scores: { bricoleur: 2, technicien: 1 } },
+        { text: "Je sors voir ce qui se passe dehors et évalue la situation.", scores: { explorateur: 2, chasseur: 1 } },
+        { text: "Je tweete 'sans électricité lol' et j'attends que ça revienne.", scores: { touriste: 3 } }
+      ]
+    },
+    {
+      text: "Tu dois nourrir un groupe de 6 personnes avec ce qu'il y a dans les placards. Tu fais quoi ?",
+      answers: [
+        { text: "J'inventorie tout, je calcule les calories disponibles et je planifie les repas sur 3 jours.", scores: { stratege: 2, batisseur: 1 } },
+        { text: "Je cuisine quelque chose de bon avec ce qu'il y a — la morale du groupe c'est important.", scores: { nourricier: 3 } },
+        { text: "Je pars chercher ce qui manque dans les environs.", scores: { chasseur: 2, explorateur: 1 } },
+        { text: "Je demande si quelqu'un a une allergie et je gère les soins si besoin.", scores: { soigneur: 2 } },
+        { text: "Je commande sur Uber Eats et je réalise qu'il n'y a pas de réseau.", scores: { touriste: 3 } }
+      ]
+    },
+    {
+      text: "Quelqu'un se blesse. Que fais-tu en premier ?",
+      answers: [
+        { text: "Je sors la trousse de premiers secours et j'évalue la blessure.", scores: { soigneur: 3 } },
+        { text: "Je cherche du matériel de fortune pour improviser un pansement.", scores: { bricoleur: 2, soigneur: 1 } },
+        { text: "Je reste calme, je coordonne les autres et je prends les décisions.", scores: { stratege: 2, batisseur: 1 } },
+        { text: "Je pars chercher de l'aide ou un médecin.", scores: { explorateur: 2, chasseur: 1 } },
+        { text: "Je filme pour mettre sur Instagram en attendant que quelqu'un d'autre gère.", scores: { touriste: 3 } }
+      ]
+    },
+    {
+      text: "On doit établir un camp temporaire. Ton rôle naturel ?",
+      answers: [
+        { text: "Je construis les abris et j'organise l'espace logiquement.", scores: { batisseur: 3 } },
+        { text: "Je pars en reconnaissance pour trouver eau, nourriture et ressources.", scores: { chasseur: 2, explorateur: 1 } },
+        { text: "Je m'assure que tout le monde va bien et je gère les tensions.", scores: { soigneur: 2, nourricier: 1 } },
+        { text: "Je m'occupe des systèmes de communication et d'éclairage.", scores: { technicien: 3 } },
+        { text: "Je m'installe confortablement et je demande quand le camp sera prêt.", scores: { touriste: 3 } }
+      ]
+    },
+    {
+      text: "Tu as 200€ et une heure pour préparer un kit d'urgence. Tu achètes quoi en priorité ?",
+      answers: [
+        { text: "Eau, nourriture longue durée, couvertures de survie — les bases d'abord.", scores: { batisseur: 2, stratege: 1 } },
+        { text: "Du matériel médical complet et des médicaments de base.", scores: { soigneur: 3 } },
+        { text: "Une radio, des piles, une batterie externe et une lampe frontale.", scores: { technicien: 2, bricoleur: 1 } },
+        { text: "Des vivres pour cuisiner de vrais repas même en crise.", scores: { nourricier: 2, chasseur: 1 } },
+        { text: "Des snacks, un livre et des chargeurs — si ça dure je vais m'ennuyer.", scores: { touriste: 3 } }
+      ]
+    },
+    {
+      text: "Une crise dure depuis 5 jours. Comment tu maintiens le moral du groupe ?",
+      answers: [
+        { text: "Je cuisine quelque chose de bon — un vrai repas change tout.", scores: { nourricier: 3 } },
+        { text: "J'organise les tâches clairement pour que personne ne tourne en rond.", scores: { stratege: 2, batisseur: 1 } },
+        { text: "J'écoute, je soutiens, je détecte qui est à bout.", scores: { soigneur: 3 } },
+        { text: "Je pars explorer et je reviens avec de bonnes nouvelles.", scores: { explorateur: 2, fantome: 1 } },
+        { text: "Je propose de jouer aux cartes et je mange les réserves d'urgence.", scores: { touriste: 3 } }
+      ]
+    },
+    {
+      text: "Tu dois traverser une zone inconnue. Comment tu procèdes ?",
+      answers: [
+        { text: "Je cartographie mentalement, je repère les points d'eau et les abris.", scores: { explorateur: 3 } },
+        { text: "Je passe inaperçu, j'observe avant d'agir, je ne laisse pas de traces.", scores: { fantome: 3 } },
+        { text: "Je planifie l'itinéraire le plus sûr et je prévois des alternatives.", scores: { stratege: 2, explorateur: 1 } },
+        { text: "Je pars en éclaireur et je reviens faire mon rapport.", scores: { chasseur: 2, fantome: 1 } },
+        { text: "Je cherche la prochaine ville avec un hôtel et du WiFi.", scores: { touriste: 3 } }
+      ]
+    },
+    {
+      text: "Le groupe manque d'eau potable. Ta solution ?",
+      answers: [
+        { text: "Je construis un système de collecte d'eau de pluie.", scores: { batisseur: 2, bricoleur: 1 } },
+        { text: "Je pars trouver une source et je vérifie si elle est potable.", scores: { chasseur: 3 } },
+        { text: "J'utilise les pastilles de purification que j'ai dans mon kit.", scores: { stratege: 2, technicien: 1 } },
+        { text: "Je bricole un filtre avec ce qu'on a sous la main.", scores: { bricoleur: 3 } },
+        { text: "Je vérifie si j'ai encore de l'Evian dans mon sac à dos.", scores: { touriste: 3 } }
+      ]
+    },
+    {
+      text: "Les communications sont coupées. Comment tu restes informé ?",
+      answers: [
+        { text: "Ma radio à manivelle capte les fréquences d'urgence.", scores: { technicien: 2, stratege: 1 } },
+        { text: "Je pars en reconnaissance pour collecter des infos sur le terrain.", scores: { explorateur: 2, chasseur: 1 } },
+        { text: "J'observe les signaux naturels — météo, comportement animal, fumée.", scores: { fantome: 2, chasseur: 1 } },
+        { text: "Je répare ou bricole un système de communication de fortune.", scores: { bricoleur: 2, technicien: 1 } },
+        { text: "J'attends que quelqu'un vienne m'expliquer ce qui se passe.", scores: { touriste: 3 } }
+      ]
+    },
+    {
+      text: "La crise est terminée. Quelle est ta première réaction ?",
+      answers: [
+        { text: "J'analyse ce qui a bien ou mal fonctionné pour être mieux préparé.", scores: { stratege: 2, batisseur: 1 } },
+        { text: "Je vérifie l'état de santé de tout le monde et je soigne les séquelles.", scores: { soigneur: 3 } },
+        { text: "Je reconstruis et j'améliore ce qui peut l'être.", scores: { batisseur: 2, bricoleur: 1 } },
+        { text: "Je disparais dans la nature pour souffler — j'ai besoin de solitude.", scores: { fantome: 2, explorateur: 1 } },
+        { text: "Je poste un thread sur X en racontant comment j'ai 'survécu'.", scores: { touriste: 3 } }
+      ]
+    }
+  ];
+
+  const archetypes = {
+    batisseur: {
+      nom: "Le Bâtisseur",
+      slug: "batisseur",
+      tagline: "Tu construis pendant que les autres parlent.",
+      description: "En situation de crise, tu passes à l'action. Tu organises l'espace, tu construis les abris, tu prépares le terrain. Le groupe compte sur toi pour transformer le chaos en ordre. Tu n'as pas besoin qu'on te dise quoi faire — tu vois ce qui manque et tu le fais.",
+      couleur: "#8B2500"
+    },
+    chasseur: {
+      nom: "Le Chasseur",
+      slug: "chasseur",
+      tagline: "Là où les autres voient un problème, tu vois des ressources.",
+      description: "Tu connais le terrain. Tu sais trouver l'eau, la nourriture, les ressources que personne d'autre ne voit. Autonome et efficace, tu assures la survie matérielle du groupe. Sans toi, tout le monde aurait faim.",
+      couleur: "#6B7C45"
+    },
+    soigneur: {
+      nom: "Le Soigneur",
+      slug: "soigneur",
+      tagline: "Tu gardes tout le monde en vie — physiquement et moralement.",
+      description: "Tu es la colonne vertébrale humaine du groupe. Tu soignes les blessures, tu détectes la détresse psychologique, tu maintiens le moral quand tout s'effondre. Sans toi, le groupe survivrait peut-être — mais il ne tiendrait pas longtemps ensemble.",
+      couleur: "#F5A623"
+    },
+    bricoleur: {
+      nom: "Le Bricoleur",
+      slug: "bricoleur",
+      tagline: "Tu répares l'irréparable avec trois bouts de ficelle.",
+      description: "Ton superpouvoir c'est l'improvisation. Tu vois le potentiel dans les objets cassés, tu trouves des solutions là où les autres voient des obstacles. Un filtre à eau en plastique recyclé ? Un générateur de fortune ? Tu l'as déjà fait.",
+      couleur: "#c4811a"
+    },
+    stratege: {
+      nom: "Le Stratège",
+      slug: "stratege",
+      tagline: "Tu penses à demain quand les autres pensent à maintenant.",
+      description: "Tu planifies, tu anticipes, tu prends les décisions difficiles. Tu vois la situation dans son ensemble là où les autres sont dans l'urgence. Le groupe te fait confiance pour choisir la bonne direction. Parfois froid, toujours efficace.",
+      couleur: "#0d4f6b"
+    },
+    nourricier: {
+      nom: "Le Nourricier",
+      slug: "nourricier",
+      tagline: "Tu nourris le corps et l'âme du groupe.",
+      description: "La cuisine c'est ton terrain de jeu même en crise. Tu transformes des conserves en repas dignes, tu maintiens les rituels du quotidien pour garder le moral, tu gères les stocks avec une précision chirurgicale. Personne n'a faim quand tu es là.",
+      couleur: "#8B5E3C"
+    },
+    explorateur: {
+      nom: "L'Explorateur",
+      slug: "explorateur",
+      tagline: "Tu cartographies l'inconnu pour que les autres avancent.",
+      description: "Tu as besoin de savoir ce qu'il y a de l'autre côté. Tu pars en reconnaissance, tu cartographies, tu reviens avec des informations que personne d'autre n'aurait. Curieux, mobile, indépendant — tu es les yeux du groupe.",
+      couleur: "#2d6a4f"
+    },
+    technicien: {
+      nom: "Le Technicien",
+      slug: "technicien",
+      tagline: "Tu maintiens le lien avec le monde quand tout s'effondre.",
+      description: "La technologie ne te fait pas peur même quand elle est cassée. Tu répares les radios, tu crées des systèmes de communication, tu gères l'énergie et l'éclairage. Sans toi, le groupe serait aveugle et sourd.",
+      couleur: "#1a4a6b"
+    },
+    fantome: {
+      nom: "Le Fantôme",
+      slug: "fantome",
+      tagline: "Tu passes là où les autres ne peuvent pas aller.",
+      description: "Discret, observateur, insaisissable. Tu te déplaces sans laisser de traces, tu évalues les situations sans te faire repérer, tu apparais quand on a besoin de toi et disparais dans l'ombre. Ton silence est une force.",
+      couleur: "#2d2d3a"
+    },
+    touriste: {
+      nom: "Le Touriste",
+      slug: "touriste",
+      tagline: "Tu cherches le WiFi depuis le début.",
+      description: "Soyons honnêtes — la survie c'est pas vraiment ton truc. Tu as survécu à cette crise grâce aux autres, et tu leur dois probablement une fière chandelle. La bonne nouvelle : tu t'en es sorti vivant. La mauvaise : tu as mangé les réserves d'urgence un mardi soir. Il est temps de lire Survivalix sérieusement.",
+      couleur: "#555"
+    }
+  };
+
+  let currentQuestion = 0;
+  let scores = {
+    batisseur: 0, chasseur: 0, soigneur: 0, bricoleur: 0,
+    stratege: 0, nourricier: 0, explorateur: 0, technicien: 0,
+    fantome: 0, touriste: 0
+  };
+
+  function renderQuestion() {
+    const q = questions[currentQuestion];
+    const pct = Math.round((currentQuestion / questions.length) * 100);
+
+    document.getElementById('progressFill').style.width = `${pct}%`;
+    document.getElementById('progressNum').textContent = `Question ${currentQuestion + 1}`;
+    document.getElementById('progressPct').textContent = `${pct}%`;
+    document.getElementById('questionNum').textContent = `${String(currentQuestion + 1).padStart(2, '0')} / ${questions.length}`;
+    document.getElementById('questionText').textContent = q.text;
+
+    const grid = document.getElementById('answersGrid');
+    grid.innerHTML = '';
+
+    q.answers.forEach((answer, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'answer-btn';
+      btn.textContent = answer.text;
+      btn.onclick = () => selectAnswer(answer.scores, btn);
+      grid.appendChild(btn);
+    });
+  }
+
+  function selectAnswer(answerScores, btn) {
+    document.querySelectorAll('.answer-btn').forEach(b => b.disabled = true);
+    btn.classList.add('answer-selected');
+
+    Object.entries(answerScores).forEach(([key, val]) => {
+      scores[key] += val;
+    });
+
+    setTimeout(() => {
+      currentQuestion++;
+      if (currentQuestion < questions.length) {
+        const card = document.getElementById('questionCard');
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(10px)';
+        setTimeout(() => {
+          renderQuestion();
+          card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, 200);
+      } else {
+        showResult();
+      }
+    }, 600);
+  }
+
+  function showResult() {
+    const winner = Object.entries(scores).reduce((a, b) => a[1] > b[1] ? a : b)[0];
+    const archetype = archetypes[winner];
+
+    document.getElementById('progressFill').style.width = '100%';
+    document.getElementById('progressNum').textContent = 'Terminé';
+    document.getElementById('progressPct').textContent = '100%';
+
+    const params = new URLSearchParams({ profil: winner });
+    window.location.href = `/survivant/resultat?${params.toString()}`;
+  }
+
+  renderQuestion();
+</script>
+
+<style>
+  .quiz-header {
+    text-align: center;
+    padding: 3rem 0 2rem;
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 2rem;
+  }
+
+  .quiz-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #6B7C45;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .quiz-header h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    color: #F5A623;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+  }
+
+  .quiz-desc {
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto 1rem;
+    line-height: 1.7;
+    opacity: 0.8;
+  }
+
+  .quiz-meta {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.78rem;
+    color: #666;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .quiz-meta .sep { color: #333; }
+
+  /* PROGRESS */
+  .quiz-progress {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+
+  .progress-bar {
+    height: 3px;
+    background-color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background-color: #F5A623;
+    transition: width 0.4s ease;
+  }
+
+  .progress-text {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.72rem;
+    color: #666;
+    letter-spacing: 1px;
+  }
+
+  /* QUIZ CONTAINER */
+  .quiz-container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .question-card {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .question-num {
+    font-family: 'Special Elite', cursive;
+    font-size: 0.85rem;
+    color: #333;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+
+  .question-text {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    color: #F5A623;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    border: none;
+    padding: 0;
+  }
+
+  /* ANSWERS */
+  .answers-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .answer-btn {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #111;
+    border: 1px solid #222;
+    border-left: 3px solid transparent;
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+    text-align: left;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    transition: all 0.2s;
+  }
+
+  .answer-btn:hover:not(:disabled) {
+    border-left-color: #F5A623;
+    color: #ffffff;
+    background-color: #1a1a1a;
+  }
+
+  .answer-btn:disabled { cursor: not-allowed; opacity: 0.5; }
+
+  .answer-selected {
+    border-left-color: #F5A623 !important;
+    background-color: #1a1200 !important;
+    opacity: 1 !important;
+    color: #F5A623 !important;
+  }
+</style>
