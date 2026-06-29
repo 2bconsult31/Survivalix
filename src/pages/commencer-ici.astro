@@ -7,7 +7,6 @@ import Layout from '../layouts/Layout.astro';
   description="Tu débarques sur Survivalix ? Voilà le chemin le plus court pour être prêt sans devenir parano. Guide de démarrage pour les débutants complets."
 >
 
-  <!-- HEADER -->
   <div class="page-header">
     <div class="page-label">// PROTOCOLE D'INITIALISATION //</div>
     <h1>Par où commencer ?</h1>
@@ -17,7 +16,6 @@ import Layout from '../layouts/Layout.astro';
     </p>
   </div>
 
-  <!-- INTRO -->
   <section class="intro">
     <div class="intro-inner">
       <div class="intro-texte">
@@ -48,7 +46,6 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- ETAPES -->
   <section class="etapes">
     <div class="section-label">// PLAN D'ACTION //</div>
     <h2>Les 5 étapes dans l'ordre</h2>
@@ -189,7 +186,6 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- PROFIL -->
   <section class="profil-cta">
     <div class="profil-cta-inner">
       <div class="section-label">// ÉTAPE BONUS //</div>
@@ -203,7 +199,6 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- RESSOURCES -->
   <section class="ressources-rapides">
     <div class="section-label">// RESSOURCES CLÉS //</div>
     <h2>Les pages essentielles</h2>
@@ -259,7 +254,6 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
-  /* PAGE HEADER */
   .page-header {
     text-align: center;
     padding: 3rem 0 2.5rem;
@@ -284,17 +278,13 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .page-desc {
-    font-family: 'Oswald', sans-serif;
     font-size: 1.05rem;
-    color: #F5E6C8;
-    opacity: 0.75;
     font-weight: 300;
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.7;
   }
 
-  /* INTRO */
   .intro {
     padding: 3rem 0;
     border-bottom: 1px solid #1a1a1a;
@@ -312,10 +302,7 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .intro-texte p {
-    font-family: 'Oswald', sans-serif;
     font-size: 1rem;
-    color: #F5E6C8;
-    opacity: 0.85;
     line-height: 1.85;
     font-weight: 300;
     margin-bottom: 1rem;
@@ -347,12 +334,10 @@ import Layout from '../layouts/Layout.astro';
     display: block;
     font-family: 'Oswald', sans-serif;
     font-size: 0.78rem;
-    color: #F5E6C8;
     opacity: 0.6;
     letter-spacing: 1px;
   }
 
-  /* ETAPES */
   .etapes {
     padding: 3rem 0;
     border-bottom: 1px solid #1a1a1a;
@@ -398,9 +383,6 @@ import Layout from '../layouts/Layout.astro';
 
   .etape-num {
     font-family: 'Special Elite', cursive;
-    font-size: 1.8rem;
-    color: #F5A623;
-    line-height: 1;
     width: 50px;
     height: 50px;
     border: 2px solid #F5A623;
@@ -408,6 +390,7 @@ import Layout from '../layouts/Layout.astro';
     align-items: center;
     justify-content: center;
     font-size: 1rem;
+    color: #F5A623;
     flex-shrink: 0;
   }
 
@@ -451,10 +434,7 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .etape-content p {
-    font-family: 'Oswald', sans-serif;
     font-size: 0.95rem;
-    color: #F5E6C8;
-    opacity: 0.75;
     line-height: 1.8;
     font-weight: 300;
     margin-bottom: 1rem;
@@ -481,7 +461,6 @@ import Layout from '../layouts/Layout.astro';
     font-family: 'Oswald', sans-serif;
     font-size: 0.88rem;
     font-weight: 700;
-    color: #F5E6C8;
     letter-spacing: 1px;
   }
 
@@ -497,7 +476,6 @@ import Layout from '../layouts/Layout.astro';
 
   .etape-lien:hover { opacity: 0.7; }
 
-  /* PROFIL CTA */
   .profil-cta {
     padding: 3rem 0;
     border-bottom: 1px solid #1a1a1a;
@@ -525,10 +503,7 @@ import Layout from '../layouts/Layout.astro';
   .profil-cta .section-label { margin-bottom: 1rem; }
 
   .profil-cta p {
-    font-family: 'Oswald', sans-serif;
     font-size: 0.95rem;
-    color: #F5E6C8;
-    opacity: 0.75;
     font-weight: 300;
     line-height: 1.7;
     margin-bottom: 1.5rem;
@@ -553,7 +528,6 @@ import Layout from '../layouts/Layout.astro';
     border-color: #c4811a;
   }
 
-  /* RESSOURCES */
   .ressources-rapides {
     padding: 3rem 0;
   }
@@ -596,20 +570,18 @@ import Layout from '../layouts/Layout.astro';
     font-family: 'Oswald', sans-serif;
     font-size: 0.95rem;
     font-weight: 700;
-    color: #F5E6C8;
     letter-spacing: 1px;
     margin-bottom: 0.2rem;
     border: none;
     padding: 0;
+    color: #ffffff;
   }
 
   .ressource-texte p {
-    font-family: 'Oswald', sans-serif;
     font-size: 0.78rem;
-    color: #F5E6C8;
-    opacity: 0.55;
     font-weight: 300;
     margin: 0;
+    opacity: 0.55;
   }
 
   .ressource-arrow {
