@@ -22,7 +22,6 @@ import Layout from '../../layouts/Layout.astro';
 
   <div class="quiz-wrapper">
 
-    <!-- PROGRESS -->
     <div class="quiz-progress">
       <div class="progress-header">
         <span class="progress-label" id="progressNum">QUESTION 1 / 10</span>
@@ -33,7 +32,6 @@ import Layout from '../../layouts/Layout.astro';
       </div>
     </div>
 
-    <!-- QUESTION -->
     <div class="question-card" id="questionCard">
       <div class="question-num" id="questionNum">01</div>
       <h2 class="question-text" id="questionText"></h2>
@@ -235,7 +233,6 @@ import Layout from '../../layouts/Layout.astro';
 </script>
 
 <style>
-  /* HEADER */
   .quiz-header {
     text-align: center;
     padding: 3rem 0 2.5rem;
@@ -282,16 +279,12 @@ import Layout from '../../layouts/Layout.astro';
 
   .quiz-meta .sep { color: #2a2a2a; }
 
-  /* WRAPPER */
   .quiz-wrapper {
     max-width: 720px;
     margin: 0 auto;
   }
 
-  /* PROGRESS */
-  .quiz-progress {
-    margin-bottom: 2.5rem;
-  }
+  .quiz-progress { margin-bottom: 2.5rem; }
 
   .progress-header {
     display: flex;
@@ -318,7 +311,6 @@ import Layout from '../../layouts/Layout.astro';
     height: 4px;
     background-color: #1a1a1a;
     border: 1px solid #222;
-    position: relative;
   }
 
   .progress-fill {
@@ -328,7 +320,6 @@ import Layout from '../../layouts/Layout.astro';
     box-shadow: 0 0 8px rgba(245, 166, 35, 0.4);
   }
 
-  /* QUESTION CARD */
   .question-card {
     background-color: #0d0d0d;
     border: 1px solid #1e1e1e;
@@ -357,7 +348,6 @@ import Layout from '../../layouts/Layout.astro';
     letter-spacing: 0.5px;
   }
 
-  /* ANSWERS */
   .answers-list {
     display: flex;
     flex-direction: column;
@@ -369,73 +359,79 @@ import Layout from '../../layouts/Layout.astro';
     align-items: flex-start;
     gap: 1rem;
     width: 100%;
-    background-color: #111;
-    border: 1px solid #222;
-    border-left: 3px solid #222;
+    background-color: #0d0d0d;
+    border: 1px solid #333;
+    border-left: 4px solid #333;
     padding: 1rem 1.2rem;
     cursor: pointer;
     text-align: left;
     transition: all 0.2s;
-    position: relative;
   }
 
   .answer-btn:hover:not(:disabled) {
     border-left-color: #F5A623;
-    background-color: #161600;
+    background-color: #111;
+  }
+
+  .answer-btn:hover:not(:disabled) .answer-letter {
+    background-color: #F5A623;
+    border-color: #F5A623;
+    color: #0d0d0d;
+  }
+
+  .answer-btn:hover:not(:disabled) .answer-text {
+    color: #F5A623;
   }
 
   .answer-btn:disabled { cursor: not-allowed; }
 
   .answer-btn:disabled:not(.answer-selected) {
-    opacity: 0.4;
+    opacity: 0.35;
   }
 
   .answer-letter {
-    font-family: 'Special Elite', cursive;
-    font-size: 1rem;
-    color: #333;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #555;
     flex-shrink: 0;
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
     border: 1px solid #333;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 1px;
     transition: all 0.2s;
-    font-size: 0.8rem;
-  }
-
-  .answer-btn:hover:not(:disabled) .answer-letter {
-    border-color: #F5A623;
-    color: #F5A623;
+    letter-spacing: 1px;
   }
 
   .answer-text {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.92rem;
+    font-size: 0.95rem;
     font-weight: 300;
     color: #ffffff;
     line-height: 1.55;
     letter-spacing: 0.3px;
     flex: 1;
+    transition: color 0.2s;
   }
 
-  /* SELECTED */
   .answer-selected {
     border-left-color: #F5A623 !important;
-    background-color: #1a1600 !important;
+    background-color: #F5A623 !important;
     opacity: 1 !important;
   }
 
   .answer-selected .answer-letter {
-    background-color: #F5A623;
-    border-color: #F5A623;
-    color: #0d0d0d !important;
+    background-color: #0d0d0d !important;
+    border-color: #0d0d0d !important;
+    color: #F5A623 !important;
   }
 
   .answer-selected .answer-text {
-    color: #F5A623 !important;
+    color: #0d0d0d !important;
+    font-weight: 700 !important;
   }
 
   @media (max-width: 600px) {
