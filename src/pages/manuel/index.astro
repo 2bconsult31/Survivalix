@@ -3,28 +3,339 @@ import Layout from '../../layouts/Layout.astro';
 
 const articles = [
   {
+    num: "01",
     titre: "Kit d'urgence 72h : la liste complète",
+    description: "Tout ce qu'il faut avoir dans son kit 72h. Liste complète, budget réaliste, erreurs à éviter.",
     url: "/manuel/kit-urgence-72h",
-    description: "Tout ce qu'il faut avoir, testé et approuvé."
+    tags: ["débutant", "kit", "urgence"],
+    temps: "8 min",
+    dispo: true
   },
   {
-    titre: "Stocker de l'eau potable en appartement",
+    num: "02",
+    titre: "Stocker l'eau potable en appartement",
+    description: "Combien de litres stocker, comment, où. La méthode simple pour ne jamais être à court.",
     url: "/manuel/stocker-eau-appartement",
-    description: "Combien, comment, où. La méthode simple."
+    tags: ["eau", "appartement", "débutant"],
+    temps: "6 min",
+    dispo: false
+  },
+  {
+    num: "03",
+    titre: "Liste de courses prepper débutant",
+    description: "Ce qu'il faut acheter en premier, dans quel ordre, pour quel budget.",
+    url: "/manuel/liste-courses-prepper-debutant",
+    tags: ["débutant", "budget", "nourriture"],
+    temps: "5 min",
+    dispo: false
+  },
+  {
+    num: "04",
+    titre: "Premiers secours — les gestes qui sauvent",
+    description: "Les 5 gestes de premiers secours que tout le monde devrait connaître. Sans jargon médical.",
+    url: "/manuel/premiers-secours-gestes-qui-sauvent",
+    tags: ["santé", "urgence", "famille"],
+    temps: "10 min",
+    dispo: false
+  },
+  {
+    num: "05",
+    titre: "Préparer son logement pour une coupure longue",
+    description: "Chauffage, eau, nourriture, communication — comment tenir chez soi sans infrastructure.",
+    url: "/manuel/preparer-logement-coupure-longue",
+    tags: ["logement", "autonomie", "hiver"],
+    temps: "7 min",
+    dispo: false
+  },
+  {
+    num: "06",
+    titre: "Communiquer en situation de crise",
+    description: "Quand les réseaux tombent, comment rester en contact avec ses proches.",
+    url: "/manuel/communiquer-situation-de-crise",
+    tags: ["communication", "famille", "radio"],
+    temps: "6 min",
+    dispo: false
+  },
+  {
+    num: "07",
+    titre: "Évacuation d'urgence — le plan familial",
+    description: "Comment préparer un plan d'évacuation clair pour toute la famille. Avec template.",
+    url: "/manuel/evacuation-urgence-plan-familial",
+    tags: ["évacuation", "famille", "plan"],
+    temps: "9 min",
+    dispo: false
+  },
+  {
+    num: "08",
+    titre: "Comprendre les risques près de chez soi",
+    description: "Inondations, séismes, risques industriels — comment identifier les dangers de ta zone.",
+    url: "/manuel/comprendre-risques-pres-de-chez-soi",
+    tags: ["risques", "local", "anticipation"],
+    temps: "8 min",
+    dispo: false
   }
 ]
 ---
 
-<Layout title="Le Manuel — Survivalix">
-  <h1>Le Manuel</h1>
-  <p>Guides pratiques et articles de fond sur la survie quotidienne.</p>
+<Layout title="Le Manuel — Survivalix" description="Guides pratiques et articles de fond sur la survie quotidienne. Méthodes testées, sans bullshit.">
 
-  <ul>
+  <div class="manuel-header">
+    <div class="manuel-header-label">// SECTION 01 //</div>
+    <h1>Le Manuel</h1>
+    <p class="manuel-header-desc">Guides pratiques et articles de fond. Méthodes testées, sans bullshit.</p>
+    <div class="manuel-stats">
+      <span><strong>{articles.filter(a => a.dispo).length}</strong> article{articles.filter(a => a.dispo).length > 1 ? 's' : ''} disponible{articles.filter(a => a.dispo).length > 1 ? 's' : ''}</span>
+      <span class="sep">//</span>
+      <span><strong>{articles.filter(a => !a.dispo).length}</strong> à venir</span>
+    </div>
+  </div>
+
+  <div class="manuel-grid">
     {articles.map(article => (
-      <li>
-        <a href={article.url}>{article.titre}</a>
-        <p>{article.description}</p>
-      </li>
+      <div class={`article-card ${!article.dispo ? 'card-locked' : ''}`}>
+        <div class="card-top">
+          <span class="card-num">{article.num}</span>
+          <span class="card-temps">{article.temps}</span>
+        </div>
+        <div class="card-tags">
+          {article.tags.map(tag => (
+            <span class="card-tag">#{tag}</span>
+          ))}
+        </div>
+        <h2 class="card-titre">{article.titre}</h2>
+        <p class="card-desc">{article.description}</p>
+        <div class="card-footer">
+          {article.dispo ? (
+            <a href={article.url} class="card-lien">
+              Lire l'article
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="4" y1="12" x2="20" y2="12" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+                <polyline points="14,6 20,12 14,18" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          ) : (
+            <span class="card-soon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="11" width="18" height="11" rx="1" stroke="#666" stroke-width="1.5"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="#666" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              Bientôt disponible
+            </span>
+          )}
+        </div>
+      </div>
     ))}
-  </ul>
+  </div>
+
 </Layout>
+
+<style>
+  /* HEADER */
+  .manuel-header {
+    text-align: center;
+    padding: 3rem 0 2rem;
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 3rem;
+  }
+
+  .manuel-header-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #6B7C45;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .manuel-header h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    color: #F5A623;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .manuel-header-desc {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    color: #F5E6C8;
+    opacity: 0.7;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .manuel-stats {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    color: #666;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .manuel-stats strong { color: #F5A623; }
+  .manuel-stats .sep { color: #333; }
+
+  /* GRID */
+  .manuel-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 600px) {
+    .manuel-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (min-width: 900px) {
+    .manuel-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  /* CARD */
+  .article-card {
+    background-color: #0d0d0d;
+    border: 1px solid #222;
+    border-top: 3px solid #F5A623;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    transition: border-color 0.2s, transform 0.2s;
+    position: relative;
+  }
+
+  .article-card:hover {
+    border-top-color: #F5A623;
+    border-color: #333;
+    transform: translateY(-3px);
+  }
+
+  .card-locked {
+    border-top-color: #222;
+    opacity: 0.6;
+  }
+
+  .card-locked:hover {
+    transform: none;
+    border-color: #222;
+  }
+
+  /* CARD TOP */
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-num {
+    font-family: 'Special Elite', cursive;
+    font-size: 2rem;
+    color: #222;
+    line-height: 1;
+  }
+
+  .article-card:not(.card-locked) .card-num {
+    color: #333;
+  }
+
+  .card-temps {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    color: #666;
+    letter-spacing: 1px;
+    border: 1px solid #222;
+    padding: 0.2rem 0.6rem;
+  }
+
+  /* TAGS */
+  .card-tags {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+
+  .card-tag {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.65rem;
+    color: #6B7C45;
+    letter-spacing: 1px;
+    border: 1px solid #6B7C45;
+    padding: 0.1rem 0.5rem;
+  }
+
+  /* TITRE */
+  .card-titre {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    color: #F5E6C8;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .article-card:not(.card-locked) .card-titre {
+    color: #F5E6C8;
+  }
+
+  /* DESC */
+  .card-desc {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    color: #F5E6C8;
+    opacity: 0.6;
+    line-height: 1.6;
+    font-weight: 300;
+    flex: 1;
+    margin: 0;
+  }
+
+  /* FOOTER */
+  .card-footer {
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #1a1a1a;
+  }
+
+  .card-lien {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #F5A623;
+    text-decoration: none;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: gap 0.2s;
+  }
+
+  .card-lien svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+
+  .card-lien:hover { gap: 0.8rem; }
+
+  .card-soon {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.78rem;
+    color: #444;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .card-soon svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+</style>
