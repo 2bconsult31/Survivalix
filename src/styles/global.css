@@ -394,3 +394,18 @@ button {
   color: #0d0d0d !important;
   font-weight: 700 !important;
 }
+/* LOGO SVG */
+.logo-img {
+  display: block;
+  width: 500px;
+  max-width: 90vw;
+  height: auto;
+}
+
+.footer-logo-img {
+  display: block;
+  width: 500px;
+  max-width: 90vw;
+  height: auto;
+  margin: 0 auto 0.5rem;
+}
