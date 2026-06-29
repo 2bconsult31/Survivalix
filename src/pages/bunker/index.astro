@@ -61,6 +61,13 @@ import Layout from '../../layouts/Layout.astro';
       </button>
     </div>
 
+    <div class="bunker-status" id="bunkerStatus">
+      <div class="status-dots">
+        <span></span><span></span><span></span>
+      </div>
+      <span class="status-text">Le Bunker analyse ta question...</span>
+    </div>
+
   </div>
 
 </Layout>
@@ -99,6 +106,11 @@ import Layout from '../../layouts/Layout.astro';
     </svg>`;
   }
 
+  function setStatus(visible) {
+    const status = document.getElementById('bunkerStatus');
+    status.style.display = visible ? 'flex' : 'none';
+  }
+
   function addMessage(role, content) {
     const chat = document.getElementById('chat');
     const div = document.createElement('div');
@@ -124,22 +136,6 @@ import Layout from '../../layouts/Layout.astro';
     chat.scrollTop = chat.scrollHeight;
   }
 
-  function addLoadingMessage() {
-    const chat = document.getElementById('chat');
-    const div = document.createElement('div');
-    div.className = 'message message-assistant';
-    div.id = 'loadingMsg';
-    div.innerHTML = `
-      <div class="message-avatar">${avatarSVG()}</div>
-      <div class="message-content">
-        <div class="message-name">// BUNKER IA //</div>
-        <div class="loading-dots"><span></span><span></span><span></span></div>
-      </div>
-    `;
-    chat.appendChild(div);
-    chat.scrollTop = chat.scrollHeight;
-  }
-
   async function sendMessage() {
     if (isLoading) return;
     const input = document.getElementById('userInput');
@@ -156,7 +152,7 @@ import Layout from '../../layouts/Layout.astro';
     addMessage('user', text);
     messages.push({ role: 'user', content: text });
 
-    addLoadingMessage();
+    setStatus(true);
 
     try {
       const response = await fetch('/api/bunker', {
@@ -168,12 +164,12 @@ import Layout from '../../layouts/Layout.astro';
       const data = await response.json();
       const reply = data.content[0].text;
 
-      document.getElementById('loadingMsg')?.remove();
+      setStatus(false);
       addMessage('assistant', reply);
       messages.push({ role: 'assistant', content: reply });
 
     } catch (error) {
-      document.getElementById('loadingMsg')?.remove();
+      setStatus(false);
       addMessage('assistant', 'Connexion au bunker interrompue. Vérifie ta connexion et réessaie.');
     }
 
@@ -229,7 +225,6 @@ import Layout from '../../layouts/Layout.astro';
     flex-direction: column;
     gap: 1.2rem;
     min-height: 100px;
-    max-height: 500px;
     overflow-y: auto;
     padding: 0.5rem 0;
     scrollbar-width: thin;
@@ -301,14 +296,25 @@ import Layout from '../../layouts/Layout.astro';
 
   .message-content p:last-child { margin-bottom: 0; }
 
-  .loading-dots {
-    display: flex;
-    gap: 6px;
+  /* STATUS */
+  .bunker-status {
+    display: none;
     align-items: center;
-    padding: 4px 0;
+    gap: 0.8rem;
+    padding: 0.8rem 1rem;
+    background-color: #111;
+    border: 1px solid #1e1e1e;
+    border-left: 3px solid #F5A623;
   }
 
-  .loading-dots span {
+  .status-dots {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .status-dots span {
     width: 6px;
     height: 6px;
     background-color: #F5A623;
@@ -316,12 +322,21 @@ import Layout from '../../layouts/Layout.astro';
     animation: dot 1.2s infinite;
   }
 
-  .loading-dots span:nth-child(2) { animation-delay: 0.2s; }
-  .loading-dots span:nth-child(3) { animation-delay: 0.4s; }
+  .status-dots span:nth-child(2) { animation-delay: 0.2s; }
+  .status-dots span:nth-child(3) { animation-delay: 0.4s; }
 
   @keyframes dot {
     0%, 60%, 100% { opacity: 0.2; transform: scale(0.8); }
     30% { opacity: 1; transform: scale(1); }
+  }
+
+  .status-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    color: #F5A623;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-style: italic;
   }
 
   .suggestions-label {
