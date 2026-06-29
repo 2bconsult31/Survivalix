@@ -18,7 +18,6 @@ import Layout from '../../layouts/Layout.astro';
 
   <div class="calc-container">
 
-    <!-- FORMULAIRE -->
     <div class="calc-form">
 
       <div class="form-section">
@@ -97,7 +96,6 @@ import Layout from '../../layouts/Layout.astro';
 
     </div>
 
-    <!-- RÉSULTATS -->
     <div class="calc-result" id="result">
 
       <div class="result-header">
@@ -141,7 +139,7 @@ import Layout from '../../layouts/Layout.astro';
         </div>
       </div>
 
-      <div class="result-conseil" id="result-conseil">
+      <div class="result-conseil">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12" cy="12" r="10" stroke="#F5A623" stroke-width="1.5"/>
           <line x1="12" y1="8" x2="12" y2="12" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
@@ -154,6 +152,11 @@ import Layout from '../../layouts/Layout.astro';
         <a href="/manuel/kit-urgence-72h" class="btn-lien">Voir le guide complet →</a>
         <a href="/bunker" class="btn-lien">Poser une question au Bunker →</a>
       </div>
+
+      <p class="result-sources">
+        Calculs basés sur les recommandations Croix-Rouge française et FEMA. 
+        Les modificateurs climat, activité et profil sont des estimations Survivalix à titre indicatif.
+      </p>
 
     </div>
 
@@ -265,7 +268,6 @@ import Layout from '../../layouts/Layout.astro';
     opacity: 0.8;
   }
 
-  /* CONTAINER */
   .calc-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -278,7 +280,6 @@ import Layout from '../../layouts/Layout.astro';
     .calc-container { grid-template-columns: 1fr 1fr; align-items: start; }
   }
 
-  /* FORM */
   .calc-form {
     display: flex;
     flex-direction: column;
@@ -319,9 +320,7 @@ import Layout from '../../layouts/Layout.astro';
     flex: 1;
   }
 
-  .form-group-checkbox {
-    flex-direction: row;
-  }
+  .form-group-checkbox { flex-direction: row; }
 
   .form-group-checkbox label {
     display: flex;
@@ -347,11 +346,9 @@ import Layout from '../../layouts/Layout.astro';
     line-height: 1.4;
   }
 
-  /* COUNTER */
   .counter {
     display: flex;
     align-items: center;
-    gap: 0;
     border: 1px solid #333;
     flex-shrink: 0;
   }
@@ -385,11 +382,7 @@ import Layout from '../../layouts/Layout.astro';
     line-height: 36px;
   }
 
-  /* SELECT */
-  .select-wrapper {
-    flex-shrink: 0;
-    min-width: 180px;
-  }
+  .select-wrapper { flex-shrink: 0; min-width: 180px; }
 
   .select-wrapper select {
     width: 100%;
@@ -409,7 +402,6 @@ import Layout from '../../layouts/Layout.astro';
     border-color: #F5A623;
   }
 
-  /* RESULT */
   .calc-result {
     background-color: #111;
     border: 1px solid #1e1e1e;
@@ -418,8 +410,10 @@ import Layout from '../../layouts/Layout.astro';
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    position: sticky;
-    top: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .calc-result { position: sticky; top: 2rem; }
   }
 
   .result-header { text-align: center; }
@@ -449,10 +443,7 @@ import Layout from '../../layouts/Layout.astro';
     margin: 0;
   }
 
-  /* BREAKDOWN */
-  .result-breakdown {
-    border: 1px solid #1e1e1e;
-  }
+  .result-breakdown { border: 1px solid #1e1e1e; }
 
   .breakdown-item {
     display: flex;
@@ -463,9 +454,7 @@ import Layout from '../../layouts/Layout.astro';
 
   .breakdown-item:last-child { border-bottom: none; }
 
-  .breakdown-item-total {
-    background-color: #0d0d0d;
-  }
+  .breakdown-item-total { background-color: #0d0d0d; }
 
   .breakdown-label {
     font-family: 'Oswald', sans-serif;
@@ -493,7 +482,6 @@ import Layout from '../../layouts/Layout.astro';
     font-size: 1.1rem;
   }
 
-  /* STOCKAGE */
   .result-stockage {
     display: flex;
     flex-direction: column;
@@ -533,7 +521,6 @@ import Layout from '../../layouts/Layout.astro';
     flex-shrink: 0;
   }
 
-  /* CONSEIL */
   .result-conseil {
     display: flex;
     gap: 0.8rem;
@@ -561,7 +548,6 @@ import Layout from '../../layouts/Layout.astro';
     margin: 0;
   }
 
-  /* ACTIONS */
   .result-actions {
     display: flex;
     flex-direction: column;
@@ -584,5 +570,17 @@ import Layout from '../../layouts/Layout.astro';
   .btn-lien:hover {
     border-color: #F5A623;
     background-color: #111;
+  }
+
+  .result-sources {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.72rem;
+    color: #ffffff;
+    opacity: 0.35;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 0;
+    border-top: 1px solid #1a1a1a;
+    padding-top: 1rem;
   }
 </style>
