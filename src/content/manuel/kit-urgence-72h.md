@@ -174,7 +174,7 @@ En 5 semaines, pour moins de 200€, tu as un kit solide.
 
 ## Télécharge la checklist complète
 
-Toute cette liste en PDF prêt à imprimer — format A4, cases à cocher, design Survivalix.
+Toute cette liste en image prête à imprimer — format A4, design Survivalix.
 
 [Télécharger la checklist Kit 72h](/ressources/checklist-kit-72h.png)
 
