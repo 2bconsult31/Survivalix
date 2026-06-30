@@ -411,3 +411,32 @@ button {
   height: auto;
   margin: 0 auto 0.5rem;
 }
+
+/* CARTE COLLECTOR DOWNLOAD */
+.carte-download-btn {
+  display: inline-block !important;
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 0.9rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px !important;
+  text-decoration: none !important;
+  background-color: #F5A623 !important;
+  color: #0d0d0d !important;
+  padding: 0.8rem 1.8rem !important;
+  border: 2px solid #F5A623 !important;
+  transition: all 0.2s !important;
+}
+
+.carte-download-btn:hover {
+  background-color: #c4811a !important;
+  border-color: #c4811a !important;
+}
+
+.carte-image {
+  width: 100% !important;
+  max-width: 400px !important;
+  height: auto !important;
+  margin: 0 auto 1.5rem !important;
+  display: block !important;
+  border: 2px solid #F5A623 !important;
+}
