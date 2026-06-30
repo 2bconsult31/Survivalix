@@ -10,6 +10,19 @@ import Layout from '../../layouts/Layout.astro';
     <p class="bunker-desc">Pose tes questions à l'assistant Survivalix. Il connaît ses classiques, il a de l'humour, et il ne te jugera pas si tu ne sais pas ce qu'est un kit 72h.</p>
   </div>
 
+  <div class="emergency-banner">
+    <div class="emergency-banner-icon">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+        <path d="M32 8 L56 50 L8 50 Z" stroke="#F5A623" stroke-width="2" stroke-linejoin="round"/>
+        <line x1="32" y1="24" x2="32" y2="38" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="32" cy="44" r="1.5" fill="#F5A623"/>
+      </svg>
+    </div>
+    <div class="emergency-banner-text">
+      <strong>Urgence vitale en cours ?</strong> Appelle le <strong>112</strong> (ou le 15 / le 18) avant toute chose. Le Bunker est un assistant informatif, pas un service d'urgence — il ne remplace jamais un appel aux secours.
+    </div>
+  </div>
+
   <div class="bunker-container">
 
     <div class="bunker-toolbar" id="bunkerToolbar" style="display: none;">
@@ -296,6 +309,39 @@ import Layout from '../../layouts/Layout.astro';
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .emergency-banner {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #1a1206;
+    border: 1px solid #F5A623;
+    border-left: 4px solid #F5A623;
+    padding: 1rem 1.2rem;
+  }
+
+  .emergency-banner-icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .emergency-banner-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    color: #ffffff;
+    opacity: 0.9;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  .emergency-banner-text strong {
+    color: #F5A623;
+    font-weight: 700;
   }
 
   .bunker-toolbar {

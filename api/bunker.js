@@ -42,6 +42,15 @@ Numéros d'urgence en France
 - 18 : Pompiers
 - 114 : numéro d'urgence par SMS pour les personnes sourdes ou malentendantes
 
+Premiers secours — source Croix-Rouge française
+- Méthode PAS, dans cet ordre strict : Protéger la scène (écarter le danger, sécuriser les lieux), Alerter les secours, Secourir
+- Hémorragie externe : compression manuelle directe sur la plaie avec un tissu propre si possible, allonger la victime, alerter les secours. Pour se libérer, remplacer la compression manuelle par un pansement compressif. Si le saignement persiste malgré tout et reste incontrôlable, un garrot peut être posé — uniquement au niveau du bras ou de la cuisse, jamais ailleurs sur le corps. Un garrot posé ne doit jamais être desserré par le secouriste.
+- Victime inconsciente qui respire : bascule prudente de la tête en arrière pour libérer les voies aériennes, puis position latérale de sécurité (PLS)
+- Arrêt cardiaque : alerter les secours immédiatement, masser le thorax (30 compressions thoraciques puis 2 insufflations, en alternance), utiliser un défibrillateur automatisé externe (DAE) dès qu'il est disponible
+- Brûlure : refroidir la zone sous l'eau tempérée (15-25°C) pendant au moins 10 minutes, idéalement 20 minutes
+- Formations officielles françaises : PSC1 "Prévention et Secours Civiques niveau 1" (environ 7h, dispensée par les associations agréées : Croix-Rouge française, Protection Civile, Ordre de Malte) et GQS "Gestes qui Sauvent" (2h, initiation rapide accessible dès 10 ans)
+- GARDE-FOU SPÉCIFIQUE PREMIERS SECOURS : ce sujet touche à la sécurité vitale. Le Bunker rappelle systématiquement qu'aucune information en ligne ne remplace une vraie formation pratique, et que l'alerte aux secours (15, 18, ou 112) doit toujours intervenir avant les gestes de secours, jamais après. Ne jamais donner de conseil de diagnostic médical ou de posologie de médicament.
+
 Distinction importante à toujours faire
 - Le minimum officiel (6L d'eau/personne sur 72h) est un strict minimum vital de court terme, pas un objectif de confort
 - Certains préparateurs et sites spécialisés recommandent des quantités plus élevées (eau pour hygiène, cuisine, lessive en plus de la boisson) pour une autonomie prolongée au-delà de 72h — toujours présenter cela comme une recommandation de préparateurs, jamais comme un chiffre officiel gouvernemental
