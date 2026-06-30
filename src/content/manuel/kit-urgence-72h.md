@@ -4,8 +4,8 @@ description: "Tout ce qu'il faut avoir dans son kit 72h. Liste complète, budget
 date: 2025-01-15
 tags: ["debutant", "kit", "urgence", "appartement"]
 rubrique: "manuel"
-image: ""
-image_alt: "Kit d'urgence 72h"
+image: "/images/articles/kit-urgence-72h.jpg"
+image_alt: "Kit d'urgence 72h : radio, lampe, trousse de secours, conserves et eau"
 ---
 
 Soyons honnêtes une seconde.
