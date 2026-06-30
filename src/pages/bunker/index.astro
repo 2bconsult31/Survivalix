@@ -234,10 +234,13 @@ import Layout from '../../layouts/Layout.astro';
       });
 
       const data = await response.json();
-      const reply = data.content[0].text;
+      const reply = (data.content || [])
+        .filter(block => block.type === 'text')
+        .map(block => block.text)
+        .join('\n\n');
 
       setStatus(false);
-      addMessage('assistant', reply);
+      addMessage('assistant', reply || "Le Bunker n'a pas pu formuler de réponse, réessaie ta question autrement.");
       messages.push({ role: 'assistant', content: reply });
       saveConversation();
 
