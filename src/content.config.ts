@@ -11,6 +11,7 @@ const manuel = defineCollection({
     image: z.string().optional(),
     image_alt: z.string().optional(),
     rubrique: z.string().optional(),
+    checklist: z.string().optional(),
   })
 });
 
