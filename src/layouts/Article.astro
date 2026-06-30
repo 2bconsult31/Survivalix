@@ -143,11 +143,13 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
       </article>
 
       <aside class="article-sidebar">
-        <div class="sidebar-block">
-          <div class="sidebar-label">// TÉLÉCHARGER //</div>
-          <p>La checklist complète en PDF prêt à imprimer.</p>
-          <a href="/ressources/checklist-kit-72h.pdf" class="sidebar-btn">⬇ Checklist PDF</a>
-        </div>
+        {frontmatter.checklist && (
+          <div class="sidebar-block">
+            <div class="sidebar-label">// TÉLÉCHARGER //</div>
+            <p>La checklist complète en image prête à imprimer.</p>
+            <a href={frontmatter.checklist} class="sidebar-btn" download>⬇ Télécharger la checklist</a>
+          </div>
+        )}
         <div class="sidebar-block">
           <div class="sidebar-label">// QUEL SURVIVANT ? //</div>
           <p>Découvre ton profil et télécharge ta carte collector.</p>

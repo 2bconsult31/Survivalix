@@ -6,6 +6,7 @@ tags: ["debutant", "kit", "urgence", "appartement"]
 rubrique: "manuel"
 image: "/images/articles/kit-urgence-72h.jpg"
 image_alt: "Kit d'urgence 72h : radio, lampe, trousse de secours, conserves et eau"
+checklist: "/ressources/checklist-kit-72h.png"
 ---
 
 Soyons honnêtes une seconde.
