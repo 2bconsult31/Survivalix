@@ -3,6 +3,7 @@ import '../styles/global.css';
 
 const { frontmatter } = Astro.props;
 const hasImage = frontmatter.image && frontmatter.image !== '';
+const pageTitle = frontmatter.seo_title || frontmatter.title;
 ---
 
 <!doctype html>
@@ -14,9 +15,9 @@ const hasImage = frontmatter.image && frontmatter.image !== '';
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet" />
-    <title>{frontmatter.title} — Survivalix</title>
+    <title>{pageTitle} — Survivalix</title>
     <meta name="description" content={frontmatter.description} />
-    <meta property="og:title" content={frontmatter.title} />
+    <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={frontmatter.description} />
     <meta property="og:image" content={frontmatter.image || '/og-image.jpg'} />
     <meta name="robots" content="index, follow" />

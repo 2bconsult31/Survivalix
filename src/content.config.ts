@@ -5,6 +5,7 @@ const manuel = defineCollection({
   loader: glob({ pattern: '**/*.md', base: 'src/content/manuel' }),
   schema: z.object({
     title: z.string(),
+    seo_title: z.string().optional(),
     description: z.string(),
     date: z.date(),
     tags: z.array(z.string()),
