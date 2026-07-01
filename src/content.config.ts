@@ -16,4 +16,24 @@ const manuel = defineCollection({
   })
 });
 
-export const collections = { manuel };
+const cantine = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: 'src/content/cantine' }),
+  schema: z.object({
+    title: z.string(),
+    seo_title: z.string().optional(),
+    description: z.string(),
+    date: z.date(),
+    tags: z.array(z.string()),
+    image: z.string().optional(),
+    image_alt: z.string().optional(),
+    recette_png: z.string().optional(),
+    temps_prep: z.string().optional(),
+    temps_cuisson: z.string().optional(),
+    personnes: z.number().optional(),
+    difficulte: z.string().optional(),
+    energie: z.string().optional(),
+    conservation: z.string().optional(),
+  })
+});
+
+export const collections = { manuel, cantine };
