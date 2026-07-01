@@ -1,0 +1,34 @@
+---
+import { getCollection, render } from 'astro:content';
+import ArticleCantine from '../../layouts/ArticleCantine.astro';
+
+export async function getStaticPaths() {
+  const recettes = await getCollection('cantine');
+  return recettes.map(recette => ({
+    params: { slug: recette.id },
+    props: { recette }
+  }));
+}
+
+const { recette } = Astro.props;
+const { Content } = await render(recette);
+---
+
+<ArticleCantine frontmatter={{
+  title: recette.data.title,
+  seo_title: recette.data.seo_title,
+  description: recette.data.description,
+  date: recette.data.date,
+  tags: recette.data.tags,
+  image: recette.data.image,
+  image_alt: recette.data.image_alt,
+  recette_png: recette.data.recette_png,
+  temps_prep: recette.data.temps_prep,
+  temps_cuisson: recette.data.temps_cuisson,
+  personnes: recette.data.personnes,
+  difficulte: recette.data.difficulte,
+  energie: recette.data.energie,
+  conservation: recette.data.conservation,
+}}>
+  <Content />
+</ArticleCantine>
