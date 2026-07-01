@@ -8,6 +8,12 @@ rubrique: "cantine"
 image: "/images/cantine/riz-haricots-survie.jpg"
 image_alt: "Riz aux haricots façon survie dans une casserole sur feu de camp"
 recette_png: "/ressources/recettes/riz-haricots-survie.png"
+temps_prep: "10 min"
+temps_cuisson: "30 min"
+personnes: 2
+difficulte: "Facile"
+energie: "Réchaud / Feu"
+conservation: "Haricots secs : 5-10 ans · Riz blanc : 30 ans"
 ---
 
 Il y a des recettes qui traversent les siècles parce qu'elles fonctionnent. Pas parce qu'elles sont spectaculaires — parce qu'elles sont solides. Le riz aux haricots, c'est ça. Des civilisations entières ont survécu (et prospéré) grâce à cette combinaison : l'Amérique Latine, l'Afrique subsaharienne, le Japon, la Louisiane... Chacun avec ses épices, son accent, ses variantes locales — mais toujours la même base.
