@@ -398,7 +398,7 @@ button {
 .logo-img {
   display: block;
   width: 300px;
-  max-width: 80vw;
+  max-width: 70vw;
   height: auto;
   margin-bottom: 30px;
   margin-top: 30px;
@@ -407,7 +407,7 @@ button {
 .footer-logo-img {
   display: block;
   width: 300px;
-  max-width: 80vw;
+  max-width: 70vw;
   height: auto;
   margin: 0 auto 0.5rem;
 }
