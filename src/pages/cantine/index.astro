@@ -4,6 +4,22 @@ import Layout from '../../layouts/Layout.astro';
 
 const recettesPubliees = await getCollection('cantine');
 
+const recettesPrevues = [
+  {
+    num: "02",
+    titre: "Bannock — le pain sans four qui sauve la mise",
+    description: "La recette du pain de survie écossais. Une poêle, trois ingrédients, aucune excuse.",
+    tags: ["pain", "feu", "camping"],
+    temps: "20 min"
+  },
+  {
+    num: "03",
+    titre: "Hardtack — le biscuit qui survit à l'apocalypse",
+    description: "La Royal Navy le servait en 1588. Il est toujours là. Toi, tu verras.",
+    tags: ["biscuit", "conservation", "historique"],
+    temps: "5 min"
+  }
+]
 ---
 
 <Layout title="La Cantine — Survivalix" description="Recettes de survie qui ont vraiment du goût. Cuisiner sans électricité, sans prise de tête, avec ce qu'on a.">
