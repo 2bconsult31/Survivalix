@@ -1,0 +1,601 @@
+---
+import '../styles/global.css';
+
+const { frontmatter } = Astro.props;
+const hasImage = frontmatter.image && frontmatter.image !== '';
+const pageTitle = frontmatter.seo_title || frontmatter.title;
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet" />
+    <title>{pageTitle} — Survivalix</title>
+    <meta name="description" content={frontmatter.description} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={frontmatter.description} />
+    <meta property="og:image" content={frontmatter.image || '/og-image.jpg'} />
+    <meta name="robots" content="index, follow" />
+  </head>
+  <body>
+
+    <div class="scanlines"></div>
+
+    <header>
+      <div class="header-inner">
+        <div class="header-top">
+          <a href="/" class="logo">
+            <img src="/LOGO_OK.svg" alt="Survivalix" class="logo-img" />
+          </a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav id="mainNav">
+          <ul>
+            <li><a href="/manuel">LE MANUEL</a></li>
+            <li><a href="/cantine">LA CANTINE</a></li>
+            <li><a href="/bunker">LE BUNKER</a></li>
+            <li><a href="/atelier">L'ATELIER</a></li>
+            <li><a href="/radar">LE RADAR</a></li>
+            <li><a href="/outils">LES OUTILS</a></li>
+            <li><a href="/survivant" class="cta">QUEL SURVIVANT ES-TU ?</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="hero-band">
+      <div class="ticker">
+        <div class="ticker-inner">
+          <span>⚠ NIVEAU D'ALERTE : MODÉRÉ</span>
+          <span class="sep">///</span>
+          <span>STOCK EAU : VÉRIFIER</span>
+          <span class="sep">///</span>
+          <span>RESTEZ INFORMÉS. RESTEZ VIVANTS.</span>
+          <span class="sep">///</span>
+          <span>KIT 72H : PRÉPARER DÈS MAINTENANT</span>
+          <span class="sep">///</span>
+          <span>⚠ NIVEAU D'ALERTE : MODÉRÉ</span>
+          <span class="sep">///</span>
+          <span>STOCK EAU : VÉRIFIER</span>
+          <span class="sep">///</span>
+          <span>RESTEZ INFORMÉS. RESTEZ VIVANTS.</span>
+          <span class="sep">///</span>
+          <span>KIT 72H : PRÉPARER DÈS MAINTENANT</span>
+          <span class="sep">///</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-hero">
+      {hasImage ? (
+        <img
+          src={frontmatter.image}
+          alt={frontmatter.image_alt || frontmatter.title}
+          class="article-hero-img"
+        />
+      ) : (
+        <div class="article-hero-placeholder">
+          <svg viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:absolute;top:0;left:0;">
+            <defs>
+              <pattern id="smallgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#F5A623" stroke-width="0.3" opacity="0.15"/>
+              </pattern>
+              <pattern id="biggrid" width="200" height="200" patternUnits="userSpaceOnUse">
+                <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#F5A623" stroke-width="0.8" opacity="0.1"/>
+              </pattern>
+            </defs>
+            <rect width="1200" height="420" fill="#0d0d0d"/>
+            <rect width="1200" height="420" fill="url(#smallgrid)"/>
+            <rect width="1200" height="420" fill="url(#biggrid)"/>
+            <circle cx="950" cy="210" r="280" stroke="#F5A623" stroke-width="1" fill="none" opacity="0.06"/>
+            <circle cx="950" cy="210" r="180" stroke="#F5A623" stroke-width="1" fill="none" opacity="0.06"/>
+            <circle cx="950" cy="210" r="80" stroke="#F5A623" stroke-width="1" fill="none" opacity="0.06"/>
+            <line x1="0" y1="210" x2="1200" y2="210" stroke="#F5A623" stroke-width="1" opacity="0.06" stroke-dasharray="6 4"/>
+            <path d="M 40 40 L 40 80 M 40 40 L 80 40" stroke="#F5A623" stroke-width="2" opacity="0.4" fill="none"/>
+            <path d="M 1160 40 L 1160 80 M 1160 40 L 1120 40" stroke="#F5A623" stroke-width="2" opacity="0.4" fill="none"/>
+            <path d="M 40 380 L 40 340 M 40 380 L 80 380" stroke="#F5A623" stroke-width="2" opacity="0.4" fill="none"/>
+            <path d="M 1160 380 L 1160 340 M 1160 380 L 1120 380" stroke="#F5A623" stroke-width="2" opacity="0.4" fill="none"/>
+            <rect x="40" y="160" width="180" height="26" fill="#F5A623" opacity="0.85"/>
+            <text x="50" y="178" font-family="Oswald,sans-serif" font-size="12" font-weight="700" fill="#0d0d0d" letter-spacing="3">// L'ATELIER //</text>
+            <text x="40" y="240" font-family="Special Elite,cursive" font-size="11" fill="#F5A623" opacity="0.2" letter-spacing="2">[ ILLUSTRATION À VENIR ]</text>
+          </svg>
+        </div>
+      )}
+    </div>
+
+    <div class="article-header">
+      <div class="article-header-inner">
+        <nav class="article-breadcrumb" aria-label="Fil d'Ariane">
+          <a href="/">Accueil</a>
+          <span>//</span>
+          <a href="/atelier">L'Atelier</a>
+          <span>//</span>
+          <span>{frontmatter.title}</span>
+        </nav>
+        {frontmatter.tags && (
+          <div class="article-tags">
+            {frontmatter.tags.map((tag: string) => (
+              <span class="tag">#{tag}</span>
+            ))}
+          </div>
+        )}
+        <h1>{frontmatter.title}</h1>
+        <p class="article-description">{frontmatter.description}</p>
+
+        {(frontmatter.difficulte || frontmatter.duree || frontmatter.materiel) && (
+          <div class="atelier-meta">
+            {frontmatter.difficulte && (
+              <div class="atelier-meta-item">
+                <div class="atelier-meta-picto">
+                  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                    <circle cx="32" cy="36" r="20" stroke="#F5A623" stroke-width="1.5"/>
+                    <path d="M14 36a18 18 0 0 1 18-18" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="32" y1="36" x2="22" y2="22" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+                    <circle cx="32" cy="36" r="2.5" fill="#F5A623"/>
+                  </svg>
+                </div>
+                <div class="atelier-meta-text">
+                  <div class="atelier-meta-label">DIFFICULTÉ</div>
+                  <div class="atelier-meta-value">{frontmatter.difficulte}</div>
+                </div>
+              </div>
+            )}
+            {frontmatter.duree && (
+              <div class="atelier-meta-item">
+                <div class="atelier-meta-picto">
+                  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                    <circle cx="32" cy="32" r="22" stroke="#F5A623" stroke-width="1.5"/>
+                    <line x1="32" y1="32" x2="32" y2="16" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="32" y1="32" x2="44" y2="38" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+                    <circle cx="32" cy="32" r="2" fill="#F5A623"/>
+                  </svg>
+                </div>
+                <div class="atelier-meta-text">
+                  <div class="atelier-meta-label">DURÉE</div>
+                  <div class="atelier-meta-value">{frontmatter.duree}</div>
+                </div>
+              </div>
+            )}
+            {frontmatter.materiel && (
+              <div class="atelier-meta-item atelier-meta-item--wide">
+                <div class="atelier-meta-picto">
+                  <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+                    <path d="M20 44L8 56M44 20l-8 8M36 12l16 16-8 8-16-16zM12 48l4-4 16 16-4 4z" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M44 20c4-4 8-4 8 0s0 4-4 8" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="atelier-meta-text">
+                  <div class="atelier-meta-label">MATÉRIEL</div>
+                  <div class="atelier-meta-value">{frontmatter.materiel}</div>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
+        <div class="article-meta">
+          <span>// L'ATELIER</span>
+          <span class="dot">·</span>
+          <span>Lecture : ~8 min</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-body">
+      <article class="article-content">
+        <slot />
+      </article>
+
+      <aside class="article-sidebar">
+        {frontmatter.fiche_png && (
+          <div class="sidebar-block">
+            <div class="sidebar-label">// FICHE TECHNIQUE //</div>
+            <p>La fiche illustrée prête à imprimer — garde-la dans ton kit.</p>
+            <a href={frontmatter.fiche_png} class="sidebar-btn" download>⬇ Télécharger la fiche</a>
+          </div>
+        )}
+        <div class="sidebar-block">
+          <div class="sidebar-label">// QUEL SURVIVANT ? //</div>
+          <p>Découvre ton profil et télécharge ta carte collector.</p>
+          <a href="/survivant" class="sidebar-btn">Faire le quiz →</a>
+        </div>
+        <div class="sidebar-block">
+          <div class="sidebar-label">// LE MANUEL //</div>
+          <ul class="sidebar-links">
+            <li><a href="/manuel/kit-urgence-72h">Kit d'urgence 72h</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <img src="/LOGO_OK.svg" alt="Survivalix" class="footer-logo-img" />
+        <p class="footer-tagline">Le site de survie pour les gens normaux.</p>
+        <div class="footer-links">
+          <a href="/a-propos">À propos</a>
+          <a href="/contact">Contact</a>
+          <a href="/mentions-legales">Mentions légales</a>
+          <a href="/ressources">Ressources</a>
+        </div>
+        <p class="footer-copy">© 2025 Survivalix — Tous droits réservés</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('mainNav');
+  toggle?.addEventListener('click', () => {
+    nav?.classList.toggle('open');
+    toggle.classList.toggle('active');
+  });
+</script>
+
+<style>
+  .article-hero {
+    width: 100%;
+    height: clamp(180px, 30vw, 420px);
+    overflow: hidden;
+    position: relative;
+    background-color: #0d0d0d;
+  }
+
+  .article-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .article-hero-placeholder {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .article-header {
+    background-color: #0d0d0d;
+    border-bottom: 1px solid #1a1a1a;
+    padding: 2.5rem 1.5rem 2rem;
+  }
+
+  .article-header-inner {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .article-breadcrumb {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #666;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .article-breadcrumb a { color: #F5A623; text-decoration: none; }
+  .article-breadcrumb a:hover { opacity: 0.7; }
+
+  .article-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.2rem;
+  }
+
+  .tag {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.68rem;
+    color: #6B7C45;
+    letter-spacing: 1px;
+    border: 1px solid #6B7C45;
+    padding: 0.15rem 0.6rem;
+  }
+
+  .article-header h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(1.5rem, 4vw, 2.6rem);
+    color: #F5A623;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .article-description {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.05rem;
+    color: #F5E6C8;
+    opacity: 0.75;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    max-width: 700px;
+    font-weight: 300;
+  }
+
+  /* MÉTADONNÉES ATELIER */
+  .atelier-meta {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    border: 1px solid #222;
+    border-left: 3px solid #F5A623;
+    background-color: #0f0f0f;
+  }
+
+  .atelier-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1.2rem;
+    border-right: 1px solid #222;
+    flex: 1;
+    min-width: 120px;
+  }
+
+  .atelier-meta-item--wide {
+    flex: 2;
+    min-width: 200px;
+  }
+
+  .atelier-meta-item:last-child { border-right: none; }
+
+  .atelier-meta-picto {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+  }
+
+  .atelier-meta-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+  .atelier-meta-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.58rem;
+    font-weight: 400;
+    color: #6B7C45;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .atelier-meta-value {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #F5A623;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+  }
+
+  .article-meta {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #666;
+    letter-spacing: 2px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .dot { color: #F5A623; }
+
+  .article-body {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  @media (min-width: 920px) {
+    .article-body { grid-template-columns: 1fr 260px; }
+  }
+
+  .article-content h1 { display: none; }
+
+  .article-content h2 {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(1.2rem, 3vw, 1.7rem);
+    color: #F5A623;
+    margin-top: 80px;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #1e1e1e;
+    letter-spacing: 1px;
+  }
+
+  .article-content h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #F5A623;
+    margin-top: 60px;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1px;
+    border-left: 3px solid #F5A623;
+    padding-left: 0.8rem;
+  }
+
+  .article-content p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #F5E6C8;
+    margin-bottom: 2rem;
+    opacity: 0.88;
+    line-height: 1.85;
+  }
+
+  .article-content ul,
+  .article-content ol {
+    display: block !important;
+    margin: 0.8rem 0 2rem 1.5rem !important;
+    grid-template-columns: none !important;
+  }
+
+  .article-content li {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: #F5E6C8;
+    opacity: 0.88;
+    line-height: 1.8;
+    margin-bottom: 0.4rem;
+    background: none !important;
+    border: none !important;
+    border-left: none !important;
+    padding: 0 !important;
+    display: list-item !important;
+    transform: none !important;
+  }
+
+  .article-content ul li { list-style: disc !important; }
+  .article-content ol li { list-style: decimal !important; }
+
+  .article-content strong { color: #F5A623; font-weight: 700; }
+  .article-content em { font-style: italic; opacity: 0.85; }
+  .article-content a { color: #F5A623; text-decoration: underline; }
+  .article-content a:hover { opacity: 0.7; }
+  .article-content hr { display: none; }
+
+  .article-content blockquote {
+    border-left: 4px solid #F5A623;
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+    background-color: #111;
+    font-style: italic;
+    color: #F5E6C8;
+    opacity: 0.85;
+  }
+
+  .article-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.88rem;
+  }
+
+  .article-content th {
+    background-color: #F5A623;
+    color: #0d0d0d;
+    padding: 0.6rem 1rem;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .article-content td {
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #1e1e1e;
+    color: #F5E6C8;
+    opacity: 0.85;
+    font-weight: 300;
+  }
+
+  .article-content tr:hover td { background-color: #111; }
+
+  .article-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 920px) {
+    .article-sidebar { position: sticky; top: 2rem; }
+  }
+
+  .sidebar-block {
+    background-color: #0d0d0d;
+    border: 1px solid #1e1e1e;
+    border-top: 3px solid #F5A623;
+    padding: 1.2rem;
+  }
+
+  .sidebar-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.68rem;
+    color: #6B7C45;
+    letter-spacing: 3px;
+    margin-bottom: 0.7rem;
+  }
+
+  .sidebar-block p {
+    font-size: 0.82rem;
+    color: #F5E6C8;
+    opacity: 0.65;
+    margin-bottom: 0.9rem;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  .sidebar-btn {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #F5A623;
+    color: #0d0d0d;
+    padding: 0.7rem 1rem;
+    transition: background-color 0.2s;
+  }
+
+  .sidebar-btn:hover { background-color: #c4811a; }
+
+  .sidebar-links {
+    list-style: none !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.6rem !important;
+    grid-template-columns: none !important;
+  }
+
+  .sidebar-links li {
+    list-style: none !important;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    display: block !important;
+    transform: none !important;
+  }
+
+  .sidebar-links a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    color: #F5A623;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    display: block;
+    border-left: 2px solid transparent;
+    padding-left: 0.6rem;
+    transition: all 0.2s;
+  }
+
+  .sidebar-links a:hover { border-left-color: #F5A623; opacity: 0.7; }
+</style>
