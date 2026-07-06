@@ -7,7 +7,6 @@ const outils = [
     titre: "Calculateur de stock d'eau",
     description: "Combien de litres stocker selon le nombre de personnes, la durée visée et les usages. Le calcul qu'on aurait dû faire avant.",
     tags: ["eau", "stock", "calcul", "kit-72h"],
-    icone: "eau",
     temps: "2 min"
   }
 ]
@@ -27,70 +26,71 @@ const outils = [
   <div class="manuel-grid">
     {outils.map((outil, index) => (
       <a href={outil.slug} class="article-card article-card-link">
-        <div class="card-image card-image-placeholder">
-          <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:absolute;top:0;left:0;">
+        <div class="card-image">
+          <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;position:absolute;top:0;left:0;">
             <defs>
-              <pattern id={`dots-${index}`} width="20" height="20" patternUnits="userSpaceOnUse">
-                <circle cx="10" cy="10" r="0.8" fill="#F5A623" opacity="0.12"/>
+              <pattern id={`sl-${index}`} width="1" height="3" patternUnits="userSpaceOnUse">
+                <rect width="1" height="1" fill="#F5A623" opacity="0.04"/>
+              </pattern>
+              <pattern id={`gr-${index}`} width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#F5A623" stroke-width="0.3" opacity="0.12"/>
               </pattern>
             </defs>
-            <!-- Fond noir + texture halftone -->
             <rect width="400" height="200" fill="#0d0d0d"/>
-            <rect width="400" height="200" fill={`url(#dots-${index})`}/>
-
-            <!-- Bouteilles d'eau (gauche) -->
-            <!-- Bouteille 1 -->
-            <rect x="42" y="60" width="28" height="70" rx="4" fill="#0d0d0d" stroke="#F5A623" stroke-width="1.5"/>
-            <rect x="48" y="52" width="16" height="12" rx="2" fill="#0d0d0d" stroke="#F5A623" stroke-width="1.5"/>
-            <rect x="51" y="44" width="10" height="10" rx="1" fill="#F5A623" opacity="0.8"/>
-            <rect x="42" y="85" width="28" height="3" fill="#6B7C45" opacity="0.6"/>
-            <rect x="42" y="92" width="28" height="3" fill="#6B7C45" opacity="0.4"/>
-            <path d="M50 65 Q56 68 62 65" stroke="#F5A623" stroke-width="0.8" fill="none" opacity="0.5"/>
-
-            <!-- Bouteille 2 -->
-            <rect x="82" y="72" width="22" height="58" rx="3" fill="#0d0d0d" stroke="#F5A623" stroke-width="1.5"/>
-            <rect x="87" y="64" width="12" height="10" rx="2" fill="#0d0d0d" stroke="#F5A623" stroke-width="1.5"/>
-            <rect x="89" y="57" width="8" height="8" rx="1" fill="#F5A623" opacity="0.8"/>
-            <rect x="82" y="93" width="22" height="2.5" fill="#6B7C45" opacity="0.5"/>
-
-            <!-- Bouteille 3 -->
-            <rect x="116" y="55" width="32" height="75" rx="5" fill="#0d0d0d" stroke="#F5A623" stroke-width="1.5"/>
-            <rect x="122" y="46" width="20" height="12" rx="2" fill="#0d0d0d" stroke="#F5A623" stroke-width="1.5"/>
-            <rect x="125" y="38" width="14" height="10" rx="2" fill="#F5A623" opacity="0.8"/>
-            <rect x="116" y="80" width="32" height="3" fill="#6B7C45" opacity="0.6"/>
-            <rect x="116" y="88" width="32" height="3" fill="#6B7C45" opacity="0.4"/>
-            <path d="M124 63 Q132 67 140 63" stroke="#F5A623" stroke-width="0.8" fill="none" opacity="0.5"/>
-
-            <!-- Silhouettes de personnes (droite) -->
-            <!-- Personne 1 -->
-            <circle cx="240" cy="68" r="10" fill="#0d0d0d" stroke="#F5A623" stroke-width="1.5"/>
-            <path d="M232 82 Q240 78 248 82 L250 130 L230 130 Z" fill="#0d0d0d" stroke="#F5A623" stroke-width="1.5"/>
-            <line x1="230" y1="90" x2="222" y2="112" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="250" y1="90" x2="258" y2="112" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
-
-            <!-- Personne 2 -->
-            <circle cx="280" cy="72" r="8" fill="#0d0d0d" stroke="#F5A623" stroke-width="1.5"/>
-            <path d="M273 84 Q280 80 287 84 L289 130 L271 130 Z" fill="#0d0d0d" stroke="#F5A623" stroke-width="1.5"/>
-
-            <!-- Personne 3 (enfant, plus petite) -->
-            <circle cx="312" cy="82" r="7" fill="#0d0d0d" stroke="#6B7C45" stroke-width="1.5"/>
-            <path d="M306 93 Q312 90 318 93 L320 130 L304 130 Z" fill="#0d0d0d" stroke="#6B7C45" stroke-width="1.5"/>
-
-            <!-- Flèche centrale séparatrice -->
-            <line x1="168" y1="40" x2="168" y2="165" stroke="#F5A623" stroke-width="0.8" stroke-dasharray="4 3" opacity="0.4"/>
-            <polygon points="168,38 163,46 173,46" fill="#F5A623" opacity="0.5"/>
-
-            <!-- Signe "+" -->
-            <text x="190" y="108" font-family="Oswald,sans-serif" font-size="28" font-weight="700" fill="#F5A623" opacity="0.15" text-anchor="middle">=</text>
-            <text x="195" y="105" font-family="Oswald,sans-serif" font-size="22" font-weight="700" fill="#F5A623" opacity="0.6" text-anchor="middle">?L</text>
-
-            <!-- Bandeau label -->
-            <rect x="0" y="162" width="400" height="28" fill="#F5A623" opacity="0.9"/>
-            <text x="16" y="181" font-family="Oswald,sans-serif" font-size="10" font-weight="700" fill="#0d0d0d" letter-spacing="2">// CALCULATEUR STOCK D'EAU //</text>
-
-            <!-- Coins vintage -->
-            <path d="M8 8 L8 22 M8 8 L22 8" stroke="#F5A623" stroke-width="1.5" fill="none" opacity="0.4"/>
-            <path d="M392 8 L392 22 M392 8 L378 8" stroke="#F5A623" stroke-width="1.5" fill="none" opacity="0.4"/>
+            <rect width="400" height="200" fill={`url(#gr-${index})`}/>
+            <rect width="400" height="200" fill={`url(#sl-${index})`}/>
+            <line x1="200" y1="0" x2="200" y2="200" stroke="#F5A623" stroke-width="0.5" opacity="0.2" stroke-dasharray="4 4"/>
+            <line x1="0" y1="100" x2="400" y2="100" stroke="#F5A623" stroke-width="0.5" opacity="0.2" stroke-dasharray="4 4"/>
+            <line x1="0" y1="0" x2="400" y2="200" stroke="#F5A623" stroke-width="0.3" opacity="0.07"/>
+            <line x1="400" y1="0" x2="0" y2="200" stroke="#F5A623" stroke-width="0.3" opacity="0.07"/>
+            <circle cx="200" cy="100" r="88" fill="none" stroke="#F5A623" stroke-width="1.2" opacity="0.45"/>
+            <circle cx="200" cy="100" r="68" fill="none" stroke="#F5A623" stroke-width="0.8" opacity="0.3"/>
+            <circle cx="200" cy="100" r="48" fill="none" stroke="#F5A623" stroke-width="1.5" opacity="0.55"/>
+            <circle cx="200" cy="100" r="30" fill="none" stroke="#F5A623" stroke-width="0.8" opacity="0.35"/>
+            <circle cx="200" cy="100" r="14" fill="#F5A623" opacity="0.12"/>
+            <circle cx="200" cy="100" r="5" fill="#F5A623" opacity="0.65"/>
+            <circle cx="200" cy="100" r="2" fill="#0d0d0d"/>
+            <line x1="200" y1="12" x2="200" y2="22" stroke="#F5A623" stroke-width="1" opacity="0.55"/>
+            <line x1="200" y1="178" x2="200" y2="188" stroke="#F5A623" stroke-width="1" opacity="0.55"/>
+            <line x1="112" y1="100" x2="122" y2="100" stroke="#F5A623" stroke-width="1" opacity="0.55"/>
+            <line x1="278" y1="100" x2="288" y2="100" stroke="#F5A623" stroke-width="1" opacity="0.55"/>
+            <path d="M200 76 C200 76 185 90 185 100 C185 109 192 114 200 114 C208 114 215 109 215 100 C215 90 200 76 200 76Z" fill="#F5A623" opacity="0.12" stroke="#F5A623" stroke-width="1.4"/>
+            <path d="M192 106 C192 111 196 113 200 113" stroke="#F5A623" stroke-width="1" fill="none" opacity="0.35" stroke-linecap="round"/>
+            <circle cx="38" cy="38" r="24" fill="none" stroke="#F5A623" stroke-width="1" opacity="0.35"/>
+            <circle cx="38" cy="38" r="16" fill="none" stroke="#F5A623" stroke-width="0.6" opacity="0.25"/>
+            <line x1="38" y1="14" x2="38" y2="22" stroke="#F5A623" stroke-width="1" opacity="0.45"/>
+            <line x1="14" y1="38" x2="22" y2="38" stroke="#F5A623" stroke-width="1" opacity="0.45"/>
+            <line x1="62" y1="38" x2="54" y2="38" stroke="#F5A623" stroke-width="1" opacity="0.45"/>
+            <line x1="38" y1="62" x2="38" y2="54" stroke="#F5A623" stroke-width="1" opacity="0.45"/>
+            <line x1="38" y1="38" x2="50" y2="24" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" opacity="0.75"/>
+            <circle cx="38" cy="38" r="3" fill="#F5A623" opacity="0.65"/>
+            <circle cx="362" cy="38" r="9" fill="none" stroke="#F5A623" stroke-width="1" opacity="0.45"/>
+            <ellipse cx="362" cy="38" rx="22" ry="9" fill="none" stroke="#F5A623" stroke-width="0.8" opacity="0.3"/>
+            <ellipse cx="362" cy="38" rx="9" ry="22" fill="none" stroke="#F5A623" stroke-width="0.8" opacity="0.3"/>
+            <ellipse cx="362" cy="38" rx="18" ry="7" fill="none" stroke="#F5A623" stroke-width="0.5" opacity="0.18" transform="rotate(60,362,38)"/>
+            <circle cx="362" cy="38" r="3.5" fill="#F5A623" opacity="0.65"/>
+            <circle cx="38" cy="162" r="9" fill="none" stroke="#F5A623" stroke-width="1" opacity="0.45"/>
+            <ellipse cx="38" cy="162" rx="22" ry="9" fill="none" stroke="#F5A623" stroke-width="0.8" opacity="0.3"/>
+            <ellipse cx="38" cy="162" rx="9" ry="22" fill="none" stroke="#F5A623" stroke-width="0.8" opacity="0.3"/>
+            <circle cx="38" cy="162" r="3.5" fill="#F5A623" opacity="0.65"/>
+            <circle cx="362" cy="162" r="24" fill="none" stroke="#F5A623" stroke-width="1" opacity="0.35"/>
+            <circle cx="362" cy="162" r="16" fill="none" stroke="#F5A623" stroke-width="0.6" opacity="0.25"/>
+            <line x1="362" y1="138" x2="362" y2="146" stroke="#F5A623" stroke-width="1" opacity="0.45"/>
+            <line x1="338" y1="162" x2="346" y2="162" stroke="#F5A623" stroke-width="1" opacity="0.45"/>
+            <line x1="386" y1="162" x2="378" y2="162" stroke="#F5A623" stroke-width="1" opacity="0.45"/>
+            <line x1="362" y1="186" x2="362" y2="178" stroke="#F5A623" stroke-width="1" opacity="0.45"/>
+            <line x1="362" y1="162" x2="374" y2="150" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" opacity="0.75"/>
+            <circle cx="362" cy="162" r="3" fill="#F5A623" opacity="0.65"/>
+            <rect x="2" y="2" width="396" height="196" fill="none" stroke="#F5A623" stroke-width="0.8" opacity="0.18"/>
+            <line x1="100" y1="2" x2="100" y2="7" stroke="#F5A623" stroke-width="1" opacity="0.35"/>
+            <line x1="200" y1="2" x2="200" y2="7" stroke="#F5A623" stroke-width="1" opacity="0.35"/>
+            <line x1="300" y1="2" x2="300" y2="7" stroke="#F5A623" stroke-width="1" opacity="0.35"/>
+            <line x1="100" y1="198" x2="100" y2="193" stroke="#F5A623" stroke-width="1" opacity="0.35"/>
+            <line x1="300" y1="198" x2="300" y2="193" stroke="#F5A623" stroke-width="1" opacity="0.35"/>
+            <text x="200" y="19" font-family="Oswald,sans-serif" font-size="6" fill="#F5A623" text-anchor="middle" opacity="0.4">90</text>
+            <text x="200" y="184" font-family="Oswald,sans-serif" font-size="6" fill="#F5A623" text-anchor="middle" opacity="0.4">270</text>
+            <text x="106" y="103" font-family="Oswald,sans-serif" font-size="6" fill="#F5A623" text-anchor="middle" opacity="0.4">180</text>
+            <text x="294" y="103" font-family="Oswald,sans-serif" font-size="6" fill="#F5A623" text-anchor="middle" opacity="0.4">0</text>
           </svg>
         </div>
         <div class="card-body">
@@ -128,7 +128,6 @@ const outils = [
     border-bottom: 1px solid #1a1a1a;
     margin-bottom: 3rem;
   }
-
   .manuel-header-label {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
@@ -136,7 +135,6 @@ const outils = [
     letter-spacing: 4px;
     margin-bottom: 1rem;
   }
-
   .manuel-header h1 {
     font-family: 'Special Elite', cursive;
     font-size: clamp(2rem, 6vw, 3.5rem);
@@ -144,7 +142,6 @@ const outils = [
     letter-spacing: 4px;
     margin-bottom: 1rem;
   }
-
   .manuel-header-desc {
     font-family: 'Oswald', sans-serif;
     font-size: 1rem;
@@ -156,7 +153,6 @@ const outils = [
     margin-left: auto;
     margin-right: auto;
   }
-
   .manuel-stats {
     font-family: 'Oswald', sans-serif;
     font-size: 0.8rem;
@@ -167,23 +163,18 @@ const outils = [
     align-items: center;
     gap: 1rem;
   }
-
   .manuel-stats strong { color: #F5A623; }
-
   .manuel-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-
   @media (min-width: 600px) {
     .manuel-grid { grid-template-columns: repeat(2, 1fr); }
   }
-
   @media (min-width: 900px) {
     .manuel-grid { grid-template-columns: repeat(3, 1fr); }
   }
-
   .article-card {
     background-color: #0d0d0d;
     border: 1px solid #222;
@@ -194,12 +185,10 @@ const outils = [
     position: relative;
     text-decoration: none;
   }
-
   .article-card-link:hover {
     border-color: #333;
     transform: translateY(-3px);
   }
-
   .card-image {
     width: 100%;
     height: 160px;
@@ -207,9 +196,6 @@ const outils = [
     position: relative;
     background-color: #0d0d0d;
   }
-
-  .card-image-placeholder { background-color: #080808; }
-
   .card-body {
     padding: 1.2rem;
     display: flex;
@@ -217,20 +203,17 @@ const outils = [
     gap: 0.6rem;
     flex: 1;
   }
-
   .card-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .card-num {
     font-family: 'Special Elite', cursive;
     font-size: 1.8rem;
     color: #2a2a2a;
     line-height: 1;
   }
-
   .card-temps {
     font-family: 'Oswald', sans-serif;
     font-size: 0.7rem;
@@ -239,13 +222,11 @@ const outils = [
     border: 1px solid #222;
     padding: 0.2rem 0.6rem;
   }
-
   .card-tags {
     display: flex;
     gap: 0.4rem;
     flex-wrap: wrap;
   }
-
   .card-tag {
     font-family: 'Oswald', sans-serif;
     font-size: 0.65rem;
@@ -254,7 +235,6 @@ const outils = [
     border: 1px solid #6B7C45;
     padding: 0.1rem 0.5rem;
   }
-
   .card-titre {
     font-family: 'Special Elite', cursive;
     font-size: clamp(0.9rem, 2vw, 1rem);
@@ -265,7 +245,6 @@ const outils = [
     padding: 0 !important;
     margin: 0 !important;
   }
-
   .card-desc {
     font-family: 'Oswald', sans-serif;
     font-size: 0.82rem;
@@ -276,13 +255,11 @@ const outils = [
     flex: 1;
     margin: 0 !important;
   }
-
   .card-footer {
     margin-top: 0.5rem;
     padding-top: 0.8rem;
     border-top: 1px solid #1a1a1a;
   }
-
   .card-lien {
     font-family: 'Oswald', sans-serif;
     font-size: 0.8rem;
@@ -294,7 +271,6 @@ const outils = [
     gap: 0.5rem;
     transition: gap 0.2s;
   }
-
   .card-lien svg { width: 14px; height: 14px; flex-shrink: 0; }
   .article-card-link:hover .card-lien { gap: 0.8rem; }
 </style>
