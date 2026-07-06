@@ -1,0 +1,31 @@
+---
+import { getCollection, render } from 'astro:content';
+import ArticleAtelier from '../../layouts/ArticleAtelier.astro';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('atelier');
+  return articles.map(article => ({
+    params: { slug: article.id },
+    props: { article }
+  }));
+}
+
+const { article } = Astro.props;
+const { Content } = await render(article);
+---
+
+<ArticleAtelier frontmatter={{
+  title: article.data.title,
+  seo_title: article.data.seo_title,
+  description: article.data.description,
+  date: article.data.date,
+  tags: article.data.tags,
+  image: article.data.image,
+  image_alt: article.data.image_alt,
+  fiche_png: article.data.fiche_png,
+  difficulte: article.data.difficulte,
+  duree: article.data.duree,
+  materiel: article.data.materiel,
+}}>
+  <Content />
+</ArticleAtelier>
