@@ -36,4 +36,21 @@ const cantine = defineCollection({
   })
 });
 
-export const collections = { manuel, cantine };
+const atelier = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: 'src/content/atelier' }),
+  schema: z.object({
+    title: z.string(),
+    seo_title: z.string().optional(),
+    description: z.string(),
+    date: z.date(),
+    tags: z.array(z.string()),
+    image: z.string().optional(),
+    image_alt: z.string().optional(),
+    fiche_png: z.string().optional(),
+    difficulte: z.string().optional(),
+    duree: z.string().optional(),
+    materiel: z.string().optional(),
+  })
+});
+
+export const collections = { manuel, cantine, atelier };
