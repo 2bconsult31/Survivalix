@@ -3,33 +3,252 @@ import Layout from '../../layouts/Layout.astro';
 
 const outils = [
   {
+    slug: "/outils/calculateur-stock-eau",
     titre: "Calculateur de stock d'eau",
-    url: "/outils/calculateur-stock-eau",
-    description: "Combien de litres stocker pour ta famille ?"
-  },
-  {
-    titre: "Checklist kit 72h personnalisée",
-    url: "/outils/checklist-kit-72h",
-    description: "Ta liste personnalisée selon ta situation."
-  },
-  {
-    titre: "Calculateur autonomie alimentaire",
-    url: "/outils/calculateur-autonomie-alimentaire",
-    description: "Combien de jours ton stock peut tenir ?"
+    description: "Combien de litres stocker selon le nombre de personnes, la durée visée et les usages. Le calcul qu'on aurait dû faire avant.",
+    tags: ["eau", "stock", "calcul", "kit-72h"],
+    icone: "eau",
+    temps: "2 min"
   }
 ]
 ---
 
-<Layout title="Les Outils — Survivalix">
-  <h1>Les Outils</h1>
-  <p>Calculateurs interactifs et checklists personnalisées.</p>
+<Layout title="Les Outils — Survivalix" description="Calculateurs et outils interactifs pour préparer votre autonomie. Concrets, rapides, sans bullshit.">
 
-  <ul>
-    {outils.map(outil => (
-      <li>
-        <a href={outil.url}>{outil.titre}</a>
-        <p>{outil.description}</p>
-      </li>
+  <div class="manuel-header">
+    <div class="manuel-header-label">// SECTION 04 //</div>
+    <h1>Les Outils</h1>
+    <p class="manuel-header-desc">Calculateurs et outils interactifs pour préparer ton autonomie. Concrets, rapides, sans bullshit.</p>
+    <div class="manuel-stats">
+      <span><strong>{outils.length}</strong> outil{outils.length > 1 ? 's' : ''} disponible{outils.length > 1 ? 's' : ''}</span>
+    </div>
+  </div>
+
+  <div class="manuel-grid">
+    {outils.map((outil, index) => (
+      <a href={outil.slug} class="article-card article-card-link">
+        <div class="card-image card-image-placeholder">
+          <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:absolute;top:0;left:0;">
+            <defs>
+              <pattern id={`grid-${index}`} width="30" height="30" patternUnits="userSpaceOnUse">
+                <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#F5A623" stroke-width="0.3" opacity="0.15"/>
+              </pattern>
+            </defs>
+            <rect width="400" height="200" fill="#0d0d0d"/>
+            <rect width="400" height="200" fill={`url(#grid-${index})`}/>
+            <circle cx="320" cy="100" r="120" stroke="#F5A623" stroke-width="0.8" fill="none" opacity="0.05"/>
+            <circle cx="320" cy="100" r="70" stroke="#F5A623" stroke-width="0.8" fill="none" opacity="0.05"/>
+            <!-- Icône eau centrale -->
+            <svg x="160" y="60" width="80" height="80" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 8 C32 8 12 28 12 40 C12 51 21 56 32 56 C43 56 52 51 52 40 C52 28 32 8 32 8Z" stroke="#F5A623" stroke-width="1.5" fill="none" opacity="0.6"/>
+              <path d="M22 42 C22 48 26 52 32 52" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+            </svg>
+            <rect x="20" y="80" width="160" height="20" fill="#F5A623" opacity="0.8"/>
+            <text x="28" y="94" font-family="Oswald,sans-serif" font-size="10" font-weight="700" fill="#0d0d0d" letter-spacing="2">// LES OUTILS //</text>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-top">
+            <span class="card-num">0{index + 1}</span>
+            <span class="card-temps">~{outil.temps}</span>
+          </div>
+          <div class="card-tags">
+            {outil.tags.map((tag: string) => (
+              <span class="card-tag">#{tag}</span>
+            ))}
+          </div>
+          <h2 class="card-titre">{outil.titre}</h2>
+          <p class="card-desc">{outil.description}</p>
+          <div class="card-footer">
+            <span class="card-lien">
+              Utiliser l'outil
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="4" y1="12" x2="20" y2="12" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+                <polyline points="14,6 20,12 14,18" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </a>
     ))}
-  </ul>
+  </div>
+
 </Layout>
+
+<style>
+  .manuel-header {
+    text-align: center;
+    padding: 3rem 0 2rem;
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 3rem;
+  }
+
+  .manuel-header-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #6B7C45;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .manuel-header h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    color: #F5A623;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .manuel-header-desc {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    color: #F5E6C8;
+    opacity: 0.7;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .manuel-stats {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    color: #666;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .manuel-stats strong { color: #F5A623; }
+
+  .manuel-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 600px) {
+    .manuel-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (min-width: 900px) {
+    .manuel-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  .article-card {
+    background-color: #0d0d0d;
+    border: 1px solid #222;
+    border-top: 3px solid #F5A623;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.2s, transform 0.2s;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .article-card-link:hover {
+    border-color: #333;
+    transform: translateY(-3px);
+  }
+
+  .card-image {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+    background-color: #0d0d0d;
+  }
+
+  .card-image-placeholder { background-color: #080808; }
+
+  .card-body {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    flex: 1;
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-num {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.8rem;
+    color: #2a2a2a;
+    line-height: 1;
+  }
+
+  .card-temps {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    color: #555;
+    letter-spacing: 1px;
+    border: 1px solid #222;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .card-tags {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+
+  .card-tag {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.65rem;
+    color: #6B7C45;
+    letter-spacing: 1px;
+    border: 1px solid #6B7C45;
+    padding: 0.1rem 0.5rem;
+  }
+
+  .card-titre {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    color: #F5E6C8;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .card-desc {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    color: #F5E6C8;
+    opacity: 0.55;
+    line-height: 1.6;
+    font-weight: 300;
+    flex: 1;
+    margin: 0 !important;
+  }
+
+  .card-footer {
+    margin-top: 0.5rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid #1a1a1a;
+  }
+
+  .card-lien {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #F5A623;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: gap 0.2s;
+  }
+
+  .card-lien svg { width: 14px; height: 14px; flex-shrink: 0; }
+  .article-card-link:hover .card-lien { gap: 0.8rem; }
+</style>
