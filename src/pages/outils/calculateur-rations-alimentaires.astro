@@ -1,0 +1,694 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="Calculateur de rations alimentaires — Survivalix"
+  description="Combien de calories stocker pour ta famille ? Calcule tes besoins alimentaires et ta liste de courses survie en fonction de ta situation."
+>
+
+  <div class="page-header">
+    <div class="page-label">// OUTIL INTERACTIF //</div>
+    <h1>Calculateur de rations alimentaires</h1>
+    <p class="page-desc">
+      Combien de calories stocker pour tenir 72h ? Et pour 1 mois ?
+      Remplis le formulaire — on calcule tout, liste de courses incluse.
+    </p>
+  </div>
+
+  <div class="calc-container">
+
+    <div class="calc-form">
+
+      <div class="form-section">
+        <div class="form-section-label">// TON FOYER //</div>
+
+        <div class="form-group">
+          <label>Adultes</label>
+          <div class="counter">
+            <button type="button" onclick="decrement('adultes')">−</button>
+            <span id="adultes-val">2</span>
+            <button type="button" onclick="increment('adultes')">+</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Enfants (moins de 12 ans)</label>
+          <div class="counter">
+            <button type="button" onclick="decrement('enfants')">−</button>
+            <span id="enfants-val">0</span>
+            <button type="button" onclick="increment('enfants')">+</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-label">// OPTIONS //</div>
+
+        <div class="form-group">
+          <label>Durée d'autonomie visée</label>
+          <div class="select-wrapper">
+            <select id="duree" onchange="calculer()">
+              <option value="3">72h — minimum</option>
+              <option value="7">1 semaine</option>
+              <option value="14" selected>2 semaines — recommandé</option>
+              <option value="30">1 mois — avancé</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Niveau d'activité</label>
+          <div class="select-wrapper">
+            <select id="activite" onchange="calculer()">
+              <option value="1" selected>Repos à domicile</option>
+              <option value="1.2">Activité modérée</option>
+              <option value="1.5">Évacuation / effort physique</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group form-group-checkbox">
+          <label>
+            <input type="checkbox" id="senior" onchange="calculer()" />
+            <span>Personne âgée ou vulnérable dans le foyer</span>
+          </label>
+        </div>
+
+        <div class="form-group form-group-checkbox">
+          <label>
+            <input type="checkbox" id="regime" onchange="calculer()" />
+            <span>Régime particulier (végétarien / sans gluten)</span>
+          </label>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="calc-result" id="result">
+
+      <div class="result-header">
+        <div class="result-label">// CALORIES TOTALES //</div>
+        <div class="result-total" id="result-total">56 000 kcal</div>
+        <p class="result-desc" id="result-desc">Pour 2 adultes sur 2 semaines</p>
+      </div>
+
+      <div class="result-breakdown">
+        <div class="breakdown-item">
+          <span class="breakdown-label">Par personne / jour</span>
+          <span class="breakdown-val" id="breakdown-jour">2 000 kcal</span>
+        </div>
+        <div class="breakdown-item">
+          <span class="breakdown-label">Total / jour (foyer)</span>
+          <span class="breakdown-val" id="breakdown-foyer">4 000 kcal</span>
+        </div>
+        <div class="breakdown-item breakdown-item-total">
+          <span class="breakdown-label">TOTAL PÉRIODE</span>
+          <span class="breakdown-val" id="breakdown-total">56 000 kcal</span>
+        </div>
+      </div>
+
+      <div class="result-courses">
+        <div class="result-label">// LISTE DE COURSES //</div>
+        <div class="courses-grid" id="courses-grid">
+          <!-- Généré dynamiquement -->
+        </div>
+      </div>
+
+      <div class="result-budget">
+        <div class="result-label">// BUDGET ESTIMÉ //</div>
+        <div class="budget-line">
+          <span class="budget-label">Coût approximatif</span>
+          <span class="budget-val" id="budget-val">~35€</span>
+        </div>
+        <p class="budget-note">Estimation basée sur les prix moyens en grande surface française. Varie selon les marques et enseignes.</p>
+      </div>
+
+      <div class="result-conseil">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="10" stroke="#F5A623" stroke-width="1.5"/>
+          <line x1="12" y1="8" x2="12" y2="12" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="12" cy="16" r="1" fill="#F5A623"/>
+        </svg>
+        <p id="conseil-texte">Alterne entre les catégories pour éviter la monotonie — le moral compte autant que les calories en situation de crise.</p>
+      </div>
+
+      <div class="result-actions">
+        <a href="/cantine/riz-haricots-survie" class="btn-lien">Voir la recette riz aux haricots →</a>
+        <a href="/bunker" class="btn-lien">Poser une question au Bunker →</a>
+      </div>
+
+      <p class="result-sources">
+        Calculs basés sur les recommandations ANSES (Agence nationale de sécurité sanitaire) et FEMA.
+        Les besoins caloriques sont des moyennes indicatives — consultez un professionnel de santé pour des besoins spécifiques.
+      </p>
+
+    </div>
+
+  </div>
+
+</Layout>
+
+<script is:inline>
+  const vals = { adultes: 2, enfants: 0 };
+
+  // Besoins caloriques de base (kcal/jour)
+  const CALORIES_ADULTE = 2000;
+  const CALORIES_ENFANT = 1600;
+
+  // Liste de courses avec kcal pour 100g et prix moyen
+  const aliments = [
+    { nom: 'Riz blanc', cat: 'Féculents', kcal100g: 360, prixKg: 1.5, unite: 'kg', emoji: '🌾' },
+    { nom: 'Pâtes sèches', cat: 'Féculents', kcal100g: 350, prixKg: 1.2, unite: 'kg', emoji: '🍝' },
+    { nom: 'Haricots secs', cat: 'Protéines', kcal100g: 340, prixKg: 2.5, unite: 'kg', emoji: '🫘' },
+    { nom: 'Lentilles', cat: 'Protéines', kcal100g: 350, prixKg: 2.0, unite: 'kg', emoji: '🫘' },
+    { nom: 'Thon en conserve', cat: 'Protéines', kcal100g: 100, prixKg: 8.0, unite: 'boîtes 150g', emoji: '🐟' },
+    { nom: 'Sardines en conserve', cat: 'Protéines', kcal100g: 200, prixKg: 5.0, unite: 'boîtes 135g', emoji: '🐟' },
+    { nom: 'Huile d\'olive', cat: 'Matières grasses', kcal100g: 900, prixKg: 5.0, unite: 'L', emoji: '🫙' },
+    { nom: 'Fruits secs (amandes, noix)', cat: 'Snacks', kcal100g: 600, prixKg: 8.0, unite: 'kg', emoji: '🥜' },
+    { nom: 'Chocolat noir 70%', cat: 'Snacks', kcal100g: 550, prixKg: 6.0, unite: 'tablettes 100g', emoji: '🍫' },
+    { nom: 'Biscuits secs', cat: 'Snacks', kcal100g: 450, prixKg: 3.0, unite: 'kg', emoji: '🍪' },
+  ];
+
+  // Répartition calorique approximative par catégorie
+  const repartition = [
+    { aliment: 'Riz blanc', part: 0.25 },
+    { aliment: 'Pâtes sèches', part: 0.15 },
+    { aliment: 'Haricots secs', part: 0.12 },
+    { aliment: 'Lentilles', part: 0.08 },
+    { aliment: 'Thon en conserve', part: 0.08 },
+    { aliment: 'Sardines en conserve', part: 0.06 },
+    { aliment: 'Huile d\'olive', part: 0.08 },
+    { aliment: 'Fruits secs (amandes, noix)', part: 0.08 },
+    { aliment: 'Chocolat noir 70%', part: 0.05 },
+    { aliment: 'Biscuits secs', part: 0.05 },
+  ];
+
+  function increment(key) {
+    const max = 10;
+    if (vals[key] < max) vals[key]++;
+    document.getElementById(`${key}-val`).textContent = vals[key];
+    calculer();
+  }
+
+  function decrement(key) {
+    const min = key === 'adultes' ? 1 : 0;
+    if (vals[key] > min) vals[key]--;
+    document.getElementById(`${key}-val`).textContent = vals[key];
+    calculer();
+  }
+
+  function calculer() {
+    const duree = parseInt(document.getElementById('duree').value);
+    const activite = parseFloat(document.getElementById('activite').value);
+    const senior = document.getElementById('senior').checked ? 0.85 : 1;
+
+    const kcalAdulte = Math.round(CALORIES_ADULTE * activite * senior);
+    const kcalEnfant = Math.round(CALORIES_ENFANT * senior);
+
+    const kcalJourFoyer = vals.adultes * kcalAdulte + vals.enfants * kcalEnfant;
+    const kcalTotal = kcalJourFoyer * duree;
+
+    const kcalParPersonne = vals.adultes > 0 
+      ? Math.round((vals.adultes * kcalAdulte + vals.enfants * kcalEnfant) / (vals.adultes + vals.enfants || 1))
+      : kcalAdulte;
+
+    document.getElementById('result-total').textContent = formatKcal(kcalTotal);
+    document.getElementById('result-desc').textContent = buildDesc(duree);
+    document.getElementById('breakdown-jour').textContent = `${kcalParPersonne.toLocaleString('fr-FR')} kcal`;
+    document.getElementById('breakdown-foyer').textContent = `${kcalJourFoyer.toLocaleString('fr-FR')} kcal`;
+    document.getElementById('breakdown-total').textContent = formatKcal(kcalTotal);
+
+    genererCourses(kcalTotal);
+    calculerBudget(kcalTotal);
+    updateConseil(duree, activite);
+  }
+
+  function formatKcal(val) {
+    if (val >= 1000000) return `${(val / 1000000).toFixed(1)}M kcal`;
+    if (val >= 1000) return `${Math.round(val / 1000)} 000 kcal`;
+    return `${val} kcal`;
+  }
+
+  function buildDesc(duree) {
+    const parts = [];
+    if (vals.adultes > 0) parts.push(`${vals.adultes} adulte${vals.adultes > 1 ? 's' : ''}`);
+    if (vals.enfants > 0) parts.push(`${vals.enfants} enfant${vals.enfants > 1 ? 's' : ''}`);
+    const dureeLabel = { 3: '72h', 7: '1 semaine', 14: '2 semaines', 30: '1 mois' }[duree];
+    return `Pour ${parts.join(', ')} sur ${dureeLabel}`;
+  }
+
+  function genererCourses(kcalTotal) {
+    const grid = document.getElementById('courses-grid');
+    grid.innerHTML = '';
+
+    let budget = 0;
+
+    repartition.forEach(item => {
+      const aliment = aliments.find(a => a.nom === item.aliment);
+      if (!aliment) return;
+
+      const kcalNecessaires = kcalTotal * item.part;
+      const grammesNecessaires = (kcalNecessaires / aliment.kcal100g) * 100;
+
+      let quantite, label;
+
+      if (aliment.unite === 'kg') {
+        quantite = Math.ceil(grammesNecessaires / 1000 * 10) / 10;
+        label = `${quantite} kg`;
+        budget += quantite * aliment.prixKg;
+      } else if (aliment.unite === 'L') {
+        quantite = Math.ceil(grammesNecessaires / 1000 * 10) / 10;
+        label = `${quantite} L`;
+        budget += quantite * aliment.prixKg;
+      } else if (aliment.unite === 'boîtes 150g') {
+        quantite = Math.ceil(grammesNecessaires / 150);
+        label = `${quantite} boîtes`;
+        budget += (grammesNecessaires / 1000) * aliment.prixKg;
+      } else if (aliment.unite === 'boîtes 135g') {
+        quantite = Math.ceil(grammesNecessaires / 135);
+        label = `${quantite} boîtes`;
+        budget += (grammesNecessaires / 1000) * aliment.prixKg;
+      } else if (aliment.unite === 'tablettes 100g') {
+        quantite = Math.ceil(grammesNecessaires / 100);
+        label = `${quantite} tablettes`;
+        budget += (grammesNecessaires / 1000) * aliment.prixKg;
+      }
+
+      const el = document.createElement('div');
+      el.className = 'course-item';
+      el.innerHTML = `
+        <span class="course-nom">${aliment.nom}</span>
+        <span class="course-qte">${label}</span>
+      `;
+      grid.appendChild(el);
+    });
+
+    window._budget = budget;
+    document.getElementById('budget-val').textContent = `~${Math.round(budget)}€`;
+  }
+
+  function calculerBudget(kcalTotal) {
+    // Déjà calculé dans genererCourses, on met juste à jour l'affichage
+  }
+
+  function updateConseil(duree, activite) {
+    let conseil = '';
+    if (activite >= 1.5) {
+      conseil = 'En cas d\'évacuation, privilégie les aliments à haute densité calorique et légers : fruits secs, barres de céréales, beurre de cacahuète. Chaque gramme compte dans un sac à dos.';
+    } else if (duree >= 30) {
+      conseil = 'Pour un mois d\'autonomie, pense à la rotation — consomme et remplace régulièrement. Les vitamines manqueront : stocke des compléments multivitaminés ou des légumes lyophilisés.';
+    } else if (vals.enfants > 0) {
+      conseil = 'Avec des enfants, prévois des aliments familiers et réconfortants. L\'aspect psychologique est crucial — une boîte de biscuits préférés peut faire une vraie différence dans une situation difficile.';
+    } else {
+      conseil = 'Alterne entre les catégories pour éviter la monotonie — le moral compte autant que les calories en situation de crise. Ajoute des épices à ton kit : elles ne pèsent rien et changent tout.';
+    }
+    document.getElementById('conseil-texte').textContent = conseil;
+  }
+
+  calculer();
+</script>
+
+<style>
+  .page-header {
+    text-align: center;
+    padding: 3rem 0 2.5rem;
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 3rem;
+  }
+
+  .page-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #6B7C45;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .page-header h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    color: #F5A623;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+  }
+
+  .page-desc {
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.7;
+    opacity: 0.8;
+  }
+
+  .calc-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    .calc-container { grid-template-columns: 1fr 1fr; align-items: start; }
+  }
+
+  .calc-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .form-section {
+    background-color: #111;
+    border: 1px solid #1e1e1e;
+    border-top: 3px solid #F5A623;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .form-section-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    color: #6B7C45;
+    letter-spacing: 3px;
+    margin-bottom: 0.3rem;
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .form-group label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    flex: 1;
+  }
+
+  .form-group-checkbox { flex-direction: row; }
+
+  .form-group-checkbox label {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    cursor: pointer;
+  }
+
+  .form-group-checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #F5A623;
+    flex-shrink: 0;
+    margin-top: 2px;
+    cursor: pointer;
+  }
+
+  .form-group-checkbox span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.88rem;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+
+  .counter {
+    display: flex;
+    align-items: center;
+    border: 1px solid #333;
+    flex-shrink: 0;
+  }
+
+  .counter button {
+    background: none;
+    border: none;
+    color: #F5A623;
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .counter button:hover { background-color: #1a1a1a; }
+
+  .counter span {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.2rem;
+    color: #ffffff;
+    width: 36px;
+    text-align: center;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    line-height: 36px;
+  }
+
+  .select-wrapper { flex-shrink: 0; min-width: 180px; }
+
+  .select-wrapper select {
+    width: 100%;
+    background-color: #0d0d0d;
+    border: 1px solid #333;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+    appearance: none;
+    font-weight: 300;
+  }
+
+  .select-wrapper select:focus {
+    outline: none;
+    border-color: #F5A623;
+  }
+
+  .calc-result {
+    background-color: #111;
+    border: 1px solid #1e1e1e;
+    border-top: 3px solid #F5A623;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .calc-result { position: sticky; top: 2rem; }
+  }
+
+  .result-header { text-align: center; }
+
+  .result-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    color: #6B7C45;
+    letter-spacing: 3px;
+    margin-bottom: 0.8rem;
+  }
+
+  .result-total {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    color: #F5A623;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .result-desc {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    color: #ffffff;
+    opacity: 0.6;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  .result-breakdown { border: 1px solid #1e1e1e; }
+
+  .breakdown-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #1a1a1a;
+  }
+
+  .breakdown-item:last-child { border-bottom: none; }
+  .breakdown-item-total { background-color: #0d0d0d; }
+
+  .breakdown-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    color: #ffffff;
+    opacity: 0.7;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  .breakdown-item-total .breakdown-label {
+    color: #F5A623;
+    opacity: 1;
+    font-weight: 700;
+  }
+
+  .breakdown-val {
+    font-family: 'Special Elite', cursive;
+    font-size: 0.95rem;
+    color: #ffffff;
+  }
+
+  .breakdown-item-total .breakdown-val {
+    color: #F5A623;
+    font-size: 1.1rem;
+  }
+
+  /* LISTE DE COURSES */
+  .courses-grid {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #1e1e1e;
+  }
+
+  .course-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #1a1a1a;
+  }
+
+  .course-item:last-child { border-bottom: none; }
+  .course-item:nth-child(even) { background-color: #0d0d0d; }
+
+  .course-nom {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    color: #ffffff;
+    font-weight: 300;
+    opacity: 0.85;
+  }
+
+  .course-qte {
+    font-family: 'Special Elite', cursive;
+    font-size: 0.88rem;
+    color: #F5A623;
+    flex-shrink: 0;
+  }
+
+  /* BUDGET */
+  .result-budget {
+    background-color: #0d0d0d;
+    border: 1px solid #1e1e1e;
+    border-left: 3px solid #6B7C45;
+    padding: 1rem;
+  }
+
+  .budget-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.4rem;
+  }
+
+  .budget-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    color: #ffffff;
+    opacity: 0.7;
+    font-weight: 300;
+  }
+
+  .budget-val {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.4rem;
+    color: #F5A623;
+  }
+
+  .budget-note {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    color: #ffffff;
+    opacity: 0.4;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .result-conseil {
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+    background-color: #0d0d0d;
+    border: 1px solid #1e1e1e;
+    border-left: 3px solid #F5A623;
+    padding: 0.8rem 1rem;
+  }
+
+  .result-conseil svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .result-conseil p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    color: #ffffff;
+    opacity: 0.75;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .result-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .btn-lien {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #F5A623;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 0.6rem 1rem;
+    border: 1px solid #333;
+    text-align: center;
+    transition: all 0.2s;
+  }
+
+  .btn-lien:hover {
+    border-color: #F5A623;
+    background-color: #111;
+  }
+
+  .result-sources {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.72rem;
+    color: #ffffff;
+    opacity: 0.35;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 0;
+    border-top: 1px solid #1a1a1a;
+    padding-top: 1rem;
+  }
+</style>
