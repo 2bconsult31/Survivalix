@@ -61,8 +61,24 @@ const outils = [
             <line x1="200" y1="178" x2="200" y2="188" stroke="#F5A623" stroke-width="1" opacity="0.55"/>
             <line x1="112" y1="100" x2="122" y2="100" stroke="#F5A623" stroke-width="1" opacity="0.55"/>
             <line x1="278" y1="100" x2="288" y2="100" stroke="#F5A623" stroke-width="1" opacity="0.55"/>
-            <path d="M200 76 C200 76 185 90 185 100 C185 109 192 114 200 114 C208 114 215 109 215 100 C215 90 200 76 200 76Z" fill="#F5A623" opacity="0.12" stroke="#F5A623" stroke-width="1.4"/>
-            <path d="M192 106 C192 111 196 113 200 113" stroke="#F5A623" stroke-width="1" fill="none" opacity="0.35" stroke-linecap="round"/>
+            {index === 0 && (
+              <>
+                {/* Goutte d'eau — calculateur stock eau */}
+                <path d="M200 76 C200 76 185 90 185 100 C185 109 192 114 200 114 C208 114 215 109 215 100 C215 90 200 76 200 76Z" fill="#F5A623" opacity="0.12" stroke="#F5A623" stroke-width="1.4"/>
+                <path d="M192 106 C192 111 196 113 200 113" stroke="#F5A623" stroke-width="1" fill="none" opacity="0.35" stroke-linecap="round"/>
+              </>
+            )}
+            {index === 1 && (
+              <>
+                {/* Assiette + fourchette — calculateur rations */}
+                <ellipse cx="200" cy="100" r="22" fill="#F5A623" opacity="0.08" stroke="#F5A623" stroke-width="1.4"/>
+                <ellipse cx="200" cy="100" r="14" fill="none" stroke="#F5A623" stroke-width="0.8" opacity="0.4"/>
+                <line x1="188" y1="86" x2="188" y2="114" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+                <path d="M185 86 L185 94 Q188 96 188 94 L188 86" fill="none" stroke="#F5A623" stroke-width="1" opacity="0.6"/>
+                <line x1="212" y1="86" x2="212" y2="94" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+                <path d="M212 94 Q212 102 208 106 L208 114" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+              </>
+            )}
             <circle cx="38" cy="38" r="24" fill="none" stroke="#F5A623" stroke-width="1" opacity="0.35"/>
             <circle cx="38" cy="38" r="16" fill="none" stroke="#F5A623" stroke-width="0.6" opacity="0.25"/>
             <line x1="38" y1="14" x2="38" y2="22" stroke="#F5A623" stroke-width="1" opacity="0.45"/>

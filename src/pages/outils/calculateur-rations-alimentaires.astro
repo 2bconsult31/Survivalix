@@ -141,7 +141,7 @@ import Layout from '../../layouts/Layout.astro';
       </div>
 
       <p class="result-sources">
-        Calculs basés sur les recommandations ANSES (Agence nationale de sécurité sanitaire) et FEMA.
+        Calculs basés sur les recommandations ANSES : 2 600 kcal/jour pour les hommes adultes, 2 100 kcal/jour pour les femmes (NAP 1,63). Moyenne mixte utilisée : 2 350 kcal/adulte/jour. Enfants 6-12 ans : 1 800 kcal/jour (ANSES/EFSA 2019). Ces valeurs sont indicatives — consultez un professionnel de santé pour des besoins spécifiques.
         Les besoins caloriques sont des moyennes indicatives — consultez un professionnel de santé pour des besoins spécifiques.
       </p>
 
@@ -155,8 +155,8 @@ import Layout from '../../layouts/Layout.astro';
   const vals = { adultes: 2, enfants: 0 };
 
   // Besoins caloriques de base (kcal/jour)
-  const CALORIES_ADULTE = 2000;
-  const CALORIES_ENFANT = 1600;
+  const CALORIES_ADULTE = 2350; // ANSES : 2600 hommes / 2100 femmes, moyenne mixte
+  const CALORIES_ENFANT = 1800; // ANSES : 1600-2000 kcal pour 6-12 ans
 
   // Liste de courses avec kcal pour 100g et prix moyen
   const aliments = [
@@ -203,7 +203,7 @@ import Layout from '../../layouts/Layout.astro';
   function calculer() {
     const duree = parseInt(document.getElementById('duree').value);
     const activite = parseFloat(document.getElementById('activite').value);
-    const senior = document.getElementById('senior').checked ? 0.85 : 1;
+    const senior = document.getElementById('senior').checked ? 0.9 : 1;
 
     const kcalAdulte = Math.round(CALORIES_ADULTE * activite * senior);
     const kcalEnfant = Math.round(CALORIES_ENFANT * senior);
