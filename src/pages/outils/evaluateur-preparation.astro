@@ -1,0 +1,700 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="Évaluateur de Préparation — Survivalix"
+  description="10 questions pour savoir où tu en es vraiment. Score sur 100, recommandations personnalisées. Honnête, sans bullshit."
+>
+
+  <div class="page-header">
+    <div class="page-label">// OUTIL INTERACTIF //</div>
+    <h1>Évaluateur de préparation</h1>
+    <p class="page-desc">
+      10 questions pour savoir où tu en es vraiment.
+      Réponds honnêtement — on t'évalue, pas on te juge.
+    </p>
+  </div>
+
+  <div class="eval-container" id="eval-container">
+
+    <!-- QUESTIONNAIRE -->
+    <div id="questionnaire">
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="progress-fill" style="width: 0%"></div>
+        </div>
+        <span class="progress-label" id="progress-label">0 / 10</span>
+      </div>
+
+      <div id="questions-wrap"></div>
+
+      <div class="nav-buttons">
+        <button class="btn-nav btn-prev" id="btn-prev" onclick="prevQuestion()" style="display:none">← Précédent</button>
+        <button class="btn-nav btn-next" id="btn-next" onclick="nextQuestion()">Suivant →</button>
+      </div>
+    </div>
+
+    <!-- RÉSULTAT (caché au départ) -->
+    <div id="resultat" style="display:none">
+
+      <div class="result-score-block">
+        <div class="result-label">// TON SCORE //</div>
+        <div class="score-circle">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="60" r="52" fill="none" stroke="#1a1a1a" stroke-width="8"/>
+            <circle cx="60" cy="60" r="52" fill="none" stroke="#F5A623" stroke-width="8"
+              stroke-dasharray="326.7" stroke-dashoffset="326.7"
+              stroke-linecap="round"
+              transform="rotate(-90 60 60)"
+              id="score-arc"/>
+          </svg>
+          <div class="score-val" id="score-val">0</div>
+          <div class="score-label">/100</div>
+        </div>
+        <div class="score-titre" id="score-titre">—</div>
+        <p class="score-desc" id="score-desc">—</p>
+      </div>
+
+      <div class="result-details">
+        <div class="result-label">// CE QUI MANQUE //</div>
+        <div id="reco-list" class="reco-list"></div>
+      </div>
+
+      <div class="result-actions">
+        <a href="/manuel/kit-urgence-72h" class="btn-lien">Lire le guide Kit 72h →</a>
+        <a href="/atelier" class="btn-lien">Aller à L'Atelier →</a>
+        <a href="/bunker" class="btn-lien">Poser une question au Bunker →</a>
+      </div>
+
+      <button class="btn-recommencer" onclick="recommencer()">// Recommencer l'évaluation //</button>
+
+    </div>
+
+  </div>
+
+</Layout>
+
+<script is:inline>
+
+  const questions = [
+    {
+      id: "eau",
+      texte: "Tu as combien de litres d'eau potable stockés chez toi en ce moment ?",
+      options: [
+        { label: "Zéro — je compte sur le robinet", points: 0 },
+        { label: "Quelques bouteilles, peut-être 3-5L", points: 5 },
+        { label: "6L à 18L (le minimum recommandé)", points: 8 },
+        { label: "Plus de 18L, je suis calé", points: 10 }
+      ],
+      reco: "Stock d'eau insuffisant. Le minimum recommandé est 6L par personne pour 72h. Commence par là.",
+      lien: "/manuel/kit-urgence-72h"
+    },
+    {
+      id: "nourriture",
+      texte: "Tu as des conserves et aliments non périssables pour combien de jours ?",
+      options: [
+        { label: "Rien de prévu pour une crise", points: 0 },
+        { label: "1 à 2 jours grand max", points: 3 },
+        { label: "3 jours (le kit 72h)", points: 7 },
+        { label: "1 semaine ou plus", points: 10 }
+      ],
+      reco: "Pas assez de réserves alimentaires. 3 jours minimum, 2 semaines idéalement.",
+      lien: "/cantine"
+    },
+    {
+      id: "lumiere",
+      texte: "Tu as une lampe torche avec des piles qui fonctionnent en ce moment ?",
+      options: [
+        { label: "Non, aucune lampe torche", points: 0 },
+        { label: "J'en ai une mais les piles sont probablement mortes", points: 3 },
+        { label: "Oui, une lampe torche opérationnelle", points: 7 },
+        { label: "Oui, + batterie externe chargée + bougies", points: 10 }
+      ],
+      reco: "Prépare une lampe torche avec piles neuves et une batterie externe. Une coupure d'électricité la nuit sans lumière, c'est déstabilisant.",
+      lien: "/manuel/kit-urgence-72h"
+    },
+    {
+      id: "secours",
+      texte: "Tu as une trousse de premiers secours à jour chez toi ?",
+      options: [
+        { label: "Aucune trousse", points: 0 },
+        { label: "Une trousse mais je n'ai jamais vérifié le contenu", points: 3 },
+        { label: "Une trousse correcte, contenu vérifié récemment", points: 7 },
+        { label: "Une trousse complète avec garrot et coussin hémostatique", points: 10 }
+      ],
+      reco: "Monte une vraie trousse de premiers secours. Le kit du commerce de base ne suffit pas pour les urgences réelles.",
+      lien: "/atelier/trousse-premiers-secours"
+    },
+    {
+      id: "logement",
+      texte: "Tu saurais couper l'eau, le gaz et l'électricité de ton logement en cas d'urgence ?",
+      options: [
+        { label: "Aucune idée où c'est", points: 0 },
+        { label: "Je sais pour l'un des trois", points: 4 },
+        { label: "Je sais pour deux des trois", points: 7 },
+        { label: "Je sais pour les trois et je les ai déjà testés", points: 10 }
+      ],
+      reco: "Repère les coupes d'eau, gaz et électricité de ton logement. 10 minutes de reconnaissance qui peuvent éviter une catastrophe.",
+      lien: "/bunker"
+    },
+    {
+      id: "radio",
+      texte: "Tu as une radio à piles ou à manivelle pour recevoir des infos si internet tombe ?",
+      options: [
+        { label: "Non", points: 0 },
+        { label: "Non, mais j'y ai pensé", points: 2 },
+        { label: "Oui, une radio à piles", points: 8 },
+        { label: "Oui, une radio à manivelle/solaire — autonome", points: 10 }
+      ],
+      reco: "Une radio à piles ou manivelle est essentielle. Quand les réseaux saturent, c'est souvent le seul moyen de rester informé.",
+      lien: "/manuel/kit-urgence-72h"
+    },
+    {
+      id: "documents",
+      texte: "Tu as des copies de tes documents importants (CNI, passeport, carte vitale) accessibles rapidement ?",
+      options: [
+        { label: "Non, tout est dans un tiroir quelque part", points: 0 },
+        { label: "Oui en version numérique (cloud / téléphone)", points: 5 },
+        { label: "Oui en version papier dans une pochette", points: 7 },
+        { label: "Oui en version papier + numérique, pochette étanche", points: 10 }
+      ],
+      reco: "Prépare des copies de tes documents dans une pochette étanche. En cas d'évacuation, les démarches administratives sans documents, c'est le cauchemar.",
+      lien: "/manuel/kit-urgence-72h"
+    },
+    {
+      id: "evacuation",
+      texte: "Tu as un plan si tu devais évacuer ton logement en urgence (incendie, inondation) ?",
+      options: [
+        { label: "Aucun plan, j'improviserais", points: 0 },
+        { label: "Vaguement — je sais à peu près où aller", points: 4 },
+        { label: "Un plan clair avec un point de ralliement défini", points: 8 },
+        { label: "Un plan testé, avec sac prêt et contacts prévenus", points: 10 }
+      ],
+      reco: "Définis un plan d'évacuation avec un point de ralliement et des contacts d'urgence. Prendre une décision sous le stress sans plan préparé, c'est risqué.",
+      lien: "/bunker"
+    },
+    {
+      id: "batterie",
+      texte: "Tu as une batterie externe (power bank) chargée en permanence chez toi ?",
+      options: [
+        { label: "Non", points: 0 },
+        { label: "Oui mais elle est souvent déchargée", points: 3 },
+        { label: "Oui, une petite (moins de 10 000 mAh)", points: 6 },
+        { label: "Oui, une grande (20 000 mAh+) toujours chargée", points: 10 }
+      ],
+      reco: "Une batterie externe de 20 000 mAh rechargée en permanence, c'est la base. Ton téléphone = ta lampe, ta carte, ta radio de secours.",
+      lien: "/manuel/kit-urgence-72h"
+    },
+    {
+      id: "formation",
+      texte: "Tu as suivi une formation premiers secours (PSC1, GQS ou équivalent) ?",
+      options: [
+        { label: "Non, jamais", points: 0 },
+        { label: "Il y a très longtemps, j'ai tout oublié", points: 2 },
+        { label: "Oui, GQS (2h) — les bases", points: 7 },
+        { label: "Oui, PSC1 ou plus — je suis à jour", points: 10 }
+      ],
+      reco: "La formation GQS (2h, gratuite ou presque) te donne les gestes qui sauvent. Aucun article ne remplace ça. Croix-Rouge, Protection Civile, Pompiers — partout en France.",
+      lien: "/atelier/trousse-premiers-secours"
+    }
+  ];
+
+  const niveaux = [
+    {
+      min: 0, max: 30,
+      titre: "Citoyen non préparé",
+      desc: "Tu pars de zéro — et c'est OK. La plupart des gens sont dans ce cas. La bonne nouvelle : quelques heures et moins de 50€ changent radicalement la donne. Commence par l'eau et les conserves.",
+      couleur: "#8B2500"
+    },
+    {
+      min: 31, max: 50,
+      titre: "Conscient mais pas prêt",
+      desc: "Tu sais que ça manque, mais tu n'as pas encore agi. C'est le stade le plus courant — la prise de conscience sans le passage à l'action. Comble les lacunes une par une, dans l'ordre.",
+      couleur: "#8B2500"
+    },
+    {
+      min: 51, max: 70,
+      titre: "En bonne voie",
+      desc: "Tu as une base solide. Quelques trous à boucher, mais tu tiendrais 72h correctement. Niveau suivant : passer de la survie immédiate à l'autonomie sur 2 semaines.",
+      couleur: "#6B7C45"
+    },
+    {
+      min: 71, max: 85,
+      titre: "Bien préparé",
+      desc: "Tu passes l'hiver sans stress. Ton kit est cohérent, tu as les bases. Ce qui manque maintenant : la pratique. Tester ses équipements avant d'en avoir besoin, c'est ce qui sépare le préparé du vraiment prêt.",
+      couleur: "#6B7C45"
+    },
+    {
+      min: 86, max: 100,
+      titre: "Survivaliste urbain confirmé",
+      desc: "Impressionnant. Tu as fait le travail. Tu es parmi les 5% de la population vraiment préparée à tenir sans infrastructure. La prochaine étape, c'est former ton entourage — parce qu'en crise, tes voisins deviennent tes alliés.",
+      couleur: "#F5A623"
+    }
+  ];
+
+  let currentQ = 0;
+  let reponses = new Array(questions.length).fill(null);
+
+  function renderQuestion(index) {
+    const q = questions[index];
+    const wrap = document.getElementById('questions-wrap');
+    wrap.innerHTML = `
+      <div class="question-block">
+        <div class="question-num">// QUESTION ${String(index + 1).padStart(2, '0')} //</div>
+        <h2 class="question-texte">${q.texte}</h2>
+        <div class="options-list">
+          ${q.options.map((opt, i) => `
+            <button
+              class="option-btn ${reponses[index] === i ? 'selected' : ''}"
+              onclick="selectOption(${i})"
+            >
+              <span class="option-letter">${String.fromCharCode(65 + i)}</span>
+              <span class="option-label">${opt.label}</span>
+            </button>
+          `).join('')}
+        </div>
+      </div>
+    `;
+
+    // Progress
+    document.getElementById('progress-fill').style.width = `${(index / questions.length) * 100}%`;
+    document.getElementById('progress-label').textContent = `${index + 1} / ${questions.length}`;
+
+    // Boutons nav
+    document.getElementById('btn-prev').style.display = index > 0 ? 'inline-flex' : 'none';
+    const btnNext = document.getElementById('btn-next');
+    btnNext.textContent = index === questions.length - 1 ? 'Voir mon score →' : 'Suivant →';
+    btnNext.disabled = reponses[index] === null;
+  }
+
+  function selectOption(optIndex) {
+    reponses[currentQ] = optIndex;
+    renderQuestion(currentQ);
+  }
+
+  function nextQuestion() {
+    if (reponses[currentQ] === null) return;
+    if (currentQ < questions.length - 1) {
+      currentQ++;
+      renderQuestion(currentQ);
+    } else {
+      afficherResultat();
+    }
+  }
+
+  function prevQuestion() {
+    if (currentQ > 0) {
+      currentQ--;
+      renderQuestion(currentQ);
+    }
+  }
+
+  function afficherResultat() {
+    // Calculer le score
+    let total = 0;
+    const lacunes = [];
+
+    questions.forEach((q, i) => {
+      const r = reponses[i];
+      if (r !== null) {
+        const pts = q.options[r].points;
+        total += pts;
+        if (pts < 7) {
+          lacunes.push({ texte: q.reco, lien: q.lien });
+        }
+      }
+    });
+
+    const score = Math.round(total);
+    const niveau = niveaux.find(n => score >= n.min && score <= n.max) || niveaux[0];
+
+    // Afficher
+    document.getElementById('questionnaire').style.display = 'none';
+    document.getElementById('resultat').style.display = 'block';
+
+    document.getElementById('score-val').textContent = score;
+    document.getElementById('score-titre').textContent = niveau.titre;
+    document.getElementById('score-titre').style.color = niveau.couleur;
+    document.getElementById('score-desc').textContent = niveau.desc;
+
+    // Arc SVG
+    const arc = document.getElementById('score-arc');
+    const circumference = 326.7;
+    const offset = circumference - (score / 100) * circumference;
+    arc.style.strokeDashoffset = offset;
+    arc.style.stroke = niveau.couleur;
+
+    // Recommandations
+    const recoList = document.getElementById('reco-list');
+    if (lacunes.length === 0) {
+      recoList.innerHTML = `<p class="reco-ok">// Rien à signaler — tu as coché toutes les cases. Chapeau.</p>`;
+    } else {
+      recoList.innerHTML = lacunes.map(l => `
+        <div class="reco-item">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+            <line x1="4" y1="12" x2="20" y2="12" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+            <polyline points="14,6 20,12 14,18" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p>${l.texte}</p>
+        </div>
+      `).join('');
+    }
+  }
+
+  function recommencer() {
+    currentQ = 0;
+    reponses = new Array(questions.length).fill(null);
+    document.getElementById('questionnaire').style.display = 'block';
+    document.getElementById('resultat').style.display = 'none';
+    renderQuestion(0);
+  }
+
+  // Init
+  renderQuestion(0);
+</script>
+
+<style>
+  .page-header {
+    text-align: center;
+    padding: 3rem 0 2.5rem;
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 3rem;
+  }
+
+  .page-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #6B7C45;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .page-header h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    color: #F5A623;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+  }
+
+  .page-desc {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.7;
+    opacity: 0.8;
+  }
+
+  .eval-container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  /* PROGRESS */
+  .progress-bar-wrap {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .progress-bar-track {
+    flex: 1;
+    height: 4px;
+    background-color: #1a1a1a;
+    position: relative;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    background-color: #F5A623;
+    transition: width 0.3s ease;
+  }
+
+  .progress-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #666;
+    letter-spacing: 2px;
+    flex-shrink: 0;
+  }
+
+  /* QUESTION */
+  .question-block {
+    background-color: #111;
+    border: 1px solid #1e1e1e;
+    border-top: 3px solid #F5A623;
+    padding: 2rem;
+  }
+
+  .question-num {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    color: #6B7C45;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+  }
+
+  .question-texte {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    color: #F5E6C8;
+    line-height: 1.4;
+    margin-bottom: 1.8rem;
+    letter-spacing: 0.5px;
+  }
+
+  .options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .option-btn {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: #0d0d0d;
+    border: 1px solid #222;
+    padding: 0.9rem 1rem;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.15s;
+    width: 100%;
+  }
+
+  .option-btn:hover {
+    border-color: #F5A623;
+    background-color: #111;
+  }
+
+  .option-btn.selected {
+    border-color: #F5A623;
+    background-color: #1a1500;
+  }
+
+  .option-letter {
+    font-family: 'Special Elite', cursive;
+    font-size: 1rem;
+    color: #F5A623;
+    flex-shrink: 0;
+    width: 20px;
+  }
+
+  .option-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    color: #F5E6C8;
+    font-weight: 300;
+    line-height: 1.4;
+    opacity: 0.85;
+  }
+
+  .option-btn.selected .option-label { opacity: 1; }
+
+  /* NAV */
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    gap: 1rem;
+  }
+
+  .btn-nav {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .btn-next {
+    background-color: #F5A623;
+    color: #0d0d0d;
+    border: none;
+    margin-left: auto;
+  }
+
+  .btn-next:hover:not(:disabled) { background-color: #c4811a; }
+  .btn-next:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  .btn-prev {
+    background: none;
+    border: 1px solid #333;
+    color: #F5A623;
+  }
+
+  .btn-prev:hover { border-color: #F5A623; }
+
+  /* RÉSULTAT */
+  .result-score-block {
+    background-color: #111;
+    border: 1px solid #1e1e1e;
+    border-top: 3px solid #F5A623;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .result-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    color: #6B7C45;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .score-circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1.5rem;
+  }
+
+  .score-circle svg {
+    width: 120px;
+    height: 120px;
+  }
+
+  .score-circle svg circle:last-child {
+    transition: stroke-dashoffset 1s ease, stroke 0.5s ease;
+  }
+
+  .score-val {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -58%);
+    font-family: 'Special Elite', cursive;
+    font-size: 2.2rem;
+    color: #F5A623;
+    line-height: 1;
+  }
+
+  .score-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #666;
+    letter-spacing: 1px;
+  }
+
+  .score-titre {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    margin-bottom: 0.8rem;
+    letter-spacing: 1px;
+  }
+
+  .score-desc {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    color: #F5E6C8;
+    opacity: 0.75;
+    font-weight: 300;
+    line-height: 1.7;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* RECOMMANDATIONS */
+  .result-details {
+    background-color: #111;
+    border: 1px solid #1e1e1e;
+    border-top: 3px solid #6B7C45;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .reco-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .reco-item {
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #1a1a1a;
+  }
+
+  .reco-item:last-child { border-bottom: none; }
+
+  .reco-item svg { flex-shrink: 0; margin-top: 3px; }
+
+  .reco-item p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    color: #F5E6C8;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 0;
+    opacity: 0.85;
+  }
+
+  .reco-ok {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    color: #6B7C45;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+
+  /* ACTIONS */
+  .result-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn-lien {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #F5A623;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 0.6rem 1rem;
+    border: 1px solid #333;
+    text-align: center;
+    transition: all 0.2s;
+  }
+
+  .btn-lien:hover {
+    border-color: #F5A623;
+    background-color: #111;
+  }
+
+  .btn-recommencer {
+    width: 100%;
+    background: none;
+    border: 1px solid #222;
+    color: #666;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    padding: 0.7rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 0.5rem;
+  }
+
+  .btn-recommencer:hover {
+    border-color: #444;
+    color: #999;
+  }
+</style>

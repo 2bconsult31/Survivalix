@@ -15,6 +15,13 @@ const outils = [
     description: "Combien de calories stocker selon ta famille et la durée visée ? Liste de courses et budget inclus.",
     tags: ["calories", "rations", "stock", "alimentation"],
     temps: "2 min"
+  },
+  {
+    slug: "/outils/evaluateur-preparation",
+    titre: "Évaluateur de préparation",
+    description: "10 questions pour savoir où tu en es vraiment. Score sur 100, recommandations personnalisées. Honnête, sans bullshit.",
+    tags: ["score", "évaluation", "bilan", "préparation"],
+    temps: "3 min"
   }
 ]
 ---
@@ -77,6 +84,19 @@ const outils = [
                 <path d="M185 86 L185 94 Q188 96 188 94 L188 86" fill="none" stroke="#F5A623" stroke-width="1" opacity="0.6"/>
                 <line x1="212" y1="86" x2="212" y2="94" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
                 <path d="M212 94 Q212 102 208 106 L208 114" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+              </>
+            )}
+            {index === 2 && (
+              <>
+                {/* Jauge / score — évaluateur de préparation */}
+                <path d="M172 112 A28 28 0 1 1 228 112" fill="none" stroke="#F5A623" stroke-width="1.5" opacity="0.35"/>
+                <path d="M172 112 A28 28 0 0 1 214 84" fill="none" stroke="#F5A623" stroke-width="3" opacity="0.7" stroke-linecap="round"/>
+                <circle cx="200" cy="112" r="4" fill="#F5A623" opacity="0.8"/>
+                <line x1="200" y1="112" x2="212" y2="88" stroke="#F5A623" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+                <line x1="176" y1="112" x2="180" y2="112" stroke="#F5A623" stroke-width="1" opacity="0.5"/>
+                <line x1="224" y1="112" x2="220" y2="112" stroke="#F5A623" stroke-width="1" opacity="0.5"/>
+                <line x1="200" y1="84" x2="200" y2="88" stroke="#F5A623" stroke-width="1" opacity="0.5"/>
+                <text x="200" y="124" font-family="Oswald,sans-serif" font-size="8" fill="#F5A623" text-anchor="middle" opacity="0.6" letter-spacing="1">/100</text>
               </>
             )}
             <circle cx="38" cy="38" r="24" fill="none" stroke="#F5A623" stroke-width="1" opacity="0.35"/>
