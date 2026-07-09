@@ -53,4 +53,19 @@ const atelier = defineCollection({
   })
 });
 
-export const collections = { manuel, cantine, atelier };
+const radar = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: 'src/content/radar' }),
+  schema: z.object({
+    title: z.string(),
+    seo_title: z.string().optional(),
+    description: z.string(),
+    date: z.date(),
+    tags: z.array(z.string()),
+    image: z.string().optional(),
+    image_alt: z.string().optional(),
+    source: z.string().optional(),
+    source_url: z.string().optional(),
+  })
+});
+
+export const collections = { manuel, cantine, atelier, radar };
