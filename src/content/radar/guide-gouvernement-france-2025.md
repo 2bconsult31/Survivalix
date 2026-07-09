@@ -71,7 +71,11 @@ Le gouvernement vient de valider cette approche officiellement. C'est une bonne 
 
 Le guide "Tous responsables" est disponible gratuitement en PDF sur le site officiel du SGDSN et sur info.gouv.fr :
 
-**[Télécharger le guide "Tous responsables" — SGDSN](https://www.sgdsn.gouv.fr/files/files/Publications/Guide_Tous%20responsables.pdf)**
+**[Télécharger le guide "Tous responsables" — version web (PDF)](https://www.sgdsn.gouv.fr/files/files/Publications/Tous%20responsables%20-%20Web.pdf)**
+
+**[Télécharger la version impression (PDF)](https://www.sgdsn.gouv.fr/files/files/Publications/Tous%20responsables%20%20-%20Print.pdf)**
+
+**[Version FALC — Facile à Lire et à Comprendre (PDF)](https://www.sgdsn.gouv.fr/files/files/Publications/Tous%20responsables_FALC.pdf)**
 
 **[Page officielle du guide — info.gouv.fr](https://www.info.gouv.fr/actualite/tous-responsables-un-guide-pour-mieux-faire-face-aux-risques)**
 
