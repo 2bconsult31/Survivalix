@@ -7,7 +7,6 @@ tags: ["eau", "stockage", "appartement", "kit-72h", "debutant"]
 rubrique: "manuel"
 image: "/images/articles/stocker-eau-appartement.jpg"
 image_alt: "Bidons PEHD bleus et bouteilles d'eau stockés dans un appartement pour survie"
-seo_title: "Stocker l'Eau en Appartement : Guide Complet 2025"
 ---
 
 L'eau du robinet est tellement intégrée à notre quotidien qu'on ne l'imagine même pas en train de disparaître. Et pourtant.
