@@ -1,7 +1,189 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="À propos — Survivalix">
-  <h1>À propos</h1>
-  <p>Qui est derrière Survivalix ?</p>
+
+<Layout title="À propos — Survivalix" description="Survivalix, c'est quoi ? Un site de survie et prepping pour les gens normaux, avec un ton décalé et une DA rétro-futuriste. L'histoire du projet.">
+
+  <div class="about-header">
+    <div class="about-label">// À PROPOS //</div>
+    <h1>Ce qu'est Survivalix<br/>et pourquoi ça existe</h1>
+  </div>
+
+  <div class="about-content">
+
+    <div class="about-section about-section-intro">
+      <p class="about-intro">Survivalix n'est pas un site de survivalistes. C'est un site pour les gens normaux qui ont réalisé — parfois en regardant une tempête couper l'électricité pendant trois jours, parfois en lisant les infos un dimanche matin — que se préparer un minimum, c'est du bon sens. Pas de la paranoïa.</p>
+    </div>
+
+    <div class="about-section">
+      <h2>Le constat de départ</h2>
+      <p>Il y a un paradoxe bizarre dans le monde de la préparation aux crises en France. D'un côté, des sites sérieux mais austères, avec des DAs vieillissantes, un ton très masculin et une cible implicite de survivalistes convaincus. De l'autre, un public beaucoup plus large — des urbains, des curieux, des gamers, des gens qui ont grandi avec Fallout ou The Last of Us — qui s'intéresse au sujet mais ne se reconnaît pas dans ce qu'il trouve.</p>
+      <p>Survivalix est né de ce constat. Un site qui prend le sujet au sérieux sans se prendre au sérieux. Qui donne des informations fiables et sourcées dans un format qui donne envie de les lire. Qui assume l'esthétique rétro-futuriste post-apo parce que c'est honnête : oui, c'est cool, et non, ça n'enlève rien à la pertinence du contenu.</p>
+    </div>
+
+    <div class="about-section">
+      <h2>Ce qu'on fait ici</h2>
+      <p><strong>Le Manuel</strong> — des guides pratiques longs format sur les sujets essentiels : kit 72h, stockage de l'eau, gestion des coupures d'électricité. Du contenu sourcé, vérifié, qui répond à des vraies questions.</p>
+      <p><strong>La Cantine</strong> — des recettes de survie qui ont du goût. Riz aux haricots, Bannock, Hardtack. Des classiques internationaux traduits, testés, expliqués avec le contexte qui les rend intéressants.</p>
+      <p><strong>L'Atelier</strong> — des tutoriels pratiques pour acquérir des compétences réelles. Faire du feu, purifier l'eau, monter une trousse de secours. Du concret, pas de la théorie.</p>
+      <p><strong>Les Outils</strong> — des calculateurs interactifs pour personnaliser sa préparation. Combien d'eau stocker ? Combien de calories ? Quel est mon niveau de préparation ? Des réponses adaptées à ta situation.</p>
+      <p><strong>Le Bunker IA</strong> — un assistant IA spécialisé survie, disponible 24h/24, qui répond à tes questions avec une base de connaissances vérifiée et la capacité de faire des recherches en temps réel.</p>
+      <p><strong>Le Radar</strong> — une veille sur l'actualité survie, les signaux faibles, ce que les médias ne disent pas encore.</p>
+    </div>
+
+    <div class="about-section">
+      <h2>Les engagements éditoriaux</h2>
+      <p><strong>Les sources sont citées.</strong> Chaque information factuelle est sourcée — SGDSN, Croix-Rouge française, ANSES, FEMA, sites spécialisés reconnus. Quand on ne sait pas ou qu'on n'est pas sûr, on le dit.</p>
+      <p><strong>Pas de sensationnalisme.</strong> On n'est pas là pour faire peur. On est là pour aider à être préparé. La nuance entre les deux est importante.</p>
+      <p><strong>Pas de promotion déguisée.</strong> Survivalix peut contenir des liens d'affiliation Amazon vers du matériel recommandé. Ces liens sont clairement identifiés et ne modifient pas le contenu éditorial.</p>
+      <p><strong>Pas de marques recommandées sans raison.</strong> Quand un produit est mentionné, c'est parce qu'il est pertinent — pas parce qu'on a été payé pour en parler.</p>
+    </div>
+
+    <div class="about-section">
+      <h2>Qui est derrière Survivalix</h2>
+      <p>Survivalix est un projet indépendant créé et maintenu par <strong>Boris Bendjemla</strong>, graphiste et formateur IA basé en Occitanie. 20 ans d'expérience en design, une passion pour la pop culture post-apo, et la conviction que l'autonomie et la préparation sont des sujets qui méritent mieux que ce qui existe actuellement en français.</p>
+      <p>Le site tourne sur <strong>Astro</strong>, est déployé sur <strong>Vercel</strong>, et le Bunker IA utilise <strong>l'API Claude d'Anthropic</strong>. Tout le design est original — aucun asset Bethesda ou Fallout, une identité visuelle 100% maison.</p>
+    </div>
+
+    <div class="about-section">
+      <h2>Contact</h2>
+      <p>Pour toute question, suggestion ou signalement d'erreur : <a href="mailto:contact@survivalix.fr">contact@survivalix.fr</a></p>
+      <p>Pour les demandes de partenariat ou de collaboration : même adresse, avec le sujet clair.</p>
+    </div>
+
+    <div class="about-cta">
+      <div class="cta-label">// PAR OÙ COMMENCER ? //</div>
+      <div class="cta-links">
+        <a href="/manuel/kit-urgence-72h" class="cta-btn">Le Kit 72h →</a>
+        <a href="/outils/evaluateur-preparation" class="cta-btn cta-btn-outline">Évaluer ma préparation →</a>
+      </div>
+    </div>
+
+  </div>
+
 </Layout>
+
+<style>
+  .about-header {
+    text-align: center;
+    padding: 3rem 0 2rem;
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 3rem;
+  }
+
+  .about-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #6B7C45;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .about-header h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    color: #F5A623;
+    letter-spacing: 2px;
+    line-height: 1.2;
+  }
+
+  .about-content {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .about-intro {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: #F5E6C8;
+    line-height: 1.7;
+    opacity: 0.9;
+    border-left: 3px solid #F5A623;
+    padding-left: 1.5rem;
+  }
+
+  .about-section h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #F5A623;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #1a1a1a;
+  }
+
+  .about-section p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.95rem;
+    color: #F5E6C8;
+    opacity: 0.8;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 0.8rem;
+  }
+
+  .about-section p:last-child { margin-bottom: 0; }
+
+  .about-section strong { color: #ffffff; font-weight: 700; }
+
+  .about-section a {
+    color: #F5A623;
+    text-decoration: none;
+  }
+
+  .about-section a:hover { opacity: 0.7; }
+
+  .about-cta {
+    background-color: #111;
+    border: 1px solid #1e1e1e;
+    border-top: 3px solid #F5A623;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .cta-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    color: #6B7C45;
+    letter-spacing: 4px;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cta-btn {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: #F5A623;
+    color: #0d0d0d;
+    padding: 0.8rem 1.5rem;
+    transition: background-color 0.2s;
+  }
+
+  .cta-btn:hover { background-color: #c4811a; }
+
+  .cta-btn-outline {
+    background: none;
+    color: #F5A623;
+    border: 1px solid #F5A623;
+  }
+
+  .cta-btn-outline:hover {
+    background-color: #111;
+    color: #F5A623;
+  }
+</style>

@@ -1,7 +1,253 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="Contact — Survivalix">
-  <h1>Contact</h1>
-  <p>Une question ? Un message ?</p>
+
+<Layout title="Contact — Survivalix" description="Contacter l'équipe Survivalix pour toute question, suggestion ou signalement d'erreur.">
+
+  <div class="contact-header">
+    <div class="contact-label">// CONTACT //</div>
+    <h1>Nous contacter</h1>
+    <p class="contact-desc">Une question, une suggestion, une erreur à signaler ? On lit tous les messages.</p>
+  </div>
+
+  <div class="contact-content">
+
+    <div class="contact-grid">
+
+      <div class="contact-main">
+
+        <div class="contact-block">
+          <div class="contact-block-label">// EMAIL //</div>
+          <a href="mailto:contact@survivalix.fr" class="contact-email">contact@survivalix.fr</a>
+          <p>Pour toute question générale, suggestion éditoriale ou signalement d'erreur dans un article.</p>
+        </div>
+
+        <div class="contact-block">
+          <div class="contact-block-label">// BUNKER IA //</div>
+          <p>Pour une question sur la survie, le prepping ou l'autonomie, le Bunker IA répond 24h/24 avec des informations sourcées.</p>
+          <a href="/bunker" class="contact-btn">Poser une question au Bunker →</a>
+        </div>
+
+        <div class="contact-block">
+          <div class="contact-block-label">// SIGNALER UNE ERREUR //</div>
+          <p>Vous avez repéré une information incorrecte, une source douteuse ou un lien cassé ? Envoyez-nous un email avec le lien de la page concernée et le détail de l'erreur. On corrige rapidement.</p>
+          <a href="mailto:contact@survivalix.fr?subject=Signalement erreur" class="contact-btn">Signaler une erreur →</a>
+        </div>
+
+      </div>
+
+      <div class="contact-sidebar">
+
+        <div class="sidebar-block">
+          <div class="sidebar-label">// TEMPS DE RÉPONSE //</div>
+          <p>Nous répondons généralement sous 48 à 72 heures ouvrées.</p>
+        </div>
+
+        <div class="sidebar-block">
+          <div class="sidebar-label">// URGENCE //</div>
+          <p>Pour toute urgence vitale, ne nous contactez pas — appelez les secours directement.</p>
+          <div class="urgence-nums">
+            <span><strong>112</strong> — Urgences</span>
+            <span><strong>15</strong> — SAMU</span>
+            <span><strong>18</strong> — Pompiers</span>
+          </div>
+        </div>
+
+        <div class="sidebar-block">
+          <div class="sidebar-label">// PARTENARIATS //</div>
+          <p>Pour toute demande de partenariat ou collaboration, précisez-le dans l'objet de votre email.</p>
+          <a href="mailto:contact@survivalix.fr?subject=Partenariat" class="contact-btn-small">Écrire →</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </Layout>
+
+<style>
+  .contact-header {
+    text-align: center;
+    padding: 3rem 0 2rem;
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 3rem;
+  }
+
+  .contact-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #6B7C45;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .contact-header h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #F5A623;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+  }
+
+  .contact-desc {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    color: #F5E6C8;
+    opacity: 0.7;
+    font-weight: 300;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .contact-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .contact-grid { grid-template-columns: 1fr 280px; align-items: start; }
+  }
+
+  .contact-main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-block {
+    background-color: #111;
+    border: 1px solid #1e1e1e;
+    border-top: 3px solid #F5A623;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .contact-block-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    color: #6B7C45;
+    letter-spacing: 3px;
+  }
+
+  .contact-email {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: #F5A623;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: opacity 0.2s;
+  }
+
+  .contact-email:hover { opacity: 0.7; }
+
+  .contact-block p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    color: #F5E6C8;
+    opacity: 0.7;
+    font-weight: 300;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .contact-btn {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: #F5A623;
+    color: #0d0d0d;
+    padding: 0.7rem 1.2rem;
+    text-align: center;
+    transition: background-color 0.2s;
+    align-self: flex-start;
+  }
+
+  .contact-btn:hover { background-color: #c4811a; }
+
+  /* SIDEBAR */
+  .contact-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .contact-sidebar { position: sticky; top: 2rem; }
+  }
+
+  .sidebar-block {
+    background-color: #0d0d0d;
+    border: 1px solid #1e1e1e;
+    border-top: 3px solid #6B7C45;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .sidebar-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.68rem;
+    color: #6B7C45;
+    letter-spacing: 3px;
+  }
+
+  .sidebar-block p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    color: #F5E6C8;
+    opacity: 0.65;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .urgence-nums {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: 0.3rem;
+  }
+
+  .urgence-nums span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    color: #F5E6C8;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+
+  .urgence-nums strong {
+    color: #F5A623;
+    font-weight: 700;
+  }
+
+  .contact-btn-small {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #F5A623;
+    border: 1px solid #333;
+    padding: 0.4rem 0.8rem;
+    text-align: center;
+    transition: all 0.2s;
+    align-self: flex-start;
+  }
+
+  .contact-btn-small:hover { border-color: #F5A623; }
+</style>
