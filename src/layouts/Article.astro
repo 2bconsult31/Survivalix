@@ -21,6 +21,14 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
     <meta property="og:description" content={frontmatter.description} />
     <meta property="og:image" content={frontmatter.image || '/og-image.jpg'} />
     <meta name="robots" content="index, follow" />
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPFYTX79ND"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PPFYTX79ND');
+    </script>
   </head>
   <body>
 
