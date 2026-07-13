@@ -19,7 +19,8 @@ const url = Astro.url;
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet" /></noscript>
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={url} />
@@ -32,15 +33,22 @@ const url = Astro.url;
     <meta property="og:site_name" content="Survivalix" />
     <meta name="robots" content="index, follow" />
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PPFYTX79ND"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) — chargé après le rendu initial pour ne pas bloquer le LCP -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PPFYTX79ND');
 
-  gtag('config', 'G-PPFYTX79ND');
-</script>
+      function loadGA() {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-PPFYTX79ND';
+        document.head.appendChild(script);
+        window.removeEventListener('load', loadGA);
+      }
+      window.addEventListener('load', loadGA);
+    </script>
   </head>
   <body>
 
@@ -50,7 +58,7 @@ const url = Astro.url;
       <div class="header-inner">
         <div class="header-top">
           <a href="/" class="logo">
-            <img src="/LOGO_OK.svg" alt="Survivalix" class="logo-img" />
+            <img src="/LOGO_OK.svg" alt="Survivalix" class="logo-img" width="180" height="48" />
           </a>
           <button class="menu-toggle" id="menuToggle" aria-label="Menu">
             <span></span>
@@ -101,7 +109,7 @@ const url = Astro.url;
 
     <footer>
       <div class="footer-inner">
-        <img src="/LOGO_OK.svg" alt="Survivalix" class="footer-logo-img" />
+        <img src="/LOGO_OK.svg" alt="Survivalix" class="footer-logo-img" width="160" height="43" />
         <p class="footer-tagline">Le site de survie pour les gens normaux.</p>
         <div class="footer-links">
           <a href="/a-propos">À propos</a>
