@@ -70,6 +70,8 @@ La personne ne réagit pas, ne respire pas ou respire de façon anormale (gasps)
 
 **Chaque minute sans massage cardiaque réduit les chances de survie d'environ 10%.** C'est littéralement le geste qui sauve le plus de vies en France chaque année.
 
+![Schéma position des mains pour massage cardiaque et position latérale de sécurité](/images/articles/premiers-secours-schema-gestes.jpg)
+
 ### 4. Une brûlure
 
 **Ce qu'il faut faire :**
