@@ -313,7 +313,7 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
   }
 
   @media (min-width: 920px) {
-    .article-body { grid-template-columns: 1fr 260px; }
+    .article-body { grid-template-columns: minmax(0, 1fr) 260px; }
   }
 
   /* ARTICLE CONTENT */
