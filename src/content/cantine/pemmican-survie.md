@@ -1,12 +1,18 @@
 ---
 title: "Pemmican : la recette amérindienne qui se conserve des années"
+seo_title: "Pemmican : Recette de Survie Ultra Longue Conservation"
 description: "Viande séchée et graisse fondue, sans cuisson complexe : le pemmican est la réserve d'énergie la plus dense et la plus durable qu'on puisse préparer chez soi."
 date: 2025-02-26
-tags: ["viande-sechee", "longue-conservation", "energie", "kit-72h"]
+tags: ["recette", "viande-sechee", "longue-conservation", "energie", "kit-72h", "cantine"]
 rubrique: "cantine"
-temps_cuisson: "8h de séchage"
 image: "/images/cantine/pemmican-survie.jpg"
 image_alt: "Barres de pemmican coupées, viande séchée et fruits secs sur une planche en bois"
+temps_prep: "30 min"
+temps_cuisson: "8h de séchage"
+personnes: 6
+difficulte: "Intermédiaire"
+energie: "Four (séchage) / Casserole"
+conservation: "Plusieurs mois à température ambiante · Plusieurs années au congélateur"
 ---
 
 En 1909, Robert Peary atteint le pôle Nord après des semaines en autonomie totale. Dans son sac : pas de conserves, pas de rations militaires modernes — du pemmican. Un mélange de viande séchée et de graisse fondue, inventé des siècles plus tôt par les peuples amérindiens des Grandes Plaines, capable de nourrir un homme par des températures où presque tout le reste gèle, pourrit ou s'alourdit inutilement.
@@ -43,9 +49,14 @@ La recette traditionnelle repose sur une proportion simple : **un poids égal de
 
 **Étape 5 — Façonner et laisser durcir.** Forme des barres ou des petites boules avec les mains (humidifie légèrement tes paumes si le mélange colle). Dépose-les sur une plaque recouverte de papier cuisson et laisse durcir à température ambiante pendant 2 à 3 heures.
 
-## Conservation
+## Ce qu'il faut savoir sur la conservation
 
-Emballé individuellement dans du papier sulfurisé, puis stocké dans un contenant hermétique à l'abri de la lumière, le pemmican se conserve plusieurs mois à température ambiante, et facilement plus d'un an au réfrigérateur. Au congélateur, certains praticiens du prepping le gardent sans problème plusieurs années.
+| Élément | Détail |
+|---|---|
+| Température ambiante, emballé sous vide | Plusieurs mois |
+| Réfrigérateur | Plus d'un an |
+| Congélateur | Plusieurs années |
+| Point de vigilance | Qualité et fraîcheur de la graisse au départ |
 
 Le point de vigilance principal, c'est la qualité de la graisse au départ : un suif mal filtré ou une graisse déjà légèrement rance donnera un pemmican qui tourne plus vite. Si l'odeur ou la couleur te semble suspecte à un moment donné, ne le mange pas — mieux vaut perdre une portion que prendre un risque inutile.
 
