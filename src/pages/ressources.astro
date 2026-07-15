@@ -1,7 +1,314 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const termes = [
+  { mot: "BOB / Kit 72h", categorie: "acronymes", def: "Bug Out Bag, ou sac d'évacuation. Le sac prêt à l'emploi contenant de quoi tenir 72 heures en autonomie si tu dois partir vite.", lien: "/manuel/sac-evacuation", lienTexte: "Voir notre guide du sac d'évacuation" },
+  { mot: "Bug in", categorie: "concepts", def: "Rester chez soi en cas de crise plutôt que d'évacuer. C'est le scénario le plus probable pour la grande majorité des gens — pas besoin de forêt ni de bunker." },
+  { mot: "Bug out", categorie: "concepts", def: "L'inverse du bug in : évacuer son domicile parce que rester serait plus dangereux. Rare en pratique pour un citadin, mais bon à anticiper." },
+  { mot: "EDC (Every Day Carry)", categorie: "materiel", def: "Ce que tu portes sur toi au quotidien : couteau, lampe, briquet, batterie externe. Pas besoin d'en faire trop — ton téléphone chargé est déjà un EDC redoutable." },
+  { mot: "PSC1", categorie: "acronymes", def: "Prévention et Secours Civique niveau 1. La formation de base aux premiers secours en France, 7 heures, ouverte à tous.", lien: "/manuel/premiers-secours-gestes-qui-sauvent", lienTexte: "Voir notre guide premiers secours" },
+  { mot: "PLS", categorie: "acronymes", def: "Position Latérale de Sécurité. La position à adopter pour une personne inconsciente qui respire, afin d'éviter qu'elle s'étouffe." },
+  { mot: "Prepper / Prepping", categorie: "concepts", def: "De l'anglais \"to prepare\". Désigne une personne qui se prépare de manière réfléchie aux imprévus — sans forcément se revendiquer \"survivaliste\"." },
+  { mot: "Résilience", categorie: "concepts", def: "La capacité à encaisser un coup dur et à revenir à un état stable rapidement. Le mot le plus utilisé (et parfois le plus galvaudé) du milieu." },
+  { mot: "SHTF", categorie: "acronymes", def: "\"Shit Hits The Fan\" — l'expression un peu vulgaire mais universelle pour désigner le moment où tout part en vrille en même temps." },
+  { mot: "WROL", categorie: "acronymes", def: "\"Without Rule of Law\". Situation théorique d'effondrement des institutions. Concept surtout américain, très rarement pertinent en contexte français." },
+  { mot: "Off the grid", categorie: "concepts", def: "Vivre déconnecté des réseaux publics (électricité, eau, internet). Un mode de vie choisi par certains, pas un objectif nécessaire pour être bien préparé." },
+  { mot: "Ferrocérium", categorie: "materiel", def: "L'alliage utilisé dans les allume-feux à étincelles. Fonctionne même mouillé, contrairement à une allumette classique." },
+  { mot: "Garrot", categorie: "techniques", def: "Dispositif de compression posé au-dessus d'une hémorragie sévère quand rien d'autre ne suffit à l'arrêter. Toujours noter l'heure de pose.", lien: "/manuel/premiers-secours-gestes-qui-sauvent", lienTexte: "Voir notre guide premiers secours" },
+  { mot: "Îlot de chaleur urbain", categorie: "concepts", def: "Phénomène qui rend une ville plusieurs degrés plus chaude que la campagne environnante la nuit, à cause du béton et du bitume qui stockent la chaleur.", lien: "/radar/canicule-ville-2026", lienTexte: "Voir notre article sur la canicule en ville" },
+  { mot: "FR-Alert", categorie: "acronymes", def: "Le système officiel d'alerte de l'État français, envoyé directement via les antennes-relais sur ton téléphone en cas de danger majeur — sans inscription ni application.", lien: "/manuel/communiquer-situation-crise", lienTexte: "Voir notre guide communication en crise" },
+  { mot: "Géorisques", categorie: "outils", def: "Le site officiel gratuit qui permet de connaître les risques naturels et industriels précis d'une adresse donnée en France.", lien: "/manuel/risques-pres-de-chez-soi", lienTexte: "Voir notre article sur les risques locaux" },
+  { mot: "Pemmican", categorie: "materiel", def: "Mélange traditionnel amérindien de viande séchée et de graisse fondue, capable de se conserver plusieurs années sans réfrigération.", lien: "/cantine/pemmican-survie", lienTexte: "Voir la recette" },
+  { mot: "Bushcraft", categorie: "techniques", def: "L'art de vivre en pleine nature avec des outils rudimentaires : faire du feu, construire un abri, s'orienter sans GPS." },
+  { mot: "Contact hors-zone", categorie: "concepts", def: "Une personne désignée à l'avance, habitant loin de chez toi, que toute la famille appelle en cas de crise locale pour centraliser les nouvelles plutôt que de saturer le réseau local.", lien: "/manuel/communiquer-situation-crise", lienTexte: "Voir notre guide communication en crise" },
+  { mot: "Delestage", categorie: "concepts", def: "Coupure de courant volontaire et ciblée, décidée par le gestionnaire du réseau électrique pour éviter une panne généralisée en cas de forte tension sur le réseau." },
+  { mot: "Citoyen-sauveteur", categorie: "concepts", def: "Statut juridique français depuis 2020 qui protège toute personne portant secours de bonne foi — tu ne risques rien légalement pour avoir essayé d'aider." },
+  { mot: "Vigicrues", categorie: "outils", def: "Le service officiel qui surveille en temps réel le niveau de plus de 20 000 km de cours d'eau en France et alerte en cas de risque de crue." },
+  { mot: "Rétention d'eau (stockage)", categorie: "techniques", def: "Le fait de conserver une réserve d'eau potable à domicile. La recommandation officielle minimale est de 6 litres par personne pour 72 heures.", lien: "/outils/calculateur-stock-eau", lienTexte: "Calculer mon stock d'eau" },
+  { mot: "Seveso (site classé)", categorie: "concepts", def: "Un site industriel présentant un risque chimique ou d'explosion, encadré par une réglementation européenne stricte. Consultable pour n'importe quelle adresse via Géorisques." },
+]
 ---
-<Layout title="Ressources — Survivalix">
-  <h1>Ressources</h1>
-  <p>Guides PDF, fiches recettes et cartes à télécharger.</p>
+
+<Layout title="Lexique du Prepping — Survivalix" description="Tous les termes et acronymes du survivalisme et du prepping expliqués simplement, sans jargon inutile. BOB, EDC, PLS, SHTF et bien d'autres.">
+
+  <div class="lexique-header">
+    <div class="lexique-label">// GLOSSAIRE //</div>
+    <h1>Le Lexique</h1>
+    <p class="lexique-desc">Tous les mots bizarres que tu vas croiser en lisant sur la survie et le prepping — expliqués sans jargon, sans te faire sentir idiot de ne pas déjà les connaître.</p>
+  </div>
+
+  <div class="lexique-controls">
+    <div class="search-wrapper">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-icon">
+        <circle cx="11" cy="11" r="7" stroke="#F5A623" stroke-width="1.5"/>
+        <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <input type="text" id="searchInput" placeholder="Chercher un terme... (ex: BOB, résilience, garrot)" />
+    </div>
+
+    <div class="filter-tags" id="filterTags">
+      <button class="filter-tag active" data-cat="tous">Tous</button>
+      <button class="filter-tag" data-cat="acronymes">Acronymes</button>
+      <button class="filter-tag" data-cat="concepts">Concepts</button>
+      <button class="filter-tag" data-cat="materiel">Matériel</button>
+      <button class="filter-tag" data-cat="techniques">Techniques</button>
+      <button class="filter-tag" data-cat="outils">Outils officiels</button>
+    </div>
+  </div>
+
+  <div class="lexique-count" id="lexiqueCount"></div>
+
+  <div class="lexique-grid" id="lexiqueGrid">
+    {termes.map((t, i) => (
+      <div class="terme-card" data-cat={t.categorie} data-search={`${t.mot} ${t.def}`.toLowerCase()}>
+        <div class="terme-cat">#{t.categorie}</div>
+        <h2 class="terme-mot">{t.mot}</h2>
+        <p class="terme-def">{t.def}</p>
+        {t.lien && (
+          <a href={t.lien} class="terme-lien">
+            {t.lienTexte}
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="4" y1="12" x2="20" y2="12" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+              <polyline points="14,6 20,12 14,18" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        )}
+      </div>
+    ))}
+  </div>
+
+  <div class="lexique-empty" id="lexiqueEmpty" style="display:none;">
+    <p>Aucun terme ne correspond à ta recherche. Essaie un autre mot, ou <a href="/bunker">demande directement au Bunker IA</a>.</p>
+  </div>
+
 </Layout>
+
+<script is:inline>
+  const searchInput = document.getElementById('searchInput');
+  const filterTags = document.querySelectorAll('.filter-tag');
+  const cards = document.querySelectorAll('.terme-card');
+  const emptyState = document.getElementById('lexiqueEmpty');
+  const countEl = document.getElementById('lexiqueCount');
+
+  let currentCat = 'tous';
+
+  function updateDisplay() {
+    const query = searchInput.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const matchesCat = currentCat === 'tous' || card.dataset.cat === currentCat;
+      const matchesSearch = query === '' || card.dataset.search.includes(query);
+      const show = matchesCat && matchesSearch;
+      card.style.display = show ? 'flex' : 'none';
+      if (show) visibleCount++;
+    });
+
+    emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+    countEl.textContent = `${visibleCount} terme${visibleCount > 1 ? 's' : ''} affiché${visibleCount > 1 ? 's' : ''}`;
+  }
+
+  searchInput.addEventListener('input', updateDisplay);
+
+  filterTags.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterTags.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentCat = btn.dataset.cat;
+      updateDisplay();
+    });
+  });
+
+  updateDisplay();
+</script>
+
+<style>
+  .lexique-header {
+    text-align: center;
+    padding: 3rem 0 2rem;
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 2.5rem;
+  }
+
+  .lexique-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #6B7C45;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .lexique-header h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    color: #F5A623;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .lexique-desc {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    color: #F5E6C8;
+    opacity: 0.7;
+    font-weight: 300;
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .lexique-controls {
+    max-width: 900px;
+    margin: 0 auto 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 1rem;
+    width: 18px;
+    height: 18px;
+    pointer-events: none;
+  }
+
+  #searchInput {
+    width: 100%;
+    background-color: #0d0d0d;
+    border: 1px solid #333;
+    border-bottom: 3px solid #F5A623;
+    color: #F5E6C8;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.95rem;
+    padding: 0.9rem 1rem 0.9rem 2.8rem;
+    outline: none;
+  }
+
+  #searchInput::placeholder { color: #555; }
+  #searchInput:focus { border-color: #F5A623; }
+
+  .filter-tags {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .filter-tag {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #F5E6C8;
+    background: none;
+    border: 1px solid #333;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .filter-tag:hover { border-color: #F5A623; color: #F5A623; }
+
+  .filter-tag.active {
+    background-color: #F5A623;
+    color: #0d0d0d;
+    border-color: #F5A623;
+  }
+
+  .lexique-count {
+    max-width: 900px;
+    margin: 0 auto 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #666;
+    letter-spacing: 1px;
+    text-align: right;
+  }
+
+  .lexique-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding-bottom: 3rem;
+  }
+
+  @media (min-width: 700px) {
+    .lexique-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .terme-card {
+    background-color: #0d0d0d;
+    border: 1px solid #222;
+    border-left: 4px solid #F5A623;
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .terme-cat {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.65rem;
+    color: #6B7C45;
+    letter-spacing: 2px;
+  }
+
+  .terme-mot {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.15rem;
+    color: #F5A623;
+    letter-spacing: 0.5px;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .terme-def {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    color: #F5E6C8;
+    opacity: 0.8;
+    font-weight: 300;
+    line-height: 1.7;
+    margin: 0 !important;
+    flex: 1;
+  }
+
+  .terme-lien {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #F5A623;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.4rem;
+  }
+
+  .terme-lien svg { width: 12px; height: 12px; flex-shrink: 0; }
+  .terme-lien:hover { opacity: 0.7; }
+
+  .lexique-empty {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    color: #F5E6C8;
+    opacity: 0.6;
+    font-weight: 300;
+  }
+
+  .lexique-empty a { color: #F5A623; text-decoration: underline; }
+</style>
