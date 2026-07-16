@@ -2,6 +2,7 @@
 title: "Réparer une fuite d'eau en urgence, avant l'arrivée du plombier"
 seo_title: "Fuite d'Eau Urgence : Réparation Provisoire Étape par Étape"
 description: "Vendredi soir, plombier injoignable avant lundi : voici comment colmater une fuite d'eau en urgence, avec le bon matériel et sans aggraver les dégâts."
+date: 2025-04-09
 tags: ["plomberie", "urgence", "reparation", "appartement"]
 rubrique: "atelier"
 duree: "10 min"
