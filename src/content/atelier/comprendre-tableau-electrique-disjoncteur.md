@@ -18,7 +18,7 @@ Ton installation électrique fonctionne comme une cascade de filtres, chacun ave
 
 **Le disjoncteur de branchement.** Tout en haut du tableau, généralement plombé et scellé — il appartient à Enedis, pas à toi. Son rôle : limiter la puissance totale que ton logement peut consommer d'un coup, selon la puissance souscrite dans ton contrat (3, 6, 9 kVA...). S'il saute, c'est que trop d'appareils gourmands tournaient en même temps (four, plaques, sèche-linge). Tu peux le réarmer toi-même, mais tu ne peux ni le modifier ni le remplacer.
 
-**Le différentiel (ou interrupteur différentiel).** Placé en tête de chaque rangée du tableau, c'est le plus gros module de la rangée. Son rôle est unique et vital : protéger les personnes contre l'électrocution, en détectant la moindre fuite de courant vers la terre — un seuil de 30 mA suffit à le déclencher, largement en dessous de ce qui menace un cœur humain. S'il saute, toute une rangée entière de circuits se coupe d'un coup.
+**Le différentiel (ou interrupteur différentiel).** Placé en tête de chaque rangée du tableau, c'est le plus gros module de la rangée. Son rôle est unique et vital : protéger les personnes contre l'électrocution, en détectant la moindre fuite de courant vers la terre — un seuil de 30 mA suffit à le déclencher, calibré précisément juste en dessous du seuil de fibrillation ventriculaire chez l'humain. S'il saute, toute une rangée entière de circuits se coupe d'un coup.
 
 **Les disjoncteurs divisionnaires.** Les petits modules individuels sous le différentiel, un par circuit ("Cuisine", "Salle de bain", "Prises chambre"...). Ils protègent contre la surcharge et le court-circuit sur ce circuit précis. Si un seul saute, le problème est localisé à ce circuit exact.
 
