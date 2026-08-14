@@ -4,6 +4,10 @@ import '../styles/global.css';
 const { frontmatter } = Astro.props;
 const hasImage = frontmatter.image && frontmatter.image !== '';
 const pageTitle = frontmatter.seo_title || frontmatter.title;
+
+const SITE_URL = 'https://survivalix.fr';
+const canonicalURL = new URL(Astro.url.pathname, SITE_URL).toString();
+const ogImageURL = new URL(frontmatter.image || '/og-image.jpg', SITE_URL).toString();
 ---
 
 <!doctype html>
@@ -14,14 +18,57 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet" />
     <title>{pageTitle} — Survivalix</title>
     <meta name="description" content={frontmatter.description} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={frontmatter.description} />
-    <meta property="og:image" content={frontmatter.image || '/og-image.jpg'} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Survivalix" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={frontmatter.description} />
+    <meta name="twitter:image" content={ogImageURL} />
+
     <meta name="robots" content="index, follow" />
-      <!-- Google tag (gtag.js) -->
+
+    <!-- JSON-LD Article -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": frontmatter.title,
+      "description": frontmatter.description,
+      "image": ogImageURL,
+      "datePublished": frontmatter.date,
+      "dateModified": frontmatter.date,
+      "author": {
+        "@type": "Organization",
+        "name": "Survivalix"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Survivalix",
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${SITE_URL}/LOGO_OK.svg`
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": canonicalURL
+      }
+    })} />
+
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPFYTX79ND"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
