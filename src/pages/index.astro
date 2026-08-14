@@ -20,22 +20,6 @@ import Layout from '../layouts/Layout.astro';
       <a href="/commencer-ici" class="btn-primary">Par où commencer ?</a>
       <a href="/survivant" class="btn-secondary">Quel Survivant es-tu ?</a>
     </div>
-    <div class="hero-stats">
-      <div class="stat">
-        <span class="stat-num">72h</span>
-        <span class="stat-label">d'autonomie minimum</span>
-      </div>
-      <div class="stat-sep">//</div>
-      <div class="stat">
-        <span class="stat-num">3L</span>
-        <span class="stat-label">d'eau par jour par personne</span>
-      </div>
-      <div class="stat-sep">//</div>
-      <div class="stat">
-        <span class="stat-num">0€</span>
-        <span class="stat-label">pour commencer à se préparer</span>
-      </div>
-    </div>
   </section>
 
   <!-- BLOC 2 — RASSURANT -->
@@ -259,7 +243,6 @@ import Layout from '../layouts/Layout.astro';
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
   }
 
   .btn-primary {
@@ -301,40 +284,6 @@ import Layout from '../layouts/Layout.astro';
   .btn-secondary:hover {
     background-color: #F5A623;
     color: #0d0d0d;
-  }
-
-  .hero-stats {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
-
-  .stat { text-align: center; }
-
-  .stat-num {
-    display: block;
-    font-family: 'Special Elite', cursive;
-    font-size: clamp(1.8rem, 5vw, 2.5rem);
-    color: #F5A623;
-  }
-
-  .stat-label {
-    display: block;
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.7rem;
-    color: #ffffff;
-    letter-spacing: 1px;
-    opacity: 0.6;
-    text-transform: uppercase;
-  }
-
-  .stat-sep {
-    font-family: 'Oswald', sans-serif;
-    color: #6B7C45;
-    font-size: 1.5rem;
-    opacity: 0.5;
   }
 
   /* RASSURANT */
