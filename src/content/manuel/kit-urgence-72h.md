@@ -1,6 +1,7 @@
 ---
 title: "Kit d'urgence 72h : la liste complète (testée, sans bullshit)"
-description: "Tout ce qu'il faut avoir dans son kit 72h. Liste complète, budget réaliste, erreurs à éviter. Pour les gens normaux qui veulent être prêts sans devenir fous."
+seo_title: "Kit d'urgence 72h : la liste complète et testée"
+description: "La liste complète du kit 72h, budget réaliste inclus, plus une checklist PDF à imprimer gratuitement. Pour être prêt sans jouer les survivalistes."
 date: 2025-01-15
 tags: ["debutant", "kit", "urgence", "appartement"]
 rubrique: "manuel"
