@@ -1,0 +1,626 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="Générateur de kit 72h personnalisé — Survivalix"
+  description="Compose ton kit d'urgence sur mesure selon ton foyer : adultes, enfants, bébés, animaux. Quantités précises, module bébé inclus."
+>
+
+  <div class="page-header">
+    <div class="page-label">// OUTIL INTERACTIF //</div>
+    <h1>Générateur de kit 72h personnalisé</h1>
+    <p class="page-desc">
+      Ton foyer n'est pas une liste générique. Indique sa composition,
+      on ajuste les quantités — jusqu'au module bébé si besoin.
+    </p>
+  </div>
+
+  <div class="calc-container">
+
+    <div class="calc-form">
+
+      <div class="form-section">
+        <div class="form-section-label">// TON FOYER //</div>
+
+        <div class="form-group">
+          <label for="adultes">Adultes</label>
+          <div class="counter">
+            <button type="button" onclick="decrement('adultes')">−</button>
+            <span id="adultes-val">2</span>
+            <button type="button" onclick="increment('adultes')">+</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="enfants">Enfants (2-12 ans)</label>
+          <div class="counter">
+            <button type="button" onclick="decrement('enfants')">−</button>
+            <span id="enfants-val">0</span>
+            <button type="button" onclick="increment('enfants')">+</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="bebes">Bébés / nourrissons (moins de 2 ans)</label>
+          <div class="counter">
+            <button type="button" onclick="decrement('bebes')">−</button>
+            <span id="bebes-val">0</span>
+            <button type="button" onclick="increment('bebes')">+</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="animaux">Animaux de compagnie</label>
+          <div class="counter">
+            <button type="button" onclick="decrement('animaux')">−</button>
+            <span id="animaux-val">0</span>
+            <button type="button" onclick="increment('animaux')">+</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-section" id="bebe-section" style="display: none;">
+        <div class="form-section-label">// TRANCHE D'ÂGE DU BÉBÉ //</div>
+
+        <div class="form-group">
+          <label for="tranche-bebe">Âge (si plusieurs bébés, indique le plus jeune)</label>
+          <div class="select-wrapper">
+            <select id="tranche-bebe" onchange="calculer()">
+              <option value="allaite">0-6 mois — allaité</option>
+              <option value="biberon" selected>0-6 mois — au biberon</option>
+              <option value="diversifie">6-12 mois — diversifié</option>
+              <option value="grand">12-24 mois</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="calc-result" id="result">
+
+      <div class="result-header">
+        <div class="result-label">// TON KIT, EN CHIFFRES //</div>
+        <div class="result-total" id="result-total">18 L</div>
+        <p class="result-desc" id="result-desc">Eau pour 72h — 2 adultes</p>
+      </div>
+
+      <div class="result-breakdown">
+        <div class="breakdown-item">
+          <span class="breakdown-label">Boisson</span>
+          <span class="breakdown-val" id="breakdown-boisson">12 L</span>
+        </div>
+        <div class="breakdown-item">
+          <span class="breakdown-label">Hygiène de base</span>
+          <span class="breakdown-val" id="breakdown-hygiene">3 L</span>
+        </div>
+        <div class="breakdown-item" id="breakdown-biberon-row" style="display: none;">
+          <span class="breakdown-label">Préparation biberons</span>
+          <span class="breakdown-val" id="breakdown-biberon">0 L</span>
+        </div>
+        <div class="breakdown-item breakdown-item-total">
+          <span class="breakdown-label">TOTAL EAU</span>
+          <span class="breakdown-val" id="breakdown-total">18 L</span>
+        </div>
+      </div>
+
+      <div class="result-stockage">
+        <div class="result-label">// NOURRITURE (72H) //</div>
+        <div class="stockage-grid">
+          <div class="stockage-item">
+            <div class="stockage-num" id="kcal-adultes">14 100</div>
+            <div class="stockage-desc">kcal adultes</div>
+          </div>
+          <div class="stockage-sep">//</div>
+          <div class="stockage-item">
+            <div class="stockage-num" id="kcal-enfants">0</div>
+            <div class="stockage-desc">kcal enfants</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-stockage" id="module-bebe" style="display: none;">
+        <div class="result-label">// MODULE BÉBÉ //</div>
+        <div class="stockage-grid">
+          <div class="stockage-item">
+            <div class="stockage-num" id="bebe-couches">27</div>
+            <div class="stockage-desc">couches (72h)</div>
+          </div>
+          <div class="stockage-sep">//</div>
+          <div class="stockage-item">
+            <div class="stockage-num" id="bebe-lait">1</div>
+            <div class="stockage-desc" id="bebe-lait-desc">boîte(s) de lait</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-stockage">
+        <div class="result-label">// MATÉRIEL À QUANTITÉ AJUSTÉE //</div>
+        <div class="stockage-grid">
+          <div class="stockage-item">
+            <div class="stockage-num" id="mat-couvertures">2</div>
+            <div class="stockage-desc">couvertures de survie</div>
+          </div>
+          <div class="stockage-sep">//</div>
+          <div class="stockage-item">
+            <div class="stockage-num" id="mat-lampes">1</div>
+            <div class="stockage-desc">lampes frontales</div>
+          </div>
+          <div class="stockage-sep">//</div>
+          <div class="stockage-item">
+            <div class="stockage-num" id="mat-batteries">1</div>
+            <div class="stockage-desc">batteries externes</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-conseil">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="10" stroke="#F5A623" stroke-width="1.5"/>
+          <line x1="12" y1="8" x2="12" y2="12" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="12" cy="16" r="1" fill="#F5A623"/>
+        </svg>
+        <p id="conseil-texte">Ajuste les compteurs à gauche pour voir ton kit se composer en temps réel.</p>
+      </div>
+
+      <div class="result-actions">
+        <a href="/manuel/kit-urgence-72h" class="btn-lien">Voir le guide kit 72h complet →</a>
+        <a href="/manuel/kit-urgence-bebe-nourrisson" class="btn-lien" id="lien-bebe" style="display: none;">Voir le guide kit bébé →</a>
+        <a href="/bunker" class="btn-lien">Poser une question au Bunker →</a>
+      </div>
+
+      <p class="result-sources">
+        Calculs basés sur les recommandations Croix-Rouge française, ANSES (besoins caloriques) et FEMA.
+        Les quantités bébé reprennent les repères de notre guide kit d'urgence bébé et nourrisson.
+        Ces chiffres sont des estimations Survivalix à ajuster selon ta situation réelle.
+      </p>
+
+    </div>
+
+  </div>
+
+</Layout>
+
+<script is:inline>
+  const vals = { adultes: 2, enfants: 0, bebes: 0, animaux: 0 };
+
+  function increment(key) {
+    const max = key === 'animaux' ? 5 : (key === 'bebes' ? 4 : 10);
+    if (vals[key] < max) { vals[key]++; }
+    document.getElementById(`${key}-val`).textContent = vals[key];
+    toggleBebeSection();
+    calculer();
+  }
+
+  function decrement(key) {
+    const min = key === 'adultes' ? 1 : 0;
+    if (vals[key] > min) { vals[key]--; }
+    document.getElementById(`${key}-val`).textContent = vals[key];
+    toggleBebeSection();
+    calculer();
+  }
+
+  function toggleBebeSection() {
+    const bebeSection = document.getElementById('bebe-section');
+    const moduleBebe = document.getElementById('module-bebe');
+    const lienBebe = document.getElementById('lien-bebe');
+    const biberonRow = document.getElementById('breakdown-biberon-row');
+    const show = vals.bebes > 0;
+    bebeSection.style.display = show ? 'flex' : 'none';
+    moduleBebe.style.display = show ? 'block' : 'none';
+    lienBebe.style.display = show ? 'block' : 'none';
+    biberonRow.style.display = show ? 'flex' : 'none';
+  }
+
+  function calculer() {
+    const tranche = document.getElementById('tranche-bebe').value;
+
+    // Eau
+    const litresAdulte = 2;
+    const litresEnfant = 1.5;
+    const litresBiberonParBebe = vals.bebes > 0 && (tranche === 'biberon' || tranche === 'diversifie') ? 1 : 0;
+
+    const boisson = Math.ceil((vals.adultes * litresAdulte + vals.enfants * litresEnfant) * 3);
+    const hygiene = Math.ceil((vals.adultes + vals.enfants * 0.7) * 0.5 * 3);
+    const biberon = Math.ceil(vals.bebes * litresBiberonParBebe * 3);
+    const total = boisson + hygiene + biberon;
+
+    document.getElementById('result-total').textContent = `${total} L`;
+    document.getElementById('result-desc').textContent = buildDesc();
+    document.getElementById('breakdown-boisson').textContent = `${boisson} L`;
+    document.getElementById('breakdown-hygiene').textContent = `${hygiene} L`;
+    document.getElementById('breakdown-biberon').textContent = `${biberon} L`;
+    document.getElementById('breakdown-total').textContent = `${total} L`;
+
+    // Nourriture (kcal, 72h)
+    const kcalAdultes = vals.adultes * 2350 * 3;
+    const kcalEnfants = vals.enfants * 1800 * 3;
+    document.getElementById('kcal-adultes').textContent = kcalAdultes.toLocaleString('fr-FR');
+    document.getElementById('kcal-enfants').textContent = kcalEnfants.toLocaleString('fr-FR');
+
+    // Module bébé
+    if (vals.bebes > 0) {
+      const couchesParJour = { allaite: 9, biberon: 9, diversifie: 7, grand: 6 }[tranche];
+      const couches = couchesParJour * vals.bebes * 3;
+      document.getElementById('bebe-couches').textContent = couches;
+
+      const laitDesc = document.getElementById('bebe-lait-desc');
+      const laitNum = document.getElementById('bebe-lait');
+      if (tranche === 'allaite') {
+        laitNum.textContent = '1';
+        laitDesc.textContent = 'boîte(s) de secours';
+      } else {
+        laitNum.textContent = vals.bebes;
+        laitDesc.textContent = 'boîte(s) 900g de lait';
+      }
+    }
+
+    updateConseil(total, tranche);
+  }
+
+  function buildDesc() {
+    const parts = [];
+    if (vals.adultes > 0) parts.push(`${vals.adultes} adulte${vals.adultes > 1 ? 's' : ''}`);
+    if (vals.enfants > 0) parts.push(`${vals.enfants} enfant${vals.enfants > 1 ? 's' : ''}`);
+    if (vals.bebes > 0) parts.push(`${vals.bebes} bébé${vals.bebes > 1 ? 's' : ''}`);
+    if (vals.animaux > 0) parts.push(`${vals.animaux} animal${vals.animaux > 1 ? 'aux' : ''}`);
+    return `Eau pour 72h — ${parts.join(', ')}`;
+  }
+
+  function updateConseil(total, tranche) {
+    let conseil = '';
+    if (vals.bebes > 0 && tranche === 'biberon') {
+      conseil = 'Ne prépare jamais un biberon avec de l\'eau filtrée par une carafe. Utilise l\'eau du robinet peu minéralisée ou une eau embouteillée "nourrissons".';
+    } else if (vals.bebes > 0) {
+      conseil = 'Jamais de couverture de survie directement sur un bébé — préfère le portage en écharpe pour la gestion du froid.';
+    } else if (vals.animaux > 0) {
+      conseil = 'N\'oublie pas l\'eau et la nourriture de tes animaux, stockées séparément dans des contenants adaptés.';
+    } else if (total > 100) {
+      conseil = 'Pour un tel volume, envisage des jerricans de 20L plutôt que des bouteilles individuelles, ça devient vite ingérable.';
+    } else {
+      conseil = 'Prévois aussi des pastilles de purification Micropur — indispensables si tu dois utiliser une source d\'eau douteuse.';
+    }
+    document.getElementById('conseil-texte').textContent = conseil;
+  }
+
+  function calculerMateriel() {
+    const personnes = vals.adultes + vals.enfants;
+    document.getElementById('mat-couvertures').textContent = Math.max(1, personnes);
+    document.getElementById('mat-lampes').textContent = Math.max(1, Math.ceil(vals.adultes / 2));
+    document.getElementById('mat-batteries').textContent = Math.max(1, Math.ceil((vals.adultes + vals.enfants) / 2));
+  }
+
+  const originalCalculer = calculer;
+  calculer = function() {
+    originalCalculer();
+    calculerMateriel();
+  };
+
+  calculer();
+</script>
+
+<style>
+  .page-header {
+    text-align: center;
+    padding: 3rem 0 2.5rem;
+    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 3rem;
+  }
+
+  .page-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75rem;
+    color: #6B7C45;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+  }
+
+  .page-header h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    color: #F5A623;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+  }
+
+  .page-desc {
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.7;
+    opacity: 0.8;
+  }
+
+  .calc-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    .calc-container { grid-template-columns: 1fr 1fr; align-items: start; }
+  }
+
+  .calc-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .form-section {
+    background-color: #111;
+    border: 1px solid #1e1e1e;
+    border-top: 3px solid #F5A623;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .form-section-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    color: #6B7C45;
+    letter-spacing: 3px;
+    margin-bottom: 0.3rem;
+  }
+
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .form-group label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    flex: 1;
+  }
+
+  .counter {
+    display: flex;
+    align-items: center;
+    border: 1px solid #333;
+    flex-shrink: 0;
+  }
+
+  .counter button {
+    background: none;
+    border: none;
+    color: #F5A623;
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .counter button:hover { background-color: #1a1a1a; }
+
+  .counter span {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.2rem;
+    color: #ffffff;
+    width: 36px;
+    text-align: center;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    line-height: 36px;
+  }
+
+  .select-wrapper { flex-shrink: 0; min-width: 180px; }
+
+  .select-wrapper select {
+    width: 100%;
+    background-color: #0d0d0d;
+    border: 1px solid #333;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+    appearance: none;
+    font-weight: 300;
+  }
+
+  .select-wrapper select:focus {
+    outline: none;
+    border-color: #F5A623;
+  }
+
+  .calc-result {
+    background-color: #111;
+    border: 1px solid #1e1e1e;
+    border-top: 3px solid #F5A623;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .calc-result { position: sticky; top: 2rem; }
+  }
+
+  .result-header { text-align: center; }
+
+  .result-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    color: #6B7C45;
+    letter-spacing: 3px;
+    margin-bottom: 0.8rem;
+  }
+
+  .result-total {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(3rem, 8vw, 5rem);
+    color: #F5A623;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .result-desc {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    color: #ffffff;
+    opacity: 0.6;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  .result-breakdown { border: 1px solid #1e1e1e; }
+
+  .breakdown-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #1a1a1a;
+  }
+
+  .breakdown-item:last-child { border-bottom: none; }
+
+  .breakdown-item-total { background-color: #0d0d0d; }
+
+  .breakdown-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    color: #ffffff;
+    opacity: 0.7;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  .breakdown-item-total .breakdown-label {
+    color: #F5A623;
+    opacity: 1;
+    font-weight: 700;
+  }
+
+  .breakdown-val {
+    font-family: 'Special Elite', cursive;
+    font-size: 0.95rem;
+    color: #ffffff;
+  }
+
+  .breakdown-item-total .breakdown-val {
+    color: #F5A623;
+    font-size: 1.1rem;
+  }
+
+  .result-stockage {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .stockage-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .stockage-item { text-align: center; flex: 1; }
+
+  .stockage-num {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.8rem;
+    color: #F5A623;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+
+  .stockage-desc {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    color: #ffffff;
+    opacity: 0.55;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+  }
+
+  .stockage-sep {
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  .result-conseil {
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-start;
+    background-color: #0d0d0d;
+    border: 1px solid #1e1e1e;
+    border-left: 3px solid #F5A623;
+    padding: 0.8rem 1rem;
+  }
+
+  .result-conseil svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .result-conseil p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    color: #ffffff;
+    opacity: 0.75;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .result-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .btn-lien {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #F5A623;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 0.6rem 1rem;
+    border: 1px solid #333;
+    text-align: center;
+    transition: all 0.2s;
+  }
+
+  .btn-lien:hover {
+    border-color: #F5A623;
+    background-color: #111;
+  }
+
+  .result-sources {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.72rem;
+    color: #ffffff;
+    opacity: 0.35;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 0;
+    border-top: 1px solid #1a1a1a;
+    padding-top: 1rem;
+  }
+</style>
