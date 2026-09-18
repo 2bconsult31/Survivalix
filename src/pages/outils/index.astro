@@ -22,6 +22,13 @@ const outils = [
     description: "10 questions pour savoir où tu en es vraiment. Score sur 100, recommandations personnalisées. Honnête, sans bullshit.",
     tags: ["score", "évaluation", "bilan", "préparation"],
     temps: "3 min"
+  },
+  {
+    slug: "/outils/generateur-kit-72h",
+    titre: "Générateur de kit 72h personnalisé",
+    description: "Adultes, enfants, bébés, animaux : ton kit ajusté à ton vrai foyer, module bébé inclus. Plus rapide que de tout recalculer à la main.",
+    tags: ["kit-72h", "famille", "bébé", "personnalisé"],
+    temps: "2 min"
   }
 ]
 ---
@@ -97,6 +104,17 @@ const outils = [
                 <line x1="224" y1="112" x2="220" y2="112" stroke="#F5A623" stroke-width="1" opacity="0.5"/>
                 <line x1="200" y1="84" x2="200" y2="88" stroke="#F5A623" stroke-width="1" opacity="0.5"/>
                 <text x="200" y="124" font-family="Oswald,sans-serif" font-size="8" fill="#F5A623" text-anchor="middle" opacity="0.6" letter-spacing="1">/100</text>
+              </>
+            )}
+            {index === 3 && (
+              <>
+                {/* Famille — générateur de kit 72h personnalisé (adulte, enfant, bébé) */}
+                <circle cx="182" cy="88" r="7" fill="#F5A623" opacity="0.12" stroke="#F5A623" stroke-width="1.4"/>
+                <path d="M172 116 C172 106 176 100 182 100 C188 100 192 106 192 116" fill="none" stroke="#F5A623" stroke-width="1.4" opacity="0.7" stroke-linecap="round"/>
+                <circle cx="202" cy="93" r="5" fill="#F5A623" fill-opacity="0.1" stroke="#F5A623" stroke-width="1.2" stroke-opacity="0.6"/>
+                <path d="M195 114 C195 106 198 101 202 101 C206 101 209 106 209 114" fill="none" stroke="#F5A623" stroke-width="1.2" opacity="0.6" stroke-linecap="round"/>
+                <circle cx="219" cy="99" r="3.5" fill="#F5A623" fill-opacity="0.1" stroke="#F5A623" stroke-width="1" stroke-opacity="0.5"/>
+                <path d="M214 112 C214 106 216 103 219 103 C222 103 224 106 224 112" fill="none" stroke="#F5A623" stroke-width="1" opacity="0.5" stroke-linecap="round"/>
               </>
             )}
             <circle cx="38" cy="38" r="24" fill="none" stroke="#F5A623" stroke-width="1" opacity="0.35"/>
