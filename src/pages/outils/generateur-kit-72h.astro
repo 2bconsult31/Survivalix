@@ -3,302 +3,298 @@ import Layout from '../../layouts/Layout.astro';
 ---
 
 <Layout
-  title="Générateur de kit 72h personnalisé — Survivalix"
-  description="Compose ton kit d'urgence sur mesure selon ton foyer : adultes, enfants, bébés, animaux. Quantités précises, module bébé inclus."
+  title="Ta checklist kit 72h personnalisée — Survivalix"
+  description="Génère la vraie liste d'objets à rassembler selon ton foyer, coche au fur et à mesure. Ta progression est sauvegardée, tu peux y revenir quand tu veux."
 >
 
   <div class="page-header">
     <div class="page-label">// OUTIL INTERACTIF //</div>
-    <h1>Générateur de kit 72h personnalisé</h1>
+    <h1>Ta checklist kit 72h, personnalisée</h1>
     <p class="page-desc">
-      Ton foyer n'est pas une liste générique. Indique sa composition,
-      on ajuste les quantités — jusqu'au module bébé si besoin.
+      Pas un chiffre à regarder une fois. Une vraie liste à cocher,
+      ajustée à ton foyer, qui garde ta progression.
     </p>
   </div>
 
-  <div class="calc-container">
+  <div class="foyer-card">
+    <div class="foyer-grid">
 
-    <div class="calc-form">
-
-      <div class="form-section">
-        <div class="form-section-label">// TON FOYER //</div>
-
-        <div class="form-group">
-          <label for="adultes">Adultes</label>
-          <div class="counter">
-            <button type="button" onclick="decrement('adultes')">−</button>
-            <span id="adultes-val">2</span>
-            <button type="button" onclick="increment('adultes')">+</button>
-          </div>
+      <div class="foyer-item">
+        <label>Adultes</label>
+        <div class="counter">
+          <button type="button" onclick="decrement('adultes')">−</button>
+          <span id="adultes-val">2</span>
+          <button type="button" onclick="increment('adultes')">+</button>
         </div>
-
-        <div class="form-group">
-          <label for="enfants">Enfants (2-12 ans)</label>
-          <div class="counter">
-            <button type="button" onclick="decrement('enfants')">−</button>
-            <span id="enfants-val">0</span>
-            <button type="button" onclick="increment('enfants')">+</button>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="bebes">Bébés / nourrissons (moins de 2 ans)</label>
-          <div class="counter">
-            <button type="button" onclick="decrement('bebes')">−</button>
-            <span id="bebes-val">0</span>
-            <button type="button" onclick="increment('bebes')">+</button>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="animaux">Animaux de compagnie</label>
-          <div class="counter">
-            <button type="button" onclick="decrement('animaux')">−</button>
-            <span id="animaux-val">0</span>
-            <button type="button" onclick="increment('animaux')">+</button>
-          </div>
-        </div>
-
       </div>
 
-      <div class="form-section" id="bebe-section" style="display: none;">
-        <div class="form-section-label">// TRANCHE D'ÂGE DU BÉBÉ //</div>
+      <div class="foyer-item">
+        <label>Enfants (2-12 ans)</label>
+        <div class="counter">
+          <button type="button" onclick="decrement('enfants')">−</button>
+          <span id="enfants-val">0</span>
+          <button type="button" onclick="increment('enfants')">+</button>
+        </div>
+      </div>
 
-        <div class="form-group">
-          <label for="tranche-bebe">Âge (si plusieurs bébés, indique le plus jeune)</label>
-          <div class="select-wrapper">
-            <select id="tranche-bebe" onchange="calculer()">
-              <option value="allaite">0-6 mois — allaité</option>
-              <option value="biberon" selected>0-6 mois — au biberon</option>
-              <option value="diversifie">6-12 mois — diversifié</option>
-              <option value="grand">12-24 mois</option>
-            </select>
-          </div>
+      <div class="foyer-item">
+        <label>Bébés (moins de 2 ans)</label>
+        <div class="counter">
+          <button type="button" onclick="decrement('bebes')">−</button>
+          <span id="bebes-val">0</span>
+          <button type="button" onclick="increment('bebes')">+</button>
+        </div>
+      </div>
+
+      <div class="foyer-item">
+        <label>Animaux</label>
+        <div class="counter">
+          <button type="button" onclick="decrement('animaux')">−</button>
+          <span id="animaux-val">0</span>
+          <button type="button" onclick="increment('animaux')">+</button>
         </div>
       </div>
 
     </div>
 
-    <div class="calc-result" id="result">
-
-      <div class="result-header">
-        <div class="result-label">// TON KIT, EN CHIFFRES //</div>
-        <div class="result-total" id="result-total">18 L</div>
-        <p class="result-desc" id="result-desc">Eau pour 72h — 2 adultes</p>
+    <div class="foyer-item foyer-select" id="bebe-select-wrap" style="display: none;">
+      <label for="tranche-bebe">Âge du bébé (le plus jeune si plusieurs)</label>
+      <div class="select-wrapper">
+        <select id="tranche-bebe" onchange="rebuildChecklist()">
+          <option value="allaite">0-6 mois — allaité</option>
+          <option value="biberon" selected>0-6 mois — au biberon</option>
+          <option value="diversifie">6-12 mois — diversifié</option>
+          <option value="grand">12-24 mois</option>
+        </select>
       </div>
-
-      <div class="result-breakdown">
-        <div class="breakdown-item">
-          <span class="breakdown-label">Boisson</span>
-          <span class="breakdown-val" id="breakdown-boisson">12 L</span>
-        </div>
-        <div class="breakdown-item">
-          <span class="breakdown-label">Hygiène de base</span>
-          <span class="breakdown-val" id="breakdown-hygiene">3 L</span>
-        </div>
-        <div class="breakdown-item" id="breakdown-biberon-row" style="display: none;">
-          <span class="breakdown-label">Préparation biberons</span>
-          <span class="breakdown-val" id="breakdown-biberon">0 L</span>
-        </div>
-        <div class="breakdown-item breakdown-item-total">
-          <span class="breakdown-label">TOTAL EAU</span>
-          <span class="breakdown-val" id="breakdown-total">18 L</span>
-        </div>
-      </div>
-
-      <div class="result-stockage">
-        <div class="result-label">// NOURRITURE (72H) //</div>
-        <div class="stockage-grid">
-          <div class="stockage-item">
-            <div class="stockage-num" id="kcal-adultes">14 100</div>
-            <div class="stockage-desc">kcal adultes</div>
-          </div>
-          <div class="stockage-sep">//</div>
-          <div class="stockage-item">
-            <div class="stockage-num" id="kcal-enfants">0</div>
-            <div class="stockage-desc">kcal enfants</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="result-stockage" id="module-bebe" style="display: none;">
-        <div class="result-label">// MODULE BÉBÉ //</div>
-        <div class="stockage-grid">
-          <div class="stockage-item">
-            <div class="stockage-num" id="bebe-couches">27</div>
-            <div class="stockage-desc">couches (72h)</div>
-          </div>
-          <div class="stockage-sep">//</div>
-          <div class="stockage-item">
-            <div class="stockage-num" id="bebe-lait">1</div>
-            <div class="stockage-desc" id="bebe-lait-desc">boîte(s) de lait</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="result-stockage">
-        <div class="result-label">// MATÉRIEL À QUANTITÉ AJUSTÉE //</div>
-        <div class="stockage-grid">
-          <div class="stockage-item">
-            <div class="stockage-num" id="mat-couvertures">2</div>
-            <div class="stockage-desc">couvertures de survie</div>
-          </div>
-          <div class="stockage-sep">//</div>
-          <div class="stockage-item">
-            <div class="stockage-num" id="mat-lampes">1</div>
-            <div class="stockage-desc">lampes frontales</div>
-          </div>
-          <div class="stockage-sep">//</div>
-          <div class="stockage-item">
-            <div class="stockage-num" id="mat-batteries">1</div>
-            <div class="stockage-desc">batteries externes</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="result-conseil">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12" cy="12" r="10" stroke="#F5A623" stroke-width="1.5"/>
-          <line x1="12" y1="8" x2="12" y2="12" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
-          <circle cx="12" cy="16" r="1" fill="#F5A623"/>
-        </svg>
-        <p id="conseil-texte">Ajuste les compteurs à gauche pour voir ton kit se composer en temps réel.</p>
-      </div>
-
-      <div class="result-actions">
-        <a href="/manuel/kit-urgence-72h" class="btn-lien">Voir le guide kit 72h complet →</a>
-        <a href="/manuel/kit-urgence-bebe-nourrisson" class="btn-lien" id="lien-bebe" style="display: none;">Voir le guide kit bébé →</a>
-        <a href="/bunker" class="btn-lien">Poser une question au Bunker →</a>
-      </div>
-
-      <p class="result-sources">
-        Calculs basés sur les recommandations Croix-Rouge française, ANSES (besoins caloriques) et FEMA.
-        Les quantités bébé reprennent les repères de notre guide kit d'urgence bébé et nourrisson.
-        Ces chiffres sont des estimations Survivalix à ajuster selon ta situation réelle.
-      </p>
-
     </div>
-
   </div>
+
+  <div class="progress-bar-card">
+    <div class="progress-top">
+      <span class="progress-label" id="progress-label">0 / 0 rassemblés</span>
+      <button type="button" class="btn-reset" onclick="resetChecklist()">Réinitialiser</button>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progress-fill" style="width: 0%;"></div>
+    </div>
+  </div>
+
+  <div class="checklist-container" id="checklist-container"></div>
+
+  <div class="result-actions">
+    <a href="/manuel/kit-urgence-72h" class="btn-lien">Voir le guide kit 72h complet →</a>
+    <a href="/manuel/kit-urgence-bebe-nourrisson" class="btn-lien" id="lien-bebe" style="display: none;">Voir le guide kit bébé →</a>
+    <a href="/bunker" class="btn-lien">Poser une question au Bunker →</a>
+  </div>
+
+  <p class="result-sources">
+    Quantités basées sur les recommandations Croix-Rouge française, ANSES et FEMA, et sur les repères
+    de notre guide kit d'urgence bébé et nourrisson. Ta progression est sauvegardée uniquement sur cet
+    appareil (localStorage) — elle n'est jamais envoyée ni partagée.
+  </p>
 
 </Layout>
 
 <script is:inline>
   const vals = { adultes: 2, enfants: 0, bebes: 0, animaux: 0 };
+  const STORAGE_KEY = 'survivalix-kit72h-checklist';
 
   function increment(key) {
     const max = key === 'animaux' ? 5 : (key === 'bebes' ? 4 : 10);
     if (vals[key] < max) { vals[key]++; }
     document.getElementById(`${key}-val`).textContent = vals[key];
-    toggleBebeSection();
-    calculer();
+    rebuildChecklist();
   }
 
   function decrement(key) {
     const min = key === 'adultes' ? 1 : 0;
     if (vals[key] > min) { vals[key]--; }
     document.getElementById(`${key}-val`).textContent = vals[key];
-    toggleBebeSection();
-    calculer();
+    rebuildChecklist();
   }
 
-  function toggleBebeSection() {
-    const bebeSection = document.getElementById('bebe-section');
-    const moduleBebe = document.getElementById('module-bebe');
-    const lienBebe = document.getElementById('lien-bebe');
-    const biberonRow = document.getElementById('breakdown-biberon-row');
-    const show = vals.bebes > 0;
-    bebeSection.style.display = show ? 'flex' : 'none';
-    moduleBebe.style.display = show ? 'block' : 'none';
-    lienBebe.style.display = show ? 'block' : 'none';
-    biberonRow.style.display = show ? 'flex' : 'none';
+  function loadChecked() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      return raw ? JSON.parse(raw) : {};
+    } catch (e) {
+      return {};
+    }
   }
 
-  function calculer() {
+  function saveChecked(map) {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(map));
+    } catch (e) { /* stockage indisponible, on continue sans persister */ }
+  }
+
+  function resetChecklist() {
+    saveChecked({});
+    rebuildChecklist();
+  }
+
+  function toggleItem(id) {
+    const checked = loadChecked();
+    checked[id] = !checked[id];
+    saveChecked(checked);
+    updateProgress();
+  }
+
+  function buildItems() {
     const tranche = document.getElementById('tranche-bebe').value;
-
-    // Eau
-    const litresAdulte = 2;
-    const litresEnfant = 1.5;
-    const litresBiberonParBebe = vals.bebes > 0 && (tranche === 'biberon' || tranche === 'diversifie') ? 1 : 0;
-
-    const boisson = Math.ceil((vals.adultes * litresAdulte + vals.enfants * litresEnfant) * 3);
-    const hygiene = Math.ceil((vals.adultes + vals.enfants * 0.7) * 0.5 * 3);
-    const biberon = Math.ceil(vals.bebes * litresBiberonParBebe * 3);
-    const total = boisson + hygiene + biberon;
-
-    document.getElementById('result-total').textContent = `${total} L`;
-    document.getElementById('result-desc').textContent = buildDesc();
-    document.getElementById('breakdown-boisson').textContent = `${boisson} L`;
-    document.getElementById('breakdown-hygiene').textContent = `${hygiene} L`;
-    document.getElementById('breakdown-biberon').textContent = `${biberon} L`;
-    document.getElementById('breakdown-total').textContent = `${total} L`;
-
-    // Nourriture (kcal, 72h)
-    const kcalAdultes = vals.adultes * 2350 * 3;
-    const kcalEnfants = vals.enfants * 1800 * 3;
-    document.getElementById('kcal-adultes').textContent = kcalAdultes.toLocaleString('fr-FR');
-    document.getElementById('kcal-enfants').textContent = kcalEnfants.toLocaleString('fr-FR');
-
-    // Module bébé
-    if (vals.bebes > 0) {
-      const couchesParJour = { allaite: 9, biberon: 9, diversifie: 7, grand: 6 }[tranche];
-      const couches = couchesParJour * vals.bebes * 3;
-      document.getElementById('bebe-couches').textContent = couches;
-
-      const laitDesc = document.getElementById('bebe-lait-desc');
-      const laitNum = document.getElementById('bebe-lait');
-      if (tranche === 'allaite') {
-        laitNum.textContent = '1';
-        laitDesc.textContent = 'boîte(s) de secours';
-      } else {
-        laitNum.textContent = vals.bebes;
-        laitDesc.textContent = 'boîte(s) 900g de lait';
-      }
-    }
-
-    updateConseil(total, tranche);
-  }
-
-  function buildDesc() {
-    const parts = [];
-    if (vals.adultes > 0) parts.push(`${vals.adultes} adulte${vals.adultes > 1 ? 's' : ''}`);
-    if (vals.enfants > 0) parts.push(`${vals.enfants} enfant${vals.enfants > 1 ? 's' : ''}`);
-    if (vals.bebes > 0) parts.push(`${vals.bebes} bébé${vals.bebes > 1 ? 's' : ''}`);
-    if (vals.animaux > 0) parts.push(`${vals.animaux} animal${vals.animaux > 1 ? 'aux' : ''}`);
-    return `Eau pour 72h — ${parts.join(', ')}`;
-  }
-
-  function updateConseil(total, tranche) {
-    let conseil = '';
-    if (vals.bebes > 0 && tranche === 'biberon') {
-      conseil = 'Ne prépare jamais un biberon avec de l\'eau filtrée par une carafe. Utilise l\'eau du robinet peu minéralisée ou une eau embouteillée "nourrissons".';
-    } else if (vals.bebes > 0) {
-      conseil = 'Jamais de couverture de survie directement sur un bébé — préfère le portage en écharpe pour la gestion du froid.';
-    } else if (vals.animaux > 0) {
-      conseil = 'N\'oublie pas l\'eau et la nourriture de tes animaux, stockées séparément dans des contenants adaptés.';
-    } else if (total > 100) {
-      conseil = 'Pour un tel volume, envisage des jerricans de 20L plutôt que des bouteilles individuelles, ça devient vite ingérable.';
-    } else {
-      conseil = 'Prévois aussi des pastilles de purification Micropur — indispensables si tu dois utiliser une source d\'eau douteuse.';
-    }
-    document.getElementById('conseil-texte').textContent = conseil;
-  }
-
-  function calculerMateriel() {
     const personnes = vals.adultes + vals.enfants;
-    document.getElementById('mat-couvertures').textContent = Math.max(1, personnes);
-    document.getElementById('mat-lampes').textContent = Math.max(1, Math.ceil(vals.adultes / 2));
-    document.getElementById('mat-batteries').textContent = Math.max(1, Math.ceil((vals.adultes + vals.enfants) / 2));
+
+    const litresEau = Math.ceil(vals.adultes * 2 * 3 + vals.enfants * 1.5 * 3);
+    const litresHygiene = Math.ceil((vals.adultes + vals.enfants * 0.7) * 0.5 * 3);
+    const litresBiberon = vals.bebes > 0 && (tranche === 'biberon' || tranche === 'diversifie')
+      ? Math.ceil(vals.bebes * 1 * 3) : 0;
+    const totalLitres = litresEau + litresHygiene + litresBiberon;
+    const bouteilles = Math.ceil(totalLitres / 1.5);
+
+    const couchesParJour = { allaite: 9, biberon: 9, diversifie: 7, grand: 6 }[tranche];
+    const totalCouches = vals.bebes > 0 ? couchesParJour * vals.bebes * 3 : 0;
+
+    const categories = [
+      {
+        nom: 'EAU',
+        items: [
+          { id: 'eau-bouteilles', label: `${bouteilles} bouteilles d'eau 1,5L (${totalLitres} L au total pour 72h)` },
+          { id: 'eau-pastilles', label: 'Pastilles de purification (type Micropur), au cas où' }
+        ]
+      },
+      {
+        nom: 'NOURRITURE',
+        items: [
+          { id: 'nourriture-conserves', label: `${Math.max(2, Math.ceil(personnes * 1.5))} conserves (légumineuses, thon, sardines)` },
+          { id: 'nourriture-barres', label: `${Math.max(3, personnes * 2)} barres énergétiques ou biscuits secs` },
+          { id: 'nourriture-ouvreboite', label: '1 ouvre-boîte manuel — vraiment, ne l\'oublie pas' },
+          ...(vals.enfants > 0 ? [{ id: 'nourriture-enfants', label: 'Compotes en gourde et céréales sèches pour les enfants' }] : [])
+        ]
+      },
+      {
+        nom: 'LUMIÈRE & ÉNERGIE',
+        items: [
+          { id: 'energie-lampes', label: `${Math.max(1, Math.ceil(vals.adultes / 2))} lampe(s) frontale(s) + piles de rechange` },
+          { id: 'energie-batterie', label: `${Math.max(1, Math.ceil(personnes / 2))} batterie(s) externe(s) 20 000 mAh` },
+          { id: 'energie-radio', label: '1 radio à piles ou à manivelle' },
+          { id: 'energie-bougies', label: 'Bougies + briquet ou allumettes imperméables' }
+        ]
+      },
+      {
+        nom: 'SANTÉ & PREMIERS SECOURS',
+        items: [
+          { id: 'sante-trousse', label: '1 trousse de premiers secours complète' },
+          { id: 'sante-medicaments', label: 'Médicaments personnels sur ordonnance — 3 jours minimum' },
+          { id: 'sante-thermometre', label: '1 thermomètre' },
+          { id: 'sante-masques', label: `${Math.max(2, personnes)} masques FFP2` }
+        ]
+      },
+      {
+        nom: 'CHALEUR & VÊTEMENTS',
+        items: [
+          { id: 'chaleur-couvertures', label: `${Math.max(1, personnes)} couverture(s) de survie (jamais directement sur un bébé)` },
+          { id: 'chaleur-vetements', label: `${Math.max(1, personnes)} tenue(s) de rechange pour 3 jours` },
+          { id: 'chaleur-chaussures', label: 'Chaussures de marche solides par adulte' }
+        ]
+      },
+      {
+        nom: 'DOCUMENTS',
+        items: [
+          { id: 'documents-photocopies', label: 'Photocopies dans une pochette étanche (identité, carte vitale)' },
+          { id: 'documents-numeros', label: 'Numéros de téléphone importants écrits sur papier' },
+          { id: 'documents-especes', label: 'Espèces en petites coupures' }
+        ]
+      },
+      {
+        nom: 'DIVERS',
+        items: [
+          { id: 'divers-couteau', label: '1 couteau multifonction' },
+          { id: 'divers-sifflet', label: '1 sifflet' },
+          { id: 'divers-tape', label: '1 rouleau de ruban adhésif résistant (duct tape)' },
+          { id: 'divers-sacs', label: 'Sacs poubelle résistants' },
+          { id: 'divers-hygiene', label: 'Papier hygiénique, lingettes, gel hydroalcoolique' }
+        ]
+      }
+    ];
+
+    if (vals.bebes > 0) {
+      const laitItem = tranche === 'allaite'
+        ? { id: 'bebe-lait', label: '1 boîte de lait 1er âge de secours (en cas de baisse de lactation)' }
+        : { id: 'bebe-lait', label: `${vals.bebes} boîte(s) de lait 1er âge en poudre (900g)` };
+
+      categories.push({
+        nom: 'MODULE BÉBÉ',
+        items: [
+          { id: 'bebe-couches', label: `${totalCouches} couches pour 72h` },
+          laitItem,
+          { id: 'bebe-biberons', label: `${Math.max(2, vals.bebes * 2)} biberons` },
+          { id: 'bebe-echarpe', label: 'Écharpe ou porte-bébé physiologique (jamais de couverture de survie sur un bébé)' },
+          { id: 'bebe-thermometre', label: '1 thermomètre frontal bébé' }
+        ]
+      });
+    }
+
+    return categories;
   }
 
-  const originalCalculer = calculer;
-  calculer = function() {
-    originalCalculer();
-    calculerMateriel();
-  };
+  function rebuildChecklist() {
+    document.getElementById('bebe-select-wrap').style.display = vals.bebes > 0 ? 'flex' : 'none';
+    document.getElementById('lien-bebe').style.display = vals.bebes > 0 ? 'block' : 'none';
 
-  calculer();
+    const categories = buildItems();
+    const checked = loadChecked();
+    const container = document.getElementById('checklist-container');
+    container.innerHTML = '';
+
+    categories.forEach((cat) => {
+      const catEl = document.createElement('div');
+      catEl.className = 'checklist-category';
+
+      const labelEl = document.createElement('div');
+      labelEl.className = 'checklist-category-label';
+      labelEl.textContent = `// ${cat.nom} //`;
+      catEl.appendChild(labelEl);
+
+      cat.items.forEach((item) => {
+        const row = document.createElement('label');
+        row.className = 'checklist-item';
+
+        const input = document.createElement('input');
+        input.type = 'checkbox';
+        input.checked = !!checked[item.id];
+
+        const span = document.createElement('span');
+        span.textContent = item.label;
+        if (input.checked) span.classList.add('checked-text');
+
+        input.addEventListener('change', () => {
+          toggleItem(item.id);
+          span.classList.toggle('checked-text', input.checked);
+        });
+
+        row.appendChild(input);
+        row.appendChild(span);
+        catEl.appendChild(row);
+      });
+
+      container.appendChild(catEl);
+    });
+
+    updateProgress();
+  }
+
+  function updateProgress() {
+    const checkboxes = document.querySelectorAll('.checklist-item input[type="checkbox"]');
+    const total = checkboxes.length;
+    const done = Array.from(checkboxes).filter((cb) => cb.checked).length;
+    const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+
+    document.getElementById('progress-label').textContent = `${done} / ${total} rassemblés`;
+    document.getElementById('progress-fill').style.width = `${pct}%`;
+  }
+
+  rebuildChecklist();
 </script>
 
 <style>
@@ -306,7 +302,7 @@ import Layout from '../../layouts/Layout.astro';
     text-align: center;
     padding: 3rem 0 2.5rem;
     border-bottom: 1px solid #1a1a1a;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
   }
 
   .page-label {
@@ -334,63 +330,51 @@ import Layout from '../../layouts/Layout.astro';
     opacity: 0.8;
   }
 
-  .calc-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .foyer-card {
     max-width: 900px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: 768px) {
-    .calc-container { grid-template-columns: 1fr 1fr; align-items: start; }
-  }
-
-  .calc-form {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .form-section {
+    margin: 0 auto 1.5rem;
     background-color: #111;
     border: 1px solid #1e1e1e;
     border-top: 3px solid #F5A623;
     padding: 1.5rem;
+  }
+
+  .foyer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem 2rem;
+  }
+
+  @media (min-width: 700px) {
+    .foyer-grid { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  .foyer-item {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 0.6rem;
   }
 
-  .form-section-label {
+  .foyer-item label {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.7rem;
-    color: #6B7C45;
-    letter-spacing: 3px;
-    margin-bottom: 0.3rem;
-  }
-
-  .form-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .form-group label {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #ffffff;
     font-weight: 300;
     letter-spacing: 0.5px;
-    flex: 1;
+  }
+
+  .foyer-select {
+    margin-top: 1.2rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid #1e1e1e;
+    max-width: 360px;
   }
 
   .counter {
     display: flex;
     align-items: center;
     border: 1px solid #333;
-    flex-shrink: 0;
+    width: fit-content;
   }
 
   .counter button {
@@ -422,8 +406,6 @@ import Layout from '../../layouts/Layout.astro';
     line-height: 36px;
   }
 
-  .select-wrapper { flex-shrink: 0; min-width: 180px; }
-
   .select-wrapper select {
     width: 100%;
     background-color: #0d0d0d;
@@ -442,153 +424,122 @@ import Layout from '../../layouts/Layout.astro';
     border-color: #F5A623;
   }
 
-  .calc-result {
+  .progress-bar-card {
+    max-width: 900px;
+    margin: 0 auto 2rem;
     background-color: #111;
     border: 1px solid #1e1e1e;
-    border-top: 3px solid #F5A623;
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
+    position: sticky;
+    top: 1rem;
+    z-index: 10;
+  }
+
+  .progress-top {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.6rem;
   }
 
-  @media (min-width: 768px) {
-    .calc-result { position: sticky; top: 2rem; }
+  .progress-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    color: #F5A623;
+    font-weight: 700;
+    letter-spacing: 1px;
   }
 
-  .result-header { text-align: center; }
+  .btn-reset {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.72rem;
+    color: #ffffff;
+    opacity: 0.5;
+    background: none;
+    border: 1px solid #333;
+    padding: 0.3rem 0.7rem;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: opacity 0.2s;
+  }
 
-  .result-label {
+  .btn-reset:hover { opacity: 1; border-color: #F5A623; }
+
+  .progress-track {
+    width: 100%;
+    height: 8px;
+    background-color: #0d0d0d;
+    border: 1px solid #1e1e1e;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background-color: #F5A623;
+    transition: width 0.3s ease;
+  }
+
+  .checklist-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  @media (min-width: 700px) {
+    .checklist-container { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  .checklist-category {
+    background-color: #0d0d0d;
+    border: 1px solid #1e1e1e;
+    border-left: 3px solid #F5A623;
+    padding: 1.2rem;
+  }
+
+  .checklist-category-label {
     font-family: 'Oswald', sans-serif;
     font-size: 0.7rem;
     color: #6B7C45;
     letter-spacing: 3px;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.9rem;
   }
 
-  .result-total {
-    font-family: 'Special Elite', cursive;
-    font-size: clamp(3rem, 8vw, 5rem);
-    color: #F5A623;
-    line-height: 1;
-    margin-bottom: 0.5rem;
-  }
-
-  .result-desc {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.82rem;
-    color: #ffffff;
-    opacity: 0.6;
-    font-weight: 300;
-    margin: 0;
-  }
-
-  .result-breakdown { border: 1px solid #1e1e1e; }
-
-  .breakdown-item {
+  .checklist-item {
     display: flex;
-    justify-content: space-between;
-    padding: 0.6rem 1rem;
-    border-bottom: 1px solid #1a1a1a;
-  }
-
-  .breakdown-item:last-child { border-bottom: none; }
-
-  .breakdown-item-total { background-color: #0d0d0d; }
-
-  .breakdown-label {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.82rem;
-    color: #ffffff;
-    opacity: 0.7;
-    font-weight: 300;
-    letter-spacing: 1px;
-  }
-
-  .breakdown-item-total .breakdown-label {
-    color: #F5A623;
-    opacity: 1;
-    font-weight: 700;
-  }
-
-  .breakdown-val {
-    font-family: 'Special Elite', cursive;
-    font-size: 0.95rem;
-    color: #ffffff;
-  }
-
-  .breakdown-item-total .breakdown-val {
-    color: #F5A623;
-    font-size: 1.1rem;
-  }
-
-  .result-stockage {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  .stockage-grid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .stockage-item { text-align: center; flex: 1; }
-
-  .stockage-num {
-    font-family: 'Special Elite', cursive;
-    font-size: 1.8rem;
-    color: #F5A623;
-    line-height: 1;
-    margin-bottom: 0.3rem;
-  }
-
-  .stockage-desc {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.7rem;
-    color: #ffffff;
-    opacity: 0.55;
-    letter-spacing: 0.5px;
-    font-weight: 300;
-  }
-
-  .stockage-sep {
-    font-family: 'Oswald', sans-serif;
-    color: #333;
-    font-size: 1rem;
-    flex-shrink: 0;
-  }
-
-  .result-conseil {
-    display: flex;
-    gap: 0.8rem;
     align-items: flex-start;
-    background-color: #0d0d0d;
-    border: 1px solid #1e1e1e;
-    border-left: 3px solid #F5A623;
-    padding: 0.8rem 1rem;
+    gap: 0.7rem;
+    padding: 0.4rem 0;
+    cursor: pointer;
   }
 
-  .result-conseil svg {
-    width: 20px;
-    height: 20px;
+  .checklist-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #F5A623;
     flex-shrink: 0;
-    margin-top: 2px;
+    margin-top: 1px;
+    cursor: pointer;
   }
 
-  .result-conseil p {
+  .checklist-item span {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.82rem;
-    color: #ffffff;
-    opacity: 0.75;
+    font-size: 0.85rem;
+    color: #F5E6C8;
     font-weight: 300;
-    line-height: 1.6;
-    margin: 0;
+    line-height: 1.5;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+  }
+
+  .checked-text {
+    opacity: 0.4 !important;
+    text-decoration: line-through;
   }
 
   .result-actions {
+    max-width: 900px;
+    margin: 2.5rem auto 0;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -613,13 +564,14 @@ import Layout from '../../layouts/Layout.astro';
   }
 
   .result-sources {
+    max-width: 900px;
+    margin: 1.5rem auto 3rem;
     font-family: 'Oswald', sans-serif;
     font-size: 0.72rem;
     color: #ffffff;
     opacity: 0.35;
     font-weight: 300;
     line-height: 1.6;
-    margin: 0;
     border-top: 1px solid #1a1a1a;
     padding-top: 1rem;
   }
