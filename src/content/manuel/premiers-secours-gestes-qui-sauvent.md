@@ -1,6 +1,7 @@
 ---
 title: "Premiers secours : les gestes qui sauvent (expliqués simplement)"
-description: "Les 5 gestes de premiers secours que tout le monde devrait connaître. Sans jargon médical, sans blabla — juste ce qui compte quand ça compte."
+seo_title: "Premiers secours : les gestes qui sauvent"
+description: "Étouffement, hémorragie, arrêt cardiaque, brûlure : les gestes de premiers secours expliqués simplement, sans jargon. Ce qui compte quand ça compte."
 date: 2025-01-29
 tags: ["santé", "urgence", "famille", "debutant"]
 rubrique: "manuel"
@@ -22,7 +23,7 @@ Les secouristes professionnels raisonnent toujours dans le même ordre, quelle q
 
 **Protéger.** Le danger qui a blessé la première personne peut te blesser aussi : voiture qui arrive, fil électrique à nu, fuite de gaz. Un regard rapide autour de toi avant d'agir n'est pas une perte de temps, c'est ce qui évite d'avoir deux victimes au lieu d'une.
 
-**Alerter.** Le plus tôt possible, et avec les bonnes informations. Trois numéros à connaître par cœur :
+**Alerter.** Le plus tôt possible, et avec les bonnes informations. Trois numéros à connaître par cœur — le détail de [lequel appeler selon la situation](/manuel/numeros-urgence-france-lequel-appeler) mérite son propre guide, mais voici l'essentiel :
 - **15** pour le SAMU
 - **18** pour les pompiers
 - **112**, qui fonctionne partout en France et même sans réseau ni carte SIM
@@ -47,7 +48,7 @@ Compresse directement la plaie — avec une compresse, un tissu propre, ou simpl
 
 Un objet planté dans une plaie (couteau, éclat de verre) fait souvent office de bouchon. On ne le retire jamais — ça peut aggraver l'hémorragie d'un coup. On stabilise autour, on n'y touche pas.
 
-Dans les cas les plus graves, où la compression ne suffit pas sur un membre, un garrot posé au-dessus de la plaie peut être nécessaire. Note l'heure de pose : c'est une information que les secours te demanderont.
+Dans les cas les plus graves, où la compression ne suffit pas sur un membre, un [garrot hémostatique](https://www.amazon.fr/s?k=garrot+hemostatique+premiers+secours&tag=survivalix31-21) posé au-dessus de la plaie peut être nécessaire. Note l'heure de pose : c'est une information que les secours te demanderont.
 
 ### Un arrêt cardiaque
 
@@ -78,6 +79,8 @@ Tu viens de lire comment faire un massage cardiaque. Tu ne sais pas encore le fa
 La bonne nouvelle, c'est que combler cet écart prend deux heures et coûte souvent zéro euro. La sensibilisation "Gestes Qui Sauvent" dure 2 heures et est proposée gratuitement dans de nombreuses communes, associations et entreprises. Le PSC1 (Prévention et Secours Civique niveau 1), plus complet, dure 7 heures et est dispensé par la Croix-Rouge, les pompiers et diverses associations agréées partout en France.
 
 Et depuis 2020, la loi protège explicitement tout citoyen qui porte secours de bonne foi — le fameux statut de "citoyen-sauveteur". Concrètement : tu ne risques rien juridiquement pour avoir essayé d'aider, même si le geste n'était pas parfait.
+
+Une [trousse de premiers secours](https://www.amazon.fr/s?k=trousse+premiers+secours+complete&tag=survivalix31-21) à portée de main ne remplace pas ces deux heures de formation, mais elle fait partie des essentiels de ton [kit d'urgence 72h](/manuel/kit-urgence-72h) — avoir le matériel sous la main au moment où tu sais enfin quoi en faire change tout. Ces réflexes se combinent aussi avec les bons gestes pour [rester joignable en situation de crise](/manuel/communiquer-situation-crise), une fois les secours prévenus.
 
 Un geste imparfait, tenté à temps, vaut toujours mieux qu'aucun geste. C'est probablement la seule chose à retenir vraiment de tout cet article.
 
