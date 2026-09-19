@@ -20,15 +20,15 @@ Il y a des recettes qui méritent d'être tatouées sur l'avant-bras. Le Bannock
 
 Farine, eau, sel, un peu de graisse. C'est tout. Pas de levure, pas de four, pas de temps de repos. Juste une poêle, une source de chaleur, et dix minutes de patience. Le résultat : un pain chaud, nourrissant, qui sent bon le feu de camp et qui peut littéralement te sauver la mise quand il n'y a plus rien d'autre à manger.
 
-<cite index="9-1">Les trappeurs écossais et les explorateurs qui ont traversé l'Atlantique au XVIIIe siècle l'emportaient partout</cite> pour une raison simple : les ingrédients secs sont légers, portables et non périssables. <cite index="9-1">Les peuples autochtones d'Amérique du Nord l'ont rapidement adopté et adapté</cite>, lui donnant les dizaines de variantes régionales qu'on connaît aujourd'hui. Du Canada à l'Écosse, du désert australien aux Highlands, le Bannock a nourri des générations entières de gens qui n'avaient ni supermarché ni four à portée de main.
+Les trappeurs écossais et les explorateurs qui ont traversé l'Atlantique au XVIIIe siècle l'emportaient partout pour une raison simple : les ingrédients secs sont légers, portables et non périssables. Les peuples autochtones d'Amérique du Nord l'ont rapidement adopté et adapté, lui donnant les dizaines de variantes régionales qu'on connaît aujourd'hui. Du Canada à l'Écosse, du désert australien aux Highlands, le Bannock a nourri des générations entières de gens qui n'avaient ni supermarché ni four à portée de main.
 
 ## Le Bannock, c'est quoi exactement ?
 
-<cite index="7-1">Le mot "bannock" vient du celtique, lui-même dérivé du latin "panicium" — ce qui signifie simplement "pâte cuite".</cite> Pas plus mystérieux que ça. <cite index="11-1">La première mention écrite d'une recette de bannock en Écosse remonte au VIIIe siècle</cite>, ce qui en fait l'un des pains les plus anciens d'Europe encore fabriqués aujourd'hui.
+Le mot "bannock" vient du celtique, lui-même dérivé du latin "panicium" — ce qui signifie simplement "pâte cuite". Pas plus mystérieux que ça. La première mention écrite d'une recette de bannock en Écosse remonte au VIIIe siècle, ce qui en fait l'un des pains les plus anciens d'Europe encore fabriqués aujourd'hui.
 
-<cite index="7-1">Le Bannock est un pain plat simple qui cuit avec une texture proche d'un scone ou d'un biscuit — légèrement friable, avec un centre moelleux.</cite> Il n'est pas censé être spectaculaire. Il est censé être là quand tu en as besoin, fait avec ce que tu as sous la main.
+Le Bannock est un pain plat simple qui cuit avec une texture proche d'un scone ou d'un biscuit — légèrement friable, avec un centre moelleux. Il n'est pas censé être spectaculaire. Il est censé être là quand tu en as besoin, fait avec ce que tu as sous la main.
 
-Ce qui le distingue du Hardtack (notre prochaine recette) : le Bannock se mange frais et chaud. <cite index="9-1">Là où le Hardtack est conçu pour durer des mois, le Bannock apporte un confort immédiat — un pain chaud qui remonte le moral autant qu'il nourrit le corps.</cite> En situation de crise, c'est une différence qui compte.
+Ce qui le distingue du Hardtack (notre autre recette de pain de survie) : le Bannock se mange frais et chaud. Là où le Hardtack est conçu pour durer des mois, le Bannock apporte un confort immédiat — un pain chaud qui remonte le moral autant qu'il nourrit le corps. En situation de crise, c'est une différence qui compte.
 
 ## Pourquoi c'est la recette de pain parfaite en survie
 
@@ -38,7 +38,7 @@ Trois raisons qui font la différence quand les choses deviennent sérieuses.
 
 **Zéro technique avancée.** Contrairement à un pain levé qui nécessite du pétrissage, du temps de pousse et une gestion précise de la chaleur, le Bannock tolère les approximations. Trop de farine ? Ajoute de l'eau. Trop liquide ? Ajoute de la farine. La pâte est prête en deux minutes.
 
-**Un mix prêt à l'avance.** <cite index="7-1">Tu peux préparer ton mélange d'ingrédients secs à l'avance, le stocker dans un sachet hermétique ou un bocal</cite>, et n'avoir plus qu'à ajouter de l'eau au moment de cuisiner. C'est l'équivalent survie du "juste ajouter de l'eau" — sauf que là, ça marche vraiment.
+**Un mix prêt à l'avance.** Tu peux préparer ton mélange d'ingrédients secs à l'avance, le stocker dans un sachet hermétique ou un bocal, et n'avoir plus qu'à ajouter de l'eau au moment de cuisiner. C'est l'équivalent survie du "juste ajouter de l'eau" — sauf que là, ça marche vraiment.
 
 ## Les ingrédients — trois trucs que t'as forcément
 
@@ -103,7 +103,7 @@ Le Bannock de base est bon. Avec quelques ajouts, il devient excellent.
 
 **Version sucrée camping :** ajoute deux cuillères à soupe de sucre et une poignée de raisins secs ou de fruits secs. Parfait pour le petit-déjeuner au feu de camp.
 
-**Version flocons d'avoine :** <cite index="11-1">la recette traditionnelle écossaise utilisait de l'avoine ou de l'orge</cite> — remplace jusqu'à moitié de la farine par des flocons d'avoine mixés grossièrement pour un résultat plus rustique et nutritif.
+**Version flocons d'avoine :** la recette traditionnelle écossaise utilisait de l'avoine ou de l'orge — remplace jusqu'à moitié de la farine par des flocons d'avoine mixés grossièrement pour un résultat plus rustique et nutritif.
 
 ## Ce qu'il faut stocker
 
