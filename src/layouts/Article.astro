@@ -5,7 +5,7 @@ const { frontmatter } = Astro.props;
 const hasImage = frontmatter.image && frontmatter.image !== '';
 const pageTitle = frontmatter.seo_title || frontmatter.title;
 
-const SITE_URL = 'https://survivalix.fr';
+const SITE_URL = 'https://www.survivalix.fr';
 const canonicalURL = new URL(Astro.url.pathname, SITE_URL).toString();
 const ogImageURL = new URL(frontmatter.image || '/og-image.jpg', SITE_URL).toString();
 ---
