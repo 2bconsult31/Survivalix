@@ -1,94 +1,98 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+const suggestions = [
+  { titre: 'Par où commencer ?', desc: 'Les premiers gestes quand on part de zéro.', question: 'Par où commencer le prepping quand on est débutant ?' },
+  { titre: 'Kit 72h minimum', desc: 'Le strict nécessaire pour tenir trois jours en appartement.', question: 'Quel est le minimum pour un kit 72h en appartement ?' },
+  { titre: "Stock d'eau en famille", desc: 'Combien de litres prévoir pour une famille de 4.', question: "Combien d'eau stocker pour une famille de 4 personnes ?" },
+  { titre: 'Aliments à stocker', desc: 'Quoi stocker en priorité, et pour combien de temps.', question: 'Quels aliments stocker en priorité et pour combien de temps ?' },
+  { titre: 'Coupure d’électricité', desc: 'Préparer son logement à une coupure longue.', question: "Comment préparer son logement pour une coupure d'électricité longue ?" },
+  { titre: "Radio d'urgence", desc: 'Quel modèle choisir pour rester informé.', question: 'Quelle radio acheter pour les urgences ?' },
+];
 ---
 
 <Layout title="Bunker IA : Assistant Survie Intelligent | Survivalix" description="Posez vos questions à notre IA spécialisée survie : réponses sourcées SGDSN, Croix-Rouge, ANSES. Disponible 24h/24, sans jargon, sans blabla.">
 
-  <div class="bunker-header">
-    <div class="bunker-label">// INTELLIGENCE ARTIFICIELLE //</div>
-    <h1>Le Bunker</h1>
-    <p class="bunker-desc">Pose tes questions à l'assistant Survivalix. Il connaît ses classiques, il a de l'humour, et il ne te jugera pas si tu ne sais pas ce qu'est un kit 72h.</p>
-  </div>
+  <section class="bunker" id="bunker" data-state="accueil">
 
-  <div class="emergency-banner">
-    <div class="emergency-banner-icon">
-      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-        <path d="M32 8 L56 50 L8 50 Z" stroke="#F5A623" stroke-width="2" stroke-linejoin="round"/>
-        <line x1="32" y1="24" x2="32" y2="38" stroke="#F5A623" stroke-width="2" stroke-linecap="round"/>
-        <circle cx="32" cy="44" r="1.5" fill="#F5A623"/>
-      </svg>
-    </div>
-    <div class="emergency-banner-text">
-      <strong>Urgence vitale en cours ?</strong> Appelle le <strong>112</strong> (ou le 15 / le 18) avant toute chose. Le Bunker est un assistant informatif, pas un service d'urgence — il ne remplace jamais un appel aux secours.
-    </div>
-  </div>
+    <!-- ÉTAT ACCUEIL : titre centré -->
+    <header class="bunker-hero">
+      <h1>Citoyen, sur quoi veux-tu te préparer ?</h1>
+      <p class="bunker-desc">Le Bunker, l'assistant IA de Survivalix. Il connaît ses classiques, il a de l'humour, et il ne te jugera pas si tu ne sais pas ce qu'est un kit 72h.</p>
+    </header>
 
-  <div class="bunker-container">
-
-    <div class="bunker-toolbar" id="bunkerToolbar" style="display: none;">
+    <!-- ÉTAT CONVERSATION : barre d'outils -->
+    <div class="bunker-toolbar">
+      <span class="bunker-toolbar-title">Le Bunker</span>
       <div class="toolbar-right">
-        <button class="new-chat-btn" onclick="resetConversation()">// Nouvelle conversation //</button>
-        <div class="memory-note">// mémoire du bunker : ~3h //</div>
+        <span class="memory-note">Mémoire du bunker : environ 3 h</span>
+        <button class="new-chat-btn" type="button" onclick="resetConversation()">Nouvelle conversation</button>
       </div>
     </div>
 
-    <div class="bunker-chat" id="chat">
-      <div class="message message-assistant">
-        <div class="message-avatar">
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-            <rect x="12" y="20" width="40" height="32" rx="2" stroke="#F5A623" stroke-width="1.5"/>
-            <rect x="20" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
-            <rect x="36" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
-            <line x1="24" y1="42" x2="40" y2="42" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="32" y1="12" x2="32" y2="20" stroke="#F5A623" stroke-width="1.5"/>
-            <circle cx="32" cy="10" r="3" stroke="#F5A623" stroke-width="1.5"/>
-            <line x1="16" y1="36" x2="8" y2="36" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="48" y1="36" x2="56" y2="36" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <div class="message-content">
-          <div class="message-name">// BUNKER IA //</div>
-          <p>Citoyen, bienvenue. Je suis l'assistant Survivalix — formé pour répondre à toutes tes questions sur la survie, le prepping et l'autonomie. Sans jargon inutile, avec un peu d'humour. Qu'est-ce qui t'amène ?</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="bunker-suggestions" id="suggestions">
-      <div class="suggestions-label">// QUESTIONS FRÉQUENTES //</div>
-      <div class="suggestions-grid">
-        <button class="suggestion" onclick="askQuestion('Par où commencer le prepping quand on est débutant ?')">Par où commencer ?</button>
-        <button class="suggestion" onclick="askQuestion('Quel est le minimum pour un kit 72h en appartement ?')">Kit 72h minimum ?</button>
-        <button class="suggestion" onclick="askQuestion('Combien d\'eau stocker pour une famille de 4 personnes ?')">Stock d'eau famille</button>
-        <button class="suggestion" onclick="askQuestion('Quels aliments stocker en priorité et pour combien de temps ?')">Aliments à stocker</button>
-        <button class="suggestion" onclick="askQuestion('Comment préparer son logement pour une coupure d\'électricité longue ?')">Coupure électricité</button>
-        <button class="suggestion" onclick="askQuestion('Quelle radio acheter pour les urgences ?')">Radio d'urgence</button>
-      </div>
-    </div>
-
-    <div class="bunker-input-zone">
-      <textarea
-        id="userInput"
-        placeholder="Pose ta question au Bunker..."
-        rows="1"
-        onkeydown="handleKeyDown(event)"
-        oninput="autoResize(this)"
-      ></textarea>
-      <button id="sendBtn" onclick="sendMessage()">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <line x1="4" y1="12" x2="20" y2="12" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round"/>
-          <polyline points="14,6 20,12 14,18" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
-    </div>
+    <!-- ÉTAT CONVERSATION : messages -->
+    <div class="bunker-chat" id="chat" aria-live="polite"></div>
 
     <div class="bunker-status" id="bunkerStatus">
-      <div class="status-dots">
-        <span></span><span></span><span></span>
-      </div>
+      <div class="status-dots"><span></span><span></span><span></span></div>
       <span class="status-text">Le Bunker analyse ta question...</span>
     </div>
 
-  </div>
+    <!-- ZONE DE SAISIE (centrée à l'accueil, fixée en bas en conversation) -->
+    <div class="bunker-input-zone">
+      <label for="userInput" class="visually-hidden">Ta question au Bunker</label>
+      <textarea
+        id="userInput"
+        placeholder="Pose ta question au Bunker..."
+        rows="2"
+        onkeydown="handleKeyDown(event)"
+        oninput="autoResize(this)"
+      ></textarea>
+      <div class="input-actions">
+        <button id="sendBtn" type="button" onclick="sendMessage()" aria-label="Envoyer la question">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <line x1="12" y1="20" x2="12" y2="5" stroke="#0d0d0d" stroke-width="2.2" stroke-linecap="round"/>
+            <polyline points="6,11 12,5 18,11" stroke="#0d0d0d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- RAPPEL URGENCE : visible dans les deux états -->
+    <p class="bunker-urgence">
+      <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" aria-hidden="true">
+        <path d="M32 8 L56 50 L8 50 Z" stroke="#F5A623" stroke-width="4" stroke-linejoin="round"/>
+        <line x1="32" y1="24" x2="32" y2="38" stroke="#F5A623" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="32" cy="44" r="2.5" fill="#F5A623"/>
+      </svg>
+      <span><strong>Urgence vitale ?</strong> Appelle le <strong>112</strong> (ou le 15 / le 18) avant toute chose. Le Bunker informe, il ne remplace jamais les secours.</span>
+    </p>
+
+    <!-- ÉTAT ACCUEIL : questions fréquentes -->
+    <ul class="bunker-suggestions" id="suggestions">
+      {suggestions.map((s) => (
+        <li>
+          <button class="suggestion" type="button" data-question={s.question}>
+            <svg class="suggestion-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="4" y="7" width="16" height="12" rx="1" stroke="#6B7C45" stroke-width="1.6"/>
+              <rect x="7.5" y="10.5" width="3" height="2.5" stroke="#6B7C45" stroke-width="1.4"/>
+              <rect x="13.5" y="10.5" width="3" height="2.5" stroke="#6B7C45" stroke-width="1.4"/>
+              <line x1="12" y1="3.5" x2="12" y2="7" stroke="#6B7C45" stroke-width="1.6"/>
+            </svg>
+            <span class="suggestion-text">
+              <span class="suggestion-title">{s.titre}</span>
+              <span class="suggestion-desc">{s.desc}</span>
+            </span>
+            <svg class="suggestion-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <line x1="7" y1="17" x2="17" y2="7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <polyline points="9,7 17,7 17,15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </li>
+      ))}
+    </ul>
+
+  </section>
 
 </Layout>
 
@@ -100,7 +104,7 @@ import Layout from '../../layouts/Layout.astro';
   let isLoading = false;
 
   function avatarSVG() {
-    return `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+    return `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28" aria-hidden="true">
       <rect x="12" y="20" width="40" height="32" rx="2" stroke="#F5A623" stroke-width="1.5"/>
       <rect x="20" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
       <rect x="36" y="28" width="8" height="6" rx="1" stroke="#F5A623" stroke-width="1.5"/>
@@ -110,6 +114,20 @@ import Layout from '../../layouts/Layout.astro';
       <line x1="16" y1="36" x2="8" y2="36" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
       <line x1="48" y1="36" x2="56" y2="36" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
     </svg>`;
+  }
+
+  // Bascule entre l'état "accueil" (tout centré) et "conversation" (chat + saisie en bas)
+  function setState(state) {
+    document.getElementById('bunker').dataset.state = state;
+  }
+
+  // Empêche l'injection de HTML dans les messages affichés
+  function escapeHTML(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
   }
 
   function askQuestion(question) {
@@ -130,65 +148,59 @@ import Layout from '../../layouts/Layout.astro';
   }
 
   function setStatus(visible) {
-    const status = document.getElementById('bunkerStatus');
-    status.style.display = visible ? 'flex' : 'none';
+    document.getElementById('bunkerStatus').style.display = visible ? 'flex' : 'none';
+  }
+
+  function scrollToBottom() {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
   }
 
   function addMessage(role, content) {
     const chat = document.getElementById('chat');
     const div = document.createElement('div');
     div.className = `message message-${role}`;
+    const safe = escapeHTML(content || '');
 
     if (role === 'assistant') {
       div.innerHTML = `
         <div class="message-avatar">${avatarSVG()}</div>
         <div class="message-content">
-          <div class="message-name">// BUNKER IA //</div>
-          ${content.split('\n\n').map(p => `<p>${p.replace(/\n/g, '<br/>')}</p>`).join('')}
+          <div class="message-name">Bunker IA</div>
+          ${safe.split('\n\n').map(p => `<p>${p.replace(/\n/g, '<br/>')}</p>`).join('')}
         </div>
       `;
     } else {
       div.innerHTML = `
         <div class="message-content message-content-user">
-          <p>${content}</p>
+          <p>${safe.replace(/\n/g, '<br/>')}</p>
         </div>
       `;
     }
 
     chat.appendChild(div);
-    chat.scrollTop = chat.scrollHeight;
+    scrollToBottom();
   }
 
   function saveConversation() {
     try {
-      const payload = {
-        messages: messages,
-        timestamp: Date.now()
-      };
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ messages: messages, timestamp: Date.now() }));
     } catch (e) {
-      // localStorage indisponible (navigation privée, quota plein) — on ignore silencieusement
+      // localStorage indisponible (navigation privée, quota plein) : on ignore
     }
   }
 
   function clearConversation() {
-    try {
-      localStorage.removeItem(STORAGE_KEY);
-    } catch (e) {}
-  }
-
-  function updateToolbarVisibility() {
-    const toolbar = document.getElementById('bunkerToolbar');
-    toolbar.style.display = messages.length > 0 ? 'flex' : 'none';
+    try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
   }
 
   function resetConversation() {
     clearConversation();
     messages = [];
     document.getElementById('chat').innerHTML = '';
-    addMessage('assistant', "Citoyen, bienvenue. Je suis l'assistant Survivalix — formé pour répondre à toutes tes questions sur la survie, le prepping et l'autonomie. Sans jargon inutile, avec un peu d'humour. Qu'est-ce qui t'amène ?");
-    document.getElementById('suggestions').style.display = 'block';
-    updateToolbarVisibility();
+    setStatus(false);
+    setState('accueil');
+    window.scrollTo({ top: 0 });
+    document.getElementById('userInput').focus();
   }
 
   function restoreConversation() {
@@ -203,20 +215,15 @@ import Layout from '../../layouts/Layout.astro';
 
     if (!saved || !Array.isArray(saved.messages) || saved.messages.length === 0) return;
 
-    const age = Date.now() - (saved.timestamp || 0);
-    if (age > EXPIRATION_MS) {
+    if (Date.now() - (saved.timestamp || 0) > EXPIRATION_MS) {
       clearConversation();
       return;
     }
 
-    // Conversation valide : on la recharge dans l'UI
     messages = saved.messages;
     document.getElementById('chat').innerHTML = '';
-
+    setState('conversation');
     messages.forEach(m => addMessage(m.role, m.content));
-
-    document.getElementById('suggestions').style.display = 'none';
-    updateToolbarVisibility();
   }
 
   async function sendMessage() {
@@ -228,16 +235,14 @@ import Layout from '../../layouts/Layout.astro';
     input.value = '';
     input.style.height = 'auto';
     isLoading = true;
-
     document.getElementById('sendBtn').disabled = true;
-    document.getElementById('suggestions').style.display = 'none';
 
+    setState('conversation');
     addMessage('user', text);
     messages.push({ role: 'user', content: text });
     saveConversation();
-    updateToolbarVisibility();
-
     setStatus(true);
+    scrollToBottom();
 
     try {
       const response = await fetch('/api/bunker', {
@@ -264,147 +269,300 @@ import Layout from '../../layouts/Layout.astro';
 
     isLoading = false;
     document.getElementById('sendBtn').disabled = false;
+    input.focus();
   }
+
+  // Questions fréquentes
+  document.querySelectorAll('.suggestion').forEach(btn => {
+    btn.addEventListener('click', () => askQuestion(btn.dataset.question));
+  });
 
   restoreConversation();
 </script>
 
 <style>
-  .bunker-header {
+  /* ============ STRUCTURE GÉNÉRALE ============ */
+  .bunker {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  /* État accueil : contenu centré verticalement */
+  .bunker[data-state="accueil"] {
+    min-height: 72vh;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .bunker[data-state="conversation"] {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  /* Visibilité selon l'état */
+  .bunker[data-state="accueil"] .bunker-toolbar,
+  .bunker[data-state="accueil"] .bunker-chat,
+  .bunker[data-state="accueil"] .bunker-status { display: none; }
+
+  .bunker[data-state="conversation"] .bunker-hero,
+  .bunker[data-state="conversation"] .bunker-suggestions { display: none; }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  /* ============ ACCUEIL : TITRE ============ */
+  .bunker-hero {
     text-align: center;
-    padding: 3rem 0 2rem;
-    border-bottom: 1px solid #1a1a1a;
-    margin-bottom: 2rem;
-  }
-
-  .bunker-label {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.75rem;
-    color: #6B7C45;
-    letter-spacing: 4px;
     margin-bottom: 1rem;
   }
 
-  .bunker-header h1 {
+  .bunker-hero h1 {
     font-family: 'Special Elite', cursive;
-    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-size: clamp(2rem, 5.5vw, 3.4rem);
+    line-height: 1.15;
     color: #F5A623;
-    letter-spacing: 4px;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
+    max-width: 14em;
   }
 
   .bunker-desc {
     font-family: 'Oswald', sans-serif;
-    font-size: 1rem;
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.6;
     color: #ffffff;
     opacity: 0.7;
-    font-weight: 300;
-    max-width: 600px;
+    max-width: 34em;
     margin: 0 auto;
   }
 
-  .bunker-container {
-    max-width: 800px;
-    margin: 0 auto;
+  /* ============ ZONE DE SAISIE ============ */
+  .bunker-input-zone {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    background-color: #111;
+    border: 1px solid #333;
+    border-bottom: 3px solid #F5A623;
+    transition: border-color 0.2s;
   }
 
-  .emergency-banner {
-    max-width: 800px;
-    margin: 0 auto 2rem;
+  .bunker-input-zone:focus-within { border-color: #F5A623; }
+
+  #userInput {
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 1.2rem 1.3rem 0.4rem;
+    resize: none;
+    line-height: 1.6;
+    min-height: 90px;
+    max-height: 200px;
+  }
+
+  #userInput::placeholder { color: #555; }
+
+  .input-actions {
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    background-color: #1a1206;
-    border: 1px solid #F5A623;
-    border-left: 4px solid #F5A623;
-    padding: 1rem 1.2rem;
+    justify-content: flex-end;
+    padding: 0 0.8rem 0.8rem;
   }
 
-  .emergency-banner-icon {
-    flex-shrink: 0;
+  #sendBtn {
+    width: 42px;
+    height: 42px;
+    background-color: #F5A623;
+    border: none;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.2s;
   }
 
-  .emergency-banner-text {
+  #sendBtn:hover { background-color: #c4811a; }
+  #sendBtn:disabled { opacity: 0.5; cursor: not-allowed; }
+  #sendBtn:focus-visible { outline: 2px solid #ffffff; outline-offset: 2px; }
+  #sendBtn svg { width: 20px; height: 20px; }
+
+  /* En conversation : saisie fixée en bas de l'écran */
+  .bunker[data-state="conversation"] .bunker-input-zone {
+    position: sticky;
+    bottom: 3.2rem;
+    z-index: 5;
+    box-shadow: 0 -16px 24px #0d0d0d;
+  }
+
+  .bunker[data-state="conversation"] .bunker-input-zone {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .bunker[data-state="conversation"] #userInput {
+    flex: 1;
+    min-height: 54px;
+    height: 54px;
+    padding: 0.9rem 1.2rem;
+  }
+
+  .bunker[data-state="conversation"] .input-actions { padding: 0 0.6rem; }
+
+  /* ============ RAPPEL URGENCE ============ */
+  .bunker-urgence {
+    margin: -0.4rem 0 0;
     font-family: 'Oswald', sans-serif;
-    font-size: 1.05rem;
-    color: #ffffff;
-    opacity: 0.9;
-    line-height: 1.6;
+    font-size: 0.85rem;
     font-weight: 300;
+    line-height: 1.5;
+    color: #ffffff;
+    opacity: 0.85;
+    text-align: center;
   }
 
-  .emergency-banner-text strong {
-    color: #F5A623;
-    font-weight: 700;
+  .bunker-urgence svg { display: inline-block; vertical-align: -0.15em; margin-right: 0.35rem; }
+  .bunker-urgence strong { color: #F5A623; font-weight: 700; }
+
+  .bunker[data-state="conversation"] .bunker-urgence {
+    position: sticky;
+    bottom: 0;
+    z-index: 5;
+    margin: 0;
+    padding: 0.6rem 0 0.9rem;
+    background-color: #0d0d0d;
   }
 
+  /* ============ QUESTIONS FRÉQUENTES ============ */
+  .bunker-suggestions {
+    list-style: none;
+    margin: 1.5rem 0 0;
+    padding: 0;
+    border-top: 1px solid #1e1e1e;
+  }
+
+  .bunker-suggestions li { border-bottom: 1px solid #1e1e1e; }
+
+  .suggestion {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0.6rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    color: #ffffff;
+    transition: background-color 0.2s;
+  }
+
+  .suggestion:hover { background-color: #111; }
+  .suggestion:focus-visible { outline: 2px solid #F5A623; outline-offset: -2px; }
+
+  .suggestion-icon { width: 22px; height: 22px; flex-shrink: 0; }
+
+  .suggestion-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    min-width: 0;
+  }
+
+  .suggestion-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+  }
+
+  .suggestion-desc {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 300;
+    opacity: 0.6;
+  }
+
+  .suggestion-arrow {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    color: #555;
+    transition: color 0.2s, transform 0.2s;
+  }
+
+  .suggestion:hover .suggestion-arrow,
+  .suggestion:hover .suggestion-title { color: #F5A623; }
+  .suggestion:hover .suggestion-arrow { transform: translate(2px, -2px); }
+
+  /* ============ CONVERSATION : BARRE D'OUTILS ============ */
   .bunker-toolbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #1e1e1e;
+  }
+
+  .bunker-toolbar-title {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.4rem;
+    color: #F5A623;
   }
 
   .toolbar-right {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 0.4rem;
+    align-items: center;
+    gap: 1rem;
   }
 
   .memory-note {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.65rem;
-    letter-spacing: 1px;
-    color: #555;
+    font-size: 0.75rem;
+    color: #666;
     font-style: italic;
   }
 
   .new-chat-btn {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.75rem;
-    letter-spacing: 1px;
+    font-size: 0.85rem;
     color: #6B7C45;
     background: none;
     border: 1px solid #2a2a2a;
     padding: 0.5rem 0.9rem;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: color 0.2s, border-color 0.2s;
   }
 
-  .new-chat-btn:hover {
-    color: #F5A623;
-    border-color: #F5A623;
-  }
+  .new-chat-btn:hover { color: #F5A623; border-color: #F5A623; }
+  .new-chat-btn:focus-visible { outline: 2px solid #F5A623; outline-offset: 2px; }
 
+  /* ============ CONVERSATION : MESSAGES ============ */
   .bunker-chat {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    min-height: 100px;
-    overflow-y: auto;
-    padding: 0.5rem 0;
-    scrollbar-width: thin;
-    scrollbar-color: #333 #0d0d0d;
   }
 
-  .message {
-    display: flex;
-    gap: 0.8rem;
-    align-items: flex-start;
-  }
-
+  .message { display: flex; gap: 0.8rem; align-items: flex-start; }
   .message-user { flex-direction: row-reverse; }
 
   .message-avatar {
     width: 36px;
     height: 36px;
-    min-width: 36px;
-    min-height: 36px;
     flex-shrink: 0;
     border: 1px solid #F5A623;
     padding: 4px;
@@ -414,13 +572,7 @@ import Layout from '../../layouts/Layout.astro';
     justify-content: center;
   }
 
-  .message-avatar svg {
-    width: 28px !important;
-    height: 28px !important;
-    max-width: 28px;
-    max-height: 28px;
-    display: block;
-  }
+  .message-avatar svg { width: 28px; height: 28px; display: block; }
 
   .message-content {
     background-color: #111;
@@ -432,32 +584,33 @@ import Layout from '../../layouts/Layout.astro';
   }
 
   .message-content-user {
+    flex: 0 1 auto;
+    max-width: 85%;
     background-color: #1a1a0d;
     border-left-color: #6B7C45;
   }
 
   .message-name {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     color: #F5A623;
-    letter-spacing: 3px;
     margin-bottom: 0.5rem;
   }
 
   .message-content p {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.92rem;
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.75;
     color: #ffffff;
     opacity: 0.9;
-    line-height: 1.8;
-    margin-bottom: 0.6rem;
-    font-weight: 300;
-    word-wrap: break-word;
+    margin: 0 0 0.6rem;
+    overflow-wrap: break-word;
   }
 
   .message-content p:last-child { margin-bottom: 0; }
 
-  /* STATUS */
+  /* ============ STATUT (chargement) ============ */
   .bunker-status {
     display: none;
     align-items: center;
@@ -468,12 +621,7 @@ import Layout from '../../layouts/Layout.astro';
     border-left: 3px solid #F5A623;
   }
 
-  .status-dots {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    flex-shrink: 0;
-  }
+  .status-dots { display: flex; gap: 5px; }
 
   .status-dots span {
     width: 6px;
@@ -493,94 +641,22 @@ import Layout from '../../layouts/Layout.astro';
 
   .status-text {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.82rem;
-    color: #F5A623;
-    letter-spacing: 1px;
+    font-size: 0.85rem;
     font-weight: 300;
     font-style: italic;
-  }
-
-  .suggestions-label {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.7rem;
-    color: #6B7C45;
-    letter-spacing: 3px;
-    margin-bottom: 0.8rem;
-  }
-
-  .suggestions-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.6rem;
-  }
-
-  @media (min-width: 600px) {
-    .suggestions-grid { grid-template-columns: repeat(3, 1fr); }
-  }
-
-  .suggestion {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.78rem;
-    color: #ffffff;
-    background: none;
-    border: 1px solid #222;
-    padding: 0.6rem 0.8rem;
-    cursor: pointer;
-    text-align: left;
-    letter-spacing: 0.5px;
-    transition: all 0.2s;
-    line-height: 1.4;
-  }
-
-  .suggestion:hover {
-    border-color: #F5A623;
     color: #F5A623;
-    background-color: #111;
   }
 
-  .bunker-input-zone {
-    display: flex;
-    border: 1px solid #333;
-    border-bottom: 3px solid #F5A623;
-    background-color: #111;
-    align-items: flex-end;
+  /* ============ MOBILE ============ */
+  @media (max-width: 600px) {
+    .bunker[data-state="accueil"] { min-height: auto; padding-top: 2rem; }
+    .toolbar-right { flex-direction: column; align-items: flex-end; gap: 0.3rem; }
+    .bunker-urgence { font-size: 0.8rem; }
+    .message-content-user { max-width: 100%; }
   }
 
-  .bunker-input-zone:focus-within { border-color: #F5A623; }
-
-  #userInput {
-    flex: 1;
-    background: none;
-    border: none;
-    outline: none;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
-    color: #ffffff;
-    padding: 1rem 1.2rem;
-    resize: none;
-    line-height: 1.6;
-    min-height: 54px;
-    max-height: 200px;
+  @media (prefers-reduced-motion: reduce) {
+    .status-dots span { animation: none; opacity: 0.8; }
+    .suggestion-arrow { transition: none; }
   }
-
-  #userInput::placeholder { color: #444; font-weight: 300; }
-
-  #sendBtn {
-    background-color: #F5A623;
-    border: none;
-    cursor: pointer;
-    padding: 0 1.2rem;
-    min-height: 54px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s;
-    flex-shrink: 0;
-  }
-
-  #sendBtn:hover { background-color: #c4811a; }
-  #sendBtn:disabled { opacity: 0.5; cursor: not-allowed; }
-
-  #sendBtn svg { width: 20px; height: 20px; }
 </style>
