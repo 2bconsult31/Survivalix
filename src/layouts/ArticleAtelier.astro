@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import ArticleSEO from '../components/ArticleSEO.astro';
 
 const { frontmatter } = Astro.props;
 const hasImage = frontmatter.image && frontmatter.image !== '';
@@ -16,19 +17,7 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet" />
     <title>{pageTitle} — Survivalix</title>
-    <meta name="description" content={frontmatter.description} />
-    <meta property="og:title" content={pageTitle} />
-    <meta property="og:description" content={frontmatter.description} />
-    <meta property="og:image" content={frontmatter.image || '/og-image.jpg'} />
-    <meta name="robots" content="index, follow" />
-      <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPFYTX79ND"></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-PPFYTX79ND');
-    </script>
+    <ArticleSEO frontmatter={frontmatter} />
   </head>
   <body>
 
@@ -235,7 +224,7 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
           <a href="/mentions-legales">Mentions légales</a>
           <a href="/ressources">Ressources</a>
         </div>
-        <p class="footer-copy">© 2025 Survivalix — Tous droits réservés</p>
+        <p class="footer-copy">© {new Date().getFullYear()} Survivalix — Tous droits réservés</p>
       </div>
     </footer>
 

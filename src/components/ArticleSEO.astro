@@ -1,0 +1,59 @@
+---
+// Balises SEO communes à TOUS les articles (manuel, radar, cantine, atelier).
+// L'adresse du site vient de astro.config.mjs (site: 'https://www.survivalix.fr') :
+// une seule source, plus jamais d'URL codée en dur dans un layout.
+const { frontmatter } = Astro.props;
+
+const SITE_URL = Astro.site ?? new URL('https://www.survivalix.fr');
+const pageTitle = frontmatter.seo_title || frontmatter.title;
+const canonicalURL = new URL(Astro.url.pathname, SITE_URL).toString();
+const ogImageURL = new URL(frontmatter.image || '/og-image.jpg', SITE_URL).toString();
+const logoURL = new URL('/LOGO_OK.svg', SITE_URL).toString();
+---
+
+<meta name="description" content={frontmatter.description} />
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:title" content={pageTitle} />
+<meta property="og:description" content={frontmatter.description} />
+<meta property="og:image" content={ogImageURL} />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:site_name" content="Survivalix" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={pageTitle} />
+<meta name="twitter:description" content={frontmatter.description} />
+<meta name="twitter:image" content={ogImageURL} />
+
+<meta name="robots" content="index, follow" />
+
+<!-- JSON-LD Article -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": frontmatter.title,
+  "description": frontmatter.description,
+  "image": ogImageURL,
+  "datePublished": frontmatter.date,
+  "dateModified": frontmatter.date,
+  "author": { "@type": "Organization", "name": "Survivalix" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Survivalix",
+    "logo": { "@type": "ImageObject", "url": logoURL }
+  },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalURL }
+})} />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PPFYTX79ND"></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PPFYTX79ND');
+</script>
