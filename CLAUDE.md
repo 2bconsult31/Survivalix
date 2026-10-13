@@ -13,7 +13,12 @@
 - Tout nouveau champ de frontmatter doit être déclaré à 3 endroits : content.config.ts, le fichier [slug].astro et le layout.
 - Styles du contenu markdown : utiliser :global() dans .article-content. Grilles contenant du markdown : minmax(0, 1fr) au lieu de 1fr.
 - Avant toute pull request : lancer npx astro build et vérifier qu'il n'y a aucune erreur.
-- Jamais de push direct sur main : toujours une branche et une pull request.
+- Chaque modification va jusqu'à la mise en ligne, systématiquement, sans attendre Boris :
+  1. travailler sur une branche et ouvrir une pull request (pour garder une trace et pouvoir annuler) ;
+  2. lancer npx astro build : s'il échoue, corriger ; si l'échec persiste, ne pas fusionner et prévenir Boris avec l'erreur ;
+  3. fusionner soi-même la PR dans main ;
+  4. vérifier sur https://www.survivalix.fr que les modifications sont bien en ligne ;
+  5. confirmer à Boris avec les liens des pages modifiées.
 
 ## Règles éditoriales
 - Chaque chiffre ou fait doit être vérifié par une recherche web, avec au moins une source institutionnelle (SGDSN, Croix-Rouge, ANSES, ministères, préfectures, Météo-France).
