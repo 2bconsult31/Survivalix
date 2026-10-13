@@ -49,6 +49,23 @@ const logoURL = new URL('/LOGO_OK.svg', SITE_URL).toString();
   "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalURL }
 })} />
 
+<!-- Google Consent Mode v2 : tout est refusé par défaut, AVANT tout script Google.
+     Le bandeau CMP de Google (AdSense) met ensuite à jour le consentement. -->
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    wait_for_update: 500
+  });
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3877882826995901" crossorigin="anonymous"></script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPFYTX79ND"></script>
 <script is:inline>

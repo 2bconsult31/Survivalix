@@ -21,15 +21,15 @@ La bonne nouvelle : rendre de l'eau douteuse potable n'est pas sorcier. Il exist
 
 ## Pourquoi l'eau devient un problème en crise
 
-<cite index="21-1">Les micro-organismes à éliminer sont de trois types : les bactéries (E. coli, choléra), les virus (rotavirus, norovirus) et les protozoaires (Giardia, Cryptosporidium). À cela s'ajoutent les polluants chimiques comme les pesticides et les métaux lourds, plus difficilement éliminables avec du matériel basique.</cite>
+Les micro-organismes à éliminer sont de trois types : les bactéries (E. coli, choléra), les virus (rotavirus, norovirus) et les protozoaires (Giardia, Cryptosporidium). À cela s'ajoutent les polluants chimiques comme les pesticides et les métaux lourds, plus difficilement éliminables avec du matériel basique.
 
-Le problème que la plupart des gens ignorent : <cite index="22-1">filtration et purification sont deux choses différentes. La filtration utilise une membrane pour retenir les particules — elle agit comme une barrière physique qui retient les sédiments, les bactéries et certains protozoaires. La purification va plus loin et cible les agents pathogènes les plus dangereux, notamment les virus.</cite>
+Le problème que la plupart des gens ignorent : filtration et purification sont deux choses différentes. La filtration utilise une membrane pour retenir les particules — elle agit comme une barrière physique qui retient les sédiments, les bactéries et certains protozoaires. La purification va plus loin et cible les agents pathogènes les plus dangereux, notamment les virus.
 
-En clair : un filtre seul ne suffit pas toujours. Un traitement chimique seul ne suffit pas toujours. <cite index="24-1">La règle d'or est de toujours filtrer avant de désinfecter : une eau débarrassée de ses particules se désinfecte bien plus efficacement, qu'on utilise l'ébullition, les UV ou les traitements chimiques.</cite>
+En clair : un filtre seul ne suffit pas toujours. Un traitement chimique seul ne suffit pas toujours. La règle d'or est de toujours filtrer avant de désinfecter : une eau débarrassée de ses particules se désinfecte bien plus efficacement, qu'on utilise l'ébullition, les UV ou les traitements chimiques.
 
 ## Méthode 1 — L'ébullition (la plus fiable)
 
-C'est la méthode la plus ancienne de l'humanité et la plus fiable toutes conditions confondues. <cite index="20-1">En situation d'urgence, la méthode la plus fiable consiste à porter l'eau à ébullition complète pendant au moins une minute au niveau de la mer. En altitude, il est conseillé de prolonger cette durée à trois minutes pour garantir l'élimination de tous les pathogènes.</cite>
+C'est la méthode la plus ancienne de l'humanité et la plus fiable toutes conditions confondues. En situation d'urgence, la méthode la plus fiable consiste à porter l'eau à ébullition complète pendant au moins une minute au niveau de la mer. En altitude, il est conseillé de prolonger cette durée à trois minutes pour garantir l'élimination de tous les pathogènes.
 
 **Ce que ça élimine :** 100% des bactéries, virus et protozoaires. La chaleur détruit tous les agents biologiques pathogènes sans exception.
 
@@ -47,11 +47,11 @@ C'est la méthode la plus ancienne de l'humanité et la plus fiable toutes condi
 
 ## Méthode 2 — Les pastilles de purification
 
-La solution la plus légère à transporter. <cite index="24-1">Quelques grammes seulement dans ta poche peuvent te sauver la vie. Les traitements chimiques représentent la solution la plus légère à emporter dans un sac de survie.</cite>
+La solution la plus légère à transporter. Quelques grammes seulement dans ta poche peuvent te sauver la vie. Les traitements chimiques représentent la solution la plus légère à emporter dans un sac de survie.
 
 Les deux types de pastilles qu'on trouve en France :
 
-**Pastilles au dioxyde de chlore (Micropur Forte, Aquatabs)** — le meilleur choix. Efficaces contre bactéries, virus et Giardia. <cite index="28-1">Généralement, il faut plonger un comprimé dans 1L d'eau et laisser agir pendant 30 minutes.</cite> Elles laissent un léger goût chloré mais très supportable.
+**Pastilles au dioxyde de chlore (Micropur Forte, Aquatabs)** — le meilleur choix. Efficaces contre bactéries, virus et Giardia. Généralement, il faut plonger un comprimé dans 1L d'eau et laisser agir pendant 30 minutes. Elles laissent un léger goût chloré mais très supportable.
 
 **Pastilles à l'iode** — efficaces mais déconseillées pour un usage prolongé (effet thyroïde), et moins efficaces contre le Cryptosporidium. Réserver pour le kit d'urgence de secours uniquement.
 
@@ -64,11 +64,11 @@ Les deux types de pastilles qu'on trouve en France :
 
 **Avantages :** ultra-léger, pas de source de chaleur nécessaire, longue conservation (plusieurs années en emballage fermé), très peu coûteux.
 
-**Inconvénients :** <cite index="22-1">efficacité diminue si l'eau est très froide ou trouble — pré-filtrage indispensable. L'eau traitée chimiquement se garde généralement quelques jours seulement.</cite>
+**Inconvénients :** efficacité diminue si l'eau est très froide ou trouble — pré-filtrage indispensable. L'eau traitée chimiquement se garde généralement quelques jours seulement.
 
 ## Méthode 3 — Le filtre portable
 
-<cite index="22-1">Les filtres à paille comme le LifeStraw retiennent bactéries et sédiments, mais les virus nécessitent purification chimique ou UV.</cite> Ce point est crucial et souvent mal compris — un filtre seul ne rend pas l'eau totalement sûre dans tous les contextes.
+Les filtres à paille comme le LifeStraw retiennent bactéries et sédiments, mais les virus nécessitent purification chimique ou UV. Ce point est crucial et souvent mal compris — un filtre seul ne rend pas l'eau totalement sûre dans tous les contextes.
 
 **Les types de filtres :**
 
@@ -76,7 +76,7 @@ Les deux types de pastilles qu'on trouve en France :
 
 **Filtre à pompe** — tu pompes l'eau à travers une cartouche. Plus volumineux mais plus puissant. Certains modèles intègrent du charbon actif qui améliore le goût et capte certains polluants chimiques.
 
-**Filtre gravitaire** — pour le camp de base ou la maison. <cite index="25-1">Pour une crise prolongée, un système de filtration gravitaire couplé à un stock de pastilles chimiques et des contenants sécurisés assure une autonomie sur la durée.</cite>
+**Filtre gravitaire** — pour le camp de base ou la maison. Pour une crise prolongée, un système de filtration gravitaire couplé à un stock de pastilles chimiques et des contenants sécurisés assure une autonomie sur la durée.
 
 **La procédure avec paille filtrante :**
 1. Plonge la paille directement dans l'eau source
@@ -90,11 +90,11 @@ Les deux types de pastilles qu'on trouve en France :
 
 ## Méthode 4 — La désinfection UV
 
-La méthode la plus high-tech et la plus rapide. <cite index="19-1">Les stylos UV (SteriPen®, CrazyCap®) émettent des ultraviolets de type UV-C qui détruisent l'ADN des micro-organismes, les rendant incapables de se reproduire. La purification est quasi-instantanée — 90 secondes pour 1 litre d'eau.</cite>
+La méthode la plus high-tech et la plus rapide. Les stylos UV (SteriPen®, CrazyCap®) émettent des ultraviolets de type UV-C qui détruisent l'ADN des micro-organismes, les rendant incapables de se reproduire. La purification est quasi-instantanée — 90 secondes pour 1 litre d'eau.
 
-**Ce que ça élimine :** bactéries, virus et protozoaires — tout le spectre biologique. <cite index="27-1">Les purificateurs d'eau UV fonctionnent en utilisant des UV-C pour tuer les bactéries, les virus et les parasites. Cette méthode est rapide, facile à utiliser et ne laisse aucun goût désagréable dans l'eau.</cite>
+**Ce que ça élimine :** bactéries, virus et protozoaires — tout le spectre biologique. Les purificateurs d'eau UV fonctionnent en utilisant des UV-C pour tuer les bactéries, les virus et les parasites. Cette méthode est rapide, facile à utiliser et ne laisse aucun goût désagréable dans l'eau.
 
-**Ce que ça n'élimine pas :** polluants chimiques et métaux lourds. Et <cite index="19-1">l'UV est inefficace sur eau trouble — les particules en suspension bloquent les UV. La pré-filtration est obligatoire.</cite>
+**Ce que ça n'élimine pas :** polluants chimiques et métaux lourds. Et l'UV est inefficace sur eau trouble — les particules en suspension bloquent les UV. La pré-filtration est obligatoire.
 
 **La procédure :**
 1. Pré-filtre l'eau si elle n'est pas claire
@@ -110,7 +110,7 @@ La méthode la plus high-tech et la plus rapide. <cite index="19-1">Les stylos U
 
 Quelques erreurs classiques qui peuvent transformer un effort de purification en illusion de sécurité :
 
-**Boire sans traiter parce que "ça a l'air propre".** <cite index="19-1">Les pathogènes les plus dangereux (Giardia, Cryptosporidium) sont totalement invisibles à l'œil nu.</cite> Une eau cristalline peut être biologiquement contaminée.
+**Boire sans traiter parce que "ça a l'air propre".** Les pathogènes les plus dangereux (Giardia, Cryptosporidium) sont totalement invisibles à l'œil nu. Une eau cristalline peut être biologiquement contaminée.
 
 **Utiliser les pastilles sur de l'eau trouble sans pré-filtrage.** Les particules en suspension protègent les bactéries de l'action chimique et absorbent le chlore avant qu'il n'atteigne les pathogènes.
 
@@ -131,7 +131,7 @@ Le principe de redondance s'applique ici comme pour l'allumage du feu : plusieur
 
 **La combinaison recommandée pour un kit 72h :** pastilles Micropur (légères, backup universel) + paille filtrante (usage quotidien sans gaz ni batterie). Si tu veux le niveau supérieur : ajoute un stylo UV.
 
-**Pour une crise prolongée à domicile :** filtre gravitaire + stock de pastilles + grand récipient de stockage hermétique. <cite index="20-1">Pour des sorties de courte durée, les pastilles chimiques offrent une solution légère et rapide. Pour des treks de longue durée, un filtre réutilisable avec cartouches de rechange est parfait.</cite>
+**Pour une crise prolongée à domicile :** filtre gravitaire + stock de pastilles + grand récipient de stockage hermétique. Pour des sorties de courte durée, les pastilles chimiques offrent une solution légère et rapide. Pour des treks de longue durée, un filtre réutilisable avec cartouches de rechange est parfait.
 
 ## Télécharge la fiche technique illustrée
 
