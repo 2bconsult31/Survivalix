@@ -3,7 +3,7 @@ import '../styles/global.css';
 
 const { 
   title, 
-  description = "Survivalix — Le site de survie pour les gens normaux. Guides pratiques, recettes, outils interactifs et humour post-apo.",
+  description = "Survivalix — Le site de survie pour tout le monde. Guides pratiques, recettes, outils interactifs et humour post-apo.",
   image = "/og-image.jpg"
 } = Astro.props;
 
@@ -15,6 +15,19 @@ const url = Astro.url;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Consent Mode v2 : tout est refusé par défaut, AVANT tout script Google.
+         Le bandeau CMP de Google (AdSense) met ensuite à jour le consentement. -->
+    <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      wait_for_update: 500
+    });
+    </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3877882826995901" crossorigin="anonymous"></script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
@@ -111,11 +124,12 @@ const url = Astro.url;
     <footer>
       <div class="footer-inner">
         <img src="/LOGO_OK.svg" alt="Survivalix" class="footer-logo-img" width="160" height="43" />
-        <p class="footer-tagline">Le site de survie pour les gens normaux.</p>
+        <p class="footer-tagline">Le site de survie pour tout le monde.</p>
         <div class="footer-links">
           <a href="/a-propos">À propos</a>
           <a href="/contact">Contact</a>
           <a href="/mentions-legales">Mentions légales</a>
+          <a href="/politique-confidentialite">Confidentialité</a>
           <a href="/ressources">Lexique</a>
         </div>
         <div class="footer-social">
