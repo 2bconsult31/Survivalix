@@ -88,7 +88,7 @@ Durées de conservation selon le type de stockage :
 
 Petit avertissement : une bouteille entamée ne fait plus partie du stock. L'ANSES recommande de la garder au réfrigérateur et de la consommer rapidement.
 
-Comment savoir si l'eau est encore bonne ? Une eau saine n'a ni odeur, ni dépôt visible, et son goût est neutre. Si elle sent le moisi ou le plastique, ou si elle est trouble, traitez-la avant d'en boire : 1 minute d'ébullition élimine tous les pathogènes biologiques ; sinon, associez filtration et pastille de purification.
+Comment savoir si l'eau est encore bonne ? Une eau saine n'a ni odeur, ni dépôt visible, et son goût est neutre. Si elle sent le moisi ou le plastique, ou si elle est trouble, traitez-la avant d'en boire : faites-la bouillir 5 minutes, à couvert, comme le recommandent les ARS ; sinon, associez filtration et pastille de purification.
 
 **Et l'eau de Javel ?** Seulement en dernier recours, quand ni l'ébullition ni les pastilles ne sont possibles. Le seul protocole officiel français que nous avons trouvé est celui de l'ARS Guadeloupe (consignes de désinfection de l'eau hors réseau, 2017). Le voici tel quel :
 
@@ -124,4 +124,4 @@ Un point important souvent oublié : votre stock couvre la consommation normale 
 
 Et si vous devez puiser dans une source extérieure (pluie, fontaine, rivière), lisez notre guide sur la purification de l'eau en urgence : le stock, c'est bien, savoir traiter n'importe quelle eau c'est mieux.
 
-*Sources : SGDSN — "Tous responsables" (2025), ANSES (« Bonnes pratiques de consommation de l'eau du robinet »), ARS Guadeloupe (« Procédure de désinfection de l'eau hors réseau », 2017), Gouvernement — kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Résilience-Urbaine.com, Mouton-Résilient.com, Urban Survival District, La Survie.*
+*Sources : SGDSN — "Tous responsables" (2025), ANSES (« Bonnes pratiques de consommation de l'eau du robinet »), ARS Guadeloupe (« Procédure de désinfection de l'eau hors réseau », 2017), ARS Mayotte et ARS Provence-Alpes-Côte d'Azur (ébullition 5 minutes à couvert), Gouvernement — kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Résilience-Urbaine.com, Mouton-Résilient.com, Urban Survival District, La Survie.*

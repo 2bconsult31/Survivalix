@@ -29,7 +29,7 @@ En clair : un filtre seul ne suffit pas toujours. Un traitement chimique seul ne
 
 ## Méthode 1 — L'ébullition (la plus fiable)
 
-C'est la méthode la plus ancienne de l'humanité et la plus fiable toutes conditions confondues. En cas d'urgence, le plus sûr est de porter l'eau à gros bouillons et de l'y maintenir au moins une minute au niveau de la mer. En altitude, on pousse à trois minutes pour être certain de venir à bout de tous les pathogènes.
+C'est la méthode la plus ancienne de l'humanité et la plus fiable toutes conditions confondues. En cas d'urgence, la consigne des agences régionales de santé (ARS) est claire : porter l'eau à gros bouillons et l'y maintenir **5 minutes, dans un récipient couvert**.
 
 **Ce que ça élimine :** 100% des bactéries, virus et protozoaires. La chaleur détruit tous les agents biologiques pathogènes sans exception.
 
@@ -38,7 +38,7 @@ C'est la méthode la plus ancienne de l'humanité et la plus fiable toutes condi
 **La procédure :**
 1. Pré-filtre l'eau à travers un tissu, un filtre à café ou une microfibre pour éliminer les débris visibles — cette étape est obligatoire si l'eau est trouble
 2. Porte à ébullition complète (les grosses bulles, pas juste les petites)
-3. Maintiens l'ébullition une minute (trois minutes en altitude > 2000m)
+3. Maintiens l'ébullition 5 minutes, couvercle posé
 4. Laisse refroidir dans un récipient couvert pour éviter la recontamination
 
 **Avantages :** zéro matériel spécifique, fonctionne sur n'importe quelle source d'eau biologique, efficacité totale sur tous les pathogènes.
@@ -138,5 +138,7 @@ Le principe de redondance s'applique ici comme pour l'allumage du feu : plusieur
 Les 4 méthodes en image prête à imprimer — à garder dans ton kit ou coller dans ta cuisine.
 
 [Télécharger la fiche technique](/ressources/atelier/purifier-eau-urgence.png)
+
+*Sources : ARS Mayotte et ARS Provence-Alpes-Côte d'Azur (ébullition 5 minutes à couvert, consigne relayant l'ANSES), ARS Guadeloupe (« Procédure de désinfection de l'eau hors réseau », 2017).*
 
 *Sources : Soldat.fr, Projet13, BlogSurvivalisme, Randonner Malin, Action Résilience, Survivalisme Urbain.*
