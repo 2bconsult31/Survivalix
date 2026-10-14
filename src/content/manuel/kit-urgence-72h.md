@@ -47,7 +47,7 @@ Le minimum recommandé est de **6 litres par personne pour 72h** — 2 litres pa
 - Gourde filtrante type LifeStraw — optionnel, mais excellent si tu dois évacuer à pied
 
 **Le conseil qu'on ne te donne jamais :**
-Les chiffres recommandés sont calculés pour rester chez toi, immobile, dans un appartement tempéré. Si tu dois évacuer et marcher sous la pluie en novembre, multiplie par deux.
+Le repère officiel est un minimum. Si tu dois évacuer et marcher, tu boiras davantage : prévois de quoi traiter l'eau trouvée en route.
 
 ### Nourriture — Manger sans cuisiner (et sans se déprimer)
 

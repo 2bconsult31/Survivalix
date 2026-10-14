@@ -1,7 +1,7 @@
 ---
 title: "On a lu le guide de survie du gouvernement français pour vous (et c'est surprenant)"
 seo_title: "Guide Survie Gouvernement Français 2025 : Tous Responsables SGDSN"
-description: "Le gouvernement français a publié son premier guide de survie en novembre 2025. 27 pages, un kit 72h, des réflexes concrets. On l'a lu et décortiqué pour vous."
+description: "Le gouvernement français a publié son premier guide de survie en novembre 2025 : un kit 72h, des réflexes concrets. On l'a lu et décortiqué pour vous."
 date: 2025-12-01
 tags: ["guide", "gouvernement", "SGDSN", "kit-72h", "France", "radar"]
 rubrique: "radar"
@@ -13,7 +13,7 @@ source_url: "https://www.sgdsn.gouv.fr/publications/guide-tous-responsables"
 
 Le 20 novembre 2025, le gouvernement français a fait quelque chose d'inhabituel : il a publié un guide de survie pour ses citoyens.
 
-Pas un communiqué de presse sur les risques d'inondation. Pas une liste de numéros d'urgence sur Légifrance. Un vrai guide pratique, 27 pages, avec des conseils concrets sur comment tenir 72 heures en cas de crise majeure. Le genre de document que la Suède envoie à tous ses foyers depuis 1943 et que la France publiait pour la première fois de son histoire moderne.
+Pas un communiqué de presse sur les risques d'inondation. Pas une liste de numéros d'urgence sur Légifrance. Un vrai guide pratique, avec des conseils concrets sur comment tenir 72 heures en cas de crise majeure. Le genre de document que la Suède envoie à tous ses foyers depuis 1943 et que la France publiait pour la première fois de son histoire moderne.
 
 Il s'appelle **"Tous responsables — Face aux risques, agissons"**. Il est disponible gratuitement en PDF. Et il méritait qu'on le lise sérieusement.
 
@@ -55,7 +55,7 @@ Soyons honnêtes sur les limites — non pas pour critiquer l'État, mais parce 
 
 Le guide couvre les 72 premières heures. Pas la semaine suivante. Pas le mois d'après. Si vous cherchez comment tenir 2 semaines ou gérer un stock alimentaire longue durée, vous devrez aller chercher ailleurs — notamment dans nos calculateurs et nos guides sur ce site.
 
-En 2018, la Suède a glissé sa brochure dans 4,8 millions de boîtes aux lettres, selon l'agence suédoise de protection civile (MSB). En six mois, la France n'a rien distribué sur papier : le guide est resté en ligne, sur les sites du gouvernement et des préfectures. Ce choix de distribution uniquement numérique est une limite réelle : les personnes les moins connectées, souvent aussi les plus vulnérables, ne l'ont probablement jamais vu.
+En 2018, la Suède a glissé sa brochure dans 4,8 millions de boîtes aux lettres, selon l'agence suédoise de protection civile (MSB). En France, le guide se télécharge sur les sites du SGDSN, des ministères et des préfectures, en trois versions : standard, facile à lire (FALC) et à imprimer.
 
 Certains sujets sont également absents : la gestion du froid prolongé, la purification de l'eau de source, les premières compétences autonomie — tout ce que Survivalix couvre justement dans L'Atelier.
 
@@ -81,4 +81,4 @@ Le guide "Tous responsables" est disponible gratuitement en PDF sur le site offi
 
 ---
 
-*Source principale : SGDSN — "Tous responsables", publié le 20 novembre 2025. Informations complémentaires : MSB (Suède) — brochure « Om krisen eller kriget kommer », 2018, ministère de l'Intérieur, ministère de la Transition écologique, info.gouv.fr.*
+*Source principale : SGDSN — "Tous responsables", publié le 20 novembre 2025 (sgdsn.gouv.fr, page « Guide "Tous responsables" »). Informations complémentaires : MSB (Suède) — brochure « Om krisen eller kriget kommer », 2018, ministère de l'Intérieur, ministère de la Transition écologique, info.gouv.fr.*

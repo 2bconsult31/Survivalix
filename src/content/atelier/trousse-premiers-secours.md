@@ -116,6 +116,6 @@ Vérifie régulièrement les dates de péremption et l'état du matériel, comme
 
 **Après chaque utilisation :** remplace immédiatement ce que tu as utilisé. Une trousse à moitié vide est une fausse sécurité.
 
-**Le budget de renouvellement :** prévois 5-10€ par an pour remplacer les consommables périmés ou utilisés. C'est le coût d'un café.
+**Le budget de renouvellement :** prévois un petit budget pour renouveler les produits périmés ou utilisés.
 
 *Sources : Légifrance — arrêté du 24 décembre 1998 (thermomètres médicaux à mercure), DGSCGC — statistiques des services d'incendie et de secours (données 2025), Croix-Rouge française (« Trousse de secours : que doit-elle contenir ? », « Que faire en cas de brûlure ? »), Sifflet de Survie, La Boutique du Survivaliste, Matériel-Aventure, France-Pharmacies, HiFamilies.*

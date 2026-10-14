@@ -37,7 +37,7 @@ Inutile de viser le matériel sophistiqué et hors de prix : ce qu'il vous faut,
 
 ### Abri et chaleur
 
-Le minimum absolu : **deux couvertures de survie isothermiques**. Moins de 100g chacune, moins de 2€ pièce, et elles peuvent littéralement sauver des vies en hypothermie. Si l'espace le permet : un poncho imperméable (qui sert aussi de bâche d'abri), une paire de vêtements de rechange adaptés à la saison, des chaussettes chaudes supplémentaires.
+Le minimum absolu : **une couverture de survie isothermique par personne** — elle fait partie du kit d'urgence officiel. Légère, peu coûteuse, et elle peut littéralement sauver des vies en hypothermie. Si l'espace le permet : un poncho imperméable (qui sert aussi de bâche d'abri), une paire de vêtements de rechange adaptés à la saison, des chaussettes chaudes supplémentaires.
 
 Léger et compact, un tapis de sol rend service aussi bien en forêt que sur le sol d'un gymnase. Si vous êtes évacué vers un centre d'hébergement collectif, dormir sur un sol froid en béton sans isolation, c'est une mauvaise nuit garantie.
 
