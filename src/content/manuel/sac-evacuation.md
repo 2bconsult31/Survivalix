@@ -1,7 +1,7 @@
 ---
 title: "Le sac d'évacuation : tout ce qu'il faut mettre dedans (et ce qu'il ne faut pas)"
 seo_title: "Sac d'Évacuation : Que Mettre Dedans et Comment le Préparer"
-description: "Incendie, inondation, évacuation d'urgence : votre sac doit être prêt en 30 secondes. Contenu complet, poids optimal, erreurs à éviter. Guide sourcé, sans bullshit."
+description: "Incendie, inondation, évacuation d'urgence : votre sac doit être prêt à partir à tout moment. Contenu, poids, erreurs à éviter. Guide sourcé, sans bullshit."
 date: 2025-12-15
 tags: ["evacuation", "sac", "bug-out-bag", "urgence", "kit", "debutant"]
 rubrique: "manuel"
@@ -29,9 +29,7 @@ La distinction importante que beaucoup oublient : un sac d'évacuation a une seu
 
 ### Eau et purification
 
-C'est la priorité absolue. Sans eau, rien ne tient : même brève, une déshydratation peut sérieusement nuire à votre santé. Point de départ raisonnable : environ 3 litres dans le sac, plus de quoi traiter l'eau sur place (filtre ou pastilles).
-
-Mais 3 litres pèsent 3 kg — c'est lourd pour un sac d'évacuation. La solution intelligente : 1,5L d'eau en bouteille (boire immédiatement) + une paille filtrante type LifeStraw ou Sawyer Mini (pour traiter n'importe quelle eau trouvée en route) + des pastilles Micropur en backup. Vous couvrez les 72h sans plomber votre sac.
+C'est la priorité absolue. Sans eau, rien ne tient : même brève, une déshydratation peut sérieusement nuire à votre santé. Le repère officiel du kit d'urgence, c'est 6 litres par personne pour 72 heures. Sauf que 6 litres, c'est 6 kg dans le dos. Emportez ce que vous pouvez porter, et ajoutez de quoi traiter l'eau trouvée en route : une paille filtrante type LifeStraw ou Sawyer Mini, et des pastilles Micropur en secours.
 
 ### Nourriture
 
@@ -82,10 +80,10 @@ Oubliez le sac taillé pour Instagram. Ce qu'il faut :
 
 C'est le piège dans lequel tombent presque tous les débutants : un sac trop lourd ne sert à rien si vous ne pouvez pas le porter longtemps.
 
-Plafonnez votre sac à 15 kilos, d'autant plus si vous avez peu l'habitude de charger, régler et porter un sac à dos. Le vrai test : pouvoir marcher longtemps avec sans vous épuiser. Le poids grimpe plus vite qu'on ne le croit quand on additionne eau, nourriture, vêtements et matériel.
+Gardez-le aussi léger que possible, d'autant plus si vous avez peu l'habitude de charger, régler et porter un sac à dos. Le vrai test : pouvoir marcher longtemps avec sans vous épuiser. Le poids grimpe plus vite qu'on ne le croit quand on additionne eau, nourriture, vêtements et matériel.
 
 La hiérarchie du poids :
-1. Eau — lourd mais incompressible (minimum 1,5L)
+1. Eau — lourd mais incompressible
 2. Nourriture — choisissez dense en calories, léger en poids (oléagineux > conserves)
 3. Abri — couverture de survie plutôt que sac de couchage
 4. Électronique — batterie externe, pas générateur portable

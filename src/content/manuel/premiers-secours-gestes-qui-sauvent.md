@@ -60,7 +60,7 @@ Place tes deux mains l'une sur l'autre, au centre de la poitrine, bras tendus. A
 
 Si un défibrillateur automatisé externe traîne à proximité — dans un hall d'entreprise, une gare, un centre commercial — utilise-le sans hésiter. L'appareil te guide vocalement à chaque étape ; aucune formation préalable n'est nécessaire pour s'en servir.
 
-Chaque minute sans massage cardiaque fait chuter les chances de survie d'environ 10%. C'est, très concrètement, le geste qui sauve le plus de vies en France chaque année.
+Chaque minute sans intervention fait chuter les chances de survie de 10 %, selon la Fédération française de cardiologie et la Croix-Rouge française. C'est, très concrètement, le geste qui sauve le plus de vies en France chaque année.
 
 ### Une brûlure
 
@@ -84,6 +84,6 @@ Une [trousse de premiers secours](https://www.amazon.fr/s?k=trousse+premiers+sec
 
 Un geste imparfait, tenté à temps, vaut toujours mieux qu'aucun geste. C'est probablement la seule chose à retenir vraiment de tout cet article.
 
-*Sources : Croix-Rouge française (dont « Que faire en cas de brûlure ? »), Ministère de l'Intérieur — Sécurité civile, SGDSN.*
+*Sources : Croix-Rouge française (dont « Que faire en cas de brûlure ? »), Fédération française de cardiologie (« Arrêt cardiaque : le pire est de ne rien faire »), Ministère de l'Intérieur — Sécurité civile, SGDSN.*
 
 *Cet article est fourni à titre informatif et ne remplace en aucun cas une formation aux premiers secours ni un avis médical professionnel. En cas d'urgence vitale, appelez immédiatement le 15, le 18 ou le 112.*
