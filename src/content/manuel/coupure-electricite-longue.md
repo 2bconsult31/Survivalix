@@ -55,9 +55,9 @@ C'est souvent la première source de stress lors d'une coupure longue. Voici ce 
 
 **Une astuce pour détecter une coupure en votre absence :** laissez dans le congélateur un verre rempli de glaçons. Si, en rentrant, vous les retrouvez fondus et tassés au fond du verre, le courant a sauté pendant votre absence et la température est remontée.
 
-**Pour cuisiner sans électricité** si vos plaques sont électriques : gardez à la maison quelques petits réchauds de camping et leurs cartouches de gaz. Simples à prendre en main, ils se trouvent aussi bien en grande surface qu'en magasin de camping.
+**Pour manger sans électricité :** misez sur ce qui se mange sans cuisson. Conserves prêtes à consommer, pain, biscuits, fruits secs, oléagineux : c'est exactement ce que demande le kit d'urgence officiel, de la nourriture non périssable qui ne nécessite aucune cuisson.
 
-**Attention :** l'utilisation d'un réchaud à gaz en intérieur nécessite une ventilation correcte. N'utilisez jamais un réchaud de camping dans une pièce fermée — risque d'intoxication au monoxyde de carbone.
+**Jamais de réchaud dans le logement :** réchaud de camping, barbecue, appareil au gaz ou au charbon de bois ne s'utilisent jamais à l'intérieur, même en aérant. Ils dégagent du monoxyde de carbone, un gaz toxique, invisible et inodore. C'est la consigne d'Enedis en cas de coupure.
 
 ## Chauffage — l'hypothermie en appartement, ça existe
 
@@ -71,9 +71,7 @@ Regroupez-vous dans une seule pièce — idéalement la plus petite de l'apparte
 
 Habillez-vous en couches : sous-vêtements thermiques, pull en laine, couverture — c'est la base. La **couverture de survie** (couverture isothermique dorée/argentée) est l'outil le plus efficace au rapport encombrement/performance : elle retient jusqu'à 90% de la chaleur corporelle. Chaque kit 72h devrait en avoir deux.
 
-Pour une solution de chauffage d'appoint sans électricité en appartement, la solution la plus réaliste reste le **chauffage radiant à gaz** avec une bouteille de gaz de camping — en veillant impérativement à ventiler la pièce régulièrement. Pour traverser une coupure de chauffage sans trop grelotter, c'est l'achat le plus sensé : entièrement autonome et indépendant du réseau, il ne tombe pas en panne en même temps que le courant.
-
-**Ce qu'il ne faut jamais faire :** utiliser un barbecue, un braséro ou tout appareil à combustion en intérieur fermé. Le monoxyde de carbone est inodore, incolore, et mortel.
+**Ce qu'il ne faut jamais faire :** chauffer le logement avec un appareil à combustion. Chauffage d'appoint à gaz ou à pétrole, barbecue, braséro, réchaud de camping : jamais à l'intérieur, même en aérant. Le monoxyde de carbone qu'ils dégagent est inodore, incolore, et mortel. Pour tenir au chaud, la seule bonne stratégie reste celle du dessus : vêtements chauds en couches, couvertures, et tout le monde dans une seule pièce.
 
 ## Communication — rester informé et joignable
 
@@ -98,9 +96,8 @@ La coupure d'électricité qui arrive sans prévenir est le test grandeur nature
 | Radio à piles (ou manivelle) | Rester informé sans réseau | 20-40€ |
 | Bougies x10 + briquet | Éclairage de secours | 5-10€ |
 | Couvertures de survie x2 | Conserver la chaleur corporelle | 4-8€ |
-| Réchaud de camping + cartouches | Cuisiner sans électricité | 20-35€ |
 | Conserves et aliments sans cuisson | 3 jours d'alimentation sans frigo | 25-40€ |
-| **Total kit de base** | | **~110-190€** |
+| **Total kit de base** | | **~90-160€** |
 
 **Deux gestes préventifs à faire dès maintenant :**
 
@@ -112,6 +109,6 @@ Notez le numéro Enedis (09 70 83 19 70) quelque part d'accessible — dans votr
 
 Une coupure d'électricité qui dure plus de 72 heures change de catégorie. Ce n'est plus une gêne — c'est une situation de crise. Les commerces ferment, les distributeurs automatiques sont hors service, les stations-service ne pompent plus, les réseaux mobiles peuvent être perturbés.
 
-C'est exactement pour ça que le kit 72h existe — et pourquoi il intègre éclairage, communication, alimentation sans frigo et solution de chauffage. Si vous l'avez, vous traversez ces 72 premières heures sans stress. Si vous ne l'avez pas, c'est le moment de le constituer.
+C'est exactement pour ça que le kit 72h existe — et pourquoi il intègre éclairage, communication, alimentation sans frigo et de quoi rester au chaud. Si vous l'avez, vous traversez ces 72 premières heures sans stress. Si vous ne l'avez pas, c'est le moment de le constituer.
 
-*Sources : Enedis (« Je n'ai plus d'électricité : les bons gestes à adopter »), Gouvernement — kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Generali, Résilience-Urbaine.com, Mouton-Résilient.com, Darty, EcoFlow.*
+*Sources : Enedis (« Je n'ai plus d'électricité : les bons gestes à adopter »), Santé publique France (« Comment réduire le risque d'intoxication au monoxyde de carbone ? »), Gouvernement — kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Generali, Résilience-Urbaine.com, Mouton-Résilient.com, Darty, EcoFlow.*

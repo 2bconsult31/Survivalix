@@ -85,7 +85,7 @@ C'est la méthode préférée des scouts et des trappeurs. Elle ne demande rien 
 
 ### Version réchaud ou feu de bois en cocotte
 
-Pour une version plus épaisse et moelleuse, proche d'un vrai pain.
+Pour une version plus épaisse et moelleuse, proche d'un vrai pain. Réchaud de camping ou feu de bois : **uniquement en extérieur**, jamais dans le logement (risque d'intoxication au monoxyde de carbone).
 
 1. Prépare la pâte classique
 2. Verse-la dans une casserole légèrement huilée

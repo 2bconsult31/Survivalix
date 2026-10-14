@@ -33,7 +33,7 @@ Si les températures extérieures deviennent négatives, laisse légèrement cou
 
 C'est le point le plus important de cet article, et celui que la panique fait le plus souvent oublier.
 
-Un chauffage d'appoint à combustion — gaz, pétrole, un brasero de fortune — utilisé dans un espace mal ventilé peut produire du monoxyde de carbone, un gaz invisible et inodore. Les premiers symptômes (maux de tête, nausées, vertiges) ressemblent à une simple fatigue, ce qui les rend d'autant plus dangereux. N'utilise jamais un dispositif de chauffage à combustion conçu pour l'extérieur dans une pièce fermée, même brièvement, même en cas d'urgence.
+Un appareil à combustion — chauffage d'appoint au gaz ou au pétrole, brasero de fortune, barbecue, réchaud de camping — produit du monoxyde de carbone, un gaz invisible et inodore. Les premiers symptômes (maux de tête, nausées, vertiges) ressemblent à une simple fatigue, ce qui les rend d'autant plus dangereux. La règle est simple : n'utilise jamais ces appareils à l'intérieur du logement pour te chauffer, même en aérant, même brièvement, même en cas d'urgence. Pour tenir le coup, mise sur ce qui ne brûle rien : vêtements chauds en couches, couvertures, et toute la maisonnée regroupée dans une seule pièce.
 
 Un détecteur de monoxyde de carbone à pile, installé dans le couloir près des chambres, est l'équipement le plus simple pour se prémunir de ce risque précis — utile toute l'année, pas seulement en cas de panne.
 
@@ -63,4 +63,4 @@ Une [couverture chauffante électrique](https://www.amazon.fr/s?k=couverture+cha
 
 Ces trois éléments rejoignent naturellement ton [kit d'urgence 72h](/manuel/kit-urgence-72h) — la chaleur fait partie des quatre priorités de base, hiver ou pas.
 
-*Sources : décret n°2002-120 du 30 janvier 2002 (critères de décence du logement), Organisation Mondiale de la Santé (recommandations de température intérieure), ADIL.*
+*Sources : décret n°2002-120 du 30 janvier 2002 (critères de décence du logement), Organisation Mondiale de la Santé (recommandations de température intérieure), ADIL, Santé publique France (« Comment réduire le risque d'intoxication au monoxyde de carbone ? »).*
