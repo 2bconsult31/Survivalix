@@ -19,7 +19,7 @@ La bonne nouvelle : monter une trousse de premiers secours vraiment efficace co�
 
 ## Pourquoi la trousse du commerce ne suffit pas
 
-En France, les sapeurs-pompiers mettent en moyenne 15 minutes et 9 secondes à arriver sur les lieux, toutes interventions confondues (statistiques 2025 de la DGSCGC, ministère de l'Intérieur). Et derrière cette moyenne, les écarts entre territoires peuvent être importants. Ta trousse doit te permettre de stabiliser une situation pendant ce temps d'attente — pas de jouer au chirurgien, juste de tenir jusqu'à l'arrivée des secours.
+En France, les sapeurs-pompiers mettent en moyenne 15 minutes et 9 secondes à arriver sur les lieux, toutes interventions confondues (statistiques 2025 de la DGSCGC, ministère de l'Intérieur). Ta trousse doit te permettre de stabiliser une situation pendant ce temps d'attente — pas de jouer au chirurgien, juste de tenir jusqu'à l'arrivée des secours.
 
 Les kits du commerce ont deux défauts majeurs. D'abord, ils sont calibrés pour les accidents bénins du quotidien (petite coupure, ampoule) mais rarement pour les situations qui comptent vraiment (hémorragie, brûlure étendue, choc). Ensuite, ils contiennent souvent du matériel inutile qui prend de la place et mange le budget au détriment de ce qui est réellement utile.
 
