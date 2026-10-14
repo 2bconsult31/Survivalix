@@ -22,7 +22,7 @@ La logique reste la même que celle qu'on détaille dans notre [guide du kit 72h
 ### Semaine 1 — L'eau (5 à 10€)
 
 Rien d'autre ne compte tant que ce point n'est pas réglé. Direction ton supermarché habituel :
-- Des packs de bouteilles d'eau 1,5L, format que tu utilises déjà — vise 6 litres par personne minimum, 9 litres si tu veux de la marge
+- Des packs de bouteilles d'eau 1,5L, format que tu utilises déjà — vise 6 litres par personne minimum (le repère officiel pour 72 heures), et plus si tu veux de la marge
 - Rien de spécialisé nécessaire à ce stade, sauf si tu veux ajouter des [pastilles de purification](https://www.amazon.fr/s?k=pastilles+purification+eau+micropur) pour une eau de secours douteuse
 
 Si tu veux calculer précisément ton besoin selon la taille de ton foyer, notre [calculateur de stock d'eau](/outils/calculateur-stock-eau) fait le calcul en 30 secondes.
