@@ -22,6 +22,7 @@
 
 ## Règles éditoriales
 - La sécurité passe avant tout : un conseil contredit par une source officielle est corrigé immédiatement, quel que soit l'article.
+- Pour un conseil de sécurité, appliquer la consigne officielle la plus prudente ; si les sources officielles divergent, retenir la plus prudente et la citer.
 - Un chiffre sans source institutionnelle vérifiable est retiré. Un même chiffre doit être identique sur tout le site.
 - Chaque chiffre ou fait doit être vérifié par une recherche web, avec au moins une source institutionnelle (SGDSN, Croix-Rouge, ANSES, ministères, préfectures, Météo-France).
 - Ne jamais inventer un chiffre, une anecdote ou un lien de cause à effet. Ne jamais transformer une fourchette ou une recommandation en règle absolue.
