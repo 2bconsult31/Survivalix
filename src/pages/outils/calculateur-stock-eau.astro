@@ -4,7 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 
 <Layout
   title="Calculateur de stock d'eau — Survivalix"
-  description="Combien de litres d'eau stocker pour ta famille ? Calcule ton stock idéal en fonction de ta situation personnelle."
+  description="Combien de litres d'eau stocker pour ta famille ? Calcule ton stock à partir du repère officiel : 2 litres par personne et par jour."
 >
 
   <div class="page-header">
@@ -41,15 +41,6 @@ import Layout from '../../layouts/Layout.astro';
           </div>
         </div>
 
-        <div class="form-group">
-          <label for="animaux">Animaux de compagnie</label>
-          <div class="counter">
-            <button type="button" onclick="decrement('animaux')">−</button>
-            <span id="animaux-val">0</span>
-            <button type="button" onclick="increment('animaux')">+</button>
-          </div>
-        </div>
-
       </div>
 
       <div class="form-section">
@@ -59,38 +50,14 @@ import Layout from '../../layouts/Layout.astro';
           <label for="duree">Durée d'autonomie visée</label>
           <div class="select-wrapper">
             <select id="duree" onchange="calculer()">
-              <option value="3">72h — minimum recommandé</option>
+              <option value="3" selected>72h — repère officiel</option>
               <option value="7">1 semaine</option>
-              <option value="14" selected>2 semaines — recommandé</option>
-              <option value="30">1 mois — niveau avancé</option>
+              <option value="14">2 semaines</option>
+              <option value="30">1 mois</option>
             </select>
           </div>
         </div>
 
-        <div class="form-group">
-          <label for="climat">Climat / saison</label>
-          <div class="select-wrapper">
-            <select id="climat" onchange="calculer()">
-              <option value="1">Tempéré — printemps/automne</option>
-              <option value="1.3">Chaud — été / région chaude</option>
-              <option value="0.9">Froid — hiver</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="form-group form-group-checkbox">
-          <label>
-            <input type="checkbox" id="senior" onchange="calculer()" />
-            <span>Personne âgée ou vulnérable dans le foyer</span>
-          </label>
-        </div>
-
-        <div class="form-group form-group-checkbox">
-          <label>
-            <input type="checkbox" id="activite" onchange="calculer()" />
-            <span>Activité physique prévue (évacuation à pied)</span>
-          </label>
-        </div>
 
       </div>
 
@@ -150,8 +117,8 @@ import Layout from '../../layouts/Layout.astro';
       </div>
 
       <p class="result-sources">
-        Base : kit d'urgence officiel du Gouvernement, 6 L par personne pour 72 h (2 L par jour). 
-        Les modificateurs climat, activité et profil sont des estimations Survivalix à titre indicatif.
+        Base : kit d'urgence officiel du Gouvernement, 6 L par personne pour 72 h, soit 2 L par personne et par jour. 
+        Pour les durées plus longues, le calcul multiplie simplement ce repère : 2 L × nombre de jours × nombre de personnes.
       </p>
 
     </div>
@@ -161,10 +128,10 @@ import Layout from '../../layouts/Layout.astro';
 </Layout>
 
 <script is:inline>
-  const vals = { adultes: 2, enfants: 0, animaux: 0 };
+  const vals = { adultes: 2, enfants: 0 };
 
   function increment(key) {
-    const max = key === 'animaux' ? 5 : 10;
+    const max = 10;
     if (vals[key] < max) { vals[key]++; }
     document.getElementById(`${key}-val`).textContent = vals[key];
     calculer();
@@ -179,17 +146,8 @@ import Layout from '../../layouts/Layout.astro';
 
   function calculer() {
     const duree = parseInt(document.getElementById('duree').value);
-    const climat = parseFloat(document.getElementById('climat').value);
-    const senior = document.getElementById('senior').checked ? 1.2 : 1;
-    const activite = document.getElementById('activite').checked ? 1.3 : 1;
-
-    const litresAdulte = 2 * climat * senior * activite;
-    const litresEnfant = 2 * climat * senior;
-    const litresAnimal = 0.5;
-
-    const boisson = Math.ceil(
-      (vals.adultes * litresAdulte + vals.enfants * litresEnfant + vals.animaux * litresAnimal) * duree
-    );
+    // Repère officiel : 2 L par personne et par jour (6 L pour 72 h).
+    const boisson = 2 * (vals.adultes + vals.enfants) * duree;
     const total = boisson;
 
     document.getElementById('result-total').textContent = `${total} L`;
@@ -207,7 +165,6 @@ import Layout from '../../layouts/Layout.astro';
     const parts = [];
     if (vals.adultes > 0) parts.push(`${vals.adultes} adulte${vals.adultes > 1 ? 's' : ''}`);
     if (vals.enfants > 0) parts.push(`${vals.enfants} enfant${vals.enfants > 1 ? 's' : ''}`);
-    if (vals.animaux > 0) parts.push(`${vals.animaux} animal${vals.animaux > 1 ? 'aux' : ''}`);
     const dureeLabel = { 3: '72h', 7: '1 semaine', 14: '2 semaines', 30: '1 mois' }[duree];
     return `Pour ${parts.join(', ')} sur ${dureeLabel}`;
   }
@@ -218,8 +175,6 @@ import Layout from '../../layouts/Layout.astro';
       conseil = 'Pour un tel volume, privilégie les bouteilles de 5L du commerce, non ouvertes, rangées à l\'abri de la lumière et de la chaleur.';
     } else if (duree >= 14) {
       conseil = 'Pour un stock longue durée, garde des bouteilles du commerce non ouvertes, à l\'abri du soleil et de la chaleur, et surveille les dates limites. L\'eau du robinet, elle, se garde en verre ou en inox, 24 à 48 h au réfrigérateur (ANSES).';
-    } else if (vals.animaux > 0) {
-      conseil = 'N\'oublie pas que les animaux ont aussi besoin d\'eau fraîche. Stocke séparément leur réserve dans des contenants adaptés.';
     } else {
       conseil = 'Prévois aussi des pastilles de purification Micropur — indispensables si tu dois utiliser une source d\'eau douteuse.';
     }
