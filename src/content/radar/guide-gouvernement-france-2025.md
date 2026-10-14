@@ -19,11 +19,11 @@ Il s'appelle **"Tous responsables — Face aux risques, agissons"**. Il est disp
 
 ## Ce que dit le guide — et pourquoi c'est important
 
-Le SGDSN — Secrétariat général de la défense et de la sécurité nationale, rattaché à Matignon — présente ce guide comme une réponse à "un monde traversé par des crises multiples : risques naturels, cyberattaques, bouleversements climatiques." La résilience de la Nation, disent-ils, passe par la responsabilisation de tous.
+Le SGDSN (Secrétariat général de la défense et de la sécurité nationale, placé auprès de Matignon) présente ce guide comme une réponse à "un monde traversé par des crises multiples : risques naturels, cyberattaques, bouleversements climatiques." Pour lui, une Nation résiliente, c'est une Nation où chacun prend sa part.
 
 En clair : l'État français reconnaît officiellement qu'il ne peut pas tout gérer seul, et qu'il vaut mieux que les citoyens sachent se débrouiller les premières 72 heures. C'est un changement de paradigme notable dans un pays dont la culture politique a longtemps considéré que la préparation aux crises était une affaire d'État, pas de particuliers.
 
-Le guide détaille la composition d'un kit d'urgence pour tenir 72 heures et les réflexes à adopter face aux risques naturels, technologiques, sanitaires et humains, incluant les cyberattaques et la désinformation.
+Le guide explique comment composer un kit d'urgence pour tenir 72 heures, et quels réflexes adopter face aux risques naturels, technologiques, sanitaires et humains, cyberattaques et désinformation comprises.
 
 ## Le kit 72h officiel — ce que recommande le gouvernement
 
@@ -43,9 +43,9 @@ Rien de révolutionnaire pour quiconque s'intéresse au sujet. Mais c'est la pre
 
 La pédagogie d'abord. Le ton est clair, accessible, sans jargon militaire ni vocabulaire anxiogène. On sent que l'objectif était de ne pas faire peur mais d'inciter à l'action — et c'est réussi.
 
-Son ton se veut pédagogique et concret, afin d'accompagner les Français sur les bons réflexes à avoir dans ces situations et susciter l'engagement citoyen.
+Le ton est volontairement pédagogique et concret : il s'agit d'aider les Français à prendre les bons réflexes et de donner envie de s'engager.
 
-La couverture des risques est également large et honnête : risques naturels (inondations, séismes, canicules), risques technologiques (accidents industriels, coupures d'énergie), risques sanitaires (pandémies), et risques d'origine humaine dont les cyberattaques et la désinformation. Le guide insiste sur l'importance de connaître les signaux d'alerte comme les sirènes et les SMS FR-Alert, et les numéros d'urgence.
+La couverture des risques est également large et honnête : risques naturels (inondations, séismes, canicules), risques technologiques (accidents industriels, coupures d'énergie), risques sanitaires (pandémies), et risques d'origine humaine dont les cyberattaques et la désinformation. Le guide insiste sur un point : savoir reconnaître les signaux d'alerte (sirènes, SMS FR-Alert) et connaître les numéros d'urgence.
 
 Le guide cite aussi des ressources officielles utiles : vigipirate.gouv.fr pour les niveaux d'alerte terroriste, cybermalveillance.gouv.fr pour les menaces numériques, et le 17Cyber pour les victimes de cybermalveillance.
 
@@ -55,13 +55,13 @@ Soyons honnêtes sur les limites — non pas pour critiquer l'État, mais parce 
 
 Le guide couvre les 72 premières heures. Pas la semaine suivante. Pas le mois d'après. Si vous cherchez comment tenir 2 semaines ou gérer un stock alimentaire longue durée, vous devrez aller chercher ailleurs — notamment dans nos calculateurs et nos guides sur ce site.
 
-La Suède a envoyé sa brochure à 4,7 millions de foyers en 2018, la France n'a rien distribué physiquement en six mois. Le guide est resté en ligne, sur les sites gouvernementaux et les préfectures. Ce choix de distribution uniquement numérique est une limite réelle : les personnes les moins connectées, souvent aussi les plus vulnérables, ne l'ont probablement jamais vu.
+En 2018, la Suède a glissé sa brochure dans 4,7 millions de boîtes aux lettres. En six mois, la France n'a rien distribué sur papier : le guide est resté en ligne, sur les sites du gouvernement et des préfectures. Ce choix de distribution uniquement numérique est une limite réelle : les personnes les moins connectées, souvent aussi les plus vulnérables, ne l'ont probablement jamais vu.
 
 Certains sujets sont également absents : la gestion du froid prolongé, la purification de l'eau de source, les premières compétences autonomie — tout ce que Survivalix couvre justement dans L'Atelier.
 
 ## Pourquoi c'est un signal fort
 
-La publication de ce guide n'est pas anodine. Elle intervient à la suite de la mise à jour de la Revue nationale stratégique et d'un contexte de crises multiples — inondations, tensions énergétiques, incertitudes géopolitiques. La France, comme ses voisins européens, envoie un message à ses citoyens : ne comptez pas uniquement sur l'État pour les premières 72 heures.
+La publication de ce guide n'est pas anodine. Elle arrive après la mise à jour de la Revue nationale stratégique, dans un contexte où les crises s'empilent : inondations, tensions sur l'énergie, incertitudes géopolitiques. La France, comme ses voisins européens, envoie un message à ses citoyens : ne comptez pas uniquement sur l'État pour les premières 72 heures.
 
 C'est exactement la philosophie de Survivalix depuis le début. Pas de paranoïa, pas de bunker, pas de scénario Mad Max. Juste du bon sens et une préparation minimale qui change tout quand ça compte.
 
