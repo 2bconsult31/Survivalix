@@ -55,7 +55,7 @@ Soyons honnêtes sur les limites — non pas pour critiquer l'État, mais parce 
 
 Le guide couvre les 72 premières heures. Pas la semaine suivante. Pas le mois d'après. Si vous cherchez comment tenir 2 semaines ou gérer un stock alimentaire longue durée, vous devrez aller chercher ailleurs — notamment dans nos calculateurs et nos guides sur ce site.
 
-En 2018, la Suède a glissé sa brochure dans 4,7 millions de boîtes aux lettres. En six mois, la France n'a rien distribué sur papier : le guide est resté en ligne, sur les sites du gouvernement et des préfectures. Ce choix de distribution uniquement numérique est une limite réelle : les personnes les moins connectées, souvent aussi les plus vulnérables, ne l'ont probablement jamais vu.
+En 2018, la Suède a glissé sa brochure dans 4,8 millions de boîtes aux lettres, selon l'agence suédoise de protection civile (MSB). En six mois, la France n'a rien distribué sur papier : le guide est resté en ligne, sur les sites du gouvernement et des préfectures. Ce choix de distribution uniquement numérique est une limite réelle : les personnes les moins connectées, souvent aussi les plus vulnérables, ne l'ont probablement jamais vu.
 
 Certains sujets sont également absents : la gestion du froid prolongé, la purification de l'eau de source, les premières compétences autonomie — tout ce que Survivalix couvre justement dans L'Atelier.
 
@@ -81,4 +81,4 @@ Le guide "Tous responsables" est disponible gratuitement en PDF sur le site offi
 
 ---
 
-*Source principale : SGDSN — "Tous responsables", publié le 20 novembre 2025. Informations complémentaires : ministère de l'Intérieur, ministère de la Transition écologique, info.gouv.fr.*
+*Source principale : SGDSN — "Tous responsables", publié le 20 novembre 2025. Informations complémentaires : MSB (Suède) — brochure « Om krisen eller kriget kommer », 2018, ministère de l'Intérieur, ministère de la Transition écologique, info.gouv.fr.*
