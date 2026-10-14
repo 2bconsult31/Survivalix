@@ -60,7 +60,7 @@ Place tes deux mains l'une sur l'autre, au centre de la poitrine, bras tendus. A
 
 Si un défibrillateur automatisé externe traîne à proximité — dans un hall d'entreprise, une gare, un centre commercial — utilise-le sans hésiter. L'appareil te guide vocalement à chaque étape ; aucune formation préalable n'est nécessaire pour s'en servir.
 
-Chaque minute sans intervention fait chuter les chances de survie de 10 %, selon la Fédération française de cardiologie et la Croix-Rouge française. C'est, très concrètement, le geste qui sauve le plus de vies en France chaque année.
+Chaque minute sans intervention fait chuter les chances de survie de 10 %, selon la Fédération française de cardiologie et la Croix-Rouge française.
 
 ### Une brûlure
 

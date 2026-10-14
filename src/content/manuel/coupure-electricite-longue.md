@@ -69,7 +69,7 @@ Sans électricité, la plupart des chauffages s'arrêtent. Même un chauffage ce
 
 Regroupez-vous dans une seule pièce — idéalement la plus petite de l'appartement, avec le moins de surface vitrée possible. La chaleur corporelle de plusieurs personnes dans un espace réduit fait une différence réelle.
 
-Habillez-vous en couches : sous-vêtements thermiques, pull en laine, couverture — c'est la base. La **couverture de survie** (couverture isothermique dorée/argentée) est l'outil le plus efficace au rapport encombrement/performance : elle aide à conserver la chaleur corporelle. Chaque kit 72h devrait en avoir deux.
+Habillez-vous en couches : sous-vêtements thermiques, pull en laine, couverture — c'est la base. La **couverture de survie** (couverture isothermique dorée/argentée) est l'outil le plus efficace au rapport encombrement/performance : elle aide à conserver la chaleur corporelle. Elle fait d'ailleurs partie du kit d'urgence officiel.
 
 **Ce qu'il ne faut jamais faire :** chauffer le logement avec un appareil à combustion. Chauffage d'appoint à gaz ou à pétrole, barbecue, braséro, réchaud de camping : jamais à l'intérieur, même en aérant. Le monoxyde de carbone qu'ils dégagent est inodore, incolore, et mortel. Pour tenir au chaud, la seule bonne stratégie reste celle du dessus : vêtements chauds en couches, couvertures, et tout le monde dans une seule pièce.
 
@@ -95,7 +95,7 @@ La coupure d'électricité qui arrive sans prévenir est le test grandeur nature
 | Batterie externe 20 000 mAh | Recharger téléphone et lampes | 20-35€ |
 | Radio à piles (ou manivelle) | Rester informé sans réseau | 20-40€ |
 | Bougies x10 + briquet | Éclairage de secours | 5-10€ |
-| Couvertures de survie x2 | Conserver la chaleur corporelle | 4-8€ |
+| Couverture de survie | Conserver la chaleur corporelle | 2-4€ |
 | Conserves et aliments sans cuisson | 3 jours d'alimentation sans frigo | 25-40€ |
 | **Total kit de base** | | **~90-160€** |
 
