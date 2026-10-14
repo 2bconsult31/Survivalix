@@ -106,12 +106,8 @@ import Layout from '../../layouts/Layout.astro';
 
       <div class="result-breakdown">
         <div class="breakdown-item">
-          <span class="breakdown-label">Boisson</span>
+          <span class="breakdown-label">Eau (2 L par jour et par personne)</span>
           <span class="breakdown-val" id="breakdown-boisson">28 L</span>
-        </div>
-        <div class="breakdown-item">
-          <span class="breakdown-label">Hygiène de base</span>
-          <span class="breakdown-val" id="breakdown-hygiene">14 L</span>
         </div>
         <div class="breakdown-item breakdown-item-total">
           <span class="breakdown-label">TOTAL</span>
@@ -154,7 +150,7 @@ import Layout from '../../layouts/Layout.astro';
       </div>
 
       <p class="result-sources">
-        Calculs basés sur les recommandations Croix-Rouge française et FEMA. 
+        Base : kit d'urgence officiel du Gouvernement, 6 L par personne pour 72 h (2 L par jour). 
         Les modificateurs climat, activité et profil sont des estimations Survivalix à titre indicatif.
       </p>
 
@@ -188,19 +184,17 @@ import Layout from '../../layouts/Layout.astro';
     const activite = document.getElementById('activite').checked ? 1.3 : 1;
 
     const litresAdulte = 2 * climat * senior * activite;
-    const litresEnfant = 1.5 * climat * senior;
+    const litresEnfant = 2 * climat * senior;
     const litresAnimal = 0.5;
 
     const boisson = Math.ceil(
       (vals.adultes * litresAdulte + vals.enfants * litresEnfant + vals.animaux * litresAnimal) * duree
     );
-    const hygiene = Math.ceil((vals.adultes + vals.enfants * 0.7) * 0.5 * duree);
-    const total = boisson + hygiene;
+    const total = boisson;
 
     document.getElementById('result-total').textContent = `${total} L`;
     document.getElementById('result-desc').textContent = buildDesc(duree);
     document.getElementById('breakdown-boisson').textContent = `${boisson} L`;
-    document.getElementById('breakdown-hygiene').textContent = `${hygiene} L`;
     document.getElementById('breakdown-total').textContent = `${total} L`;
     document.getElementById('stock-bouteilles').textContent = Math.ceil(total / 1.5);
     document.getElementById('stock-bidons').textContent = Math.ceil(total / 10);

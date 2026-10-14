@@ -160,11 +160,8 @@ import Layout from '../../layouts/Layout.astro';
     const tranche = document.getElementById('tranche-bebe').value;
     const personnes = vals.adultes + vals.enfants;
 
-    const litresEau = Math.ceil(vals.adultes * 2 * 3 + vals.enfants * 1.5 * 3);
-    const litresHygiene = Math.ceil((vals.adultes + vals.enfants * 0.7) * 0.5 * 3);
-    const litresBiberon = vals.bebes > 0 && (tranche === 'biberon' || tranche === 'diversifie')
-      ? Math.ceil(vals.bebes * 1 * 3) : 0;
-    const totalLitres = litresEau + litresHygiene + litresBiberon;
+    // Repère officiel (kit d'urgence du Gouvernement) : 6 L par personne pour 72 h.
+    const totalLitres = (vals.adultes + vals.enfants + vals.bebes) * 6;
     const bouteilles = Math.ceil(totalLitres / 1.5);
 
     const couchesParJour = { allaite: 9, biberon: 9, diversifie: 7, grand: 6 }[tranche];

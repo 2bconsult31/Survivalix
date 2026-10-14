@@ -17,11 +17,11 @@ La bonne nouvelle : stocker de l'eau en appartement est simple, peu coûteux, et
 
 ## Combien d'eau stocker exactement ?
 
-Les recommandations officielles retiennent toutes un plancher de 3 litres par personne et par jour : 2 pour boire et cuisiner, 1 pour une toilette minimale.
+Le repère officiel, c'est celui du kit d'urgence du Gouvernement : **6 litres par personne pour 72 heures**, soit 2 litres par jour.
 
-Pour 72h (le minimum recommandé par le SGDSN), ça donne **9 litres par personne**. Pour deux personnes : 18 litres. Quatre packs de 6×1,5L achetés en grande surface, et vous couvrez la base.
+Pour deux personnes : 12 litres. Deux packs de 6×1,5L achetés en grande surface, et vous couvrez la base.
 
-Mais 9 litres, c'est le strict minimum vital. Pas le confort. Ces quantités doublent s'il fait très chaud, si un nourrisson vit au foyer ou si un traitement médical vous oblige à boire davantage.
+Mais 6 litres, c'est le strict minimum vital. Pas le confort. Prévoyez davantage s'il fait très chaud, si un nourrisson vit au foyer ou si un traitement médical vous oblige à boire plus.
 
 Pour une coupure d'eau ou une pénurie, visez au moins 4 litres par personne et par jour (8 litres avec un peu d'hygiène), sur 14 jours, pour une autonomie digne de ce nom. Pour deux adultes, c'est 112 litres. Pour une famille de quatre, comptez autour de 224 litres. C'est plus que ce qu'on imagine — et c'est l'objectif réaliste à atteindre progressivement, pas en une seule session de courses.
 
@@ -29,7 +29,7 @@ Pour une coupure d'eau ou une pénurie, visez au moins 4 litres par personne et 
 
 | Objectif | Par personne | 2 adultes | Famille 4 pers. |
 |---|---|---|---|
-| Kit 72h (minimum SGDSN) | 9L | 18L | 36L |
+| Kit 72h (minimum officiel) | 6L | 12L | 24L |
 | 1 semaine recommandée | 28L | 56L | 112L |
 | 2 semaines (sérieux) | 56L | 112L | 224L |
 
@@ -75,7 +75,7 @@ La solution la plus simple et la plus économique : 4 gouttes d'eau de Javel par
 
 L'espace est souvent la première objection. En pratique, c'est plus gérable qu'il n'y paraît.
 
-Sous le lit : un lit double standard accueille 6 bidons de 10 L, soit 60 L, de quoi tenir 10 jours à deux. Au fond d'un placard ou d'une armoire : des bidons plats de 10 L, rangés debout. À la cave ou dans un box privatif : l'endroit rêvé pour le stock longue durée (température stable, pas de lumière, pas de gel). En cuisine : 4 bidons de 5 L en rotation, utilisés et remplacés régulièrement.
+Sous le lit : un lit double standard accueille 6 bidons de 10 L, soit 60 L. Au fond d'un placard ou d'une armoire : des bidons plats de 10 L, rangés debout. À la cave ou dans un box privatif : l'endroit rêvé pour le stock longue durée (température stable, pas de lumière, pas de gel). En cuisine : 4 bidons de 5 L en rotation, utilisés et remplacés régulièrement.
 
 Dans 45 m², on loge sans difficulté 150 à 200 L, sans sacrifier ses autres réserves ni son espace de vie.
 
@@ -114,7 +114,7 @@ La rotation est la partie que tout le monde néglige — et c'est là que le sto
 
 L'erreur classique : vouloir constituer un stock parfait d'un coup et se décourager devant le budget ou la logistique. Voici l'approche progressive :
 
-**Semaine 1** : 4 packs de 6×1,5L en bouteilles du commerce. 18L minimum pour une personne sur 72h — c'est le kit SGDSN. Budget : 8-12€.
+**Semaine 1** : des bouteilles du commerce, 6L par personne au minimum (un pack de 6×1,5L en fait 9) — c'est le repère du kit d'urgence officiel pour 72h.
 
 **Semaine 2** : 2 bidons PEHD de 10L. Remplis au robinet avec le protocole Javel. Vous doublez votre stock pour quelques euros.
 
@@ -128,4 +128,4 @@ Un point important souvent oublié : votre stock couvre la consommation normale 
 
 Et si vous devez puiser dans une source extérieure (pluie, fontaine, rivière), lisez notre guide sur la purification de l'eau en urgence : le stock, c'est bien, savoir traiter n'importe quelle eau c'est mieux.
 
-*Sources : SGDSN — "Tous responsables" (2025), Résilience-Urbaine.com, Mouton-Résilient.com, Urban Survival District, La Survie.*
+*Sources : SGDSN — "Tous responsables" (2025), Gouvernement — kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Résilience-Urbaine.com, Mouton-Résilient.com, Urban Survival District, La Survie.*

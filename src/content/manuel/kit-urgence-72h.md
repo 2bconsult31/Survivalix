@@ -39,7 +39,7 @@ Tout le reste est secondaire. Garde ça en tête quand tu fais tes achats.
 
 Jusqu'à ce que le robinet ne coule plus.
 
-Le minimum recommandé est de **6 litres par personne pour 72h** — 2 litres par jour pour boire, plus l'hygiène de base. Notre recommandation : visez 9L par personne. Parce que si tu as chaud, si tu as un enfant, si tu dois marcher — tu consommes plus.
+Le minimum recommandé est de **6 litres par personne pour 72h** — 2 litres par jour pour boire, plus l'hygiène de base. Et prévois plus large si tu peux : quand il fait chaud, avec un enfant, ou si tu dois marcher, tu consommes davantage.
 
 **Ce qu'il faut avoir :**
 - Bouteilles d'eau minérale fermées (format 1,5L — plus maniables qu'un bidon)
@@ -133,7 +133,7 @@ Scanne tous tes documents et enregistre-les dans un cloud sécurisé. Accessible
 
 | Catégorie | Budget approximatif |
 |---|---|
-| Eau (18L pour 2 personnes) | 5-8€ |
+| Eau (12L pour 2 personnes) | 5-8€ |
 | Nourriture 72h pour 2 | 25-40€ |
 | Lampe frontale + piles | 15-25€ |
 | Batterie externe 20 000 mAh | 20-35€ |
@@ -162,7 +162,7 @@ Passe une nuit sans électricité chez toi volontairement. Tu vas découvrir ce 
 
 ## Par où commencer si tu pars de zéro
 
-**Semaine 1** → L'eau. 18L de bouteilles rangées quelque part d'accessible.
+**Semaine 1** → L'eau. 6L de bouteilles par personne, rangées quelque part d'accessible.
 
 **Semaine 2** → La nourriture. 3 jours de conserves et de snacks non périssables.
 
