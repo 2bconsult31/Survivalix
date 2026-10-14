@@ -11,54 +11,54 @@ image_alt: "Sac d'évacuation Bug Out Bag ouvert avec son contenu organisé sur 
 
 Il y a quelques années, le terme "bug out bag" appartenait au vocabulaire des survivalistes américains et des fans de jeux vidéo post-apo. Aujourd'hui, c'est le gouvernement français lui-même qui recommande à chaque citoyen d'avoir un sac d'évacuation prêt à partir.
 
-Dans son dispositif ORSEC, le gouvernement encourage la population à se préparer à une évacuation d'urgence, notamment en confectionnant un kit d'urgence pour 72 heures en fonction des risques potentiels sur sa commune.
+Avec son dispositif ORSEC, le gouvernement pousse chacun à se tenir prêt à évacuer, en commençant par un kit d'urgence de 72 heures pensé selon les risques propres à sa commune.
 
-Ce n'est pas de la paranoia — c'est de la logistique. Un sac d'évacuation d'urgence sert pour toute situation où rester chez soi devient risqué ou impossible : coupure prolongée d'électricité, inondation, feu de végétation, évacuation préventive, pollution industrielle, tempête majeure, accident de transport de matières dangereuses, confinement urbain ou défaillance des réseaux essentiels.
+Ce n'est pas de la paranoia — c'est de la logistique. Ce sac sert dès que rester chez soi devient dangereux, voire impossible. Et la liste est longue : coupure d'électricité qui dure, inondation, feu de végétation, évacuation préventive, pollution industrielle, grosse tempête, accident de transport de matières dangereuses, confinement en ville, panne des réseaux essentiels.
 
 Autrement dit : pas besoin d'imaginer l'apocalypse. Un incendie dans votre immeuble, une inondation qui monte vite, un accident industriel dans votre quartier — et vous avez 5 minutes pour partir. Qu'est-ce que vous prenez ?
 
 ## Pourquoi avoir un sac d'évacuation prêt
 
-La réponse tient en une phrase : dans ces moments-là, le stress fait faire n'importe quoi — on oublie les papiers, on prend trop de vêtements inutiles, on part sans eau, on met des objets lourds par sécurité et on se retrouve épuisé au bout de 20 minutes. Le sac d'évacuation est justement là pour empêcher ça.
+La réponse tient en une phrase : dans l'urgence, le stress nous fait faire n'importe quoi. On part sans ses papiers et sans eau, avec trois pulls de trop et des objets lourds emportés « au cas où »… et on est à bout de souffle au bout de 20 minutes. Le sac d'évacuation existe précisément pour éviter ce scénario.
 
-Un sac préparé à froid, calmement, avec les bonnes priorités, vous donne une base stable pour agir sans réfléchir dans l'urgence. Entre ne rien avoir prévu et les sacs délirants de 50 kilos de certains survivalistes, il existe un juste milieu qui colle à la réalité pragmatique d'un scénario d'évacuation.
+Un sac préparé à froid, calmement, avec les bonnes priorités, vous donne une base stable pour agir sans réfléchir dans l'urgence. Entre zéro préparation et les sacs démesurés de 50 kilos de certains survivalistes, il y a une voie raisonnable, taillée pour ce qu'est vraiment une évacuation.
 
-La distinction importante que beaucoup oublient : un sac d'évacuation est conçu pour vous permettre de quitter rapidement une zone en cas de catastrophe imminente. L'accent est mis sur la portabilité et la légèreté, car vous devrez peut-être parcourir de longues distances à pied. Ce n'est pas un déménagement. Ce n'est pas un kit de bushcraft. C'est un sac qui vous permet de tenir 72h pendant que la situation se stabilise.
+La distinction importante que beaucoup oublient : un sac d'évacuation a une seule mission : vous permettre de quitter vite une zone menacée par une catastrophe. Il doit donc être léger et facile à porter, parce qu'il faudra peut-être faire une longue route à pied. Ce n'est pas un déménagement. Ce n'est pas un kit de bushcraft. C'est un sac qui vous permet de tenir 72h pendant que la situation se stabilise.
 
 ## Les 6 catégories essentielles
 
 ### Eau et purification
 
-C'est la priorité absolue. L'eau est un élément essentiel du sac d'évacuation. Une déshydratation, même de courte durée, peut gravement nuire à votre santé. Pour commencer, il est préférable d'emporter environ 3 litres d'eau dans son sac d'évacuation. En outre, il est conseillé de faire des réserves de filtre ou tablettes pour le traitement de l'eau.
+C'est la priorité absolue. Sans eau, rien ne tient : même brève, une déshydratation peut sérieusement nuire à votre santé. Point de départ raisonnable : environ 3 litres dans le sac, plus de quoi traiter l'eau sur place (filtre ou pastilles).
 
 Mais 3 litres pèsent 3 kg — c'est lourd pour un sac d'évacuation. La solution intelligente : 1,5L d'eau en bouteille (boire immédiatement) + une paille filtrante type LifeStraw ou Sawyer Mini (pour traiter n'importe quelle eau trouvée en route) + des pastilles Micropur en backup. Vous couvrez les 72h sans plomber votre sac.
 
 ### Nourriture
 
-Ne cherchez pas à avoir le truc hyper compliqué et hors de prix — il vous faut du matériel de confiance, simple et solide. Pour la nourriture : barres énergétiques, fruits secs, oléagineux, chocolat noir, biscuits secs type Hardtack. Rien qui nécessite de la cuisson, rien qui se périme en 3 mois. Un ouvre-boîte manuel glissé dans une poche. Comptez environ 2 000 kcal par personne et par jour.
+Inutile de viser le matériel sophistiqué et hors de prix : ce qu'il vous faut, c'est du fiable, du simple et du robuste. Pour la nourriture : barres énergétiques, fruits secs, oléagineux, chocolat noir, biscuits secs type Hardtack. Rien qui nécessite de la cuisson, rien qui se périme en 3 mois. Un ouvre-boîte manuel glissé dans une poche. Comptez environ 2 000 kcal par personne et par jour.
 
 ### Abri et chaleur
 
 Le minimum absolu : **deux couvertures de survie isothermiques**. Moins de 100g chacune, moins de 2€ pièce, et elles peuvent littéralement sauver des vies en hypothermie. Si l'espace le permet : un poncho imperméable (qui sert aussi de bâche d'abri), une paire de vêtements de rechange adaptés à la saison, des chaussettes chaudes supplémentaires.
 
-Un tapis de sol léger et compact peut servir autant dans la forêt que dans un gymnase. Si vous êtes évacué vers un centre d'hébergement collectif, dormir sur un sol froid en béton sans isolation, c'est une mauvaise nuit garantie.
+Léger et compact, un tapis de sol rend service aussi bien en forêt que sur le sol d'un gymnase. Si vous êtes évacué vers un centre d'hébergement collectif, dormir sur un sol froid en béton sans isolation, c'est une mauvaise nuit garantie.
 
 ### Communication et éclairage
 
-**Lampe frontale** avec piles neuves — les deux mains libres restent essentielles. **Batterie externe chargée** pour maintenir votre téléphone en vie. Une radio FM/AM à piles ou à manivelle vous permettra d'accéder en permanence à des informations sur la situation actuelle, à des avertissements et à des instructions des services d'urgence.
+**Lampe frontale** avec piles neuves — les deux mains libres restent essentielles. **Batterie externe chargée** pour maintenir votre téléphone en vie. Une radio FM/AM, à piles ou à manivelle, vous garde branché en continu : point sur la situation, alertes et consignes des secours.
 
 Un **sifflet** — signal sonore audible à plusieurs centaines de mètres, utile si vous êtes bloqué ou blessé. Un **miroir de signalisation** si vous partez en zone outdoor. Une **boussole** et une **carte papier** de votre région — si les réseaux mobiles tombent, votre GPS est inutile.
 
 ### Documents et argent
 
-C'est la catégorie la plus sous-estimée — et la plus importante pour la suite. Un sac d'évacuation idéal doit inclure des documents d'identité, des médicaments personnels, de l'argent liquide, un chargeur portable.
+C'est la catégorie la plus sous-estimée — et la plus importante pour la suite. Le sac idéal contient au minimum vos papiers d'identité, vos médicaments personnels, de l'argent liquide et un chargeur portable.
 
 **Ce qu'il faut avoir dans une pochette étanche :**
 - Photocopies de la carte d'identité, passeport, carte vitale, carte de groupe sanguin
 - Ordonnances en cours
 - Numéros importants écrits sur papier (famille, médecin, assurance)
 - Double des clés du logement et de la voiture
-- Espèces en petites coupures — une somme entre 300€ et 500€ devrait être suffisante pour vous permettre de manger et de réserver une chambre d'hôtel en attendant que la situation revienne à la normale.
+- Espèces en petites coupures — entre 300 et 500 € devraient suffire pour manger et payer une chambre d'hôtel le temps que la situation se normalise.
 
 ### Premiers secours et médicaments
 
@@ -66,7 +66,7 @@ Une trousse de premiers secours compacte : compresses stériles, pansements vari
 
 ## Le sac — comment bien le choisir
 
-Ne cherchez pas le sac hyper stylé pour Instagram. Ce qu'il faut :
+Oubliez le sac taillé pour Instagram. Ce qu'il faut :
 
 **Volume :** 30 à 45L pour un adulte seul. Au-delà, le sac devient trop lourd à porter sur la durée. En dessous, vous ne pourrez pas tout mettre.
 
@@ -76,13 +76,13 @@ Ne cherchez pas le sac hyper stylé pour Instagram. Ce qu'il faut :
 
 **Couleur :** évitez le camouflage militaire en contexte urbain — ça attire l'attention et peut créer des malentendus. Noir, gris, bleu marine : discrets et pratiques.
 
-**Emplacement :** le Bug Out Bag doit être placé près de la sortie que vous prendriez si vous deviez quitter votre domicile en urgence — accroché à un porte-manteau près de l'entrée, dans un placard juste à côté, ou dans votre chambre s'il y a une fenêtre par laquelle vous pouvez évacuer.
+**Emplacement :** rangez le sac sur le chemin de la sortie que vous emprunteriez en cas de départ précipité : à une patère près de l'entrée, dans le placard d'à côté, ou dans votre chambre si sa fenêtre peut servir d'issue.
 
 ## Le poids — la règle des 10%
 
 C'est la règle fondamentale que tous les sites ignorent et que tous les débutants violent.
 
-Il ne faut pas que votre sac dépasse les 15 kilos, surtout si vous manquez d'expérience dans le chargement, le réglage et le portage d'un sac à dos. La règle générale des forces spéciales et des randonneurs expérimentés : le sac chargé ne doit pas dépasser 10% de votre poids corporel pour une marche longue, 20% maximum pour une évacuation courte.
+Plafonnez votre sac à 15 kilos, d'autant plus si vous avez peu l'habitude de charger, régler et porter un sac à dos. La règle générale des forces spéciales et des randonneurs expérimentés : le sac chargé ne doit pas dépasser 10% de votre poids corporel pour une marche longue, 20% maximum pour une évacuation courte.
 
 Pour une personne de 70kg : maximum 7 à 14kg. C'est moins qu'on croit quand on commence à additionner eau (3kg), nourriture, vêtements, matériel.
 
@@ -93,7 +93,7 @@ La hiérarchie du poids :
 4. Électronique — batterie externe, pas générateur portable
 5. Documents — léger, mais prioritaire
 
-**Un conseil pratique :** après avoir constitué votre sac, marchez 45 à 60 minutes avec lui chargé comme en situation réelle. Même un test imparfait révèle rapidement les points faibles.
+**Un conseil pratique :** une fois le sac bouclé, partez marcher 45 à 60 minutes avec, chargé comme le jour J. Même un test approximatif fait vite apparaître ce qui cloche.
 
 ## Les erreurs classiques du débutant
 
@@ -105,13 +105,13 @@ La hiérarchie du poids :
 
 **Oublier les médicaments.** Particulièrement critique pour les personnes sous traitement chronique. En cas de crise, les pharmacies peuvent être fermées ou en rupture pendant plusieurs jours.
 
-**Ne jamais tester.** Un sac d'évacuation devient réellement fiable uniquement après un test. L'objectif : moins de 10 secondes pour le saisir et partir.
+**Ne jamais tester.** Tant qu'il n'a pas été testé, un sac d'évacuation reste une promesse. Objectif : l'attraper et passer la porte en moins de 10 secondes.
 
-**Sac unique pour la famille.** Un sac d'urgence familial ne se résume pas à un seul sac sur le dos d'un adulte. Chaque membre doit avoir un équipement minimal : eau, chaleur, identité, médicaments. Un enfant peut porter un mini sac contenant ses propres essentiels.
+**Sac unique pour la famille.** En famille, un seul sac sur le dos d'un adulte ne suffit pas. Chacun a besoin de son minimum vital : eau, chaleur, papiers, médicaments. Un enfant peut tout à fait porter un petit sac avec ses propres indispensables.
 
 ## Entretenir et tester son sac
 
-Une fois votre sac élaboré, il faut y revenir régulièrement. L'ouvrir et l'inspecter, c'est vous re-familiariser avec le contenu et c'est nécessaire pour plusieurs raisons : c'est toujours bon de se rafraîchir la mémoire — au bout d'un moment, on oublie ce qu'il y a dedans.
+Un sac bouclé ne doit pas devenir un sac oublié : rouvrez-le régulièrement. Le passer en revue vous remet son contenu en tête, et c'est utile, parce qu'avec le temps on finit par ne plus savoir ce qu'il y a dedans.
 
 **Check annuel minimum :**
 - Vérifier les dates de péremption (nourriture, médicaments, pastilles de purification)
@@ -120,7 +120,7 @@ Une fois votre sac élaboré, il faut y revenir régulièrement. L'ouvrir et l'i
 - Adapter les vêtements à la saison et aux changements de poids
 - Mettre à jour les documents (nouvelles ordonnances, changements de situation)
 
-Un sac d'évacuation n'est jamais terminé. Il évolue avec votre vie, avec les saisons, avec votre environnement. Ce qui compte, ce n'est pas qu'il soit parfait aujourd'hui, mais qu'il existe déjà quand vous n'avez plus le temps de réfléchir.
+Un sac d'évacuation n'est jamais fini : il évolue avec vous, avec les saisons, avec l'endroit où vous vivez. L'important n'est pas qu'il soit parfait aujourd'hui, c'est qu'il soit déjà prêt le jour où vous n'aurez plus le temps de réfléchir.
 
 ---
 
@@ -139,4 +139,4 @@ Un sac d'évacuation n'est jamais terminé. Il évolue avec votre vie, avec les 
 
 Un investissement unique, à faire progressivement, qui ne se renouvelle que partiellement chaque année.
 
-*Sources : SGDSN/ORSEC, FEMA, Ready.gov, Croix-Rouge française, NoPanic.fr, Mouton-Résilient.com, Urban Survival District, La Débrouille, Survivalisme-France.com.*
+*Sources : SGDSN/ORSEC, Gouvernement — kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Croix-Rouge française (« Le sac d'urgence »), FEMA, Ready.gov, NoPanic.fr, Mouton-Résilient.com, Urban Survival District, La Débrouille, Survivalisme-France.com.*
