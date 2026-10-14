@@ -1,7 +1,7 @@
 ---
 title: "Stocker l'eau en appartement : combien, comment, et dans quoi (guide complet)"
 seo_title: "Stocker l'Eau en Appartement : Guide Complet 2025"
-description: "Bouteilles, verre, inox ou robinet ? Tout ce qu'il faut savoir pour constituer une vraie réserve d'eau potable en appartement. Guide pratique, sources vérifiées."
+description: "Bouteilles, verre ou robinet ? Tout ce qu'il faut savoir pour constituer une vraie réserve d'eau potable en appartement. Guide pratique, sources vérifiées."
 date: 2025-11-01
 tags: ["eau", "stockage", "appartement", "kit-72h", "debutant"]
 rubrique: "manuel"
