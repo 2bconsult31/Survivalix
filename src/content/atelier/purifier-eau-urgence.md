@@ -7,7 +7,6 @@ tags: ["eau", "survie", "urgence", "purification", "autonomie", "atelier"]
 rubrique: "atelier"
 image: "/images/atelier/purifier-eau-urgence.jpg"
 image_alt: "Purifier l'eau en urgence avec différentes méthodes de survie"
-fiche_png: "/ressources/atelier/purifier-eau-urgence.png"
 difficulte: "Facile"
 duree: "10 min à apprendre"
 materiel: "Casserole · Pastilles Micropur · Filtre LifeStraw"
@@ -132,12 +131,6 @@ Le principe de redondance s'applique ici comme pour l'allumage du feu : plusieur
 **La combinaison recommandée pour un kit 72h :** pastilles Micropur (légères, backup universel) + paille filtrante (usage quotidien sans gaz ni batterie). Si tu veux le niveau supérieur : ajoute un stylo UV.
 
 **Pour une crise prolongée à domicile :** filtre gravitaire + stock de pastilles + grand récipient de stockage hermétique. Pour une sortie courte, les pastilles sont imbattables : légères et rapides. Pour un trek au long cours, mieux vaut un filtre réutilisable avec des cartouches de rechange.
-
-## Télécharge la fiche technique illustrée
-
-Les 4 méthodes en image prête à imprimer — à garder dans ton kit ou coller dans ta cuisine.
-
-[Télécharger la fiche technique](/ressources/atelier/purifier-eau-urgence.png)
 
 *Sources : ARS Mayotte et ARS Provence-Alpes-Côte d'Azur (ébullition 5 minutes à couvert, consigne relayant l'ANSES), ARS Guadeloupe (« Procédure de désinfection de l'eau hors réseau », 2017).*
 
