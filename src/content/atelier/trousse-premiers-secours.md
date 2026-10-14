@@ -19,7 +19,7 @@ La bonne nouvelle : monter une trousse de premiers secours vraiment efficace co�
 
 ## Pourquoi la trousse du commerce ne suffit pas
 
-En France, SAMU et pompiers mettent en moyenne 13 minutes à arriver en ville, et bien plus à la campagne. Lors d'une crise majeure, ces délais peuvent être multipliés par 5, voire par 10. Ta trousse doit te permettre de stabiliser une situation pendant ce temps d'attente — pas de jouer au chirurgien, juste de tenir jusqu'à l'arrivée des secours.
+En France, les sapeurs-pompiers mettent en moyenne 15 minutes et 9 secondes à arriver sur les lieux, toutes interventions confondues (statistiques 2025 de la DGSCGC, ministère de l'Intérieur). Ta trousse doit te permettre de stabiliser une situation pendant ce temps d'attente — pas de jouer au chirurgien, juste de tenir jusqu'à l'arrivée des secours.
 
 Les kits du commerce ont deux défauts majeurs. D'abord, ils sont calibrés pour les accidents bénins du quotidien (petite coupure, ampoule) mais rarement pour les situations qui comptent vraiment (hémorragie, brûlure étendue, choc). Ensuite, ils contiennent souvent du matériel inutile qui prend de la place et mange le budget au détriment de ce qui est réellement utile.
 
@@ -125,4 +125,4 @@ La liste complète en image prête à imprimer — à garder dans ta trousse ou 
 
 [Télécharger la fiche technique](/ressources/atelier/trousse-premiers-secours.png)
 
-*Sources : Croix-Rouge française (« Trousse de secours : que doit-elle contenir ? », « Que faire en cas de brûlure ? »), Sifflet de Survie, La Boutique du Survivaliste, Matériel-Aventure, France-Pharmacies, HiFamilies.*
+*Sources : DGSCGC — statistiques des services d'incendie et de secours (données 2025), Croix-Rouge française (« Trousse de secours : que doit-elle contenir ? », « Que faire en cas de brûlure ? »), Sifflet de Survie, La Boutique du Survivaliste, Matériel-Aventure, France-Pharmacies, HiFamilies.*
