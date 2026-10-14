@@ -39,7 +39,7 @@ L'eau du robinet reste utilisable pour un biberon si elle est peu minéralisée 
 
 Le biberon se prépare dans l'idéal juste avant la tétée. Si tu dois le préparer à l'avance — coupure prolongée, sortie forcée — conserve-le au réfrigérateur à 4°C maximum, pendant 24 heures maximum. Une fois sorti du frais, il doit être donné dans l'heure. À température ambiante sans réfrigération possible, le délai tombe à une heure également : au-delà, jette-le, ne le reconserve pas.
 
-Le micro-ondes est à éviter dans tous les cas, coupure ou pas : la chaleur se répartit mal et crée des points brûlants qui ne se voient pas de l'extérieur. Un bain-marie improvisé — casserole d'eau chauffée sur un réchaud de camping — fait très bien l'affaire. Pour le nettoyage sans lave-vaisselle, un écouvillon et de l'eau chaude savonneuse suffisent ; la stérilisation systématique n'est pas nécessaire en usage domestique courant, selon les mêmes recommandations.
+Le micro-ondes est à éviter dans tous les cas, coupure ou pas : la chaleur se répartit mal et crée des points brûlants qui ne se voient pas de l'extérieur. Bonne nouvelle : un biberon de lait infantile peut se donner à température ambiante, le chauffer n'est utile que s'il sort du réfrigérateur (Ameli, ANSES). Et pendant une coupure, jamais de réchaud de camping à l'intérieur pour faire un bain-marie : risque d'intoxication au monoxyde de carbone. Pour le nettoyage sans lave-vaisselle, un écouvillon et de l'eau chaude savonneuse suffisent ; la stérilisation systématique n'est pas nécessaire en usage domestique courant, selon les mêmes recommandations.
 
 ## La chaleur, le vrai risque chez le nourrisson
 
@@ -69,4 +69,4 @@ Côté matériel, quelques repères concrets : du [lait infantile 1er âge en po
 
 Un kit d'urgence pour bébé n'est pas un objet qu'on prépare une fois et qu'on range. C'est un stock vivant, qui suit la croissance de l'enfant plus vite que celle de la famille.
 
-*Sources : ANSES (préparation et conservation du biberon), Sécurité civile — kit d'urgence 72h (securite-civile.interieur.gouv.fr).*
+*Sources : ANSES (préparation et conservation du biberon), Ameli (« Bien préparer un biberon »), Enedis (consignes en cas de coupure), Sécurité civile — kit d'urgence 72h (securite-civile.interieur.gouv.fr).*
