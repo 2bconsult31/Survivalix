@@ -64,7 +64,7 @@ Chaque minute sans massage cardiaque fait chuter les chances de survie d'environ
 
 ### Une brûlure
 
-De l'eau, rien d'autre. Tiède à fraîche, jamais glacée, pendant 15 à 20 minutes minimum. Retire bijoux et vêtements près de la zone avant que ça ne gonfle, et ne perce jamais une cloque.
+De l'eau, rien d'autre : de l'eau tempérée (15 à 25 °C), pendant au moins 10 minutes, idéalement 20 — et 10 minutes maximum chez l'enfant, comme le recommande la Croix-Rouge française. Jamais de glace. Retire bijoux et vêtements près de la zone avant que ça ne gonfle, et ne perce jamais une cloque.
 
 Le beurre, le dentifrice, les pommades "maison" : oublie tout ça, ça ne fait qu'aggraver les choses. Direction les urgences si la brûlure est étendue, touche le visage, les mains, les organes génitaux, ou si la peau prend un aspect carbonisé ou blanchâtre.
 
@@ -84,6 +84,6 @@ Une [trousse de premiers secours](https://www.amazon.fr/s?k=trousse+premiers+sec
 
 Un geste imparfait, tenté à temps, vaut toujours mieux qu'aucun geste. C'est probablement la seule chose à retenir vraiment de tout cet article.
 
-*Sources : Croix-Rouge française, Ministère de l'Intérieur — Sécurité civile, SGDSN.*
+*Sources : Croix-Rouge française (dont « Que faire en cas de brûlure ? »), Ministère de l'Intérieur — Sécurité civile, SGDSN.*
 
 *Cet article est fourni à titre informatif et ne remplace en aucun cas une formation aux premiers secours ni un avis médical professionnel. En cas d'urgence vitale, appelez immédiatement le 15, le 18 ou le 112.*
