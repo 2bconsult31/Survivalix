@@ -90,6 +90,12 @@ Petit avertissement : une bouteille entamée ne fait plus partie du stock. L'ANS
 
 Comment savoir si l'eau est encore bonne ? Une eau saine n'a ni odeur, ni dépôt visible, et son goût est neutre. Si elle sent le moisi ou le plastique, ou si elle est trouble, traitez-la avant d'en boire : 1 minute d'ébullition élimine tous les pathogènes biologiques ; sinon, associez filtration et pastille de purification.
 
+**Et l'eau de Javel ?** Seulement en dernier recours, quand ni l'ébullition ni les pastilles ne sont possibles. Le seul protocole officiel français que nous avons trouvé est celui de l'ARS Guadeloupe (consignes de désinfection de l'eau hors réseau, 2017). Le voici tel quel :
+
+1. Diluez un verre de 250 ml d'eau de Javel à 2,6 % dans 1 litre d'eau limpide. Cette solution doit être utilisée dans les 24 heures.
+2. Mettez 6 gouttes de ce mélange par litre d'eau à désinfecter.
+3. Laissez reposer une demi-heure avant de consommer.
+
 ## Rotation et renouvellement du stock
 
 Suivez la règle FIFO (First In, First Out, « premier entré, premier sorti ») : on consomme d'abord les réserves les plus anciennes. Notez la date d'achat sur chaque pack, au marqueur indélébile.
@@ -118,4 +124,4 @@ Un point important souvent oublié : votre stock couvre la consommation normale 
 
 Et si vous devez puiser dans une source extérieure (pluie, fontaine, rivière), lisez notre guide sur la purification de l'eau en urgence : le stock, c'est bien, savoir traiter n'importe quelle eau c'est mieux.
 
-*Sources : SGDSN — "Tous responsables" (2025), ANSES (« Bonnes pratiques de consommation de l'eau du robinet »), Gouvernement — kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Résilience-Urbaine.com, Mouton-Résilient.com, Urban Survival District, La Survie.*
+*Sources : SGDSN — "Tous responsables" (2025), ANSES (« Bonnes pratiques de consommation de l'eau du robinet »), ARS Guadeloupe (« Procédure de désinfection de l'eau hors réseau », 2017), Gouvernement — kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Résilience-Urbaine.com, Mouton-Résilient.com, Urban Survival District, La Survie.*
