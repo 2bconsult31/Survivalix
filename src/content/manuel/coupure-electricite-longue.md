@@ -15,15 +15,15 @@ Ceux qui ont préparé : ils allument leur lampe frontale, vérifient l'état du
 
 La différence entre les deux ? Quelques heures de préparation, une fois. C'est tout.
 
-Traditionnellement, les coupures d'électricité surviennent en raison des conditions météorologiques difficiles — tempêtes, épisodes de froid. Pourtant, même quelques jours sans climatisation ou chauffage, téléphone, radio ou télévision peuvent être un handicap sérieux.
+Le plus souvent, c'est la météo qui coupe le courant : une tempête, une vague de froid. Et il suffit de quelques jours pour que le quotidien devienne un parcours d'obstacles : plus de chauffage ni de clim, plus de téléphone, de radio ou de télé.
 
 Ce guide couvre les deux scénarios : ce qu'il faut faire pendant une coupure, et ce qu'il faut préparer avant pour ne jamais être pris au dépourvu.
 
 ## Les premières minutes — ce qu'il faut faire immédiatement
 
-**1. Identifier l'origine de la panne.** Vérifiez d'abord votre tableau électrique — un disjoncteur déclenché est une panne locale que vous pouvez résoudre vous-même. Si le tableau est normal, regardez par la fenêtre : les lampadaires sont-ils éteints ? Les voisins sont-ils dans le noir ? En cas de panne de courant dont l'origine est inconnue, la première chose à faire est de définir s'il s'agit d'une panne locale ou générale.
+**1. Identifier l'origine de la panne.** Vérifiez d'abord votre tableau électrique — un disjoncteur déclenché est une panne locale que vous pouvez résoudre vous-même. Si le tableau est normal, regardez par la fenêtre : les lampadaires sont-ils éteints ? Les voisins sont-ils dans le noir ? Tant que vous ignorez d'où vient la coupure, une seule question compte : le problème s'arrête-t-il à votre porte, ou touche-t-il tout le quartier ?
 
-**2. Ne pas ouvrir le frigo ni le congélateur.** C'est le réflexe le plus contre-intuitif — et le plus important. N'ouvrez pas la porte du réfrigérateur ou du congélateur pour vérifier l'état des aliments. Ces appareils sont prévus pour conserver le froid même en cas de coupure : environ 4 à 6 heures pour un frigo, 24 à 48 heures pour un congélateur plein. Chaque ouverture réduit ce délai.
+**2. Ne pas ouvrir le frigo ni le congélateur.** C'est le réflexe le plus contre-intuitif — et le plus important. Résistez à l'envie d'aller « jeter un œil » aux aliments : c'est la porte fermée qui les protège. Frigo et congélateur sont conçus pour garder le froid sans courant, environ 4 à 6 heures pour le premier, 24 à 48 heures pour un congélateur bien rempli. Chaque ouverture réduit ce délai.
 
 **3. S'informer.** Consultez le site Enedis ou appelez le 09 70 83 19 70 (numéro Enedis, non surtaxé) pour connaître la durée estimée de la coupure. Si votre téléphone est déchargé, c'est le moment où vous allez regretter de ne pas avoir votre radio à piles.
 
@@ -31,7 +31,7 @@ Ce guide couvre les deux scénarios : ce qu'il faut faire pendant une coupure, e
 
 ## Éclairage — ne pas se retrouver dans le noir
 
-Il n'y a rien de pire pour le moral qu'une maison ou un appartement plongé dans le noir complet — ne faites pas l'impasse sur l'éclairage d'urgence.
+Le noir total, c'est ce qui entame le moral le plus vite quand le courant saute. L'éclairage de secours n'a donc rien d'un gadget : c'est la base.
 
 Les solutions par ordre de praticité :
 
@@ -41,21 +41,21 @@ Les solutions par ordre de praticité :
 
 **Bougies + briquet ou allumettes** — solution de dernier recours. Efficaces mais à manipuler avec précaution : ne laissez jamais une bougie sans surveillance, gardez-la à l'écart des rideaux et matières inflammables. Privilégiez les bougies dans des verres ou des lanternes.
 
-**Conseil à contre-courant :** si la coupure de courant est durable et que des tensions commencent à se manifester, pensez à masquer vos fenêtres dès que la nuit tombe. Être le seul foyer allumé à des kilomètres à la ronde risque de vous attirer de sérieux problèmes.
+**Conseil à contre-courant :** si la coupure s'installe dans la durée et que l'ambiance se tend autour de vous, occultez vos fenêtres à la tombée de la nuit. Être la seule fenêtre éclairée à des kilomètres, c'est le meilleur moyen de s'attirer de gros ennuis.
 
 ## Alimentation — que faire de son frigo et congélateur
 
 C'est souvent la première source de stress lors d'une coupure longue. Voici ce que les données disent réellement.
 
-**Le frigo :** si vous n'avez pas ouvert la porte, les aliments demeurent froids pendant environ 4 à 6 heures après la coupure. Passé ce délai, un tri s'impose. Pas de souci pour les légumes, les fruits, les confitures, les fromages à pâte cuite, les gâteaux, le ketchup, la mayonnaise achetée dans le commerce et les yaourts non entamés. En revanche, la viande, le poisson, la crème fraîche, les œufs, le lait et les fromages à pâte molle, ainsi que toute préparation entamée et les plats cuisinés sont potentiellement dangereux.
+**Le frigo :** porte fermée, vos aliments restent au froid environ 4 à 6 heures après le début de la coupure. Passé ce délai, un tri s'impose. Côté rescapés : légumes, fruits, confitures, fromages à pâte cuite, gâteaux, ketchup, mayonnaise du commerce et yaourts encore fermés. Côté suspects, potentiellement dangereux : viande, poisson, crème fraîche, œufs, lait, fromages à pâte molle, plats cuisinés et tout ce qui a déjà été entamé.
 
-**Le congélateur :** s'il est plein, il peut garder la température pendant 48 heures environ — 24 heures si le congélateur est à moitié rempli.
+**Le congélateur :** bien rempli, il tient sa température environ 48 heures ; à moitié vide, comptez plutôt 24 heures.
 
-**Une astuce pratique :** si une coupure est annoncée, descendez des pains de glace du congélateur vers le frigo. Groupez les aliments les uns contre les autres — ils forment une masse thermique collective qui ralentit la montée en température.
+**Une astuce pratique :** quand la coupure est prévue, transférez quelques pains de glace du congélateur au frigo. Et serrez les aliments les uns contre les autres : en bloc, ils se réchauffent moins vite qu'éparpillés.
 
-**Une astuce pour détecter une coupure en votre absence :** versez des glaçons dans un verre et placez-le dans le congélateur. Si à votre retour les glaçons ont changé d'aspect et se sont liquéfiés au fond du verre, c'est qu'il y a bien eu une coupure et que la température est remontée.
+**Une astuce pour détecter une coupure en votre absence :** laissez dans le congélateur un verre rempli de glaçons. Si, en rentrant, vous les retrouvez fondus et tassés au fond du verre, le courant a sauté pendant votre absence et la température est remontée.
 
-**Pour cuisiner sans électricité** si vos plaques sont électriques : stockez plusieurs petits réchauds de camping et leurs cartouches de gaz à la maison pour pouvoir cuisiner en cas de coupure. Ces matériels sont faciles à utiliser, se trouvent dans les grandes surfaces et dans les magasins de camping.
+**Pour cuisiner sans électricité** si vos plaques sont électriques : gardez à la maison quelques petits réchauds de camping et leurs cartouches de gaz. Simples à prendre en main, ils se trouvent aussi bien en grande surface qu'en magasin de camping.
 
 **Attention :** l'utilisation d'un réchaud à gaz en intérieur nécessite une ventilation correcte. N'utilisez jamais un réchaud de camping dans une pièce fermée — risque d'intoxication au monoxyde de carbone.
 
@@ -63,7 +63,7 @@ C'est souvent la première source de stress lors d'une coupure longue. Voici ce 
 
 C'est le point le plus critique en hiver — et le plus sous-estimé en milieu urbain.
 
-Près de 90% des systèmes de chauffage sont dépendants de l'électricité. Même un chauffage central au gaz a généralement besoin d'électricité pour sa régulation et sa pompe de circulation. Une coupure d'électricité en hiver = pas de chauffage, dans la grande majorité des cas.
+Près de 90 % des systèmes de chauffage ne fonctionnent pas sans électricité. Même un chauffage central au gaz a généralement besoin d'électricité pour sa régulation et sa pompe de circulation. Une coupure d'électricité en hiver = pas de chauffage, dans la grande majorité des cas.
 
 **La stratégie en cas de froid :**
 
@@ -71,7 +71,7 @@ Regroupez-vous dans une seule pièce — idéalement la plus petite de l'apparte
 
 Habillez-vous en couches : sous-vêtements thermiques, pull en laine, couverture — c'est la base. La **couverture de survie** (couverture isothermique dorée/argentée) est l'outil le plus efficace au rapport encombrement/performance : elle retient jusqu'à 90% de la chaleur corporelle. Chaque kit 72h devrait en avoir deux.
 
-Pour une solution de chauffage d'appoint sans électricité en appartement, la solution la plus réaliste reste le **chauffage radiant à gaz** avec une bouteille de gaz de camping — en veillant impérativement à ventiler la pièce régulièrement. C'est l'investissement pertinent pour surmonter assez confortablement des coupures de chauffage : 100% autonome et hors réseau, un tel système est par nature résilient.
+Pour une solution de chauffage d'appoint sans électricité en appartement, la solution la plus réaliste reste le **chauffage radiant à gaz** avec une bouteille de gaz de camping — en veillant impérativement à ventiler la pièce régulièrement. Pour traverser une coupure de chauffage sans trop grelotter, c'est l'achat le plus sensé : entièrement autonome et indépendant du réseau, il ne tombe pas en panne en même temps que le courant.
 
 **Ce qu'il ne faut jamais faire :** utiliser un barbecue, un braséro ou tout appareil à combustion en intérieur fermé. Le monoxyde de carbone est inodore, incolore, et mortel.
 
@@ -79,9 +79,9 @@ Pour une solution de chauffage d'appoint sans électricité en appartement, la s
 
 C'est le point qu'on néglige jusqu'au moment où on en a besoin.
 
-**La radio à piles ou à manivelle** est l'outil de communication numéro un en cas de coupure. Pour vous tenir informé de l'évolution de la situation, ayez au moins une petite radio à piles pour en savoir plus sur la durée de la coupure, la cause et les consignes officielles. Les réseaux mobiles peuvent rapidement saturer en cas de coupure généralisée — la radio reste fonctionnelle.
+**La radio à piles ou à manivelle** est l'outil de communication numéro un en cas de coupure. Une simple petite radio à piles suffit pour suivre la situation : c'est par elle que vous saurez combien de temps la coupure va durer, d'où elle vient et quelles consignes donnent les autorités. Les réseaux mobiles peuvent rapidement saturer en cas de coupure généralisée — la radio reste fonctionnelle.
 
-**La batterie externe** est le deuxième outil essentiel. Munissez-vous d'une batterie externe et veillez à ce qu'elle soit toujours rechargée. Grâce à elle, vous pourrez continuer à utiliser votre smartphone. Une batterie de 20 000 mAh chargée en permanence = plusieurs jours d'usage limité du téléphone.
+**La batterie externe** est le deuxième outil essentiel. Ayez une batterie externe et gardez-la toujours chargée : c'est elle qui maintiendra votre smartphone en vie. Une batterie de 20 000 mAh chargée en permanence = plusieurs jours d'usage limité du téléphone.
 
 **Les numéros importants sur papier.** Si votre téléphone tombe à zéro et que vous devez emprunter celui de quelqu'un d'autre, connaissez-vous par cœur les numéros de vos proches ? Très probablement non. Gardez une liste écrite dans votre kit 72h.
 
@@ -114,4 +114,4 @@ Une coupure d'électricité qui dure plus de 72 heures change de catégorie. Ce 
 
 C'est exactement pour ça que le kit 72h existe — et pourquoi il intègre éclairage, communication, alimentation sans frigo et solution de chauffage. Si vous l'avez, vous traversez ces 72 premières heures sans stress. Si vous ne l'avez pas, c'est le moment de le constituer.
 
-*Sources : Enedis, Generali, Résilience-Urbaine.com, Mouton-Résilient.com, Darty, EcoFlow.*
+*Sources : Enedis (« Je n'ai plus d'électricité : les bons gestes à adopter »), Gouvernement — kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Generali, Résilience-Urbaine.com, Mouton-Résilient.com, Darty, EcoFlow.*
