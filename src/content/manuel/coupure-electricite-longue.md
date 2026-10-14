@@ -63,13 +63,13 @@ C'est souvent la première source de stress lors d'une coupure longue. Voici ce 
 
 C'est le point le plus critique en hiver — et le plus sous-estimé en milieu urbain.
 
-Près de 90 % des systèmes de chauffage ne fonctionnent pas sans électricité. Même un chauffage central au gaz a généralement besoin d'électricité pour sa régulation et sa pompe de circulation. Une coupure d'électricité en hiver = pas de chauffage, dans la grande majorité des cas.
+Sans électricité, la plupart des chauffages s'arrêtent. Même un chauffage central au gaz a généralement besoin d'électricité pour sa régulation et sa pompe de circulation. Une coupure d'électricité en hiver = pas de chauffage, dans la grande majorité des cas.
 
 **La stratégie en cas de froid :**
 
 Regroupez-vous dans une seule pièce — idéalement la plus petite de l'appartement, avec le moins de surface vitrée possible. La chaleur corporelle de plusieurs personnes dans un espace réduit fait une différence réelle.
 
-Habillez-vous en couches : sous-vêtements thermiques, pull en laine, couverture — c'est la base. La **couverture de survie** (couverture isothermique dorée/argentée) est l'outil le plus efficace au rapport encombrement/performance : elle retient jusqu'à 90% de la chaleur corporelle. Chaque kit 72h devrait en avoir deux.
+Habillez-vous en couches : sous-vêtements thermiques, pull en laine, couverture — c'est la base. La **couverture de survie** (couverture isothermique dorée/argentée) est l'outil le plus efficace au rapport encombrement/performance : elle aide à conserver la chaleur corporelle. Chaque kit 72h devrait en avoir deux.
 
 **Ce qu'il ne faut jamais faire :** chauffer le logement avec un appareil à combustion. Chauffage d'appoint à gaz ou à pétrole, barbecue, braséro, réchaud de camping : jamais à l'intérieur, même en aérant. Le monoxyde de carbone qu'ils dégagent est inodore, incolore, et mortel. Pour tenir au chaud, la seule bonne stratégie reste celle du dessus : vêtements chauds en couches, couvertures, et tout le monde dans une seule pièce.
 
@@ -101,7 +101,7 @@ La coupure d'électricité qui arrive sans prévenir est le test grandeur nature
 
 **Deux gestes préventifs à faire dès maintenant :**
 
-Repérez votre tableau électrique et assurez-vous de savoir comment réarmer un disjoncteur. 80% des "pannes" chez soi sont en réalité un disjoncteur déclenché par une surcharge — réglable en 30 secondes si vous savez quoi faire.
+Repérez votre tableau électrique et assurez-vous de savoir comment réarmer un disjoncteur. Bien souvent, une « panne » chez soi n'est qu'un disjoncteur déclenché par une surcharge — réglable en quelques secondes si vous savez quoi faire.
 
 Notez le numéro Enedis (09 70 83 19 70) quelque part d'accessible — dans votre téléphone, mais aussi sur papier. En situation de stress avec téléphone déchargé, ce numéro vaut de l'or.
 

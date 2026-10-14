@@ -58,7 +58,7 @@ C'est la catégorie la plus sous-estimée — et la plus importante pour la suit
 - Ordonnances en cours
 - Numéros importants écrits sur papier (famille, médecin, assurance)
 - Double des clés du logement et de la voiture
-- Espèces en petites coupures — entre 300 et 500 € devraient suffire pour manger et payer une chambre d'hôtel le temps que la situation se normalise.
+- Un peu d'argent liquide, en petites coupures, comme le prévoit le kit d'urgence officiel : les distributeurs peuvent être hors service.
 
 ### Premiers secours et médicaments
 
@@ -78,13 +78,11 @@ Oubliez le sac taillé pour Instagram. Ce qu'il faut :
 
 **Emplacement :** rangez le sac sur le chemin de la sortie que vous emprunteriez en cas de départ précipité : à une patère près de l'entrée, dans le placard d'à côté, ou dans votre chambre si sa fenêtre peut servir d'issue.
 
-## Le poids — la règle des 10%
+## Le poids — léger avant tout
 
-C'est la règle fondamentale que tous les sites ignorent et que tous les débutants violent.
+C'est le piège dans lequel tombent presque tous les débutants : un sac trop lourd ne sert à rien si vous ne pouvez pas le porter longtemps.
 
-Plafonnez votre sac à 15 kilos, d'autant plus si vous avez peu l'habitude de charger, régler et porter un sac à dos. La règle générale des forces spéciales et des randonneurs expérimentés : le sac chargé ne doit pas dépasser 10% de votre poids corporel pour une marche longue, 20% maximum pour une évacuation courte.
-
-Pour une personne de 70kg : maximum 7 à 14kg. C'est moins qu'on croit quand on commence à additionner eau (3kg), nourriture, vêtements, matériel.
+Plafonnez votre sac à 15 kilos, d'autant plus si vous avez peu l'habitude de charger, régler et porter un sac à dos. Le vrai test : pouvoir marcher longtemps avec sans vous épuiser. Le poids grimpe plus vite qu'on ne le croit quand on additionne eau, nourriture, vêtements et matériel.
 
 La hiérarchie du poids :
 1. Eau — lourd mais incompressible (minimum 1,5L)
