@@ -53,7 +53,7 @@ C'est le niveau critique — celui qui fait la différence entre une situation s
 
 ### Pour les brûlures
 
-**Gel pour brûlures** (type Burnshield ou Brûlex) — à appliquer après refroidissement sous l'eau. D'abord, refroidir la brûlure à l'eau tiède pendant 10 à 15 minutes ; ensuite, la couvrir d'une compresse stérile. Le gel apaise, hydrate, et protège la plaie.
+**Gel pour brûlures** (type Burnshield ou Brûlex) — à appliquer après refroidissement sous l'eau. D'abord, refroidir la brûlure avec de l'eau tempérée (15 à 25 °C), pendant au moins 10 minutes, idéalement 20 — et 10 minutes maximum chez l'enfant, comme le recommande la Croix-Rouge française ; ensuite, la couvrir d'une compresse stérile. Le gel apaise, hydrate, et protège la plaie.
 
 **Tulle gras** — pour couvrir une brûlure superficielle sans coller à la plaie.
 
@@ -125,4 +125,4 @@ La liste complète en image prête à imprimer — à garder dans ta trousse ou 
 
 [Télécharger la fiche technique](/ressources/atelier/trousse-premiers-secours.png)
 
-*Sources : Croix-Rouge française (« Trousse de secours : que doit-elle contenir ? »), Sifflet de Survie, La Boutique du Survivaliste, Matériel-Aventure, France-Pharmacies, HiFamilies.*
+*Sources : Croix-Rouge française (« Trousse de secours : que doit-elle contenir ? », « Que faire en cas de brûlure ? »), Sifflet de Survie, La Boutique du Survivaliste, Matériel-Aventure, France-Pharmacies, HiFamilies.*
