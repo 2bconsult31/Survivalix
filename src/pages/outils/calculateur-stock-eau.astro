@@ -125,7 +125,7 @@ import Layout from '../../layouts/Layout.astro';
           <div class="stockage-sep">//</div>
           <div class="stockage-item">
             <div class="stockage-num" id="stock-bidons">5</div>
-            <div class="stockage-desc">Bidons 10L</div>
+            <div class="stockage-desc">Bouteilles 5L</div>
           </div>
           <div class="stockage-sep">//</div>
           <div class="stockage-item">
@@ -197,7 +197,7 @@ import Layout from '../../layouts/Layout.astro';
     document.getElementById('breakdown-boisson').textContent = `${boisson} L`;
     document.getElementById('breakdown-total').textContent = `${total} L`;
     document.getElementById('stock-bouteilles').textContent = Math.ceil(total / 1.5);
-    document.getElementById('stock-bidons').textContent = Math.ceil(total / 10);
+    document.getElementById('stock-bidons').textContent = Math.ceil(total / 5);
     document.getElementById('stock-packs').textContent = Math.ceil(total / 9);
 
     updateConseil(total, duree);
@@ -215,9 +215,9 @@ import Layout from '../../layouts/Layout.astro';
   function updateConseil(total, duree) {
     let conseil = '';
     if (total > 200) {
-      conseil = 'Pour un tel volume, envisage des jerricans de 20L ou une citerne. Les bouteilles individuelles deviendraient ingérables.';
+      conseil = 'Pour un tel volume, privilégie les bouteilles de 5L du commerce, non ouvertes, rangées à l\'abri de la lumière et de la chaleur.';
     } else if (duree >= 14) {
-      conseil = 'Pour un stock longue durée, préfère les bouteilles en verre ou PET épais. Vérifie les dates de péremption et renouvelle tous les 6 mois.';
+      conseil = 'Pour un stock longue durée, garde des bouteilles du commerce non ouvertes, à l\'abri du soleil et de la chaleur, et surveille les dates limites. L\'eau du robinet, elle, se garde en verre ou en inox, 24 à 48 h au réfrigérateur (ANSES).';
     } else if (vals.animaux > 0) {
       conseil = 'N\'oublie pas que les animaux ont aussi besoin d\'eau fraîche. Stocke séparément leur réserve dans des contenants adaptés.';
     } else {

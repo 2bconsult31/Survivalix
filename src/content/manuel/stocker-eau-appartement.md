@@ -1,7 +1,7 @@
 ---
 title: "Stocker l'eau en appartement : combien, comment, et dans quoi (guide complet)"
 seo_title: "Stocker l'Eau en Appartement : Guide Complet 2025"
-description: "Bidons, bouteilles, robinet ou source ? Tout ce qu'il faut savoir pour constituer une vraie réserve d'eau potable en appartement. Guide pratique, sources vérifiées."
+description: "Bouteilles, verre, inox ou robinet ? Tout ce qu'il faut savoir pour constituer une vraie réserve d'eau potable en appartement. Guide pratique, sources vérifiées."
 date: 2025-11-01
 tags: ["eau", "stockage", "appartement", "kit-72h", "debutant"]
 rubrique: "manuel"
@@ -37,45 +37,37 @@ Pour une coupure d'eau ou une pénurie, visez au moins 4 litres par personne et 
 
 Le choix du contenant est aussi important que la quantité stockée. L'eau elle-même ne se périme pas : ce qui s'abîme, c'est le contenant et la qualité microbiologique.
 
-### Les bouteilles d'eau minérale du commerce
+### Les bouteilles d'eau du commerce : la solution la plus simple
 
-La solution la plus simple pour démarrer. Scellées en usine, les bouteilles PET de 1,5 L ou 5 L ne posent aucun problème jusqu'à leur date limite. Remplacez-les avant qu'elle soit dépassée.
+Pour le stock de fond, rien ne bat les bouteilles du commerce non ouvertes. Scellées en usine, les bouteilles de 1,5 L ou 5 L ne posent aucun problème jusqu'à leur date limite. Remplacez-les avant qu'elle soit dépassée, et rangez-les à l'abri du soleil et de la chaleur, dans un endroit frais, comme le recommande l'ANSES.
 
-Avantages : disponibles partout, aucun équipement spécial, rotation facile. Inconvénients : plus coûteuses sur la durée, les bouteilles PET se dégradent avec le temps. Après environ 2 ans, de petites paillettes commencent à se déposer au fond des bouteilles en plastique — signe que le plastique commence à migrer dans l'eau. Pour du stockage long terme, ce n'est pas le format idéal.
+Avantages : disponibles partout, aucun équipement spécial, aucune manipulation, rotation facile. Inconvénients : plus coûteuses sur la durée, et des déchets plastiques.
 
-### Les bidons alimentaires PEHD
+### Pour l'eau du robinet : verre ou inox
 
-Les bidons alimentaires en PEHD (polyéthylène haute densité) font figure de référence : légers, solides, étanches, et ils ne relarguent rien dans l'eau. On les trouve en 5, 10 et 20 L.
+Si vous mettez de l'eau du robinet de côté, oubliez la bouteille en plastique. L'ANSES le déconseille : le chlore de l'eau du robinet peut réagir avec le plastique. Préférez des contenants en **verre** ou en **inox**.
 
-Pour reconnaître le PEHD, retournez le bidon : le chiffre « 2 » doit figurer dans le triangle de recyclage. C'est un plastique chimiquement stable, sans bisphénol A (BPA).
-
-Le format 10L est le meilleur compromis : assez grand pour limiter le nombre de contenants, assez léger pour être manipulé facilement une fois rempli. Mieux vaut plusieurs jerricans de 5 ou 10 L, que toute la famille peut manipuler, qu'un gros bidon de 20 litres qui devient difficile à déplacer une fois plein.
-
-**Conseil pratique :** Choisissez des fûts bleus opaques fermés par des bondes (bouchons vissés) : les couvercles à cerclage gardent moins bien leur étanchéité avec le temps.
+Et gardez en tête que ce n'est pas une réserve longue durée : selon l'ANSES, l'eau du robinet se conserve 24 à 48 heures au réfrigérateur. C'est une réserve de dépannage, par exemple quand une coupure d'eau est annoncée, pas un stock de fond.
 
 ### Ce qu'il ne faut jamais utiliser
 
 Bannissez les bidons de récupération au passé inconnu, ainsi que ceux qui ont contenu du lait ou du jus de fruits. Le lait y laisse des protéines et des bactéries qu'on n'arrive jamais à éliminer complètement, le jus des restes de sucre : dans les deux cas, les bactéries s'en donnent à cœur joie.
 
-Idem pour le plastique non alimentaire (arrosoir, bidon d'huile moteur, bidon d'eau de Javel), le plastique PET exposé longtemps à la lumière directe, et tout contenant dont vous ne connaissez pas l'usage précédent.
+Idem pour le plastique non alimentaire (arrosoir, bidon d'huile moteur, bidon d'eau de Javel), le plastique PET exposé longtemps à la lumière directe, et tout contenant dont vous ne connaissez pas l'usage précédent. Et pour l'eau du robinet, pas de contenant en plastique du tout : verre ou inox.
 
 ## Eau du robinet ou eau en bouteille ?
 
-La question qui divise — et la réponse est : les deux, selon l'usage.
+La question qui divise — et la réponse est : les deux, mais pas pour le même usage.
 
-**Eau en bouteille du commerce** : pratique pour démarrer, rotation simple, aucune manipulation. Limitation : coût à long terme et déchets plastiques.
+**Eau en bouteille du commerce** : c'est votre stock de fond. Pratique, rotation simple, aucune manipulation. Limitation : coût à long terme et déchets plastiques.
 
-**Eau du robinet stockée en bidon** : plus économique et plus durable — à condition de la préparer correctement. Partir d'une eau du robinet potable ne garantit pas qu'elle le restera dans le bidon. Sans traitement adapté, pathogènes, microbes, voire algues finiront immanquablement par s'y installer.
-
-La solution la plus simple et la plus économique : 4 gouttes d'eau de Javel par litre (pour une Javel à 2,6 % de chlore actif, type La Croix). Remplissez les fûts jusqu'au bord pour chasser l'air, fermez-les bien, puis rangez-les au frais et dans le noir.
-
-**Important :** utilisez uniquement de la Javel sans parfum ni additif, et vérifiez la concentration sur l'étiquette — elle varie selon les marques.
+**Eau du robinet** : c'est votre réserve de dernière minute. Remplie dans du verre ou de l'inox, gardée au frais, et bue vite : 24 à 48 heures au réfrigérateur, selon l'ANSES.
 
 ## Où stocker dans un petit appartement
 
 L'espace est souvent la première objection. En pratique, c'est plus gérable qu'il n'y paraît.
 
-Sous le lit : un lit double standard accueille 6 bidons de 10 L, soit 60 L. Au fond d'un placard ou d'une armoire : des bidons plats de 10 L, rangés debout. À la cave ou dans un box privatif : l'endroit rêvé pour le stock longue durée (température stable, pas de lumière, pas de gel). En cuisine : 4 bidons de 5 L en rotation, utilisés et remplacés régulièrement.
+Sous le lit : des packs de bouteilles couchés à plat. Au fond d'un placard ou d'une armoire : des packs empilés. À la cave ou dans un box privatif : l'endroit rêvé pour le stock longue durée (température stable, pas de lumière, pas de gel). En cuisine : quelques packs en rotation, bus et remplacés régulièrement.
 
 Dans 45 m², on loge sans difficulté 150 à 200 L, sans sacrifier ses autres réserves ni son espace de vie.
 
@@ -91,24 +83,22 @@ Durées de conservation selon le type de stockage :
 
 | Type de stockage | Durée | Conditions |
 |---|---|---|
-| Eau minérale en bouteille fermée | Jusqu'à la date imprimée (~2 ans) | À l'abri de la lumière |
-| Eau du robinet en bidon PEHD | 6 à 12 mois | Hermétique, sombre, frais |
-| Eau du robinet + Javel en bidon PEHD | 6 mois | Idem + dosage correct |
-| Eau en fût PEHD opaque rempli à ras-bord | Jusqu'à 20 ans | Fût jamais ouvert, obscurité totale |
+| Eau en bouteille du commerce, fermée | Jusqu'à la date imprimée | À l'abri du soleil et de la chaleur, au frais |
+| Eau du robinet en verre ou inox | 24 à 48 h | Au réfrigérateur (ANSES) |
 
-Petit avertissement : n'ouvrez pas vos fûts avant d'en avoir besoin. Dès que l'un d'eux est ouvert, l'air entre, et l'eau doit être bue ou utilisée sans tarder.
+Petit avertissement : une bouteille entamée ne fait plus partie du stock. L'ANSES recommande de la garder au réfrigérateur et de la consommer rapidement.
 
 Comment savoir si l'eau est encore bonne ? Une eau saine n'a ni odeur, ni dépôt visible, et son goût est neutre. Si elle sent le moisi ou le plastique, ou si elle est trouble, traitez-la avant d'en boire : 1 minute d'ébullition élimine tous les pathogènes biologiques ; sinon, associez filtration et pastille de purification.
 
 ## Rotation et renouvellement du stock
 
-Suivez la règle FIFO (First In, First Out, « premier entré, premier sorti ») : on consomme d'abord les réserves les plus anciennes. Inscrivez la date de remplissage sur chaque bidon, au marqueur indélébile.
+Suivez la règle FIFO (First In, First Out, « premier entré, premier sorti ») : on consomme d'abord les réserves les plus anciennes. Notez la date d'achat sur chaque pack, au marqueur indélébile.
 
 La rotation est la partie que tout le monde néglige — et c'est là que le stock devient inutile. Deux approches :
 
 **Le stock tournant** : intégrez vos bouteilles de réserve dans votre consommation quotidienne. Vous buvez une bouteille de votre stock, vous la remplacez dans les courses suivantes. Le stock reste frais en permanence, vous ne perdez jamais rien.
 
-**La vérification annuelle** : une fois par an (pratique à retenir : la même date que la vérification du kit 72h), inspectez chaque bidon, remplacez les contenants qui approchent de leur date limite, testez l'eau à l'odeur et à la vue.
+**La vérification annuelle** : une fois par an (pratique à retenir : la même date que la vérification du kit 72h), inspectez chaque pack et remplacez les bouteilles qui approchent de leur date limite.
 
 ## Par où commencer si vous partez de zéro
 
@@ -116,11 +106,11 @@ L'erreur classique : vouloir constituer un stock parfait d'un coup et se décour
 
 **Semaine 1** : des bouteilles du commerce, 6L par personne au minimum (un pack de 6×1,5L en fait 9) — c'est le repère du kit d'urgence officiel pour 72h.
 
-**Semaine 2** : 2 bidons PEHD de 10L. Remplis au robinet avec le protocole Javel. Vous doublez votre stock pour quelques euros.
+**Semaine 2** : un ou deux packs de plus, pour vous donner de la marge au-delà du minimum.
 
 **Mois 2** : objectif 50-60L par personne. Vous atteignez une semaine d'autonomie réelle incluant l'hygiène.
 
-**Mois 3-6** : constituez progressivement 2 semaines d'autonomie, en panachant les formats (quelques bouteilles en rotation + bidons PEHD pour le stock de fond).
+**Mois 3-6** : constituez progressivement 2 semaines d'autonomie, avec des bouteilles du commerce : quelques packs en rotation dans la cuisine, le reste en stock de fond à l'abri de la lumière.
 
 ## Ce que le stock d'eau ne remplace pas
 
@@ -128,4 +118,4 @@ Un point important souvent oublié : votre stock couvre la consommation normale 
 
 Et si vous devez puiser dans une source extérieure (pluie, fontaine, rivière), lisez notre guide sur la purification de l'eau en urgence : le stock, c'est bien, savoir traiter n'importe quelle eau c'est mieux.
 
-*Sources : SGDSN — "Tous responsables" (2025), Gouvernement — kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Résilience-Urbaine.com, Mouton-Résilient.com, Urban Survival District, La Survie.*
+*Sources : SGDSN — "Tous responsables" (2025), ANSES (« Bonnes pratiques de consommation de l'eau du robinet »), Gouvernement — kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Résilience-Urbaine.com, Mouton-Résilient.com, Urban Survival District, La Survie.*
