@@ -84,7 +84,7 @@ Ces éléments ne sont pas obligatoires dans une trousse de base, mais ils font 
 
 ## Ce qu'on peut virer sans hésiter
 
-**Le thermomètre au mercure** — obsolète et dangereux depuis 2014, remplacé par le thermomètre digital.
+**Le thermomètre au mercure** — sa mise sur le marché est interdite en France depuis le 1er mars 1999 (arrêté du 24 décembre 1998). S'il en traîne encore un dans un tiroir, remplace-le par un thermomètre digital.
 
 **Les dosettes d'arnica** — efficaces pour les bleus et les chocs bénins, mais pas une priorité si la trousse est limitée en espace.
 
@@ -118,4 +118,4 @@ Vérifie régulièrement les dates de péremption et l'état du matériel, comme
 
 **Le budget de renouvellement :** prévois 5-10€ par an pour remplacer les consommables périmés ou utilisés. C'est le coût d'un café.
 
-*Sources : DGSCGC — statistiques des services d'incendie et de secours (données 2025), Croix-Rouge française (« Trousse de secours : que doit-elle contenir ? », « Que faire en cas de brûlure ? »), Sifflet de Survie, La Boutique du Survivaliste, Matériel-Aventure, France-Pharmacies, HiFamilies.*
+*Sources : Légifrance — arrêté du 24 décembre 1998 (thermomètres médicaux à mercure), DGSCGC — statistiques des services d'incendie et de secours (données 2025), Croix-Rouge française (« Trousse de secours : que doit-elle contenir ? », « Que faire en cas de brûlure ? »), Sifflet de Survie, La Boutique du Survivaliste, Matériel-Aventure, France-Pharmacies, HiFamilies.*
