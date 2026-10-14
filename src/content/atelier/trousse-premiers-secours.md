@@ -19,7 +19,7 @@ La bonne nouvelle : monter une trousse de premiers secours vraiment efficace co�
 
 ## Pourquoi la trousse du commerce ne suffit pas
 
-En France, les services d'urgence (SAMU, Pompiers) interviennent en moyenne en 13 minutes en zone urbaine, bien plus longtemps en zone rurale. En cas de crise majeure, ces délais peuvent être multipliés par 5 ou 10. Ta trousse doit te permettre de stabiliser une situation pendant ce temps d'attente — pas de jouer au chirurgien, juste de tenir jusqu'à l'arrivée des secours.
+En France, SAMU et pompiers mettent en moyenne 13 minutes à arriver en ville, et bien plus à la campagne. Lors d'une crise majeure, ces délais peuvent être multipliés par 5, voire par 10. Ta trousse doit te permettre de stabiliser une situation pendant ce temps d'attente — pas de jouer au chirurgien, juste de tenir jusqu'à l'arrivée des secours.
 
 Les kits du commerce ont deux défauts majeurs. D'abord, ils sont calibrés pour les accidents bénins du quotidien (petite coupure, ampoule) mais rarement pour les situations qui comptent vraiment (hémorragie, brûlure étendue, choc). Ensuite, ils contiennent souvent du matériel inutile qui prend de la place et mange le budget au détriment de ce qui est réellement utile.
 
@@ -29,7 +29,7 @@ La solution : construire la tienne, pièce par pièce, avec une logique claire.
 
 ### Pour les plaies et coupures
 
-**Compresses stériles** (10×10cm, en sachet individuel) — indispensables pour nettoyer et couvrir une plaie. Polyvalentes et indispensables pour traiter les plaies superficielles comme les coupures et les éraflures. Préfère les sachets individuels aux compresses en rouleau — ils restent stériles même si tu n'utilises qu'une partie de la boîte.
+**Compresses stériles** (10×10cm, en sachet individuel) — indispensables pour nettoyer et couvrir une plaie. Elles servent à tout : coupures, éraflures et autres plaies superficielles. Préfère les sachets individuels aux compresses en rouleau — ils restent stériles même si tu n'utilises qu'une partie de la boîte.
 
 **Pansements adhésifs variés** — différentes tailles pour couvrir les plaies fermées. Les formats "strip" pour les articulations (doigts, genoux) valent le coup car ils tiennent malgré les mouvements.
 
@@ -37,29 +37,29 @@ La solution : construire la tienne, pièce par pièce, avec une logique claire.
 
 **Bandes extensibles** (type Velpeau) — pour maintenir un pansement, comprimer une entorse, ou immobiliser une articulation en attendant les secours.
 
-**Désinfectant cutané** — antiseptique cutané en spray ou en unidoses pour une conservation plus longue. Les dosettes unidoses sont préférables à la grande bouteille qui s'oxyde une fois ouverte. Biseptine ou Bétadine en dosettes.
+**Désinfectant cutané** — un antiseptique pour la peau, en spray ou en dosettes individuelles, qui se conservent plus longtemps. Les dosettes unidoses sont préférables à la grande bouteille qui s'oxyde une fois ouverte. Biseptine ou Bétadine en dosettes.
 
-**Sérum physiologique en dosettes** — pour rincer abondamment une plaie ou un œil avant désinfection. Particulièrement utile pour nettoyer les plaies avant d'appliquer un bandage ou une compresse.
+**Sérum physiologique en dosettes** — pour rincer abondamment une plaie ou un œil avant désinfection. C'est l'idéal pour nettoyer la plaie avant de poser une compresse ou un bandage.
 
 ### Pour les hémorragies
 
 C'est le niveau critique — celui qui fait la différence entre une situation stabilisée et une urgence vitale.
 
-**Coussin hémostatique d'urgence** — ce dispositif compressif permet de stopper les hémorragies importantes, celles qui ne se contentent pas d'un simple pansement. Appliqué fermement sur une plaie qui saigne abondamment, il permet de comprimer efficacement en attendant les secours ou en attendant que tu puisses appeler le 15.
+**Coussin hémostatique d'urgence** — ce pansement compressif sert à arrêter les saignements abondants, ceux qu'un simple pansement ne suffit pas à contenir. Appliqué fermement sur une plaie qui saigne abondamment, il permet de comprimer efficacement en attendant les secours ou en attendant que tu puisses appeler le 15.
 
-**Garrot tourniquet (type CAT)** — pour les hémorragies incontrôlables sur un membre (bras, jambe). C'est l'outil qui sauve des vies dans les accidents graves. Apprendre à l'utiliser avant d'en avoir besoin — le garrot ne s'improvise pas sous le stress, il s'entraîne à froid. Regarde une vidéo de pose, entraîne-toi une fois. C'est 5 minutes qui peuvent compter.
+**Garrot tourniquet (type CAT)** — pour les hémorragies incontrôlables sur un membre (bras, jambe). C'est l'outil qui sauve des vies dans les accidents graves. Apprends à t'en servir avant le jour J — le garrot ne s'improvise pas sous le stress, il s'entraîne à froid. Regarde une vidéo de pose, entraîne-toi une fois. C'est 5 minutes qui peuvent compter.
 
-**Gants jetables sans latex** (minimum 6 paires) — ils protègent à la fois la personne secourue et le secouriste. Enfile les gants avant de manipuler une plaie ou de toucher une personne blessée. Les gants en nitrile sont préférables au latex — moins d'allergies, même protection.
+**Gants jetables sans latex** (minimum 6 paires) — ils protègent autant la victime que toi. Enfile-les avant de toucher une plaie ou une personne blessée. Les gants en nitrile sont préférables au latex — moins d'allergies, même protection.
 
 ### Pour les brûlures
 
-**Gel pour brûlures** (type Burnshield ou Brûlex) — à appliquer après refroidissement sous l'eau. Refroidissez la brûlure à l'eau tiède pendant 10-15 minutes et protégez avec une compresse stérile. Le gel apaise, hydrate, et protège la plaie.
+**Gel pour brûlures** (type Burnshield ou Brûlex) — à appliquer après refroidissement sous l'eau. D'abord, refroidir la brûlure à l'eau tiède pendant 10 à 15 minutes ; ensuite, la couvrir d'une compresse stérile. Le gel apaise, hydrate, et protège la plaie.
 
 **Tulle gras** — pour couvrir une brûlure superficielle sans coller à la plaie.
 
 ### Pour les urgences générales
 
-**Couverture de survie isothermique** — avec ses côtés argenté et doré, elle régule la température corporelle. Le côté doré tourné vers l'extérieur en cas de froid capte les rayons du soleil, tandis que l'argenté collé au corps retient la chaleur. Moins de 2€, pèse rien, peut prévenir une hypothermie — notamment chez les personnes âgées ou les enfants en état de choc.
+**Couverture de survie isothermique** — avec sa face argentée et sa face dorée, elle aide à réguler la température du corps. Par temps froid : face dorée vers l'extérieur, pour capter les rayons du soleil, et face argentée contre le corps, pour garder la chaleur. Moins de 2€, pèse rien, peut prévenir une hypothermie — notamment chez les personnes âgées ou les enfants en état de choc.
 
 **Thermomètre médical** — pour évaluer une fièvre et décider si les secours sont nécessaires.
 
@@ -79,9 +79,9 @@ Ces éléments ne sont pas obligatoires dans une trousse de base, mais ils font 
 
 **Attelle souple** — pour immobiliser une cheville ou un poignet suspect avant de consulter.
 
-**Sachets de sucre** — face à une crise d'hypoglycémie, ces petites doses peuvent stabiliser rapidement une personne en détresse. Particulièrement utile si quelqu'un dans ton foyer est diabétique.
+**Sachets de sucre** — en cas d'hypoglycémie, ces petites doses peuvent vite stabiliser une personne en difficulté. Particulièrement utile si quelqu'un dans ton foyer est diabétique.
 
-**Médicaments de base** (selon prescriptions) — paracétamol, antihistaminique, antidiarrhéique. Attention, les médicaments ne doivent pas être exposés à des températures élevées. Vérifie les dates de péremption à chaque contrôle de la trousse.
+**Médicaments de base** (selon prescriptions) — paracétamol, antihistaminique, antidiarrhéique. Attention : les médicaments craignent la chaleur. Vérifie les dates de péremption à chaque contrôle de la trousse.
 
 ## Ce qu'on peut virer sans hésiter
 
@@ -99,19 +99,19 @@ Ces éléments ne sont pas obligatoires dans une trousse de base, mais ils font 
 
 ## Comment organiser et ranger intelligemment
 
-Le contenant est un choix stratégique. Il doit être adapté pour garantir l'accessibilité, la protection et l'organisation du matériel.
+Le choix de la boîte compte plus qu'on ne le croit : elle doit rendre le matériel facile à atteindre, le protéger et le garder bien rangé.
 
-**La boîte :** choisir une boîte hermétique à compartiments, de préférence rigide et résistante à l'humidité. Une boîte de rangement alimentaire Tupperware de taille moyenne fait très bien l'affaire pour moins de 5€. Les boîtes à médicaments vendues en pharmacie sont aussi une bonne option. Conservez la trousse dans un endroit sec, à l'abri de la chaleur et de l'humidité, hors de portée des enfants mais facilement accessible.
+**La boîte :** choisir une boîte hermétique à compartiments, de préférence rigide et résistante à l'humidité. Une boîte de rangement alimentaire Tupperware de taille moyenne fait très bien l'affaire pour moins de 5€. Les boîtes à médicaments vendues en pharmacie sont aussi une bonne option. Range la trousse au sec, à l'abri de la chaleur et de l'humidité, hors de portée des enfants mais à portée de main.
 
 **L'organisation intérieure :** groupe les éléments par catégorie — plaies/désinfection dans un sachet zip, compresses dans un autre, médicaments séparément. L'objectif : trouver ce qu'on cherche en moins de 10 secondes dans le noir et le stress. Colle une étiquette sur chaque zone.
 
-**L'emplacement :** positionnez la trousse dans un lieu accessible en moins de trente secondes. La salle de bains est l'endroit classique — mais c'est aussi l'endroit le plus humide de la maison. La cuisine ou un placard de l'entrée sont souvent de meilleurs choix.
+**L'emplacement :** place la trousse à un endroit où tu peux l'attraper en moins de trente secondes. La salle de bains est l'endroit classique — mais c'est aussi l'endroit le plus humide de la maison. La cuisine ou un placard de l'entrée sont souvent de meilleurs choix.
 
 **La fiche de synthèse :** colle à l'intérieur du couvercle les numéros d'urgence (15, 18, 112) et un aide-mémoire des 3 gestes essentiels : compression directe pour les hémorragies, refroidissement à l'eau pour les brûlures, position latérale de sécurité pour les personnes inconscientes qui respirent.
 
 ## Le renouvellement — quand et comment
 
-Effectuez une vérification trimestrielle des dates de péremption et de l'état général du matériel. En pratique, un contrôle tous les 6 mois est déjà bien au-dessus de la moyenne — la plupart des trousses ne sont jamais vérifiées jusqu'au jour où on en a besoin.
+Contrôle tous les trois mois les dates de péremption et l'état du matériel. En pratique, un contrôle tous les 6 mois est déjà bien au-dessus de la moyenne — la plupart des trousses ne sont jamais vérifiées jusqu'au jour où on en a besoin.
 
 **Ce qui périme vite :** les médicaments, les désinfectants, les dosettes de sérum physiologique ouvertes. **Ce qui dure longtemps :** les pansements secs dans leur emballage d'origine, le garrot, les ciseaux, la couverture de survie.
 
@@ -125,4 +125,4 @@ La liste complète en image prête à imprimer — à garder dans ta trousse ou 
 
 [Télécharger la fiche technique](/ressources/atelier/trousse-premiers-secours.png)
 
-*Sources : Croix-Rouge française, Sifflet de Survie, La Boutique du Survivaliste, Matériel-Aventure, France-Pharmacies, HiFamilies.*
+*Sources : Croix-Rouge française (« Trousse de secours : que doit-elle contenir ? »), Sifflet de Survie, La Boutique du Survivaliste, Matériel-Aventure, France-Pharmacies, HiFamilies.*
