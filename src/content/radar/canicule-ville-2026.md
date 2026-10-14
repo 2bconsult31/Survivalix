@@ -11,9 +11,9 @@ source: "Météo-France, Santé publique France, info.gouv.fr"
 source_url: "https://www.info.gouv.fr/actualite/canicule-conseils-et-mesures"
 ---
 
-En juin 2026, la France a vécu quelque chose d'inédit : une canicule précoce, intense, généralisée. Une cinquantaine de départements en vigilance rouge canicule, le niveau maximal. Et des nuits tropicales à la chaîne, sans jamais repasser sous les 20 °C. Le gouvernement a dû activer d'urgence un nouveau plan ORSEC Chaleurs extrêmes — un dispositif jusqu'ici réservé aux situations exceptionnelles.
+En juin 2026, la France a vécu quelque chose d'inédit : une canicule précoce, intense, généralisée. Le 25 juin 2026, 72 départements en vigilance rouge canicule, le niveau maximal : du jamais-vu depuis la création de la vigilance canicule en 2004, selon le bilan climatique de juin 2026 de Météo-France. Et des nuits tropicales à la chaîne, sans jamais repasser sous les 20 °C. Le gouvernement a dû activer d'urgence un nouveau plan ORSEC Chaleurs extrêmes — un dispositif jusqu'ici réservé aux situations exceptionnelles.
 
-Le problème : avant 1950, une canicule de ce genre revenait en moyenne tous les 20 ans ; c'est désormais tous les 5 à 10 ans. Ce qui était exceptionnel devient la norme. Et la plupart des Français — et des logements français — n'y sont pas préparés.
+Le problème : Météo-France le constate, les canicules sont devenues nettement plus fréquentes et plus intenses. Ce qui était exceptionnel revient de plus en plus souvent. Et la plupart des Français — et des logements français — n'y sont pas préparés.
 
 ## 2026 — la canicule n'est plus exceptionnelle
 
@@ -98,4 +98,4 @@ Si vous avez des proches âgés ou vulnérables dans votre entourage : créez d�
 
 ---
 
-*Sources : Météo-France, Santé publique France, info.gouv.fr — "Canicule, conseils et mesures" (juillet 2026), ministère de l'Intérieur, ELSAN, Greenly, adaptation-changement-climatique.gouv.fr.*
+*Sources : Météo-France (dont le « Bilan climatique de juin 2026 »), Santé publique France, info.gouv.fr — "Canicule, conseils et mesures" (juillet 2026), ministère de l'Intérieur, ELSAN, Greenly, adaptation-changement-climatique.gouv.fr.*
