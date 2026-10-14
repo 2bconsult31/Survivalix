@@ -132,6 +132,4 @@ Le principe de redondance s'applique ici comme pour l'allumage du feu : plusieur
 
 **Pour une crise prolongée à domicile :** filtre gravitaire + stock de pastilles + grand récipient de stockage hermétique. Pour une sortie courte, les pastilles sont imbattables : légères et rapides. Pour un trek au long cours, mieux vaut un filtre réutilisable avec des cartouches de rechange.
 
-*Sources : ARS Mayotte et ARS Provence-Alpes-Côte d'Azur (ébullition 5 minutes à couvert, consigne relayant l'ANSES), ARS Guadeloupe (« Procédure de désinfection de l'eau hors réseau », 2017).*
-
-*Sources : Soldat.fr, Projet13, BlogSurvivalisme, Randonner Malin, Action Résilience, Survivalisme Urbain.*
+*Sources : ARS Mayotte et ARS Provence-Alpes-Côte d'Azur (ébullition 5 minutes à couvert, consigne relayant l'ANSES), ARS Guadeloupe (« Procédure de désinfection de l'eau hors réseau », 2017), Soldat.fr, Projet13, BlogSurvivalisme, Randonner Malin, Action Résilience, Survivalisme Urbain.*
