@@ -7,7 +7,6 @@ tags: ["premiers-secours", "trousse", "survie", "urgence", "kit", "atelier"]
 rubrique: "atelier"
 image: "/images/atelier/trousse-premiers-secours.jpg"
 image_alt: "Trousse de premiers secours maison ouverte avec son matériel médical de survie"
-fiche_png: "/ressources/atelier/trousse-premiers-secours.png"
 difficulte: "Facile"
 duree: "15 min à assembler"
 materiel: "Boîte hermétique · Pansements · Désinfectant · Garrot"
@@ -105,24 +104,18 @@ Le choix de la boîte compte plus qu'on ne le croit : elle doit rendre le matér
 
 **L'organisation intérieure :** groupe les éléments par catégorie — plaies/désinfection dans un sachet zip, compresses dans un autre, médicaments séparément. L'objectif : trouver ce qu'on cherche en moins de 10 secondes dans le noir et le stress. Colle une étiquette sur chaque zone.
 
-**L'emplacement :** place la trousse à un endroit où tu peux l'attraper en moins de trente secondes. La salle de bains est l'endroit classique — mais c'est aussi l'endroit le plus humide de la maison. La cuisine ou un placard de l'entrée sont souvent de meilleurs choix.
+**L'emplacement :** place la trousse à un endroit où tu peux l'attraper rapidement. La salle de bains est l'endroit classique — mais c'est aussi l'endroit le plus humide de la maison. La cuisine ou un placard de l'entrée sont souvent de meilleurs choix.
 
 **La fiche de synthèse :** colle à l'intérieur du couvercle les numéros d'urgence (15, 18, 112) et un aide-mémoire des 3 gestes essentiels : compression directe pour les hémorragies, refroidissement à l'eau pour les brûlures, position latérale de sécurité pour les personnes inconscientes qui respirent.
 
 ## Le renouvellement — quand et comment
 
-Contrôle tous les trois mois les dates de péremption et l'état du matériel. En pratique, un contrôle tous les 6 mois est déjà bien au-dessus de la moyenne — la plupart des trousses ne sont jamais vérifiées jusqu'au jour où on en a besoin.
+Vérifie régulièrement les dates de péremption et l'état du matériel, comme le recommande la Croix-Rouge. La plupart des trousses ne sont jamais vérifiées jusqu'au jour où on en a besoin.
 
 **Ce qui périme vite :** les médicaments, les désinfectants, les dosettes de sérum physiologique ouvertes. **Ce qui dure longtemps :** les pansements secs dans leur emballage d'origine, le garrot, les ciseaux, la couverture de survie.
 
 **Après chaque utilisation :** remplace immédiatement ce que tu as utilisé. Une trousse à moitié vide est une fausse sécurité.
 
 **Le budget de renouvellement :** prévois 5-10€ par an pour remplacer les consommables périmés ou utilisés. C'est le coût d'un café.
-
-## Télécharge la fiche technique illustrée
-
-La liste complète en image prête à imprimer — à garder dans ta trousse ou coller dans ton placard.
-
-[Télécharger la fiche technique](/ressources/atelier/trousse-premiers-secours.png)
 
 *Sources : DGSCGC — statistiques des services d'incendie et de secours (données 2025), Croix-Rouge française (« Trousse de secours : que doit-elle contenir ? », « Que faire en cas de brûlure ? »), Sifflet de Survie, La Boutique du Survivaliste, Matériel-Aventure, France-Pharmacies, HiFamilies.*

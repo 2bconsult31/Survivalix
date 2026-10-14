@@ -23,15 +23,15 @@ Pour deux personnes : 12 litres. Deux packs de 6×1,5L achetés en grande surfac
 
 Mais 6 litres, c'est le strict minimum vital. Pas le confort. Prévoyez davantage s'il fait très chaud, si un nourrisson vit au foyer ou si un traitement médical vous oblige à boire plus.
 
-Pour une coupure d'eau ou une pénurie, visez au moins 4 litres par personne et par jour (8 litres avec un peu d'hygiène), sur 14 jours, pour une autonomie digne de ce nom. Pour deux adultes, c'est 112 litres. Pour une famille de quatre, comptez autour de 224 litres. C'est plus que ce qu'on imagine — et c'est l'objectif réaliste à atteindre progressivement, pas en une seule session de courses.
+Pour tenir plus longtemps, le calcul ne change pas : 2 litres par personne et par jour, multipliés par le nombre de jours visés. Les volumes montent vite — c'est un objectif à atteindre progressivement, pas en une seule session de courses.
 
-**Le stock minimum selon les objectifs :**
+**Le stock selon la durée visée (2 L par personne et par jour) :**
 
 | Objectif | Par personne | 2 adultes | Famille 4 pers. |
 |---|---|---|---|
 | Kit 72h (minimum officiel) | 6L | 12L | 24L |
-| 1 semaine recommandée | 28L | 56L | 112L |
-| 2 semaines (sérieux) | 56L | 112L | 224L |
+| 1 semaine (2 L × 7 jours) | 14L | 28L | 56L |
+| 2 semaines (2 L × 14 jours) | 28L | 56L | 112L |
 
 ## Dans quoi stocker — le guide des contenants
 
@@ -69,7 +69,7 @@ L'espace est souvent la première objection. En pratique, c'est plus gérable qu
 
 Sous le lit : des packs de bouteilles couchés à plat. Au fond d'un placard ou d'une armoire : des packs empilés. À la cave ou dans un box privatif : l'endroit rêvé pour le stock longue durée (température stable, pas de lumière, pas de gel). En cuisine : quelques packs en rotation, bus et remplacés régulièrement.
 
-Dans 45 m², on loge sans difficulté 150 à 200 L, sans sacrifier ses autres réserves ni son espace de vie.
+Même dans un petit appartement, on trouve la place sans sacrifier ses autres réserves ni son espace de vie.
 
 Un conseil qui paraît anodin mais qui change tout : couvrez votre stock d'un drap, de cartons ou d'une couverture. C'est plus joli, plus discret, et surtout, ça met l'eau à l'abri de la lumière. La lumière est l'ennemi numéro un de votre stock : elle favorise le développement d'algues et accélère la dégradation des contenants.
 
@@ -114,13 +114,13 @@ L'erreur classique : vouloir constituer un stock parfait d'un coup et se décour
 
 **Semaine 2** : un ou deux packs de plus, pour vous donner de la marge au-delà du minimum.
 
-**Mois 2** : objectif 50-60L par personne. Vous atteignez une semaine d'autonomie réelle incluant l'hygiène.
+**Mois 2** : visez une semaine d'autonomie, soit 14 L par personne (2 L × 7 jours).
 
 **Mois 3-6** : constituez progressivement 2 semaines d'autonomie, avec des bouteilles du commerce : quelques packs en rotation dans la cuisine, le reste en stock de fond à l'abri de la lumière.
 
 ## Ce que le stock d'eau ne remplace pas
 
-Un point important souvent oublié : votre stock couvre la consommation normale à domicile. Pensez aussi aux réserves que vous avez déjà sans le savoir (chauffe-eau, baignoire, récipients de cuisine), et complétez-les en stockant à l'avance. En cas de coupure annoncée, remplissez votre baignoire immédiatement (150-200L d'eau utilisable pour l'hygiène et les chasses d'eau) — ça rallonge significativement votre autonomie.
+Un point important souvent oublié : votre stock couvre la consommation normale à domicile. Pensez aussi aux réserves que vous avez déjà sans le savoir (chauffe-eau, baignoire, récipients de cuisine), et complétez-les en stockant à l'avance. En cas de coupure annoncée, remplissez votre baignoire immédiatement (de l'eau utilisable pour l'hygiène et les chasses d'eau) — ça rallonge significativement votre autonomie.
 
 Et si vous devez puiser dans une source extérieure (pluie, fontaine, rivière), lisez notre guide sur la purification de l'eau en urgence : le stock, c'est bien, savoir traiter n'importe quelle eau c'est mieux.
 
