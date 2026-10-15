@@ -10,6 +10,7 @@ image_alt: "Trousse de premiers secours maison ouverte avec son matériel médic
 difficulte: "Facile"
 duree: "15 min à assembler"
 materiel: "Boîte hermétique · Pansements · Désinfectant · Garrot"
+fiche_png: "/ressources/atelier/trousse-premiers-secours.png"
 ---
 
 Soyons directs : la trousse de secours en plastique rouge qu'on t'a offerte à Noël il y a six ans et que tu n'as jamais ouverte depuis — elle ne sert à rien. Enfin, pas grand-chose. Les pansements sont périmés, le désinfectant a séché, et il manque précisément ce dont tu aurais besoin le jour où ça compte vraiment.
@@ -117,5 +118,11 @@ Vérifie régulièrement les dates de péremption et l'état du matériel, comme
 **Après chaque utilisation :** remplace immédiatement ce que tu as utilisé. Une trousse à moitié vide est une fausse sécurité.
 
 **Le budget de renouvellement :** prévois un petit budget pour renouveler les produits périmés ou utilisés.
+
+## Télécharge la fiche technique illustrée
+
+La liste complète en image prête à imprimer — à garder dans ta trousse ou coller dans ton placard.
+
+[Télécharger la fiche technique](/ressources/atelier/trousse-premiers-secours.png)
 
 *Sources : Légifrance — arrêté du 24 décembre 1998 (thermomètres médicaux à mercure), DGSCGC — statistiques des services d'incendie et de secours (données 2025), Croix-Rouge française (« Trousse de secours : que doit-elle contenir ? », « Que faire en cas de brûlure ? »), Sifflet de Survie, La Boutique du Survivaliste, Matériel-Aventure, France-Pharmacies, HiFamilies.*
