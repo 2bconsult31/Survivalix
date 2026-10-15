@@ -1,5 +1,5 @@
 ---
-title: "Purifier l'eau en urgence : 4 méthodes testées quand le robinet ne suffit plus"
+title: "Purifier l'eau en urgence : 4 méthodes sourcées quand le robinet ne suffit plus"
 seo_title: "Purifier l'Eau en Urgence : 4 Méthodes qui Marchent"
 description: "Ébullition, pastilles, filtre, UV — comment rendre de l'eau douteuse potable en situation d'urgence. Guide complet, sources vérifiées, sans bullshit."
 date: 2025-04-01
