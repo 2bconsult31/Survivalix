@@ -10,6 +10,7 @@ image_alt: "Purifier l'eau en urgence avec différentes méthodes de survie"
 difficulte: "Facile"
 duree: "10 min à apprendre"
 materiel: "Casserole · Pastilles Micropur · Filtre LifeStraw"
+fiche_png: "/ressources/atelier/purifier-eau-urgence.png"
 ---
 
 Il y a une date précise où l'eau potable est devenue un problème en France métropolitaine : le 9 novembre 2019, à Sainte-Sigolène en Haute-Loire. Une contamination à l'E. coli a rendu l'eau du robinet de 4 000 habitants non potable pendant plusieurs jours. Interdiction de boire, de cuisiner, de se brosser les dents avec l'eau du robinet. Les gens faisaient la queue devant les camions citerne. Personne n'avait prévu ça.
@@ -50,15 +51,15 @@ La solution la plus légère à transporter. Quelques grammes au fond de ta poch
 
 Les deux types de pastilles qu'on trouve en France :
 
-**Pastilles au dioxyde de chlore (Micropur Forte, Aquatabs)** — le meilleur choix. Efficaces contre bactéries, virus et Giardia. En règle générale : un comprimé pour 1 L d'eau, puis 30 minutes d'attente. Elles laissent un léger goût chloré mais très supportable.
+**Pastilles au dioxyde de chlore (Micropur Forte, Aquatabs)** — le meilleur choix. Efficaces contre bactéries, virus et Giardia. Dose et temps d'attente : suis la notice du fabricant. Elles laissent un léger goût chloré mais très supportable.
 
 **Pastilles à l'iode** — efficaces mais déconseillées pour un usage prolongé (effet thyroïde), et moins efficaces contre le Cryptosporidium. Réserver pour le kit d'urgence de secours uniquement.
 
 **La procédure :**
 1. Pré-filtre l'eau si elle est trouble — les particules en suspension neutralisent l'efficacité des pastilles
-2. Dissous le comprimé dans le volume indiqué (généralement 1L)
+2. Dissous le comprimé dans le volume indiqué sur la notice
 3. Referme le bouchon et secoue
-4. Attends 30 minutes avant de boire (doubler le temps si l'eau est froide ou très trouble)
+4. Respecte le temps d'attente indiqué sur la notice avant de boire
 5. Rince le bouchon et le filetage avec un peu d'eau traitée avant de fermer
 
 **Avantages :** ultra-léger, pas de source de chaleur nécessaire, longue conservation (plusieurs années en emballage fermé), très peu coûteux.
@@ -71,7 +72,7 @@ Une paille filtrante type LifeStraw arrête les bactéries et les sédiments, ma
 
 **Les types de filtres :**
 
-**Paille filtrante (LifeStraw, Sawyer Squeeze)** — tu bois directement à travers. Ultra-portable, 0,1 micron de filtration, élimine 99,9999% des bactéries et protozoaires. Ne filtre pas les virus. Idéal en France (risque viral faible dans les eaux naturelles), insuffisant en zones tropicales ou eaux très souillées.
+**Paille filtrante (LifeStraw, Sawyer Squeeze)** — tu bois directement à travers. Ultra-portable, elle arrête bactéries et parasites, mais pas les virus. Pour couvrir aussi les virus, associe-la à des pastilles.
 
 **Filtre à pompe** — tu pompes l'eau à travers une cartouche. Plus volumineux mais plus puissant. Certains modèles intègrent du charbon actif qui améliore le goût et capte certains polluants chimiques.
 
@@ -83,13 +84,13 @@ Une paille filtrante type LifeStraw arrête les bactéries et les sédiments, ma
 3. Purge la paille après chaque utilisation en soufflant dans le sens inverse (évite le gel et les moisissures)
 4. Si l'eau est trouble, laisse les sédiments se déposer ou pré-filtre avant
 
-**Avantages :** pas de temps d'attente, filtrage immédiat, léger, durable (traite 4000L pour un LifeStraw standard).
+**Avantages :** pas de temps d'attente, filtrage immédiat, léger, durable (capacité indiquée par le fabricant).
 
 **Inconvénients :** ne filtre pas les virus (solution : combiner avec pastilles), cartouche à changer selon usage, inutilisable si gelée.
 
 ## Méthode 4 — La désinfection UV
 
-La méthode la plus high-tech et la plus rapide. Les stylos UV (SteriPen®, CrazyCap®) envoient des UV-C qui abîment l'ADN des micro-organismes : ils ne peuvent plus se multiplier. Le traitement est presque immédiat, 90 secondes pour un litre.
+La méthode la plus high-tech et la plus rapide. Les stylos UV (SteriPen®, CrazyCap®) envoient des UV-C qui abîment l'ADN des micro-organismes : ils ne peuvent plus se multiplier. Le traitement est rapide ; sa durée dépend du modèle.
 
 **Ce que ça élimine :** bactéries, virus et protozoaires — tout le spectre biologique. Les UV-C neutralisent bactéries, virus et parasites. C'est rapide, simple à utiliser, et l'eau ne garde aucun arrière-goût.
 
@@ -98,7 +99,7 @@ La méthode la plus high-tech et la plus rapide. Les stylos UV (SteriPen®, Craz
 **La procédure :**
 1. Pré-filtre l'eau si elle n'est pas claire
 2. Plonge le stylo UV dans le récipient
-3. Active et tourne lentement pendant 60-90 secondes selon le volume
+3. Active et tourne lentement pendant la durée indiquée par le fabricant
 4. Boire immédiatement ou stocker dans un récipient fermé à l'abri de la lumière
 
 **Avantages :** rapide, aucun goût résiduel, efficace sur tous les pathogènes biologiques, léger.
@@ -113,7 +114,7 @@ Quelques erreurs classiques qui peuvent transformer un effort de purification en
 
 **Utiliser les pastilles sur de l'eau trouble sans pré-filtrage.** Les particules en suspension protègent les bactéries de l'action chimique et absorbent le chlore avant qu'il n'atteigne les pathogènes.
 
-**Croire que le filtre seul suffit dans tous les contextes.** En France métropolitaine sur des eaux naturelles (rivières, sources), le risque viral est faible et un bon filtre 0,1 micron suffit généralement. Mais en eau très souillée ou en contexte de crise sanitaire majeure, combiner filtre + pastilles est la bonne pratique.
+**Croire que le filtre seul suffit dans tous les contextes.** Un filtre arrête bactéries et parasites, mais pas les virus. La bonne pratique, la plus prudente : combiner filtre + pastilles (ou ébullition).
 
 **Contaminer l'eau traitée.** Utiliser un récipient mal rincé, boire directement à la gourde puis remettre de l'eau non traitée dedans, ne pas rincer le bouchon — tous ces gestes recontaminent l'eau que tu viens de traiter.
 
@@ -124,12 +125,18 @@ Le principe de redondance s'applique ici comme pour l'allumage du feu : plusieur
 | Matériel | Budget | Conservation | Utilité |
 |---|---|---|---|
 | Pastilles Micropur Forte x100 | 15-20€ | 5 ans en emballage fermé | Backup toujours dans le kit |
-| Paille filtrante LifeStraw | 25-35€ | Illimitée (jusqu'à 4000L) | Usage quotidien en crise |
+| Paille filtrante LifeStraw | 25-35€ | Selon la capacité indiquée par le fabricant | Usage quotidien en crise |
 | Stylo UV SteriPen | 50-80€ | Batterie à recharger | Rapidité + efficacité virale |
 | Tissu de pré-filtrage | 0€ | Illimitée | T-shirt ou bandana propre |
 
 **La combinaison recommandée pour un kit 72h :** pastilles Micropur (légères, backup universel) + paille filtrante (usage quotidien sans gaz ni batterie). Si tu veux le niveau supérieur : ajoute un stylo UV.
 
 **Pour une crise prolongée à domicile :** filtre gravitaire + stock de pastilles + grand récipient de stockage hermétique. Pour une sortie courte, les pastilles sont imbattables : légères et rapides. Pour un trek au long cours, mieux vaut un filtre réutilisable avec des cartouches de rechange.
+
+## Télécharge la fiche technique illustrée
+
+Les 4 méthodes en image prête à imprimer — à garder dans ton kit ou coller dans ta cuisine.
+
+[Télécharger la fiche technique](/ressources/atelier/purifier-eau-urgence.png)
 
 *Sources : ARS Mayotte et ARS Provence-Alpes-Côte d'Azur (ébullition 5 minutes à couvert, consigne relayant l'ANSES), ARS Guadeloupe (« Procédure de désinfection de l'eau hors réseau », 2017), Soldat.fr, Projet13, BlogSurvivalisme, Randonner Malin, Action Résilience, Survivalisme Urbain.*
