@@ -1,5 +1,5 @@
 ---
-title: "Faire du feu sans briquet : les 3 méthodes qui marchent vraiment (testées, pas inventées)"
+title: "Faire du feu sans briquet : les 3 méthodes qui marchent vraiment, expliquées pas à pas"
 seo_title: "Faire du Feu Sans Briquet : 3 Méthodes qui Marchent"
 description: "Silex, archet, lentille — apprendre à faire du feu sans briquet ni allumettes. Guide complet avec les vraies techniques, les erreurs à éviter, et ce qu'il faut pratiquer."
 date: 2025-03-15

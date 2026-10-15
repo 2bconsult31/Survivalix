@@ -5,12 +5,12 @@ import Layout from '../../layouts/Layout.astro';
 const articlesPublies = await getCollection('manuel');
 ---
 
-<Layout title="Guide de Survie : Kit 72h, Eau, Autonomie | Survivalix" description="Kit 72h, stockage d'eau, coupures de courant : nos guides pratiques et sourcés pour être prêt sans paniquer. Testés, sans blabla inutile.">
+<Layout title="Guide de Survie : Kit 72h, Eau, Autonomie | Survivalix" description="Kit 72h, stockage d'eau, coupures de courant : nos guides pratiques et sourcés pour être prêt sans paniquer, sans blabla inutile.">
 
   <div class="manuel-header">
     <div class="manuel-header-label">// SECTION 01 //</div>
     <h1>Le Manuel</h1>
-    <p class="manuel-header-desc">Guides pratiques et articles de fond. Méthodes testées, sans bullshit.</p>
+    <p class="manuel-header-desc">Guides pratiques et articles de fond. Méthodes sourcées, sans bullshit.</p>
     <div class="manuel-stats">
       <span><strong>{articlesPublies.length}</strong> article{articlesPublies.length > 1 ? 's' : ''} disponible{articlesPublies.length > 1 ? 's' : ''}</span>
     </div>
