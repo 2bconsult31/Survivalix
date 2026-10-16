@@ -1,7 +1,7 @@
 ---
 title: "Bannock : le pain de survie qui se fait à la poêle, sans four, sans excuse"
 seo_title: "Bannock : Recette du Pain de Survie Sans Four"
-description: "Farine, eau, sel. Le Bannock est le pain de survie écossais que les trappeurs faisaient sur le feu depuis 500 ans. Recette complète, variantes, conseils."
+description: "Farine, eau, sel : le Bannock est le pain plat d'origine écossaise adopté par les trappeurs et cuit sur le feu. Recette complète, variantes et conseils."
 date: 2025-02-15
 tags: ["recette", "pain", "survie", "sans-four", "camping", "cantine"]
 rubrique: "cantine"
@@ -12,23 +12,23 @@ temps_prep: "5 min"
 temps_cuisson: "20 min"
 personnes: 4
 difficulte: "Facile"
-energie: "Poêle / Feu"
-conservation: "À consommer dans les 3 jours · Mix sec : 6 mois"
+energie: "Poêle / Feu / Réchaud (extérieur)"
+conservation: "Meilleur frais et chaud · Mix sec : selon les dates des ingrédients"
 ---
 
 Il y a des recettes qui méritent d'être tatouées sur l'avant-bras. Le Bannock est de celles-là.
 
-Farine, eau, sel, un peu de graisse. C'est tout. Pas de levure, pas de four, pas de temps de repos. Juste une poêle, une source de chaleur, et dix minutes de patience. Le résultat : un pain chaud, nourrissant, qui sent bon le feu de camp et qui peut littéralement te sauver la mise quand il n'y a plus rien d'autre à manger.
+Farine, eau, sel, un peu de graisse. C'est tout. Pas de levure de boulanger, pas de four, pas de temps de repos. Juste une poêle, une source de chaleur, et une vingtaine de minutes de patience. Le résultat : un pain chaud, nourrissant, qui sent bon le feu de camp et qui peut littéralement te sauver la mise quand il n'y a plus rien d'autre à manger.
 
-Les trappeurs écossais et les explorateurs qui ont traversé l'Atlantique au XVIIIe siècle l'emportaient partout pour une raison simple : les ingrédients secs sont légers, portables et non périssables. Les peuples autochtones d'Amérique du Nord l'ont rapidement adopté et adapté, lui donnant les dizaines de variantes régionales qu'on connaît aujourd'hui. Du Canada à l'Écosse, du désert australien aux Highlands, le Bannock a nourri des générations entières de gens qui n'avaient ni supermarché ni four à portée de main.
+D'après le récit le plus répandu, ce sont des commerçants de fourrures écossais qui l'ont fait traverser l'Atlantique, et leur raison était simple : des ingrédients secs, légers et faciles à transporter. Les peuples autochtones d'Amérique du Nord se le sont ensuite approprié, souvent avec de la farine de maïs ou des plantes locales, et chacun y a mis sa touche. Des Highlands au Grand Nord canadien, le Bannock a nourri des générations entières de gens qui n'avaient ni supermarché ni four à portée de main.
 
 ## Le Bannock, c'est quoi exactement ?
 
-Le mot "bannock" vient du celtique, lui-même dérivé du latin "panicium" — ce qui signifie simplement "pâte cuite". Pas plus mystérieux que ça. La première mention écrite d'une recette de bannock en Écosse remonte au VIIIe siècle, ce qui en fait l'un des pains les plus anciens d'Europe encore fabriqués aujourd'hui.
+Le mot "bannock" vient du gaélique "bannach", une galette épaisse cuite sur l'âtre. Certains linguistes y voient un emprunt au latin "panis", le pain. Pas plus mystérieux que ça. C'est un pain de très vieille tradition en Écosse, longtemps fait à l'avoine ou à l'orge sur une plaque posée sur le feu.
 
 Le Bannock est un pain plat simple qui cuit avec une texture proche d'un scone ou d'un biscuit — légèrement friable, avec un centre moelleux. Il n'est pas censé être spectaculaire. Il est censé être là quand tu en as besoin, fait avec ce que tu as sous la main.
 
-Ce qui le distingue du Hardtack (notre autre recette de pain de survie) : le Bannock se mange frais et chaud. Là où le Hardtack est conçu pour durer des mois, le Bannock apporte un confort immédiat — un pain chaud qui remonte le moral autant qu'il nourrit le corps. En situation de crise, c'est une différence qui compte.
+Ce qui le distingue du Hardtack (notre autre recette de pain de survie) : le Bannock se mange frais et chaud. Là où le Hardtack est conçu pour se garder très longtemps, le Bannock apporte un confort immédiat — un pain chaud qui remonte le moral autant qu'il nourrit le corps. En situation de crise, c'est une différence qui compte.
 
 ## Pourquoi c'est la recette de pain parfaite en survie
 
@@ -45,7 +45,7 @@ Trois raisons qui font la différence quand les choses deviennent sérieuses.
 **Pour 4 portions :**
 
 - **300g de farine** (blanche de préférence — la farine complète marche aussi mais donne un résultat plus dense)
-- **1 cuillère à café de levure chimique** (bicarbonate de soude + une pincée de sel si tu n'en as pas)
+- **1 cuillère à café de levure chimique** (à défaut, un peu de bicarbonate de soude associé à un acide comme du jus de citron ou du vinaigre, ajouté avec l'eau)
 - **1 cuillère à café de sel**
 - **2 cuillères à soupe d'huile ou de graisse** (huile végétale, beurre fondu, graisse d'oie, saindoux — tout fonctionne)
 - **150-180ml d'eau** (ajoute progressivement — la quantité varie selon la farine)
@@ -113,15 +113,15 @@ Le mix sec (farine + levure + sel) se prépare à l'avance et se conserve sans p
 
 | Ingrédient | Conservation | Format recommandé |
 |---|---|---|
-| Farine blanche | 1-2 ans | Bocal hermétique, à l'abri de l'humidité |
-| Levure chimique | 1 an | Boîte hermétique (perd son pouvoir levant avec le temps) |
-| Sel | Illimitée | N'importe quel contenant |
-| Huile végétale | 1-2 ans | Bouteille scellée |
-| Mix sec prêt (farine + levure + sel) | 6 mois | Sachet zip ou bocal hermétique |
+| Farine blanche | Selon la date de l'emballage, moins longtemps une fois ouverte | Bocal hermétique, au frais et au sec |
+| Levure chimique | Selon la date de l'emballage | Boîte hermétique (perd son pouvoir levant avec le temps) |
+| Sel | Très longue | N'importe quel contenant, au sec |
+| Huile végétale | Selon la date de l'emballage | Bouteille fermée, à l'abri de la lumière |
+| Mix sec prêt (farine + levure + sel) | Pas plus que l'ingrédient qui périme en premier | Sachet zip ou bocal hermétique, daté |
 
 **Le conseil pratique :** prépare plusieurs sachets de mix sec en avance (300g de farine + levure + sel chacun), étiquette-les avec la date et la quantité d'eau à ajouter. En situation de stress ou de fatigue, tu n'auras plus qu'à ouvrir le sachet, ajouter l'eau, mélanger et cuire. Aucune mesure, aucune réflexion nécessaire.
 
-Vérifie la levure chimique tous les 6 mois — elle perd son efficacité avec le temps. Test rapide : dépose une cuillère à café dans de l'eau chaude. Si ça mousse vigoureusement, elle est encore bonne. Si ça mousse à peine, remplace-la.
+Vérifie régulièrement ta levure chimique, surtout une fois la boîte ouverte : elle perd son efficacité avec le temps. Test rapide : dépose une cuillère à café dans de l'eau chaude. Si ça mousse vigoureusement, elle est encore bonne. Si ça mousse à peine, remplace-la.
 
 ## Télécharge la fiche recette illustrée
 
@@ -129,4 +129,4 @@ La recette complète en image prête à imprimer — colle-la dans ta cuisine ou
 
 [Télécharger la fiche recette Bannock](/ressources/recettes/bannock-survie.png)
 
-*Sources : Curious Cuisiniere, American Lost Survival, Scottish Scran, Bigger Bolder Baking, Woodlands.co.uk.*
+*Sources : Santé publique France (prévention des intoxications au monoxyde de carbone) ; L'Encyclopédie canadienne (« Bannock ») ; Curious Cuisiniere, American Lost Survival, Scottish Scran, Bigger Bolder Baking, Woodlands.co.uk.*
