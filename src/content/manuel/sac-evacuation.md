@@ -15,7 +15,7 @@ Avec son dispositif ORSEC, le gouvernement pousse chacun à se tenir prêt à é
 
 Ce n'est pas de la paranoia — c'est de la logistique. Ce sac sert dès que rester chez soi devient dangereux, voire impossible. Et la liste est longue : coupure d'électricité qui dure, inondation, feu de végétation, évacuation préventive, pollution industrielle, grosse tempête, accident de transport de matières dangereuses, confinement en ville, panne des réseaux essentiels.
 
-Autrement dit : pas besoin d'imaginer l'apocalypse. Un incendie dans votre immeuble, une inondation qui monte vite, un accident industriel dans votre quartier — et vous avez 5 minutes pour partir. Qu'est-ce que vous prenez ?
+Autrement dit : pas besoin d'imaginer l'apocalypse. Un incendie dans votre immeuble, [une inondation qui monte vite](/manuel/inondation-logement-que-faire), un accident industriel dans votre quartier — et vous avez 5 minutes pour partir. Qu'est-ce que vous prenez ?
 
 ## Pourquoi avoir un sac d'évacuation prêt
 

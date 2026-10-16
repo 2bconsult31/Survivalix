@@ -11,7 +11,7 @@ image_alt: "Étagère en bois avec des bocaux en verre remplis d'eau, des boutei
 
 L'eau du robinet est tellement intégrée à notre quotidien qu'on ne l'imagine même pas en train de disparaître. Et pourtant.
 
-Chez la grande majorité des Français, la réserve d'eau à domicile est tout simplement inexistante — alors que les coupures d'eau touchent des dizaines de communes chaque année en France pour des raisons variées : contamination bactériologique, rupture de canalisation, inondation, travaux d'urgence sur le réseau. Sans parler des scénarios plus larges où le réseau peut être compromis plusieurs jours d'affilée.
+Chez la grande majorité des Français, la réserve d'eau à domicile est tout simplement inexistante — alors que les coupures d'eau touchent des dizaines de communes chaque année en France pour des raisons variées : contamination bactériologique, rupture de canalisation, [inondation](/manuel/inondation-logement-que-faire), travaux d'urgence sur le réseau. Sans parler des scénarios plus larges où le réseau peut être compromis plusieurs jours d'affilée.
 
 La bonne nouvelle : stocker de l'eau en appartement est simple, peu coûteux, et prend bien moins de place qu'on ne le croit. Voici comment le faire correctement.
 

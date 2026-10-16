@@ -27,7 +27,7 @@ Météo-France a délibérément choisi quatre niveaux plutôt que trois. Avec s
 
 ## Neuf phénomènes surveillés, pas un seul
 
-La vigilance couvre le vent violent, les orages, les avalanches, la neige-verglas, la canicule, le grand froid, la pluie-inondation, les vagues-submersion, et les crues via le réseau Vigicrues. Chaque département affiche la couleur du phénomène le plus dangereux en cours, mais le détail par risque reste consultable en cliquant sur la carte.
+La vigilance couvre le vent violent, les orages, les avalanches, la neige-verglas, la canicule, le grand froid, la [pluie-inondation](/manuel/inondation-logement-que-faire), les vagues-submersion, et les crues via le réseau Vigicrues. Chaque département affiche la couleur du phénomène le plus dangereux en cours, mais le détail par risque reste consultable en cliquant sur la carte.
 
 La canicule fonctionne différemment des autres phénomènes. Le jaune correspond à un pic de chaleur ponctuel, un ou deux jours. L'orange marque le franchissement d'un vrai seuil officiel — température de jour et de nuit dépassées pendant au moins trois jours et trois nuits consécutifs — et déclenche le Plan National Canicule : ouverture des registres de personnes vulnérables en mairie, mise à disposition de salles climatisées. On l'a déjà détaillé plus largement dans notre article sur [la canicule en ville](/radar/canicule-ville-2026).
 

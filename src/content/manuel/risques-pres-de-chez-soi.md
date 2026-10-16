@@ -30,7 +30,7 @@ Le chiffre qui remet les idées en place : **deux communes françaises sur trois
 
 ## Le risque qui touche le plus de monde, et de loin
 
-Si un seul risque méritait d'être vérifié en priorité, ce serait l'inondation. C'est le premier risque naturel en France en nombre de personnes exposées, et environ un logement sur quatre est aujourd'hui potentiellement concerné.
+Si un seul risque méritait d'être vérifié en priorité, ce serait l'inondation (on détaille les bons réflexes dans notre guide [inondation dans son logement : que faire](/manuel/inondation-logement-que-faire)). C'est le premier risque naturel en France en nombre de personnes exposées, et environ un logement sur quatre est aujourd'hui potentiellement concerné.
 
 Ce qui change une fois qu'on sait qu'on est en zone à risque : la vigilance devient active plutôt que passive. S'abonner aux alertes Vigicrues (le service qui surveille près de 23 000 km de cours d'eau, 24h/24) permet d'être notifié avant que la situation ne devienne critique, plutôt que de découvrir l'eau qui monte le matin même.
 
