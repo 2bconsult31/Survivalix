@@ -1,7 +1,7 @@
 ---
 title: "La trousse de secours voiture : ce qui la différencie de celle de la maison"
 seo_title: "Trousse de Secours Voiture : Contenu et Où la Ranger"
-description: "Triangle, gilet, trousse de premiers secours : ce qui est légalement obligatoire en France, ce qui est recommandé, et pourquoi le coffre n'est pas toujours le bon endroit."
+description: "Triangle, gilet, trousse de secours : ce qui est obligatoire en France, ce qui est conseillé, et pourquoi le coffre n'est pas toujours le bon endroit."
 date: 2025-05-21
 tags: ["voiture", "urgence", "sante", "debutant"]
 rubrique: "manuel"
@@ -15,28 +15,28 @@ Recycler la trousse de la salle de bain dans la voiture semble une bonne idée s
 
 Depuis le 1er octobre 2008, tout véhicule en circulation en France doit embarquer **un triangle de présignalisation et un gilet de haute visibilité homologué CE**. C'est la seule vraie obligation légale — la trousse de premiers secours, elle, reste **recommandée mais pas obligatoire** pour un véhicule particulier, contrairement à ce que beaucoup pensent.
 
-Le triangle se place à 30 mètres minimum du véhicule immobilisé (jusqu'à 150 mètres sur autoroute, où la vitesse impose une distance de visibilité plus grande), en marchant face à la circulation pour rester visible. Le gilet doit être enfilé **avant de sortir du véhicule** — ce qui suppose de le ranger dans la portière ou la boîte à gants, pas dans le coffre où il serait inaccessible au moment précis où on en a besoin.
+Le triangle se pose à 30 mètres au moins en amont du véhicule immobilisé, et seulement si on peut le faire sans se mettre en danger : la loi elle-même dispense de le poser quand c'est risqué. Sur autoroute, la Sécurité routière déconseille carrément de jouer les poseurs de triangle : feux de détresse, gilet sur le dos, sortie côté passager et tout le monde derrière la glissière. Le gilet doit être enfilé **avant de sortir du véhicule** — ce qui suppose de le ranger dans la portière ou la boîte à gants, pas dans le coffre où il serait inaccessible au moment précis où on en a besoin.
 
 ## Le piège de la chaleur estivale
 
-Voici le point que la plupart des gens ignorent complètement : **une voiture garée en plein soleil peut voir son habitacle grimper à 50-80°C**, boîte à gants comprise — cette dernière donnant une fausse impression de protection alors qu'elle reste un volume fermé qui accumule la chaleur exactement comme le reste de la cabine.
+Voici le point que la plupart des gens ignorent complètement : **une voiture garée en plein soleil se transforme vite en four**, boîte à gants comprise — cette dernière donnant une fausse impression de protection alors qu'elle reste un volume fermé qui accumule la chaleur exactement comme le reste de la cabine.
 
-Une étude publiée dans le Journal of the Royal Society of Medicine a mesuré ce phénomène concrètement : pendant une canicule britannique modérée (26°C de moyenne en journée), la température dans des coffres de voiture a dépassé 25°C **chaque jour de l'étude**, avec des pics mesurés jusqu'à 49,5°C. Or la plupart des médicaments courants — antidouleurs, antihistaminiques, certains traitements chroniques — sont censés être conservés en dessous de 25°C pour garder leur pleine efficacité.
+Une étude publiée dans le Journal of the Royal Society of Medicine a mesuré ce phénomène concrètement : pendant une canicule britannique pourtant modérée, la température relevée dans des coffres de voiture a dépassé **chaque jour** la limite de conservation inscrite sur bon nombre de boîtes de médicaments. Or bon nombre de médicaments affichent sur leur boîte une conservation sous 25 ou 30°C, et l'ANSM est claire : jamais de médicaments dans une voiture ou un coffre en plein soleil. Le bon réflexe reste de lire la mention de la notice.
 
-Concrètement, ça veut dire qu'une trousse de secours contenant des médicaments, laissée en permanence dans une voiture l'été, peut perdre en efficacité bien avant sa date de péremption affichée — sans que rien ne le signale visuellement.
+Concrètement, ça veut dire qu'une trousse de secours contenant des médicaments, laissée en permanence dans une voiture l'été, subit des chaleurs qui dépassent largement ce que prévoit la notice, été après été. Un coup de chaud ponctuel n'est en général pas grave selon l'ANSM, mais une exposition répétée n'est pas ce pour quoi ces produits sont conçus, et certains (comme l'insuline) supportent très mal la chaleur.
 
 ## Ce qu'il faut vraiment avoir dans sa trousse voiture
 
 Au-delà du strict minimum légal (triangle + gilet), voici ce qui a vraiment sa place :
 
 - Pansements de tailles variées, compresses stériles
-- Désinfectant en dosettes individuelles (plus stable à la chaleur qu'un grand flacon régulièrement ouvert)
+- Désinfectant en dosettes individuelles (pratique, et pas de flacon entamé qui traîne des mois)
 - Gants jetables
 - Couverture de survie
 - Une lampe torche ou frontale avec piles
 - Un briquet ou des allumettes — rangés loin de toute source de chaleur directe, un briquet peut représenter un risque en cas de surchauffe extrême
 
-**Ce qu'il vaut mieux éviter de laisser en permanence**, surtout en été : tout médicament sensible à la chaleur, les bouteilles d'eau en plastique (qui peuvent relarguer des substances au-delà d'une certaine température), et l'électronique (batteries externes, téléphones de secours) dont les batteries lithium se dégradent nettement au-delà de 35°C.
+**Ce qu'il vaut mieux éviter de laisser en permanence**, surtout en été : tout médicament sensible à la chaleur, les bouteilles d'eau en plastique (la chaleur n'arrange ni le goût ni le plastique : mieux vaut les renouveler souvent), et l'électronique (batteries externes, téléphones de secours) dont les batteries lithium vieillissent mal quand elles cuisent au soleil.
 
 ## Où ranger concrètement
 
@@ -44,10 +44,10 @@ Au-delà du strict minimum légal (triangle + gilet), voici ce qui a vraiment sa
 
 **Le triangle** : dans le coffre est acceptable, puisqu'il n'est pas sensible à la chaleur et n'est utilisé qu'après être sorti du véhicule.
 
-**La trousse de premiers secours** : idéalement dans l'habitacle plutôt que le coffre (qui chauffe souvent davantage), et surtout **jamais garnie de médicaments qu'on ne renouvelle pas régulièrement**. Si tu dois y stocker des traitements ponctuels, privilégie une petite trousse isotherme, ou garde-les avec toi plutôt que dans le véhicule à demeure.
+**La trousse de premiers secours** : idéalement dans l'habitacle, à l'abri du soleil direct, plutôt qu'au fond du coffre où on l'oublie, et surtout **jamais garnie de médicaments qu'on ne renouvelle pas régulièrement**. Si tu dois y stocker des traitements ponctuels, privilégie une petite trousse isotherme, ou garde-les avec toi plutôt que dans le véhicule à demeure.
 
 ## Le réflexe d'entretien
 
 Une vérification deux fois par an (par exemple au changement d'heure, un repère facile à retenir) permet de contrôler les dates de péremption, l'état du triangle et du gilet, et de remplacer ce qui a été utilisé ou dégradé par la chaleur. C'est la même logique que pour ton [kit d'urgence 72h](/manuel/kit-urgence-72h) à la maison : une trousse jamais vérifiée est un faux sentiment de sécurité, pas une vraie protection.
 
-*Sources : Service-Public.fr, MAIF, Journal of the Royal Society of Medicine (étude sur l'exposition des médicaments à la chaleur).*
+*Sources : Service-Public.fr ; Sécurité routière (« Équipements obligatoires en voiture », « Vrai ou faux - Être en panne sur l'autoroute ») ; ANSM (« Transport et conservation des médicaments ») ; MAIF ; Journal of the Royal Society of Medicine (Crichton, 2004, étude sur l'exposition des médicaments à la chaleur).*

@@ -13,7 +13,7 @@ Tu es à un repas de famille. Ton oncle porte soudain les mains à sa gorge, le 
 
 Dans ces trois secondes-là, personne ne va chercher son téléphone pour lire un article de blog. Soit tu sais quoi faire, soit tu regardes.
 
-En France, on forme mal aux premiers secours — beaucoup moins bien que nos voisins européens. Résultat : la majorité des témoins d'un accident restent figés, non par indifférence, mais parce que personne ne leur a jamais montré, concrètement, les trois ou quatre gestes qui font la différence.
+Et face à un accident, beaucoup de témoins restent les bras ballants. Pas par indifférence : souvent, personne ne leur a jamais montré, en vrai, les trois ou quatre gestes qui font la différence.
 
 Cet article ne remplace pas une formation. Mais il peut faire la différence entre "je ne savais pas quoi faire" et "j'ai au moins essayé quelque chose".
 
@@ -26,7 +26,7 @@ Les secouristes professionnels raisonnent toujours dans le même ordre, quelle q
 **Alerter.** Le plus tôt possible, et avec les bonnes informations. Trois numéros à connaître par cœur — le détail de [lequel appeler selon la situation](/manuel/numeros-urgence-france-lequel-appeler) mérite son propre guide, mais voici l'essentiel :
 - **15** pour le SAMU
 - **18** pour les pompiers
-- **112**, qui fonctionne partout en France et même sans réseau ni carte SIM
+- **112**, le numéro d'urgence européen, qui marche en France comme dans toute l'Union européenne
 
 Donne ton adresse, décris ce que tu vois, et reste en ligne — le régulateur peut te guider geste par geste si besoin.
 
@@ -38,15 +38,15 @@ Donne ton adresse, décris ce que tu vois, et reste en ligne — le régulateur 
 
 Il porte les mains à sa gorge, ne parvient plus à parler ni à tousser. Le cerveau ne tient que quelques minutes sans oxygène, donc chaque seconde compte.
 
-Penche la personne légèrement en avant et donne cinq claques fermes entre les omoplates, avec le plat de la main. Si ça ne suffit pas, passe à la méthode de Heimlich : place-toi derrière elle, un poing fermé juste au-dessus du nombril, l'autre main par-dessus, et exerce des pressions brèves vers toi et vers le haut.
+Penche la personne vers l'avant en lui soutenant le thorax, et donne jusqu'à cinq claques franches entre les omoplates, avec le plat de la main. Le bouchon résiste ? Enchaîne avec jusqu'à cinq compressions abdominales (la fameuse méthode de Heimlich) : place-toi derrière elle, un poing fermé au creux de l'estomac, entre le nombril et le bas du sternum, l'autre main par-dessus, et tire d'un coup sec vers toi et vers le haut. Toujours rien ? Alterne claques et compressions. Dès qu'elle tousse, parle ou respire à nouveau, tu arrêtes. Ensuite, direction un avis médical, même si tout a l'air rentré dans l'ordre.
 
 Si elle perd connaissance à un moment donné, allonge-la au sol et commence un massage cardiaque (détaillé juste après) en appelant les secours si ce n'est pas déjà fait.
 
 ### Une hémorragie qui ne ralentit pas
 
-Compresse directement la plaie — avec une compresse, un tissu propre, ou simplement ta main s'il n'y a rien d'autre sous la main. Appuie fort, sans relâcher pour "vérifier". Si tu peux, surélève le membre blessé au-dessus du niveau du cœur.
+Compresse directement la plaie — avec une compresse, un tissu propre, ou simplement ta main s'il n'y a rien d'autre sous la main. Appuie fort, sans relâcher pour "vérifier", et tiens bon jusqu'à l'arrivée des secours.
 
-Un objet planté dans une plaie (couteau, éclat de verre) fait souvent office de bouchon. On ne le retire jamais — ça peut aggraver l'hémorragie d'un coup. On stabilise autour, on n'y touche pas.
+Un objet planté dans une plaie (couteau, éclat de verre), on le laisse où il est : l'arracher peut aggraver la blessure et relancer le saignement. On n'y touche pas et on laisse les secours gérer.
 
 Dans les cas les plus graves, où la compression ne suffit pas sur un membre, un [garrot hémostatique](https://www.amazon.fr/s?k=garrot+hemostatique+premiers+secours&tag=survivalix31-21) posé au-dessus de la plaie peut être nécessaire. Note l'heure de pose : c'est une information que les secours te demanderont.
 
@@ -60,7 +60,7 @@ Place tes deux mains l'une sur l'autre, au centre de la poitrine, bras tendus. A
 
 Si un défibrillateur automatisé externe traîne à proximité — dans un hall d'entreprise, une gare, un centre commercial — utilise-le sans hésiter. L'appareil te guide vocalement à chaque étape ; aucune formation préalable n'est nécessaire pour s'en servir.
 
-Chaque minute sans intervention fait chuter les chances de survie de 10 %, selon la Fédération française de cardiologie et la Croix-Rouge française.
+Chaque minute sans intervention fait chuter les chances de survie d'environ 10 %, selon la Fédération française de cardiologie.
 
 ### Une brûlure
 
@@ -76,14 +76,14 @@ Elle ne réagit ni à ta voix ni à une stimulation, mais respire sans difficult
 
 Tu viens de lire comment faire un massage cardiaque. Tu ne sais pas encore le faire. Ce n'est pas un manque de compréhension — c'est que le bon rythme, la bonne pression, ça se sent avec les mains, pas avec les yeux sur un écran.
 
-La bonne nouvelle, c'est que combler cet écart prend deux heures et coûte souvent zéro euro. La sensibilisation "Gestes Qui Sauvent" dure 2 heures et est proposée gratuitement dans de nombreuses communes, associations et entreprises. Le PSC1 (Prévention et Secours Civique niveau 1), plus complet, dure 7 heures et est dispensé par la Croix-Rouge, les pompiers et diverses associations agréées partout en France.
+La bonne nouvelle, c'est que combler cet écart prend deux heures et peut ne pas coûter un centime. La sensibilisation "Gestes qui sauvent" dure 2 heures, s'adresse à tout le monde dès 10 ans, et des sessions gratuites sont régulièrement organisées par les pompiers, les associations agréées ou les préfectures. Le PSC (Premiers secours citoyen, l'ex-PSC1 rebaptisé en 2024), plus complet, dure au moins 7 heures et est dispensé par la Croix-Rouge, les pompiers et d'autres organismes habilités partout en France.
 
-Et depuis 2020, la loi protège explicitement tout citoyen qui porte secours de bonne foi — le fameux statut de "citoyen-sauveteur". Concrètement : tu ne risques rien juridiquement pour avoir essayé d'aider, même si le geste n'était pas parfait.
+Et depuis la loi du 3 juillet 2020, toute personne qui vient bénévolement en aide à quelqu'un en danger grave a le statut de "citoyen sauveteur". Concrètement : on ne peut pas te reprocher un geste imparfait fait pour aider, sauf faute lourde ou intentionnelle. Bref, la maladresse de bonne foi n'est pas un délit.
 
 Une [trousse de premiers secours](https://www.amazon.fr/s?k=trousse+premiers+secours+complete&tag=survivalix31-21) à portée de main ne remplace pas ces deux heures de formation, mais elle fait partie des essentiels de ton [kit d'urgence 72h](/manuel/kit-urgence-72h) — avoir le matériel sous la main au moment où tu sais enfin quoi en faire change tout. Pour savoir quoi mettre dedans, et ce qui ne sert à rien, suis notre guide de la [trousse de premiers secours maison](/atelier/trousse-premiers-secours). Ces réflexes se combinent aussi avec les bons gestes pour [rester joignable en situation de crise](/manuel/communiquer-situation-crise), une fois les secours prévenus.
 
 Un geste imparfait, tenté à temps, vaut toujours mieux qu'aucun geste. C'est probablement la seule chose à retenir vraiment de tout cet article.
 
-*Sources : Croix-Rouge française (dont « Que faire en cas de brûlure ? »), Fédération française de cardiologie (« Arrêt cardiaque : le pire est de ne rien faire »), Ministère de l'Intérieur — Sécurité civile, SGDSN.*
+*Sources : Croix-Rouge française (dont « Que faire en cas de brûlure ? »), Fédération française de cardiologie (« Arrêt cardiaque : le pire est de ne rien faire »), Ministère de l'Intérieur — Sécurité civile (dont « Gestes qui sauvent »), DGSCGC (« Recommandations de premiers secours », 2021), SGDSN, Légifrance (loi n° 2020-840 du 3 juillet 2020 sur le citoyen sauveteur ; arrêté du 15 juin 2024 sur les Premiers secours citoyen).*
 
 *Cet article est fourni à titre informatif et ne remplace en aucun cas une formation aux premiers secours ni un avis médical professionnel. En cas d'urgence vitale, appelez immédiatement le 15, le 18 ou le 112.*
