@@ -59,7 +59,7 @@ Comme pour un [kit d'urgence 72h](/manuel/kit-urgence-72h), la meilleure répara
 - Une clé à molette et une pince multiprise
 - Des chiffons absorbants et un récipient pour l'eau résiduelle — le [ruban adhésif résistant de ton sac d'évacuation](/manuel/sac-evacuation) peut aussi dépanner ponctuellement en attendant mieux
 
-De quoi tenir n'importe quel weekend, quel que soit le type de fuite qui se présente.
+De quoi tenir n'importe quel weekend, quel que soit le type de fuite qui se présente. Même philosophie pour une fenêtre brisée un soir de tempête : notre tuto [vitre cassée](/atelier/vitre-cassee-reparation-urgence) liste ce qui tient vraiment en attendant le vitrier.
 
 ## Ce qui doit vraiment attendre un professionnel
 

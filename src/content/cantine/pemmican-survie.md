@@ -39,7 +39,7 @@ La recette traditionnelle repose sur une proportion simple : **un poids égal de
 
 ## Préparation
 
-**Étape 1 — Sécher la viande.** Coupe le bœuf en tranches très fines (le passage 30 minutes au congélateur avant de trancher facilite énormément le travail). Dispose les tranches sur une grille et fais-les sécher au four à 65-70°C, porte légèrement entrouverte pour laisser l'humidité s'échapper, pendant 6 à 8 heures. La viande est prête quand elle casse net au lieu de plier.
+**Étape 1 — Sécher la viande.** Coupe le bœuf en tranches très fines (le passage 30 minutes au congélateur avant de trancher facilite énormément le travail). Dispose les tranches sur une grille et fais-les sécher au four à 65-70°C, porte légèrement entrouverte pour laisser l'humidité s'échapper, pendant 6 à 8 heures. La viande est prête quand elle casse net au lieu de plier. C'est le même point de départ que notre [beef jerky maison](/cantine/beef-jerky-maison), mais sans marinade et poussé jusqu'au sec complet.
 
 **Étape 2 — Réduire en poudre.** Une fois complètement sèche et refroidie, passe la viande au mixeur ou au robot jusqu'à obtenir une texture proche de la chapelure grossière.
 

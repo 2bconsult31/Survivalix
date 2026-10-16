@@ -63,7 +63,7 @@ C'est souvent la première source de stress lors d'une coupure longue. Voici ce 
 
 C'est le point le plus critique en hiver — et le plus sous-estimé en milieu urbain.
 
-Sans électricité, la plupart des chauffages s'arrêtent. Même un chauffage central au gaz a généralement besoin d'électricité pour sa régulation et sa pompe de circulation. Une coupure d'électricité en hiver = pas de chauffage, dans la grande majorité des cas.
+Sans électricité, la plupart des chauffages s'arrêtent. Même un chauffage central au gaz a généralement besoin d'électricité pour sa régulation et sa pompe de circulation. Une coupure d'électricité en hiver = pas de chauffage, dans la grande majorité des cas. (Si le courant est là et que seul le chauffage lâche, la marche à suivre est différente : on la détaille dans notre guide [panne de chauffage en hiver](/manuel/panne-chauffage-hiver-que-faire).)
 
 **La stratégie en cas de froid :**
 

@@ -15,6 +15,8 @@ Trois semaines plus tard, la moitié du carton traîne encore dans l'entrée san
 
 La bonne approche n'est pas de tout acheter en une fois. C'est d'acheter dans le bon ordre, sur plusieurs semaines, avec un budget qu'on maîtrise à chaque étape.
 
+Et si tu découvres tout juste le sujet, fais d'abord un tour sur notre page [Par où commencer ?](/commencer-ici) : elle pose les bases en cinq étapes, avant même de passer en caisse.
+
 ## Le vrai ordre de priorité
 
 La logique reste la même que celle qu'on détaille dans notre [guide du kit 72h](/manuel/kit-urgence-72h) : l'eau d'abord, la nourriture ensuite, puis la chaleur et l'information. Ce qui change ici, c'est qu'on l'étale dans le temps au lieu de tout vouloir cocher le même week-end.
@@ -46,7 +48,7 @@ Première sortie du rayon supermarché classique :
 ### Semaine 4 — La chaleur et les premiers secours (25 à 45€)
 
 - Une ou deux [couvertures de survie](https://www.amazon.fr/s?k=couverture+de+survie), moins de 3€ chacune
-- Une trousse de premiers secours basique — pansements, désinfectant, paracétamol. Notre [guide des gestes qui sauvent](/manuel/premiers-secours-gestes-qui-sauvent) détaille ce qu'il faut savoir faire avec, pas seulement ce qu'il faut avoir dedans
+- Une trousse de premiers secours basique — pansements, désinfectant, paracétamol. Pour la composer sans payer le superflu des trousses du commerce, suis notre guide de la [trousse de premiers secours maison](/atelier/trousse-premiers-secours) ; et notre [guide des gestes qui sauvent](/manuel/premiers-secours-gestes-qui-sauvent) détaille ce qu'il faut savoir faire avec
 
 ### Semaine 5 — Les documents et le sac lui-même (10 à 20€)
 
@@ -72,6 +74,8 @@ Pour tout le reste, ne complique pas les choses : le sachet de haricots ou la bo
 ## Pour aller plus loin
 
 Une fois cette base construite, notre [évaluateur de préparation](/outils/evaluateur-preparation) te donne un score sur 100 et des recommandations personnalisées pour la suite. Et si un doute te vient à un moment précis de tes achats, notre [assistant Bunker IA](/bunker) répond en direct, sans jugement, même à 23h un dimanche soir.
+
+Et le jour où tu auras envie de passer des conserves achetées aux conserves faites maison, notre recette de [sauce tomate en bocaux](/cantine/sauce-tomate-conserve-maison) est un bon premier pas.
 
 *Source : guide ["Tous responsables"](https://www.sgdsn.gouv.fr/publications/guide-tous-responsables), Secrétariat général de la Défense et de la Sécurité nationale (SGDSN), novembre 2025.*
 

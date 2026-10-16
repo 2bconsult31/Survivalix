@@ -80,7 +80,7 @@ La bonne nouvelle, c'est que combler cet écart prend deux heures et coûte souv
 
 Et depuis 2020, la loi protège explicitement tout citoyen qui porte secours de bonne foi — le fameux statut de "citoyen-sauveteur". Concrètement : tu ne risques rien juridiquement pour avoir essayé d'aider, même si le geste n'était pas parfait.
 
-Une [trousse de premiers secours](https://www.amazon.fr/s?k=trousse+premiers+secours+complete&tag=survivalix31-21) à portée de main ne remplace pas ces deux heures de formation, mais elle fait partie des essentiels de ton [kit d'urgence 72h](/manuel/kit-urgence-72h) — avoir le matériel sous la main au moment où tu sais enfin quoi en faire change tout. Ces réflexes se combinent aussi avec les bons gestes pour [rester joignable en situation de crise](/manuel/communiquer-situation-crise), une fois les secours prévenus.
+Une [trousse de premiers secours](https://www.amazon.fr/s?k=trousse+premiers+secours+complete&tag=survivalix31-21) à portée de main ne remplace pas ces deux heures de formation, mais elle fait partie des essentiels de ton [kit d'urgence 72h](/manuel/kit-urgence-72h) — avoir le matériel sous la main au moment où tu sais enfin quoi en faire change tout. Pour savoir quoi mettre dedans, et ce qui ne sert à rien, suis notre guide de la [trousse de premiers secours maison](/atelier/trousse-premiers-secours). Ces réflexes se combinent aussi avec les bons gestes pour [rester joignable en situation de crise](/manuel/communiquer-situation-crise), une fois les secours prévenus.
 
 Un geste imparfait, tenté à temps, vaut toujours mieux qu'aucun geste. C'est probablement la seule chose à retenir vraiment de tout cet article.
 

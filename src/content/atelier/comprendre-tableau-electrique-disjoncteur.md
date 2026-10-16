@@ -57,4 +57,6 @@ Bloquer mécaniquement un disjoncteur qui "saute trop souvent" pour l'empêcher 
 
 Si le disjoncteur a sauté à cause d'une panne plus large ou d'une coupure de courant externe, notre guide sur la [coupure d'électricité longue durée](/manuel/coupure-electricite-longue) détaille comment t'organiser en attendant le retour du courant.
 
+Et pour les autres pépins qui tombent toujours un dimanche soir, l'Atelier a aussi ses tutos [fuite d'eau](/atelier/reparer-fuite-eau-urgence) et [vitre cassée](/atelier/vitre-cassee-reparation-urgence).
+
 *Sources : Legrand, ENGIE, Selectra, Sparx Élec.*

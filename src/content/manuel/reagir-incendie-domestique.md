@@ -90,7 +90,7 @@ Une chose à trancher franchement : l'attachement aux objets tue. Les papiers se
 
 ## Après
 
-Une fois dehors, tu appelles le 18 ou le 112, tu donnes l'adresse exacte, l'étage, ce qui brûle, et tu dis combien de personnes manquent. Tu restes joignable et visible pour les secours.
+Une fois dehors, tu appelles le 18 ou le 112, tu donnes l'adresse exacte, l'étage, ce qui brûle, et tu dis combien de personnes manquent. Tu restes joignable et visible pour les secours. Le 18 comme le 112 te mènent aux pompiers ; pour toutes les autres situations, notre guide des [numéros d'urgence](/manuel/numeros-urgence-france-lequel-appeler) t'aide à choisir le bon sans hésiter.
 
 Si quelqu'un est sorti mais présente une toux persistante, des suies autour du nez ou de la bouche, une voix modifiée ou une confusion, c'est une possible inhalation de fumées : c'est un motif d'évaluation médicale, même sans brûlure visible. Les [gestes qui sauvent](/manuel/premiers-secours-gestes-qui-sauvent) valent aussi ici, avec le même ordre des priorités.
 

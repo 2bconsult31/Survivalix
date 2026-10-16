@@ -1,0 +1,159 @@
+---
+// Bloc « À lire aussi » : 3 articles liés, même rubrique en priorité,
+// puis tags communs. L'article courant est toujours exclu.
+import { getCollection } from 'astro:content';
+
+const { tags = [] } = Astro.props;
+
+const RUBRIQUES = {
+  manuel: 'Le Manuel',
+  radar: 'Le Radar',
+  cantine: 'La Cantine',
+  atelier: "L'Atelier",
+} as const;
+type Rubrique = keyof typeof RUBRIQUES;
+
+const [, currentRubrique, currentSlug] = Astro.url.pathname.replace(/\/$/, '').split('/');
+
+const all = (
+  await Promise.all(
+    (Object.keys(RUBRIQUES) as Rubrique[]).map(async (rubrique) =>
+      (await getCollection(rubrique)).map((entry) => ({ rubrique, entry }))
+    )
+  )
+).flat();
+
+const currentTags = new Set<string>(tags);
+
+const related = all
+  .filter(({ rubrique, entry }) => !(rubrique === currentRubrique && entry.id === currentSlug))
+  .map(({ rubrique, entry }) => ({
+    rubrique,
+    entry,
+    sameRubrique: rubrique === currentRubrique ? 1 : 0,
+    sharedTags: (entry.data.tags ?? []).filter((t: string) => currentTags.has(t)).length,
+  }))
+  .sort(
+    (a, b) =>
+      b.sameRubrique - a.sameRubrique ||
+      b.sharedTags - a.sharedTags ||
+      new Date(b.entry.data.date).getTime() - new Date(a.entry.data.date).getTime()
+  )
+  .slice(0, 3);
+---
+
+{related.length > 0 && (
+  <section class="related" aria-labelledby="related-title">
+    <div class="related-inner">
+      <h2 id="related-title" class="related-title">// À LIRE AUSSI //</h2>
+      <div class="related-grid">
+        {related.map(({ rubrique, entry }) => (
+          <a href={`/${rubrique}/${entry.id}`} class="related-card">
+            <div class="related-image">
+              {entry.data.image && (
+                <img src={entry.data.image} alt="" loading="lazy" decoding="async" />
+              )}
+            </div>
+            <div class="related-body">
+              <span class="related-rubrique">{RUBRIQUES[rubrique]}</span>
+              <span class="related-card-title">{entry.data.title}</span>
+              <span class="related-link">Lire l'article →</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .related {
+    border-top: 1px solid #1a1a1a;
+    background-color: #0a0a0a;
+    padding: 3rem 1.5rem 3.5rem;
+  }
+
+  .related-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  .related-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #6B7C45;
+    letter-spacing: 3px;
+    margin: 0 0 1.5rem;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 720px) {
+    .related-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+
+  .related-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #0d0d0d;
+    border: 1px solid #1e1e1e;
+    border-top: 3px solid #F5A623;
+    text-decoration: none;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+
+  .related-card:hover { border-color: #333; border-top-color: #F5A623; transform: translateY(-3px); }
+
+  .related-image {
+    aspect-ratio: 1920 / 815;
+    overflow: hidden;
+    background-color: #080808;
+  }
+
+  .related-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+  }
+
+  .related-card:hover .related-image img { transform: scale(1.03); }
+
+  .related-body {
+    padding: 1rem 1.2rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+  }
+
+  .related-rubrique {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.68rem;
+    color: #6B7C45;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .related-card-title {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.05rem;
+    color: #F5E6C8;
+    line-height: 1.35;
+    flex: 1;
+  }
+
+  .related-link {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #F5A623;
+    letter-spacing: 1px;
+  }
+</style>

@@ -56,4 +56,6 @@ Dans tous les cas, ces informations complètent utilement ce qu'il y a dans ton 
 
 Ouvre [Géorisques](https://www.georisques.gouv.fr/citoyen-recherche-map), tape ton adresse exacte, et prends deux minutes pour lire le rapport généré. C'est gratuit, ça ne demande aucune compétence particulière, et c'est probablement la vérification la plus rapide et la plus utile que tu puisses faire aujourd'hui sur ta propre préparation.
 
+Ensuite, notre page [Par où commencer ?](/commencer-ici) t'indique les étapes suivantes, dans l'ordre.
+
 *Sources : Géorisques (Ministère de la Transition écologique / BRGM), Vigicrues, Service-public.fr.*

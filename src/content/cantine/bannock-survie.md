@@ -83,6 +83,8 @@ La version la plus satisfaisante moralement — et la plus utile si tu n'as pas 
 
 C'est la méthode préférée des scouts et des trappeurs. Elle ne demande rien d'autre que du feu et un bâton. Et franchement, manger un pain qu'on a cuit soi-même sur un bâton au-dessus d'un feu en forêt, c'est une expérience en soi.
 
+Pas de briquet ni d'allumettes ? Notre tuto pour [faire du feu sans briquet](/atelier/feu-sans-briquet) t'apprend à allumer ce feu au firesteel.
+
 ### Version réchaud ou feu de bois en cocotte
 
 Pour une version plus épaisse et moelleuse, proche d'un vrai pain. Réchaud de camping ou feu de bois : **uniquement en extérieur**, jamais dans le logement (risque d'intoxication au monoxyde de carbone).
@@ -99,7 +101,7 @@ Le Bannock de base est bon. Avec quelques ajouts, il devient excellent.
 
 **Version salée survie :** ajoute de l'ail en poudre, des herbes séchées (thym, romarin), ou des flocons de piment dans la pâte. Transforme complètement le goût avec zéro technique supplémentaire.
 
-**Version protéines :** incorpore des petits morceaux de thon ou sardine en conserve émiettés dans la pâte avant cuisson. Un pain-repas complet.
+**Version protéines :** incorpore des petits morceaux de thon ou sardine en conserve émiettés dans la pâte avant cuisson. Un pain-repas complet. Ça marche aussi avec des lamelles de [beef jerky maison](/cantine/beef-jerky-maison) coupées fin.
 
 **Version sucrée camping :** ajoute deux cuillères à soupe de sucre et une poignée de raisins secs ou de fruits secs. Parfait pour le petit-déjeuner au feu de camp.
 

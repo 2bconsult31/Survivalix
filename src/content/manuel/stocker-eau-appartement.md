@@ -23,7 +23,7 @@ Pour deux personnes : 12 litres. Deux packs de 6×1,5L achetés en grande surfac
 
 Mais 6 litres, c'est le strict minimum vital. Pas le confort. Prévoyez davantage s'il fait très chaud, si un nourrisson vit au foyer ou si un traitement médical vous oblige à boire plus.
 
-Pour tenir plus longtemps, le calcul ne change pas : 2 litres par personne et par jour, multipliés par le nombre de jours visés. Les volumes montent vite — c'est un objectif à atteindre progressivement, pas en une seule session de courses.
+Pour tenir plus longtemps, le calcul ne change pas : 2 litres par personne et par jour, multipliés par le nombre de jours visés. Les volumes montent vite — c'est un objectif à atteindre progressivement, pas en une seule session de courses. Notre [calculateur de stock d'eau](/outils/calculateur-stock-eau) fait le calcul pour votre foyer, et notre [liste de courses du débutant](/manuel/liste-courses-prepper-debutant) montre comment étaler l'effort sur plusieurs semaines.
 
 **Le stock selon la durée visée (2 L par personne et par jour) :**
 

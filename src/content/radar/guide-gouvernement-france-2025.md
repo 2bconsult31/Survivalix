@@ -53,11 +53,11 @@ Le guide cite aussi des ressources officielles utiles : vigipirate.gouv.fr pour 
 
 Soyons honnêtes sur les limites — non pas pour critiquer l'État, mais parce que c'est utile pour comprendre où ce guide s'arrête et où Survivalix commence.
 
-Le guide couvre les 72 premières heures. Pas la semaine suivante. Pas le mois d'après. Si vous cherchez comment tenir 2 semaines ou gérer un stock alimentaire longue durée, vous devrez aller chercher ailleurs — notamment dans nos calculateurs et nos guides sur ce site.
+Le guide couvre les 72 premières heures. Pas la semaine suivante. Pas le mois d'après. Si vous cherchez comment tenir 2 semaines ou gérer un stock alimentaire longue durée, vous devrez aller chercher ailleurs — notamment du côté de notre [calculateur de rations alimentaires](/outils/calculateur-rations-alimentaires) et de nos guides sur ce site.
 
 En 2018, la Suède a glissé sa brochure dans 4,8 millions de boîtes aux lettres, selon l'agence suédoise de protection civile (MSB). En France, le guide se télécharge sur les sites du SGDSN, des ministères et des préfectures, en trois versions : standard, facile à lire (FALC) et à imprimer.
 
-Certains sujets sont également absents : la gestion du froid prolongé, la purification de l'eau de source, les premières compétences autonomie — tout ce que Survivalix couvre justement dans L'Atelier.
+Certains sujets sont également absents : la gestion du froid prolongé, la purification de l'eau de source, les premières compétences d'autonomie. Survivalix les traite justement, de la [panne de chauffage en hiver](/manuel/panne-chauffage-hiver-que-faire) à la [purification de l'eau](/atelier/purifier-eau-urgence), en passant par l'art de [faire du feu sans briquet](/atelier/feu-sans-briquet).
 
 ## Pourquoi c'est un signal fort
 
@@ -66,6 +66,8 @@ La publication de ce guide n'est pas anodine. Elle arrive après la mise à jour
 C'est exactement la philosophie de Survivalix depuis le début. Pas de paranoïa, pas de bunker, pas de scénario Mad Max. Juste du bon sens et une préparation minimale qui change tout quand ça compte.
 
 Le gouvernement vient de valider cette approche officiellement. C'est une bonne nouvelle.
+
+Si vous partez de zéro, notre page [Par où commencer ?](/commencer-ici) remet les étapes dans l'ordre.
 
 ## Télécharger le guide officiel
 

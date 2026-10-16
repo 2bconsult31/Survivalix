@@ -20,7 +20,7 @@ Ce n'est presque jamais la tempête elle-même qui coupe ton téléphone. C'est 
 
 Deux mécanismes, la plupart du temps : les antennes-relais tournent sur une batterie de secours dont l'autonomie réelle ne dépasse généralement pas 30 minutes — largement moins que la durée d'une coupure de courant classique, qui peut s'étirer sur plusieurs heures. Et même quand le réseau tient physiquement, il sature — des milliers de personnes essaient d'appeler en même temps au même endroit, exactement comme une route à une voie où tout le monde freine d'un coup.
 
-Un détail qui vaut le coup d'être connu : le 112 reste, en théorie, le numéro le plus susceptible de passer, car c'est le seul compatible avec les antennes de tous les opérateurs à la fois — y compris celles d'un opérateur concurrent du tien, si la tienne est hors service.
+Un détail qui vaut le coup d'être connu : le 112 reste, en théorie, le numéro le plus susceptible de passer, car c'est le seul compatible avec les antennes de tous les opérateurs à la fois — y compris celles d'un opérateur concurrent du tien, si la tienne est hors service. Pour savoir quel numéro composer selon la situation, on a fait le tri dans notre guide des [numéros d'urgence en France](/manuel/numeros-urgence-france-lequel-appeler).
 
 Résultat concret : les appels vocaux passent mal, mais les SMS, eux, survivent souvent plus longtemps. Ils demandent beaucoup moins de bande passante et peuvent rester en file d'attente jusqu'à ce qu'un petit créneau se libère. Le réflexe à avoir n'est donc pas "insister en rappelant", mais basculer vers le texto dès les premiers signes de galère.
 
