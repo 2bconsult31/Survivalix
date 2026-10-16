@@ -45,7 +45,7 @@ La pédagogie d'abord. Le ton est clair, accessible, sans jargon militaire ni vo
 
 Le ton est volontairement pédagogique et concret : il s'agit d'aider les Français à prendre les bons réflexes et de donner envie de s'engager.
 
-La couverture des risques est également large et honnête : risques naturels (inondations, séismes, canicules), risques technologiques (accidents industriels, coupures d'énergie), risques sanitaires (pandémies), et risques d'origine humaine dont les cyberattaques et la désinformation. Le guide insiste sur un point : savoir reconnaître les signaux d'alerte (sirènes, SMS FR-Alert) et connaître les numéros d'urgence.
+La couverture des risques est également large et honnête : risques naturels ([inondations](/manuel/inondation-logement-que-faire), séismes, canicules), risques technologiques (accidents industriels, coupures d'énergie), risques sanitaires (pandémies), et risques d'origine humaine dont les cyberattaques et la désinformation. Le guide insiste sur un point : savoir reconnaître les signaux d'alerte (sirènes, SMS FR-Alert) et connaître les numéros d'urgence.
 
 Le guide cite aussi des ressources officielles utiles : vigipirate.gouv.fr pour les niveaux d'alerte terroriste, cybermalveillance.gouv.fr pour les menaces numériques, et le 17Cyber pour les victimes de cybermalveillance.
 

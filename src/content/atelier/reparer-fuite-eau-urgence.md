@@ -70,7 +70,7 @@ Toutes les fuites ne se règlent pas soi-même, et il ne faut pas s'entêter dan
 - Une canalisation visiblement très corrodée ou fissurée sur une longueur importante
 - Toute odeur de gaz associée à la zone humide — dans ce cas, on ne tente rien soi-même : on aère, on coupe l'arrivée de gaz si accessible sans risque, et on appelle le service d'urgence
 
-Dans tous les autres cas, une réparation provisoire bien posée tient largement le temps d'attendre un rendez-vous en semaine — l'objectif n'est jamais de remplacer un vrai plombier, juste de ne pas subir une inondation en attendant lundi.
+Dans tous les autres cas, une réparation provisoire bien posée tient largement le temps d'attendre un rendez-vous en semaine — l'objectif n'est jamais de remplacer un vrai plombier, juste de ne pas subir une inondation en attendant lundi. (Pour une inondation due à une crue ou à de fortes pluies, c'est une autre histoire : lis notre guide [inondation dans son logement](/manuel/inondation-logement-que-faire).)
 
 *Sources : Castorama, EkoEnergy, MesDépanneurs.fr, Kolb Décoration.*
 

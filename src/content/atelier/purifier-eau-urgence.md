@@ -15,7 +15,7 @@ fiche_png: "/ressources/atelier/purifier-eau-urgence.png"
 
 Il y a une date précise où l'eau potable est devenue un problème en France métropolitaine : le 9 novembre 2019, à Sainte-Sigolène en Haute-Loire. Une contamination à l'E. coli a rendu l'eau du robinet de 4 000 habitants non potable pendant plusieurs jours. Interdiction de boire, de cuisiner, de se brosser les dents avec l'eau du robinet. Les gens faisaient la queue devant les camions citerne. Personne n'avait prévu ça.
 
-Ce n'est pas un cas isolé. En France, les avis de ne pas consommer l'eau du robinet touchent des dizaines de communes chaque année pour des raisons variées : contamination bactériologique, rupture de canalisation, inondation, panne de station d'épuration. Sans parler des situations de crise plus larges où l'infrastructure entière peut être compromise.
+Ce n'est pas un cas isolé. En France, les avis de ne pas consommer l'eau du robinet touchent des dizaines de communes chaque année pour des raisons variées : contamination bactériologique, rupture de canalisation, [inondation](/manuel/inondation-logement-que-faire), panne de station d'épuration. Sans parler des situations de crise plus larges où l'infrastructure entière peut être compromise.
 
 La bonne nouvelle : rendre de l'eau douteuse potable n'est pas sorcier. Il existe quatre méthodes fiables, accessibles, avec du matériel qui tient dans un sac à dos. Voilà ce qu'il faut savoir.
 

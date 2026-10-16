@@ -46,7 +46,7 @@ La consigne à donner à toute la famille est simple : "En cas de coup dur, tu a
 
 ## Rester informé sans tomber dans la rumeur
 
-Une crise attire son lot de fausses informations, souvent relayées de bonne foi par des gens paniqués. En France, le dispositif **FR-Alert** envoie directement des alertes officielles sur les téléphones dans la zone concernée en cas de danger majeur — inondation, attentat, accident industriel. Il ne nécessite aucune inscription, aucune application : c'est un signal envoyé par les antennes-relais elles-mêmes, comme une notification système.
+Une crise attire son lot de fausses informations, souvent relayées de bonne foi par des gens paniqués. En France, le dispositif **FR-Alert** envoie directement des alertes officielles sur les téléphones dans la zone concernée en cas de danger majeur — [inondation](/manuel/inondation-logement-que-faire), attentat, accident industriel. Il ne nécessite aucune inscription, aucune application : c'est un signal envoyé par les antennes-relais elles-mêmes, comme une notification système.
 
 Les stations de radio locales (France Bleu en tête) et les comptes officiels de la préfecture ou de la mairie restent des sources bien plus fiables qu'un message qui tourne sur un groupe WhatsApp de quartier. Une bonne règle simple : une information qui te fait peur et que tu ne peux vérifier qu'auprès de gens paniqués comme toi mérite d'attendre confirmation avant d'être relayée plus loin.
 

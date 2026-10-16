@@ -149,7 +149,7 @@ Scanne tous tes documents et enregistre-les dans un cloud sécurisé. Accessible
 Les kits "survie" en ligne sont généralement sur-évalués et sous-équipés. Construis le tien avec des produits normaux.
 
 **2. Stocker à la cave ou au sous-sol.**
-En cas d'inondation, tu perds tout. Le kit doit être accessible, au rez-de-chaussée ou à l'entrée.
+[En cas d'inondation](/manuel/inondation-logement-que-faire), tu perds tout. Le kit doit être accessible, au rez-de-chaussée ou à l'entrée.
 
 **3. Oublier l'ouvre-boîte.**
 On l'a déjà dit. On le redit quand même. Parce que tu allais l'oublier.
