@@ -16,23 +16,23 @@ On pense souvent qu'une vitre cassée est surtout un problème d'esthétique —
 
 Avant de penser matériaux, il y a une étape non négociable : les débris de verre.
 
-Enfile des gants épais et des chaussures fermées avant de toucher quoi que ce soit — même un petit éclat peut couper profondément. Éloigne les enfants et les animaux de la zone, les fragments peuvent avoir été projetés à plusieurs mètres du point d'impact. Ramasse les plus gros morceaux à la balayette et à la pelle, puis passe l'aspirateur pour les fragments les plus fins qu'un balai ne peut pas attraper.
+Enfile des gants qui résistent aux coupures, des chaussures fermées et, si tu en as, des lunettes de protection avant de toucher quoi que ce soit : même un petit éclat peut couper profondément, et un fragment peut sauter vers les yeux. Mets ensuite les débris dans un carton ou un récipient rigide bien fermé, jamais en vrac dans un sac poubelle. Éloigne les enfants et les animaux de la zone, les éclats peuvent avoir volé bien plus loin qu'on ne l'imagine. Ramasse les plus gros morceaux à la balayette et à la pelle, puis passe l'aspirateur pour les fragments les plus fins qu'un balai ne peut pas attraper.
 
-**Avant de nettoyer, prends des photos sous plusieurs angles.** Ton assurance habitation te les demandera pour traiter le dossier bris de glace, et cette précaution est simple à oublier une fois dans le feu de l'action.
+**Avant de nettoyer, prends des photos sous plusieurs angles.** Elles te serviront de preuves pour ton dossier bris de glace auprès de ton assurance habitation, et cette précaution est simple à oublier une fois dans le feu de l'action.
 
-Si la casse résulte d'une effraction ou d'un acte de vandalisme, le dépôt de plainte est à faire dans les 48 heures — c'est un document que ton assurance exigera systématiquement pour activer la garantie correspondante. Pour une casse accidentelle classique, tu as généralement 5 jours ouvrés pour déclarer le sinistre.
+Si la casse vient d'une effraction ou d'un acte de vandalisme, porte plainte sans traîner (en ligne sur le portail Ma Sécurité si l'auteur est inconnu) : beaucoup de contrats demandent une copie de la plainte pour t'indemniser. En cas de vol, la loi te laisse au moins 2 jours ouvrés pour prévenir ton assureur. Pour une casse accidentelle classique, c'est au moins 5 jours ouvrés, et ton contrat peut te laisser plus de temps.
 
 ## Ce qui tient vraiment, et ce qui lâche en quelques heures
 
 Tous les matériaux de fortune ne se valent pas, et le piège classique est de sous-estimer à quel point certains cèdent vite.
 
-**Le carton, même rigide** : la solution la plus rapide à poser, mais aussi la moins durable — il ne résiste ni à la pluie ni à un vent un peu soutenu, et tient rarement plus de 24 heures en extérieur.
+**Le carton, même rigide** : la solution la plus rapide à poser, mais aussi la moins durable — il ne résiste ni à la pluie ni à un vent un peu soutenu, et rend généralement les armes dès la première averse sérieuse.
 
-**Le film ou la bâche en polyéthylène** : plus résistant à l'eau, tient généralement 24 à 48 heures s'il est correctement tendu et fixé.
+**Le film ou la bâche en polyéthylène** : bien plus résistant à l'eau, il peut tenir le temps de faire venir le vitrier à condition d'être correctement tendu et fixé, et d'être vérifié régulièrement.
 
-**Le contreplaqué** : la solution la plus robuste des trois, capable de tenir plusieurs jours si l'ouverture n'est pas trop grande et que la fixation est solide — c'est la vraie "forteresse temporaire" en attendant le vitrier.
+**Le contreplaqué** : la solution la plus robuste des trois, celle qui tient le plus longtemps si l'ouverture n'est pas trop grande et que la fixation est solide — c'est la vraie "forteresse temporaire" en attendant le vitrier.
 
-Le piège le plus fréquent, cependant, ne concerne pas le matériau de couverture, mais ce qui le maintient en place : **le ruban adhésif classique (scotch d'emballage) lâche en quelques heures à peine**, surtout en extérieur ou par temps humide. Il faut du ruban adhésif toilé résistant (type gaffer ou adhésif de réparation renforcé), pensé pour l'extérieur.
+Le piège le plus fréquent, cependant, ne concerne pas le matériau de couverture, mais ce qui le maintient en place : **le ruban adhésif classique (scotch d'emballage) décroche très vite**, surtout en extérieur ou par temps humide. Il faut du ruban adhésif toilé résistant (type gaffer ou adhésif de réparation renforcé), pensé pour l'extérieur.
 
 ## La technique de pose qui tient
 
@@ -51,7 +51,7 @@ Pour une ouverture large ou très exposée au vent, superposer une planche de bo
 
 **Le châssis endommagé change l'interlocuteur.** Si le cadre lui-même est fissuré, déformé ou ne ferme plus correctement, ce n'est plus un vitrier qu'il faut appeler, mais un menuisier — deux métiers différents pour deux problèmes différents.
 
-**Une réparation mal faite peut aussi coûter cher côté assurance** : certains contrats refusent la prise en charge si la pose définitive n'a pas été réalisée par un professionnel qualifié. Le colmatage provisoire, en revanche, ne pose aucun problème — c'est même ce que ton assureur attend de toi en attendant l'intervention.
+**Une réparation mal faite peut aussi coûter cher côté assurance** : avant de remplacer toi-même la vitre, relis ton contrat ou appelle ton assureur pour savoir ce qu'il exige pour la réparation définitive. Le colmatage provisoire, lui, sert surtout à limiter les dégâts en attendant l'intervention.
 
 ## Le matériel à garder sous la main
 
@@ -62,6 +62,6 @@ Pour une ouverture large ou très exposée au vent, superposer une planche de bo
 
 Autant d'éléments qui trouvent naturellement leur place à côté du reste de ton [kit d'urgence 72h](/manuel/kit-urgence-72h) — pas pour un scénario de fin du monde, juste pour le jour où un ballon, une tempête ou une mauvaise surprise transforme ta soirée en chantier improvisé.
 
-*Sources : Allianz, Matmut, ChronoServe, Le Juste Pro.*
+*Sources : Code des assurances, article L113-2 (Légifrance) ; DGCCRF (« Assurance multirisque habitation : renseignez-vous ») ; ministère de l'Intérieur (portail Ma Sécurité, plainte en ligne) ; INRS (« Risques de coupure : solutions de prévention ») ; Allianz, Matmut, ChronoServe, Le Juste Pro.*
 
 *Note : les liens produits de cet article pointent vers des résultats de recherche Amazon, sans lien d'affiliation actif à ce jour.*

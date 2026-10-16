@@ -1,7 +1,7 @@
 ---
 title: "Ton disjoncteur a sauté : comprendre ton tableau électrique et le réarmer sans risque"
 seo_title: "Disjoncteur qui Saute : Comprendre et Réarmer son Tableau"
-description: "Différentiel, divisionnaire, disjoncteur de branchement : ce que chaque élément de ton tableau électrique fait vraiment, et comment réarmer sans se mettre en danger."
+description: "Différentiel, divisionnaire, disjoncteur de branchement : à quoi sert chaque élément de ton tableau électrique, et comment réarmer sans te mettre en danger."
 date: 2025-04-23
 tags: ["electricite", "tableau", "reparation", "appartement"]
 rubrique: "atelier"
@@ -10,15 +10,15 @@ image: "/images/atelier/tableau-electrique-disjoncteur.jpg"
 image_alt: "Tableau électrique domestique ouvert avec ses rangées de disjoncteurs"
 ---
 
-Un disjoncteur qui saute n'est presque jamais un hasard. C'est une protection qui vient de faire exactement le travail pour lequel elle existe : couper le courant avant qu'un vrai problème (surchauffe, électrocution) ne se produise. La bonne nouvelle, c'est que comprendre ce qui vient de se passer prend cinq minutes, et que dans la majorité des cas, tu peux résoudre la situation toi-même, sans électricien ni angoisse.
+Un disjoncteur qui saute n'est presque jamais un hasard. C'est une protection qui vient de faire exactement le travail pour lequel elle existe : couper le courant avant qu'un vrai problème (surchauffe, électrocution) ne se produise. La bonne nouvelle, c'est que comprendre ce qui vient de se passer prend cinq minutes, et que souvent, tu peux remettre la lumière toi-même, sans électricien ni angoisse.
 
 ## Les trois étages de ton tableau électrique
 
 Ton installation électrique fonctionne comme une cascade de filtres, chacun avec un rôle précis.
 
-**Le disjoncteur de branchement.** Tout en haut du tableau, généralement plombé et scellé — il appartient à Enedis, pas à toi. Son rôle : limiter la puissance totale que ton logement peut consommer d'un coup, selon la puissance souscrite dans ton contrat (3, 6, 9 kVA...). S'il saute, c'est que trop d'appareils gourmands tournaient en même temps (four, plaques, sèche-linge). Tu peux le réarmer toi-même, mais tu ne peux ni le modifier ni le remplacer.
+**Le disjoncteur de branchement.** C'est le gros disjoncteur posé à côté du compteur, en général au-dessus de ton tableau ou juste à côté. C'est Enedis qui l'installe et qui le règle, pas toi. Son rôle : limiter la puissance totale que ton logement peut consommer d'un coup, selon la puissance souscrite dans ton contrat (3, 6, 9 kVA...). S'il saute, le suspect numéro un est l'excès d'appareils gourmands lancés en même temps (four, plaques, sèche-linge), même s'il peut aussi couper sur un défaut plus sérieux comme un court-circuit. Tu peux le réarmer toi-même, mais tu ne peux ni le modifier ni le remplacer.
 
-**Le différentiel (ou interrupteur différentiel).** Placé en tête de chaque rangée du tableau, c'est le plus gros module de la rangée. Son rôle est unique et vital : protéger les personnes contre l'électrocution, en détectant la moindre fuite de courant vers la terre — un seuil de 30 mA suffit à le déclencher, calibré précisément juste en dessous du seuil de fibrillation ventriculaire chez l'humain. S'il saute, toute une rangée entière de circuits se coupe d'un coup.
+**Le différentiel (ou interrupteur différentiel).** Dans la plupart des tableaux, il trône en tête de rangée, et c'est souvent le module le plus large du lot. Son rôle est unique et vital : protéger les personnes contre l'électrocution, en repérant les fuites de courant vers la terre. Dans un logement, il réagit dès 30 mA de fuite et coupe en quelques millisecondes, assez tôt pour garder une bonne marge avant les intensités et les durées qui deviennent dangereuses pour le cœur. S'il saute, tous les circuits placés sous lui s'éteignent d'un coup, souvent une rangée entière.
 
 **Les disjoncteurs divisionnaires.** Les petits modules individuels sous le différentiel, un par circuit ("Cuisine", "Salle de bain", "Prises chambre"...). Ils protègent contre la surcharge et le court-circuit sur ce circuit précis. Si un seul saute, le problème est localisé à ce circuit exact.
 
@@ -59,4 +59,4 @@ Si le disjoncteur a sauté à cause d'une panne plus large ou d'une coupure de c
 
 Et pour les autres pépins qui tombent toujours un dimanche soir, l'Atelier a aussi ses tutos [fuite d'eau](/atelier/reparer-fuite-eau-urgence) et [vitre cassée](/atelier/vitre-cassee-reparation-urgence).
 
-*Sources : Legrand, ENGIE, Selectra, Sparx Élec.*
+*Sources : Enedis (« Qu'est-ce que le disjoncteur de branchement ? A quoi sert-il ? », « Le compteur Linky disjoncte et affiche le message PUISS DEPASSEE, que faire ? ») ; INRS (« Risques électriques. Accidents d'origine électrique », « L'électricité ») ; Promotelec ; Legrand, ENGIE, Selectra, Sparx Élec.*
