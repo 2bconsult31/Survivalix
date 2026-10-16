@@ -44,7 +44,7 @@ const articlesPublies = await getCollection('manuel');
           <div class="card-body">
             <div class="card-top">
               <span class="card-num">0{index + 1}</span>
-              <span class="card-temps">~8 min</span>
+              <span class="card-temps">~{Math.max(1, Math.round((article.body ?? '').split(/\s+/).length / 200))} min</span>
             </div>
             <div class="card-tags">
               {article.data.tags.map((tag: string) => (

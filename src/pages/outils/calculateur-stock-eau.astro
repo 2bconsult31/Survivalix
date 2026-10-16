@@ -4,7 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 
 <Layout
   title="Calculateur de stock d'eau — Survivalix"
-  description="Combien de litres d'eau stocker pour ta famille ? Calcule ton stock à partir du repère officiel : 2 litres par personne et par jour."
+  description="Combien de litres d'eau stocker pour ta famille ? Calcule ton stock à partir du repère officiel du kit 72 h : 6 litres par personne."
 >
 
   <div class="page-header">
@@ -67,18 +67,18 @@ import Layout from '../../layouts/Layout.astro';
 
       <div class="result-header">
         <div class="result-label">// RÉSULTAT //</div>
-        <div class="result-total" id="result-total">42 L</div>
-        <p class="result-desc" id="result-desc">Pour 2 adultes sur 2 semaines</p>
+        <div class="result-total" id="result-total">12 L</div>
+        <p class="result-desc" id="result-desc">Pour 2 adultes sur 72h</p>
       </div>
 
       <div class="result-breakdown">
         <div class="breakdown-item">
-          <span class="breakdown-label">Eau (2 L par jour et par personne)</span>
-          <span class="breakdown-val" id="breakdown-boisson">28 L</span>
+          <span class="breakdown-label">Eau (6 L par personne pour 72 h, soit 2 L par jour)</span>
+          <span class="breakdown-val" id="breakdown-boisson">12 L</span>
         </div>
         <div class="breakdown-item breakdown-item-total">
           <span class="breakdown-label">TOTAL</span>
-          <span class="breakdown-val" id="breakdown-total">42 L</span>
+          <span class="breakdown-val" id="breakdown-total">12 L</span>
         </div>
       </div>
 
@@ -86,17 +86,17 @@ import Layout from '../../layouts/Layout.astro';
         <div class="result-label">// COMMENT STOCKER //</div>
         <div class="stockage-grid">
           <div class="stockage-item">
-            <div class="stockage-num" id="stock-bouteilles">28</div>
+            <div class="stockage-num" id="stock-bouteilles">8</div>
             <div class="stockage-desc">Bouteilles 1,5L</div>
           </div>
           <div class="stockage-sep">//</div>
           <div class="stockage-item">
-            <div class="stockage-num" id="stock-bidons">5</div>
+            <div class="stockage-num" id="stock-bidons">3</div>
             <div class="stockage-desc">Bouteilles 5L</div>
           </div>
           <div class="stockage-sep">//</div>
           <div class="stockage-item">
-            <div class="stockage-num" id="stock-packs">4</div>
+            <div class="stockage-num" id="stock-packs">2</div>
             <div class="stockage-desc">Packs 6×1,5L</div>
           </div>
         </div>
@@ -108,7 +108,7 @@ import Layout from '../../layouts/Layout.astro';
           <line x1="12" y1="8" x2="12" y2="12" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
           <circle cx="12" cy="16" r="1" fill="#F5A623"/>
         </svg>
-        <p id="conseil-texte">Prévois aussi des pastilles de purification Micropur en cas d'urgence.</p>
+        <p id="conseil-texte">En dernier recours seulement, garde quelques pastilles de décontamination de l'eau : elles ne remplacent jamais ton stock en bouteilles.</p>
       </div>
 
       <div class="result-actions">
@@ -176,7 +176,7 @@ import Layout from '../../layouts/Layout.astro';
     } else if (duree >= 14) {
       conseil = 'Pour un stock longue durée, garde des bouteilles du commerce non ouvertes, à l\'abri du soleil et de la chaleur, et surveille les dates limites. L\'eau du robinet, elle, se garde en verre ou en inox, 24 à 48 h au réfrigérateur (ANSES).';
     } else {
-      conseil = 'Prévois aussi des pastilles de purification Micropur — indispensables si tu dois utiliser une source d\'eau douteuse.';
+      conseil = 'En dernier recours seulement, garde quelques pastilles de décontamination de l\'eau (en pharmacie) : elles dépannent face à une eau douteuse, mais ne remplacent jamais ton stock en bouteilles.';
     }
     document.getElementById('conseil-texte').textContent = conseil;
   }
