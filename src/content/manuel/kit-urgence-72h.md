@@ -1,7 +1,7 @@
 ---
 title: "Kit d'urgence 72h : la liste complète (sourcée, sans bullshit)"
 seo_title: "Kit d'urgence 72h : la liste complète et sourcée"
-description: "La liste complète du kit 72h, budget réaliste inclus, plus une checklist PDF à imprimer gratuitement. Pour être prêt sans jouer les survivalistes."
+description: "La liste complète du kit 72h, poste par poste et sourcée, plus une checklist à imprimer gratuitement. Pour être prêt sans jouer les survivalistes."
 date: 2025-01-15
 tags: ["debutant", "kit", "urgence", "appartement"]
 rubrique: "manuel"
@@ -24,10 +24,10 @@ Le kit 72h, c'est pas de la paranoia. C'est du bon sens. C'est l'équivalent de 
 
 ## La règle des 4 priorités
 
-Avant de parler liste, comprends la logique. En situation de crise, tes besoins se hiérarchisent toujours dans le même ordre — peu importe la catastrophe.
+Avant de parler liste, comprends la logique. En situation de crise, tes besoins suivent en général le même ordre, à adapter selon ce qui t'arrive.
 
-**1. S'hydrater** — Sans eau, c'est plié en 3 jours. C'est la priorité absolue.
-**2. Se nourrir** — Sans nourriture tu tiens 3 semaines. Mais sans calories tu prends de mauvaises décisions bien avant.
+**1. S'hydrater** — Le corps encaisse très mal le manque d'eau, surtout quand il fait chaud ou que tu fais des efforts. C'est la priorité absolue.
+**2. Se nourrir** — On tient bien plus longtemps sans manger que sans boire. Mais le ventre vide, tu prends de mauvaises décisions bien plus vite.
 **3. Rester au chaud** — L'hypothermie en appartement sans chauffage, c'est plus fréquent qu'on le croit.
 **4. Communiquer** — Savoir ce qui se passe et pouvoir prévenir tes proches.
 
@@ -39,7 +39,7 @@ Tout le reste est secondaire. Garde ça en tête quand tu fais tes achats.
 
 Jusqu'à ce que le robinet ne coule plus.
 
-Le minimum recommandé est de **6 litres par personne pour 72h** — 2 litres par jour pour boire, plus l'hygiène de base. Et prévois plus large si tu peux : quand il fait chaud, avec un enfant, ou si tu dois marcher, tu consommes davantage.
+Le minimum recommandé par les autorités est de **6 litres par personne pour 72h**, soit environ 2 litres par jour, et ça, c'est surtout pour boire. Pour la toilette et la vaisselle, il faudra en prévoir en plus. Et prévois plus large si tu peux : quand il fait chaud, avec un enfant, ou si tu dois marcher, tu consommes davantage.
 
 Pour connaître le total de ton foyer, notre [calculateur de stock d'eau](/outils/calculateur-stock-eau) fait la multiplication à ta place.
 
@@ -70,7 +70,7 @@ Stocke ce que tu manges normalement. Le piège classique du débutant : acheter 
 Pour savoir quelle quantité prévoir selon la taille de ton foyer, notre [calculateur de rations alimentaires](/outils/calculateur-rations-alimentaires) fait le compte en calories.
 
 **Pour les familles avec enfants :**
-Compotes en gourde, petits gâteaux, céréales sèches. Prévois 30% de calories supplémentaires pour les enfants actifs.
+Compotes en gourde, petits gâteaux, céréales sèches. Et prévois un peu de marge : un enfant qui court partout a vite faim.
 
 ### Lumière & Énergie — Voir dans le noir c'est sous-coté
 
@@ -80,14 +80,14 @@ Une coupure d'électricité la nuit, dans un appartement, c'est immédiatement d
 - **Lampe frontale** avec piles neuves de rechange — les deux mains libres, c'est indispensable
 - Bougies + briquet ou allumettes imperméables
 - **Batterie externe 20 000 mAh minimum** + câbles pour ton téléphone
-- **Radio à manivelle ou à piles** — souvent le seul moyen de recevoir des informations quand les réseaux saturent
+- **Radio à manivelle ou à piles** — recommandée par les autorités pour suivre les consignes officielles, même quand internet et le réseau mobile flanchent
 
 **La batterie externe c'est la nouvelle lampe de poche.**
-Ton téléphone est ta carte, ta lampe de secours, ta radio et ton seul moyen de communication. Une batterie de 20 000 mAh recharge un smartphone 5 à 6 fois. Achètes-en deux et garde-les chargées en permanence.
+Ton téléphone est ta carte, ta lampe de secours, ta radio et ton seul moyen de communication. Une batterie de 20 000 mAh permet plusieurs recharges complètes d'un smartphone, selon le modèle. Achètes-en deux et garde-les chargées en permanence.
 
 ### Santé & Premiers secours — Pas besoin d'être médecin
 
-Le kit de base gère 95% des problèmes courants. Coupures, brûlures légères, fièvre, diarrhée — les situations les plus fréquentes en cas de crise ne nécessitent pas de chirurgie.
+Le kit de base couvre l'essentiel des petits bobos du quotidien. Coupures, brûlures légères, fièvre, diarrhée — les situations les plus fréquentes en cas de crise ne nécessitent pas de chirurgie.
 
 **Ce qu'il faut avoir :**
 - Pansements de différentes tailles, compresses stériles, bandages
@@ -101,10 +101,10 @@ Le kit de base gère 95% des problèmes courants. Coupures, brûlures légères,
 
 ### Chaleur & Vêtements — L'ennemi invisible
 
-L'hypothermie est systématiquement sous-estimée en milieu urbain. Une nuit sans chauffage en hiver peut rapidement mettre en danger un enfant ou une personne âgée.
+En ville, on pense rarement à l'hypothermie, et pourtant les autorités sanitaires rappellent que le froid touche d'abord les plus fragiles. Une nuit sans chauffage en hiver peut rapidement mettre en danger un enfant ou une personne âgée.
 
 **Ce qu'il faut avoir :**
-- **Couverture de survie** (dorée/argentée) — moins de 3€, tient dans une poche, peut sauver une vie
+- **Couverture de survie** (dorée/argentée) — pas chère, tient dans une poche, figure dans la liste officielle du kit
 - Pull chaud et vêtements de rechange pour 3 jours
 - Chaussures de marche solides — si tu dois évacuer à pied
 - Imperméable ou poncho
@@ -116,7 +116,7 @@ En cas d'évacuation, avoir ses documents sous la main évite les situations kaf
 **Ce qu'il faut avoir :**
 - Photocopies dans une pochette étanche : carte d'identité, passeport, carte vitale
 - Ordonnances et liste des médicaments
-- Numéros de téléphone importants **écrits sur papier** — si ton téléphone est mort et que tu n'en connais aucun par cœur (c'est le cas de 99% des gens)
+- Numéros de téléphone importants **écrits sur papier** — si ton téléphone est mort et que tu n'en connais aucun par cœur (et franchement, qui les connaît encore ?)
 - Double des clés de la maison et de la voiture
 - Espèces en petites coupures — les terminaux de paiement tombent en panne lors des coupures électriques
 
@@ -133,33 +133,19 @@ Scanne tous tes documents et enregistre-les dans un cloud sécurisé. Accessible
 - Savon et gel hydroalcoolique
 - Jeu de cartes ou livre — parce que l'ennui en situation de crise génère de l'anxiété, et que l'anxiété génère de mauvaises décisions
 
-## Le budget réaliste
-
-| Catégorie | Budget approximatif |
-|---|---|
-| Eau (12L pour 2 personnes) | 5-8€ |
-| Nourriture 72h pour 2 | 25-40€ |
-| Lampe frontale + piles | 15-25€ |
-| Batterie externe 20 000 mAh | 20-35€ |
-| Radio à manivelle | 20-40€ |
-| Trousse premiers secours | 15-25€ |
-| Couverture de survie x2 | 5-8€ |
-| Divers (couteau, sifflet, duct tape) | 15-25€ |
-| **TOTAL pour 2 personnes** | **~120-206€** |
-
 ## Les 5 erreurs classiques
 
 **1. Acheter un kit tout fait.**
 Les kits "survie" en ligne sont généralement sur-évalués et sous-équipés. Construis le tien avec des produits normaux.
 
 **2. Stocker à la cave ou au sous-sol.**
-[En cas d'inondation](/manuel/inondation-logement-que-faire), tu perds tout. Le kit doit être accessible, au rez-de-chaussée ou à l'entrée.
+[En cas d'inondation](/manuel/inondation-logement-que-faire), tu perds tout. Le kit doit être facile à attraper et à l'abri de l'eau : près de l'entrée, mais surélevé si ton logement est en zone inondable.
 
 **3. Oublier l'ouvre-boîte.**
 On l'a déjà dit. On le redit quand même. Parce que tu allais l'oublier.
 
 **4. Remplir le kit et ne plus y toucher.**
-Un kit non vérifié est un faux sentiment de sécurité. Check annuel obligatoire.
+Un kit non vérifié est un faux sentiment de sécurité. Vérifie-le au moins une fois par an : dates de péremption, piles, médicaments.
 
 **5. Ne jamais tester.**
 Passe une nuit sans électricité chez toi volontairement. Tu vas découvrir ce qui manque avant que ça compte vraiment.
@@ -176,9 +162,9 @@ Passe une nuit sans électricité chez toi volontairement. Tu vas découvrir ce 
 
 **Semaine 5** → Les documents et la trousse de premiers secours.
 
-En 5 semaines, pour moins de 200€, tu as un kit solide.
+En 5 semaines, sans te ruiner, tu as un kit solide.
 
-Ce parcours est détaillé semaine par semaine, avec le budget de chaque étape, dans notre [liste de courses du débutant](/manuel/liste-courses-prepper-debutant).
+Ce parcours est détaillé semaine par semaine dans notre [liste de courses du débutant](/manuel/liste-courses-prepper-debutant).
 
 ## Télécharge la checklist complète
 
@@ -188,4 +174,4 @@ Toute cette liste en image prête à imprimer — format A4, design Survivalix.
 
 Tu préfères une liste calculée pour ton foyer, enfants, bébé et animaux compris ? Notre [générateur de kit 72h](/outils/generateur-kit-72h) te prépare une checklist personnalisée, à cocher au fur et à mesure.
 
-*Sources : Croix-Rouge française, FEMA (USA), The Prepared.*
+*Sources : Ministère de la Transition écologique — « Préparer son kit d'urgence 72 h » ; Géorisques — « Kit 72h » ; info.gouv.fr — « Se préparer à une situation d'urgence » ; SGDSN — « Tous responsables » ; Croix-Rouge française ; Santé publique France — « Grand froid ».*

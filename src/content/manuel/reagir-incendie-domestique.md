@@ -1,7 +1,7 @@
 ---
 title: "Réagir en cas d'incendie domestique : la seule décision qui compte"
 seo_title: "Incendie domestique : réagir en 2 minutes"
-description: "Évacuer ou rester derrière une porte fermée ? Détecteur, extincteur, plan de sortie : ce qui se joue réellement dans les deux premières minutes d'un feu."
+description: "Évacuer ou rester derrière une porte fermée ? Détecteur, extincteur, plan de sortie : ce qui se joue réellement dans les toutes premières minutes d'un feu."
 date: 2026-08-10
 tags: ["incendie", "urgence", "maison", "famille"]
 rubrique: "manuel"
@@ -9,7 +9,7 @@ image: "/images/articles/reagir-incendie-domestique.jpg"
 image_alt: "Détecteur de fumée au plafond d'un couloir et porte de chambre fermée"
 ---
 
-Demande à dix personnes ce qu'elles feraient si un feu se déclarait chez elles. Neuf te répondront la même chose : « j'essaie de l'éteindre », suivi de « je prends les papiers et le chat ». C'est une réponse rationnelle, calme, et complètement décalée par rapport à la réalité d'un incendie domestique.
+Demande autour de toi ce que les gens feraient si un feu se déclarait chez eux. Beaucoup te répondront la même chose : « j'essaie de l'éteindre », suivi de « je prends les papiers et le chat ». C'est une réponse rationnelle, calme, et complètement décalée par rapport à la réalité d'un incendie domestique.
 
 Les consignes officielles des préfectures disent l'inverse, mot pour mot : fermer la porte de la pièce en feu, fermer la porte d'entrée, **ne rien emporter**, sortir, et n'appeler les pompiers qu'une fois dehors. Rien sur les papiers. Rien sur l'extincteur.
 
@@ -21,9 +21,9 @@ Un incendie d'habitation n'est plus le même événement qu'il y a trente ans. L
 
 C'est le constat central de la Fire Safety Research Institute (UL Research Institutes) : les matériaux, les plans ouverts et les modes de construction modernes laissent au foyer bien moins de temps pour sortir.
 
-Conséquence pratique, et elle est contre-intuitive : ce ne sont pas les flammes qui tuent le plus. C'est la fumée. Les travaux médicaux sur les victimes d'incendie situent la part des décès liés à l'intoxication par les fumées et les gaz de combustion autour de 60 à 80 %. La fumée arrive avant le feu, elle désoriente, elle prive d'oxygène, et elle circule par tous les interstices.
+Conséquence pratique, et elle est contre-intuitive : ce ne sont pas les flammes qui tuent le plus. C'est la fumée. Dans leurs campagnes de prévention, les préfectures attribuent environ 80 % des décès lors d'incendies domestiques à l'intoxication par les fumées et les gaz, loin devant les brûlures. La fumée arrive avant le feu, elle désoriente, elle prive d'oxygène, et elle circule par tous les interstices.
 
-En France, les sapeurs-pompiers interviennent chaque année sur 60 000 à 70 000 incendies d'habitation, avec plus de 200 morts et plus de 9 000 victimes. Ce n'est pas un risque exotique : c'est le risque domestique majeur, largement devant les scénarios auxquels on pense spontanément quand on parle de préparation.
+En France, les incendies d'habitation font chaque année des centaines de morts et des milliers de blessés, selon les bilans publiés par les services de l'État. Ce n'est pas un risque exotique : c'est le risque domestique majeur, largement devant les scénarios auxquels on pense spontanément quand on parle de préparation.
 
 ## La seule question qui compte : est-ce que la sortie est praticable ?
 
@@ -41,7 +41,7 @@ Oublie tout le reste pendant dix secondes. Quand l'alarme se déclenche, tu as u
 
 C'est la donnée la plus utile de cet article, et elle est chiffrée par la recherche.
 
-Dans les essais de la Fire Safety Research Institute (UL Research Institutes) sur la ventilation horizontale, menés depuis 2008 sur des maisons instrumentées, les chambres restées porte fermée pendant la propagation du feu affichaient des températures moyennes **inférieures à 100 °F, soit moins de 38 °C**, contre **plus de 1 000 °F — au-delà de 540 °C — dans les chambres porte ouverte**.
+Dans les essais de la Fire Safety Research Institute (UL Research Institutes) sur la ventilation horizontale, menés depuis 2008 sur des maisons instrumentées, les chambres restées porte fermée pendant la propagation du feu affichaient des températures moyennes **inférieures à 100 °F, soit moins de 38 °C**, contre **plus de 1 000 °F — soit plus de 530 °C — dans les chambres porte ouverte**.
 
 Les concentrations de gaz suivent le même écart. Dans la chambre porte ouverte, les chercheurs mesuraient **10 000 ppm de monoxyde de carbone**, un niveau franchement mortel. Derrière la porte fermée : **environ 100 ppm**. Un facteur cent.
 
@@ -58,21 +58,21 @@ Depuis la loi du 9 mars 2010, appliquée à partir du 8 mars 2015, tout logement
 
 Le problème n'est pas l'équipement, c'est l'usage. Un détecteur mal placé, à pile morte ou vieux de douze ans coche la case légale sans protéger personne. Les trois points qui font la différence :
 
-**Le placement.** Au plafond, dans les circulations qui desservent les chambres — le couloir de nuit en priorité. On évite la cuisine et la salle de bains, où vapeur et fumées de cuisson déclenchent des fausses alertes, et où les gens finissent par débrancher l'appareil. Sur plusieurs niveaux, un détecteur par étage.
+**Le placement.** Au plafond, dans les circulations qui desservent les chambres — le couloir de nuit en priorité. On évite la cuisine et la salle de bains, où vapeur et fumées de cuisson déclenchent des fausses alertes, et où les gens finissent par débrancher l'appareil. La loi n'en exige qu'un par logement, mais sur plusieurs niveaux, en ajouter un par étage aide à ce que l'alarme soit entendue partout.
 
-**La pile et le test.** Un test par pression sur le bouton, une fois par mois. C'est trente secondes. Un modèle à pile scellée au lithium 10 ans coûte à peine plus cher qu'un modèle à pile standard et supprime le principal mode de défaillance : la pile qu'on retire pour arrêter le bip et qu'on ne remet jamais.
+**La pile et le test.** Un test par pression sur le bouton, une fois par mois. C'est trente secondes. Un modèle à pile scellée au lithium 10 ans supprime le principal mode de défaillance : la pile qu'on retire pour arrêter le bip et qu'on ne remet jamais.
 
 **La durée de vie.** Environ 10 ans, capteur compris. Regarde la date imprimée au dos du tien ce soir ; s'il est plus vieux, remplace-le. Un [détecteur de fumée conforme NF EN 14604](https://www.amazon.fr/s?k=detecteur+de+fumee+nf+en+14604&tag=survivalix31-21) se trouve pour une quinzaine d'euros.
 
-À part : le monoxyde de carbone. C'est un risque différent, invisible et inodore, lié aux appareils de combustion — chaudière, poêle, chauffe-eau gaz, chauffage d'appoint. Un détecteur de fumée ne le voit pas. Si tu as un appareil à combustion chez toi, il te faut un [détecteur de monoxyde de carbone](https://www.amazon.fr/s?k=detecteur+monoxyde+de+carbone&tag=survivalix31-21) en plus, placé à hauteur de respiration dans la pièce concernée.
+À part : le monoxyde de carbone. C'est un risque différent, invisible et inodore, lié aux appareils de combustion — chaudière, poêle, chauffe-eau gaz, chauffage d'appoint. Un détecteur de fumée ne le voit pas. Si tu as un appareil à combustion chez toi, il te faut un [détecteur de monoxyde de carbone](https://www.amazon.fr/s?k=detecteur+monoxyde+de+carbone&tag=survivalix31-21) en plus, installé en suivant les indications de sa notice.
 
 ## Extincteur et couverture anti-feu : utiles, mais pas dans le rôle qu'on imagine
 
 Un extincteur domestique sert à traiter un départ de feu de la taille d'une corbeille à papier, dans les toutes premières secondes, quand tu as la sortie dans le dos. Il ne sert pas à combattre un incendie déclaré. Dès que les flammes montent au plafond ou que la fumée s'accumule, on lâche l'extincteur et on sort.
 
-Pour un logement, un [extincteur à poudre ABC de 2 kg](https://www.amazon.fr/s?k=extincteur+poudre+abc+2kg&tag=survivalix31-21) est le choix par défaut : il couvre les feux de solides, de liquides et de gaz, et reste utilisable sur un appareil électrique. La poudre est salissante — c'est le prix de la polyvalence, et c'est totalement secondaire face à un feu.
+Pour un logement, un [extincteur à poudre ABC de 2 kg](https://www.amazon.fr/s?k=extincteur+poudre+abc+2kg&tag=survivalix31-21) est le modèle qu'on croise le plus souvent dans les logements : sa poudre dite polyvalente vise les feux de solides, de liquides et de gaz. Avant d'acheter, vérifie sur l'étiquette les classes de feu et les usages prévus par le fabricant, notamment près d'appareils sous tension. La poudre est salissante — c'est le prix de la polyvalence, et c'est totalement secondaire face à un feu.
 
-En cuisine, la friteuse et la poêle d'huile méritent une règle à part, parce que c'est là qu'on se blesse le plus souvent : **jamais d'eau sur de l'huile en feu.** L'eau se vaporise instantanément et projette l'huile enflammée en une gerbe de flammes. On coupe la source de chaleur, et on étouffe avec un couvercle ou une [couverture anti-feu certifiée EN 1869](https://www.amazon.fr/s?k=couverture+anti+feu+en+1869&tag=survivalix31-21). Une couverture à 15 € au mur de la cuisine est probablement l'achat le plus rentable de cette liste.
+En cuisine, la friteuse et la poêle d'huile méritent une règle à part : **jamais d'eau sur de l'huile en feu.** L'eau se vaporise instantanément et projette l'huile enflammée en une gerbe de flammes. On coupe la source de chaleur, et on étouffe avec un couvercle ou une [couverture anti-feu certifiée EN 1869](https://www.amazon.fr/s?k=couverture+anti+feu+en+1869&tag=survivalix31-21). Une couverture accrochée au mur de la cuisine est probablement l'achat le plus rentable de cette liste.
 
 Le geste connexe à connaître : où couper l'électricité. Si tu ne sais pas identifier ton disjoncteur général en dix secondes, dans le noir, va lire [comment lire ton tableau électrique](/atelier/comprendre-tableau-electrique-disjoncteur) — c'est une compétence de vingt minutes qui sert bien au-delà du cas incendie.
 
@@ -90,10 +90,10 @@ Une chose à trancher franchement : l'attachement aux objets tue. Les papiers se
 
 ## Après
 
-Une fois dehors, tu appelles le 18 ou le 112, tu donnes l'adresse exacte, l'étage, ce qui brûle, et tu dis combien de personnes manquent. Tu restes joignable et visible pour les secours. Le 18 comme le 112 te mènent aux pompiers ; pour toutes les autres situations, notre guide des [numéros d'urgence](/manuel/numeros-urgence-france-lequel-appeler) t'aide à choisir le bon sans hésiter.
+Une fois dehors, tu appelles le 18 ou le 112, tu donnes l'adresse exacte, l'étage, ce qui brûle, et tu dis combien de personnes manquent. Tu restes joignable et visible pour les secours. Le 18 joint directement les pompiers, et le 112, numéro d'urgence européen, te met aussi en relation avec les secours ; pour toutes les autres situations, notre guide des [numéros d'urgence](/manuel/numeros-urgence-france-lequel-appeler) t'aide à choisir le bon sans hésiter.
 
-Si quelqu'un est sorti mais présente une toux persistante, des suies autour du nez ou de la bouche, une voix modifiée ou une confusion, c'est une possible inhalation de fumées : c'est un motif d'évaluation médicale, même sans brûlure visible. Les [gestes qui sauvent](/manuel/premiers-secours-gestes-qui-sauvent) valent aussi ici, avec le même ordre des priorités.
+Si quelqu'un est sorti mais présente une toux persistante, des suies autour du nez ou de la bouche, une voix modifiée ou une confusion, c'est une possible inhalation de fumées : appelle les secours (15, 18 ou 112) sans attendre, même sans brûlure visible et même si la personne dit aller bien, car certains signes peuvent n'apparaître qu'après coup. Les [gestes qui sauvent](/manuel/premiers-secours-gestes-qui-sauvent) valent aussi ici, avec le même ordre des priorités.
 
 *Cet article est un rappel de consignes de prévention et ne remplace ni une formation aux premiers secours, ni les instructions des sapeurs-pompiers sur place. En cas d'incendie, suis les consignes des secours, qui prévalent toujours sur ce que tu as lu ici.*
 
-*Sources : Ministère de la Santé (incendies domestiques, risques de la vie courante) ; loi n° 2010-238 du 9 mars 2010 et norme NF EN 14604 (Légifrance, Fédération nationale des sapeurs-pompiers de France) ; Fire Safety Research Institute — UL Research Institutes, programme « Close Before You Doze » (essais sur la ventilation horizontale, températures et concentrations de CO porte ouverte / porte fermée) ; consignes de sécurité civile des préfectures (que faire en cas d'incendie) ; travaux universitaires sur l'intoxication par les fumées d'incendie (thèse, HAL/DUMAS) ; norme EN 1869 (couvertures anti-feu).*
+*Sources : services de l'État (préfectures de Loire-Atlantique, d'Indre-et-Loire, de la Vienne et de l'Oise : campagnes et consignes sur l'incendie domestique et les détecteurs de fumée) ; ministère de la Transition écologique — « Détecteurs de fumée - mode d'emploi » ; loi n° 2010-238 du 9 mars 2010, article R142-2 du Code de la construction et de l'habitation et norme NF EN 14604 (Légifrance) ; Fire Safety Research Institute — UL Research Institutes, programme « Close Before You Doze » (essais sur la ventilation horizontale, températures et concentrations de CO porte ouverte / porte fermée) ; consignes de sécurité civile des préfectures (que faire en cas d'incendie) ; travaux universitaires sur l'intoxication par les fumées d'incendie (thèse, HAL/DUMAS) ; norme EN 1869 (couvertures anti-feu).*
