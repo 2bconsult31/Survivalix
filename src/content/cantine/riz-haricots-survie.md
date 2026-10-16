@@ -37,7 +37,7 @@ Pour 2 personnes, un repas complet :
 - **400ml d'eau ou de bouillon** (cube de bouillon déshydraté = or en situation de crise)
 - **1 oignon** ou oignon en poudre déshydratée
 - **Cumin, paprika, sel** — les épices de base qui changent tout
-- Optionnel : tomates en conserve, ail en poudre, poivre, piment
+- Optionnel : tomates en conserve (ou un bocal de notre [sauce tomate maison](/cantine/sauce-tomate-conserve-maison)), ail en poudre, poivre, piment
 
 En version stockage longue durée, les haricots secs sont plus intéressants que les conserves : le ratio idéal pour les stocks de survie est 2 parts de riz blanc sec pour 1 part de haricots secs, ce qui fournit environ 2 000 calories par personne et par jour.
 

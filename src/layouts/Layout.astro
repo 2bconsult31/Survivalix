@@ -4,7 +4,8 @@ import '../styles/global.css';
 const { 
   title, 
   description = "Survivalix — Le site de survie pour tout le monde. Guides pratiques, recettes, outils interactifs et humour post-apo.",
-  image = "/og-image.jpg"
+  image = "/og-image.jpg",
+  robots = "index, follow"
 } = Astro.props;
 
 const url = Astro.url;
@@ -45,7 +46,7 @@ const url = Astro.url;
     <meta property="og:image" content={image} />
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:site_name" content="Survivalix" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content={robots} />
 
     <!-- Google tag (gtag.js) — chargé après le rendu initial pour ne pas bloquer le LCP -->
     <script>

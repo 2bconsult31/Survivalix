@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import ArticleSEO from '../components/ArticleSEO.astro';
+import RelatedArticles from '../components/RelatedArticles.astro';
 
 const { frontmatter } = Astro.props;
 const hasImage = frontmatter.image && frontmatter.image !== '';
@@ -213,6 +214,8 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
         </div>
       </aside>
     </div>
+
+    <RelatedArticles tags={frontmatter.tags} />
 
     <footer>
       <div class="footer-inner">

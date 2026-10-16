@@ -17,7 +17,7 @@ Ce n'est pas une négligence du texte officiel : la liste est pensée pour un fo
 
 Un adulte peut tenir 72 heures sur des conserves et de l'eau embouteillée sans y penser deux fois. Un nourrisson non. Son alimentation dépend d'un dosage précis, d'une eau dont la composition compte, et d'un intervalle de temps court entre préparation et consommation. Sa thermorégulation est immature : il se refroidit et se réchauffe bien plus vite qu'un adulte, ce qui change complètement la logique du matériel « chaleur » du kit classique. Et son hygiène — couches, change, lavage — n'a pas d'équivalent dans le sac standard.
 
-Le bon réflexe n'est pas de dupliquer le kit adulte en miniature. C'est d'ajouter un module séparé, pensé pour l'âge exact du bébé au moment où tu le prépares — parce que ce qu'il faut à 2 mois n'a presque rien à voir avec ce qu'il faut à 18 mois.
+Le bon réflexe n'est pas de dupliquer le kit adulte en miniature. C'est d'ajouter un module séparé, pensé pour l'âge exact du bébé au moment où tu le prépares — parce que ce qu'il faut à 2 mois n'a presque rien à voir avec ce qu'il faut à 18 mois. Notre [générateur de kit 72h](/outils/generateur-kit-72h) le fait pour toi : indique l'âge du bébé, il ajoute le module adapté à ta checklist.
 
 ## Le kit selon l'âge
 
@@ -45,7 +45,7 @@ Le micro-ondes est à éviter dans tous les cas, coupure ou pas : la chaleur se 
 
 Le kit adulte standard inclut une couverture de survie. Ne la pose jamais directement sur un bébé. Elle ne respire pas, isole mal un corps aussi petit, et présente un risque d'étouffement bien réel chez un nourrisson qui ne peut pas la repousser lui-même.
 
-La meilleure protection thermique pour un bébé, c'est le contact : le portage en écharpe ou porte-bébé physiologique transmet la chaleur du corps adulte et reste la solution la plus fiable en évacuation ou en coupure de chauffage. Complète avec plusieurs couches de vêtements superposées plutôt qu'un seul gros pull, et surveille les extrémités — mains, pieds, nez — premiers indicateurs visibles d'un bébé qui a froid.
+La meilleure protection thermique pour un bébé, c'est le contact : le portage en écharpe ou porte-bébé physiologique transmet la chaleur du corps adulte et reste la solution la plus fiable en évacuation ou en [coupure de chauffage](/manuel/panne-chauffage-hiver-que-faire). Complète avec plusieurs couches de vêtements superposées plutôt qu'un seul gros pull, et surveille les extrémités — mains, pieds, nez — premiers indicateurs visibles d'un bébé qui a froid.
 
 ## Hygiène et couches : les quantités réelles pour 72h
 

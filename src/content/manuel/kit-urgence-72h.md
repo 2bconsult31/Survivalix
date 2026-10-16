@@ -41,6 +41,8 @@ Jusqu'à ce que le robinet ne coule plus.
 
 Le minimum recommandé est de **6 litres par personne pour 72h** — 2 litres par jour pour boire, plus l'hygiène de base. Et prévois plus large si tu peux : quand il fait chaud, avec un enfant, ou si tu dois marcher, tu consommes davantage.
 
+Pour connaître le total de ton foyer, notre [calculateur de stock d'eau](/outils/calculateur-stock-eau) fait la multiplication à ta place.
+
 **Ce qu'il faut avoir :**
 - Bouteilles d'eau minérale fermées (format 1,5L — plus maniables qu'un bidon)
 - Pastilles de purification d'eau type Micropur — au cas où tu dois utiliser une source douteuse
@@ -64,6 +66,8 @@ La contrainte : tout doit se consommer sans cuisson ni réfrigération. Contrain
 
 **L'approche Survivalix :**
 Stocke ce que tu manges normalement. Le piège classique du débutant : acheter des trucs "survie" spéciaux qu'on n'a jamais goûtés. En situation de stress, manger quelque chose de familier fait une différence réelle — psychologiquement et physiquement.
+
+Pour savoir quelle quantité prévoir selon la taille de ton foyer, notre [calculateur de rations alimentaires](/outils/calculateur-rations-alimentaires) fait le compte en calories.
 
 **Pour les familles avec enfants :**
 Compotes en gourde, petits gâteaux, céréales sèches. Prévois 30% de calories supplémentaires pour les enfants actifs.
@@ -174,10 +178,14 @@ Passe une nuit sans électricité chez toi volontairement. Tu vas découvrir ce 
 
 En 5 semaines, pour moins de 200€, tu as un kit solide.
 
+Ce parcours est détaillé semaine par semaine, avec le budget de chaque étape, dans notre [liste de courses du débutant](/manuel/liste-courses-prepper-debutant).
+
 ## Télécharge la checklist complète
 
 Toute cette liste en image prête à imprimer — format A4, design Survivalix.
 
 [Télécharger la checklist Kit 72h](/ressources/checklist-kit-72h.png)
+
+Tu préfères une liste calculée pour ton foyer, enfants, bébé et animaux compris ? Notre [générateur de kit 72h](/outils/generateur-kit-72h) te prépare une checklist personnalisée, à cocher au fur et à mesure.
 
 *Sources : Croix-Rouge française, FEMA (USA), The Prepared.*

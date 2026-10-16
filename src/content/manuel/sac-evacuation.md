@@ -60,7 +60,7 @@ C'est la catégorie la plus sous-estimée — et la plus importante pour la suit
 
 ### Premiers secours et médicaments
 
-Une trousse de premiers secours compacte : compresses stériles, pansements variés, désinfectant, sparadrap, gants nitrile, coussin hémostatique. Et **vos médicaments sur ordonnance** pour au moins 3 jours — c'est souvent la chose la plus difficile à récupérer en urgence.
+Une trousse de premiers secours compacte : compresses stériles, pansements variés, désinfectant, sparadrap, gants nitrile, coussin hémostatique (notre guide de la [trousse de premiers secours maison](/atelier/trousse-premiers-secours) détaille quoi y mettre et quoi laisser de côté). Et **vos médicaments sur ordonnance** pour au moins 3 jours — c'est souvent la chose la plus difficile à récupérer en urgence.
 
 ## Le sac — comment bien le choisir
 
