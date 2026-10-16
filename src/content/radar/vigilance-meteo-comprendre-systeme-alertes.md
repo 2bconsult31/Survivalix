@@ -1,7 +1,7 @@
 ---
 title: "Vigilance orange, rouge, jaune : ce que le système d'alerte météo dit vraiment"
 seo_title: "Vigilance météo France : comprendre les couleurs d'alerte"
-description: "39 départements en orange fin août 2026 : voici ce que chaque couleur de vigilance signifie réellement, et ce qu'il faut faire selon le niveau annoncé."
+description: "Orages en série fin août 2026 : ce que chaque couleur de vigilance météo signifie vraiment, et ce qu'il faut faire selon le niveau annoncé sur la carte."
 date: 2026-08-31
 tags: ["vigilance", "meteo", "alerte", "orages", "radar"]
 rubrique: "radar"
@@ -11,7 +11,7 @@ image_alt: "Illustration vintage d'une carte de France avec des zones colorées 
 
 Tu vois orange sur la carte, tu t'inquiètes une seconde puis tu oublies. Tu vois jaune, tu n'y penses même pas. Les deux réactions ratent l'essentiel du système.
 
-Fin août 2026, la France enchaîne les vigilances orange : 39 départements le 27 août pour des orages violents, une vingtaine encore ce dimanche, avec une nouvelle canicule annoncée pour début septembre. Le bon moment pour comprendre ce que ces couleurs disent vraiment, avant la prochaine alerte plutôt que pendant.
+Fin août 2026, la France enchaîne les vigilances orange : le 27 août, une large partie du pays, du Massif central au Nord, est passée en orange pour des orages violents. Le bon moment pour comprendre ce que ces couleurs disent vraiment, avant la prochaine alerte plutôt que pendant.
 
 ## Quatre couleurs, pas trois
 
@@ -29,7 +29,7 @@ Météo-France a délibérément choisi quatre niveaux plutôt que trois. Avec s
 
 La vigilance couvre le vent violent, les orages, les avalanches, la neige-verglas, la canicule, le grand froid, la [pluie-inondation](/manuel/inondation-logement-que-faire), les vagues-submersion, et les crues via le réseau Vigicrues. Chaque département affiche la couleur du phénomène le plus dangereux en cours, mais le détail par risque reste consultable en cliquant sur la carte.
 
-La canicule fonctionne différemment des autres phénomènes. Le jaune correspond à un pic de chaleur ponctuel, un ou deux jours. L'orange marque le franchissement d'un vrai seuil officiel — température de jour et de nuit dépassées pendant au moins trois jours et trois nuits consécutifs — et déclenche le Plan National Canicule : ouverture des registres de personnes vulnérables en mairie, mise à disposition de salles climatisées. On l'a déjà détaillé plus largement dans notre article sur [la canicule en ville](/radar/canicule-ville-2026).
+La canicule fonctionne différemment des autres phénomènes. Le jaune correspond à un pic de chaleur ponctuel, un ou deux jours. L'orange marque le franchissement de seuils officiels fixés département par département : une chaleur intense et qui dure, de jour comme de nuit, calculée sur plusieurs jours d'affilée — et déclenche le Plan National Canicule : ouverture des registres de personnes vulnérables en mairie, mise à disposition de salles climatisées. On l'a déjà détaillé plus largement dans notre article sur [la canicule en ville](/radar/canicule-ville-2026).
 
 ## Ce que tu dois vraiment faire selon le niveau
 
@@ -41,6 +41,6 @@ Le rouge, lui, ne se négocie pas : suis les consignes diffusées, quelles qu'el
 
 La carte officielle est mise à jour au moins deux fois par jour, à 6h et 16h, sur vigilance.meteofrance.fr — c'est la seule source à considérer comme fiable en temps réel, devant les relais presse qui peuvent avoir un train de retard sur les mises à jour. Une [radio météo à piles](https://www.amazon.fr/s?k=radio+meteo+a+piles&tag=survivalix31-21) reste une bonne option de secours pour recevoir les bulletins si internet et électricité flanchent en même temps.
 
-Le gouvernement français a d'ailleurs consacré une partie de son [guide de survie officiel de 2025](/radar/guide-gouvernement-france-2025) à la lecture de ces alertes — un signe que comprendre ce système fait partie des réflexes de base recommandés, pas d'un excès de prudence.
+Le guide « Tous responsables », publié par le gouvernement fin 2025, renvoie d'ailleurs vers la carte de vigilance dans ses réflexes face aux risques ([on l'a décortiqué ici](/radar/guide-gouvernement-france-2025)) — un signe que comprendre ce système fait partie des réflexes de base recommandés, pas d'un excès de prudence.
 
-*Sources : Météo-France (vigilance.meteofrance.fr), Géorisques (gouvernement français).*
+*Sources : Météo-France — « Qu'est-ce que la Vigilance » et « Vigilance : Questions et réponses » ; Service-public.fr — actualité vigilance météo ; ministère de la Santé — « La gestion sanitaire des vagues de chaleur » ; SGDSN — guide « Tous responsables ».*
