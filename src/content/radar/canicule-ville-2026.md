@@ -1,7 +1,7 @@
 ---
 title: "Canicule en ville : ce que personne ne vous dit vraiment (et comment tenir)"
 seo_title: "Canicule 2026 : Survivre à la Chaleur en Appartement"
-description: "50 départements en rouge en juin 2026. La canicule urbaine tue plus que la rurale. Conseils concrets pour survivre à la chaleur en appartement, sourcés et vérifiés."
+description: "72 départements en rouge le 25 juin 2026 : pourquoi la ville encaisse plus mal la chaleur, et des conseils concrets et sourcés pour tenir en appartement."
 date: 2026-07-11
 tags: ["canicule", "chaleur", "ville", "urgence", "2026", "radar"]
 rubrique: "radar"

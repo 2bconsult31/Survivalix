@@ -25,7 +25,7 @@ Ce n'est donc pas une catastrophe rare. C'est un rendez-vous saisonnier, et l'au
 
 ## Le vrai piège, c'est la voiture
 
-Les consignes officielles le disent sans détour : moins de 30 cm d'eau suffisent à emporter une voiture. À cette hauteur, la voiture flotte, les roues ne mordent plus, le courant fait le reste.
+Les consignes officielles le disent sans détour : moins de 30 cm d'eau suffisent à emporter une voiture. Dès cette hauteur, ta voiture peut perdre prise et le courant peut l'embarquer, toi avec.
 
 Le scénario classique n'est pas spectaculaire. Une route connue, un passage sous la voie ferrée, un gué que tu traverses tous les jours. L'eau a l'air peu profonde, tu passes quand même. C'est exactement le réflexe à casser.
 

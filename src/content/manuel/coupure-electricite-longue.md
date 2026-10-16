@@ -23,7 +23,7 @@ Ce guide couvre les deux scénarios : ce qu'il faut faire pendant une coupure, e
 
 **1. Identifier l'origine de la panne.** Vérifiez d'abord votre tableau électrique — un disjoncteur déclenché est une panne locale que vous pouvez résoudre vous-même. Si le tableau est normal, regardez par la fenêtre : les lampadaires sont-ils éteints ? Les voisins sont-ils dans le noir ? Tant que vous ignorez d'où vient la coupure, une seule question compte : le problème s'arrête-t-il à votre porte, ou touche-t-il tout le quartier ?
 
-**2. Ne pas ouvrir le frigo ni le congélateur.** C'est le réflexe le plus contre-intuitif — et le plus important. Résistez à l'envie d'aller « jeter un œil » aux aliments : c'est la porte fermée qui les protège. Frigo et congélateur sont conçus pour garder le froid sans courant, environ 4 à 6 heures pour le premier, 24 à 48 heures pour un congélateur bien rempli. Chaque ouverture réduit ce délai.
+**2. Ne pas ouvrir le frigo ni le congélateur.** C'est le réflexe le plus contre-intuitif — et le plus important. Résistez à l'envie d'aller « jeter un œil » aux aliments : c'est la porte fermée qui les protège. Frigo et congélateur sont conçus pour garder le froid sans courant, environ 4 heures pour le premier, environ 48 heures pour un congélateur bien rempli (24 heures s'il est à moitié vide). Chaque ouverture réduit ce délai.
 
 **3. S'informer.** Consultez le site Enedis ou appelez le 09 70 83 19 70 (numéro Enedis, non surtaxé) pour connaître la durée estimée de la coupure. Si votre téléphone est déchargé, c'est le moment où vous allez regretter de ne pas avoir votre radio à piles.
 
@@ -47,7 +47,7 @@ Les solutions par ordre de praticité :
 
 C'est souvent la première source de stress lors d'une coupure longue. Voici ce que les données disent réellement.
 
-**Le frigo :** porte fermée, vos aliments restent au froid environ 4 à 6 heures après le début de la coupure. Passé ce délai, un tri s'impose. Côté rescapés : légumes, fruits, confitures, fromages à pâte cuite, gâteaux, ketchup, mayonnaise du commerce et yaourts encore fermés. Côté suspects, potentiellement dangereux : viande, poisson, crème fraîche, œufs, lait, fromages à pâte molle, plats cuisinés et tout ce qui a déjà été entamé.
+**Le frigo :** porte fermée, vos aliments restent au froid environ 4 heures après le début de la coupure. Passé ce délai, un tri s'impose. Côté rescapés : légumes, fruits, confitures, fromages à pâte cuite, gâteaux, ketchup, mayonnaise du commerce et yaourts encore fermés. Côté suspects, potentiellement dangereux : viande, poisson, crème fraîche, œufs, lait, fromages à pâte molle, plats cuisinés et tout ce qui a déjà été entamé.
 
 **Le congélateur :** bien rempli, il tient sa température environ 48 heures ; à moitié vide, comptez plutôt 24 heures.
 
