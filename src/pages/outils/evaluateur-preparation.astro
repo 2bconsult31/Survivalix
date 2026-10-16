@@ -99,7 +99,7 @@ import Layout from '../../layouts/Layout.astro';
         { label: "3 jours (le kit 72h)", points: 7 },
         { label: "1 semaine ou plus", points: 10 }
       ],
-      reco: "Pas assez de réserves alimentaires. 3 jours minimum, 2 semaines idéalement.",
+      reco: "Pas assez de réserves alimentaires. Les autorités demandent de quoi tenir 72h avec de la nourriture qui se garde et se mange sans cuisson : commence par là, tu pourras étoffer ensuite à ton rythme.",
       lien: "/cantine"
     },
     {
@@ -121,7 +121,7 @@ import Layout from '../../layouts/Layout.astro';
         { label: "Aucune trousse", points: 0 },
         { label: "Une trousse mais je n'ai jamais vérifié le contenu", points: 3 },
         { label: "Une trousse correcte, contenu vérifié récemment", points: 7 },
-        { label: "Une trousse complète avec garrot et coussin hémostatique", points: 10 }
+        { label: "Une trousse complète, vérifiée, et je sais me servir de chaque élément", points: 10 }
       ],
       reco: "Monte une vraie trousse de premiers secours. Le kit du commerce de base ne suffit pas pour les urgences réelles.",
       lien: "/atelier/trousse-premiers-secours"
@@ -147,7 +147,7 @@ import Layout from '../../layouts/Layout.astro';
         { label: "Oui, une radio à piles", points: 8 },
         { label: "Oui, une radio à manivelle/solaire — autonome", points: 10 }
       ],
-      reco: "Une radio à piles ou manivelle est essentielle. Quand les réseaux saturent, c'est souvent le seul moyen de rester informé.",
+      reco: "Une radio à piles ou à manivelle fait partie du kit recommandé par les autorités. Quand internet et le réseau mobile flanchent, c'est elle qui te transmet les consignes officielles.",
       lien: "/manuel/kit-urgence-72h"
     },
     {
@@ -183,19 +183,19 @@ import Layout from '../../layouts/Layout.astro';
         { label: "Oui, une petite (moins de 10 000 mAh)", points: 6 },
         { label: "Oui, une grande (20 000 mAh+) toujours chargée", points: 10 }
       ],
-      reco: "Une batterie externe de 20 000 mAh rechargée en permanence, c'est la base. Ton téléphone = ta lampe, ta carte, ta radio de secours.",
+      reco: "Une batterie externe toujours chargée, c'est la base. Ton téléphone = ta lampe, ta carte, ta radio de secours.",
       lien: "/manuel/kit-urgence-72h"
     },
     {
       id: "formation",
-      texte: "Tu as suivi une formation premiers secours (PSC1, GQS ou équivalent) ?",
+      texte: "Tu as suivi une formation premiers secours (PSC, ex-PSC1, GQS ou équivalent) ?",
       options: [
         { label: "Non, jamais", points: 0 },
         { label: "Il y a très longtemps, j'ai tout oublié", points: 2 },
         { label: "Oui, GQS (2h) — les bases", points: 7 },
-        { label: "Oui, PSC1 ou plus — je suis à jour", points: 10 }
+        { label: "Oui, PSC (ex-PSC1) ou plus — je suis à jour", points: 10 }
       ],
-      reco: "La formation GQS (2h, gratuite ou presque) te donne les gestes qui sauvent. Aucun article ne remplace ça. Croix-Rouge, Protection Civile, Pompiers — partout en France.",
+      reco: "La sensibilisation GQS (2h, à petit prix et parfois gratuite lors des journées de sensibilisation) te donne les gestes qui sauvent. Aucun article ne remplace ça. Croix-Rouge, Protection Civile, Pompiers — partout en France.",
       lien: "/atelier/trousse-premiers-secours"
     }
   ];
@@ -204,19 +204,19 @@ import Layout from '../../layouts/Layout.astro';
     {
       min: 0, max: 30,
       titre: "Citoyen non préparé",
-      desc: "Tu pars de zéro — et c'est OK. La plupart des gens sont dans ce cas. La bonne nouvelle : quelques heures et moins de 50€ changent radicalement la donne. Commence par l'eau et les conserves.",
+      desc: "Tu pars de zéro — et c'est OK. Tu es loin d'être seul dans ce cas. La bonne nouvelle : quelques heures et un petit budget changent radicalement la donne. Commence par l'eau et les conserves.",
       couleur: "#8B2500"
     },
     {
       min: 31, max: 50,
       titre: "Conscient mais pas prêt",
-      desc: "Tu sais que ça manque, mais tu n'as pas encore agi. C'est le stade le plus courant — la prise de conscience sans le passage à l'action. Comble les lacunes une par une, dans l'ordre.",
+      desc: "Tu sais que ça manque, mais tu n'as pas encore agi. C'est un grand classique — la prise de conscience sans le passage à l'action. Comble les lacunes une par une, dans l'ordre.",
       couleur: "#8B2500"
     },
     {
       min: 51, max: 70,
       titre: "En bonne voie",
-      desc: "Tu as une base solide. Quelques trous à boucher, mais tu tiendrais 72h correctement. Niveau suivant : passer de la survie immédiate à l'autonomie sur 2 semaines.",
+      desc: "Tu as une base solide. Quelques trous à boucher, mais tu tiendrais 72h correctement. Niveau suivant : peaufiner ton kit 72h et allonger ton autonomie petit à petit.",
       couleur: "#6B7C45"
     },
     {
@@ -228,7 +228,7 @@ import Layout from '../../layouts/Layout.astro';
     {
       min: 86, max: 100,
       titre: "Survivaliste urbain confirmé",
-      desc: "Impressionnant. Tu as fait le travail. Tu es parmi les 5% de la population vraiment préparée à tenir sans infrastructure. La prochaine étape, c'est former ton entourage — parce qu'en crise, tes voisins deviennent tes alliés.",
+      desc: "Impressionnant. Tu as fait le travail. Tu fais partie de la (petite) bande des gens vraiment prêts à tenir sans infrastructure. La prochaine étape, c'est former ton entourage — parce qu'en crise, tes voisins deviennent tes alliés.",
       couleur: "#F5A623"
     }
   ];

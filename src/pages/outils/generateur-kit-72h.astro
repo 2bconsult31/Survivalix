@@ -104,7 +104,7 @@ import Layout from '../../layouts/Layout.astro';
   </div>
 
   <p class="result-sources">
-    Quantités basées sur les recommandations Croix-Rouge française, ANSES et FEMA, et sur les repères
+    Liste inspirée des recommandations de la Sécurité civile, du guide « Tous responsables » du SGDSN, de Géorisques et de la Croix-Rouge française, et des repères
     de notre guide kit d'urgence bébé et nourrisson. Ta progression est sauvegardée uniquement sur cet
     appareil (localStorage) — elle n'est jamais envoyée ni partagée.
   </p>
@@ -171,15 +171,15 @@ import Layout from '../../layouts/Layout.astro';
       {
         nom: 'EAU',
         items: [
-          { id: 'eau-bouteilles', label: `${bouteilles} bouteilles d'eau 1,5L (${totalLitres} L au total pour 72h)` },
+          { id: 'eau-bouteilles', label: `${bouteilles} bouteilles d'eau 1,5L (${totalLitres} L pour 72h : c'est le minimum officiel, prévois plus si tu as la place, pour l'hygiène ou s'il fait chaud)` },
           { id: 'eau-pastilles', label: 'Pastilles de purification (type Micropur), au cas où' }
         ]
       },
       {
         nom: 'NOURRITURE',
         items: [
-          { id: 'nourriture-conserves', label: `${Math.max(2, Math.ceil(personnes * 1.5))} conserves (légumineuses, thon, sardines)` },
-          { id: 'nourriture-barres', label: `${Math.max(3, personnes * 2)} barres énergétiques ou biscuits secs` },
+          { id: 'nourriture-conserves', label: 'Conserves qui se mangent sans cuisson, de quoi tenir 3 jours pour tout le foyer (légumineuses, thon, sardines)' },
+          { id: 'nourriture-barres', label: 'Barres énergétiques ou biscuits secs, en complément des conserves' },
           { id: 'nourriture-ouvreboite', label: '1 ouvre-boîte manuel — vraiment, ne l\'oublie pas' },
           ...(vals.enfants > 0 ? [{ id: 'nourriture-enfants', label: 'Compotes en gourde et céréales sèches pour les enfants' }] : [])
         ]
@@ -188,7 +188,7 @@ import Layout from '../../layouts/Layout.astro';
         nom: 'LUMIÈRE & ÉNERGIE',
         items: [
           { id: 'energie-lampes', label: `${Math.max(1, Math.ceil(vals.adultes / 2))} lampe(s) frontale(s) + piles de rechange` },
-          { id: 'energie-batterie', label: `${Math.max(1, Math.ceil(personnes / 2))} batterie(s) externe(s) 20 000 mAh` },
+          { id: 'energie-batterie', label: `${Math.max(1, Math.ceil(personnes / 2))} batterie(s) externe(s) chargée(s) (pense à la recharger de temps en temps)` },
           { id: 'energie-radio', label: '1 radio à piles ou à manivelle' },
           { id: 'energie-bougies', label: 'Bougies + briquet ou allumettes imperméables' }
         ]
@@ -205,7 +205,7 @@ import Layout from '../../layouts/Layout.astro';
       {
         nom: 'CHALEUR & VÊTEMENTS',
         items: [
-          { id: 'chaleur-couvertures', label: `${Math.max(1, personnes)} couverture(s) de survie (jamais directement sur un bébé)` },
+          { id: 'chaleur-couvertures', label: `${Math.max(1, personnes)} couverture(s) de survie (pour un bébé : jamais sur le visage ni pour dormir)` },
           { id: 'chaleur-vetements', label: `${Math.max(1, personnes)} tenue(s) de rechange pour 3 jours` },
           { id: 'chaleur-chaussures', label: 'Chaussures de marche solides par adulte' }
         ]
@@ -213,7 +213,7 @@ import Layout from '../../layouts/Layout.astro';
       {
         nom: 'DOCUMENTS',
         items: [
-          { id: 'documents-photocopies', label: 'Photocopies dans une pochette étanche (identité, carte vitale)' },
+          { id: 'documents-photocopies', label: 'Photocopies dans une pochette étanche (identité, carte vitale, ordonnances)' },
           { id: 'documents-numeros', label: 'Numéros de téléphone importants écrits sur papier' },
           { id: 'documents-especes', label: 'Espèces en petites coupures' }
         ]
@@ -232,17 +232,17 @@ import Layout from '../../layouts/Layout.astro';
 
     if (vals.bebes > 0) {
       const laitItem = tranche === 'allaite'
-        ? { id: 'bebe-lait', label: '1 boîte de lait 1er âge de secours (en cas de baisse de lactation)' }
-        : { id: 'bebe-lait', label: `${vals.bebes} boîte(s) de lait 1er âge en poudre (900g)` };
+        ? { id: 'bebe-lait', label: '1 boîte de lait 1er âge de secours, au cas où (l\'allaitement reste à poursuivre tant que c\'est possible)' }
+        : { id: 'bebe-lait', label: `${vals.bebes} boîte(s) de son lait infantile habituel en poudre (celui adapté à son âge)` };
 
       categories.push({
         nom: 'MODULE BÉBÉ',
         items: [
-          { id: 'bebe-couches', label: `${totalCouches} couches pour 72h` },
+          { id: 'bebe-couches', label: 'Couches pour 72h : compte les changes d\'une journée type, multiplie par trois, et ajoute une bonne marge' },
           laitItem,
           { id: 'bebe-biberons', label: `${Math.max(2, vals.bebes * 2)} biberons` },
-          { id: 'bebe-echarpe', label: 'Écharpe ou porte-bébé physiologique (jamais de couverture de survie sur un bébé)' },
-          { id: 'bebe-thermometre', label: '1 thermomètre frontal bébé' }
+          { id: 'bebe-echarpe', label: 'Écharpe ou porte-bébé physiologique (pratique à l\'intérieur ; dehors par grand froid, préfère une poussette où il peut bouger)' },
+          { id: 'bebe-thermometre', label: '1 thermomètre électronique adapté au bébé (demande conseil en pharmacie)' }
         ]
       });
     }
