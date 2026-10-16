@@ -6,7 +6,7 @@ date: 2026-10-16
 tags: ["inondation", "pluie-inondation", "crue", "logement", "assurance", "catastrophe naturelle"]
 rubrique: "manuel"
 image: "/images/manuel/inondation-logement-que-faire.jpg"
-image_alt: "Illustration rétro d'un salon d'appartement dont le sol est recouvert d'eau, avec des papiers rangés en hauteur sur une étagère"
+image_alt: "Illustration rétro d'une femme équipée d'une lampe frontale qui monte à l'étage avec ses papiers dans une pochette étanche, le salon inondé et des voitures submergées dehors"
 ---
 
 L'eau commence à entrer sous la porte du garage. Ta voiture est en bas, tes cartons de souvenirs aussi. Le réflexe est immédiat : descendre, vite, sauver ce qui peut l'être.
