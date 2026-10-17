@@ -8,6 +8,10 @@ assemble clips/NN.* dans l'ordre et à la durée indiqués, pose le logo et les
 textes selon les zones du CLAUDE.md, ajoute la musique (crêtes à -1 dB) et
 exporte en 1080 × 1920 dans reels/<dossier>/export/<dossier>.mp4.
 
+Aucun fichier vidéo n'est versionné : clips/ et export/ sont dans le .gitignore.
+Les clips ne sont présents que pendant la session de montage ; le MP4 exporté
+est livré à Boris en téléchargement, jamais enregistré dans le dépôt.
+
 Dépendances : ffmpeg (avec libass), Python 3 + Pillow.
 """
 import re
@@ -253,6 +257,8 @@ def main():
 
     sortie = dossier / "export" / f"{dossier.name}.mp4"
     sortie.parent.mkdir(exist_ok=True)
+    if not (dossier / "clips").is_dir():
+        die("dossier clips/ absent : dépose les clips de la session dans clips/ (01.mp4, 02.mp4…)")
 
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
@@ -297,7 +303,7 @@ def main():
     sonde = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
                             "stream=width,height,codec_name,r_frame_rate:format=duration", "-of",
                             "default=nw=1", str(sortie)], capture_output=True, text=True).stdout
-    print(f"Export : {sortie.relative_to(ROOT)}")
+    print(f"Export : {sortie.relative_to(ROOT)} (non versionné : à livrer en téléchargement)")
     print(sonde.strip())
     if musique:
         pic_final = crete(sortie)

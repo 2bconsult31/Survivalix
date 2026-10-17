@@ -22,3 +22,10 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Survivalix Social : aucun fichier vidéo dans le dépôt
+survivalix-social/reels/*/clips/
+survivalix-social/reels/*/export/
+*.mp4
+*.mov
+*.webm
