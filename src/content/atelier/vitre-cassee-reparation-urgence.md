@@ -55,8 +55,8 @@ Pour une ouverture large ou très exposée au vent, superposer une planche de bo
 
 ## Le matériel à garder sous la main
 
-- [Bâche ou film polyéthylène épais](https://www.amazon.fr/s?k=bache+polyethylene+protection+fenetre)
-- [Ruban adhésif toilé résistant extérieur](https://www.amazon.fr/s?k=ruban+adhesif+toile+exterieur+resistant)
+- [Bâche ou film polyéthylène épais](https://www.amazon.fr/s?k=bache+polyethylene+protection+fenetre&tag=survivalix31-21)
+- [Ruban adhésif toilé résistant extérieur](https://www.amazon.fr/s?k=ruban+adhesif+toile+exterieur+resistant&tag=survivalix31-21)
 - Une chute de contreplaqué de taille correcte, gardée au garage ou à la cave
 - Gants épais dédiés au ramassage de débris
 
@@ -64,4 +64,4 @@ Autant d'éléments qui trouvent naturellement leur place à côté du reste de 
 
 *Sources : Code des assurances, article L113-2 (Légifrance) ; DGCCRF (« Assurance multirisque habitation : renseignez-vous ») ; ministère de l'Intérieur (portail Ma Sécurité, plainte en ligne) ; INRS (« Risques de coupure : solutions de prévention ») ; Allianz, Matmut, ChronoServe, Le Juste Pro.*
 
-*Note : les liens produits de cet article pointent vers des résultats de recherche Amazon, sans lien d'affiliation actif à ce jour.*
+*Les liens Amazon de cet article sont des liens affiliés : si tu achètes après avoir cliqué, Survivalix touche une petite commission, sans surcoût pour toi.*
