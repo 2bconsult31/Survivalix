@@ -1,7 +1,7 @@
 ---
 title: "Kit d'urgence bébé et nourrisson : ce que le kit standard ne couvre pas"
 seo_title: "Kit d'urgence bébé : ce que le kit 72h ne prévoit pas"
-description: "Le kit 72h officiel ne mentionne les bébés qu'en trois mots. Voici comment compléter le tien par âge, du biberon en situation de coupure d'eau à la rotation du stock."
+description: "La liste officielle du kit 72h prévoit petits pots et lait infantile, et c'est à peu près tout. Voici comment compléter ton kit par âge, du biberon au stock."
 date: 2026-08-13
 tags: ["kit urgence", "bébé", "nourrisson", "biberon", "manuel"]
 rubrique: "manuel"
@@ -9,9 +9,9 @@ image: "/images/articles/kit-urgence-bebe-nourrisson.jpg"
 image_alt: "Illustration vintage d'une mère portant son bébé en écharpe à côté d'un kit d'urgence ouvert contenant biberons, couverture et trousse de secours"
 ---
 
-Le kit d'urgence 72h recommandé par la Sécurité civile tient sur une infographie. Radio à piles, trousse de premiers secours, conserves, vêtements chauds, couverture de survie, lampe de poche, papiers dans une pochette étanche. Un poste entier de la liste officielle est consacré à la nourriture non périssable — et le bébé y apparaît en trois mots, glissés entre parenthèses : « petits pots bébé ». Rien d'autre. Pas de lait infantile, pas d'eau spécifique, pas de couches.
+Le kit d'urgence 72h recommandé par la Sécurité civile tient sur une infographie. Radio à piles, trousse de premiers secours, conserves, vêtements chauds, couverture de survie, lampe de poche, papiers dans une pochette étanche. Un poste entier de la liste officielle est consacré à la nourriture non périssable — et le bébé y apparaît en trois mots, glissés entre parenthèses : « petits pots bébé ». Le guide « Tous responsables » du SGDSN (2025) ajoute le lait infantile 1er âge prêt à l'emploi. Pour le reste (eau du biberon, couches, change), c'est à toi de construire le module bébé.
 
-Ce n'est pas une négligence du texte officiel : la liste est pensée pour un foyer générique, pas pour chaque profil. Mais si tu as un nourrisson à la maison, ces trois mots ne suffisent pas à couvrir ce qui change vraiment. Un bébé invalide d'un coup trois des quatre piliers du kit standard : l'eau qu'il faut mesurer et sécuriser pour un biberon, l'alimentation qui dépend de son âge et pas d'une boîte de conserve, et la gestion de la chaleur, radicalement différente pour un petit corps qui perd sa chaleur bien plus facilement qu'un adulte. Le kit pour adulte reste valable. Il a juste besoin d'un module bébé à côté, pas d'un ajout de dernière minute.
+Ce n'est pas une négligence du texte officiel : la liste est pensée pour un foyer générique, pas pour chaque profil. Mais si tu as un nourrisson à la maison, ces quelques mots ne suffisent pas à couvrir ce qui change vraiment. Un bébé invalide d'un coup trois des quatre piliers du kit standard : l'eau qu'il faut mesurer et sécuriser pour un biberon, l'alimentation qui dépend de son âge et pas d'une boîte de conserve, et la gestion de la chaleur, radicalement différente pour un petit corps qui perd sa chaleur bien plus facilement qu'un adulte. Le kit pour adulte reste valable. Il a juste besoin d'un module bébé à côté, pas d'un ajout de dernière minute.
 
 ## Ce qu'un bébé change dans un kit déjà prêt
 
@@ -49,7 +49,7 @@ Le kit adulte standard inclut une couverture de survie. Ne la pose jamais direct
 
 ## Hygiène et couches : les quantités réelles pour 72h
 
-Les besoins varient fortement selon l'âge. En moyenne, un nouveau-né utilise 8 à 10 couches par jour, un nourrisson de 1 à 6 mois se stabilise autour de 6 à 8, et ce chiffre continue de baisser avec la diversification alimentaire. Pour un kit 72h, compte large : entre 20 et 30 couches selon l'âge exact de ton enfant, plutôt qu'un stock pile-poil.
+Les besoins varient fortement selon l'âge et d'un bébé à l'autre. Pour un kit 72h, le plus fiable reste ton propre compteur : note combien de couches ton bébé utilise sur une journée ordinaire, multiplie par trois et ajoute une bonne marge, plutôt qu'un stock pile-poil.
 
 Ajoute des lingettes ou un lot de gants de toilette lavables si l'eau vient à manquer, une crème pour l'érythème fessier, et un sac étanche pour isoler les couches usagées si l'évacuation des déchets est perturbée. Ces quantités sont des repères de planification, pas des règles absolues : adapte-les à ton bébé, pas l'inverse.
 
@@ -69,4 +69,4 @@ Côté matériel, quelques repères concrets : du [lait infantile 1er âge en po
 
 Un kit d'urgence pour bébé n'est pas un objet qu'on prépare une fois et qu'on range. C'est un stock vivant, qui suit la croissance de l'enfant plus vite que celle de la famille.
 
-*Sources : ANSES (« Biberon : comment le préparer et le conserver ? », carafes filtrantes), Ameli (« Bien préparer un biberon », « Bien se protéger du froid », « Comment bien prendre la température ? », « Comment bien coucher un bébé ? »), HAS (« Prise en charge de la fièvre chez l'enfant »), 1000 premiers jours (« Protéger bébé des températures extrêmes »), Santé publique France (« Le Guide de l'allaitement maternel »), Enedis (consignes en cas de coupure), Sécurité civile — kit d'urgence 72h (securite-civile.interieur.gouv.fr).*
+*Sources : ANSES (« Biberon : comment le préparer et le conserver ? », carafes filtrantes), Ameli (« Bien préparer un biberon », « Bien se protéger du froid », « Comment bien prendre la température ? », « Comment bien coucher un bébé ? »), HAS (« Prise en charge de la fièvre chez l'enfant »), 1000 premiers jours (« Protéger bébé des températures extrêmes »), Santé publique France (« Le Guide de l'allaitement maternel »), SGDSN (guide « Tous responsables », 2025), Enedis (consignes en cas de coupure), Sécurité civile — kit d'urgence 72h (securite-civile.interieur.gouv.fr).*

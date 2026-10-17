@@ -1,7 +1,7 @@
 ---
-title: "Panne de chauffage en hiver : ce que la loi t'impose (et ce qu'elle ne dit pas)"
+title: "Panne de chauffage en hiver : ce que dit la loi (et ce qu'elle ne dit pas)"
 seo_title: "Panne de chauffage en hiver : que faire, quels droits"
-description: "18°C minimum, c'est la loi. Diagnostic rapide, gestes immédiats, risque de monoxyde de carbone et démarches si tu es locataire : le guide complet."
+description: "Chauffage en panne en plein hiver ? Ce que dit vraiment la loi, les gestes qui dépannent, le piège du monoxyde de carbone et les recours du locataire."
 date: 2026-09-19
 tags: ["chauffage", "hiver", "panne", "locataire", "manuel"]
 rubrique: "manuel"
@@ -9,7 +9,7 @@ image: "/images/articles/panne-chauffage-hiver-que-faire.jpg"
 image_alt: "Illustration vintage d'un radiateur froid dans un salon avec une couverture chauffante et une bougie posée à côté"
 ---
 
-18°C. C'est la température minimale que la loi impose dans les pièces principales de ton logement, décret n°2002-120 du 30 janvier 2002 à l'appui. En dessous, ton logement n'est légalement pas considéré comme décent — que tu sois propriétaire ou locataire, que la panne vienne d'une chaudière défaillante ou d'un chauffage collectif à l'arrêt.
+18 °C. C'est le chiffre qu'on retrouve dans le Code de la construction et de l'habitation : les équipements de chauffage d'un logement doivent permettre de maintenir 18 °C au centre des pièces (article R171-11). À l'autre bout de l'échelle, le Code de l'énergie plafonne le chauffage d'un logement occupé à 19 °C en moyenne (article R241-26), et à 16 °C ou 8 °C quand il est inoccupé plus de 24 ou 48 heures (article R241-27). Entre les deux, aucun texte ne fixe de température minimale à respecter chez soi : ce qu'exige la loi, c'est un logement décent, avec une installation qui permet un chauffage normal (décret n° 2002-120 du 30 janvier 2002). Un chauffage en panne qui ne chauffe plus rien ne coche évidemment pas cette case, que la panne vienne d'une chaudière défaillante ou d'un chauffage collectif à l'arrêt.
 
 La plupart des gens subissent une panne de chauffage comme une fatalité à attendre. C'est une erreur à deux niveaux : sur le plan de la sécurité, où certains réflexes de dépannage improvisé sont dangereux, et sur le plan des droits, où le délai d'attente n'a pas à être aussi long qu'on le croit.
 
@@ -51,7 +51,7 @@ Documente tout au fur et à mesure : relevés de température datés, échanges 
 
 ## Qui est le plus exposé
 
-L'Organisation Mondiale de la Santé recommande 21°C dans les pièces de vie et 18°C dans les chambres. En dessous de 17°C, le risque de complications augmente nettement pour les enfants en bas âge, les personnes âgées et les personnes atteintes de maladies chroniques — le froid prolongé favorise notamment les infections respiratoires, particulièrement chez ces publics plus vulnérables.
+Les lignes directrices de l'Organisation mondiale de la santé sur le logement et la santé (2018) retiennent au moins 18 °C à l'intérieur pendant la saison froide pour protéger la santé. Et Santé publique France rappelle que le froid favorise les maladies cardiovasculaires et respiratoires, avec en première ligne les enfants, les personnes âgées et les personnes atteintes de certaines maladies chroniques.
 
 Si un foyer avec un enfant en bas âge, une personne âgée ou une personne malade traverse une panne de chauffage, la démarche auprès du bailleur ou du syndic mérite d'être accélérée, en le précisant noir sur blanc dans le courrier : un bailleur ou un syndic a nettement plus de mal à traîner quand il sait qu'un bébé ou une personne fragile grelotte.
 
@@ -63,4 +63,4 @@ Une [couverture chauffante électrique](https://www.amazon.fr/s?k=couverture+cha
 
 Ces trois éléments rejoignent naturellement ton [kit d'urgence 72h](/manuel/kit-urgence-72h) — la chaleur fait partie des priorités de base, hiver ou pas.
 
-*Sources : décret n°2002-120 du 30 janvier 2002 (critères de décence du logement), Organisation Mondiale de la Santé (recommandations de température intérieure), ADIL et ANIL, Légifrance (Code civil, articles 1719 et 1720), Santé publique France (« Comment réduire le risque d'intoxication au monoxyde de carbone ? », « Grand froid »), ARS (services communaux d'hygiène et de santé).*
+*Sources : Légifrance (Code de la construction et de l'habitation, article R171-11 ; Code de l'énergie, articles R241-26 et R241-27 ; décret n° 2002-120 du 30 janvier 2002 relatif au logement décent), Organisation mondiale de la santé (« Lignes directrices sur le logement et la santé », 2018), ministère de la Transition écologique (« Chauffage dans les bâtiments »), ADIL et ANIL, Légifrance (Code civil, articles 1719 et 1720), Santé publique France (« Comment réduire le risque d'intoxication au monoxyde de carbone ? », « Grand froid »), ARS (services communaux d'hygiène et de santé).*

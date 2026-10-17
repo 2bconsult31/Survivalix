@@ -35,7 +35,7 @@ C'est le cœur du guide. Trois priorités, dans l'ordre :
 
 **3. Rester informé et communiquer** — une radio à piles pour suivre les informations officielles, les numéros d'urgence notés sur papier (pas juste dans le téléphone), une batterie externe chargée.
 
-Le guide recommande également de placer le kit dans un endroit accessible facilement — pas au fond de la cave, pas au grenier — et de le vérifier une fois par an.
+Le guide recommande également de placer le kit dans un endroit accessible facilement — pas au fond de la cave, pas au grenier. Côté entretien, Géorisques conseille de le vérifier au moins une fois par an.
 
 Rien de révolutionnaire pour quiconque s'intéresse au sujet. Mais c'est la première fois que l'État français valide officiellement ces recommandations dans un document grand public.
 
