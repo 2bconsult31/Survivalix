@@ -51,7 +51,7 @@ La solution la plus légère à transporter. Quelques grammes au fond de ta poch
 
 Les deux types de pastilles qu'on trouve en France :
 
-**Pastilles au dioxyde de chlore (Micropur Forte, Aquatabs)** — le meilleur choix. Efficaces contre bactéries, virus et Giardia. Dose et temps d'attente : suis la notice du fabricant. Elles laissent un léger goût chloré mais très supportable.
+**[Pastilles au dioxyde de chlore](https://www.amazon.fr/s?k=pastilles+dioxyde+de+chlore+purification+eau&tag=survivalix31-21) (Micropur Forte, Aquatabs)** — le meilleur choix. Efficaces contre bactéries, virus et Giardia. Dose et temps d'attente : suis la notice du fabricant. Elles laissent un léger goût chloré mais très supportable.
 
 **Pastilles à l'iode** — efficaces mais déconseillées pour un usage prolongé (effet thyroïde), et moins efficaces contre le Cryptosporidium. Réserver pour le kit d'urgence de secours uniquement.
 

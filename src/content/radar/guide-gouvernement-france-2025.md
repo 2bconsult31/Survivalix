@@ -33,7 +33,7 @@ C'est le cœur du guide. Trois priorités, dans l'ordre :
 
 **2. Avoir chaud et se soigner** — couverture de survie, trousse de premiers secours, médicaments de base et sur ordonnance pour au moins 3 jours, lampe torche avec piles, radio à piles ou à manivelle.
 
-**3. Rester informé et communiquer** — une radio à piles pour suivre les informations officielles, les numéros d'urgence notés sur papier (pas juste dans le téléphone), une batterie externe chargée.
+**3. Rester informé et communiquer** — une [radio à piles](https://www.amazon.fr/s?k=radio+a+piles+portable&tag=survivalix31-21) pour suivre les informations officielles, les numéros d'urgence notés sur papier (pas juste dans le téléphone), une batterie externe chargée.
 
 Le guide recommande également de placer le kit dans un endroit accessible facilement — pas au fond de la cave, pas au grenier. Côté entretien, Géorisques conseille de le vérifier au moins une fois par an.
 

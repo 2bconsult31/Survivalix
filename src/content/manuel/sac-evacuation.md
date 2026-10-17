@@ -45,7 +45,7 @@ Léger et compact, un tapis de sol rend service aussi bien en forêt que sur le 
 
 **Lampe frontale** avec piles neuves — les deux mains libres restent essentielles. **Batterie externe chargée** pour maintenir votre téléphone en vie. Une radio FM/AM, à piles ou à manivelle, vous garde branché en continu : point sur la situation, alertes et consignes des secours.
 
-Un **sifflet** — signal sonore audible à plusieurs centaines de mètres, utile si vous êtes bloqué ou blessé. Un **miroir de signalisation** si vous partez en zone outdoor. Une **boussole** et une **carte papier** de votre région — si les réseaux mobiles tombent, votre GPS est inutile.
+Un **[sifflet](https://www.amazon.fr/s?k=sifflet+de+survie&tag=survivalix31-21)** — signal sonore audible à plusieurs centaines de mètres, utile si vous êtes bloqué ou blessé. Un **miroir de signalisation** si vous partez en zone outdoor. Une **boussole** et une **carte papier** de votre région — si les réseaux mobiles tombent, votre GPS est inutile.
 
 ### Documents et argent
 

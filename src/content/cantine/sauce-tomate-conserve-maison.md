@@ -21,7 +21,7 @@ Chaque été, des kilos de tomates finissent à la poubelle parce que le jardin 
 
 ## Le matériel
 
-- Des bocaux en verre à couvercle avec joint (type Le Parfait ou Weck), vérifiés sans ébréchure
+- Des [bocaux en verre à couvercle avec joint](https://www.amazon.fr/s?k=bocaux+verre+joint+conserve&tag=survivalix31-21) (type Le Parfait ou Weck), vérifiés sans ébréchure
 - Une grande marmite pouvant contenir les bocaux entièrement immergés
 - Un entonnoir à conserve
 - Une pince à bocaux (ou de longues pinces de cuisine)

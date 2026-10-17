@@ -36,6 +36,8 @@ Ne réarme jamais dans la précipitation — comprendre d'abord évite de reprod
 
 ## La procédure de réarmement, étape par étape
 
+Si la coupure t'a plongé dans le noir, une [lampe frontale](https://www.amazon.fr/s?k=lampe+frontale+led&tag=survivalix31-21) te laisse les deux mains libres pour t'occuper du tableau.
+
 1. Repère le levier qui n'est pas aligné avec les autres — position basse ("0") ou intermédiaire
 2. Vérifie visuellement qu'aucun fil n'est apparent, noirci ou fondu autour du disjoncteur — sans toucher à l'intérieur du tableau
 3. Débranche les appareils suspects sur le circuit concerné, selon le diagnostic ci-dessus

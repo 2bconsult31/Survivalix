@@ -101,7 +101,7 @@ Ces éléments ne sont pas obligatoires dans une trousse de base, mais ils font 
 
 Le choix de la boîte compte plus qu'on ne le croit : elle doit rendre le matériel facile à atteindre, le protéger et le garder bien rangé.
 
-**La boîte :** choisir une boîte hermétique à compartiments, de préférence rigide et résistante à l'humidité. Une boîte de rangement alimentaire Tupperware de taille moyenne fait très bien l'affaire pour moins de 5€. Les boîtes à médicaments vendues en pharmacie sont aussi une bonne option. Range la trousse au sec, à l'abri de la chaleur et de l'humidité, hors de portée des enfants mais à portée de main.
+**La boîte :** choisir une boîte hermétique à compartiments, de préférence rigide et résistante à l'humidité. Une [boîte de rangement hermétique](https://www.amazon.fr/s?k=boite+hermetique+compartiments&tag=survivalix31-21) de taille moyenne fait très bien l'affaire. Les boîtes à médicaments vendues en pharmacie sont aussi une bonne option. Range la trousse au sec, à l'abri de la chaleur et de l'humidité, hors de portée des enfants mais à portée de main.
 
 **L'organisation intérieure :** groupe les éléments par catégorie — plaies/désinfection dans un sachet zip, compresses dans un autre, médicaments séparément. L'objectif : trouver ce qu'on cherche en moins de 10 secondes dans le noir et le stress. Colle une étiquette sur chaque zone.
 

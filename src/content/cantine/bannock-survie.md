@@ -34,7 +34,7 @@ Ce qui le distingue du Hardtack (notre autre recette de pain de survie) : le Ban
 
 Trois raisons qui font la différence quand les choses deviennent sérieuses.
 
-**Zéro équipement spécial.** Une poêle (idéalement en fonte, mais n'importe quelle poêle fait l'affaire), une source de chaleur, un bol pour mélanger. C'est tout. Pas de moule à pain, pas de thermomètre, pas de robot.
+**Zéro équipement spécial.** Une poêle (idéalement une [poêle en fonte](https://www.amazon.fr/s?k=poele+en+fonte&tag=survivalix31-21), mais n'importe laquelle fait l'affaire), une source de chaleur, un bol pour mélanger. C'est tout. Pas de moule à pain, pas de thermomètre, pas de robot.
 
 **Zéro technique avancée.** Contrairement à un pain levé qui nécessite du pétrissage, du temps de pousse et une gestion précise de la chaleur, le Bannock tolère les approximations. Trop de farine ? Ajoute de l'eau. Trop liquide ? Ajoute de la farine. La pâte est prête en deux minutes.
 

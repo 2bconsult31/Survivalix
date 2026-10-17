@@ -80,7 +80,7 @@ Une coupure d'électricité la nuit, dans un appartement, c'est immédiatement d
 - **Lampe frontale** avec piles neuves de rechange — les deux mains libres, c'est indispensable
 - Bougies + briquet ou allumettes imperméables
 - **Batterie externe 20 000 mAh minimum** + câbles pour ton téléphone
-- **Radio à manivelle ou à piles** — recommandée par les autorités pour suivre les consignes officielles, même quand internet et le réseau mobile flanchent
+- **[Radio à manivelle ou à piles](https://www.amazon.fr/s?k=radio+manivelle+piles+urgence&tag=survivalix31-21)** — recommandée par les autorités pour suivre les consignes officielles, même quand internet et le réseau mobile flanchent
 
 **La batterie externe c'est la nouvelle lampe de poche.**
 Ton téléphone est ta carte, ta lampe de secours, ta radio et ton seul moyen de communication. Une batterie de 20 000 mAh permet plusieurs recharges complètes d'un smartphone, selon le modèle. Achètes-en deux et garde-les chargées en permanence.

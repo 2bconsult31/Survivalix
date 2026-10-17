@@ -90,7 +90,7 @@ La prochaine canicule n'est pas une hypothèse — c'est une certitude. La quest
 
 Identifiez les lieux frais accessibles près de chez vous (bibliothèque, cinéma, centre commercial) et notez leurs horaires. En cas de canicule sévère, ces lieux peuvent devenir des refuges officiels.
 
-Achetez un thermomètre intérieur. Vous ne pouvez pas gérer ce que vous ne mesurez pas. Un appartement qui semble "chaud" peut être à 32°C ou à 42°C — la différence est critique.
+Achetez un [thermomètre intérieur](https://www.amazon.fr/s?k=thermometre+interieur&tag=survivalix31-21). Vous ne pouvez pas gérer ce que vous ne mesurez pas. Un appartement qui semble "chaud" peut être à 32°C ou à 42°C — la différence est critique.
 
 Constituez un stock d'eau suffisant — minimum 2L par personne et par jour. En canicule sévère, les rayons peuvent se vider rapidement. Notre guide complet sur le stockage de l'eau en appartement vous explique comment faire.
 
