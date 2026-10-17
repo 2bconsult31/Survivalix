@@ -1,0 +1,318 @@
+#!/usr/bin/env python3
+"""Montage d'un Reel Survivalix.
+
+Usage : scripts/montage reels/<dossier>/
+
+Lit reels/<dossier>/script.md (tableau « Plans », champs « - Musique : … »),
+assemble clips/NN.* dans l'ordre et à la durée indiqués, pose le logo et les
+textes selon les zones du CLAUDE.md, ajoute la musique (crêtes à -1 dB) et
+exporte en 1080 × 1920 dans reels/<dossier>/export/<dossier>.mp4.
+
+Dépendances : ffmpeg (avec libass), Python 3 + Pillow.
+"""
+import re
+import shutil
+import subprocess
+import sys
+import tempfile
+from pathlib import Path
+
+from PIL import ImageFont
+
+ROOT = Path(__file__).resolve().parent.parent
+W, H, FPS = 1080, 1920, 30
+
+# Zones Instagram (CLAUDE.md)
+TEXT_TOP, TEXT_BOTTOM = 390, 670           # textes : 20 à 35 % de la hauteur
+TEXT_WIDTH = W - 2 * 70                    # marges latérales
+LOGO_TOP, LOGO_BOTTOM = int(0.14 * H), int(0.20 * H)   # logo : 14 à 20 %
+LOGO_HEIGHT = 96
+LOGO_TOP_MARGIN = LOGO_TOP + 10
+LOGO_RIGHT_MARGIN = 50
+
+# Typographie
+FONT_FILE = ROOT / "assets/fonts/Oswald-Bold.ttf"
+FONT_NAME = "Oswald"
+SIZE_HOOK, SIZE_TEXT, SIZE_MIN = 104, 80, 48
+OUTLINE = 7                                # contour noir épais
+CREME, AMBRE = "F5E6C8", "F5A623"
+
+PEAK_DB = -1.0                             # crête maximale autorisée (CLAUDE.md)
+PEAK_CIBLE = -1.5                          # cible avant encodage AAC, qui peut faire remonter la crête
+DUREE_MIN, DUREE_MAX = 12.0, 20.0
+PLAN_MIN, PLAN_MAX = 1.5, 3.0
+
+CLIP_EXT = (".mp4", ".mov", ".webm", ".mkv", ".png", ".jpg", ".jpeg", ".webp")
+IMAGE_EXT = (".png", ".jpg", ".jpeg", ".webp")
+
+
+def die(msg):
+    sys.exit(f"ERREUR : {msg}")
+
+
+def run(cmd, capture=False):
+    res = subprocess.run(cmd, capture_output=True, text=True)
+    if res.returncode != 0:
+        die(f"commande échouée : {' '.join(map(str, cmd))}\n{res.stderr[-2000:]}")
+    return res.stderr if capture else None
+
+
+def ass_color(hexrgb):
+    return f"&H00{hexrgb[4:6]}{hexrgb[2:4]}{hexrgb[0:2]}"
+
+
+# ---------- lecture de la fiche ----------
+
+def lire_fiche(path):
+    txt = path.read_text(encoding="utf-8")
+    champs = dict(re.findall(r"^- ([^:\n]+?) : (.*)$", txt, re.M))
+    m = re.search(r"^## Plans\s*\n(.*?)(?=^## |\Z)", txt, re.M | re.S)
+    if not m:
+        die("section « ## Plans » introuvable dans script.md")
+    lignes = [l for l in m.group(1).splitlines() if l.strip().startswith("|")]
+    plans = []
+    for l in lignes[2:]:                   # saute l'en-tête et la ligne de séparation
+        cells = [c.strip() for c in l.strip().strip("|").split("|")]
+        if len(cells) < 5 or not cells[0].isdigit():
+            continue
+        num, duree, desc, texte, ambre = cells[:5]
+        try:
+            duree = float(duree.replace(",", "."))
+        except ValueError:
+            die(f"plan {num} : durée illisible « {duree} »")
+        plans.append({"num": int(num), "duree": duree, "desc": desc,
+                      "texte": texte, "ambre": ambre})
+    if not plans:
+        die("aucun plan dans le tableau")
+    plans.sort(key=lambda p: p["num"])
+    return champs, plans
+
+
+def verifier(plans, champs):
+    alertes = []
+    total = sum(p["duree"] for p in plans)
+    if not DUREE_MIN <= total <= DUREE_MAX:
+        die(f"durée totale {total:.1f} s hors de la plage {DUREE_MIN:g}-{DUREE_MAX:g} s")
+    for p in plans:
+        if not PLAN_MIN <= p["duree"] <= PLAN_MAX:
+            alertes.append(f"plan {p['num']} : {p['duree']:g} s (attendu {PLAN_MIN:g} à {PLAN_MAX:g} s)")
+        majuscules = [w for w in re.findall(r"\b[A-ZÀ-Ý]{2,}\b", p["texte"])]
+        if len(majuscules) > 2:
+            alertes.append(f"plan {p['num']} : plus de 2 mots en majuscules ({', '.join(majuscules)})")
+        if p["texte"] and p["ambre"] and p["ambre"].lower() not in p["texte"].lower():
+            alertes.append(f"plan {p['num']} : mot en ambre « {p['ambre']} » absent du texte")
+    accroche = champs.get("Accroche", "").strip()
+    if accroche and plans[0]["texte"] and accroche.replace("/", " ").split() != plans[0]["texte"].replace("/", " ").split():
+        alertes.append("le texte du plan 1 diffère de l'accroche de la fiche")
+    return total, alertes
+
+
+# ---------- textes ----------
+
+def nettoyer(texte):
+    texte = texte.replace(" ", " ").replace(" ", " ")
+    texte = re.sub(r"\s+([?!:;.,…»])", r"\1", texte)   # ponctuation collée au mot
+    texte = re.sub(r"«\s+", "«", texte)
+    return re.sub(r"\s+", " ", texte).strip()
+
+
+def couper(texte, font, ambre=""):
+    """Renvoie les lignes (2 au maximum) qui tiennent dans TEXT_WIDTH, ou None.
+
+    Sans « / » dans la fiche, la coupure est équilibrée (lignes de largeur proche,
+    pas de mot isolé) et ne sépare jamais le mot en ambre.
+    """
+    if "/" in texte:
+        lignes = [nettoyer(x) for x in texte.split("/")]
+    else:
+        propre = nettoyer(texte)
+        if font.getlength(propre) <= TEXT_WIDTH * 0.75:
+            lignes = [propre]
+        else:
+            mots = propre.split()
+            debut_ambre = propre.lower().find(ambre.lower()) if ambre else -1
+            fin_ambre = debut_ambre + len(ambre)
+            meilleur = None
+            for k in range(1, len(mots)):
+                coupe = len(" ".join(mots[:k]))          # position de l'espace de coupure
+                if debut_ambre >= 0 and debut_ambre < coupe < fin_ambre:
+                    continue                            # ne coupe pas le mot en ambre
+                l1, l2 = " ".join(mots[:k]), " ".join(mots[k:])
+                score = max(font.getlength(l1), font.getlength(l2))
+                if meilleur is None or score < meilleur[0]:
+                    meilleur = (score, [l1, l2])
+            lignes = meilleur[1] if meilleur else [propre]
+    if len(lignes) > 2 or any(font.getlength(l) > TEXT_WIDTH for l in lignes):
+        return None
+    return lignes
+
+
+def mise_en_page(texte, taille, ambre=""):
+    while taille >= SIZE_MIN:
+        font = ImageFont.truetype(str(FONT_FILE), taille)
+        lignes = couper(texte, font, ambre)
+        hauteur = len(lignes or [0, 0]) * taille * 1.2 + 2 * OUTLINE
+        if lignes and hauteur <= TEXT_BOTTOM - TEXT_TOP:
+            return lignes, taille
+        taille -= 4
+    die(f"texte trop long pour 2 lignes dans la zone de texte : « {texte} »")
+
+
+def colorer(ligne, ambre):
+    esc = ligne.replace("{", "(").replace("}", ")")
+    if ambre:
+        i = esc.lower().find(ambre.lower())
+        if i >= 0:
+            j = i + len(ambre)
+            return (esc[:i] + "{\\c" + ass_color(AMBRE) + "&}" + esc[i:j]
+                    + "{\\c" + ass_color(CREME) + "&}" + esc[j:])
+    return esc
+
+
+def ts(t):
+    h, rem = divmod(t, 3600)
+    m, s = divmod(rem, 60)
+    return f"{int(h)}:{int(m):02d}:{s:05.2f}"
+
+
+def ecrire_ass(plans, path):
+    out = [
+        "[Script Info]", "ScriptType: v4.00+", f"PlayResX: {W}", f"PlayResY: {H}",
+        "WrapStyle: 2", "ScaledBorderAndShadow: yes", "",
+        "[V4+ Styles]",
+        "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, "
+        "Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, "
+        "Shadow, Alignment, MarginL, MarginR, MarginV, Encoding",
+        f"Style: Texte,{FONT_NAME},{SIZE_TEXT},{ass_color(CREME)},{ass_color(CREME)},&H00000000,&H00000000,"
+        f"-1,0,0,0,100,100,0,0,1,{OUTLINE},0,5,0,0,0,1", "",
+        "[Events]",
+        "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
+    ]
+    t, infos = 0.0, []
+    for i, p in enumerate(plans):
+        debut, fin = t, t + p["duree"]
+        t = fin
+        if not p["texte"]:
+            continue
+        taille_max = SIZE_HOOK if i == 0 else SIZE_TEXT
+        lignes, taille = mise_en_page(p["texte"], taille_max, p["ambre"])
+        corps = "\\N".join(colorer(l, p["ambre"]) for l in lignes)
+        y = (TEXT_TOP + TEXT_BOTTOM) // 2
+        out.append(f"Dialogue: 0,{ts(debut)},{ts(fin)},Texte,,0,0,0,,"
+                   f"{{\\an5\\pos({W // 2},{y})\\fs{taille}}}{corps}")
+        infos.append((p["num"], taille, lignes))
+    path.write_text("\n".join(out) + "\n", encoding="utf-8")
+    return infos
+
+
+# ---------- vidéo ----------
+
+def trouver_clip(dossier, num):
+    for ext in CLIP_EXT:
+        f = dossier / "clips" / f"{num:02d}{ext}"
+        if f.exists():
+            return f
+    die(f"clip du plan {num} introuvable (attendu clips/{num:02d}.mp4 ou .png…)")
+
+
+def preparer_plan(src, duree, dst):
+    cadrage = (f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
+               f"setsar=1,fps={FPS},format=yuv420p")
+    entree = ["-loop", "1", "-framerate", str(FPS), "-i", str(src)] if src.suffix.lower() in IMAGE_EXT \
+        else ["-i", str(src)]
+    run(["ffmpeg", "-y", "-v", "error", *entree, "-t", f"{duree:.3f}", "-vf", cadrage, "-an",
+         "-c:v", "libx264", "-preset", "medium", "-crf", "16", str(dst)])
+    dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                                "-of", "csv=p=0", str(dst)], capture_output=True, text=True).stdout)
+    if dur < duree - 0.05:
+        die(f"{src.name} dure {dur:.2f} s, moins que les {duree:g} s prévues dans la fiche")
+
+
+def crete(fichier):
+    err = run(["ffmpeg", "-v", "info", "-i", str(fichier), "-af", "volumedetect", "-f", "null", "-"],
+              capture=True)
+    m = re.search(r"max_volume: (-?[\d.]+) dB", err)
+    return float(m.group(1)) if m else None
+
+
+def main():
+    if len(sys.argv) != 2:
+        sys.exit(__doc__)
+    dossier = Path(sys.argv[1]).resolve()
+    fiche = dossier / "script.md"
+    if not fiche.exists():
+        die(f"{fiche} introuvable")
+    for outil in ("ffmpeg", "ffprobe"):
+        if not shutil.which(outil):
+            die(f"{outil} n'est pas installé")
+
+    champs, plans = lire_fiche(fiche)
+    total, alertes = verifier(plans, champs)
+    musique = champs.get("Musique", "").strip()
+    musique = None if musique.lower() in ("", "aucune", "non") or musique.startswith("<") else musique
+
+    sortie = dossier / "export" / f"{dossier.name}.mp4"
+    sortie.parent.mkdir(exist_ok=True)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = Path(tmp)
+        liste = []
+        for p in plans:
+            dst = tmp / f"plan{p['num']:02d}.mp4"
+            preparer_plan(trouver_clip(dossier, p["num"]), p["duree"], dst)
+            liste.append(f"file '{dst}'")
+        (tmp / "liste.txt").write_text("\n".join(liste) + "\n")
+        run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", str(tmp / "liste.txt"),
+             "-c", "copy", str(tmp / "assemble.mp4")])
+
+        infos = ecrire_ass(plans, tmp / "textes.ass")
+        logo = ROOT / "assets/logo/logo-survivalix.png"
+        x_logo = f"W-w-{LOGO_RIGHT_MARGIN}"
+
+        cmd = ["ffmpeg", "-y", "-v", "error", "-i", str(tmp / "assemble.mp4"), "-i", str(logo)]
+        if musique:
+            fichier_musique = ROOT / "assets/music" / musique
+            if not fichier_musique.exists():
+                die(f"musique introuvable : assets/music/{musique}")
+            pic = crete(fichier_musique)
+            gain = PEAK_CIBLE - (pic if pic is not None else PEAK_CIBLE)
+            cmd += ["-i", str(fichier_musique)]
+            audio = (f"[2:a]atrim=0:{total:.3f},asetpts=PTS-STARTPTS,volume={gain:.2f}dB,"
+                     f"afade=t=out:st={max(total - 0.25, 0):.3f}:d=0.25,alimiter=limit={10 ** (PEAK_CIBLE / 20):.4f}:level=disabled[a]")
+        else:
+            cmd += ["-f", "lavfi", "-t", f"{total:.3f}", "-i", "anullsrc=r=48000:cl=stereo"]
+            audio = "[2:a]anull[a]"
+        fontsdir = str(ROOT / "assets/fonts").replace(":", "\\:")
+        ass = str(tmp / "textes.ass").replace(":", "\\:")
+        filtre = (f"[1:v]scale=-1:{LOGO_HEIGHT}[logo];"
+                  f"[0:v][logo]overlay=x={x_logo}:y={LOGO_TOP_MARGIN}[v1];"
+                  f"[v1]subtitles='{ass}':fontsdir='{fontsdir}'[v];{audio}")
+        cmd += ["-filter_complex", filtre, "-map", "[v]", "-map", "[a]",
+                "-t", f"{total:.3f}", "-r", str(FPS), "-c:v", "libx264", "-preset", "slow", "-crf", "18",
+                "-pix_fmt", "yuv420p", "-profile:v", "high", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
+                "-movflags", "+faststart", str(sortie)]
+        run(cmd)
+
+    # Contrôles sur le fichier exporté
+    sonde = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+                            "stream=width,height,codec_name,r_frame_rate:format=duration", "-of",
+                            "default=nw=1", str(sortie)], capture_output=True, text=True).stdout
+    print(f"Export : {sortie.relative_to(ROOT)}")
+    print(sonde.strip())
+    if musique:
+        pic_final = crete(sortie)
+        print(f"Crête audio : {pic_final} dB (maximum autorisé {PEAK_DB} dB)")
+        if pic_final is not None and pic_final > PEAK_DB:
+            die("crête audio au-dessus de -1 dB après export")
+    else:
+        print("Musique : aucune (piste audio silencieuse)")
+    print(f"Durée prévue : {total:g} s — logo : {LOGO_HEIGHT} px de haut à {LOGO_TOP_MARGIN} px du haut, "
+          f"en haut à droite — textes centrés à {(TEXT_TOP + TEXT_BOTTOM) // 2} px du haut")
+    for num, taille, lignes in infos:
+        print(f"  plan {num} : {taille} px, {len(lignes)} ligne(s) : {' / '.join(lignes)}")
+    for a in alertes:
+        print(f"ATTENTION : {a}")
+
+
+if __name__ == "__main__":
+    main()
