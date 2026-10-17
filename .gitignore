@@ -29,3 +29,10 @@ survivalix-social/reels/*/export/
 *.mp4
 *.mov
 *.webm
+# Survivalix Social : aucun fichier audio (la musique est ajoutée dans CapCut)
+survivalix-social/**/*.mp3
+survivalix-social/**/*.wav
+survivalix-social/**/*.m4a
+survivalix-social/**/*.aac
+survivalix-social/**/*.ogg
+survivalix-social/**/*.flac
