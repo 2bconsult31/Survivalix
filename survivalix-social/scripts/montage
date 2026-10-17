@@ -3,10 +3,10 @@
 
 Usage : scripts/montage reels/<dossier>/
 
-Lit reels/<dossier>/script.md (tableau « Plans », champs « - Musique : … »),
-assemble clips/NN.* dans l'ordre et à la durée indiqués, pose le logo et les
-textes selon les zones du CLAUDE.md, ajoute la musique (crêtes à -1 dB) et
-exporte en 1080 × 1920 dans reels/<dossier>/export/<dossier>.mp4.
+Lit reels/<dossier>/script.md (tableau « Plans »), assemble clips/NN.* dans
+l'ordre et à la durée indiqués, pose le logo et les textes selon les zones du
+CLAUDE.md et exporte en 1080 × 1920 dans reels/<dossier>/export/<dossier>.mp4,
+sans musique : Boris l'ajoute dans CapCut après le montage (piste audio muette).
 
 Aucun fichier vidéo n'est versionné : clips/ et export/ sont dans le .gitignore.
 Les clips ne sont présents que pendant la session de montage ; le MP4 exporté
@@ -41,8 +41,6 @@ SIZE_HOOK, SIZE_TEXT, SIZE_MIN = 104, 80, 48
 OUTLINE = 7                                # contour noir épais
 CREME, AMBRE = "F5E6C8", "F5A623"
 
-PEAK_DB = -1.0                             # crête maximale autorisée (CLAUDE.md)
-PEAK_CIBLE = -1.5                          # cible avant encodage AAC, qui peut faire remonter la crête
 DUREE_MIN, DUREE_MAX = 12.0, 20.0
 PLAN_MIN, PLAN_MAX = 1.5, 3.0
 
@@ -232,12 +230,6 @@ def preparer_plan(src, duree, dst):
         die(f"{src.name} dure {dur:.2f} s, moins que les {duree:g} s prévues dans la fiche")
 
 
-def crete(fichier):
-    err = run(["ffmpeg", "-v", "info", "-i", str(fichier), "-af", "volumedetect", "-f", "null", "-"],
-              capture=True)
-    m = re.search(r"max_volume: (-?[\d.]+) dB", err)
-    return float(m.group(1)) if m else None
-
 
 def main():
     if len(sys.argv) != 2:
@@ -252,8 +244,6 @@ def main():
 
     champs, plans = lire_fiche(fiche)
     total, alertes = verifier(plans, champs)
-    musique = champs.get("Musique", "").strip()
-    musique = None if musique.lower() in ("", "aucune", "non") or musique.startswith("<") else musique
 
     sortie = dossier / "export" / f"{dossier.name}.mp4"
     sortie.parent.mkdir(exist_ok=True)
@@ -276,18 +266,9 @@ def main():
         x_logo = f"W-w-{LOGO_RIGHT_MARGIN}"
 
         cmd = ["ffmpeg", "-y", "-v", "error", "-i", str(tmp / "assemble.mp4"), "-i", str(logo)]
-        if musique:
-            fichier_musique = ROOT / "assets/music" / musique
-            if not fichier_musique.exists():
-                die(f"musique introuvable : assets/music/{musique}")
-            pic = crete(fichier_musique)
-            gain = PEAK_CIBLE - (pic if pic is not None else PEAK_CIBLE)
-            cmd += ["-i", str(fichier_musique)]
-            audio = (f"[2:a]atrim=0:{total:.3f},asetpts=PTS-STARTPTS,volume={gain:.2f}dB,"
-                     f"afade=t=out:st={max(total - 0.25, 0):.3f}:d=0.25,alimiter=limit={10 ** (PEAK_CIBLE / 20):.4f}:level=disabled[a]")
-        else:
-            cmd += ["-f", "lavfi", "-t", f"{total:.3f}", "-i", "anullsrc=r=48000:cl=stereo"]
-            audio = "[2:a]anull[a]"
+        # Pas de musique au montage : piste audio muette, la musique est ajoutée dans CapCut
+        cmd += ["-f", "lavfi", "-t", f"{total:.3f}", "-i", "anullsrc=r=48000:cl=stereo"]
+        audio = "[2:a]anull[a]"
         fontsdir = str(ROOT / "assets/fonts").replace(":", "\\:")
         ass = str(tmp / "textes.ass").replace(":", "\\:")
         filtre = (f"[1:v]scale=-1:{LOGO_HEIGHT}[logo];"
@@ -305,13 +286,7 @@ def main():
                             "default=nw=1", str(sortie)], capture_output=True, text=True).stdout
     print(f"Export : {sortie.relative_to(ROOT)} (non versionné : à livrer en téléchargement)")
     print(sonde.strip())
-    if musique:
-        pic_final = crete(sortie)
-        print(f"Crête audio : {pic_final} dB (maximum autorisé {PEAK_DB} dB)")
-        if pic_final is not None and pic_final > PEAK_DB:
-            die("crête audio au-dessus de -1 dB après export")
-    else:
-        print("Musique : aucune (piste audio silencieuse)")
+    print("Son : piste muette, musique à ajouter dans CapCut")
     print(f"Durée prévue : {total:g} s — logo : {LOGO_HEIGHT} px de haut à {LOGO_TOP_MARGIN} px du haut, "
           f"en haut à droite — textes centrés à {(TEXT_TOP + TEXT_BOTTOM) // 2} px du haut")
     for num, taille, lignes in infos:

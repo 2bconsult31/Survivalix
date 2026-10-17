@@ -15,8 +15,7 @@ Fiche lue par scripts/montage. Garde les intitulés « - Champ : valeur » et le
 - Article source : https://www.survivalix.fr/<rubrique>/<slug>
 - Format : <geste | scénario | erreur courante | …>
 - Accroche : <accroche exacte, identique au texte du plan 1>
-- Musique : <fichier dans assets/music/, ou « aucune »>
-- Licence musique : <nom de la licence et lien, usage commercial autorisé>
+- Musique : ajoutée par Boris dans CapCut après le montage (aucun fichier audio dans le dépôt)
 - Date de publication prévue : <AAAA-MM-JJ, fixée par Boris>
 
 ## Plans
@@ -47,4 +46,5 @@ Durée totale : 12 à 20 s. Plans de 1,5 à 3 s.
 - [ ] Images validées
 - [ ] Clips validés
 - [ ] Montage validé
+- [ ] Musique ajoutée dans CapCut
 - [ ] Programmé (Metricool)

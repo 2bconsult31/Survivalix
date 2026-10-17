@@ -10,7 +10,8 @@ Ce dépôt sert à monter les Reels de survivalix.fr. Les images et animations s
 
 ## Fichiers et poids du dépôt
 - Aucun fichier vidéo dans le dépôt : reels/*/clips/, reels/*/export/ et les extensions .mp4, .mov et .webm sont dans le .gitignore.
-- Seuls les fichiers légers sont enregistrés : fiches, scripts, logo, polices, images de référence, musiques.
+- Aucun fichier audio dans le dépôt : assets/music/ reste vide, et les extensions audio (.mp3, .wav, .m4a, .aac, .ogg, .flac) sont dans le .gitignore.
+- Seuls les fichiers légers sont enregistrés : fiches, scripts, logo, polices, images de référence.
 - Les clips sont déposés pendant la session de montage ; le MP4 final est livré à Boris en téléchargement.
 
 ## Zones Instagram
@@ -26,6 +27,7 @@ Ce dépôt sert à monter les Reels de survivalix.fr. Les images et animations s
 - Tout texte est ajouté au montage, jamais généré dans l'image.
 
 ## Son
+- La musique est ajoutée par Boris dans CapCut, après le montage. Le script de montage exporte sans musique (piste audio muette).
 - Musique libre de droits avec licence d'usage commercial, crêtes à -1 dB maximum, jamais 0 dB.
 - Pas de voix off pour l'instant.
 - Aucun filigrane d'une autre application.
@@ -45,5 +47,6 @@ Ce dépôt sert à monter les Reels de survivalix.fr. Les images et animations s
 1. Fiche validée par Boris (reels/<dossier>/script.md).
 2. Images générées, validées une par une, rangées dans images/.
 3. Animations générées, validées, rangées dans clips/.
-4. Montage avec scripts/montage, export dans export/, validation du MP4 par Boris.
-5. Programmation via Metricool, à la date indiquée par Boris.
+4. Montage avec scripts/montage, export sans musique dans export/, MP4 livré à Boris en téléchargement.
+5. Musique ajoutée par Boris dans CapCut, puis validation de la version finale.
+6. Programmation via Metricool, à la date indiquée par Boris.
