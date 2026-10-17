@@ -8,6 +8,11 @@ Ce dépôt sert à monter les Reels de survivalix.fr. Les images et animations s
 - Durée : 12 à 20 secondes, jamais plus. Plans de 1,5 à 3 s, coupes franches, pas de fondus.
 - Couper chaque animation avant toute dérive en fin de plan (objets qui changent de forme).
 
+## Fichiers et poids du dépôt
+- Aucun fichier vidéo dans le dépôt : reels/*/clips/, reels/*/export/ et les extensions .mp4, .mov et .webm sont dans le .gitignore.
+- Seuls les fichiers légers sont enregistrés : fiches, scripts, logo, polices, images de référence, musiques.
+- Les clips sont déposés pendant la session de montage ; le MP4 final est livré à Boris en téléchargement.
+
 ## Zones Instagram
 - Les 14 % du haut et les 35 % du bas sont masqués par l'interface des Reels.
 - Logo Survivalix : visible de la première à la dernière image, entre 14 et 20 % de la hauteur, en haut à droite.
@@ -26,6 +31,7 @@ Ce dépôt sert à monter les Reels de survivalix.fr. Les images et animations s
 - Aucun filigrane d'une autre application.
 
 ## Images
+- Références validées : ref-voiture-inondation.jpg, ref-panne-chauffage.jpg et ref-escalier-inondation.jpg (copiées des illustrations du site). Ne pas utiliser les autres images du site comme référence : celles d'avant le 18 septembre 2026 sont dans l'ancien style plat, celle de stocker-eau-appartement est trop plate, et les fiches PNG contiennent du texte. Les 7 images de référence des carrousels seront ajoutées plus tard.
 - Style : copier strictement le rendu des images de references/. Interdits : rendu plat, contour lumineux autour des objets, cadre ou bordure, fond flou photographique, texte ou pseudo-texte, logo, arme, visuel officiel de l'État.
 - Personnages : jamais de capuche relevée en intérieur ni de posture furtive. Aucune caractéristique pouvant être lue comme un cliché.
 
