@@ -35,7 +35,7 @@ Le noir total, c'est ce qui entame le moral le plus vite quand le courant saute.
 
 Les solutions par ordre de praticité :
 
-**Lampe frontale** — le meilleur outil d'éclairage en situation de crise. Les deux mains libres, autonomie de plusieurs heures, portable partout dans l'appartement. C'est l'achat numéro un si vous n'en avez pas encore.
+**[Lampe frontale](https://www.amazon.fr/s?k=lampe+frontale+led&tag=survivalix31-21)** — le meilleur outil d'éclairage en situation de crise. Les deux mains libres, autonomie de plusieurs heures, portable partout dans l'appartement. C'est l'achat numéro un si vous n'en avez pas encore.
 
 **Batterie externe chargée** — votre téléphone allumé en mode lampe de poche dépanne, mais à condition que la batterie externe soit là pour recharger. Une batterie de 20 000 mAh rechargée en permanence vous donne 5 à 6 recharges complètes de smartphone.
 

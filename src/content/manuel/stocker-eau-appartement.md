@@ -45,7 +45,7 @@ Avantages : disponibles partout, aucun équipement spécial, aucune manipulation
 
 ### Pour l'eau du robinet : verre ou inox
 
-Si vous mettez de l'eau du robinet de côté, oubliez la bouteille en plastique. L'ANSES le déconseille : le chlore de l'eau du robinet peut réagir avec le plastique. Préférez des contenants en **verre** ou en **inox**.
+Si vous mettez de l'eau du robinet de côté, oubliez la bouteille en plastique. L'ANSES le déconseille : le chlore de l'eau du robinet peut réagir avec le plastique. Préférez des contenants en **verre** ou en **inox** (une [bouteille en inox](https://www.amazon.fr/s?k=bouteille+inox+alimentaire&tag=survivalix31-21) fait très bien l'affaire).
 
 Et gardez en tête que ce n'est pas une réserve longue durée : selon l'ANSES, l'eau du robinet se conserve 24 à 48 heures au réfrigérateur. C'est une réserve de dépannage, par exemple quand une coupure d'eau est annoncée, pas un stock de fond.
 

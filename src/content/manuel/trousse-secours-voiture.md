@@ -44,7 +44,7 @@ Au-delà du strict minimum légal (triangle + gilet), voici ce qui a vraiment sa
 
 **Le triangle** : dans le coffre est acceptable, puisqu'il n'est pas sensible à la chaleur et n'est utilisé qu'après être sorti du véhicule.
 
-**La trousse de premiers secours** : idéalement dans l'habitacle, à l'abri du soleil direct, plutôt qu'au fond du coffre où on l'oublie, et surtout **jamais garnie de médicaments qu'on ne renouvelle pas régulièrement**. Si tu dois y stocker des traitements ponctuels, privilégie une petite trousse isotherme, ou garde-les avec toi plutôt que dans le véhicule à demeure.
+**La [trousse de premiers secours](https://www.amazon.fr/s?k=trousse+premiers+secours+voiture&tag=survivalix31-21)** : idéalement dans l'habitacle, à l'abri du soleil direct, plutôt qu'au fond du coffre où on l'oublie, et surtout **jamais garnie de médicaments qu'on ne renouvelle pas régulièrement**. Si tu dois y stocker des traitements ponctuels, privilégie une petite trousse isotherme, ou garde-les avec toi plutôt que dans le véhicule à demeure.
 
 ## Le réflexe d'entretien
 

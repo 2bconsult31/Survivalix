@@ -36,7 +36,7 @@ La consigne à donner à toute la famille est simple : "En cas de coup dur, tu a
 
 ## Ce qui marche encore quand le réseau mobile ne marche plus
 
-**La radio à piles ou à manivelle.** Elle ne sert pas à appeler qui que ce soit, mais à recevoir les informations officielles diffusées localement — l'un des canaux sur lesquels les autorités comptent quand internet et le réseau mobile sont à plat : le ministère de l'Intérieur a même signé une convention avec Radio France pour y diffuser ses messages d'alerte.
+**La [radio à piles ou à manivelle](https://www.amazon.fr/s?k=radio+manivelle+piles+urgence&tag=survivalix31-21).** Elle ne sert pas à appeler qui que ce soit, mais à recevoir les informations officielles diffusées localement — l'un des canaux sur lesquels les autorités comptent quand internet et le réseau mobile sont à plat : le ministère de l'Intérieur a même signé une convention avec Radio France pour y diffuser ses messages d'alerte.
 
 **Les talkies-walkies.** Ne te fie pas trop à la portée inscrite sur l'emballage : elle est mesurée dans des conditions idéales, à vue dégagée. En ville, entre les immeubles et le béton, elle fond nettement. Pour rester en contact avec un voisin ou entre deux points d'un même quartier, ça reste redoutablement efficace et ça ne dépend d'aucune antenne.
 

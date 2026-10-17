@@ -117,7 +117,7 @@ Pour un kit de survie cohérent, la règle est "1 c'est 0, 2 c'est 1" — toujou
 
 | Matériel | Notes |
 |---|---|
-| Firesteel | La base : un modèle bien épais dure plus longtemps |
+| [Firesteel](https://www.amazon.fr/s?k=firesteel+pierre+a+feu&tag=survivalix31-21) | La base : un modèle bien épais dure plus longtemps |
 | Briquet à gaz | Toujours avoir un backup classique |
 | Allumettes étanches | Boîte imperméable ou allumettes tempête |
 | Amadou préparé | Coton vaseliné maison ou commercialisé |

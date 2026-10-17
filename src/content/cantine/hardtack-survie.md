@@ -117,7 +117,7 @@ Le Hardtack est l'investissement stockage le plus rentable qui existe en terme d
 | Hardtack cuit et sec | Plusieurs années | Contenant hermétique avec absorbeur d'oxygène, au sec. Contrôle régulier : odeur, moisissure, insectes |
 | Hardtack sous vide | Encore plus longtemps | Sachets sous vide, au frais et au sec. Fais tourner ton stock |
 
-**Le point crucial :** l'humidité est l'ennemi absolu. Stocke tes biscuits dans un contenant hermétique, ajoute un absorbeur d'humidité si possible, et place le tout dans un endroit frais et sec. Un Hardtack qui a pris l'humidité moisit comme n'importe quel pain — toute la magie disparaît dès que l'eau s'en mêle.
+**Le point crucial :** l'humidité est l'ennemi absolu. Stocke tes biscuits dans un contenant hermétique, ajoute un [absorbeur d'humidité](https://www.amazon.fr/s?k=sachet+absorbeur+humidite+alimentaire&tag=survivalix31-21) si possible, et place le tout dans un endroit frais et sec. Un Hardtack qui a pris l'humidité moisit comme n'importe quel pain — toute la magie disparaît dès que l'eau s'en mêle.
 
 Pour un stock longue durée sérieux, fabrique plusieurs fournées, laisse refroidir 24h à l'air libre pour éliminer toute humidité résiduelle, puis stocke sous vide. C'est le format que choisissent les préparateurs qui pensent en décennies plutôt qu'en mois.
 
