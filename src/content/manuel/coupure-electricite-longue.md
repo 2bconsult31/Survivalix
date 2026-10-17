@@ -25,7 +25,7 @@ Ce guide couvre les deux scénarios : ce qu'il faut faire pendant une coupure, e
 
 **2. Ne pas ouvrir le frigo ni le congélateur.** C'est le réflexe le plus contre-intuitif — et le plus important. Résistez à l'envie d'aller « jeter un œil » aux aliments : c'est la porte fermée qui les protège. Frigo et congélateur sont conçus pour garder le froid sans courant, environ 4 heures pour le premier, environ 48 heures pour un congélateur bien rempli (24 heures s'il est à moitié vide). Chaque ouverture réduit ce délai.
 
-**3. S'informer.** Consultez le site Enedis ou appelez le 09 70 83 19 70 (numéro Enedis, non surtaxé) pour connaître la durée estimée de la coupure. Si votre téléphone est déchargé, c'est le moment où vous allez regretter de ne pas avoir votre radio à piles.
+**3. S'informer.** Consultez le site Enedis ou appelez le dépannage d'Enedis (09 72 67 50 suivi des deux chiffres de votre département, joignable 24 h/24) pour connaître la durée estimée de la coupure. Si votre téléphone est déchargé, c'est le moment où vous allez regretter de ne pas avoir votre radio à piles.
 
 **4. Débrancher les appareils sensibles.** Ordinateurs, télévisions, box internet — les surtensions au moment du retour du courant peuvent endommager les équipements électroniques. Débranchez-les ou activez votre parasurtenseur si vous en avez un.
 
@@ -83,27 +83,26 @@ C'est le point qu'on néglige jusqu'au moment où on en a besoin.
 
 **Les numéros importants sur papier.** Si votre téléphone tombe à zéro et que vous devez emprunter celui de quelqu'un d'autre, connaissez-vous par cœur les numéros de vos proches ? Très probablement non. Gardez une liste écrite dans votre kit 72h.
 
-**En cas de coupure longue dépassant 6 heures**, contactez Enedis (09 70 83 19 70) ou consultez la carte des pannes sur enedis.fr via les données mobiles. Vous pouvez avoir droit à un geste commercial ou à un remboursement des aliments perdus via votre assurance habitation.
+**En cas de coupure longue dépassant 6 heures**, contactez le dépannage d'Enedis (09 72 67 50 suivi des deux chiffres de votre département, joignable 24 h/24) ou consultez la carte des pannes sur enedis.fr via les données mobiles. Vous pouvez avoir droit à un geste commercial ou à un remboursement des aliments perdus via votre assurance habitation.
 
 ## Ce qu'il faut préparer avant la prochaine coupure
 
 La coupure d'électricité qui arrive sans prévenir est le test grandeur nature de votre préparation. Voici la liste concrète du matériel minimum à avoir en permanence :
 
-| Matériel | Utilité | Budget |
-|---|---|---|
-| Lampe frontale + piles neuves | Éclairage mains libres | 15-25€ |
-| Batterie externe 20 000 mAh | Recharger téléphone et lampes | 20-35€ |
-| Radio à piles (ou manivelle) | Rester informé sans réseau | 20-40€ |
-| Bougies x10 + briquet | Éclairage de secours | 5-10€ |
-| Couverture de survie | Conserver la chaleur corporelle | 2-4€ |
-| Conserves et aliments sans cuisson | 3 jours d'alimentation sans frigo | 25-40€ |
-| **Total kit de base** | | **~90-160€** |
+| Matériel | Utilité |
+|---|---|
+| Lampe frontale + piles neuves | Éclairage mains libres |
+| Batterie externe 20 000 mAh | Recharger téléphone et lampes |
+| Radio à piles (ou manivelle) | Rester informé sans réseau |
+| Bougies x10 + briquet | Éclairage de secours |
+| Couverture de survie | Conserver la chaleur corporelle |
+| Conserves et aliments sans cuisson | 3 jours d'alimentation sans frigo |
 
 **Deux gestes préventifs à faire dès maintenant :**
 
 Repérez votre tableau électrique et assurez-vous de savoir comment réarmer un disjoncteur. Bien souvent, une « panne » chez soi n'est qu'un disjoncteur déclenché par une surcharge — réglable en quelques secondes si vous savez quoi faire.
 
-Notez le numéro Enedis (09 70 83 19 70) quelque part d'accessible — dans votre téléphone, mais aussi sur papier. En situation de stress avec téléphone déchargé, ce numéro vaut de l'or.
+Notez le numéro de dépannage d'Enedis de votre département (09 72 67 50 + les deux chiffres du département) quelque part d'accessible — dans votre téléphone, mais aussi sur papier. En situation de stress avec téléphone déchargé, ce numéro vaut de l'or.
 
 ## La règle des 3 jours
 

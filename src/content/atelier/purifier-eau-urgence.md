@@ -104,7 +104,7 @@ La méthode la plus high-tech et la plus rapide. Les stylos UV (SteriPen®, Craz
 
 **Avantages :** rapide, aucun goût résiduel, efficace sur tous les pathogènes biologiques, léger.
 
-**Inconvénients :** nécessite une batterie (pense à recharger), inutilisable sur eau trouble sans pré-filtrage, ne traite pas les polluants chimiques, coût à l'achat plus élevé (50-80€).
+**Inconvénients :** nécessite une batterie (pense à recharger), inutilisable sur eau trouble sans pré-filtrage, ne traite pas les polluants chimiques, coût à l'achat plus élevé.
 
 ## Ce qu'il ne faut pas faire
 
@@ -122,12 +122,12 @@ Quelques erreurs classiques qui peuvent transformer un effort de purification en
 
 Le principe de redondance s'applique ici comme pour l'allumage du feu : plusieurs méthodes complémentaires valent mieux qu'une seule méthode parfaite.
 
-| Matériel | Budget | Conservation | Utilité |
-|---|---|---|---|
-| Pastilles Micropur Forte x100 | 15-20€ | 5 ans en emballage fermé | Backup toujours dans le kit |
-| Paille filtrante LifeStraw | 25-35€ | Selon la capacité indiquée par le fabricant | Usage quotidien en crise |
-| Stylo UV SteriPen | 50-80€ | Batterie à recharger | Rapidité + efficacité virale |
-| Tissu de pré-filtrage | 0€ | Illimitée | T-shirt ou bandana propre |
+| Matériel | Conservation | Utilité |
+|---|---|---|
+| Pastilles Micropur Forte x100 | 5 ans en emballage fermé | Backup toujours dans le kit |
+| Paille filtrante LifeStraw | Selon la capacité indiquée par le fabricant | Usage quotidien en crise |
+| Stylo UV SteriPen | Batterie à recharger | Rapidité + efficacité virale |
+| Tissu de pré-filtrage | Illimitée | T-shirt ou bandana propre |
 
 **La combinaison recommandée pour un kit 72h :** pastilles Micropur (légères, backup universel) + paille filtrante (usage quotidien sans gaz ni batterie). Si tu veux le niveau supérieur : ajoute un stylo UV.
 

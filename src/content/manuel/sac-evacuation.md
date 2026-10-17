@@ -68,7 +68,7 @@ Oubliez le sac taillé pour Instagram. Ce qu'il faut :
 
 **Volume :** 30 à 45L pour un adulte seul. Au-delà, le sac devient trop lourd à porter sur la durée. En dessous, vous ne pourrez pas tout mettre.
 
-**Matière :** nylon ou polyester résistant, coutures renforcées, fermetures éclair de qualité. Pas besoin de dépenser 300€ en matériel tactique militaire — un sac de randonnée classique d'une marque sérieuse fait très bien l'affaire.
+**Matière :** nylon ou polyester résistant, coutures renforcées, fermetures éclair de qualité. Pas besoin de dépenser une fortune en matériel tactique militaire — un sac de randonnée classique d'une marque sérieuse fait très bien l'affaire.
 
 **Ergonomie :** sangles rembourrées, ceinture de portage, dos aéré. Un sac mal réglé devient une torture au bout de 2h de marche.
 
@@ -95,7 +95,7 @@ La hiérarchie du poids :
 
 **Surcharger.** La tentation de "mettre au cas où" transforme un sac portable en déménagement. Chaque objet doit avoir une raison claire d'être là.
 
-**Acheter un kit tout fait.** Les kits commerciaux "clé en main" à 50€ contiennent généralement du matériel bas de gamme qui lâche au mauvais moment et des items inutiles qui prennent de la place. Composez le vôtre.
+**Acheter un kit tout fait.** Les kits commerciaux "clé en main" contiennent généralement du matériel bas de gamme qui lâche au mauvais moment et des items inutiles qui prennent de la place. Composez le vôtre.
 
 **Négliger les documents.** En situation d'évacuation, retrouver un hébergement, accéder à ses comptes bancaires, prouver son identité — tout ça nécessite des papiers. C'est la catégorie la plus souvent oubliée.
 
@@ -120,19 +120,6 @@ Un sac d'évacuation n'est jamais fini : il évolue avec vous, avec les saisons,
 
 ---
 
-**Le budget réaliste pour un sac complet :**
-
-| Catégorie | Budget |
-|---|---|
-| Sac à dos 35-45L | 40-80€ |
-| Eau + filtration (LifeStraw + pastilles) | 20-30€ |
-| Nourriture 72h | 15-25€ |
-| Abri (couvertures + poncho) | 10-20€ |
-| Éclairage + communication (lampe + radio + batterie) | 50-80€ |
-| Trousse premiers secours | 20-35€ |
-| Divers (sifflet, paracorde, duct tape) | 10-15€ |
-| **TOTAL par personne** | **~165-285€** |
-
-Un investissement unique, à faire progressivement, qui ne se renouvelle que partiellement chaque année.
+Pas besoin de tout acheter d'un coup : constituez votre sac catégorie par catégorie (eau et filtration, nourriture, abri, éclairage et communication, trousse de secours, divers), en commençant par l'eau. Un investissement à faire progressivement, dont seule une partie se renouvelle chaque année.
 
 *Sources : SGDSN/ORSEC, Gouvernement — kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Croix-Rouge française (« Le sac d'urgence »), FEMA, Ready.gov, NoPanic.fr, Mouton-Résilient.com, Urban Survival District, La Débrouille, Survivalisme-France.com.*
