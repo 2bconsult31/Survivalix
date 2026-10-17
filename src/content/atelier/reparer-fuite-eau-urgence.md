@@ -52,10 +52,10 @@ Le collier de réparation en inox avec joint intérieur est la solution provisoi
 
 Comme pour un [kit d'urgence 72h](/manuel/kit-urgence-72h), la meilleure réparation est celle pour laquelle tu es déjà équipé :
 
-- [Ruban auto-amalgamant en silicone](https://www.amazon.fr/s?k=ruban+auto-amalgamant+silicone+plomberie)
-- [Mastic époxy bicomposant](https://www.amazon.fr/s?k=mastic+epoxy+bicomposant+plomberie)
-- [Collier de réparation inox](https://www.amazon.fr/s?k=collier+de+reparation+inox+plomberie)
-- [Ruban téflon (PTFE)](https://www.amazon.fr/s?k=ruban+teflon+ptfe+plomberie) pour les filetages
+- [Ruban auto-amalgamant en silicone](https://www.amazon.fr/s?k=ruban+auto-amalgamant+silicone+plomberie&tag=survivalix31-21)
+- [Mastic époxy bicomposant](https://www.amazon.fr/s?k=mastic+epoxy+bicomposant+plomberie&tag=survivalix31-21)
+- [Collier de réparation inox](https://www.amazon.fr/s?k=collier+de+reparation+inox+plomberie&tag=survivalix31-21)
+- [Ruban téflon (PTFE)](https://www.amazon.fr/s?k=ruban+teflon+ptfe+plomberie&tag=survivalix31-21) pour les filetages
 - Une clé à molette et une pince multiprise
 - Des chiffons absorbants et un récipient pour l'eau résiduelle — le [ruban adhésif résistant de ton sac d'évacuation](/manuel/sac-evacuation) peut aussi dépanner ponctuellement en attendant mieux
 
@@ -74,4 +74,4 @@ Dans tous les autres cas, une réparation provisoire bien posée tient largement
 
 *Sources : GRDF (« Que faire en cas d'urgence gaz ? ») ; ministère de l'Intérieur, Sécurité civile (« Inondation ») ; Eau de Paris (règlement du service de l'eau) ; Castorama, EkoEnergy, MesDépanneurs.fr, Kolb Décoration.*
 
-*Note : les liens produits de cet article pointent vers des résultats de recherche Amazon, sans lien d'affiliation actif à ce jour.*
+*Les liens Amazon de cet article sont des liens affiliés : si tu achètes après avoir cliqué, Survivalix touche une petite commission, sans surcoût pour toi.*

@@ -89,7 +89,7 @@ La règle d'or : stocke tes épices autant que tes vivres. Un stock de cumin, pa
 
 | Ingrédient | Conservation | Format recommandé |
 |---|---|---|
-| Riz blanc | Plusieurs années, plus encore avec absorbeur d'oxygène | Seau hermétique avec absorbeur d'oxygène |
+| Riz blanc | Plusieurs années, plus encore avec absorbeur d'oxygène | [Seau hermétique alimentaire](https://www.amazon.fr/s?k=seau+hermetique+alimentaire&tag=survivalix31-21) avec absorbeur d'oxygène |
 | Haricots secs | Plusieurs années (meilleurs dans l'année ; plus ils vieillissent, plus ils cuisent mal) | Bocal hermétique ou seau |
 | Haricots en conserve | 2-5 ans (boîte intacte, au frais et au sec) | Conserves du commerce, jeter toute boîte bombée, rouillée ou qui fuit |
 | Cubes de bouillon | Selon la date sur le paquet | Boîte hermétique, au sec |

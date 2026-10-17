@@ -25,7 +25,7 @@ La logique reste la même que celle qu'on détaille dans notre [guide du kit 72h
 
 Rien d'autre ne compte tant que ce point n'est pas réglé. Direction ton supermarché habituel :
 - Des packs de bouteilles d'eau 1,5L, format que tu utilises déjà — vise 6 litres par personne minimum (le repère officiel pour 72 heures), et plus si tu veux de la marge
-- Rien de spécialisé nécessaire à ce stade, sauf si tu veux ajouter des [pastilles de purification](https://www.amazon.fr/s?k=pastilles+purification+eau+micropur) pour une eau de secours douteuse
+- Rien de spécialisé nécessaire à ce stade, sauf si tu veux ajouter des [pastilles de purification](https://www.amazon.fr/s?k=pastilles+purification+eau+micropur&tag=survivalix31-21) pour une eau de secours douteuse
 
 Si tu veux calculer précisément ton besoin selon la taille de ton foyer, notre [calculateur de stock d'eau](/outils/calculateur-stock-eau) fait le calcul en 30 secondes.
 
@@ -34,20 +34,20 @@ Si tu veux calculer précisément ton besoin selon la taille de ton foyer, notre
 Toujours en supermarché classique :
 - Conserves de légumineuses, thon, sardines
 - Biscuits secs, fruits secs, barres de céréales
-- Un [ouvre-boîte manuel](https://www.amazon.fr/s?k=ouvre-boite+manuel) — le détail que tout le monde oublie et qui rend une conserve inutile sans lui
+- Un [ouvre-boîte manuel](https://www.amazon.fr/s?k=ouvre-boite+manuel&tag=survivalix31-21) — le détail que tout le monde oublie et qui rend une conserve inutile sans lui
 
 Pour ne pas acheter au hasard, notre [calculateur de rations alimentaires](/outils/calculateur-rations-alimentaires) te donne une quantité précise selon ton foyer et la durée visée.
 
 ### Semaine 3 — La lumière et l'énergie
 
 Première sortie du rayon supermarché classique :
-- Une [lampe frontale à LED](https://www.amazon.fr/s?k=lampe+frontale+led) avec piles de rechange
-- Une [batterie externe 20 000 mAh minimum](https://www.amazon.fr/s?k=batterie+externe+20000+mah)
-- Une [radio à piles ou à manivelle](https://www.amazon.fr/s?k=radio+manivelle+urgence) pour rester informé si le réseau mobile flanche (voir notre article sur [comment communiquer en situation de crise](/manuel/communiquer-situation-crise))
+- Une [lampe frontale à LED](https://www.amazon.fr/s?k=lampe+frontale+led&tag=survivalix31-21) avec piles de rechange
+- Une [batterie externe 20 000 mAh minimum](https://www.amazon.fr/s?k=batterie+externe+20000+mah&tag=survivalix31-21)
+- Une [radio à piles ou à manivelle](https://www.amazon.fr/s?k=radio+manivelle+urgence&tag=survivalix31-21) pour rester informé si le réseau mobile flanche (voir notre article sur [comment communiquer en situation de crise](/manuel/communiquer-situation-crise))
 
 ### Semaine 4 — La chaleur et les premiers secours
 
-- Une ou deux [couvertures de survie](https://www.amazon.fr/s?k=couverture+de+survie), un des articles les moins chers de toute la liste
+- Une ou deux [couvertures de survie](https://www.amazon.fr/s?k=couverture+de+survie&tag=survivalix31-21), un des articles les moins chers de toute la liste
 - Une trousse de premiers secours basique — pansements, désinfectant, paracétamol. Pour la composer sans payer le superflu des trousses du commerce, suis notre guide de la [trousse de premiers secours maison](/atelier/trousse-premiers-secours) ; et notre [guide des gestes qui sauvent](/manuel/premiers-secours-gestes-qui-sauvent) détaille ce qu'il faut savoir faire avec
 
 ### Semaine 5 — Les documents et le sac lui-même
@@ -79,4 +79,4 @@ Et le jour où tu auras envie de passer des conserves achetées aux conserves fa
 
 *Sources : Géorisques (« Mon kit d'urgence 72H ») ; info.gouv.fr (« Se préparer à une situation d'urgence ») ; guide ["Tous responsables"](https://www.sgdsn.gouv.fr/publications/guide-tous-responsables), Secrétariat général de la Défense et de la Sécurité nationale (SGDSN), novembre 2025.*
 
-*Note : les liens produits de cet article pointent vers des résultats de recherche Amazon, sans lien d'affiliation actif à ce jour.*
+*Les liens Amazon de cet article sont des liens affiliés : si tu achètes après avoir cliqué, Survivalix touche une petite commission, sans surcoût pour toi.*
