@@ -53,7 +53,7 @@ C'est le niveau critique — celui qui fait la différence entre une situation s
 
 ### Pour les brûlures
 
-**Gel pour brûlures** (type Burnshield ou Brûlex) — à appliquer après refroidissement sous l'eau. D'abord, refroidir la brûlure avec de l'eau tempérée (15 à 25 °C), pendant au moins 10 minutes, idéalement 20 — et 10 minutes maximum chez l'enfant, comme le recommande la Croix-Rouge française ; ensuite, la couvrir d'une compresse stérile. Le gel apaise, hydrate, et protège la plaie.
+**Gel pour brûlures** (type Burnshield ou Brûlex) — à appliquer après refroidissement sous l'eau. D'abord, refroidir la brûlure avec de l'eau tempérée (15 à 25 °C), pendant au moins 10 minutes, idéalement 20, comme le recommande la Croix-Rouge française (chez l'enfant, jamais plus de 10 minutes, en gardant le reste de son corps au chaud, et avis médical rapide) ; ensuite, la couvrir d'une compresse stérile. Le gel apaise, hydrate, et protège la plaie.
 
 **Tulle gras** — pour couvrir une brûlure superficielle sans coller à la plaie.
 

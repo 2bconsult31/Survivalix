@@ -1,7 +1,7 @@
 ---
 title: "Canicule et réseau électrique : pourquoi ton courant peut sauter cet été"
 seo_title: "Canicule 2026 : Risque de Coupure de Courant, le Réflexe"
-description: "Troisième épisode caniculaire depuis fin mai 2026, câbles qui surchauffent, dizaines de milliers de foyers déjà touchés : ce qu'il faut savoir et faire."
+description: "Canicule de l'été 2026, câbles souterrains qui surchauffent, des dizaines de milliers de foyers déjà privés de courant : ce qu'il faut savoir et faire."
 date: 2026-07-14
 tags: ["canicule", "electricite", "2026", "radar"]
 rubrique: "radar"
@@ -9,7 +9,7 @@ image: "/images/radar/canicule-reseau-electrique-2026.jpg"
 image_alt: "Transformateur électrique de rue sous une chaleur écrasante, ville en arrière-plan"
 ---
 
-Neuf départements de l'ouest sont passés en vigilance rouge canicule le 10 juillet 2026 — la première fois cette année que ce niveau maximal est déclenché. C'est le troisième épisode de chaleur intense depuis fin mai, et le réseau électrique commence à montrer des signes de fatigue : plus de 100 000 foyers ont déjà subi des coupures locales lors du premier épisode fin juin, dont 6 700 en Île-de-France en une seule journée.
+Le 10 juillet 2026, plusieurs départements de l'ouest sont passés en vigilance rouge canicule, et la liste s'est allongée les jours suivants. Ce n'était pas une première cette année : Santé publique France recensait déjà des départements en rouge pendant la vague de chaleur de la fin juin. Et le réseau électrique commence à tirer la langue : pendant cet épisode de fin juin, Enedis a dû mobiliser sa force d'intervention rapide, et des dizaines de milliers de foyers se sont retrouvés sans courant, à Paris comme ailleurs.
 
 Ce n'est pas un hasard météo isolé. C'est une mécanique précise, qui se reproduit à chaque nouvel épisode — et qu'il vaut mieux comprendre avant qu'elle ne te tombe dessus en pleine canicule.
 
@@ -19,7 +19,7 @@ L'essentiel du réseau électrique passe sous nos pieds, dans des câbles enterr
 
 En surface, le phénomène est différent mais s'ajoute au premier : la chaleur réduit la capacité de transport des lignes aériennes, qui se dilatent et s'affaissent légèrement entre les pylônes — réduisant les marges de sécurité vis-à-vis de la végétation ou des bâtiments proches.
 
-À ça s'ajoute une demande qui explose au pire moment : climatiseurs et ventilateurs tournent tous en même temps aux heures les plus chaudes. Selon RTE, chaque degré supplémentaire au-delà de 25°C fait grimper la consommation nationale d'environ 500 mégawatts. Résultat : le réseau encaisse une fragilité accrue et une demande record, simultanément.
+À ça s'ajoute une demande qui explose au pire moment : climatiseurs et ventilateurs tournent tous en même temps aux heures les plus chaudes. Selon RTE (juin 2026), pendant les fortes chaleurs, chaque degré en plus ajoute environ 0,7 à 1 gigawatt à la consommation nationale, selon l'heure de la journée. Résultat : le réseau encaisse une fragilité accrue et une demande record, simultanément.
 
 ## Ce que dit officiellement RTE
 
@@ -43,4 +43,4 @@ Pour tout le reste — tenir plusieurs heures ou plusieurs jours sans électrici
 
 Une coupure de courant en pleine canicule cumule les problèmes : plus de ventilateur, plus de frigo pour garder l'eau fraîche, parfois plus d'ascenseur pour les personnes à mobilité réduite dans les étages. Notre article sur [comment tenir la chaleur en appartement](/radar/canicule-ville-2026) reste la référence pour la partie santé et confort thermique — celui-ci se concentre sur la partie infrastructure, mais les deux se complètent directement en cas d'épisode combiné.
 
-*Sources : RTE (communiqué de juin 2026, schéma décennal de développement du réseau 2025), Enedis (cité par l'AFP, juin 2026), Météo-France (vigilance canicule), Santé publique France (bulletins canicule 2026), FDA (« Sécurité sanitaire des aliments lors de pannes d'électricité »), L'EnerGeek, Hello Watt, Selectra (juillet 2026).*
+*Sources : Santé publique France (bulletins canicule régionaux 2026), RTE (communiqué de juin 2026, schéma décennal de développement du réseau 2025), Enedis (cité par l'AFP, juin 2026), Météo-France (vigilance canicule), Santé publique France (bulletins canicule 2026), FDA (« Sécurité sanitaire des aliments lors de pannes d'électricité »), L'EnerGeek, Hello Watt, Selectra (juillet 2026).*

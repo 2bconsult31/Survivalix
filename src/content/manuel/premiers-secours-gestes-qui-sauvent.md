@@ -64,7 +64,7 @@ Chaque minute sans intervention fait chuter les chances de survie d'environ 10 %
 
 ### Une brûlure
 
-De l'eau, rien d'autre : de l'eau tempérée (15 à 25 °C), pendant au moins 10 minutes, idéalement 20 — et 10 minutes maximum chez l'enfant, comme le recommande la Croix-Rouge française. Jamais de glace. Retire bijoux et vêtements près de la zone avant que ça ne gonfle, et ne perce jamais une cloque.
+De l'eau, rien d'autre : de l'eau tempérée (15 à 25 °C), pendant au moins 10 minutes, idéalement 20, comme le recommande la Croix-Rouge française. Jamais de glace. Chez l'enfant, la Croix-Rouge française fixe une limite : pas plus de 10 minutes sous l'eau, parce qu'un petit corps se refroidit très vite. Pendant ce temps, couvre le reste de son corps, guette les frissons, la pâleur ou la somnolence, et demande rapidement un avis médical (le 15 ou un médecin). Retire bijoux et vêtements près de la zone avant que ça ne gonfle, et ne perce jamais une cloque.
 
 Le beurre, le dentifrice, les pommades "maison" : oublie tout ça, ça ne fait qu'aggraver les choses. Direction les urgences si la brûlure est étendue, touche le visage, les mains, les organes génitaux, ou si la peau prend un aspect carbonisé ou blanchâtre.
 

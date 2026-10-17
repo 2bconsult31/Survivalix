@@ -110,15 +110,6 @@ import Layout from '../../layouts/Layout.astro';
         </div>
       </div>
 
-      <div class="result-budget">
-        <div class="result-label">// BUDGET ESTIMÉ //</div>
-        <div class="budget-line">
-          <span class="budget-label">Coût approximatif</span>
-          <span class="budget-val" id="budget-val">—</span>
-        </div>
-        <p class="budget-note">Ordre de grandeur maison, sans valeur officielle : les prix bougent selon les marques, les enseignes et l'inflation.</p>
-      </div>
-
       <div class="result-conseil">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12" cy="12" r="10" stroke="#F5A623" stroke-width="1.5"/>
@@ -135,7 +126,7 @@ import Layout from '../../layouts/Layout.astro';
 
       <p class="result-sources">
         Calculs basés sur les recommandations ANSES : 2 600 kcal/jour pour les hommes adultes, 2 100 kcal/jour pour les femmes (NAP 1,63). Moyenne mixte utilisée : 2 350 kcal/adulte/jour. Enfants : 1 800 kcal/jour, une moyenne choisie par nos soins dans la fourchette de référence de l'EFSA pour les 6-12 ans, qui varie beaucoup selon l'âge, le sexe et l'activité (et surestime les besoins des plus petits). Ces valeurs sont indicatives — consultez un professionnel de santé pour des besoins spécifiques.
-        Les besoins caloriques sont des moyennes indicatives — consultez un professionnel de santé pour des besoins spécifiques.
+        Valeurs énergétiques des aliments : table de composition nutritionnelle Ciqual de l'ANSES.
       </p>
 
     </div>
@@ -151,18 +142,19 @@ import Layout from '../../layouts/Layout.astro';
   const CALORIES_ADULTE = 2350; // ANSES : 2600 hommes / 2100 femmes, moyenne mixte
   const CALORIES_ENFANT = 1800; // Moyenne indicative choisie dans la fourchette EFSA 6-12 ans
 
-  // Liste de courses avec kcal pour 100g et prix moyen
+  // Liste de courses : valeurs énergétiques pour 100 g issues de la table Ciqual de l'ANSES
+  // (énergie, règlement UE n° 1169/2011), aliment Ciqual indiqué en commentaire
   const aliments = [
-    { nom: 'Riz blanc', cat: 'Féculents', kcal100g: 360, prixKg: 1.5, unite: 'kg', emoji: '🌾' },
-    { nom: 'Pâtes sèches', cat: 'Féculents', kcal100g: 350, prixKg: 1.2, unite: 'kg', emoji: '🍝' },
-    { nom: 'Haricots secs', cat: 'Protéines', kcal100g: 340, prixKg: 2.5, unite: 'kg', emoji: '🫘' },
-    { nom: 'Lentilles', cat: 'Protéines', kcal100g: 350, prixKg: 2.0, unite: 'kg', emoji: '🫘' },
-    { nom: 'Thon en conserve', cat: 'Protéines', kcal100g: 100, prixKg: 8.0, unite: 'boîtes 150g', emoji: '🐟' },
-    { nom: 'Sardines en conserve', cat: 'Protéines', kcal100g: 200, prixKg: 5.0, unite: 'boîtes 135g', emoji: '🐟' },
-    { nom: 'Huile d\'olive', cat: 'Matières grasses', kcal100g: 900, prixKg: 5.0, unite: 'kg', emoji: '🫙' },
-    { nom: 'Fruits secs (amandes, noix)', cat: 'Snacks', kcal100g: 600, prixKg: 8.0, unite: 'kg', emoji: '🥜' },
-    { nom: 'Chocolat noir 70%', cat: 'Snacks', kcal100g: 550, prixKg: 6.0, unite: 'tablettes 100g', emoji: '🍫' },
-    { nom: 'Biscuits secs', cat: 'Snacks', kcal100g: 450, prixKg: 3.0, unite: 'kg', emoji: '🍪' },
+    { nom: 'Riz blanc', cat: 'Féculents', kcal100g: 350, unite: 'kg', emoji: '🌾' }, // Riz blanc, cru
+    { nom: 'Pâtes sèches', cat: 'Féculents', kcal100g: 364, unite: 'kg', emoji: '🍝' }, // Pâtes sèches, standard, crues
+    { nom: 'Haricots secs', cat: 'Protéines', kcal100g: 314, unite: 'kg', emoji: '🫘' }, // Haricot rouge, sec
+    { nom: 'Lentilles', cat: 'Protéines', kcal100g: 327, unite: 'kg', emoji: '🫘' }, // Lentille verte, sèche
+    { nom: 'Thon en conserve', cat: 'Protéines', kcal100g: 143, unite: 'boîtes 150g', emoji: '🐟' }, // Thon, au naturel, appertisé, égoutté
+    { nom: 'Sardines en conserve', cat: 'Protéines', kcal100g: 217, unite: 'boîtes 135g', emoji: '🐟' }, // Sardine, à l'huile, appertisée, égouttée
+    { nom: 'Huile d\'olive', cat: 'Matières grasses', kcal100g: 899, unite: 'kg', emoji: '🫙' }, // Huile d'olive vierge extra
+    { nom: 'Amandes', cat: 'Snacks', kcal100g: 615, unite: 'kg', emoji: '🥜' }, // Amande, avec peau, sans sel ajouté
+    { nom: 'Chocolat noir 70%', cat: 'Snacks', kcal100g: 591, unite: 'tablettes 100g', emoji: '🍫' }, // Chocolat noir 70 % de cacao environ, tablette
+    { nom: 'Biscuits secs', cat: 'Snacks', kcal100g: 438, unite: 'kg', emoji: '🍪' }, // Biscuit sec nature
   ];
 
   // Répartition calorique approximative par catégorie
@@ -174,7 +166,7 @@ import Layout from '../../layouts/Layout.astro';
     { aliment: 'Thon en conserve', part: 0.08 },
     { aliment: 'Sardines en conserve', part: 0.06 },
     { aliment: 'Huile d\'olive', part: 0.08 },
-    { aliment: 'Fruits secs (amandes, noix)', part: 0.08 },
+    { aliment: 'Amandes', part: 0.08 },
     { aliment: 'Chocolat noir 70%', part: 0.05 },
     { aliment: 'Biscuits secs', part: 0.05 },
   ];
@@ -215,7 +207,6 @@ import Layout from '../../layouts/Layout.astro';
     document.getElementById('breakdown-total').textContent = formatKcal(kcalTotal);
 
     genererCourses(kcalTotal);
-    calculerBudget(kcalTotal);
     updateConseil(duree, activite);
   }
 
@@ -237,7 +228,6 @@ import Layout from '../../layouts/Layout.astro';
     const grid = document.getElementById('courses-grid');
     grid.innerHTML = '';
 
-    let budget = 0;
 
     repartition.forEach(item => {
       const aliment = aliments.find(a => a.nom === item.aliment);
@@ -251,23 +241,18 @@ import Layout from '../../layouts/Layout.astro';
       if (aliment.unite === 'kg') {
         quantite = Math.ceil(grammesNecessaires / 1000 * 10) / 10;
         label = `${quantite} kg`;
-        budget += quantite * aliment.prixKg;
       } else if (aliment.unite === 'L') {
         quantite = Math.ceil(grammesNecessaires / 1000 * 10) / 10;
         label = `${quantite} L`;
-        budget += quantite * aliment.prixKg;
       } else if (aliment.unite === 'boîtes 150g') {
         quantite = Math.ceil(grammesNecessaires / 150);
         label = `${quantite} boîtes`;
-        budget += (grammesNecessaires / 1000) * aliment.prixKg;
       } else if (aliment.unite === 'boîtes 135g') {
         quantite = Math.ceil(grammesNecessaires / 135);
         label = `${quantite} boîtes`;
-        budget += (grammesNecessaires / 1000) * aliment.prixKg;
       } else if (aliment.unite === 'tablettes 100g') {
         quantite = Math.ceil(grammesNecessaires / 100);
         label = `${quantite} tablettes`;
-        budget += (grammesNecessaires / 1000) * aliment.prixKg;
       }
 
       const el = document.createElement('div');
@@ -279,12 +264,6 @@ import Layout from '../../layouts/Layout.astro';
       grid.appendChild(el);
     });
 
-    window._budget = budget;
-    document.getElementById('budget-val').textContent = `~${Math.round(budget)}€`;
-  }
-
-  function calculerBudget(kcalTotal) {
-    // Déjà calculé dans genererCourses, on met juste à jour l'affichage
   }
 
   function updateConseil(duree, activite) {
@@ -581,45 +560,6 @@ import Layout from '../../layouts/Layout.astro';
     font-size: 0.88rem;
     color: #F5A623;
     flex-shrink: 0;
-  }
-
-  /* BUDGET */
-  .result-budget {
-    background-color: #0d0d0d;
-    border: 1px solid #1e1e1e;
-    border-left: 3px solid #6B7C45;
-    padding: 1rem;
-  }
-
-  .budget-line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.4rem;
-  }
-
-  .budget-label {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.82rem;
-    color: #ffffff;
-    opacity: 0.7;
-    font-weight: 300;
-  }
-
-  .budget-val {
-    font-family: 'Special Elite', cursive;
-    font-size: 1.4rem;
-    color: #F5A623;
-  }
-
-  .budget-note {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.7rem;
-    color: #ffffff;
-    opacity: 0.4;
-    font-weight: 300;
-    line-height: 1.5;
-    margin: 0;
   }
 
   .result-conseil {
