@@ -1,7 +1,7 @@
 ---
 title: "Trousse de premiers secours maison : ce qu'il faut vraiment dedans (et ce qu'on peut virer)"
 seo_title: "Trousse de Premiers Secours Maison : Ce qu'il Faut Vraiment"
-description: "Ce que la vraie trousse de premiers secours doit contenir, pourquoi la trousse du commerce ne suffit pas, et comment la monter soi-même pour moins de 30€."
+description: "Ce que la vraie trousse de premiers secours doit contenir, pourquoi la trousse du commerce ne suffit pas, et comment la monter soi-même sans se ruiner."
 date: 2025-04-15
 tags: ["premiers-secours", "trousse", "survie", "urgence", "kit", "atelier"]
 rubrique: "atelier"
@@ -15,7 +15,7 @@ fiche_png: "/ressources/atelier/trousse-premiers-secours.png"
 
 Soyons directs : la trousse de secours en plastique rouge qu'on t'a offerte à Noël il y a six ans et que tu n'as jamais ouverte depuis — elle ne sert à rien. Enfin, pas grand-chose. Les pansements sont périmés, le désinfectant a séché, et il manque précisément ce dont tu aurais besoin le jour où ça compte vraiment.
 
-La bonne nouvelle : monter une trousse de premiers secours vraiment efficace coûte moins de 30€ et prend quinze minutes. Pas besoin d'être infirmier, pas besoin de matériel de bloc opératoire. Il faut juste savoir quoi mettre dedans — et pourquoi.
+La bonne nouvelle : monter une trousse de premiers secours vraiment efficace ne coûte pas une fortune et se fait en un rien de temps. Pas besoin d'être infirmier, pas besoin de matériel de bloc opératoire. Il faut juste savoir quoi mettre dedans — et pourquoi.
 
 ## Pourquoi la trousse du commerce ne suffit pas
 
@@ -59,7 +59,7 @@ C'est le niveau critique — celui qui fait la différence entre une situation s
 
 ### Pour les urgences générales
 
-**Couverture de survie isothermique** — avec sa face argentée et sa face dorée, elle aide à réguler la température du corps. Par temps froid : face dorée vers l'extérieur, pour capter les rayons du soleil, et face argentée contre le corps, pour garder la chaleur. Moins de 2€, pèse rien, peut prévenir une hypothermie — notamment chez les personnes âgées ou les enfants en état de choc.
+**Couverture de survie isothermique** — avec sa face argentée et sa face dorée, elle aide à réguler la température du corps. Par temps froid : face dorée vers l'extérieur, pour capter les rayons du soleil, et face argentée contre le corps, pour garder la chaleur. Pas chère, ne pèse rien, peut prévenir une hypothermie — notamment chez les personnes âgées ou les enfants en état de choc.
 
 **Thermomètre médical** — pour évaluer une fièvre et décider si les secours sont nécessaires.
 
