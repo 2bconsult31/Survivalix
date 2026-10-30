@@ -60,6 +60,12 @@ La recette traditionnelle repose souvent sur une proportion simple : **un poids 
 
 Le point de vigilance principal, c'est la qualité de la graisse au départ : un suif mal filtré ou une graisse déjà légèrement rance donnera un pemmican qui tourne plus vite. Si l'odeur ou la couleur te semble suspecte à un moment donné, ne le mange pas — mieux vaut perdre une portion que prendre un risque inutile.
 
+## Où acheter du pemmican ?
+
+Pas envie de passer ton dimanche devant le four ? Il existe du pemmican prêt à consommer, vendu en ligne sous forme de barres ou de blocs : une recherche « [pemmican](https://www.amazon.fr/s?k=pemmican&tag=survivalix31-21) » sur Amazon donne un bon aperçu de l'offre. Avant de commander, lis l'étiquette : la liste des ingrédients (viande, graisse, fruits secs, et parfois sucre ou additifs), la date indiquée par le fabricant et les conditions de conservation.
+
+Fait maison ou acheté ? Le pemmican du commerce sort d'une fabrication encadrée et porte une date fixée par le fabricant : c'est l'option la plus simple pour une réserve que tu ne surveilles pas tous les jours. Le fait maison te laisse choisir chaque ingrédient, mais sa conservation dépend entièrement de ton hygiène et de ton séchage : garde-le pour la rando ou le plaisir de le faire soi-même, en suivant les règles de sécurité vues plus haut, plutôt que pour un stock de longue durée.
+
 ## Une dernière chose
 
 Le pemmican ne cherchera jamais à concurrencer un bon plat cuisiné. Ce n'est pas sa fonction. C'est une réserve — la même logique qu'un extincteur dans la cuisine : tu espères ne jamais en avoir vraiment besoin, mais le jour où ton sac d'évacuation doit tenir 72 heures sans accès à une cuisine, tu seras content d'avoir pris le temps de le préparer un dimanche après-midi tranquille.
