@@ -3,6 +3,7 @@ title: "Bannock : le pain de survie qui se fait à la poêle, sans four, sans ex
 seo_title: "Bannock : Recette du Pain de Survie Sans Four"
 description: "Farine, eau, sel : le Bannock est le pain plat d'origine écossaise adopté par les trappeurs et cuit sur le feu. Recette complète, variantes et conseils."
 date: 2025-02-15
+updated: 2026-10-17
 tags: ["recette", "pain", "survie", "sans-four", "camping", "cantine"]
 rubrique: "cantine"
 image: "/images/cantine/bannock-survie.jpg"

@@ -3,6 +3,7 @@ title: "Trousse de premiers secours maison : ce qu'il faut vraiment dedans (et c
 seo_title: "Trousse de Premiers Secours Maison : Ce qu'il Faut Vraiment"
 description: "Ce que la vraie trousse de premiers secours doit contenir, pourquoi la trousse du commerce ne suffit pas, et comment la monter soi-même sans se ruiner."
 date: 2025-04-15
+updated: 2026-10-17
 tags: ["premiers-secours", "trousse", "survie", "urgence", "kit", "atelier"]
 rubrique: "atelier"
 image: "/images/atelier/trousse-premiers-secours.jpg"

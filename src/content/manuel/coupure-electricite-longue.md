@@ -3,6 +3,7 @@ title: "Coupure d'électricité longue : tout ce qu'il faut faire (et préparer 
 seo_title: "Coupure d'électricité longue : que faire et s'y préparer"
 description: "Chauffage, nourriture, éclairage, téléphone : que faire lors d'une longue panne de courant ? Le guide pour tenir plusieurs jours sans électricité."
 date: 2025-11-15
+updated: 2026-10-17
 tags: ["electricite", "panne", "coupure", "appartement", "kit-72h", "debutant"]
 rubrique: "manuel"
 image: "/images/articles/coupure-electricite-longue.jpg"

@@ -2,6 +2,7 @@
 title: "Communiquer en situation de crise : rester joignable quand le réseau tombe"
 description: "Quand les réseaux mobiles saturent ou tombent, voici comment rester en contact avec tes proches et savoir ce qui se passe vraiment autour de toi."
 date: 2025-02-12
+updated: 2026-10-17
 tags: ["communication", "famille", "radio"]
 rubrique: "manuel"
 image: "/images/articles/communiquer-situation-crise.jpg"

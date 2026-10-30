@@ -3,6 +3,7 @@ title: "Ton disjoncteur a sauté : comprendre ton tableau électrique et le réa
 seo_title: "Disjoncteur qui Saute : Comprendre et Réarmer son Tableau"
 description: "Différentiel, divisionnaire, disjoncteur de branchement : à quoi sert chaque élément de ton tableau électrique, et comment réarmer sans te mettre en danger."
 date: 2025-04-23
+updated: 2026-10-17
 tags: ["electricite", "tableau", "reparation", "appartement"]
 rubrique: "atelier"
 duree: "8 min"

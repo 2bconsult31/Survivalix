@@ -3,6 +3,7 @@ title: "Riz aux haricots façon survie : le duo qui a nourri des générations"
 seo_title: "Recette Survie : Riz aux Haricots Sans Électricité"
 description: "Deux ingrédients, une casserole, zéro électricité : une recette de survie à toute épreuve, prête en 40 min, avec des ingrédients qui tiennent des années."
 date: 2025-02-01
+updated: 2026-10-17
 tags: ["recette", "survie", "riz", "haricots", "sans-electricite", "cantine"]
 rubrique: "cantine"
 image: "/images/cantine/riz-haricots-survie.jpg"

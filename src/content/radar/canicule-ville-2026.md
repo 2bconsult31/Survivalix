@@ -3,6 +3,7 @@ title: "Canicule en ville : ce que personne ne vous dit vraiment (et comment ten
 seo_title: "Canicule 2026 : Survivre à la Chaleur en Appartement"
 description: "72 départements en rouge le 25 juin 2026 : pourquoi la ville encaisse plus mal la chaleur, et des conseils concrets et sourcés pour tenir en appartement."
 date: 2026-07-11
+updated: 2026-10-17
 tags: ["canicule", "chaleur", "ville", "urgence", "2026", "radar"]
 rubrique: "radar"
 image: "/images/radar/canicule-ville-2026.jpg"

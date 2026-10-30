@@ -3,6 +3,7 @@ title: "Kit d'urgence 72h : la liste complète (sourcée, sans bullshit)"
 seo_title: "Kit d'urgence 72h : la liste complète et sourcée"
 description: "La liste complète du kit 72h, poste par poste et sourcée, plus une checklist à imprimer gratuitement. Pour être prêt sans jouer les survivalistes."
 date: 2025-01-15
+updated: 2026-10-30
 tags: ["debutant", "kit", "urgence", "appartement"]
 rubrique: "manuel"
 image: "/images/articles/kit-urgence-72h.jpg"

@@ -3,6 +3,7 @@ title: "Les numéros d'urgence en France : lequel appeler, et pourquoi ça compt
 seo_title: "Numéros d'urgence en France : lequel appeler ?"
 description: "15, 17, 18, 112, 114 et six autres numéros que beaucoup ignorent. Le guide complet pour savoir lequel appeler en cas d'urgence, sans hésiter une seconde."
 date: 2026-09-18
+updated: 2026-10-16
 tags: ["numeros urgence", "15", "17", "18", "112", "manuel"]
 rubrique: "manuel"
 image: "/images/articles/numeros-urgence-france-lequel-appeler.jpg"

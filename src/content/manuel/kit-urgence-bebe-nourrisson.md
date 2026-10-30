@@ -3,6 +3,7 @@ title: "Kit d'urgence bébé et nourrisson : ce que le kit standard ne couvre pa
 seo_title: "Kit d'urgence bébé : ce que le kit 72h ne prévoit pas"
 description: "La liste officielle du kit 72h prévoit petits pots et lait infantile, et c'est à peu près tout. Voici comment compléter ton kit par âge, du biberon au stock."
 date: 2026-08-13
+updated: 2026-10-17
 tags: ["kit urgence", "bébé", "nourrisson", "biberon", "manuel"]
 rubrique: "manuel"
 image: "/images/articles/kit-urgence-bebe-nourrisson.jpg"

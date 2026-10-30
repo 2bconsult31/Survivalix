@@ -3,6 +3,7 @@ title: "Premiers secours : les gestes qui sauvent (expliqués simplement)"
 seo_title: "Premiers secours : les gestes qui sauvent"
 description: "Étouffement, hémorragie, arrêt cardiaque, brûlure : les gestes de premiers secours expliqués simplement, sans jargon. Ce qui compte quand ça compte."
 date: 2025-01-29
+updated: 2026-10-17
 tags: ["santé", "urgence", "famille", "debutant"]
 rubrique: "manuel"
 image: "/images/articles/premiers-secours-gestes-qui-sauvent.jpg"
