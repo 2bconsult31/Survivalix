@@ -3,6 +3,7 @@ title: "Pemmican : la recette amérindienne des réserves longue durée"
 seo_title: "Pemmican : la Recette de Survie Longue Conservation"
 description: "Recette du pemmican : viande séchée et graisse fondue pour une réserve d'énergie compacte, à préparer chez soi en respectant les règles d'hygiène."
 date: 2025-02-26
+updated: 2026-10-30
 tags: ["recette", "viande-sechee", "longue-conservation", "energie", "kit-72h", "cantine"]
 rubrique: "cantine"
 image: "/images/cantine/pemmican-survie.jpg"

@@ -3,6 +3,7 @@ title: "Beef Jerky maison : la viande séchée qui tient deux semaines sans frig
 seo_title: "Beef Jerky Maison : Recette de Viande Séchée Facile"
 description: "Recette de beef jerky maison : du bœuf maigre, une marinade relevée et un four à basse température pour un snack de rando qui se passe de frigo un moment."
 date: 2025-03-19
+updated: 2026-10-17
 tags: ["recette", "viande-sechee", "longue-conservation", "cantine"]
 rubrique: "cantine"
 image: "/images/cantine/beef-jerky-maison.jpg"

@@ -3,6 +3,7 @@ title: "Canicule et réseau électrique : pourquoi ton courant peut sauter cet �
 seo_title: "Canicule 2026 : Risque de Coupure de Courant, le Réflexe"
 description: "Canicule de l'été 2026, câbles souterrains qui surchauffent, des dizaines de milliers de foyers déjà privés de courant : ce qu'il faut savoir et faire."
 date: 2026-07-14
+updated: 2026-10-17
 tags: ["canicule", "electricite", "2026", "radar"]
 rubrique: "radar"
 image: "/images/radar/canicule-reseau-electrique-2026.jpg"

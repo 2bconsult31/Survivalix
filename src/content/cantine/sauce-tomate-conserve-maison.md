@@ -3,6 +3,7 @@ title: "Sauce tomate maison en bocaux : la conserve qui tient toute l'année"
 seo_title: "Sauce Tomate en Bocaux : Recette et Sécurité de Conservation"
 description: "Recette de sauce tomate en bocaux au bain-marie, sans autoclave : la méthode sûre pour transformer un surplus de tomates en réserve à garder un an."
 date: 2025-04-02
+updated: 2026-10-17
 tags: ["recette", "conserve", "longue-conservation", "cantine"]
 rubrique: "cantine"
 image: "/images/cantine/sauce-tomate-conserve-maison.jpg"

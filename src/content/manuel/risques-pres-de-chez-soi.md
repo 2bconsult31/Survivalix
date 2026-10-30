@@ -3,6 +3,7 @@ title: "Comprendre les risques près de chez soi : l'outil gratuit que personne 
 seo_title: "Risques Près de Chez Soi : Outil Gratuit Géorisques"
 description: "Inondations, séismes, risques industriels : comment identifier en quelques minutes les vrais dangers de ta zone, grâce à un outil officiel gratuit et méconnu."
 date: 2025-03-26
+updated: 2026-10-17
 tags: ["risques", "local", "anticipation", "debutant"]
 rubrique: "manuel"
 image: "/images/articles/risques-pres-de-chez-soi.jpg"

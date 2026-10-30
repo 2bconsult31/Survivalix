@@ -32,6 +32,7 @@
 - Structure propre à chaque article. Liens internes vers des pages existantes. Un lien Amazon affilié pertinent par article, au format https://www.amazon.fr/s?k=<recherche>&tag=survivalix31-21.
 - Cantine : le seo_title et la description contiennent le mot « recette ».
 - Frontmatter : seo_title de 60 caractères maximum, description de 140 à 160 caractères.
+- À chaque modification de fond d'un article, mettre à jour le champ updated.
 - Liens partagés (réseaux sociaux) : URL simple, jamais de paramètres UTM.
 
 ## Images

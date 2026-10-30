@@ -3,6 +3,7 @@ title: "Vigilance orange, rouge, jaune : ce que le système d'alerte météo dit
 seo_title: "Vigilance météo France : comprendre les couleurs d'alerte"
 description: "Orages en série fin août 2026 : ce que chaque couleur de vigilance météo signifie vraiment, et ce qu'il faut faire selon le niveau annoncé sur la carte."
 date: 2026-08-31
+updated: 2026-10-17
 tags: ["vigilance", "meteo", "alerte", "orages", "radar"]
 rubrique: "radar"
 image: "/images/radar/vigilance-meteo-comprendre-systeme-alertes.jpg"

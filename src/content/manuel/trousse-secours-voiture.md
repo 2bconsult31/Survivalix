@@ -3,6 +3,7 @@ title: "La trousse de secours voiture : ce qui la différencie de celle de la ma
 seo_title: "Trousse de Secours Voiture : Contenu et Où la Ranger"
 description: "Triangle, gilet, trousse de secours : ce qui est obligatoire en France, ce qui est conseillé, et pourquoi le coffre n'est pas toujours le bon endroit."
 date: 2025-05-21
+updated: 2026-10-17
 tags: ["voiture", "urgence", "sante", "debutant"]
 rubrique: "manuel"
 image: "/images/articles/trousse-secours-voiture.jpg"

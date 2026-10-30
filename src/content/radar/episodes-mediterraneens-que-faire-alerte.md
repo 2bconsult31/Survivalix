@@ -3,6 +3,7 @@ title: "Épisode méditerranéen : ce qu'il faut faire quand l'alerte tombe"
 seo_title: "Épisode méditerranéen (cévenol) : que faire en cas d'alerte"
 description: "Pluies cévenoles : les 8 consignes officielles expliquées, le vrai piège de la voiture et ce qu'il faut préparer avant la prochaine alerte. Saison en cours."
 date: 2026-10-06
+updated: 2026-10-16
 tags: ["episode mediterraneen", "pluie-inondation", "cevenol", "vigilance", "radar"]
 rubrique: "radar"
 image: "/images/radar/episodes-mediterraneens-que-faire-alerte.jpg"

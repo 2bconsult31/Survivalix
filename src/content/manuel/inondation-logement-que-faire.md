@@ -3,6 +3,7 @@ title: "Inondation dans son logement : les bons réflexes avant, pendant et apr�
 seo_title: "Inondation du logement : que faire avant, pendant, après"
 description: "Inondation : le vrai danger, ce sont les mauvais réflexes. Consignes officielles avant, pendant et après, sécurité au retour et démarches d'assurance."
 date: 2026-10-16
+updated: 2026-10-16
 tags: ["inondation", "pluie-inondation", "crue", "logement", "assurance", "catastrophe naturelle"]
 rubrique: "manuel"
 image: "/images/manuel/inondation-logement-que-faire.jpg"

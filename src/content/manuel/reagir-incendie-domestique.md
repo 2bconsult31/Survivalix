@@ -3,6 +3,7 @@ title: "Réagir en cas d'incendie domestique : la seule décision qui compte"
 seo_title: "Incendie domestique : réagir en 2 minutes"
 description: "Évacuer ou rester derrière une porte fermée ? Détecteur, extincteur, plan de sortie : ce qui se joue réellement dans les toutes premières minutes d'un feu."
 date: 2026-08-10
+updated: 2026-10-16
 tags: ["incendie", "urgence", "maison", "famille"]
 rubrique: "manuel"
 image: "/images/articles/reagir-incendie-domestique.jpg"

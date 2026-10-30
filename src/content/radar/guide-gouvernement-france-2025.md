@@ -3,6 +3,7 @@ title: "On a lu le guide de survie du gouvernement français pour vous (et c'est
 seo_title: "Guide Survie Gouvernement Français 2025 : Tous Responsables SGDSN"
 description: "Le gouvernement français a publié son premier guide de survie en novembre 2025 : un kit 72h, des réflexes concrets. On l'a lu et décortiqué pour vous."
 date: 2025-12-01
+updated: 2026-10-17
 tags: ["guide", "gouvernement", "SGDSN", "kit-72h", "France", "radar"]
 rubrique: "radar"
 image: "/images/radar/guide-gouvernement-sgdsn.jpg"

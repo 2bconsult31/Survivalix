@@ -3,6 +3,7 @@ title: "Vitre cassée : la colmater en urgence avant l'intervention du vitrier"
 seo_title: "Vitre Cassée : Réparation Provisoire en Attendant le Vitrier"
 description: "Carton, bâche ou contreplaqué : ce qui tient vraiment face au vent et à la pluie en attendant le vitrier, et ce qui lâche en quelques heures."
 date: 2025-05-07
+updated: 2026-10-17
 tags: ["reparation", "urgence", "appartement", "securite"]
 rubrique: "atelier"
 duree: "15 min"

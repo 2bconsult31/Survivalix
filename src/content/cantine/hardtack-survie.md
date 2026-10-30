@@ -3,6 +3,7 @@ title: "Hardtack : le biscuit qui a survécu à des siècles de guerres (et il e
 seo_title: "Recette du hardtack : le pain de survie des soldats"
 description: "Hard tack, le biscuit de soldat et de marin : notre recette pas à pas de ce pain de survie à trois ingrédients, qui se garde des années au sec."
 date: 2025-03-01
+updated: 2026-10-30
 tags: ["recette", "biscuit", "conservation", "historique", "survie", "cantine"]
 rubrique: "cantine"
 image: "/images/cantine/hardtack-survie.jpg"

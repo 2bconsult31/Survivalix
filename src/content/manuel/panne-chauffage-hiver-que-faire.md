@@ -3,6 +3,7 @@ title: "Panne de chauffage en hiver : ce que dit la loi (et ce qu'elle ne dit pa
 seo_title: "Panne de chauffage en hiver : que faire, quels droits"
 description: "Chauffage en panne en plein hiver ? Ce que dit vraiment la loi, les gestes qui dépannent, le piège du monoxyde de carbone et les recours du locataire."
 date: 2026-09-19
+updated: 2026-10-17
 tags: ["chauffage", "hiver", "panne", "locataire", "manuel"]
 rubrique: "manuel"
 image: "/images/articles/panne-chauffage-hiver-que-faire.jpg"

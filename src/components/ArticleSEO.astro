@@ -42,7 +42,7 @@ const faq: { question: string; answer: string }[] = frontmatter.faq ?? [];
   "description": frontmatter.description,
   "image": ogImageURL,
   "datePublished": frontmatter.date,
-  "dateModified": frontmatter.date,
+  "dateModified": frontmatter.updated ?? frontmatter.date,
   "author": { "@type": "Organization", "name": "Survivalix" },
   "publisher": {
     "@type": "Organization",

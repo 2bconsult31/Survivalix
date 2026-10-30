@@ -3,6 +3,7 @@ title: "Liste de courses prepper débutant : par où commencer sans se ruiner"
 seo_title: "Liste de Courses Prepper Débutant : Budget et Priorités"
 description: "Ce qu'il faut acheter en premier, dans quel ordre et sans exploser son budget : un parcours étalé sur 5 semaines plutôt qu'une grosse commande qu'on regrette."
 date: 2025-03-12
+updated: 2026-10-17
 tags: ["debutant", "budget", "nourriture", "kit"]
 rubrique: "manuel"
 image: "/images/articles/liste-courses-prepper-debutant.jpg"
