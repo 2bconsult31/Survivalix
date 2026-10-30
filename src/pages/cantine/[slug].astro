@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
+import { extractFaq } from '../../utils/faq';
 import ArticleCantine from '../../layouts/ArticleCantine.astro';
 
 export async function getStaticPaths() {
@@ -22,6 +23,7 @@ const { Content } = await render(recette);
   tags: recette.data.tags,
   image: recette.data.image,
   image_alt: recette.data.image_alt,
+  faq: extractFaq(recette.body),
   recette_png: recette.data.recette_png,
   temps_prep: recette.data.temps_prep,
   temps_cuisson: recette.data.temps_cuisson,
