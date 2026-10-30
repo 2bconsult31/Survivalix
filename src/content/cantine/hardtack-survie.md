@@ -1,7 +1,7 @@
 ---
 title: "Hardtack : le biscuit qui a survécu à des siècles de guerres (et il est toujours là)"
-seo_title: "Recette du Hardtack : le biscuit qui se garde des années"
-description: "Farine, eau, sel : le Hardtack a nourri marins et soldats pendant des siècles. Notre recette pas à pas, et comment le garder des années au sec."
+seo_title: "Recette du hardtack : le pain de survie des soldats"
+description: "Hard tack, le biscuit de soldat et de marin : notre recette pas à pas de ce pain de survie à trois ingrédients, qui se garde des années au sec."
 date: 2025-03-01
 tags: ["recette", "biscuit", "conservation", "historique", "survie", "cantine"]
 rubrique: "cantine"
@@ -21,9 +21,9 @@ Réfléchis une seconde à ce que ça veut dire.
 
 Un biscuit fait avec trois ingrédients — farine, eau, sel — qui traverse les décennies sans broncher, survit aux conditions maritimes, aux cales de navires et aux sacs à dos de soldats, et qui garde sa forme plus d'un siècle et demi après sa fabrication. Pas franchement savoureux, certes. Mais fonctionnel, même dans une situation désespérée. Et c'est exactement pour ça qu'il nous intéresse.
 
-## Le biscuit le plus vieux du monde encore mangeable
+## Le biscuit des marins et des soldats
 
-Le terme "hardtack" viendrait de "tack", un mot d'argot des marins britanniques pour désigner la nourriture — ce qui donne littéralement "nourriture dure". Le nom prévient honnêtement de ce à quoi s'attendre avant de croquer dedans.
+Le terme "hardtack" viendrait de "tack", un mot d'argot des marins britanniques pour désigner la nourriture — ce qui donne littéralement "nourriture dure". Le nom prévient honnêtement de ce à quoi s'attendre avant de croquer dedans. On l'écrit aussi « hard tack », et on l'appelle volontiers biscuit de soldat ou biscuit de mer.
 
 On lui prête des ancêtres jusque chez les légionnaires romains, qui auraient emporté un biscuit cuit deux fois. Mais c'est avec la Royal Navy britannique que le hardtack a vraiment trouvé sa vocation — alimenter des milliers de marins pendant des mois de navigation sans escale.
 
