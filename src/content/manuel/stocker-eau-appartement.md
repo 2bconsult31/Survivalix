@@ -124,4 +124,18 @@ Un point important souvent oublié : votre stock couvre la consommation normale 
 
 Et si vous devez puiser dans une source extérieure (pluie, fontaine, rivière), lisez notre guide sur la purification de l'eau en urgence : le stock, c'est bien, savoir traiter n'importe quelle eau c'est mieux.
 
+## Questions fréquentes
+
+### Comment stocker l'eau quand on vit au quatrième étage ?
+
+Sans ascenseur, le poids est le vrai sujet : montez votre stock pack par pack, au fil des courses, plutôt qu'en une seule expédition. Une fois en haut, rangez les packs à plat sous un lit ou au fond d'un placard, à l'abri de la lumière et loin du radiateur. Évitez le balcon, où le soleil et les écarts de température abîment les bouteilles. Et le jour où le robinet se tarit, vous serez content de ne pas avoir à remonter quatre étages avec des bidons.
+
+### Quelle réserve d'eau garder dans un petit appartement ?
+
+Le repère officiel est de 6 litres par personne pour 72 heures, soit 2 litres par jour : pour deux personnes, deux packs de 6 bouteilles de 1,5 litre suffisent. C'est un minimum : prévoyez davantage s'il fait chaud, si un nourrisson vit au foyer ou si un traitement vous oblige à boire plus. Pour tenir plus longtemps, multipliez 2 litres par le nombre de personnes et de jours visés, et montez en puissance progressivement.
+
+### Comment conserver une réserve d'eau dans un logement sans cave ?
+
+Gardez des bouteilles du commerce fermées, dans un endroit frais et sombre : sous un lit, au fond d'un placard ou d'une armoire, recouvertes d'un drap ou d'un carton. Tenez-les à distance des sources de chaleur et des produits ménagers, et ne les posez pas directement sur un sol froid. Elles se conservent jusqu'à la date imprimée : consommez les plus anciennes et remplacez-les au fur et à mesure.
+
 *Sources : SGDSN — "Tous responsables" (2025), ANSES (« Bonnes pratiques de consommation de l'eau du robinet »), ARS Guadeloupe (« Procédure de désinfection de l'eau hors réseau », 2017), ARS Mayotte et ARS Provence-Alpes-Côte d'Azur (ébullition 5 minutes à couvert), Gouvernement — kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Résilience-Urbaine.com, Mouton-Résilient.com, Urban Survival District, La Survie.*

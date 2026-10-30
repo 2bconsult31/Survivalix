@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
+import { extractFaq } from '../../utils/faq';
 import ArticleAtelier from '../../layouts/ArticleAtelier.astro';
 
 export async function getStaticPaths() {
@@ -22,6 +23,7 @@ const { Content } = await render(article);
   tags: article.data.tags,
   image: article.data.image,
   image_alt: article.data.image_alt,
+  faq: extractFaq(article.body),
   fiche_png: article.data.fiche_png,
   difficulte: article.data.difficulte,
   duree: article.data.duree,

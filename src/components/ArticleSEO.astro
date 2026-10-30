@@ -9,6 +9,9 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
 const canonicalURL = new URL(Astro.url.pathname, SITE_URL).toString();
 const ogImageURL = new URL(frontmatter.image || '/og-image.jpg', SITE_URL).toString();
 const logoURL = new URL('/LOGO_OK.svg', SITE_URL).toString();
+// Questions fréquentes : extraites de la section « Questions fréquentes » de l'article
+// (voir src/utils/faq.ts), passées par [slug].astro dans frontmatter.faq.
+const faq: { question: string; answer: string }[] = frontmatter.faq ?? [];
 ---
 
 <meta name="description" content={frontmatter.description} />
@@ -48,6 +51,19 @@ const logoURL = new URL('/LOGO_OK.svg', SITE_URL).toString();
   },
   "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalURL }
 })} />
+
+<!-- JSON-LD FAQPage, seulement si l'article a une section « Questions fréquentes » (en complément de l'Article, sans le dupliquer) -->
+{faq.length > 0 && (
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faq.map((item) => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": { "@type": "Answer", "text": item.answer }
+    }))
+  })} />
+)}
 
 <!-- Google Consent Mode v2 : tout est refusé par défaut, AVANT tout script Google.
      Le bandeau CMP de Google (AdSense) met ensuite à jour le consentement. -->

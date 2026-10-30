@@ -122,4 +122,10 @@ Un sac d'évacuation n'est jamais fini : il évolue avec vous, avec les saisons,
 
 Pas besoin de tout acheter d'un coup : constituez votre sac catégorie par catégorie (eau et filtration, nourriture, abri, éclairage et communication, trousse de secours, divers), en commençant par l'eau. Un investissement à faire progressivement, dont seule une partie se renouvelle chaque année.
 
+## Questions fréquentes
+
+### Quel sac préparer pour évacuer avec deux jeunes enfants ?
+
+Prévoyez un sac par adulte, et un petit sac à dos par enfant s'il est en âge de le porter, avec son doudou, une tenue de rechange et un en-cas. Les adultes portent l'essentiel : de l'eau pour toute la famille, les médicaments et ordonnances des enfants, leur carnet de santé avec les papiers, des vêtements chauds et de quoi les occuper. Pour un bébé, ajoutez le lait infantile, les couches et le nécessaire de change, comme détaillé dans notre guide du [kit d'urgence bébé](/manuel/kit-urgence-bebe-nourrisson). Gardez les sacs légers : avec des enfants à porter ou à tenir par la main, chaque kilo compte.
+
 *Sources : SGDSN/ORSEC, Gouvernement — kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Croix-Rouge française (« Le sac d'urgence »), FEMA, Ready.gov, NoPanic.fr, Mouton-Résilient.com, Urban Survival District, La Débrouille, Survivalisme-France.com.*

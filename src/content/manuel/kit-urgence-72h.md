@@ -174,4 +174,10 @@ Toute cette liste en image prête à imprimer — format A4, design Survivalix.
 
 Tu préfères une liste calculée pour ton foyer, enfants, bébé et animaux compris ? Notre [générateur de kit 72h](/outils/generateur-kit-72h) te prépare une checklist personnalisée, à cocher au fur et à mesure.
 
-*Sources : Ministère de la Transition écologique — « Préparer son kit d'urgence 72 h » ; Géorisques — « Kit 72h » ; info.gouv.fr — « Se préparer à une situation d'urgence » ; SGDSN — « Tous responsables » ; Croix-Rouge française ; Santé publique France — « Grand froid ».*
+## Questions fréquentes
+
+### Quels kits d'urgence sont recommandés pour un logement avec peu de place ?
+
+Les autorités ne recommandent aucune marque de kit : elles donnent une liste à rassembler soi-même, ce qui reste l'option la plus compacte, puisque tu choisis chaque objet. Regroupe le tout dans un seul sac à dos ou une boîte, rangé près de l'entrée, jamais à la cave. Si tu tiens malgré tout à un kit tout prêt (on t'a dit plus haut ce qu'on pense de beaucoup de kits vendus en ligne), la Croix-Rouge française propose le sien : vérifie quand même son contenu par rapport à la liste officielle et complète-le (eau, médicaments, copies de papiers).
+
+*Sources : Ministère de la Transition écologique — « Préparer son kit d'urgence 72 h » ; Croix-Rouge française — « Catakit : préparer son sac d'urgence » ; Géorisques — « Kit 72h » ; info.gouv.fr — « Se préparer à une situation d'urgence » ; SGDSN — « Tous responsables » ; Croix-Rouge française ; Santé publique France — « Grand froid ».*
