@@ -121,8 +121,26 @@ export function validateMessages(body) {
 
 // ---------- Limite de fréquence ----------
 // Upstash Redis (gratuit) si configuré, sinon mémoire de l'instance (filet de secours, moins fiable).
-const redisUrl = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL;
-const redisToken = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN;
+// Noms posés par l'intégration Vercel/Upstash, éventuellement précédés d'un préfixe personnalisé
+// (ex. STORAGE_KV_REST_API_URL). URL et jeton doivent partager le même préfixe.
+function findRedisConfig(env) {
+  const pairs = [['UPSTASH_REDIS_REST_URL', 'UPSTASH_REDIS_REST_TOKEN'], ['KV_REST_API_URL', 'KV_REST_API_TOKEN']];
+  for (const [urlName, tokenName] of pairs) {
+    if (env[urlName] && env[tokenName]) return { url: env[urlName], token: env[tokenName] };
+  }
+  for (const name of Object.keys(env)) {
+    for (const [urlName, tokenName] of pairs) {
+      if (name.endsWith('_' + urlName)) {
+        const token = env[name.slice(0, -urlName.length) + tokenName];
+        if (env[name] && token) return { url: env[name], token };
+      }
+    }
+  }
+  return null;
+}
+const redisConfig = findRedisConfig(process.env);
+const redisUrl = redisConfig?.url.replace(/\/+$/, '');
+const redisToken = redisConfig?.token;
 
 const memoryCounters = new Map();
 
@@ -165,15 +183,20 @@ export async function isRateLimited(ip) {
   }));
 
   let counts;
+  let store = 'local';
   if (redisUrl && redisToken) {
     try {
       counts = await redisHits(keys);
+      if (counts.some((c) => !Number.isFinite(c))) throw new Error(`Réponse Upstash inattendue : ${JSON.stringify(counts)}`);
+      store = 'partage';
     } catch (err) {
+      counts = undefined;
+      store = 'partage-indisponible';
       console.error('[bunker] Limite de fréquence : Upstash indisponible, repli sur la mémoire.', err);
     }
   }
   if (!counts) counts = keys.map((k) => memoryHit(k.key, k.windowSeconds));
-  return counts.some((count, i) => !Number.isFinite(count) || count > keys[i].max);
+  return { limited: counts.some((count, i) => count > keys[i].max), store };
 }
 
 // ---------- Handler ----------
@@ -191,7 +214,10 @@ export default async function handler(req, res) {
   }
 
   // Limite de fréquence avant toute autre vérification : les requêtes invalides comptent aussi.
-  if (await isRateLimited(clientIp(req))) {
+  const rate = await isRateLimited(clientIp(req));
+  // Diagnostic temporaire (aucune donnée secrète) : type de compteur utilisé.
+  res.setHeader('X-Bunker-Limite', rate.store);
+  if (rate.limited) {
     res.setHeader('Retry-After', '60');
     return sendError(res, 429, 'Trop de questions d’un coup : le Bunker reprend son souffle. Réessaie dans quelques minutes.');
   }
