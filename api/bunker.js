@@ -1,22 +1,20 @@
-export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
+// Fonction serverless Vercel du Bunker (assistant IA de Survivalix).
+// Protections : origine autorisée, validation stricte, limite de fréquence par IP,
+// erreurs génériques côté visiteur (le détail ne va que dans les journaux serveur).
 
-  try {
-    const { messages } = req.body;
+const SITE_ORIGIN = 'https://www.survivalix.fr';
+const LOCAL_ORIGIN = /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/;
 
-    const response = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': process.env.ANTHROPIC_API_KEY,
-        'anthropic-version': '2023-06-01'
-      },
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-6',
-        max_tokens: 2000,
-        system: `Tu es l'assistant IA de Survivalix — un site français de survie et prepping grand public avec un ton décalé et de l'humour second degré.
+const MAX_MESSAGES = 20;
+const MAX_CHARS_PER_MESSAGE = 2000;
+const MAX_CHARS_TOTAL = 12000;
+
+const RATE_LIMITS = [
+  { name: 'minute', windowSeconds: 60, max: 10 },
+  { name: 'heure', windowSeconds: 3600, max: 60 },
+];
+
+const SYSTEM_PROMPT = `Tu es l'assistant IA de Survivalix — un site français de survie et prepping grand public avec un ton décalé et de l'humour second degré.
 
 TON PERSONNAGE
 - Tu t'appelles "Le Bunker"
@@ -79,21 +77,172 @@ Si le message de l'utilisateur indique une situation de détresse réelle et imm
 - Donne ensuite uniquement le ou les gestes essentiels immédiats, en phrases courtes et actionnables, sans détour ni paragraphe d'introduction
 - N'ajoute aucune question de relance ni invitation à poursuivre la conversation à la fin — la priorité est que la personne agisse, pas qu'elle continue à discuter
 - Ne confonds pas une vraie urgence avec une question informative sur le même sujet (ex : "comment soigner une petite coupure" ou "que faire en cas d'hémorragie" posé sur un ton neutre/curieux reste une question normale, traitée avec le ton habituel du Bunker)
-- En cas de doute sur le niveau de gravité réel, traite le message comme une urgence : mieux vaut une réponse courte et orientée action qu'une réponse trop longue dans un vrai moment critique`,
-        messages: messages,
-        tools: [
-          {
-            type: 'web_search_20250305',
-            name: 'web_search'
-          }
-        ]
-      })
+- En cas de doute sur le niveau de gravité réel, traite le message comme une urgence : mieux vaut une réponse courte et orientée action qu'une réponse trop longue dans un vrai moment critique`;
+
+function sendError(res, status, message) {
+  return res.status(status).json({ error: message });
+}
+
+function isAllowedOrigin(origin) {
+  return origin === SITE_ORIGIN || LOCAL_ORIGIN.test(origin || '');
+}
+
+function clientIp(req) {
+  const h = req.headers;
+  const raw = h['x-vercel-forwarded-for'] || h['x-real-ip'] || h['x-forwarded-for'] || req.socket?.remoteAddress || 'inconnue';
+  return String(raw).split(',')[0].trim();
+}
+
+// Renvoie un message d'erreur (chaîne) si la requête est invalide, sinon null.
+export function validateMessages(body) {
+  if (!body || typeof body !== 'object' || Array.isArray(body)) return 'Requête invalide.';
+  const { messages } = body;
+  if (!Array.isArray(messages) || messages.length === 0) return 'Requête invalide : conversation absente.';
+  if (messages.length > MAX_MESSAGES) return 'Conversation trop longue : recommence une nouvelle discussion.';
+
+  let total = 0;
+  for (let i = 0; i < messages.length; i++) {
+    const m = messages[i];
+    if (!m || typeof m !== 'object' || Array.isArray(m)) return 'Requête invalide : message mal formé.';
+    const keys = Object.keys(m);
+    if (keys.length !== 2 || !keys.includes('role') || !keys.includes('content')) return 'Requête invalide : message mal formé.';
+    const expectedRole = i % 2 === 0 ? 'user' : 'assistant';
+    if (m.role !== expectedRole) return 'Requête invalide : ordre des messages incorrect.';
+    if (typeof m.content !== 'string' || m.content.trim() === '') return 'Requête invalide : seul du texte est accepté.';
+    if (m.content.length > MAX_CHARS_PER_MESSAGE) return 'Message trop long : 2 000 caractères maximum.';
+    total += m.content.length;
+  }
+  if (total > MAX_CHARS_TOTAL) return 'Conversation trop longue : recommence une nouvelle discussion.';
+  if (messages[messages.length - 1].role !== 'user') return 'Requête invalide : le dernier message doit être le tien.';
+  return null;
+}
+
+// ---------- Limite de fréquence ----------
+// Upstash Redis (gratuit) si configuré, sinon mémoire de l'instance (filet de secours, moins fiable).
+const redisUrl = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL;
+const redisToken = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN;
+
+const memoryCounters = new Map();
+
+function memoryHit(key, windowSeconds) {
+  const now = Date.now();
+  const entry = memoryCounters.get(key);
+  if (!entry || entry.expires <= now) {
+    memoryCounters.set(key, { count: 1, expires: now + windowSeconds * 1000 });
+    if (memoryCounters.size > 5000) {
+      for (const [k, v] of memoryCounters) if (v.expires <= now) memoryCounters.delete(k);
+    }
+    return 1;
+  }
+  entry.count += 1;
+  return entry.count;
+}
+
+async function redisHits(keys) {
+  const commands = [];
+  for (const { key, windowSeconds } of keys) {
+    commands.push(['INCR', key]);
+    commands.push(['EXPIRE', key, String(windowSeconds), 'NX']);
+  }
+  const r = await fetch(`${redisUrl}/pipeline`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${redisToken}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify(commands),
+  });
+  if (!r.ok) throw new Error(`Upstash HTTP ${r.status}`);
+  const results = await r.json();
+  return keys.map((_, i) => Number(results[i * 2]?.result));
+}
+
+// Renvoie true si la requête dépasse une des limites.
+export async function isRateLimited(ip) {
+  const now = Math.floor(Date.now() / 1000);
+  const keys = RATE_LIMITS.map((l) => ({
+    ...l,
+    key: `bunker:rl:${l.name}:${ip}:${Math.floor(now / l.windowSeconds)}`,
+  }));
+
+  let counts;
+  if (redisUrl && redisToken) {
+    try {
+      counts = await redisHits(keys);
+    } catch (err) {
+      console.error('[bunker] Limite de fréquence : Upstash indisponible, repli sur la mémoire.', err);
+    }
+  }
+  if (!counts) counts = keys.map((k) => memoryHit(k.key, k.windowSeconds));
+  return counts.some((count, i) => !Number.isFinite(count) || count > keys[i].max);
+}
+
+// ---------- Handler ----------
+export default async function handler(req, res) {
+  res.setHeader('Cache-Control', 'no-store');
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+
+  if (req.method !== 'POST') {
+    res.setHeader('Allow', 'POST');
+    return sendError(res, 405, 'Méthode non autorisée.');
+  }
+
+  if (!isAllowedOrigin(req.headers.origin)) {
+    return sendError(res, 403, 'Origine non autorisée.');
+  }
+
+  let body;
+  try {
+    body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
+  } catch {
+    return sendError(res, 400, 'Requête invalide.');
+  }
+
+  const invalid = validateMessages(body);
+  if (invalid) return sendError(res, 400, invalid);
+
+  if (await isRateLimited(clientIp(req))) {
+    res.setHeader('Retry-After', '60');
+    return sendError(res, 429, 'Trop de questions d’un coup : le Bunker reprend son souffle. Réessaie dans quelques minutes.');
+  }
+
+  const apiKey = process.env.ANTHROPIC_API_KEY;
+  if (!apiKey) {
+    console.error('[bunker] ANTHROPIC_API_KEY absente de l’environnement.');
+    return sendError(res, 500, 'Le Bunker est momentanément indisponible. Réessaie un peu plus tard.');
+  }
+
+  // On ne transmet que les champs validés, rien d'autre venant du visiteur.
+  const messages = body.messages.map(({ role, content }) => ({ role, content }));
+
+  try {
+    const response = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': apiKey,
+        'anthropic-version': '2023-06-01',
+      },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-6',
+        max_tokens: 2000,
+        system: SYSTEM_PROMPT,
+        messages,
+        tools: [{ type: 'web_search_20250305', name: 'web_search' }],
+      }),
     });
 
-    const data = await response.json();
-    return res.status(200).json(data);
+    const text = await response.text();
+    if (!response.ok) {
+      console.error(`[bunker] Erreur Anthropic ${response.status} : ${text.slice(0, 2000)}`);
+      return sendError(res, 502, 'Le Bunker est momentanément indisponible. Réessaie un peu plus tard.');
+    }
 
-  } catch (error) {
-    return res.status(500).json({ error: 'Erreur serveur' });
+    const data = JSON.parse(text);
+    // On ne renvoie au navigateur que le texte de la réponse.
+    const content = (data.content || [])
+      .filter((block) => block.type === 'text' && typeof block.text === 'string')
+      .map((block) => ({ type: 'text', text: block.text }));
+    return res.status(200).json({ content });
+  } catch (err) {
+    console.error('[bunker] Erreur serveur :', err);
+    return sendError(res, 500, 'Le Bunker est momentanément indisponible. Réessaie un peu plus tard.');
   }
 }
