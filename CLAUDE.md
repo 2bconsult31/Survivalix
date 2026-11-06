@@ -8,6 +8,7 @@
 
 ## Règles techniques
 - Adresse officielle du site : https://www.survivalix.fr (avec www), toujours. Jamais d'URL codée en dur dans un layout : utiliser Astro.site.
+- Le Bunker IA en ligne est api/bunker.js (fonction Vercel à la racine). Toute règle éditoriale s'applique aussi à son SYSTEM_PROMPT.
 - Toutes les balises SEO des articles (canonical, Open Graph, Twitter, JSON-LD, Consent Mode, AdSense, GA) sont dans src/components/ArticleSEO.astro, utilisé par les 4 layouts d'article. Toute correction SEO se fait à cet endroit unique.
 - Consent Mode v2 : consentement refusé par défaut avant tout script Google ; le bandeau CMP de Google met à jour le consentement.
 - Tout nouveau champ de frontmatter doit être déclaré à 3 endroits : content.config.ts, le fichier [slug].astro et le layout.
