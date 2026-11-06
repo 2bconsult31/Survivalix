@@ -45,6 +45,7 @@ const suggestions = [
         id="userInput"
         placeholder="Pose ta question au Bunker..."
         rows="2"
+        maxlength="2000"
         onkeydown="handleKeyDown(event)"
         oninput="autoResize(this)"
       ></textarea>
@@ -102,6 +103,32 @@ const suggestions = [
 
   let messages = [];
   let isLoading = false;
+
+  // Limites imposées par le serveur (api/bunker.js)
+  const MAX_MESSAGES = 19; // nombre impair : l'historique envoyé commence et finit par l'utilisateur
+  const MAX_CHARS_PER_MESSAGE = 2000;
+  const MAX_CHARS_TOTAL = 12000;
+
+  // Historique envoyé au serveur : messages récents seulement, réponses longues tronquées.
+  function historyForServer() {
+    let history = messages
+      .filter(m => (m.role === 'user' || m.role === 'assistant') && typeof m.content === 'string' && m.content.trim())
+      .map(m => ({ role: m.role, content: m.content.slice(0, MAX_CHARS_PER_MESSAGE) }));
+    // Alternance stricte : on ne garde que la suite qui se termine par le dernier message utilisateur.
+    const clean = [];
+    for (let i = history.length - 1, expected = 'user'; i >= 0; i--) {
+      if (history[i].role !== expected) break;
+      clean.unshift(history[i]);
+      expected = expected === 'user' ? 'assistant' : 'user';
+    }
+    history = clean;
+    if (history.length && history[0].role !== 'user') history.shift();
+    const total = () => history.reduce((n, m) => n + m.content.length, 0);
+    while (history.length > 1 && (history.length > MAX_MESSAGES || total() > MAX_CHARS_TOTAL)) {
+      history.splice(0, 2);
+    }
+    return history;
+  }
 
   function avatarSVG() {
     return `<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28" aria-hidden="true">
@@ -248,22 +275,37 @@ const suggestions = [
       const response = await fetch('/api/bunker', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ messages: messages })
+        body: JSON.stringify({ messages: historyForServer() })
       });
 
-      const data = await response.json();
-      const reply = (data.content || [])
-        .filter(block => block.type === 'text')
-        .map(block => block.text)
-        .join('\n\n');
+      let data = {};
+      try { data = await response.json(); } catch (e) {}
 
       setStatus(false);
-      addMessage('assistant', reply || "Le Bunker n'a pas pu formuler de réponse, réessaie ta question autrement.");
-      messages.push({ role: 'assistant', content: reply });
-      saveConversation();
+      if (!response.ok) {
+        // La question n'a pas abouti : on la retire de l'historique pour garder l'alternance.
+        messages.pop();
+        saveConversation();
+        addMessage('assistant', (typeof data.error === 'string' && data.error) || 'Le Bunker est momentanément indisponible. Réessaie un peu plus tard.');
+      } else {
+        const reply = (data.content || [])
+          .filter(block => block.type === 'text')
+          .map(block => block.text)
+          .join('\n\n');
+        if (reply) {
+          addMessage('assistant', reply);
+          messages.push({ role: 'assistant', content: reply });
+        } else {
+          messages.pop();
+          addMessage('assistant', "Le Bunker n'a pas pu formuler de réponse, réessaie ta question autrement.");
+        }
+        saveConversation();
+      }
 
     } catch (error) {
       setStatus(false);
+      messages.pop();
+      saveConversation();
       addMessage('assistant', 'Connexion au bunker interrompue. Vérifie ta connexion et réessaie.');
     }
 
