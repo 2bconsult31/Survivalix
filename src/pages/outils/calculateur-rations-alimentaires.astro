@@ -47,7 +47,7 @@ import Layout from '../../layouts/Layout.astro';
         <div class="form-section-label">// OPTIONS //</div>
 
         <div class="form-group">
-          <label>Durée d'autonomie visée</label>
+          <label for="duree">Durée d’autonomie visée</label>
           <div class="select-wrapper">
             <select id="duree" onchange="calculer()">
               <option value="3">72h — repère officiel</option>
@@ -59,7 +59,7 @@ import Layout from '../../layouts/Layout.astro';
         </div>
 
         <div class="form-group">
-          <label>Niveau d'activité</label>
+          <label for="activite">Niveau d’activité</label>
           <div class="select-wrapper">
             <select id="activite" onchange="calculer()">
               <option value="1" selected>Vie courante (repère ANSES)</option>
@@ -294,7 +294,7 @@ import Layout from '../../layouts/Layout.astro';
   .page-label {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
-    color: #6B7C45;
+    color: var(--kaki-texte);
     letter-spacing: 4px;
     margin-bottom: 1rem;
   }
@@ -346,8 +346,8 @@ import Layout from '../../layouts/Layout.astro';
 
   .form-section-label {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.7rem;
-    color: #6B7C45;
+    font-size: 0.75rem;
+    color: var(--kaki-texte);
     letter-spacing: 3px;
     margin-bottom: 0.3rem;
   }
@@ -468,8 +468,8 @@ import Layout from '../../layouts/Layout.astro';
 
   .result-label {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.7rem;
-    color: #6B7C45;
+    font-size: 0.75rem;
+    color: var(--kaki-texte);
     letter-spacing: 3px;
     margin-bottom: 0.8rem;
   }
@@ -615,9 +615,8 @@ import Layout from '../../layouts/Layout.astro';
 
   .result-sources {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.72rem;
-    color: #ffffff;
-    opacity: 0.35;
+    font-size: 0.75rem;
+    color: var(--gris-texte);
     font-weight: 300;
     line-height: 1.6;
     margin: 0;

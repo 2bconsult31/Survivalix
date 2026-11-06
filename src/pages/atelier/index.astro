@@ -45,7 +45,7 @@ const articlesPublies = await getCollection('atelier');
             </div>
             <div class="card-body">
               <div class="card-top">
-                <span class="card-num">0{index + 1}</span>
+                <span class="card-num" aria-hidden="true" data-num={`0${index + 1}`}></span>
                 {article.data.duree && <span class="card-temps">~{article.data.duree}</span>}
               </div>
               <div class="card-tags">
@@ -95,7 +95,7 @@ const articlesPublies = await getCollection('atelier');
   .manuel-header-label {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
-    color: #6B7C45;
+    color: var(--kaki-texte);
     letter-spacing: 4px;
     margin-bottom: 1rem;
   }
@@ -123,7 +123,7 @@ const articlesPublies = await getCollection('atelier');
   .manuel-stats {
     font-family: 'Oswald', sans-serif;
     font-size: 0.8rem;
-    color: #666;
+    color: var(--gris-texte);
     letter-spacing: 2px;
     display: flex;
     justify-content: center;
@@ -148,7 +148,7 @@ const articlesPublies = await getCollection('atelier');
   .empty-label {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
-    color: #6B7C45;
+    color: var(--kaki-texte);
     letter-spacing: 4px;
     margin-bottom: 1rem;
   }
@@ -232,6 +232,11 @@ const articlesPublies = await getCollection('atelier');
     align-items: center;
   }
 
+  /* Numéro purement décoratif : affiché en CSS, ignoré des lecteurs d'écran */
+
+  .card-num::before { content: attr(data-num); }
+
+
   .card-num {
     font-family: 'Special Elite', cursive;
     font-size: 1.8rem;
@@ -241,8 +246,8 @@ const articlesPublies = await getCollection('atelier');
 
   .card-temps {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.7rem;
-    color: #555;
+    font-size: 0.75rem;
+    color: var(--gris-texte);
     letter-spacing: 1px;
     border: 1px solid #222;
     padding: 0.2rem 0.6rem;
@@ -256,8 +261,8 @@ const articlesPublies = await getCollection('atelier');
 
   .card-tag {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.65rem;
-    color: #6B7C45;
+    font-size: 0.75rem;
+    color: var(--kaki-texte);
     letter-spacing: 1px;
     border: 1px solid #6B7C45;
     padding: 0.1rem 0.5rem;

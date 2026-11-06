@@ -48,7 +48,7 @@ const outils = [
     {outils.map((outil, index) => (
       <a href={outil.slug} class="article-card article-card-link">
         <div class="card-image">
-          <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;position:absolute;top:0;left:0;">
+          <svg aria-hidden="true" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;position:absolute;top:0;left:0;">
             <defs>
               <pattern id={`sl-${index}`} width="1" height="3" patternUnits="userSpaceOnUse">
                 <rect width="1" height="1" fill="#F5A623" opacity="0.04"/>
@@ -156,7 +156,7 @@ const outils = [
         </div>
         <div class="card-body">
           <div class="card-top">
-            <span class="card-num">0{index + 1}</span>
+            <span class="card-num" aria-hidden="true" data-num={`0${index + 1}`}></span>
             <span class="card-temps">~{outil.temps}</span>
           </div>
           <div class="card-tags">
@@ -192,7 +192,7 @@ const outils = [
   .manuel-header-label {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
-    color: #6B7C45;
+    color: var(--kaki-texte);
     letter-spacing: 4px;
     margin-bottom: 1rem;
   }
@@ -217,7 +217,7 @@ const outils = [
   .manuel-stats {
     font-family: 'Oswald', sans-serif;
     font-size: 0.8rem;
-    color: #666;
+    color: var(--gris-texte);
     letter-spacing: 2px;
     display: flex;
     justify-content: center;
@@ -269,6 +269,9 @@ const outils = [
     justify-content: space-between;
     align-items: center;
   }
+  /* Numéro purement décoratif : affiché en CSS, ignoré des lecteurs d'écran */
+  .card-num::before { content: attr(data-num); }
+
   .card-num {
     font-family: 'Special Elite', cursive;
     font-size: 1.8rem;
@@ -277,8 +280,8 @@ const outils = [
   }
   .card-temps {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.7rem;
-    color: #555;
+    font-size: 0.75rem;
+    color: var(--gris-texte);
     letter-spacing: 1px;
     border: 1px solid #222;
     padding: 0.2rem 0.6rem;
@@ -290,8 +293,8 @@ const outils = [
   }
   .card-tag {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.65rem;
-    color: #6B7C45;
+    font-size: 0.75rem;
+    color: var(--kaki-texte);
     letter-spacing: 1px;
     border: 1px solid #6B7C45;
     padding: 0.1rem 0.5rem;
