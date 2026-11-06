@@ -5,10 +5,12 @@
   --noir-clair: #111;
   --ambre: #F5A623;
   --ambre-fonce: #c4811a;
-  --kaki: #6B7C45;
+  --kaki: #6B7C45; /* grands éléments et décors */
+  --kaki-texte: #7A8C50; /* petits textes sur fond sombre (contraste 5,3) */
   --rouge: #8B2500;
   --creme: #ffffff;
   --gris: #666;
+  --gris-texte: #8A8A8A; /* textes secondaires sur fond sombre */
   --font-titre: 'Special Elite', cursive;
   --font-nav: 'Oswald', sans-serif;
 }
@@ -82,8 +84,8 @@ header {
 .logo-sub {
   display: block;
   font-family: var(--font-nav);
-  font-size: clamp(0.55rem, 1.5vw, 0.7rem);
-  color: var(--kaki);
+  font-size: 0.75rem;
+  color: var(--kaki-texte);
   letter-spacing: 2px;
 }
 
@@ -237,7 +239,7 @@ footer {
 .footer-tagline {
   font-family: var(--font-nav);
   font-size: 0.8rem;
-  color: var(--kaki);
+  color: var(--kaki-texte);
   letter-spacing: 2px;
   margin-bottom: 1.5rem;
 }
@@ -263,7 +265,7 @@ footer {
 
 .footer-links a:hover { opacity: 1; color: var(--ambre); }
 
-.footer-copy { font-size: 0.72rem; color: var(--gris); opacity: 0.4; }
+.footer-copy { font-size: 0.75rem; color: var(--gris-texte); }
 
 /* ARTICLE CONTENT OVERRIDES */
 .article-content h2 {
@@ -345,7 +347,7 @@ button {
   font-family: 'Oswald', sans-serif !important;
   font-size: 0.75rem !important;
   font-weight: 700 !important;
-  color: #555 !important;
+  color: var(--gris-texte) !important;
   flex-shrink: 0 !important;
   width: 26px !important;
   height: 26px !important;
@@ -439,4 +441,12 @@ button {
   margin: 0 auto 1.5rem !important;
   display: block !important;
   border: 2px solid #F5A623 !important;
+}
+/* ZONES CLIQUABLES (WCAG 2.2, 2.5.8) : au moins 24 × 24 px.
+   Liens en ligne : le padding vertical agrandit la zone de clic sans déplacer la mise en page. */
+.mission-lien,
+.etape-lien,
+.footer-links a,
+.article-breadcrumb a {
+  padding-block: 0.3rem;
 }

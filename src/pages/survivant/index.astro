@@ -33,7 +33,7 @@ import Layout from '../../layouts/Layout.astro';
     </div>
 
     <div class="question-card" id="questionCard">
-      <div class="question-num" id="questionNum">01</div>
+      <div class="question-num" id="questionNum" aria-hidden="true" data-num="01"></div>
       <h2 class="question-text" id="questionText"></h2>
       <div class="answers-list" id="answersGrid"></div>
     </div>
@@ -173,7 +173,7 @@ import Layout from '../../layouts/Layout.astro';
     document.getElementById('progressFill').style.width = `${pct}%`;
     document.getElementById('progressNum').textContent = `QUESTION ${currentQuestion + 1} / ${questions.length}`;
     document.getElementById('progressPct').textContent = `${pct}%`;
-    document.getElementById('questionNum').textContent = String(currentQuestion + 1).padStart(2, '0');
+    document.getElementById('questionNum').dataset.num = String(currentQuestion + 1).padStart(2, '0');
     document.getElementById('questionText').textContent = q.text;
 
     const grid = document.getElementById('answersGrid');
@@ -243,7 +243,7 @@ import Layout from '../../layouts/Layout.astro';
   .quiz-label {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
-    color: #6B7C45;
+    color: var(--kaki-texte);
     letter-spacing: 4px;
     margin-bottom: 1rem;
   }
@@ -268,7 +268,7 @@ import Layout from '../../layouts/Layout.astro';
   .quiz-meta {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
-    color: #555;
+    color: var(--gris-texte);
     letter-spacing: 2px;
     display: flex;
     justify-content: center;
@@ -295,7 +295,7 @@ import Layout from '../../layouts/Layout.astro';
 
   .progress-label {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     color: #F5A623;
     letter-spacing: 3px;
     font-weight: 700;
@@ -327,6 +327,9 @@ import Layout from '../../layouts/Layout.astro';
     padding: 2.5rem 2rem;
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
+
+  /* Numéro purement décoratif (la progression est annoncée par .progress-label) */
+  .question-num::before { content: attr(data-num); }
 
   .question-num {
     font-family: 'Special Elite', cursive;
@@ -395,7 +398,7 @@ import Layout from '../../layouts/Layout.astro';
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
     font-weight: 700;
-    color: #555;
+    color: var(--gris-texte);
     flex-shrink: 0;
     width: 26px;
     height: 26px;

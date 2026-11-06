@@ -133,7 +133,7 @@ const termes = [
   .lexique-label {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
-    color: #6B7C45;
+    color: var(--kaki-texte);
     letter-spacing: 4px;
     margin-bottom: 1rem;
   }
@@ -191,7 +191,7 @@ const termes = [
     outline: none;
   }
 
-  #searchInput::placeholder { color: #555; }
+  #searchInput::placeholder { color: var(--gris-texte); }
   #searchInput:focus { border-color: #F5A623; }
 
   .filter-tags {
@@ -227,7 +227,7 @@ const termes = [
     margin: 0 auto 1.5rem;
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
-    color: #666;
+    color: var(--gris-texte);
     letter-spacing: 1px;
     text-align: right;
   }
@@ -257,8 +257,8 @@ const termes = [
 
   .terme-cat {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.65rem;
-    color: #6B7C45;
+    font-size: 0.75rem;
+    color: var(--kaki-texte);
     letter-spacing: 2px;
   }
 
@@ -293,7 +293,10 @@ const termes = [
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    margin-top: 0.4rem;
+    /* zone de clic de 24 px minimum, sans décaler la mise en page */
+    padding-block: 0.15rem;
+    margin-top: 0.25rem;
+    margin-bottom: -0.15rem;
   }
 
   .terme-lien svg { width: 12px; height: 12px; flex-shrink: 0; }

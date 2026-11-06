@@ -59,19 +59,19 @@ import Layout from '../layouts/Layout.astro';
     <p>Trois missions prioritaires pour le citoyen qui commence.</p>
     <div class="missions">
       <div class="mission">
-        <div class="mission-num">01</div>
+        <div class="mission-num" aria-hidden="true" data-num="01"></div>
         <h3>Découvre ton profil</h3>
         <p>Fais le quiz et reçois ta carte Survivant personnalisée à partager.</p>
         <a href="/survivant" class="mission-lien">Faire le quiz →</a>
       </div>
       <div class="mission">
-        <div class="mission-num">02</div>
+        <div class="mission-num" aria-hidden="true" data-num="02"></div>
         <h3>Monte ton kit 72h</h3>
         <p>Le strict minimum pour tenir 3 jours sans rien. Simple, sans bullshit.</p>
         <a href="/manuel/kit-urgence-72h" class="mission-lien">Voir le guide →</a>
       </div>
       <div class="mission">
-        <div class="mission-num">03</div>
+        <div class="mission-num" aria-hidden="true" data-num="03"></div>
         <h3>Pose tes questions</h3>
         <p>L'assistant IA du Bunker répond à tout, sans jargon, avec humour.</p>
         <a href="/bunker" class="mission-lien">Accéder au Bunker →</a>
@@ -214,7 +214,7 @@ import Layout from '../layouts/Layout.astro';
   .hero-label {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
-    color: #6B7C45;
+    color: var(--kaki-texte);
     letter-spacing: 4px;
     margin-bottom: 1.5rem;
   }
@@ -300,7 +300,7 @@ import Layout from '../layouts/Layout.astro';
   .reassurance-label {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
-    color: #6B7C45;
+    color: var(--kaki-texte);
     letter-spacing: 4px;
     margin-bottom: 1.5rem;
   }
@@ -353,7 +353,7 @@ import Layout from '../layouts/Layout.astro';
   .section-label {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
-    color: #6B7C45;
+    color: var(--kaki-texte);
     letter-spacing: 4px;
     margin-bottom: 1rem;
   }
@@ -392,6 +392,9 @@ import Layout from '../layouts/Layout.astro';
     border-top: 4px solid #F5A623;
     padding: 1.5rem;
   }
+
+  /* Numéro purement décoratif : affiché en CSS, ignoré des lecteurs d'écran */
+  .mission-num::before { content: attr(data-num); }
 
   .mission-num {
     font-family: 'Special Elite', cursive;
@@ -480,7 +483,7 @@ import Layout from '../layouts/Layout.astro';
     top: 0.8rem;
     right: 0.8rem;
     font-family: 'Oswald', sans-serif;
-    font-size: 0.6rem;
+    font-size: 0.75rem;
     font-weight: 700;
     color: #0d0d0d;
     background-color: #F5A623;

@@ -88,7 +88,7 @@ import Layout from '../layouts/Layout.astro';
   .legal-label {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
-    color: #6B7C45;
+    color: var(--kaki-texte);
     letter-spacing: 4px;
     margin-bottom: 1rem;
   }
@@ -137,7 +137,8 @@ import Layout from '../layouts/Layout.astro';
 
   .legal-section a {
     color: #F5A623;
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 
   .legal-section a:hover { opacity: 0.7; }

@@ -78,7 +78,7 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
 
     <div class="article-hero">
       {hasImage ? (
-        <img src={frontmatter.image} alt={frontmatter.image_alt || frontmatter.title} class="article-hero-img"/>
+        <img src={frontmatter.image} alt={frontmatter.image_alt || frontmatter.title} class="article-hero-img" width="1920" height="815" />
       ) : (
         <div class="article-hero-placeholder">
           <svg viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:absolute;top:0;left:0;">
@@ -212,7 +212,7 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
   .article-breadcrumb {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
-    color: #666;
+    color: var(--gris-texte);
     letter-spacing: 1px;
     margin-bottom: 1rem;
     display: flex;
@@ -226,8 +226,8 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
   .article-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.2rem; }
   .tag {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.68rem;
-    color: #6B7C45;
+    font-size: 0.75rem;
+    color: var(--kaki-texte);
     letter-spacing: 1px;
     border: 1px solid #6B7C45;
     padding: 0.15rem 0.6rem;
@@ -256,7 +256,7 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
   .article-meta {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
-    color: #666;
+    color: var(--gris-texte);
     letter-spacing: 2px;
     display: flex;
     gap: 0.5rem;
@@ -378,8 +378,8 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
   }
   .sidebar-label {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.68rem;
-    color: #6B7C45;
+    font-size: 0.75rem;
+    color: var(--kaki-texte);
     letter-spacing: 3px;
     margin-bottom: 0.7rem;
   }
@@ -410,7 +410,7 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
     margin: 0 !important;
     display: flex !important;
     flex-direction: column !important;
-    gap: 0.6rem !important;
+    gap: 0.3rem !important;
     grid-template-columns: none !important;
   }
   .sidebar-links li {
@@ -429,7 +429,7 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
     letter-spacing: 0.5px;
     display: block;
     border-left: 2px solid transparent;
-    padding-left: 0.6rem;
+    padding: 0.15rem 0 0.15rem 0.6rem;
     transition: all 0.2s;
   }
   .sidebar-links a:hover { border-left-color: #F5A623; opacity: 0.7; }
