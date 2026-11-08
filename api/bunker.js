@@ -183,20 +183,17 @@ export async function isRateLimited(ip) {
   }));
 
   let counts;
-  let store = 'local';
   if (redisUrl && redisToken) {
     try {
       counts = await redisHits(keys);
       if (counts.some((c) => !Number.isFinite(c))) throw new Error(`Réponse Upstash inattendue : ${JSON.stringify(counts)}`);
-      store = 'partage';
     } catch (err) {
       counts = undefined;
-      store = 'partage-indisponible';
       console.error('[bunker] Limite de fréquence : Upstash indisponible, repli sur la mémoire.', err);
     }
   }
   if (!counts) counts = keys.map((k) => memoryHit(k.key, k.windowSeconds));
-  return { limited: counts.some((count, i) => count > keys[i].max), store, counts };
+  return counts.some((count, i) => count > keys[i].max);
 }
 
 // ---------- Handler ----------
@@ -214,13 +211,7 @@ export default async function handler(req, res) {
   }
 
   // Limite de fréquence avant toute autre vérification : les requêtes invalides comptent aussi.
-  const rate = await isRateLimited(clientIp(req));
-  // Diagnostic temporaire (aucune donnée secrète) : type de compteur utilisé.
-  const ip = clientIp(req);
-  let ipTag = 0;
-  for (const ch of ip) ipTag = (ipTag * 31 + ch.charCodeAt(0)) >>> 0;
-  res.setHeader('X-Bunker-Limite', `${rate.store}; n=${rate.counts.join('/')}; ip=${(ipTag % 65536).toString(16)}`);
-  if (rate.limited) {
+  if (await isRateLimited(clientIp(req))) {
     res.setHeader('Retry-After', '60');
     return sendError(res, 429, 'Trop de questions d’un coup : le Bunker reprend son souffle. Réessaie dans quelques minutes.');
   }
