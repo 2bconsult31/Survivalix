@@ -1,0 +1,459 @@
+---
+// Page de démonstration interne — refonte UX, lot 1.
+// noindex, exclue du sitemap (astro.config.mjs), aucun lien depuis le site.
+// À supprimer dès que Boris a choisi une proposition.
+import Layout from '../layouts/Layout.astro';
+
+const propositions = [
+  {
+    id: 'a',
+    lettre: 'A',
+    nom: 'Coin de fiche cartonnée',
+    idee: "Chaque bloc est une fiche bristol : coin supérieur droit coupé en biais, filet fin sur tout le pourtour. Les intertitres sont soulignés d'un double filet, comme sur un formulaire imprimé.",
+  },
+  {
+    id: 'b',
+    lettre: 'B',
+    nom: 'Perforations et ligne de découpe',
+    idee: "Les cartes portent trois trous de classeur en haut. Les intertitres et les encadrés utilisent la ligne de découpe en pointillés avec ses ciseaux : « à découper et à garder sur soi ».",
+  },
+  {
+    id: 'c',
+    lettre: 'C',
+    nom: 'Onglet et tampon',
+    idee: "Chaque bloc porte un onglet de classeur qui dépasse en haut à gauche. Les intertitres commencent par un numéro de chapitre façon onglet, les encadrés sont marqués d'un tampon encreur légèrement de travers.",
+  },
+];
+---
+
+<Layout
+  title="Design lab — refonte, lot 1 (page interne)"
+  description="Page de démonstration interne de la refonte graphique de Survivalix. Non indexée."
+  robots="noindex, nofollow"
+>
+  <div class="lab">
+    <header class="lab-intro">
+      <p class="lab-kicker">Page interne · non indexée · à supprimer après choix</p>
+      <h1>Remplacer les bordures latérales</h1>
+      <p>
+        Aujourd'hui, 34 blocs du site se signalent par une bordure colorée sur le côté gauche : cartes de rubrique,
+        intertitres h3, encadrés, liens de la colonne latérale. Voici trois façons de les remplacer, inspirées des
+        documents imprimés des années 50. Chacune est montrée sur une carte de rubrique, un intertitre d'article et un encadré.
+      </p>
+    </header>
+
+    <!-- AVANT -->
+    <section class="lab-row" aria-labelledby="avant-titre">
+      <div class="lab-row-head">
+        <h2 id="avant-titre"><span class="lab-letter">0</span> Aujourd'hui</h2>
+        <p>Pour comparaison : la bordure ambre à gauche, présente partout.</p>
+      </div>
+      <div class="lab-specimens">
+        <div class="specimen">
+          <p class="specimen-tag">Carte de rubrique</p>
+          <a href="#avant-titre" class="card card--avant">
+            <h3>Le Manuel</h3>
+            <p>Guides de fond, checklists, méthodes éprouvées.</p>
+          </a>
+        </div>
+        <div class="specimen">
+          <p class="specimen-tag">Intertitre d'article</p>
+          <div class="prose">
+            <h3 class="h3--avant">Ce qu'il faut mettre dans le sac</h3>
+            <p>L'eau, de quoi manger sans cuisson, une lampe et une radio à piles ou à manivelle.</p>
+          </div>
+        </div>
+        <div class="specimen">
+          <p class="specimen-tag">Encadré</p>
+          <div class="prose">
+            <blockquote class="quote--avant">
+              <p>Un sac prêt à l'avance, c'est dix minutes gagnées le jour où il faut partir vite.</p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {propositions.map((p) => (
+      <section class={`lab-row lab-row--${p.id}`} aria-labelledby={`prop-${p.id}`}>
+        <div class="lab-row-head">
+          <h2 id={`prop-${p.id}`}><span class="lab-letter">{p.lettre}</span> {p.nom}</h2>
+          <p>{p.idee}</p>
+        </div>
+        <div class="lab-specimens">
+          <div class="specimen">
+            <p class="specimen-tag">Carte de rubrique</p>
+            <a href={`#prop-${p.id}`} class={`card card--${p.id}`}>
+              {p.id === 'b' && <span class="holes" aria-hidden="true"><i></i><i></i><i></i></span>}
+              {p.id === 'c' && <span class="tab" aria-hidden="true">01</span>}
+              <h3>Le Manuel</h3>
+              <p>Guides de fond, checklists, méthodes éprouvées.</p>
+            </a>
+          </div>
+          <div class="specimen">
+            <p class="specimen-tag">Intertitre d'article</p>
+            <div class="prose">
+              <h3 class={`h3--${p.id}`}>
+                {p.id === 'c' && <span class="h3-num" aria-hidden="true">2.1</span>}
+                Ce qu'il faut mettre dans le sac
+              </h3>
+              <p>L'eau, de quoi manger sans cuisson, une lampe et une radio à piles ou à manivelle.</p>
+            </div>
+          </div>
+          <div class="specimen">
+            <p class="specimen-tag">Encadré</p>
+            <div class="prose">
+              <blockquote class={`quote--${p.id}`}>
+                {p.id === 'c' && <span class="stamp" aria-hidden="true">À retenir</span>}
+                <p>Un sac prêt à l'avance, c'est dix minutes gagnées le jour où il faut partir vite.</p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+    ))}
+
+    <!-- ÉTIQUETTES -->
+    <section class="lab-row lab-rule" aria-labelledby="etiquettes-titre">
+      <div class="lab-row-head">
+        <h2 id="etiquettes-titre"><span class="lab-letter">+</span> Les étiquettes « // TEXTE // »</h2>
+        <p>
+          Constat : 71 étiquettes de ce type sur le site, une par section ou presque. Répétées partout, elles ne disent plus rien.
+        </p>
+      </div>
+      <div class="rule-grid">
+        <div class="rule-col">
+          <h3>On les garde à 2 endroits</h3>
+          <ol>
+            <li>
+              <strong>L'en-tête des pages de rubrique</strong> (« // SECTION 01 // » sur le Manuel, « // SECTION 03 // » sur
+              l'Atelier…). C'est le seul endroit où elles jouent leur vrai rôle : numéroter les chapitres du manuel, comme le
+              marquage en tête d'un document officiel.
+            </li>
+            <li>
+              <strong>Le quiz « Quel survivant es-tu ? »</strong> (« // IDENTIFICATION DU CITOYEN // » et la carte de résultat).
+              Le quiz joue à la fiche administrative : le marquage fait partie du jeu.
+            </li>
+          </ol>
+        </div>
+        <div class="rule-col">
+          <h3>Partout ailleurs</h3>
+          <ul>
+            <li>Si l'étiquette répète le titre qui suit (« // CONTACT // » au-dessus de « Contact »), on la supprime.</li>
+            <li>
+              Si elle apporte une information (« Outil interactif », « Fiche recette », « Temps de réponse »), elle devient une
+              petite étiquette en capitales, sans les barres obliques.
+            </li>
+            <li>Les visuels de remplacement des articles sans image (« // LE MANUEL // ») perdent aussi leurs barres.</li>
+          </ul>
+          <div class="rule-example">
+            <span class="ex-before">// OUTIL INTERACTIF //</span>
+            <span class="ex-arrow" aria-hidden="true">→</span>
+            <span class="ex-after">Outil interactif</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lab-row lab-next">
+      <h2>À toi de choisir</h2>
+      <p>
+        Réponds simplement « A », « B » ou « C » (ou un mélange : par exemple la carte de A avec l'encadré de C), et dis si la
+        règle des étiquettes te convient. Le choix sera ensuite appliqué à tout le site, cette page sera supprimée, et tu
+        recevras l'aperçu pour validation avant toute mise en ligne.
+      </p>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .lab {
+    --paper: #F5E6C8;
+    --ink: #0d0d0d;
+    --amber: #F5A623;
+    --khaki: #7A8C50;
+    --brick: #8B2500;
+    --line: #3a3a3a;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem 5rem;
+  }
+
+  .lab-intro { max-width: 760px; margin-bottom: 3rem; }
+  .lab-kicker {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--khaki);
+    opacity: 1;
+    margin-bottom: 0.6rem;
+  }
+  .lab-intro h1 { font-size: clamp(1.8rem, 5vw, 2.8rem); margin-bottom: 1rem; }
+
+  .lab-row {
+    padding: 2.5rem 0;
+    border-top: 1px solid #222;
+  }
+  .lab-row-head { max-width: 760px; margin-bottom: 1.8rem; }
+  .lab-row-head h2 {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.6rem;
+  }
+  .lab-row-head p { margin: 0; }
+  .lab-letter {
+    display: inline-grid;
+    place-items: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    flex: none;
+    background: var(--amber);
+    color: var(--ink);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+  .lab-specimens {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+  }
+  @media (min-width: 900px) {
+    .lab-specimens { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+
+  .specimen-tag {
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #8A8A8A;
+    opacity: 1;
+    margin-bottom: 0.8rem;
+  }
+
+  /* ---------- Éléments communs ---------- */
+  .card {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    background: var(--ink);
+    padding: 1.5rem 1.2rem;
+    min-height: 120px;
+  }
+  .card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 0.4rem;
+  }
+  .card p { font-size: 0.85rem; margin: 0; opacity: 0.75; }
+  .card:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+
+  .prose h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--amber);
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  .prose p { color: var(--paper); margin-bottom: 0; }
+  .prose blockquote {
+    margin: 0;
+    padding: 1rem 1.5rem;
+    background: #111;
+    font-style: italic;
+    position: relative;
+  }
+
+  /* ---------- 0. Avant ---------- */
+  .card--avant { border: 1px solid #333; border-left: 4px solid var(--amber); }
+  .h3--avant { border-left: 3px solid var(--amber); padding-left: 0.8rem; }
+  .quote--avant { border-left: 4px solid var(--amber); }
+
+  /* ---------- A. Coin de fiche cartonnée ---------- */
+  .card--a {
+    --cut: 22px;
+    background:
+      linear-gradient(225deg, var(--amber) 0 calc(var(--cut) * 1.25), transparent 0) top right / var(--cut) var(--cut) no-repeat,
+      var(--ink);
+    clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, 0 100%);
+    box-shadow: inset 0 0 0 1px #4a4a4a;
+  }
+  /* Filet continu qui suit aussi le coin coupé */
+  .card--a::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #4a4a4a;
+    clip-path: polygon(
+      0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, 0 100%, 0 0,
+      1px 1px, 1px calc(100% - 1px), calc(100% - 1px) calc(100% - 1px),
+      calc(100% - 1px) calc(var(--cut) + 0.4px), calc(100% - var(--cut) - 0.4px) 1px, 1px 1px
+    );
+    pointer-events: none;
+  }
+  .card--a:hover::before { background: var(--amber); }
+  .h3--a {
+    padding-bottom: 0.45rem;
+    border-bottom: 3px double var(--amber);
+    display: inline-block;
+  }
+  .quote--a {
+    --cut: 18px;
+    background:
+      linear-gradient(225deg, var(--amber) 0 calc(var(--cut) * 1.25), transparent 0) top right / var(--cut) var(--cut) no-repeat,
+      #111 !important;
+    clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, 0 100%);
+    border-top: 1px solid #4a4a4a;
+    border-bottom: 1px solid #4a4a4a;
+  }
+
+  /* ---------- B. Perforations et découpe ---------- */
+  .card--b {
+    border: 1px solid #4a4a4a;
+    padding-top: 2.4rem;
+  }
+  .card--b:hover { border-color: var(--amber); }
+  .holes {
+    position: absolute;
+    top: 0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 2.2rem;
+  }
+  .holes i {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #000;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.9), 0 0 0 1px #4a4a4a;
+  }
+  .h3--b,
+  .quote--b {
+    --scissors: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F5A623' stroke-width='1.6' stroke-linecap='round'%3E%3Ccircle cx='6' cy='6' r='3'/%3E%3Ccircle cx='6' cy='18' r='3'/%3E%3Cpath d='M8.6 7.6 20 18M8.6 16.4 20 6'/%3E%3C/svg%3E");
+  }
+  .h3--b {
+    padding-top: 1rem;
+    background:
+      var(--scissors) left top / 16px 16px no-repeat,
+      linear-gradient(90deg, var(--amber) 50%, transparent 0) 22px 7px / 10px 1.5px repeat-x;
+  }
+  .quote--b {
+    border: 1.5px dashed var(--amber);
+    background: transparent !important;
+    padding-top: 1.4rem !important;
+  }
+  .quote--b::before {
+    content: '';
+    position: absolute;
+    top: -9px;
+    left: 1rem;
+    width: 18px;
+    height: 18px;
+    background: var(--ink) var(--scissors) center / 16px 16px no-repeat;
+  }
+
+  /* ---------- C. Onglet et tampon ---------- */
+  .card--c {
+    border: 1px solid #4a4a4a;
+    border-top: 3px solid var(--amber);
+    margin-top: 1.6rem;
+  }
+  .card--c:hover { background: #141414; }
+  .tab {
+    position: absolute;
+    top: -1.75rem;
+    left: -1px;
+    height: 1.6rem;
+    padding: 0 1rem 0 0.8rem;
+    display: flex;
+    align-items: center;
+    background: var(--amber);
+    color: var(--ink);
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 0 100%);
+  }
+  .h3--c { display: flex; align-items: baseline; gap: 0.7rem; }
+  .h3-num {
+    flex: none;
+    background: var(--amber);
+    color: var(--ink);
+    font-size: 0.8rem;
+    padding: 0.1rem 0.75rem 0.1rem 0.45rem;
+    clip-path: polygon(0 0, calc(100% - 7px) 0, 100% 100%, 0 100%);
+  }
+  .quote--c {
+    border: 1px solid #4a4a4a;
+    padding-top: 2.2rem !important;
+  }
+  .stamp {
+    position: absolute;
+    top: 0.6rem;
+    left: 1.2rem;
+    transform: rotate(-3deg);
+    font-family: 'Special Elite', cursive;
+    font-style: normal;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #E0573A;
+    border: 2px solid currentColor;
+    padding: 0 0.5rem;
+    border-radius: 2px;
+    opacity: 0.95;
+  }
+
+  /* ---------- Étiquettes ---------- */
+  .rule-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+  }
+  @media (min-width: 900px) {
+    .rule-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+  .rule-col h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  .rule-col ol,
+  .rule-col ul { padding-left: 1.3rem; display: grid; gap: 0.8rem; }
+  .rule-col li { color: var(--paper); font-weight: 300; line-height: 1.7; }
+  .rule-col strong { color: var(--amber); font-weight: 700; }
+  .rule-example {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .ex-before { color: #8A8A8A; text-decoration: line-through; }
+  .ex-arrow { color: var(--amber); }
+  .ex-after { color: var(--khaki); text-transform: uppercase; }
+
+  .lab-next h2 { font-size: clamp(1.3rem, 3vw, 1.8rem); margin-bottom: 0.8rem; }
+  .lab-next p { max-width: 760px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .lab * { transition: none !important; }
+  }
+</style>

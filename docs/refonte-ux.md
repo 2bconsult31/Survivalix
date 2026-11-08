@@ -12,7 +12,7 @@ Mis à jour à la fin de chaque lot : statut, numéro de PR, décisions prises.
 | Lot | Sujet | Statut | PR | Fusion |
 |---|---|---|---|---|
 | 0 | Nettoyage | fait | #60 | automatique |
-| 1 | Les tics visuels | à faire | — | après accord écrit de Boris |
+| 1 | Les tics visuels | en attente de validation (choix A/B/C) | PR à venir | après accord écrit de Boris |
 | 2 | La page d'accueil | à faire | — | après accord écrit de Boris |
 | 3 | La lecture des articles | à faire | — | après accord écrit de Boris |
 | 4 | Le système « manuel de défense civile » | à faire (sur feu vert) | — | à définir |
@@ -63,3 +63,8 @@ Statuts possibles : à faire / en cours / en attente de validation / fait.
 - Bandeau défilant : regroupé dans un composant unique src/components/Ticker.astro (il était copié à l'identique dans les 5 gabarits). « ⚠ NIVEAU D'ALERTE : MODÉRÉ » remplacé par « RESTEZ PRÊTS, PAS PARANOS », sans le pictogramme d'alerte. Les trois autres messages sont inchangés.
 - Le second passage du texte (nécessaire à la boucle) est masqué aux lecteurs d'écran, qui ne lisent plus les messages deux fois.
 - prefers-reduced-motion : animation coupée, second passage masqué, messages centrés et repliés sur plusieurs lignes si l'écran est étroit.
+
+### Lot 1 — Les tics visuels (en cours)
+- Étape 1 : page de démonstration src/pages/design-lab.astro (noindex, nofollow ; exclue du sitemap dans astro.config.mjs ; aucun lien depuis le site). Trois propositions sur une carte de rubrique, un intertitre et un encadré : A coin de fiche cartonnée, B perforations et ligne de découpe, C onglet et tampon. Contrôle axe-core WCAG 2.2 AA : zéro erreur (ordinateur et mobile).
+- Règle proposée pour les étiquettes « // TEXTE // » (71 occurrences) : gardées seulement en en-tête des pages de rubrique (« // SECTION 0X // ») et dans le quiz. Ailleurs : supprimées si elles répètent le titre, sinon petite étiquette en capitales sans barres obliques.
+- En attente du choix de Boris avant d'appliquer à tout le site et de supprimer /design-lab.
