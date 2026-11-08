@@ -8,7 +8,7 @@ import Layout from '../layouts/Layout.astro';
 >
 
   <div class="page-header">
-    <div class="page-label">// PROTOCOLE D'INITIALISATION //</div>
+    <div class="page-label">PROTOCOLE D'INITIALISATION</div>
     <h1>Par où commencer ?</h1>
     <p class="page-desc">
       Tu n'as jamais préparé quoi que ce soit. Tu ne sais pas ce qu'est un kit 72h. 
@@ -30,15 +30,15 @@ import Layout from '../layouts/Layout.astro';
         </p>
       </div>
       <div class="intro-stats">
-        <div class="intro-stat">
+        <div class="intro-stat fiche">
           <span class="intro-stat-num">72h</span>
           <span class="intro-stat-label">L'autonomie minimum recommandée</span>
         </div>
-        <div class="intro-stat">
+        <div class="intro-stat fiche">
           <span class="intro-stat-num">5</span>
           <span class="intro-stat-label">Semaines pour être prêt</span>
         </div>
-        <div class="intro-stat">
+        <div class="intro-stat fiche">
           <span class="intro-stat-num">6 L</span>
           <span class="intro-stat-label">D'eau par personne pour 72h, le repère officiel</span>
         </div>
@@ -47,7 +47,7 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <section class="etapes">
-    <div class="section-label">// PLAN D'ACTION //</div>
+    <div class="section-label">PLAN D'ACTION</div>
     <h2>Les 5 étapes dans l'ordre</h2>
 
     <div class="etapes-list">
@@ -188,7 +188,7 @@ import Layout from '../layouts/Layout.astro';
 
   <section class="profil-cta">
     <div class="profil-cta-inner">
-      <div class="section-label">// ÉTAPE BONUS //</div>
+      <div class="section-label">ÉTAPE BONUS</div>
       <h2>Découvre ton profil Survivant</h2>
       <p>
         Chaque personne a un profil naturel en situation de crise. 
@@ -200,10 +200,10 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <section class="ressources-rapides">
-    <div class="section-label">// RESSOURCES CLÉS //</div>
+    <div class="section-label">RESSOURCES CLÉS</div>
     <h2>Les pages essentielles</h2>
     <div class="ressources-grid">
-      <a href="/manuel/kit-urgence-72h" class="ressource-card">
+      <a href="/manuel/kit-urgence-72h" class="ressource-card fiche">
         <div class="ressource-icon">
           <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="12" y="20" width="40" height="32" rx="2" stroke="#F5A623" stroke-width="1.5"/>
@@ -218,7 +218,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <span class="ressource-arrow">→</span>
       </a>
-      <a href="/outils/calculateur-stock-eau" class="ressource-card">
+      <a href="/outils/calculateur-stock-eau" class="ressource-card fiche">
         <div class="ressource-icon">
           <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M32 8 C32 8 16 24 16 36 C16 44.8 23.2 52 32 52 C40.8 52 48 44.8 48 36 C48 24 32 8 32 8Z" stroke="#F5A623" stroke-width="1.5" fill="none"/>
@@ -231,7 +231,7 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <span class="ressource-arrow">→</span>
       </a>
-      <a href="/bunker" class="ressource-card">
+      <a href="/bunker" class="ressource-card fiche">
         <div class="ressource-icon">
           <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="12" y="20" width="40" height="32" rx="2" stroke="#F5A623" stroke-width="1.5"/>
@@ -316,8 +316,8 @@ import Layout from '../layouts/Layout.astro';
 
   .intro-stat {
     background-color: #111;
-    border: 1px solid #222;
-    border-left: 4px solid #F5A623;
+    border: 1px solid var(--filet);
+    border-top: 3px solid #F5A623;
     padding: 1rem 1.2rem;
   }
 
@@ -445,8 +445,8 @@ import Layout from '../layouts/Layout.astro';
     align-items: center;
     gap: 0.8rem;
     background-color: #111;
-    border: 1px solid #1e1e1e;
-    border-left: 3px solid #F5A623;
+    border: 1px solid var(--filet);
+    border-top: 3px solid #F5A623;
     padding: 0.8rem 1rem;
     margin-bottom: 1rem;
   }
@@ -544,15 +544,15 @@ import Layout from '../layouts/Layout.astro';
     align-items: center;
     gap: 1.2rem;
     background-color: #0d0d0d;
-    border: 1px solid #222;
-    border-left: 4px solid #F5A623;
+    border: 1px solid var(--filet);
+    border-top: 3px solid #F5A623;
     padding: 1.2rem;
     text-decoration: none;
     transition: border-color 0.2s, transform 0.2s;
   }
 
   .ressource-card:hover {
-    border-left-color: #8B2500;
+    background-color: #141414;
     transform: translateX(4px);
   }
 

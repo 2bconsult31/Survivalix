@@ -33,8 +33,7 @@ export default defineConfig({
   integrations: [
     sitemap({
       // La page de résultat du quiz est personnalisée : pas d'intérêt à l'indexer.
-      // /design-lab : page de démonstration interne de la refonte, jamais indexée.
-      filter: (page) => !page.includes('/survivant/resultat') && !page.includes('/design-lab'),
+      filter: (page) => !page.includes('/survivant/resultat'),
       serialize(item) {
         const date = lastmod.get(item.url.replace(/\/$/, ''));
         if (date) item.lastmod = date;

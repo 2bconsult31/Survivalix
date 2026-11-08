@@ -32,7 +32,6 @@ const termes = [
 <Layout title="Lexique du Prepping — Survivalix" description="Tous les termes et acronymes du survivalisme et du prepping expliqués simplement, sans jargon inutile. BOB, EDC, PLS, SHTF et bien d'autres.">
 
   <div class="lexique-header">
-    <div class="lexique-label">// GLOSSAIRE //</div>
     <h1>Le Lexique</h1>
     <p class="lexique-desc">Tous les mots bizarres que tu vas croiser en lisant sur la survie et le prepping — expliqués sans jargon, sans te faire sentir idiot de ne pas déjà les connaître.</p>
   </div>
@@ -60,7 +59,7 @@ const termes = [
 
   <div class="lexique-grid" id="lexiqueGrid">
     {termes.map((t, i) => (
-      <div class="terme-card" data-cat={t.categorie} data-search={`${t.mot} ${t.def}`.toLowerCase()}>
+      <div class="terme-card fiche" data-cat={t.categorie} data-search={`${t.mot} ${t.def}`.toLowerCase()}>
         <div class="terme-cat">#{t.categorie}</div>
         <h2 class="terme-mot">{t.mot}</h2>
         <p class="terme-def">{t.def}</p>
@@ -247,8 +246,8 @@ const termes = [
 
   .terme-card {
     background-color: #0d0d0d;
-    border: 1px solid #222;
-    border-left: 4px solid #F5A623;
+    border: 1px solid var(--filet);
+    border-top: 3px solid #F5A623;
     padding: 1.4rem;
     display: flex;
     flex-direction: column;
