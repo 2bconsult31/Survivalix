@@ -12,7 +12,7 @@ Mis à jour à la fin de chaque lot : statut, numéro de PR, décisions prises.
 | Lot | Sujet | Statut | PR | Fusion |
 |---|---|---|---|---|
 | 0 | Nettoyage | fait | #60 | automatique |
-| 1 | Les tics visuels | en attente de validation (aperçu) | #61 | après accord écrit de Boris |
+| 1 | Les tics visuels | fait | #61 | après accord écrit de Boris (donné) |
 | 2 | La page d'accueil | à faire | — | après accord écrit de Boris |
 | 3 | La lecture des articles | à faire | — | après accord écrit de Boris |
 | 4 | Le système « manuel de défense civile » | à faire (sur feu vert) | — | à définir |
@@ -64,7 +64,7 @@ Statuts possibles : à faire / en cours / en attente de validation / fait.
 - Le second passage du texte (nécessaire à la boucle) est masqué aux lecteurs d'écran, qui ne lisent plus les messages deux fois.
 - prefers-reduced-motion : animation coupée, second passage masqué, messages centrés et repliés sur plusieurs lignes si l'écran est étroit.
 
-### Lot 1 — Les tics visuels (PR #61, en attente de validation de l'aperçu)
+### Lot 1 — Les tics visuels (PR #61, fusionnée après accord écrit de Boris)
 - Étape 1 : page /design-lab (noindex, hors sitemap) avec 3 propositions. Boris a choisi **C, onglet et tampon**. Page supprimée ensuite.
 - Système « onglet » dans src/styles/global.css : classe .fiche = filet fin #4a4a4a (variable --filet) tout autour, filet ambre de 3 px en haut, onglet ambre qui dépasse en haut à gauche ; data-onglet="01" écrit un numéro dans l'onglet. Appliqué aux cartes de rubrique de l'accueil (01 Manuel, 02 Cantine, IA Bunker, 03 Atelier, 04 Outils, 05 Radar : cartes Outils et Radar interverties pour suivre l'ordre, pastille « IA » remplacée par l'onglet), aux chiffres et ressources de /commencer-ici, aux fiches du lexique, aux encadrés d'article (blockquote).
 - Intertitres h3 des articles : onglet numéroté en CSS (« 2.1 » = 1er h3 de la 2e partie), décoratif, absent du texte de la page.
