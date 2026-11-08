@@ -5,7 +5,6 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="À propos — Survivalix" description="Survivalix, c'est quoi ? Un site de survie et prepping pour tout le monde, avec un ton décalé et une DA rétro-futuriste. L'histoire du projet.">
 
   <div class="about-header">
-    <div class="about-label">// À PROPOS //</div>
     <h1>Ce qu'est Survivalix<br/>et pourquoi ça existe</h1>
   </div>
 
@@ -46,7 +45,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
 
     <div class="about-cta">
-      <div class="cta-label">// PAR OÙ COMMENCER ? //</div>
+      <div class="cta-label">PAR OÙ COMMENCER ?</div>
       <div class="cta-links">
         <a href="/manuel/kit-urgence-72h" class="cta-btn">Le Kit 72h →</a>
         <a href="/outils/evaluateur-preparation" class="cta-btn cta-btn-outline">Évaluer ma préparation →</a>
@@ -96,8 +95,9 @@ import Layout from '../layouts/Layout.astro';
     color: #F5E6C8;
     line-height: 1.7;
     opacity: 0.9;
-    border-left: 3px solid #F5A623;
-    padding-left: 1.5rem;
+    border: 1px solid var(--filet);
+    border-top: 3px solid #F5A623;
+    padding: 1.2rem 1.5rem;
   }
 
   .about-section h2 {

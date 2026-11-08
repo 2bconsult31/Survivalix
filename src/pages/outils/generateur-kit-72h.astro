@@ -8,7 +8,7 @@ import Layout from '../../layouts/Layout.astro';
 >
 
   <div class="page-header">
-    <div class="page-label">// OUTIL INTERACTIF //</div>
+    <div class="page-label">OUTIL INTERACTIF</div>
     <h1>Ta checklist kit 72h, personnalisée</h1>
     <p class="page-desc">
       Pas un chiffre à regarder une fois. Une vraie liste à cocher,
@@ -265,7 +265,7 @@ import Layout from '../../layouts/Layout.astro';
 
       const labelEl = document.createElement('div');
       labelEl.className = 'checklist-category-label';
-      labelEl.textContent = `// ${cat.nom} //`;
+      labelEl.textContent = `${cat.nom}`;
       catEl.appendChild(labelEl);
 
       cat.items.forEach((item) => {
@@ -549,8 +549,8 @@ import Layout from '../../layouts/Layout.astro';
 
   .checklist-category {
     background-color: #0d0d0d;
-    border: 1px solid #1e1e1e;
-    border-left: 3px solid #F5A623;
+    border: 1px solid var(--filet);
+    border-top: 3px solid #F5A623;
     padding: 1.2rem;
   }
 

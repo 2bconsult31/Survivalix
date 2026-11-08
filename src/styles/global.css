@@ -13,6 +13,7 @@
   --gris-texte: #8A8A8A; /* textes secondaires sur fond sombre */
   --font-titre: 'Special Elite', cursive;
   --font-nav: 'Oswald', sans-serif;
+  --filet: #4a4a4a; /* filet fin des fiches et encadrés */
 }
 
 html, body {
@@ -146,7 +147,6 @@ nav ul a {
   text-decoration: none;
   letter-spacing: 2px;
   padding: 1rem 1.5rem;
-  border-left: 3px solid transparent;
   transition: all 0.2s;
   background-color: transparent;
   line-height: 1.4;
@@ -154,14 +154,12 @@ nav ul a {
 
 nav ul a:hover {
   color: var(--ambre);
-  border-left-color: var(--ambre);
-  background-color: transparent;
+  background-color: #161616;
 }
 
 nav ul .cta {
   background-color: var(--ambre);
   color: var(--noir) !important;
-  border-left-color: var(--ambre);
   margin-top: 0.5rem;
   text-align: center;
   font-size: 1.15rem;
@@ -183,12 +181,11 @@ nav ul .cta:hover { background-color: var(--ambre-fonce); }
   }
   nav ul a {
     padding: 0.5rem 1rem;
-    border-left: none;
     border: 1px solid transparent;
     font-size: 0.82rem;
     line-height: normal;
   }
-  nav ul a:hover { border-color: var(--ambre); }
+  nav ul a:hover { border-color: var(--ambre); background-color: transparent; }
   nav ul .cta { margin-top: 0; font-size: 0.82rem; }
   .header-top { justify-content: center; }
   .logo { text-align: center; }
@@ -278,6 +275,8 @@ footer {
 .footer-copy { font-size: 0.75rem; color: var(--gris-texte); }
 
 /* ARTICLE CONTENT OVERRIDES */
+.article-content { counter-reset: chap-h2; }
+
 .article-content h2 {
   font-family: 'Special Elite', cursive;
   font-size: clamp(1.2rem, 3vw, 1.7rem);
@@ -286,8 +285,9 @@ footer {
   margin-bottom: 1.5rem;
   padding-bottom: 0.4rem;
   border-bottom: 1px solid #1e1e1e;
-  border-left: none;
   letter-spacing: 1px;
+  counter-increment: chap-h2;
+  counter-reset: chap-h3;
 }
 
 .article-content h3 {
@@ -298,8 +298,22 @@ footer {
   margin-top: 60px;
   margin-bottom: 1.2rem;
   letter-spacing: 1px;
-  border-left: 3px solid var(--ambre);
-  padding-left: 0.8rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  counter-increment: chap-h3;
+}
+
+/* Onglet numéroté façon classeur : « 2.1 » = 1er intertitre de la 2e partie.
+   Purement décoratif (généré en CSS, absent du texte de la page). */
+.article-content h3::before {
+  content: counter(chap-h2) "." counter(chap-h3);
+  flex: none;
+  background-color: var(--ambre);
+  color: var(--noir);
+  font-size: 0.8rem;
+  padding: 0.1rem 0.75rem 0.1rem 0.45rem;
+  clip-path: polygon(0 0, calc(100% - 7px) 0, 100% 100%, 0 100%);
 }
 
 .article-content p {
@@ -339,7 +353,7 @@ button {
   width: 100% !important;
   background-color: #0d0d0d !important;
   border: 1px solid #333 !important;
-  border-left: 4px solid #333 !important;
+  border-top: 3px solid #333 !important;
   padding: 1rem 1.2rem !important;
   cursor: pointer !important;
   text-align: left !important;
@@ -349,7 +363,7 @@ button {
 }
 
 .answer-btn:hover {
-  border-left-color: #F5A623 !important;
+  border-top-color: #F5A623 !important;
   background-color: #111 !important;
 }
 
@@ -392,7 +406,7 @@ button {
 }
 
 .answer-selected {
-  border-left-color: #F5A623 !important;
+  border-top-color: #F5A623 !important;
   background-color: #F5A623 !important;
 }
 
@@ -460,3 +474,42 @@ button {
 .article-breadcrumb a {
   padding-block: 0.3rem;
 }
+
+/* ============================================================
+   SYSTÈME « ONGLET » (refonte UX, lot 1, proposition C)
+   Remplace les bordures latérales : filet fin tout autour, filet ambre
+   en haut, et un onglet de classeur qui dépasse en haut à gauche.
+   Ajouter data-onglet="01" pour écrire un numéro dans l'onglet.
+   ============================================================ */
+.fiche,
+.article-content blockquote {
+  position: relative;
+  border: 1px solid var(--filet);
+  border-top: 3px solid var(--ambre);
+  margin-top: calc(var(--onglet-h) + 0.25rem);
+  --onglet-h: 0.65rem;
+}
+
+.fiche[data-onglet] { --onglet-h: 1.5rem; }
+
+.fiche::before,
+.article-content blockquote::before {
+  content: attr(data-onglet);
+  position: absolute;
+  top: calc(-1 * var(--onglet-h) - 3px);
+  left: -1px;
+  height: var(--onglet-h);
+  min-width: 2.6rem;
+  padding: 0 1rem 0 0.55rem;
+  background-color: var(--ambre);
+  color: var(--noir);
+  font-family: var(--font-nav);
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: var(--onglet-h);
+  letter-spacing: 1.5px;
+  clip-path: polygon(0 0, calc(100% - 9px) 0, 100% 100%, 0 100%);
+}
+
+.article-content blockquote::before { content: ''; }

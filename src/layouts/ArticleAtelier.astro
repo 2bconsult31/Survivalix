@@ -90,7 +90,7 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
             <path d="M 40 380 L 40 340 M 40 380 L 80 380" stroke="#F5A623" stroke-width="2" opacity="0.4" fill="none"/>
             <path d="M 1160 380 L 1160 340 M 1160 380 L 1120 380" stroke="#F5A623" stroke-width="2" opacity="0.4" fill="none"/>
             <rect x="40" y="160" width="180" height="26" fill="#F5A623" opacity="0.85"/>
-            <text x="50" y="178" font-family="Oswald,sans-serif" font-size="12" font-weight="700" fill="#0d0d0d" letter-spacing="3">// L'ATELIER //</text>
+            <text x="50" y="178" font-family="Oswald,sans-serif" font-size="12" font-weight="700" fill="#0d0d0d" letter-spacing="3">L'ATELIER</text>
             <text x="40" y="240" font-family="Special Elite,cursive" font-size="11" fill="#F5A623" opacity="0.2" letter-spacing="2">[ ILLUSTRATION À VENIR ]</text>
           </svg>
         </div>
@@ -168,7 +168,7 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
         )}
 
         <div class="article-meta">
-          <span>// L'ATELIER</span>
+          <span>L'ATELIER</span>
           <span class="dot">·</span>
           <span>Lecture : ~8 min</span>
         </div>
@@ -183,18 +183,18 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
       <aside class="article-sidebar">
         {frontmatter.fiche_png && (
           <div class="sidebar-block">
-            <div class="sidebar-label">// FICHE TECHNIQUE //</div>
+            <div class="sidebar-label">FICHE TECHNIQUE</div>
             <p>La fiche illustrée prête à imprimer — garde-la dans ton kit.</p>
             <a href={frontmatter.fiche_png} class="sidebar-btn" download>⬇ Télécharger la fiche</a>
           </div>
         )}
         <div class="sidebar-block">
-          <div class="sidebar-label">// QUEL SURVIVANT ? //</div>
+          <div class="sidebar-label">QUEL SURVIVANT ?</div>
           <p>Découvre ton profil et télécharge ta carte collector.</p>
           <a href="/survivant" class="sidebar-btn">Faire le quiz →</a>
         </div>
         <div class="sidebar-block">
-          <div class="sidebar-label">// LE MANUEL //</div>
+          <div class="sidebar-label">LE MANUEL</div>
           <ul class="sidebar-links">
             <li><a href="/manuel/kit-urgence-72h">Kit d'urgence 72h</a></li>
           </ul>
@@ -320,8 +320,8 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 2rem;
-    border: 1px solid #222;
-    border-left: 3px solid #F5A623;
+    border: 1px solid var(--filet);
+    border-top: 3px solid #F5A623;
     background-color: #0f0f0f;
   }
 
@@ -423,8 +423,6 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
     margin-top: 60px;
     margin-bottom: 1.2rem;
     letter-spacing: 1px;
-    border-left: 3px solid #F5A623;
-    padding-left: 0.8rem;
   }
 
   .article-content p {
@@ -469,7 +467,8 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
   .article-content hr { display: none; }
 
   .article-content blockquote {
-    border-left: 4px solid #F5A623;
+    border: 1px solid var(--filet);
+    border-top: 3px solid #F5A623;
     padding: 1rem 1.5rem;
     margin: 2rem 0;
     background-color: #111;
@@ -580,10 +579,9 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
     text-decoration: none;
     letter-spacing: 0.5px;
     display: block;
-    border-left: 2px solid transparent;
     padding: 0.15rem 0 0.15rem 0.6rem;
     transition: all 0.2s;
   }
 
-  .sidebar-links a:hover { border-left-color: #F5A623; opacity: 0.7; }
+  .sidebar-links a:hover { text-decoration: underline; text-underline-offset: 3px; opacity: 0.7; }
 </style>

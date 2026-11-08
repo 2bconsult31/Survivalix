@@ -8,7 +8,7 @@ import Layout from '../../layouts/Layout.astro';
 >
 
   <div class="page-header">
-    <div class="page-label">// OUTIL INTERACTIF //</div>
+    <div class="page-label">OUTIL INTERACTIF</div>
     <h1>Calculateur de stock d'eau</h1>
     <p class="page-desc">
       Combien de litres stocker pour tenir 72h ? Et pour 2 semaines ? 
@@ -21,7 +21,7 @@ import Layout from '../../layouts/Layout.astro';
     <div class="calc-form">
 
       <div class="form-section">
-        <div class="form-section-label">// TON FOYER //</div>
+        <div class="form-section-label">TON FOYER</div>
 
         <div class="form-group">
           <label for="adultes">Adultes</label>
@@ -44,7 +44,7 @@ import Layout from '../../layouts/Layout.astro';
       </div>
 
       <div class="form-section">
-        <div class="form-section-label">// OPTIONS //</div>
+        <div class="form-section-label">OPTIONS</div>
 
         <div class="form-group">
           <label for="duree">Durée d'autonomie visée</label>
@@ -66,7 +66,7 @@ import Layout from '../../layouts/Layout.astro';
     <div class="calc-result" id="result">
 
       <div class="result-header">
-        <div class="result-label">// RÉSULTAT //</div>
+        <div class="result-label">RÉSULTAT</div>
         <div class="result-total" id="result-total">12 L</div>
         <p class="result-desc" id="result-desc">Pour 2 adultes sur 72h</p>
       </div>
@@ -83,7 +83,7 @@ import Layout from '../../layouts/Layout.astro';
       </div>
 
       <div class="result-stockage">
-        <div class="result-label">// COMMENT STOCKER //</div>
+        <div class="result-label">COMMENT STOCKER</div>
         <div class="stockage-grid">
           <div class="stockage-item">
             <div class="stockage-num" id="stock-bouteilles">8</div>
@@ -475,8 +475,8 @@ import Layout from '../../layouts/Layout.astro';
     gap: 0.8rem;
     align-items: flex-start;
     background-color: #0d0d0d;
-    border: 1px solid #1e1e1e;
-    border-left: 3px solid #F5A623;
+    border: 1px solid var(--filet);
+    border-top: 3px solid #F5A623;
     padding: 0.8rem 1rem;
   }
 

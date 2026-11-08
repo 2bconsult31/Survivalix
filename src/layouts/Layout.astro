@@ -179,7 +179,6 @@ const url = Astro.url;
   header nav ul li {
     background: none !important;
     border: none !important;
-    border-left: none !important;
     padding: 0 !important;
     display: block !important;
     transform: none !important;
@@ -187,7 +186,6 @@ const url = Astro.url;
 
   header nav ul li:hover {
     background: none !important;
-    border-left-color: transparent !important;
     transform: none !important;
   }
 
@@ -200,7 +198,6 @@ const url = Astro.url;
     text-decoration: none;
     letter-spacing: 2px;
     padding: 1rem 1.5rem !important;
-    border-left: 3px solid transparent;
     transition: all 0.2s;
     background-color: transparent !important;
     line-height: 1.4;
@@ -208,14 +205,12 @@ const url = Astro.url;
 
   header nav ul a:hover {
     color: #F5A623;
-    border-left-color: #F5A623;
-    background-color: transparent !important;
+    background-color: #161616 !important;
   }
 
   header nav ul .cta {
     background-color: #F5A623 !important;
     color: #0d0d0d !important;
-    border-left-color: #F5A623 !important;
     margin-top: 0.5rem;
     text-align: center;
     font-size: 1.15rem !important;
@@ -241,7 +236,6 @@ const url = Astro.url;
 
     header nav ul a {
       padding: 0.5rem 1rem !important;
-      border-left: none !important;
       border: 1px solid transparent !important;
       font-size: 0.82rem !important;
       line-height: normal !important;
@@ -249,7 +243,7 @@ const url = Astro.url;
 
     header nav ul a:hover {
       border-color: #F5A623 !important;
-      border-left-color: #F5A623 !important;
+      background-color: transparent !important;
     }
 
     header nav ul .cta {
@@ -280,14 +274,14 @@ const url = Astro.url;
 
   main ul li {
     background-color: #0d0d0d;
-    border: 1px solid #333;
-    border-left: 4px solid #F5A623;
+    border: 1px solid var(--filet);
+    border-top: 3px solid #F5A623;
     padding: 1.2rem;
     transition: border-color 0.2s, transform 0.2s;
   }
 
   main ul li:hover {
-    border-left-color: #8B2500;
+    background-color: #141414;
     transform: translateY(-2px);
   }
 

@@ -8,7 +8,7 @@ import Layout from '../../layouts/Layout.astro';
 >
 
   <div class="page-header">
-    <div class="page-label">// OUTIL INTERACTIF //</div>
+    <div class="page-label">OUTIL INTERACTIF</div>
     <h1>Évaluateur de préparation</h1>
     <p class="page-desc">
       10 questions pour savoir où tu en es vraiment.
@@ -39,7 +39,7 @@ import Layout from '../../layouts/Layout.astro';
     <div id="resultat" style="display:none">
 
       <div class="result-score-block">
-        <div class="result-label">// TON SCORE //</div>
+        <div class="result-label">TON SCORE</div>
         <div class="score-circle">
           <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
             <circle cx="60" cy="60" r="52" fill="none" stroke="#1a1a1a" stroke-width="8"/>
@@ -57,7 +57,7 @@ import Layout from '../../layouts/Layout.astro';
       </div>
 
       <div class="result-details">
-        <div class="result-label">// CE QUI MANQUE //</div>
+        <div class="result-label">CE QUI MANQUE</div>
         <div id="reco-list" class="reco-list"></div>
       </div>
 
@@ -67,7 +67,7 @@ import Layout from '../../layouts/Layout.astro';
         <a href="/bunker" class="btn-lien">Poser une question au Bunker →</a>
       </div>
 
-      <button class="btn-recommencer" onclick="recommencer()">// Recommencer l'évaluation //</button>
+      <button class="btn-recommencer" onclick="recommencer()">Recommencer l'évaluation</button>
 
     </div>
 
@@ -241,7 +241,7 @@ import Layout from '../../layouts/Layout.astro';
     const wrap = document.getElementById('questions-wrap');
     wrap.innerHTML = `
       <div class="question-block">
-        <div class="question-num">// QUESTION ${String(index + 1).padStart(2, '0')} //</div>
+        <div class="question-num">QUESTION ${String(index + 1).padStart(2, '0')}</div>
         <h2 class="question-texte">${q.texte}</h2>
         <div class="options-list">
           ${q.options.map((opt, i) => `
