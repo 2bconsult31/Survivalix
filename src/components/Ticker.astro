@@ -1,0 +1,22 @@
+---
+// Bandeau défilant sous l'en-tête. Le second passage du texte ne sert qu'à la boucle
+// de l'animation : il est masqué aux lecteurs d'écran et quand l'animation est réduite.
+const messages = [
+  'RESTEZ PRÊTS, PAS PARANOS',
+  'STOCK EAU : VÉRIFIER',
+  'RESTEZ INFORMÉS. RESTEZ VIVANTS.',
+  'KIT 72H : PRÉPARER DÈS MAINTENANT',
+];
+---
+<div class="hero-band">
+  <div class="ticker">
+    <div class="ticker-inner">
+      <div class="ticker-group">
+        {messages.map((m) => (<><span>{m}</span><span class="sep" aria-hidden="true">///</span></>))}
+      </div>
+      <div class="ticker-group ticker-copy" aria-hidden="true">
+        {messages.map((m) => (<><span>{m}</span><span class="sep">///</span></>))}
+      </div>
+    </div>
+  </div>
+</div>

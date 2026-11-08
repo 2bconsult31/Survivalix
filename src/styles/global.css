@@ -199,10 +199,10 @@ nav ul .cta:hover { background-color: var(--ambre-fonce); }
 .ticker { display: flex; overflow: hidden; }
 .ticker-inner {
   display: flex;
-  gap: 2rem;
   animation: ticker 20s linear infinite;
   white-space: nowrap;
 }
+.ticker-group { display: flex; gap: 2rem; padding-right: 2rem; flex-shrink: 0; }
 .ticker-inner span {
   font-family: var(--font-nav);
   font-size: 0.75rem;
@@ -216,6 +216,16 @@ nav ul .cta:hover { background-color: var(--ambre-fonce); }
 @keyframes ticker {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
+}
+/* Animation réduite : bandeau immobile, messages centrés et repliés sur plusieurs lignes si besoin */
+@media (prefers-reduced-motion: reduce) {
+  .ticker-inner { animation: none; width: 100%; white-space: normal; justify-content: center; }
+  .ticker-copy { display: none; }
+  .ticker-group { flex-wrap: wrap; justify-content: center; row-gap: 0.2rem; column-gap: 1.25rem; padding: 0 1rem; flex-shrink: 1; }
+  .ticker-group .sep:last-child { display: none; }
+}
+@media (prefers-reduced-motion: reduce) and (max-width: 767px) {
+  .ticker-group .sep { display: none; }
 }
 
 /* FOOTER */
