@@ -32,6 +32,16 @@ const { Content } = await render(recette);
   difficulte: recette.data.difficulte,
   energie: recette.data.energie,
   conservation: recette.data.conservation,
+  // Données structurées Recipe, lues par ArticleSEO
+  prepTime: recette.data.prepTime,
+  cookTime: recette.data.cookTime,
+  totalTime: recette.data.totalTime,
+  recipeYield: recette.data.recipeYield,
+  recipeCategory: recette.data.recipeCategory,
+  recipeCuisine: recette.data.recipeCuisine,
+  recipeIngredient: recette.data.recipeIngredient,
+  recipeInstructions: recette.data.recipeInstructions,
+  keywords: recette.data.keywords,
 }}>
   <Content />
 </ArticleCantine>

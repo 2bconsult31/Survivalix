@@ -15,6 +15,32 @@ personnes: 2
 difficulte: "Facile"
 energie: "Réchaud / Feu"
 conservation: "Riz blanc et haricots secs : plusieurs années (selon le stockage)"
+prepTime: "PT10M"
+cookTime: "PT30M"
+totalTime: "PT40M"
+recipeYield: "2 portions"
+recipeCategory: "Plat principal"
+recipeIngredient:
+  - "200 g de riz blanc"
+  - "400 g de haricots en conserve"
+  - "400 ml d'eau ou de bouillon"
+  - "1 oignon (ou de l'oignon en poudre)"
+  - "Cumin, paprika et sel"
+recipeInstructions:
+  - "Fais chauffer un filet d'huile dans une casserole."
+  - "Ajoute l'oignon émincé et fais revenir 2 à 3 minutes."
+  - "Ajoute le cumin et le paprika et mélange 30 secondes."
+  - "Verse le riz et mélange pour l'enrober."
+  - "Ajoute l'eau ou le bouillon (2 volumes d'eau pour 1 volume de riz)."
+  - "Couvre, réduis le feu au minimum et laisse cuire 18 minutes sans soulever le couvercle."
+  - "Éteins le feu et laisse reposer 5 minutes à couvert."
+  - "Égoutte et rince les haricots, puis ajoute-les dans la casserole."
+  - "Mélange, assaisonne et sers."
+keywords:
+  - "riz aux haricots"
+  - "recette sans électricité"
+  - "protéine complète"
+  - "réserve alimentaire"
 ---
 
 Il y a des recettes qui traversent les siècles parce qu'elles fonctionnent. Pas parce qu'elles sont spectaculaires — parce qu'elles sont solides. Le riz aux haricots, c'est ça. On retrouve cette association dans plein de cuisines du monde : Amérique latine, Caraïbes, Afrique de l'Ouest, Louisiane... Chacun avec ses épices, son accent, ses variantes locales — mais toujours la même base.

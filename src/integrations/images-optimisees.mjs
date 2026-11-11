@@ -39,6 +39,7 @@ export async function genererImages(logger) {
     }
   }
   logger?.info(`images WebP : ${crees} créée(s)`);
+  await genererRecadragesRecettes(logger);
 }
 
 export default function imagesOptimisees() {
@@ -56,4 +57,53 @@ export default function imagesOptimisees() {
       },
     },
   };
+}
+
+// Recadrages 16:9, 4:3 et 1:1 de l'image principale des recettes (Cantine),
+// recommandés par Google pour les données structurées Recipe. Jamais d'agrandissement :
+// la hauteur d'origine borne la taille. Sortie : public/images/_opt/cantine/<nom>-16x9.jpg, etc.
+// Point focal horizontal (0 = bord gauche, 1 = bord droit) quand le sujet n'est pas au centre.
+// Par défaut 0,5 (centre). Vérifier le rendu des carrés après tout ajout de recette.
+const POINT_FOCAL = {
+  'pemmican-survie': 0.33,
+};
+
+export const RECADRAGES = [
+  { suffixe: '16x9', l: 16, h: 9 },
+  { suffixe: '4x3', l: 4, h: 3 },
+  { suffixe: '1x1', l: 1, h: 1 },
+];
+
+async function genererRecadragesRecettes(logger) {
+  const dossier = join(RACINE, 'cantine');
+  if (!existsSync(dossier)) return;
+  let crees = 0;
+  for (const nom of readdirSync(dossier)) {
+    if (!/\.(jpe?g|png)$/i.test(nom)) continue;
+    const source = join(dossier, nom);
+    const base = nom.slice(0, -extname(nom).length);
+    const { width = 0, height = 0 } = await sharp(source).metadata();
+    const dateSource = statSync(source).mtimeMs;
+    for (const { suffixe, l, h } of RECADRAGES) {
+      const cible = join(SORTIE, 'cantine', `${base}-${suffixe}.jpg`);
+      if (existsSync(cible) && statSync(cible).mtimeMs >= dateSource) continue;
+      // Plus grand rectangle au bon format qui tient dans l'image d'origine
+      let largeur = width;
+      let hauteur = Math.round((width * h) / l);
+      if (hauteur > height) {
+        hauteur = height;
+        largeur = Math.round((height * l) / h);
+      }
+      const focal = POINT_FOCAL[base] ?? 0.5;
+      const left = Math.min(Math.max(Math.round(focal * width - largeur / 2), 0), width - largeur);
+      const top = Math.round((height - hauteur) / 2);
+      mkdirSync(dirname(cible), { recursive: true });
+      await sharp(source)
+        .extract({ left, top, width: largeur, height: hauteur })
+        .jpeg({ quality: 82, mozjpeg: true })
+        .toFile(cible);
+      crees++;
+    }
+  }
+  logger?.info(`recadrages des recettes : ${crees} créé(s)`);
 }

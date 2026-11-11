@@ -14,6 +14,27 @@ personnes: 6
 difficulte: "Intermédiaire"
 energie: "Four (séchage) / Casserole"
 conservation: "Quelques semaines au sec · Plus longtemps au réfrigérateur ou au congélateur"
+recipeYield: "environ 600 g de pemmican"
+recipeCategory: "En-cas"
+recipeCuisine: "Amérindienne"
+recipeIngredient:
+  - "300 g de viande de bœuf maigre (rumsteck ou paleron)"
+  - "300 g de graisse de bœuf (suif) ou de graisse de canard"
+  - "100 g de fruits secs (canneberges, raisins ou airelles séchées), facultatif"
+recipeInstructions:
+  - "Coupe le bœuf en tranches très fines, après 30 minutes au congélateur pour faciliter la découpe."
+  - "Poche ou passe les tranches au four chaud jusqu'à 71 °C à cœur, vérifiés au thermomètre à sonde."
+  - "Fais sécher les tranches sur une grille au four à basse température, porte entrouverte, pendant 6 à 8 heures, jusqu'à ce que la viande casse net."
+  - "Une fois sèche et refroidie, réduis la viande en poudre au mixeur."
+  - "Fais fondre le suif à feu très doux pendant 1 h à 1 h 30, puis filtre-le dans une passoire fine."
+  - "Mélange la poudre de viande et les fruits secs hachés, puis verse la graisse encore chaude et travaille jusqu'à obtenir une pâte homogène."
+  - "Forme des barres ou des boules et laisse-les durcir 2 à 3 heures à température ambiante sur du papier cuisson."
+keywords:
+  - "pemmican"
+  - "viande séchée"
+  - "longue conservation"
+  - "kit 72h"
+  - "énergie"
 ---
 
 En 1909, Robert Peary affirme avoir atteint le pôle Nord, un exploit encore discuté par les historiens, après des semaines en autonomie sur la banquise. Dans ses traîneaux, avec des biscuits de mer et du lait condensé, l'aliment star de la ration quotidienne : du pemmican. Un mélange de viande séchée et de graisse fondue, hérité des peuples autochtones d'Amérique du Nord, notamment des chasseurs de bison des Grandes Plaines, capable de nourrir un homme par des températures où presque tout le reste gèle, pourrit ou s'alourdit inutilement.

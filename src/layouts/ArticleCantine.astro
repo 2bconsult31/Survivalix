@@ -9,7 +9,21 @@ import RelatedArticles from '../components/RelatedArticles.astro';
 
 interface Props {
   // date : publication ; updated : dernière modification de fond (optionnelle), lue par ArticleSEO
-  frontmatter: { date: Date; updated?: Date; [key: string]: any };
+  frontmatter: {
+    date: Date;
+    updated?: Date;
+    // Données structurées Recipe, transmises telles quelles à ArticleSEO
+    prepTime?: string;
+    cookTime?: string;
+    totalTime?: string;
+    recipeYield?: string;
+    recipeCategory?: string;
+    recipeCuisine?: string;
+    recipeIngredient?: string[];
+    recipeInstructions?: string[];
+    keywords?: string[];
+    [key: string]: any;
+  };
 }
 
 const { frontmatter } = Astro.props;

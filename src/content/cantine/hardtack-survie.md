@@ -14,6 +14,32 @@ personnes: 4
 difficulte: "Très facile"
 energie: "Four / Pierre chaude / Poêle sèche"
 conservation: "Plusieurs années au sec, en contenant hermétique"
+prepTime: "PT10M"
+cookTime: "PT30M"
+totalTime: "PT40M"
+recipeYield: "environ 15 biscuits"
+recipeCategory: "Biscuit"
+recipeCuisine: "Britannique"
+recipeIngredient:
+  - "315 g de farine blanche type 55"
+  - "120 ml d'eau froide"
+  - "1 cuillère à café de sel"
+recipeInstructions:
+  - "Préchauffe le four à 190 °C."
+  - "Mélange la farine et le sel dans un bol."
+  - "Ajoute l'eau progressivement jusqu'à obtenir une pâte très ferme et non collante."
+  - "Pétris 5 minutes jusqu'à obtenir une pâte homogène et dense."
+  - "Étale au rouleau à 8 mm d'épaisseur sur une surface légèrement farinée."
+  - "Coupe en carrés de 7 à 8 cm de côté."
+  - "Perce chaque carré de 16 trous réguliers (4 × 4) avec un couteau, un clou ou une fourchette."
+  - "Dispose les biscuits sur une plaque de cuisson sans graisse."
+  - "Enfourne 15 minutes, retourne chaque biscuit, puis cuis encore 15 minutes."
+  - "Laisse refroidir complètement sur une grille : les biscuits durcissent encore en refroidissant."
+keywords:
+  - "hardtack"
+  - "biscuit de survie"
+  - "biscuit de soldat"
+  - "longue conservation"
 ---
 
 Il y a des pièces de Hardtack de la Guerre de Sécession exposées dans des musées américains. Elles ont plus de 160 ans, et elles ont toujours une tête de biscuit. (On ne te conseille pas d'y goûter.)

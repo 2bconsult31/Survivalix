@@ -35,6 +35,16 @@ const cantine = defineCollection({
     difficulte: z.string().optional(),
     energie: z.string().optional(),
     conservation: z.string().optional(),
+    // Données structurées Recipe (extraits enrichis Google) — durées au format ISO 8601 (ex. PT15M)
+    prepTime: z.string().regex(/^PT(\d+H)?(\d+M)?$/).optional(),
+    cookTime: z.string().regex(/^PT(\d+H)?(\d+M)?$/).optional(),
+    totalTime: z.string().regex(/^PT(\d+H)?(\d+M)?$/).optional(),
+    recipeYield: z.string().optional(),
+    recipeCategory: z.string().optional(),
+    recipeCuisine: z.string().optional(),
+    recipeIngredient: z.array(z.string()).optional(),
+    recipeInstructions: z.array(z.string()).optional(),
+    keywords: z.array(z.string()).optional(),
   })
 });
 
