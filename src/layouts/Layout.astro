@@ -1,5 +1,7 @@
 ---
 import Ticker from '../components/Ticker.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
 import '../styles/global.css';
 
 const { 
@@ -70,31 +72,7 @@ const url = Astro.url;
 
     <div class="scanlines"></div>
 
-    <header>
-      <div class="header-inner">
-        <div class="header-top">
-          <a href="/" class="logo">
-            <img src="/LOGO_OK.svg" alt="Survivalix" class="logo-img" width="180" height="48" />
-          </a>
-          <button class="menu-toggle" id="menuToggle" aria-label="Menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-        <nav id="mainNav">
-          <ul>
-            <li><a href="/manuel">LE MANUEL</a></li>
-            <li><a href="/cantine">LA CANTINE</a></li>
-            <li><a href="/bunker">LE BUNKER</a></li>
-            <li><a href="/atelier">L'ATELIER</a></li>
-            <li><a href="/radar">LE RADAR</a></li>
-            <li><a href="/outils">LES OUTILS</a></li>
-            <li><a href="/survivant" class="cta">QUEL SURVIVANT ES-TU ?</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <SiteHeader />
 
     <Ticker />
 
@@ -102,47 +80,11 @@ const url = Astro.url;
       <slot />
     </main>
 
-    <footer>
-      <div class="footer-inner">
-        <img src="/LOGO_OK.svg" alt="Survivalix" class="footer-logo-img" width="160" height="43" />
-        <p class="footer-tagline">Le site de survie pour tout le monde.</p>
-        <div class="footer-links">
-          <a href="/a-propos">À propos</a>
-          <a href="/contact">Contact</a>
-          <a href="/mentions-legales">Mentions légales</a>
-          <a href="/politique-confidentialite">Confidentialité</a>
-          <a href="/ressources">Lexique</a>
-        </div>
-        <div class="footer-social">
-          <a href="https://www.instagram.com/survivalix_off/" target="_blank" rel="noopener noreferrer" aria-label="Survivalix sur Instagram" class="social-icon">
-            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="10" y="10" width="44" height="44" rx="12" stroke="#F5A623" stroke-width="1.5"/>
-              <circle cx="32" cy="32" r="12" stroke="#F5A623" stroke-width="1.5"/>
-              <circle cx="45" cy="19" r="2.2" fill="#F5A623"/>
-            </svg>
-          </a>
-          <a href="https://www.facebook.com/people/SurvivaliX/61592139130811/" target="_blank" rel="noopener noreferrer" aria-label="Survivalix sur Facebook" class="social-icon">
-            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="32" cy="32" r="22" stroke="#F5A623" stroke-width="1.5"/>
-              <path d="M36 24h-4c-2.2 0-4 1.8-4 4v4h-4v6h4v12h6V38h4.5l1-6H34v-3c0-1 .5-2 2-2h3v-6.5c0 0-1.8-.5-3-.5z" stroke="#F5A623" stroke-width="1.5" stroke-linejoin="round"/>
-            </svg>
-          </a>
-        </div>
-        <p class="footer-copy">© {new Date().getFullYear()} Survivalix — Tous droits réservés</p>
-      </div>
-    </footer>
+    <SiteFooter />
 
   </body>
 </html>
 
-<script>
-  const toggle = document.getElementById('menuToggle');
-  const nav = document.getElementById('mainNav');
-  toggle?.addEventListener('click', () => {
-    nav?.classList.toggle('open');
-    toggle.classList.toggle('active');
-  });
-</script>
 
 <style>
   /* MAIN */
@@ -154,105 +96,6 @@ const url = Astro.url;
 
   @media (min-width: 768px) {
     main { padding: 3rem 2rem; }
-  }
-
-  /* RESET NAV — empêche le global de transformer le nav en grille */
-  header nav {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-  }
-
-  header nav.open { max-height: 900px; }
-
-  header nav ul {
-    list-style: none !important;
-    display: flex !important;
-    flex-direction: column !important;
-    padding: 0.8rem 0 !important;
-    gap: 0 !important;
-    margin: 0 !important;
-    grid-template-columns: none !important;
-    background: none !important;
-  }
-
-  header nav ul li {
-    background: none !important;
-    border: none !important;
-    padding: 0 !important;
-    display: block !important;
-    transform: none !important;
-  }
-
-  header nav ul li:hover {
-    background: none !important;
-    transform: none !important;
-  }
-
-  header nav ul a {
-    display: block;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.15rem !important;
-    font-weight: 700;
-    color: #F5E6C8;
-    text-decoration: none;
-    letter-spacing: 2px;
-    padding: 1rem 1.5rem !important;
-    transition: all 0.2s;
-    background-color: transparent !important;
-    line-height: 1.4;
-  }
-
-  header nav ul a:hover {
-    color: #F5A623;
-    background-color: #161616 !important;
-  }
-
-  header nav ul .cta {
-    background-color: #F5A623 !important;
-    color: #0d0d0d !important;
-    margin-top: 0.5rem;
-    text-align: center;
-    font-size: 1.15rem !important;
-  }
-
-  header nav ul .cta:hover { background-color: #c4811a !important; }
-
-  @media (min-width: 768px) {
-    .menu-toggle { display: none !important; }
-
-    header nav {
-      max-height: none !important;
-      overflow: visible !important;
-    }
-
-    header nav ul {
-      flex-direction: row !important;
-      flex-wrap: wrap !important;
-      justify-content: center !important;
-      padding: 0.8rem 0 0 !important;
-      gap: 0.2rem !important;
-    }
-
-    header nav ul a {
-      padding: 0.5rem 1rem !important;
-      border: 1px solid transparent !important;
-      font-size: 0.82rem !important;
-      line-height: normal !important;
-    }
-
-    header nav ul a:hover {
-      border-color: #F5A623 !important;
-      background-color: transparent !important;
-    }
-
-    header nav ul .cta {
-      margin-top: 0 !important;
-      font-size: 0.82rem !important;
-    }
-
-    .header-top { justify-content: center; }
-    .logo { text-align: center; }
   }
 
   /* CARTES RUBRIQUES — uniquement dans main */
@@ -303,29 +146,4 @@ const url = Astro.url;
     margin-bottom: 0;
   }
 
-  /* RÉSEAUX SOCIAUX — FOOTER */
-  .footer-social {
-    display: flex;
-    justify-content: center;
-    gap: 1.2rem;
-    margin: 1.2rem 0;
-  }
-
-  .social-icon {
-    display: inline-flex;
-    width: 32px;
-    height: 32px;
-    opacity: 0.75;
-    transition: opacity 0.2s, transform 0.2s;
-  }
-
-  .social-icon:hover {
-    opacity: 1;
-    transform: translateY(-2px);
-  }
-
-  .social-icon svg {
-    width: 100%;
-    height: 100%;
-  }
 </style>
