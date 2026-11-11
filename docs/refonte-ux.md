@@ -13,7 +13,7 @@ Mis à jour à la fin de chaque lot : statut, numéro de PR, décisions prises.
 |---|---|---|---|---|
 | 0 | Nettoyage | fait | #60 | automatique |
 | 1 | Les tics visuels | fait | #61 | après accord écrit de Boris (donné) |
-| 2 | La page d'accueil | fait (illustration Radar à venir) | #62 | après accord écrit de Boris (donné) |
+| 2 | La page d'accueil | fait | #62 | après accord écrit de Boris (donné) |
 | 3 | La lecture des articles | à faire | — | après accord écrit de Boris |
 | 4 | Le système « manuel de défense civile » | à faire (sur feu vert) | — | à définir |
 
@@ -82,5 +82,5 @@ Statuts possibles : à faire / en cours / en attente de validation / fait.
 - « C'est quoi ce site ? » : devient un intertitre ; liste à coches allégée (petits tirets, deux colonnes).
 - « Tu débarques ici ? » : les cartes numérotées 01/02/03 deviennent une liste simple à trois colonnes, sans cadre ni numéro.
 - Étiquettes au-dessus des titres supprimées (protocole de démarrage, secteurs d'activité, identification du citoyen).
-- Rubriques : la carte affiche public/images/rubriques/<slug>.jpg dès que le fichier existe (1200 × 900), sinon garde son pictogramme. 6 illustrations demandées à Boris ; 5 livrées et en place (manuel, cantine, bunker, atelier, outils, 1200 × 896). Radar : pictogramme dans un cadre 4:3 en attendant public/images/rubriques/radar.jpg, que Boris envoie ensuite (il suffit de déposer le fichier).
+- Rubriques : la carte affiche public/images/rubriques/<slug>.jpg dès que le fichier existe (1200 × 900), sinon garde son pictogramme. 6 illustrations demandées à Boris ; 5 livrées et en place (manuel, cantine, bunker, atelier, outils, 1200 × 896). Radar : illustration livrée ensuite et ajoutée (public/images/rubriques/radar.jpg) ; les 6 cartes sont illustrées.
 - body { overflow-x: clip } dans global.css, pour que les blocs bord à bord ne créent jamais de défilement horizontal.
