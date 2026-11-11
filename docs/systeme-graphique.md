@@ -79,6 +79,7 @@ Style : rétro années 50, trait dense, hachures fines, halftone, grain papier, 
 - Hero d'article : 1920 × 815 px, bord à bord.
 - Rubriques de l'accueil : 1200 × 900 environ (4:3), `public/images/rubriques/<slug>.jpg`.
 - Ne jamais générer ni inventer un fichier : fournir un prompt, Boris génère.
+- Affichage : toujours via `src/components/ImageOpt.astro` (versions WebP générées au build, original en secours), avec un attribut `sizes` adapté à la largeur réelle de l'image. `loading="eager"` et `fetchpriority="high"` seulement pour l'image du haut de page.
 
 ## 5. Pièges techniques
 - **Contenu créé en JavaScript** (Bunker, résultat du quiz, générateur kit 72h, évaluateur) : les styles `<style>` d'Astro sont limités à la page et ne s'appliquent pas aux éléments créés par `innerHTML` ou `createElement`. Utiliser `:global()` sous un conteneur de la page (ex. `.bunker-chat :global(.message)`) ou une classe de global.css.

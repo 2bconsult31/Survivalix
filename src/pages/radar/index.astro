@@ -1,4 +1,5 @@
 ---
+import ImageOpt from '../../components/ImageOpt.astro';
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 
@@ -25,7 +26,7 @@ const articlesTries = articlesPublies.sort((a, b) => new Date(b.data.date).getTi
         <a href={`/radar/${article.id}`} class="article-card article-card-link fiche" data-onglet={String(index + 1).padStart(2, '0')}>
           <div class="card-image card-image-placeholder">
             {article.data.image ? (
-              <img src={article.data.image} alt={article.data.image_alt || article.data.title} />
+              <ImageOpt src={article.data.image} alt={article.data.image_alt || article.data.title} loading={index < 3 ? "eager" : "lazy"} sizes="(min-width: 1300px) 400px, (min-width: 900px) 31vw, (min-width: 600px) 48vw, 100vw" />
             ) : (
               <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:absolute;top:0;left:0;">
                 <defs>
@@ -190,8 +191,8 @@ const articlesTries = articlesPublies.sort((a, b) => new Date(b.data.date).getTi
     position: relative;
     background-color: #0d0d0d;
   }
-  .card-image img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s; }
-  .article-card-link:hover .card-image img { transform: scale(1.03); }
+  .card-image :global(img) { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s; }
+  .article-card-link:hover .card-image :global(img) { transform: scale(1.03); }
   .card-image-placeholder { background-color: #080808; }
 
   .card-body { padding: 1.2rem; display: flex; flex-direction: column; gap: 0.6rem; flex: 1; }

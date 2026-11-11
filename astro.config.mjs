@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import { readdirSync, readFileSync } from 'node:fs';
 
 import sitemap from '@astrojs/sitemap';
+import imagesOptimisees from './src/integrations/images-optimisees.mjs';
 
 const SITE = 'https://www.survivalix.fr';
 const RUBRIQUES = ['manuel', 'radar', 'cantine', 'atelier'];
@@ -31,6 +32,7 @@ export default defineConfig({
   site: SITE,
   trailingSlash: 'never',
   integrations: [
+    imagesOptimisees(),
     sitemap({
       // La page de résultat du quiz est personnalisée : pas d'intérêt à l'indexer.
       filter: (page) => !page.includes('/survivant/resultat'),

@@ -29,6 +29,10 @@ html, body {
 /* Les blocs « bord à bord » (100vw) ne doivent jamais créer de défilement horizontal */
 body { overflow-x: clip; }
 
+/* <picture> des images allégées (ImageOpt.astro) : transparent pour la mise en page */
+picture.img-opt { display: contents; }
+picture.img-opt > source { display: none; } /* sinon <source> occupe une case de grille */
+
 .scanlines {
   position: fixed;
   top: 0; left: 0;
