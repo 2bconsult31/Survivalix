@@ -17,7 +17,7 @@ Mis à jour à la fin de chaque lot : statut, numéro de PR, décisions prises.
 | 3 | La lecture des articles | fait | #64 | après accord écrit de Boris (donné) |
 | 4 | Le système « manuel de défense civile » | fait | #69 | après accord écrit de Boris (donné) |
 | 5 | Pages de liste des rubriques et pages annexes | fait | #70 | après accord écrit de Boris (donné) |
-| 6 | Poids des images (WebP, tailles adaptées) | en attente de validation | #71 | après accord écrit de Boris |
+| 6 | Poids des images (WebP, tailles adaptées) | fait | #71 | après accord écrit de Boris (donné) |
 | 7 | Illustrations des cartes d'outils | à faire | — | après accord écrit de Boris |
 | 8 | Gabarits d'article : en-tête, menu et pied partagés | à faire | — | après accord écrit de Boris |
 
@@ -132,7 +132,7 @@ Statuts possibles : à faire / en cours / en attente de validation / fait.
 - /ressources (lexique) : déjà au système depuis le lot 1, inchangé.
 - Contrôle axe-core WCAG 2.2 AA : zéro erreur sur les 8 pages, ordinateur et mobile ; aucun défilement horizontal.
 
-### Lot 6 — Poids des images (PR #71)
+### Lot 6 — Poids des images (PR #71, fusionnée après accord écrit de Boris)
 - src/integrations/images-optimisees.mjs (intégration Astro, déclarée dans astro.config.mjs) : à chaque astro build ou astro dev, crée avec sharp des copies WebP (qualité 78) de chaque image de public/images aux largeurs 480, 800, 1200, 1600 et à la largeur d'origine, sans agrandissement, dans public/images/_opt/ (ignoré par git, régénéré à chaque déploiement, environ 10 s). Une panne de génération ne bloque jamais le build : on garde alors les originaux.
 - src/components/ImageOpt.astro : remplace <img> ; produit <picture> avec les WebP (srcset + sizes) et l'original JPG en secours. Utilisé pour l'accueil (ouverture, à la une, dernières fiches, rubriques), les 4 pages de rubrique, l'image principale des 4 gabarits d'article et « À lire aussi ». Les originaux restent l'image des partages (Open Graph, JSON-LD) : aucun changement SEO.
 - Piège : l'<img> est rendu dans le composant, il ne reçoit pas les styles limités à la page parente → sélecteurs passés en :global() (.hero-img, .card-image :global(img)…). picture.img-opt est en display: contents, et son <source> en display: none (sinon il prend une case de grille).
