@@ -87,7 +87,7 @@ Statuts possibles : à faire / en cours / en attente de validation / fait.
 
 ### Lot 3 — La lecture des articles (en cours, test sur /manuel/sac-evacuation)
 - Activation : Article.astro, liste PAGES_PAPIER (une seule page pour le test) → classe .lecture-papier sur .article-content. Styles dans global.css (section « ZONE DE LECTURE PAGE IMPRIMÉE »).
-- Fond #FAF1DE (variante plus claire du crème #F5E6C8) avec grain très léger ; texte encre #1a1a1a (15,5:1) ; intertitres h2 et liens en rouge brique #8B2500 (7,9:1) ; h3 en encre avec l'onglet numéroté du lot 1. Ambre jamais utilisé pour du texte sur le crème.
+- Fond #FAF1DE (variante plus claire du crème #F5E6C8) avec grain très léger ; texte encre #1a1a1a (15,5:1) ; intertitres en noir #0d0d0d (17,3:1), h2 soulignés d'un filet ambre de 4 px, h3 avec l'onglet numéroté ambre du lot 1 ; liens en noir gras soulignés d'ambre (3 px). Premier essai en rouge brique refusé par Boris (hors charte) : le rouge brique est réservé au tampon « À retenir ». L'ambre n'est jamais une couleur de texte sur le crème (1,8:1), seulement un filet, un soulignement ou un onglet.
 - Typographie : Oswald 400 (au lieu de 300), 18 px (chapeau 20 px), interlignage 1,75, colonne de 30rem ≈ 68 à 75 caractères par ligne (Oswald est étroite), h2 plus grands avec filet noir de 2 px.
 - Encadré « À retenir » : double filet noir façon fiche de consigne, tampon « À retenir » rouge brique légèrement de travers. Style appliqué aux citations markdown (>). Dans sac-evacuation.md, le paragraphe « Un conseil pratique » passe en citation (texte inchangé, mise en forme seulement).
 - Cadre noir inchangé : en-tête, image principale, titre, colonne latérale, articles liés, pied de page.

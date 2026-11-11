@@ -521,12 +521,15 @@ button {
    ZONE DE LECTURE « PAGE IMPRIMÉE » (refonte UX, lot 3)
    Fond crème papier, texte noir d'encre. Le cadre du site
    (en-tête, image principale, colonne latérale, pied) reste noir.
-   Contrastes sur #FAF1DE : encre #1a1a1a 15,5:1 ; brique #8B2500 7,9:1.
+   Contrastes sur #FAF1DE : encre #1a1a1a 15,5:1 ; noir #0d0d0d 17,3:1.
+   L'ambre (1,8:1 sur le crème) ne sert jamais de couleur de texte :
+   seulement de filet, de soulignement et d'onglet.
    ============================================================ */
 .article-content.lecture-papier {
   --papier: #FAF1DE;
   --encre: #1a1a1a;
-  --brique: #8B2500;
+  --ambre-papier: #F5A623;
+  --brique: #8B2500; /* réservé au tampon « À retenir » */
   --filet-papier: #c8b68e;
   position: relative;
   color: var(--encre);
@@ -565,13 +568,13 @@ button {
 .lecture-papier > p:first-child { font-size: 1.25rem; line-height: 1.7; }
 
 .lecture-papier h2 {
-  color: var(--brique);
+  color: var(--noir);
   font-size: clamp(1.55rem, 3.6vw, 2.05rem);
   line-height: 1.2;
   margin-top: 3.75rem;
   margin-bottom: 1.25rem;
-  padding-bottom: 0.45rem;
-  border-bottom: 2px solid var(--encre);
+  padding-bottom: 0.5rem;
+  border-bottom: 4px solid var(--ambre-papier);
 }
 
 .lecture-papier h3 {
@@ -585,17 +588,19 @@ button {
 .lecture-papier em { opacity: 1; }
 
 .lecture-papier a {
-  color: var(--brique);
+  color: var(--noir);
+  font-weight: 700;
   text-decoration: underline;
-  text-decoration-thickness: 1px;
+  text-decoration-color: var(--ambre-papier);
+  text-decoration-thickness: 3px;
   text-underline-offset: 3px;
 }
-.lecture-papier a:hover { opacity: 1; text-decoration-thickness: 2px; }
+.lecture-papier a:hover { opacity: 1; background-color: rgba(245, 166, 35, 0.35); }
 
 .lecture-papier ul,
 .lecture-papier ol { margin: 0 auto 1.6rem !important; padding-left: 1.4rem; }
 .lecture-papier li { margin-bottom: 0.35rem; }
-.lecture-papier li::marker { color: var(--brique); font-weight: 700; }
+.lecture-papier li::marker { color: var(--noir); font-weight: 700; }
 
 .lecture-papier :is(td, th) { color: var(--encre) !important; border-color: var(--filet-papier) !important; }
 .lecture-papier th { background-color: var(--encre) !important; color: var(--papier) !important; }
