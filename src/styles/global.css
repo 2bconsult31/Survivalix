@@ -521,13 +521,13 @@ button {
    ZONE DE LECTURE « PAGE IMPRIMÉE » (refonte UX, lot 3)
    Fond crème papier, texte noir d'encre. Le cadre du site
    (en-tête, image principale, colonne latérale, pied) reste noir.
-   Contrastes sur #FAF1DE : encre #1a1a1a 15,5:1 ; noir #0d0d0d 17,3:1.
+   Contrastes sur #FAF1DE : encre #000 19,4:1 ; noir #0d0d0d 17,3:1.
    L'ambre (1,8:1 sur le crème) ne sert jamais de couleur de texte :
    seulement de filet, de soulignement et d'onglet.
    ============================================================ */
 .article-content.lecture-papier {
   --papier: #FAF1DE;
-  --encre: #1a1a1a;
+  --encre: #000000; /* noir profond : 19,4:1 sur le crème */
   --ambre-papier: #F5A623;
   --brique: #8B2500; /* réservé au tampon « À retenir » */
   --filet-papier: #c8b68e;
@@ -558,7 +558,7 @@ button {
 .lecture-papier li {
   color: var(--encre) !important;
   opacity: 1;
-  font-weight: 400;
+  font-weight: 500; /* Oswald 500, chargée par les 4 gabarits d'article */
   font-size: 1.125rem;
   line-height: 1.75;
   letter-spacing: 0.2px;
@@ -568,7 +568,7 @@ button {
 .lecture-papier > p:first-child { font-size: 1.25rem; line-height: 1.7; }
 
 .lecture-papier h2 {
-  color: var(--noir);
+  color: var(--encre);
   font-size: clamp(1.55rem, 3.6vw, 2.05rem);
   line-height: 1.2;
   margin-top: 3.75rem;
@@ -588,7 +588,7 @@ button {
 .lecture-papier em { opacity: 1; }
 
 .lecture-papier a {
-  color: var(--noir);
+  color: var(--encre);
   font-weight: 700;
   text-decoration: underline;
   text-decoration-color: var(--ambre-papier);
