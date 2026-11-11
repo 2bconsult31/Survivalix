@@ -584,6 +584,17 @@ button {
   margin-bottom: 0.75rem;
 }
 
+/* Titres en gras. Special Elite n'existe qu'en une graisse et Oswald est
+   déjà en 700 : on épaissit le trait par un fin contour de la même couleur.
+   Le texte courant n'est pas concerné. */
+.lecture-papier :is(h2, h3, h4) {
+  -webkit-text-stroke: 0.035em currentColor;
+  paint-order: stroke fill;
+}
+.lecture-papier :is(h3, h4) { -webkit-text-stroke-width: 0.025em; }
+/* L'onglet numéroté des h3 garde son trait d'origine */
+.lecture-papier h3::before { -webkit-text-stroke: 0; }
+
 .lecture-papier strong { color: var(--encre); font-weight: 700; }
 .lecture-papier em { opacity: 1; }
 
