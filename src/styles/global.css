@@ -653,3 +653,61 @@ button {
 
 .lecture-papier blockquote p { margin-bottom: 0; }
 .lecture-papier blockquote p + p { margin-top: 0.8rem; }
+
+/* ============================================================
+   SYSTÈME « MANUEL DE DÉFENSE CIVILE » (refonte UX, lot 4)
+   Référence : docs/systeme-graphique.md
+   ============================================================ */
+
+/* Tampon encreur : courte mention en capitales, légèrement de travers.
+   Sur fond noir : ambre. Sur fond crème : rouge brique (.papier, .lecture-papier). */
+.tampon {
+  display: inline-block;
+  transform: rotate(-2.5deg);
+  font-family: var(--font-titre);
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: var(--ambre);
+  border: 2px solid currentColor;
+  border-radius: 2px;
+  padding: 0.1rem 0.7rem;
+}
+:is(.papier, .lecture-papier) .tampon { color: var(--rouge); }
+
+/* Encadré de consigne sur fond noir : double filet et tampon posé sur le bord.
+   Variante sombre de l'encadré « À retenir » des articles. */
+.encadre-consigne {
+  position: relative;
+  margin-top: 1.4rem;
+  padding: 1.9rem 1.2rem 1.1rem;
+  border: 2px solid var(--ambre);
+  outline: 1px solid var(--ambre);
+  outline-offset: 4px;
+  background-color: #111;
+}
+.encadre-consigne > .tampon {
+  position: absolute;
+  top: -0.95rem;
+  left: 1rem;
+  background-color: var(--noir);
+}
+
+/* Feuille crème : petit bloc « imprimé » hors des articles
+   (réponses du Bunker, résultats). Mêmes couleurs que .lecture-papier. */
+.papier {
+  background-color: #FAF1DE;
+  background-image: radial-gradient(rgba(26, 26, 26, 0.045) 1px, transparent 1.2px);
+  background-size: 4px 4px;
+  color: #000;
+}
+.papier :is(p, li, td, th, span) { color: #000 !important; opacity: 1; }
+.papier a {
+  color: #000;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--ambre);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3px;
+}

@@ -32,8 +32,7 @@ import Layout from '../../layouts/Layout.astro';
       </div>
     </div>
 
-    <div class="question-card" id="questionCard">
-      <div class="question-num" id="questionNum" aria-hidden="true" data-num="01"></div>
+    <div class="question-card fiche" id="questionCard" data-onglet="Q. 01">
       <h2 class="question-text" id="questionText"></h2>
       <div class="answers-list" id="answersGrid"></div>
     </div>
@@ -173,7 +172,8 @@ import Layout from '../../layouts/Layout.astro';
     document.getElementById('progressFill').style.width = `${pct}%`;
     document.getElementById('progressNum').textContent = `QUESTION ${currentQuestion + 1} / ${questions.length}`;
     document.getElementById('progressPct').textContent = `${pct}%`;
-    document.getElementById('questionNum').dataset.num = String(currentQuestion + 1).padStart(2, '0');
+    // Onglet décoratif « Q. 01 » (la progression est annoncée par .progress-label)
+    document.getElementById('questionCard').dataset.onglet = 'Q. ' + String(currentQuestion + 1).padStart(2, '0');
     document.getElementById('questionText').textContent = q.text;
 
     const grid = document.getElementById('answersGrid');
@@ -322,22 +322,8 @@ import Layout from '../../layouts/Layout.astro';
 
   .question-card {
     background-color: #0d0d0d;
-    border: 1px solid #1e1e1e;
-    border-top: 4px solid #F5A623;
     padding: 2.5rem 2rem;
     transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-
-  /* Numéro purement décoratif (la progression est annoncée par .progress-label) */
-  .question-num::before { content: attr(data-num); }
-
-  .question-num {
-    font-family: 'Special Elite', cursive;
-    font-size: 4rem;
-    color: #1a1a1a;
-    line-height: 1;
-    margin-bottom: 1rem;
-    letter-spacing: 2px;
   }
 
   .question-text {
@@ -441,6 +427,5 @@ import Layout from '../../layouts/Layout.astro';
 
   @media (max-width: 600px) {
     .question-card { padding: 1.5rem 1rem; }
-    .question-num { font-size: 2.5rem; }
   }
 </style>

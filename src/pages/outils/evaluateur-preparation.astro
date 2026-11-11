@@ -38,7 +38,7 @@ import Layout from '../../layouts/Layout.astro';
     <!-- RÉSULTAT (caché au départ) -->
     <div id="resultat" style="display:none">
 
-      <div class="result-score-block">
+      <div class="result-score-block fiche">
         <div class="result-label">TON SCORE</div>
         <div class="score-circle">
           <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
@@ -56,7 +56,7 @@ import Layout from '../../layouts/Layout.astro';
         <p class="score-desc" id="score-desc">—</p>
       </div>
 
-      <div class="result-details">
+      <div class="result-details fiche">
         <div class="result-label">CE QUI MANQUE</div>
         <div id="reco-list" class="reco-list"></div>
       </div>
@@ -240,8 +240,7 @@ import Layout from '../../layouts/Layout.astro';
     const q = questions[index];
     const wrap = document.getElementById('questions-wrap');
     wrap.innerHTML = `
-      <div class="question-block">
-        <div class="question-num">QUESTION ${String(index + 1).padStart(2, '0')}</div>
+      <div class="question-block fiche" data-onglet="Q. ${String(index + 1).padStart(2, '0')}">
         <h2 class="question-texte">${q.texte}</h2>
         <div class="options-list">
           ${q.options.map((opt, i) => `
@@ -328,7 +327,7 @@ import Layout from '../../layouts/Layout.astro';
     // Recommandations
     const recoList = document.getElementById('reco-list');
     if (lacunes.length === 0) {
-      recoList.innerHTML = `<p class="reco-ok">// Rien à signaler — tu as coché toutes les cases. Chapeau.</p>`;
+      recoList.innerHTML = `<p class="reco-ok">Rien à signaler — tu as coché toutes les cases. Chapeau.</p>`;
     } else {
       recoList.innerHTML = lacunes.map(l => `
         <div class="reco-item">
@@ -425,18 +424,9 @@ import Layout from '../../layouts/Layout.astro';
   /* QUESTION */
   .question-block {
     background-color: #111;
-    border: 1px solid #1e1e1e;
-    border-top: 3px solid #F5A623;
     padding: 2rem;
   }
 
-  .question-num {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.75rem;
-    color: var(--kaki-texte);
-    letter-spacing: 3px;
-    margin-bottom: 1rem;
-  }
 
   .question-texte {
     font-family: 'Special Elite', cursive;
@@ -537,8 +527,6 @@ import Layout from '../../layouts/Layout.astro';
   /* RÉSULTAT */
   .result-score-block {
     background-color: #111;
-    border: 1px solid #1e1e1e;
-    border-top: 3px solid #F5A623;
     padding: 2rem;
     text-align: center;
     margin-bottom: 1.5rem;
@@ -611,8 +599,6 @@ import Layout from '../../layouts/Layout.astro';
   /* RECOMMANDATIONS */
   .result-details {
     background-color: #111;
-    border: 1px solid #1e1e1e;
-    border-top: 3px solid #6B7C45;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
   }

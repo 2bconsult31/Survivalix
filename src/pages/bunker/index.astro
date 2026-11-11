@@ -191,8 +191,8 @@ const suggestions = [
     if (role === 'assistant') {
       div.innerHTML = `
         <div class="message-avatar">${avatarSVG()}</div>
-        <div class="message-content">
-          <div class="message-name">Bunker IA</div>
+        <div class="message-content papier fiche" data-onglet="BUNKER IA">
+          <span class="visually-hidden">Bunker IA :</span>
           ${safe.split('\n\n').map(p => `<p>${p.replace(/\n/g, '<br/>')}</p>`).join('')}
         </div>
       `;
@@ -354,7 +354,8 @@ const suggestions = [
   .bunker[data-state="conversation"] .bunker-hero,
   .bunker[data-state="conversation"] .bunker-suggestions { display: none; }
 
-  .visually-hidden {
+  /* :global : aussi utilisé dans les messages créés en JavaScript */
+  :global(.visually-hidden) {
     position: absolute;
     width: 1px; height: 1px;
     overflow: hidden;
@@ -599,10 +600,12 @@ const suggestions = [
     gap: 1.2rem;
   }
 
-  .message { display: flex; gap: 0.8rem; align-items: flex-start; }
-  .message-user { flex-direction: row-reverse; }
+  /* Les messages sont créés en JavaScript : sans attribut de portée Astro,
+     d'où les sélecteurs :global() sous .bunker-chat. */
+  .bunker-chat :global(.message) { display: flex; gap: 0.8rem; align-items: flex-start; }
+  .bunker-chat :global(.message-user) { flex-direction: row-reverse; }
 
-  .message-avatar {
+  .bunker-chat :global(.message-avatar) {
     width: 36px;
     height: 36px;
     flex-shrink: 0;
@@ -614,43 +617,37 @@ const suggestions = [
     justify-content: center;
   }
 
-  .message-avatar svg { width: 28px; height: 28px; display: block; }
+  .bunker-chat :global(.message-avatar svg) { width: 28px; height: 28px; display: block; }
 
-  .message-content {
-    background-color: #111;
-    border: 1px solid var(--filet);
-    border-top: 3px solid #F5A623;
-    padding: 0.8rem 1rem;
+  /* Réponse du Bunker : une feuille imprimée (fond crème, encre noire), avec onglet */
+  .bunker-chat :global(.message-assistant .message-content) {
     flex: 1;
     min-width: 0;
+    padding: 1rem 1.2rem 1.1rem;
   }
 
-  .message-content-user {
-    flex: 0 1 auto;
-    max-width: 85%;
-    background-color: #1a1a0d;
-    border-top-color: #6B7C45;
-  }
-
-  .message-name {
+  .bunker-chat :global(.message-content p) {
     font-family: 'Oswald', sans-serif;
-    font-size: 0.75rem;
-    color: #F5A623;
-    margin-bottom: 0.5rem;
-  }
-
-  .message-content p {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.95rem;
-    font-weight: 300;
-    line-height: 1.75;
-    color: #ffffff;
-    opacity: 0.9;
-    margin: 0 0 0.6rem;
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0 0 0.7rem;
     overflow-wrap: break-word;
   }
 
-  .message-content p:last-child { margin-bottom: 0; }
+  .bunker-chat :global(.message-content p:last-child) { margin-bottom: 0; }
+
+  /* Question de l'utilisateur : fiche sombre, filet kaki */
+  .bunker-chat :global(.message-content-user) {
+    flex: 0 1 auto;
+    max-width: 85%;
+    background-color: #1a1a0d;
+    border: 1px solid var(--filet);
+    border-top: 3px solid #6B7C45;
+    padding: 0.8rem 1rem;
+  }
+
+  .bunker-chat :global(.message-content-user p) { color: #ffffff; opacity: 0.95; font-weight: 300; }
 
   /* ============ STATUT (chargement) ============ */
   .bunker-status {
@@ -694,7 +691,7 @@ const suggestions = [
     .bunker[data-state="accueil"] { min-height: auto; padding-top: 2rem; }
     .toolbar-right { flex-direction: column; align-items: flex-end; gap: 0.3rem; }
     .bunker-urgence { font-size: 0.8rem; }
-    .message-content-user { max-width: 100%; }
+    .bunker-chat :global(.message-content-user) { max-width: 100%; }
   }
 
   @media (prefers-reduced-motion: reduce) {

@@ -15,7 +15,7 @@ Mis à jour à la fin de chaque lot : statut, numéro de PR, décisions prises.
 | 1 | Les tics visuels | fait | #61 | après accord écrit de Boris (donné) |
 | 2 | La page d'accueil | fait | #62 | après accord écrit de Boris (donné) |
 | 3 | La lecture des articles | fait | #64 | après accord écrit de Boris (donné) |
-| 4 | Le système « manuel de défense civile » | à faire (sur feu vert) | — | à définir |
+| 4 | Le système « manuel de défense civile » | fait | #69 | après accord écrit de Boris (donné) |
 
 Statuts possibles : à faire / en cours / en attente de validation / fait.
 
@@ -97,3 +97,12 @@ Statuts possibles : à faire / en cours / en attente de validation / fait.
 - Seconde retouche : Oswald 500 jugée trop épaisse (fatigue la lecture), retour à Oswald 400 en gardant le noir #000. Graisse 500 retirée du chargement des polices.
 - Titres en gras (demande de Boris) : h2, h3 et h4 de la zone crème épaissis par un fin contour de la même couleur (-webkit-text-stroke 0,035em pour les h2, 0,025em pour les h3 et h4), car Special Elite n'a qu'une graisse et Oswald est déjà en 700. Texte courant inchangé.
 - Colonne de texte élargie (demande de Boris : trop étroite, trop de défilement) : 30rem → 42rem (≈ 85 à 90 caractères par ligne sur ordinateur), marges intérieures de la feuille ramenées de 3rem à 2,5rem. Sac d'évacuation sur ordinateur : page de 10 064 px à 8 473 px de haut. Mobile inchangé.
+
+### Lot 4 — Le système « manuel de défense civile » (PR #69, fusionnée après accord écrit de Boris)
+- Document de référence : docs/systeme-graphique.md (couleurs et contrastes, typographie, fiche à onglet, tampon, encadrés, zone papier, étiquettes, boutons, illustrations, pièges techniques).
+- Nouvelles classes globales : .tampon, .encadre-consigne (version fond noir de l'encadré « À retenir »), .papier (feuille crème hors article).
+- Outils : cartes de /outils en fiches à onglet numéroté 01 à 04 (gros numéros pâles supprimés) ; panneaux des calculateurs, du générateur et de l'évaluateur en fiches ; conseils des calculateurs en encadré de consigne avec tampon « À retenir » ; questions de l'évaluateur avec onglet « Q. 01 » ; « // Rien à signaler » sans barres.
+- Bunker : réponses présentées comme une feuille imprimée (fond papier, encre noire, onglet « BUNKER IA ») ; questions de l'utilisateur en fiche sombre à filet kaki. Corrige un défaut existant : les styles des messages ne s'appliquaient pas (messages créés en JavaScript).
+- Quiz : onglet « Q. 01 » à la place du gros numéro pâle ; résultat : cartes en fiches, conseil en encadré de consigne avec tampon « Conseil Survivalix ». Corrige deux défauts existants : la page de résultat n'était presque pas stylée (éléments créés en JavaScript) et le nom de 7 profils sur 10 n'avait pas assez de contraste (la couleur du profil colore désormais le cadre du badge et le filet sous le nom, le texte est en ambre et crème).
+- Générateur kit 72h : corrige un défaut existant, les cases à cocher n'étaient pas mises en page (éléments créés en JavaScript).
+- Contrôle axe-core WCAG 2.2 AA : zéro erreur sur les 8 pages touchées, ordinateur et mobile (et générateur avec cases cochées).

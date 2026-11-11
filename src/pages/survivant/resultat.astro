@@ -114,16 +114,16 @@ import Layout from '../../layouts/Layout.astro';
     container.innerHTML = `
       <div class="result-header">
         <div class="result-label">// TON PROFIL SURVIVANT //</div>
-        <div class="result-badge" style="border-color: ${a.couleur}; color: ${a.couleur}">
+        <div class="result-badge" style="border-color: ${a.couleur}">
           ARCHÉTYPE IDENTIFIÉ
         </div>
-        <h1 class="result-nom" style="color: ${a.couleur}">${a.nom}</h1>
+        <h1 class="result-nom" style="border-bottom-color: ${a.couleur}">${a.nom}</h1>
         <p class="result-tagline">${a.tagline}</p>
       </div>
 
       <div class="result-body">
 
-        <div class="result-card result-card-carte">
+        <div class="result-card result-card-carte fiche">
           <div class="card-label">// TA CARTE COLLECTOR //</div>
           <img src="${a.carte}" alt="Carte ${a.nom}" class="carte-image" />
           <a href="${a.carte}" download="survivalix-${profil}.jpg" class="carte-download-btn">
@@ -131,13 +131,13 @@ import Layout from '../../layouts/Layout.astro';
           </a>
         </div>
 
-        <div class="result-card">
+        <div class="result-card fiche">
           <div class="card-label">// ANALYSE //</div>
           <p class="result-description">${a.description}</p>
         </div>
 
-        <div class="result-card result-card-conseil">
-          <div class="card-label">// CONSEIL SURVIVALIX //</div>
+        <div class="result-card result-card-conseil encadre-consigne">
+          <span class="tampon">Conseil Survivalix</span>
           <p class="result-conseil">${a.conseil}</p>
         </div>
 
@@ -185,14 +185,14 @@ import Layout from '../../layouts/Layout.astro';
     30% { opacity: 1; transform: scale(1); }
   }
 
-  .result-header {
+  #resultat-container :global(.result-header) {
     text-align: center;
     padding: 3rem 0 2.5rem;
     border-bottom: 1px solid #1a1a1a;
     margin-bottom: 3rem;
   }
 
-  .result-label {
+  #resultat-container :global(.result-label) {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
     color: var(--kaki-texte);
@@ -200,7 +200,7 @@ import Layout from '../../layouts/Layout.astro';
     margin-bottom: 1.2rem;
   }
 
-  .result-badge {
+  #resultat-container :global(.result-badge) {
     display: inline-block;
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
@@ -211,7 +211,7 @@ import Layout from '../../layouts/Layout.astro';
     margin-bottom: 1.5rem;
   }
 
-  .result-nom {
+  #resultat-container :global(.result-nom) {
     font-family: 'Special Elite', cursive;
     font-size: clamp(2.5rem, 8vw, 5rem);
     line-height: 1;
@@ -221,7 +221,7 @@ import Layout from '../../layouts/Layout.astro';
     padding: 0 !important;
   }
 
-  .result-tagline {
+  #resultat-container :global(.result-tagline) {
     font-family: 'Special Elite', cursive;
     font-size: clamp(0.9rem, 2.5vw, 1.2rem);
     color: #ffffff;
@@ -232,7 +232,7 @@ import Layout from '../../layouts/Layout.astro';
     line-height: 1.5;
   }
 
-  .result-body {
+  #resultat-container :global(.result-body) {
     max-width: 720px;
     margin: 0 auto;
     display: flex;
@@ -241,20 +241,16 @@ import Layout from '../../layouts/Layout.astro';
     padding-bottom: 4rem;
   }
 
-  .result-card {
+  #resultat-container :global(.result-card) {
     background-color: #111;
-    border: 1px solid #1e1e1e;
-    border-top: 3px solid #F5A623;
     padding: 1.8rem;
   }
 
-  .result-card-conseil { border-top-color: #6B7C45; }
-
-  .result-card-carte {
+  #resultat-container :global(.result-card-carte) {
     text-align: center;
   }
 
-  .carte-image {
+  #resultat-container :global(.carte-image) {
     width: 100%;
     max-width: 400px;
     height: auto;
@@ -263,7 +259,7 @@ import Layout from '../../layouts/Layout.astro';
     border: 2px solid #F5A623;
   }
 
-  .carte-download-btn {
+  #resultat-container :global(.carte-download-btn) {
     display: inline-block;
     font-family: 'Oswald', sans-serif;
     font-size: 0.9rem;
@@ -277,12 +273,12 @@ import Layout from '../../layouts/Layout.astro';
     transition: all 0.2s;
   }
 
-  .carte-download-btn:hover {
+  #resultat-container :global(.carte-download-btn:hover) {
     background-color: #c4811a;
     border-color: #c4811a;
   }
 
-  .card-label {
+  #resultat-container :global(.card-label) {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
     color: var(--kaki-texte);
@@ -290,7 +286,7 @@ import Layout from '../../layouts/Layout.astro';
     margin-bottom: 1rem;
   }
 
-  .result-description {
+  #resultat-container :global(.result-description) {
     font-family: 'Oswald', sans-serif;
     font-size: 1rem;
     color: #ffffff;
@@ -299,7 +295,7 @@ import Layout from '../../layouts/Layout.astro';
     margin: 0;
   }
 
-  .result-conseil {
+  #resultat-container :global(.result-conseil) {
     font-family: 'Oswald', sans-serif;
     font-size: 0.95rem;
     color: #ffffff;
@@ -310,17 +306,44 @@ import Layout from '../../layouts/Layout.astro';
     opacity: 0.85;
   }
 
-  .result-actions {
+  #resultat-container :global(.result-actions) {
     background-color: #0d0d0d;
     border: 1px solid #1e1e1e;
     padding: 1.8rem;
   }
 
-  .actions-label {
+  #resultat-container :global(.actions-label) {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
     color: var(--kaki-texte);
     letter-spacing: 3px;
     margin-bottom: 1.2rem;
   }
+  /* Le résultat est créé en JavaScript : sans attribut de portée Astro,
+     d'où les sélecteurs #resultat-container :global(...). */
+  #resultat-container :global(.result-nom) { color: #F5A623; padding-bottom: 0.3rem !important; border-bottom: 4px solid !important; display: inline-block; }
+  #resultat-container :global(.result-badge) { color: #F5E6C8; display: table; margin-left: auto; margin-right: auto; }
+
+  #resultat-container :global(.actions-grid) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  #resultat-container :global(.action-btn) {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.85rem 1.6rem;
+    border: 2px solid #F5A623;
+    display: inline-block;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  #resultat-container :global(.action-btn-primary) { background-color: #F5A623; color: #0d0d0d; }
+  #resultat-container :global(.action-btn-primary:hover) { background-color: #c4811a; border-color: #c4811a; }
+  #resultat-container :global(.action-btn-secondary) { background-color: transparent; color: #F5A623; }
+  #resultat-container :global(.action-btn-secondary:hover) { background-color: #F5A623; color: #0d0d0d; }
 </style>
