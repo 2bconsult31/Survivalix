@@ -3,17 +3,20 @@ title: "Pemmican : la recette amérindienne des réserves longue durée"
 seo_title: "Pemmican : la Recette de Survie Longue Conservation"
 description: "Recette du pemmican : viande séchée et graisse fondue pour une réserve d'énergie compacte, à préparer chez soi en respectant les règles d'hygiène."
 date: 2025-02-26
-updated: 2026-10-30
+updated: 2026-11-11
 tags: ["recette", "viande-sechee", "longue-conservation", "energie", "kit-72h", "cantine"]
 rubrique: "cantine"
 image: "/images/cantine/pemmican-survie.jpg"
 image_alt: "Barres de pemmican coupées, viande séchée et fruits secs sur une planche en bois"
-temps_prep: "30 min"
-temps_cuisson: "6 à 8h de séchage + 1h30 de fonte"
+temps_prep: "1 h 15 (dont 30 min au congélateur)"
+temps_cuisson: "6 à 8 h de séchage + 1 h 30 de fonte"
 personnes: 6
 difficulte: "Intermédiaire"
 energie: "Four (séchage) / Casserole"
 conservation: "Quelques semaines au sec · Plus longtemps au réfrigérateur ou au congélateur"
+prepTime: "PT1H15M"
+cookTime: "PT8H30M"
+totalTime: "PT12H"
 recipeYield: "environ 600 g de pemmican"
 recipeCategory: "En-cas"
 recipeCuisine: "Amérindienne"
@@ -52,6 +55,8 @@ C'est aussi une manière de valoriser ce que tu as peut-être déjà à la maiso
 ## Le ratio à retenir
 
 La recette traditionnelle repose souvent sur une proportion simple : **un poids égal de viande séchée et de graisse fondue.** Tu peux trouver des variantes plus grasses, pensées pour le grand froid, mais pour un usage courant en France, la proportion 1:1 reste la plus simple.
+
+**Préparation : 1 h 15 · Séchage : 6 à 8 h · Fonte : 1 h 30 · Durcissement : 2 à 3 h**
 
 ## Ingrédients (pour environ 600g de pemmican)
 

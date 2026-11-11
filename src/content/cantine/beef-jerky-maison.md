@@ -3,17 +3,20 @@ title: "Beef Jerky maison : la viande séchée qui tient deux semaines sans frig
 seo_title: "Beef Jerky Maison : Recette de Viande Séchée Facile"
 description: "Recette de beef jerky maison : du bœuf maigre, une marinade relevée et un four à basse température pour un snack de rando qui se passe de frigo un moment."
 date: 2025-03-19
-updated: 2026-10-17
+updated: 2026-11-11
 tags: ["recette", "viande-sechee", "longue-conservation", "cantine"]
 rubrique: "cantine"
 image: "/images/cantine/beef-jerky-maison.jpg"
 image_alt: "Lanières de beef jerky maison séchées disposées sur une grille"
-temps_prep: "20 min + 8h de marinade"
-temps_cuisson: "5 min + plusieurs heures de séchage"
+temps_prep: "50 min + 4 h de marinade minimum"
+temps_cuisson: "5 min + environ 4 h de séchage"
 personnes: 6
 difficulte: "Facile"
 energie: "Four"
 conservation: "Environ 2 semaines à température ambiante · Plus longtemps au réfrigérateur ou au congélateur"
+prepTime: "PT50M"
+cookTime: "PT4H5M"
+totalTime: "PT9H"
 recipeYield: "6 portions"
 recipeCategory: "En-cas"
 recipeCuisine: "Américaine"
@@ -32,7 +35,7 @@ recipeInstructions:
   - "Verse les tranches et leur marinade dans une casserole, porte à ébullition et laisse bouillir 5 minutes pour amener la viande à 71 °C à cœur."
   - "Égoutte soigneusement les lanières et dispose-les sur une grille posée au-dessus d'une plaque, sans qu'elles se touchent."
   - "Préchauffe le four à 70 °C, en chaleur tournante si possible, et laisse la porte légèrement entrouverte avec une cuillère en bois."
-  - "Fais sécher plusieurs heures en retournant les tranches à mi-parcours, jusqu'à ce que le jerky plie sans casser et craque légèrement sur les bords."
+  - "Fais sécher environ 4 heures, à vérifier dès 3 heures, en retournant les tranches à mi-parcours, jusqu'à ce que le jerky plie sans casser et craque légèrement sur les bords."
   - "Laisse refroidir complètement à découvert, environ 2 heures, avant de stocker dans un contenant hermétique."
 keywords:
   - "viande séchée"
@@ -70,7 +73,7 @@ Verse les tranches et leur marinade dans une casserole, porte à ébullition et 
 
 Préchauffe le four à 70°C en chaleur tournante si possible. Glisse une cuillère en bois dans la porte du four pour la laisser légèrement entrouverte — c'est ce qui permet à l'humidité de s'échapper au lieu de stagner et de ralentir le séchage.
 
-Compte plusieurs heures (le temps varie beaucoup selon ton four et l'épaisseur des tranches), en retournant les tranches à mi-parcours. Le jerky est prêt quand il plie sans casser complètement, mais qu'il craque légèrement sur les bords — s'il se déchire comme un vrai cracker, il est allé un peu trop loin (ce n'est pas grave pour autant, juste plus cassant).
+Compte environ 4 heures pour des lanières de 3 à 4 mm, mais commence à vérifier dès 3 heures : le temps varie beaucoup selon ton four et l'épaisseur des tranches. Retourne les tranches à mi-parcours. Le jerky est prêt quand il plie sans casser complètement, mais qu'il craque légèrement sur les bords — s'il se déchire comme un vrai cracker, il est allé un peu trop loin (ce n'est pas grave pour autant, juste plus cassant).
 
 **Sur la sécurité alimentaire, et c'est valable pour tout le monde** : la chaleur sèche d'un four à basse température ne suffit pas, à elle seule, à venir à bout des bactéries de la viande crue. Pendant que l'eau s'évapore, le cœur des lanières reste tiède bien plus longtemps qu'on ne l'imagine. Le département américain de l'Agriculture (USDA) recommande donc d'amener la viande à 71 °C à cœur avant de la sécher. Le plus simple : porter les lanières à ébullition dans leur marinade et les y laisser 5 minutes, puis les égoutter avant de les enfourner. Si tu as zappé cette étape, rattrape-toi après le séchage : 10 minutes dans un four préchauffé à 135 °C, pour des lanières de 6 mm d'épaisseur au maximum. Et ne te fie pas à la texture : seul un [thermomètre de cuisine à sonde](https://www.amazon.fr/s?k=thermometre+cuisine+sonde&tag=survivalix31-21) te dit vraiment si c'est assez chaud.
 
@@ -84,4 +87,4 @@ Stocké dans un contenant hermétique, à l'abri de la lumière et de la chaleur
 
 Léger, dense en protéines, ne nécessitant ni cuisson ni eau pour être consommé — le beef jerky coche toutes les cases d'un bon complément à ton [kit d'urgence 72h](/manuel/kit-urgence-72h). Contrairement au [pemmican](/cantine/pemmican-survie), plus calorique grâce à sa graisse ajoutée mais plus long à préparer, le jerky est la version rapide et simple à faire un dimanche après-midi sans y passer la journée.
 
-*Sources : USDA FSIS (département de l'Agriculture des États-Unis) — « Jerky and Food Safety » ; National Center for Home Food Preservation — « Jerky » ; USDA NIFA — « Making Jerky ».*
+*Sources : USDA FSIS (département de l'Agriculture des États-Unis) — « Jerky and Food Safety » ; National Center for Home Food Preservation — « Jerky » ; USDA NIFA — « Making Jerky » ; Ohio State University Extension — « Making Jerky at Home Safely » (recette du National Center for Home Food Preservation).*
