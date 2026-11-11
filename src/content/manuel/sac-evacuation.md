@@ -90,7 +90,7 @@ La hiérarchie du poids :
 4. Électronique — batterie externe, pas générateur portable
 5. Documents — léger, mais prioritaire
 
-**Un conseil pratique :** une fois le sac bouclé, partez marcher 45 à 60 minutes avec, chargé comme le jour J. Même un test approximatif fait vite apparaître ce qui cloche.
+> **Un conseil pratique :** une fois le sac bouclé, partez marcher 45 à 60 minutes avec, chargé comme le jour J. Même un test approximatif fait vite apparaître ce qui cloche.
 
 ## Les erreurs classiques du débutant
 
