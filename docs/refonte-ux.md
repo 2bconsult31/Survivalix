@@ -18,7 +18,7 @@ Mis à jour à la fin de chaque lot : statut, numéro de PR, décisions prises.
 | 4 | Le système « manuel de défense civile » | fait | #69 | après accord écrit de Boris (donné) |
 | 5 | Pages de liste des rubriques et pages annexes | fait | #70 | après accord écrit de Boris (donné) |
 | 6 | Poids des images (WebP, tailles adaptées) | fait | #71 | après accord écrit de Boris (donné) |
-| 7 | Illustrations des cartes d'outils | en attente du choix de Boris (visuels SVG) | #72 | après accord écrit de Boris |
+| 7 | Illustrations des cartes d'outils | en attente de validation (planches SVG) | #72 | après accord écrit de Boris |
 | 8 | Gabarits d'article : en-tête, menu et pied partagés | à faire | — | après accord écrit de Boris |
 
 Statuts possibles : à faire / en cours / en attente de validation / fait.
@@ -146,4 +146,6 @@ Statuts possibles : à faire / en cours / en attente de validation / fait.
 - /outils : chaque carte affiche public/images/outils/<nom-de-l-outil>.jpg dès que le fichier existe (via ImageOpt, WebP automatiques), sinon garde son visuel « écran radar ». Testé avec une image provisoire, retirée ensuite.
 - 4 illustrations demandées à Boris (1920 × 815, comme les images d'article) : calculateur-stock-eau.jpg, calculateur-rations-alimentaires.jpg, evaluateur-preparation.jpg, generateur-kit-72h.jpg.
 - Boris préfère des visuels vectoriels (SVG) dessinés en code, dans l'univers du site sans imiter ses illustrations. Exception à la règle « ne jamais créer de fichier image », validée par Boris pour les visuels graphiques en code (pas pour les illustrations).
-- Page de démonstration /design-lab (noindex, hors sitemap, sans lien) : 4 pistes sur la carte du calculateur d'eau (1 affiche de défense civile, 2 planche technique, 3 instrument de mesure, 4 pictogramme tamponné). Choix en attente.
+- Page de démonstration /design-lab (noindex, hors sitemap, sans lien) : 4 pistes sur la carte du calculateur d'eau (1 affiche de défense civile, 2 planche technique, 3 instrument de mesure, 4 pictogramme tamponné). Boris a choisi la piste 2, planche technique.
+- src/components/PlancheOutil.astro : 4 planches (eau, rations, evaluateur, kit), trait ambre sur quadrillage, cotes et cartouche (FICHE EAU 6 L / 72 H ; FICHE VIVRES KCAL / 72 H ; FICHE BILAN 10 Q. / 100 ; FICHE KIT FOYER / 72 H). Décoratives (aria-hidden), quelques Ko, identifiants de motifs propres à chaque planche. Branchées sur /outils à la place des visuels « écran radar » ; l'emplacement pour fichiers image est retiré.
+- /design-lab supprimée (renvoie 404) et retirée du filtre du sitemap.
