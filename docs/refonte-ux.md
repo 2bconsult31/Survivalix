@@ -18,7 +18,7 @@ Mis à jour à la fin de chaque lot : statut, numéro de PR, décisions prises.
 | 4 | Le système « manuel de défense civile » | fait | #69 | après accord écrit de Boris (donné) |
 | 5 | Pages de liste des rubriques et pages annexes | fait | #70 | après accord écrit de Boris (donné) |
 | 6 | Poids des images (WebP, tailles adaptées) | fait | #71 | après accord écrit de Boris (donné) |
-| 7 | Illustrations des cartes d'outils | à faire | — | après accord écrit de Boris |
+| 7 | Illustrations des cartes d'outils | en cours (illustrations demandées à Boris) | — | après accord écrit de Boris |
 | 8 | Gabarits d'article : en-tête, menu et pied partagés | à faire | — | après accord écrit de Boris |
 
 Statuts possibles : à faire / en cours / en attente de validation / fait.
@@ -141,3 +141,7 @@ Statuts possibles : à faire / en cours / en attente de validation / fait.
   - ordinateur : accueil 3 194 → 668 Ko ; Manuel 3 341 → 337 Ko ; article sac d'évacuation 952 → 227 Ko ;
   - mobile (écran haute densité ×3) : accueil 3 194 → 1 853 Ko ; Manuel 3 341 → 1 933 Ko (951 Ko au premier affichage au lieu de 3 341) ; article 952 → 606 Ko.
 - Rendu identique (comparaison pixel à pixel avec la version précédente : mêmes dimensions de page, moins de 0,3 % de pixels différents, dus à la compression). axe-core : zéro erreur.
+
+### Lot 7 — Illustrations des cartes d'outils (en cours)
+- /outils : chaque carte affiche public/images/outils/<nom-de-l-outil>.jpg dès que le fichier existe (via ImageOpt, WebP automatiques), sinon garde son visuel « écran radar ». Testé avec une image provisoire, retirée ensuite.
+- 4 illustrations demandées à Boris (1920 × 815, comme les images d'article) : calculateur-stock-eau.jpg, calculateur-rations-alimentaires.jpg, evaluateur-preparation.jpg, generateur-kit-72h.jpg.

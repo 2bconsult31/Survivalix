@@ -1,4 +1,6 @@
 ---
+import { existsSync } from 'node:fs';
+import ImageOpt from '../../components/ImageOpt.astro';
 import Layout from '../../layouts/Layout.astro';
 
 const outils = [
@@ -30,7 +32,12 @@ const outils = [
     tags: ["kit-72h", "famille", "bébé", "personnalisé"],
     temps: "2 min"
   }
-]
+].map((outil) => {
+  // Illustration de l'outil : public/images/outils/<nom>.jpg (1920 × 815).
+  // Tant que le fichier n'existe pas, la carte garde son visuel « écran radar ».
+  const fichier = `/images/outils/${outil.slug.split('/').pop()}.jpg`;
+  return { ...outil, illustration: existsSync(`public${fichier}`) ? fichier : null };
+});
 ---
 
 <Layout title="Calculateurs Survie : Eau, Rations, Autonomie | Survivalix" description="Combien d'eau, combien de nourriture, êtes-vous vraiment prêt ? Nos calculateurs gratuits vous donnent la réponse en 2 minutes, chiffres à l'appui.">
@@ -48,6 +55,9 @@ const outils = [
     {outils.map((outil, index) => (
       <a href={outil.slug} class="article-card article-card-link fiche" data-onglet={`0${index + 1}`}>
         <div class="card-image">
+          {outil.illustration ? (
+            <ImageOpt src={outil.illustration} alt="" width="1920" height="815" sizes="(min-width: 1300px) 400px, (min-width: 900px) 31vw, (min-width: 600px) 48vw, 100vw" />
+          ) : (
           <svg aria-hidden="true" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;position:absolute;top:0;left:0;">
             <defs>
               <pattern id={`sl-${index}`} width="1" height="3" patternUnits="userSpaceOnUse">
@@ -153,6 +163,7 @@ const outils = [
             <text x="106" y="103" font-family="Oswald,sans-serif" font-size="6" fill="#F5A623" text-anchor="middle" opacity="0.4">180</text>
             <text x="294" y="103" font-family="Oswald,sans-serif" font-size="6" fill="#F5A623" text-anchor="middle" opacity="0.4">0</text>
           </svg>
+          )}
         </div>
         <div class="card-body">
           <div class="card-top">
@@ -244,6 +255,7 @@ const outils = [
   }
   .article-card-link:hover { background-color: #141414; }
   .article-card-link:hover .card-titre { text-decoration: underline; text-underline-offset: 3px; }
+  .card-image :global(img) { width: 100%; height: 100%; object-fit: cover; display: block; }
   .card-image {
     width: 100%;
     height: 160px;
