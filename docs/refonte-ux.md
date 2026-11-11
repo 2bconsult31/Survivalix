@@ -95,3 +95,4 @@ Statuts possibles : à faire / en cours / en attente de validation / fait.
 - Généralisé aux 4 gabarits : axe-core zéro erreur sur les 32 articles (ordinateur et mobile), aucun débordement horizontal, tableaux contenus dans la largeur sur mobile.
 - Retouche après mise en ligne (demande de Boris : « noir pas assez foncé ») : encre passée de #1a1a1a à #000 (19,4:1) pour le texte, les intertitres h2 et les liens ; corps du texte en Oswald 500 au lieu de 400 (graisse 500 ajoutée au chargement des polices des 4 gabarits d'article).
 - Seconde retouche : Oswald 500 jugée trop épaisse (fatigue la lecture), retour à Oswald 400 en gardant le noir #000. Graisse 500 retirée du chargement des polices.
+- Titres en gras (demande de Boris) : h2, h3 et h4 de la zone crème épaissis par un fin contour de la même couleur (-webkit-text-stroke 0,035em pour les h2, 0,025em pour les h3 et h4), car Special Elite n'a qu'une graisse et Oswald est déjà en 700. Texte courant inchangé.
