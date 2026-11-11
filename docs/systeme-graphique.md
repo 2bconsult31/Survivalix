@@ -79,6 +79,7 @@ Style : rétro années 50, trait dense, hachures fines, halftone, grain papier, 
 - Hero d'article : 1920 × 815 px, bord à bord.
 - Rubriques de l'accueil : 1200 × 900 environ (4:3), `public/images/rubriques/<slug>.jpg`.
 - Ne jamais générer ni inventer un fichier : fournir un prompt, Boris génère.
+- Exception validée par Boris (lot 7) : les visuels graphiques dessinés en code SVG, qui n'imitent pas les illustrations. Style « planche technique » : trait ambre de 1,6 px sur fond noir quadrillé, cotes fléchées, traits d'axe, cartouche en bas à gauche ; détails en crème. Exemple : src/components/PlancheOutil.astro (cartes de /outils).
 - Affichage : toujours via `src/components/ImageOpt.astro` (versions WebP générées au build, original en secours), avec un attribut `sizes` adapté à la largeur réelle de l'image. `loading="eager"` et `fetchpriority="high"` seulement pour l'image du haut de page.
 
 ## 5. Pièges techniques
