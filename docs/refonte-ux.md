@@ -14,7 +14,7 @@ Mis à jour à la fin de chaque lot : statut, numéro de PR, décisions prises.
 | 0 | Nettoyage | fait | #60 | automatique |
 | 1 | Les tics visuels | fait | #61 | après accord écrit de Boris (donné) |
 | 2 | La page d'accueil | fait | #62 | après accord écrit de Boris (donné) |
-| 3 | La lecture des articles | en attente de validation (généralisé aux 4 gabarits) | #64 | après accord écrit de Boris |
+| 3 | La lecture des articles | fait | #64 | après accord écrit de Boris (donné) |
 | 4 | Le système « manuel de défense civile » | à faire (sur feu vert) | — | à définir |
 
 Statuts possibles : à faire / en cours / en attente de validation / fait.
@@ -85,7 +85,7 @@ Statuts possibles : à faire / en cours / en attente de validation / fait.
 - Rubriques : la carte affiche public/images/rubriques/<slug>.jpg dès que le fichier existe (1200 × 900), sinon garde son pictogramme. 6 illustrations demandées à Boris ; 5 livrées et en place (manuel, cantine, bunker, atelier, outils, 1200 × 896). Radar : illustration livrée ensuite et ajoutée (public/images/rubriques/radar.jpg) ; les 6 cartes sont illustrées.
 - body { overflow-x: clip } dans global.css, pour que les blocs bord à bord ne créent jamais de défilement horizontal.
 
-### Lot 3 — La lecture des articles (PR #64)
+### Lot 3 — La lecture des articles (PR #64, fusionnée après accord écrit de Boris)
 - Activation : classe .lecture-papier sur .article-content dans les 4 gabarits (Article, ArticleRadar, ArticleCantine, ArticleAtelier), après validation du test sur /manuel/sac-evacuation par Boris. Styles dans global.css (section « ZONE DE LECTURE PAGE IMPRIMÉE »).
 - Fond #FAF1DE (variante plus claire du crème #F5E6C8) avec grain très léger ; texte encre #1a1a1a (15,5:1) ; intertitres en noir #0d0d0d (17,3:1), h2 soulignés d'un filet ambre de 4 px, h3 avec l'onglet numéroté ambre du lot 1 ; liens en noir gras soulignés d'ambre (3 px). Premier essai en rouge brique refusé par Boris (hors charte) : le rouge brique est réservé au tampon « À retenir ». L'ambre n'est jamais une couleur de texte sur le crème (1,8:1), seulement un filet, un soulignement ou un onglet.
 - Typographie : Oswald 400 (au lieu de 300), 18 px (chapeau 20 px), interlignage 1,75, colonne de 30rem ≈ 68 à 75 caractères par ligne (Oswald est étroite), h2 plus grands avec filet noir de 2 px.
