@@ -83,6 +83,7 @@ Style : rétro années 50, trait dense, hachures fines, halftone, grain papier, 
 - Affichage : toujours via `src/components/ImageOpt.astro` (versions WebP générées au build, original en secours), avec un attribut `sizes` adapté à la largeur réelle de l'image. `loading="eager"` et `fetchpriority="high"` seulement pour l'image du haut de page.
 
 ## 5. Pièges techniques
+- En-tête, menu et pied de page : uniquement dans `src/components/SiteHeader.astro` et `src/components/SiteFooter.astro` (partagés par tous les gabarits).
 - **Contenu créé en JavaScript** (Bunker, résultat du quiz, générateur kit 72h, évaluateur) : les styles `<style>` d'Astro sont limités à la page et ne s'appliquent pas aux éléments créés par `innerHTML` ou `createElement`. Utiliser `:global()` sous un conteneur de la page (ex. `.bunker-chat :global(.message)`) ou une classe de global.css.
 - **Markdown** : styles dans global.css ou via `:global()` dans `.article-content` (règle du projet).
 - `body { overflow-x: clip }` : un bloc bord à bord (100vw) ne crée jamais de défilement horizontal.

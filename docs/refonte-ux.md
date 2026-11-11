@@ -19,7 +19,7 @@ Mis à jour à la fin de chaque lot : statut, numéro de PR, décisions prises.
 | 5 | Pages de liste des rubriques et pages annexes | fait | #70 | après accord écrit de Boris (donné) |
 | 6 | Poids des images (WebP, tailles adaptées) | fait | #71 | après accord écrit de Boris (donné) |
 | 7 | Illustrations des cartes d'outils | fait (planches SVG) | #72 | après accord écrit de Boris (donné) |
-| 8 | Gabarits d'article : en-tête, menu et pied partagés | à faire | — | après accord écrit de Boris |
+| 8 | Gabarits d'article : en-tête, menu et pied partagés | fait | #73 | après accord écrit de Boris (donné) |
 
 Statuts possibles : à faire / en cours / en attente de validation / fait.
 
@@ -149,3 +149,10 @@ Statuts possibles : à faire / en cours / en attente de validation / fait.
 - Page de démonstration /design-lab (noindex, hors sitemap, sans lien) : 4 pistes sur la carte du calculateur d'eau (1 affiche de défense civile, 2 planche technique, 3 instrument de mesure, 4 pictogramme tamponné). Boris a choisi la piste 2, planche technique.
 - src/components/PlancheOutil.astro : 4 planches (eau, rations, evaluateur, kit), trait ambre sur quadrillage, cotes et cartouche (FICHE EAU 6 L / 72 H ; FICHE VIVRES KCAL / 72 H ; FICHE BILAN 10 Q. / 100 ; FICHE KIT FOYER / 72 H). Décoratives (aria-hidden), quelques Ko, identifiants de motifs propres à chaque planche. Branchées sur /outils à la place des visuels « écran radar » ; l'emplacement pour fichiers image est retiré.
 - /design-lab supprimée (renvoie 404) et retirée du filtre du sitemap.
+
+### Lot 8 — En-tête, menu et pied de page partagés (PR #73, fusionnée après accord écrit de Boris)
+- src/components/SiteHeader.astro (logo, menu, bouton du menu mobile et son script, styles du menu) et src/components/SiteFooter.astro (pied de page, liens, réseaux sociaux) : une seule source, utilisée par Layout.astro et les 4 gabarits d'article. Ils étaient recopiés 5 fois.
+- Pages hors article : rendu identique au pixel près (accueil, contact ; ordinateur, mobile, menu mobile ouvert).
+- Articles : seul le pied de page change, pour s'aligner sur le reste du site (icônes Instagram et Facebook ajoutées, lien « Ressources » renommé « Lexique », même adresse /ressources). Le reste de la page est identique au pixel près ; menu mobile identique.
+- Balises <head> (SEO, Consent Mode, GA, AdSense) non touchées. axe-core : zéro erreur.
+- Toute modification de l'en-tête, du menu ou du pied de page se fait désormais dans ces deux composants.
