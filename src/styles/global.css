@@ -26,6 +26,9 @@ html, body {
   line-height: 1.7;
 }
 
+/* Les blocs « bord à bord » (100vw) ne doivent jamais créer de défilement horizontal */
+body { overflow-x: clip; }
+
 .scanlines {
   position: fixed;
   top: 0; left: 0;
