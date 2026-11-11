@@ -93,3 +93,4 @@ Statuts possibles : à faire / en cours / en attente de validation / fait.
 - Cadre noir inchangé : en-tête, image principale, titre, colonne latérale, articles liés, pied de page.
 - Contrôle axe-core WCAG 2.2 AA : zéro erreur (ordinateur et mobile).
 - Généralisé aux 4 gabarits : axe-core zéro erreur sur les 32 articles (ordinateur et mobile), aucun débordement horizontal, tableaux contenus dans la largeur sur mobile.
+- Retouche après mise en ligne (demande de Boris : « noir pas assez foncé ») : encre passée de #1a1a1a à #000 (19,4:1) pour le texte, les intertitres h2 et les liens ; corps du texte en Oswald 500 au lieu de 400 (graisse 500 ajoutée au chargement des polices des 4 gabarits d'article).
