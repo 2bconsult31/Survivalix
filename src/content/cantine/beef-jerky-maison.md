@@ -14,6 +14,31 @@ personnes: 6
 difficulte: "Facile"
 energie: "Four"
 conservation: "Environ 2 semaines à température ambiante · Plus longtemps au réfrigérateur ou au congélateur"
+recipeYield: "6 portions"
+recipeCategory: "En-cas"
+recipeCuisine: "Américaine"
+recipeIngredient:
+  - "800 g de bœuf maigre (rumsteck, gîte ou bavette)"
+  - "100 ml de sauce soja"
+  - "2 cuillères à soupe de sauce Worcestershire"
+  - "1 cuillère à café de poivre noir moulu"
+  - "1 cuillère à café d'ail en poudre"
+  - "1 cuillère à café de paprika fumé"
+  - "1 cuillère à soupe de miel ou de sucre roux"
+recipeInstructions:
+  - "Passe la viande 30 minutes au congélateur, puis tranche-la en lanières de 3 à 4 mm d'épaisseur."
+  - "Mélange les ingrédients de la marinade et immerge les tranches de viande."
+  - "Laisse mariner au réfrigérateur au minimum 4 heures, idéalement une nuit complète."
+  - "Verse les tranches et leur marinade dans une casserole, porte à ébullition et laisse bouillir 5 minutes pour amener la viande à 71 °C à cœur."
+  - "Égoutte soigneusement les lanières et dispose-les sur une grille posée au-dessus d'une plaque, sans qu'elles se touchent."
+  - "Préchauffe le four à 70 °C, en chaleur tournante si possible, et laisse la porte légèrement entrouverte avec une cuillère en bois."
+  - "Fais sécher plusieurs heures en retournant les tranches à mi-parcours, jusqu'à ce que le jerky plie sans casser et craque légèrement sur les bords."
+  - "Laisse refroidir complètement à découvert, environ 2 heures, avant de stocker dans un contenant hermétique."
+keywords:
+  - "viande séchée"
+  - "beef jerky"
+  - "longue conservation"
+  - "en-cas de randonnée"
 ---
 
 Aux États-Unis, le beef jerky se trouve couramment en sachet dans les stations-service, entre les chips et les barres chocolatées. Ce qu'on oublie souvent, c'est que ce snack ultra-populaire est directement hérité d'une technique de conservation vieille de plusieurs siècles — les mêmes principes qui permettaient aux trappeurs et aux peuples des Andes (le "charqui", venu du quechua et ancêtre du mot "jerky") de faire voyager de la viande sans la moindre réfrigération.

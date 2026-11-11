@@ -33,6 +33,7 @@
 - Interdit dans tout fichier : les balises de citation brutes (<cite ...>, index="..."). Vérifier avant chaque livraison.
 - Structure propre à chaque article. Liens internes vers des pages existantes. Un lien Amazon affilié pertinent par article, au format https://www.amazon.fr/s?k=<recherche>&tag=survivalix31-21.
 - Cantine : le seo_title et la description contiennent le mot « recette ».
+- Toute nouvelle recette de la Cantine doit renseigner les champs de recette (temps, portions, ingrédients, étapes). Aucune note ni aucun avis inventés. Les extraits enrichis FAQ n'existent plus dans Google depuis mai 2026 : le balisage FAQ est conservé mais n'est plus une priorité.
 - Frontmatter : seo_title de 60 caractères maximum, description de 140 à 160 caractères.
 - À chaque modification de fond d'un article, mettre à jour le champ updated.
 - Liens partagés (réseaux sociaux) : URL simple, jamais de paramètres UTM.

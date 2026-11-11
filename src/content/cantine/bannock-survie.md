@@ -15,6 +15,34 @@ personnes: 4
 difficulte: "Facile"
 energie: "Poêle / Feu / Réchaud (extérieur)"
 conservation: "Meilleur frais et chaud · Mix sec : selon les dates des ingrédients"
+prepTime: "PT5M"
+cookTime: "PT20M"
+totalTime: "PT25M"
+recipeYield: "4 portions"
+recipeCategory: "Pain"
+recipeCuisine: "Écossaise"
+recipeIngredient:
+  - "300 g de farine (blanche de préférence)"
+  - "1 cuillère à café de levure chimique"
+  - "1 cuillère à café de sel"
+  - "2 cuillères à soupe d'huile ou de graisse"
+  - "150 à 180 ml d'eau"
+recipeInstructions:
+  - "Mélange la farine, la levure et le sel dans un bol ou dans un sachet zip refermable."
+  - "Creuse un puits au centre, ajoute l'huile et la moitié de l'eau."
+  - "Mélange à la fourchette ou à la main jusqu'à obtenir une pâte qui se tient, en ajoutant le reste de l'eau progressivement."
+  - "Sans pétrir, forme une galette d'environ 2 cm d'épaisseur."
+  - "Chauffe la poêle à feu moyen avec un filet d'huile : la pâte doit grésiller légèrement sans que la poêle fume."
+  - "Dépose la galette et couvre si possible (couvercle ou feuille d'aluminium)."
+  - "Cuis 10 à 12 minutes sur la première face sans y toucher, jusqu'à ce que les bords soient secs."
+  - "Retourne délicatement et cuis encore 8 à 10 minutes."
+  - "Vérifie la cuisson en plantant un couteau au centre : il doit ressortir propre."
+keywords:
+  - "pain de survie"
+  - "bannock"
+  - "sans four"
+  - "camping"
+  - "poêle"
 ---
 
 Il y a des recettes qui méritent d'être tatouées sur l'avant-bras. Le Bannock est de celles-là.

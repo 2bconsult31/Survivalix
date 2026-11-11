@@ -14,6 +14,29 @@ personnes: 4
 difficulte: "Intermédiaire"
 energie: "Plaque de cuisson"
 conservation: "Jusqu'à un an à l'abri de la lumière et de la chaleur"
+prepTime: "PT45M"
+cookTime: "PT2H10M"
+totalTime: "PT2H55M"
+recipeYield: "environ 1 bocal d'1 litre"
+recipeCategory: "Sauce"
+recipeIngredient:
+  - "Environ 3 kg de tomates bien mûres"
+  - "Sel selon le goût (facultatif)"
+  - "2 cuillères à soupe de jus de citron en bouteille par bocal d'1 litre"
+recipeInstructions:
+  - "Incise une croix à la base des tomates, plonge-les 30 à 60 secondes dans l'eau bouillante puis dans l'eau glacée, et retire la peau."
+  - "Épépine les tomates et coupe la chair en dés."
+  - "Fais mijoter la chair à feu doux 1 h à 1 h 30 en remuant, jusqu'à obtenir une sauce épaisse."
+  - "Stérilise les bocaux et les couvercles en les faisant bouillir quelques minutes."
+  - "Verse 2 cuillères à soupe de jus de citron en bouteille au fond de chaque bocal d'1 litre, puis remplis de sauce chaude en laissant un petit espace de tête."
+  - "Essuie le bord des bocaux et ferme-les."
+  - "Immerge les bocaux sous plusieurs centimètres d'eau et, une fois l'ébullition franche, compte 40 minutes de bain-marie."
+  - "Laisse refroidir 12 à 24 heures sans toucher, puis vérifie la fermeture avant de stocker."
+keywords:
+  - "sauce tomate"
+  - "conserve maison"
+  - "bain-marie"
+  - "longue conservation"
 ---
 
 Chaque été, des kilos de tomates finissent à la poubelle parce que le jardin ou le marché en donne plus qu'on ne peut en manger frais. La mise en conserve n'est pas qu'un geste économique ou anti-gaspillage — c'est aussi l'un des moyens les plus fiables de se constituer une vraie réserve alimentaire longue durée avec un produit qu'on cuisine déjà chaque semaine.
