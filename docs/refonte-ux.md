@@ -18,7 +18,7 @@ Mis à jour à la fin de chaque lot : statut, numéro de PR, décisions prises.
 | 4 | Le système « manuel de défense civile » | fait | #69 | après accord écrit de Boris (donné) |
 | 5 | Pages de liste des rubriques et pages annexes | fait | #70 | après accord écrit de Boris (donné) |
 | 6 | Poids des images (WebP, tailles adaptées) | fait | #71 | après accord écrit de Boris (donné) |
-| 7 | Illustrations des cartes d'outils | en cours (illustrations demandées à Boris) | — | après accord écrit de Boris |
+| 7 | Illustrations des cartes d'outils | en attente du choix de Boris (visuels SVG) | #72 | après accord écrit de Boris |
 | 8 | Gabarits d'article : en-tête, menu et pied partagés | à faire | — | après accord écrit de Boris |
 
 Statuts possibles : à faire / en cours / en attente de validation / fait.
@@ -145,3 +145,5 @@ Statuts possibles : à faire / en cours / en attente de validation / fait.
 ### Lot 7 — Illustrations des cartes d'outils (en cours)
 - /outils : chaque carte affiche public/images/outils/<nom-de-l-outil>.jpg dès que le fichier existe (via ImageOpt, WebP automatiques), sinon garde son visuel « écran radar ». Testé avec une image provisoire, retirée ensuite.
 - 4 illustrations demandées à Boris (1920 × 815, comme les images d'article) : calculateur-stock-eau.jpg, calculateur-rations-alimentaires.jpg, evaluateur-preparation.jpg, generateur-kit-72h.jpg.
+- Boris préfère des visuels vectoriels (SVG) dessinés en code, dans l'univers du site sans imiter ses illustrations. Exception à la règle « ne jamais créer de fichier image », validée par Boris pour les visuels graphiques en code (pas pour les illustrations).
+- Page de démonstration /design-lab (noindex, hors sitemap, sans lien) : 4 pistes sur la carte du calculateur d'eau (1 affiche de défense civile, 2 planche technique, 3 instrument de mesure, 4 pictogramme tamponné). Choix en attente.
