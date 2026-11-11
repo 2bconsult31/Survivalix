@@ -1,4 +1,5 @@
 ---
+import ImageOpt from './ImageOpt.astro';
 // Bloc « À lire aussi » : 3 articles liés, même rubrique en priorité,
 // puis tags communs. L'article courant est toujours exclu.
 import { getCollection } from 'astro:content';
@@ -51,7 +52,7 @@ const related = all
           <a href={`/${rubrique}/${entry.id}`} class="related-card">
             <div class="related-image">
               {entry.data.image && (
-                <img src={entry.data.image} alt="" loading="lazy" decoding="async" />
+                <ImageOpt src={entry.data.image} alt="" sizes="(min-width: 900px) 360px, 100vw" />
               )}
             </div>
             <div class="related-body">
@@ -115,7 +116,7 @@ const related = all
     background-color: #080808;
   }
 
-  .related-image img {
+  .related-image :global(img) {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -123,7 +124,7 @@ const related = all
     transition: transform 0.3s;
   }
 
-  .related-card:hover .related-image img { transform: scale(1.03); }
+  .related-card:hover .related-image :global(img) { transform: scale(1.03); }
 
   .related-body {
     padding: 1rem 1.2rem 1.2rem;

@@ -1,4 +1,5 @@
 ---
+import ImageOpt from '../components/ImageOpt.astro';
 import { existsSync } from 'node:fs';
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
@@ -104,14 +105,15 @@ const rubriques = RUBRIQUES_DATA.map((r) => {
 
   <!-- OUVERTURE -->
   <section class="hero">
-    <img
+    <ImageOpt
       class="hero-img"
       src="/images/articles/sac-evacuation.jpg"
       alt=""
       width="1584"
       height="672"
+      sizes="100vw"
+      loading="eager"
       fetchpriority="high"
-      decoding="async"
     />
     <div class="hero-texte">
       <h1 class="hero-titre">La survie,<br/>c'est pour tout le monde.</h1>
@@ -132,7 +134,7 @@ const rubriques = RUBRIQUES_DATA.map((r) => {
     <section class="une" aria-labelledby="une-titre">
       <a href={alaUne.url} class="une-carte fiche" data-onglet="LE RADAR">
         {alaUne.image && (
-          <img class="une-img" src={alaUne.image} alt="" width="1584" height="672" loading="lazy" decoding="async" />
+          <ImageOpt class="une-img" src={alaUne.image} alt="" width="1584" height="672" sizes="(min-width: 1300px) 680px, (min-width: 900px) 55vw, 100vw" />
         )}
         <div class="une-corps">
           <p class="une-kicker">À la une du Radar</p>
@@ -155,7 +157,7 @@ const rubriques = RUBRIQUES_DATA.map((r) => {
         <li>
           <a href={a.url} class="fiche-article fiche" data-onglet={a.rubrique.toUpperCase()}>
             {a.image && (
-              <img src={a.image} alt="" width="1584" height="672" loading="lazy" decoding="async" />
+              <ImageOpt src={a.image} alt="" width="1584" height="672" sizes="(min-width: 1300px) 400px, (min-width: 1000px) 31vw, (min-width: 600px) 48vw, 100vw" />
             )}
             <div class="fiche-article-corps">
               <h3>{a.titre}</h3>
@@ -215,7 +217,7 @@ const rubriques = RUBRIQUES_DATA.map((r) => {
       {rubriques.map((r) => (
         <a href={`/${r.slug}`} class:list={['rubrique-card', 'fiche', { 'avec-illustration': r.illustration }]} data-onglet={r.onglet}>
           {r.illustration ? (
-            <img class="rubrique-illu" src={r.illustration} alt="" width="1200" height="900" loading="lazy" decoding="async" />
+            <ImageOpt class="rubrique-illu" src={r.illustration} alt="" width="1200" height="900" sizes="(min-width: 1300px) 400px, (min-width: 768px) 31vw, 48vw" />
           ) : (
             <div class="rubrique-icon" set:html={r.svg} />
           )}
@@ -268,7 +270,7 @@ const rubriques = RUBRIQUES_DATA.map((r) => {
     background-color: #0d0d0d;
   }
 
-  .hero-img {
+  :global(.hero-img) {
     display: block;
     width: 100%;
     height: auto;
@@ -310,7 +312,7 @@ const rubriques = RUBRIQUES_DATA.map((r) => {
 
   @media (min-width: 768px) {
     .hero { margin-top: -3rem; }
-    .hero-img { max-height: 78vh; }
+    :global(.hero-img) { max-height: 78vh; }
     /* Sur grand écran, le texte se pose en bas de l'illustration, sur un fondu noir */
     .hero-texte {
       position: absolute;
@@ -352,13 +354,13 @@ const rubriques = RUBRIQUES_DATA.map((r) => {
   .une-carte:hover { background-color: #141414; }
   .une-carte:hover .une-titre { text-decoration: underline; text-underline-offset: 4px; }
 
-  .une-img { width: 100%; height: 100%; aspect-ratio: 1584 / 672; object-fit: cover; display: block; }
+  :global(.une-img) { width: 100%; height: 100%; aspect-ratio: 1584 / 672; object-fit: cover; display: block; }
 
   .une-corps { padding: 1.5rem 1.2rem 1.8rem; }
 
   @media (min-width: 900px) {
     .une-carte { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: center; }
-    .une-img { aspect-ratio: auto; min-height: 320px; }
+    :global(.une-img) { aspect-ratio: auto; min-height: 320px; }
     .une-corps { padding: 2rem 2.2rem; }
   }
 
@@ -415,7 +417,7 @@ const rubriques = RUBRIQUES_DATA.map((r) => {
   .fiche-article:hover { background-color: #141414; }
   .fiche-article:hover h3 { text-decoration: underline; text-underline-offset: 3px; }
 
-  .fiche-article img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
+  .fiche-article :global(img) { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
 
   .fiche-article-corps { padding: 1rem 1.1rem 1.2rem; display: flex; flex-direction: column; gap: 0.6rem; flex: 1; }
 
@@ -513,7 +515,7 @@ const rubriques = RUBRIQUES_DATA.map((r) => {
   .rubrique-card:hover { background-color: #141414; }
   .rubrique-card:hover h3 { text-decoration: underline; text-underline-offset: 3px; }
 
-  .rubrique-illu { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
+  :global(.rubrique-illu) { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
 
   /* Pictogramme de secours (illustration pas encore livrée) : même cadre 4:3 que les illustrations */
   .rubrique-icon {

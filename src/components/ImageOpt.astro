@@ -1,0 +1,43 @@
+---
+// Image allégée : WebP à plusieurs largeurs (générées par src/integrations/images-optimisees.mjs),
+// avec l'original JPG/PNG en secours. S'utilise comme une balise <img>.
+import { existsSync, readdirSync } from 'node:fs';
+
+interface Props {
+  src: string;
+  alt: string;
+  sizes: string;
+  width?: number | string;
+  height?: number | string;
+  class?: string;
+  loading?: 'lazy' | 'eager';
+  fetchpriority?: 'high' | 'low' | 'auto';
+}
+
+const { src, alt, sizes, class: className, loading = 'lazy', fetchpriority, width, height } = Astro.props;
+
+// /images/radar/x.jpg -> /images/_opt/radar/x-480.webp, x-800.webp… (les largeurs réellement générées)
+const base = src.startsWith('/images/') ? src.replace(/^\/images\//, '').replace(/\.(jpe?g|png)$/i, '') : null;
+let variantes: { l: number; url: string }[] = [];
+if (base) {
+  const dossier = `public/images/_opt/${base.includes('/') ? base.slice(0, base.lastIndexOf('/')) : ''}`;
+  const nom = base.slice(base.lastIndexOf('/') + 1);
+  const motif = new RegExp(`^${nom.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}-(\\d+)\\.webp$`);
+  if (existsSync(dossier)) {
+    variantes = readdirSync(dossier)
+      .map((f) => f.match(motif))
+      .filter((m): m is RegExpMatchArray => m !== null)
+      .map((m) => ({ l: Number(m[1]), url: `/images/_opt/${base}-${m[1]}.webp` }))
+      .sort((a, b) => a.l - b.l);
+  }
+}
+const srcset = variantes.map(({ l, url }) => `${url} ${l}w`).join(', ');
+---
+{variantes.length > 0 ? (
+  <picture class="img-opt">
+    <source type="image/webp" srcset={srcset} sizes={sizes} />
+    <img src={src} alt={alt} class={className} width={width} height={height} loading={loading} decoding="async" fetchpriority={fetchpriority} />
+  </picture>
+) : (
+  <img src={src} alt={alt} class={className} width={width} height={height} loading={loading} decoding="async" fetchpriority={fetchpriority} />
+)}

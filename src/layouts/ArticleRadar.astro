@@ -1,4 +1,5 @@
 ---
+import ImageOpt from '../components/ImageOpt.astro';
 import Ticker from '../components/Ticker.astro';
 import '../styles/global.css';
 import ArticleSEO from '../components/ArticleSEO.astro';
@@ -58,7 +59,16 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
 
     <div class="article-hero">
       {hasImage ? (
-        <img src={frontmatter.image} alt={frontmatter.image_alt || frontmatter.title} class="article-hero-img" width="1920" height="815" />
+        <ImageOpt
+          src={frontmatter.image}
+          alt={frontmatter.image_alt || frontmatter.title}
+          class="article-hero-img"
+          width="1920"
+          height="815"
+          sizes="100vw"
+          loading="eager"
+          fetchpriority="high"
+        />
       ) : (
         <div class="article-hero-placeholder">
           <svg viewBox="0 0 1200 420" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:absolute;top:0;left:0;">
@@ -179,7 +189,7 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
     position: relative;
     background-color: #0d0d0d;
   }
-  .article-hero-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  :global(.article-hero-img) { width: 100%; height: 100%; object-fit: cover; display: block; }
   .article-hero-placeholder { width: 100%; height: 100%; position: relative; }
 
   .article-header {

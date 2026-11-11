@@ -1,6 +1,9 @@
 # build output
 dist/
 
+# images WebP générées à chaque build (src/integrations/images-optimisees.mjs)
+public/images/_opt/
+
 # generated types
 .astro/
 
