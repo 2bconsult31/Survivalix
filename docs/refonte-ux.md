@@ -16,7 +16,7 @@ Mis à jour à la fin de chaque lot : statut, numéro de PR, décisions prises.
 | 2 | La page d'accueil | fait | #62 | après accord écrit de Boris (donné) |
 | 3 | La lecture des articles | fait | #64 | après accord écrit de Boris (donné) |
 | 4 | Le système « manuel de défense civile » | fait | #69 | après accord écrit de Boris (donné) |
-| 5 | Pages de liste des rubriques et pages annexes | en attente de validation | #70 | après accord écrit de Boris |
+| 5 | Pages de liste des rubriques et pages annexes | fait | #70 | après accord écrit de Boris (donné) |
 | 6 | Poids des images (WebP, tailles adaptées) | à faire | — | après accord écrit de Boris |
 | 7 | Illustrations des cartes d'outils | à faire | — | après accord écrit de Boris |
 | 8 | Gabarits d'article : en-tête, menu et pied partagés | à faire | — | après accord écrit de Boris |
@@ -123,7 +123,7 @@ Statuts possibles : à faire / en cours / en attente de validation / fait.
 - Générateur kit 72h : corrige un défaut existant, les cases à cocher n'étaient pas mises en page (éléments créés en JavaScript).
 - Contrôle axe-core WCAG 2.2 AA : zéro erreur sur les 8 pages touchées, ordinateur et mobile (et générateur avec cases cochées).
 
-### Lot 5 — Pages de liste des rubriques et pages annexes (PR #70)
+### Lot 5 — Pages de liste des rubriques et pages annexes (PR #70, fusionnée après accord écrit de Boris)
 - Lots 5 à 8 ajoutés au plan sur proposition de Claude, validés par Boris dans l'ordre.
 - /manuel, /radar, /cantine, /atelier : cartes en fiches à onglet numéroté (01, 02… ; corrige au passage « 010 », « 011 » au-delà de 9), gros numéros pâles supprimés, 3 étiquettes au plus par carte (au lieu de 4 à 6), survol sans déplacement.
 - /commencer-ici : l'introduction ne laisse plus de grand vide à gauche ; texte en tête, puis les 3 repères (72h, 5 semaines, 6 L) côte à côte.
