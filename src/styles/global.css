@@ -558,7 +558,7 @@ button {
 .lecture-papier li {
   color: var(--encre) !important;
   opacity: 1;
-  font-weight: 500; /* Oswald 500, chargée par les 4 gabarits d'article */
+  font-weight: 400; /* 500 essayé : trop épais à la lecture (Boris) */
   font-size: 1.125rem;
   line-height: 1.75;
   letter-spacing: 0.2px;
