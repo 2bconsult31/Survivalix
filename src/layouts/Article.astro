@@ -12,9 +12,6 @@ interface Props {
 const { frontmatter } = Astro.props;
 const hasImage = frontmatter.image && frontmatter.image !== '';
 const pageTitle = frontmatter.seo_title || frontmatter.title;
-// Refonte UX, lot 3 : zone de lecture « page imprimée », en test sur un seul article.
-const PAGES_PAPIER = ['/manuel/sac-evacuation'];
-const papier = PAGES_PAPIER.includes(Astro.url.pathname.replace(/\/$/, ''));
 
 ---
 
@@ -129,7 +126,7 @@ const papier = PAGES_PAPIER.includes(Astro.url.pathname.replace(/\/$/, ''));
     </div>
 
     <div class="article-body">
-      <article class:list={['article-content', { 'lecture-papier': papier }]}>
+      <article class="article-content lecture-papier">
         <slot />
       </article>
 
