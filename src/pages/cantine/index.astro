@@ -21,7 +21,7 @@ const recettesPubliees = await getCollection('cantine');
     {recettesPubliees
       .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
       .map((recette, index) => (
-        <a href={`/cantine/${recette.id}`} class="article-card article-card-link">
+        <a href={`/cantine/${recette.id}`} class="article-card article-card-link fiche" data-onglet={String(index + 1).padStart(2, '0')}>
           <div class="card-image card-image-placeholder">
             {recette.data.image ? (
               <img src={recette.data.image} alt={recette.data.image_alt || recette.data.title} />
@@ -43,11 +43,10 @@ const recettesPubliees = await getCollection('cantine');
           </div>
           <div class="card-body">
             <div class="card-top">
-              <span class="card-num" aria-hidden="true" data-num={`0${index + 1}`}></span>
               <span class="card-temps">~{recette.data.temps_cuisson ? recette.data.temps_cuisson : '8 min'}</span>
             </div>
             <div class="card-tags">
-              {recette.data.tags.map((tag: string) => (
+              {recette.data.tags.slice(0, 3).map((tag: string) => (
                 <span class="card-tag">#{tag}</span>
               ))}
             </div>
@@ -136,19 +135,14 @@ const recettesPubliees = await getCollection('cantine');
 
   .article-card {
     background-color: #0d0d0d;
-    border: 1px solid #222;
-    border-top: 3px solid #F5A623;
     display: flex;
     flex-direction: column;
-    transition: border-color 0.2s, transform 0.2s;
-    position: relative;
+    transition: background-color 0.2s;
     text-decoration: none;
   }
 
-  .article-card-link:hover {
-    border-color: #333;
-    transform: translateY(-3px);
-  }
+  .article-card-link:hover { background-color: #141414; }
+  .article-card-link:hover .card-titre { text-decoration: underline; text-underline-offset: 3px; }
 
   .card-image {
     width: 100%;
@@ -182,21 +176,14 @@ const recettesPubliees = await getCollection('cantine');
 
   .card-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
   }
 
   /* Numéro purement décoratif : affiché en CSS, ignoré des lecteurs d'écran */
 
-  .card-num::before { content: attr(data-num); }
 
 
-  .card-num {
-    font-family: 'Special Elite', cursive;
-    font-size: 1.8rem;
-    color: #2a2a2a;
-    line-height: 1;
-  }
 
   .card-temps {
     font-family: 'Oswald', sans-serif;

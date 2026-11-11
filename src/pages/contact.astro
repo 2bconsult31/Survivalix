@@ -15,19 +15,19 @@ import Layout from '../layouts/Layout.astro';
 
       <div class="contact-main">
 
-        <div class="contact-block">
+        <div class="contact-block fiche">
           <div class="contact-block-label">EMAIL</div>
           <a href="mailto:contact@survivalix.fr" class="contact-email">contact@survivalix.fr</a>
           <p>Pour toute question générale, suggestion éditoriale ou signalement d'erreur dans un article.</p>
         </div>
 
-        <div class="contact-block">
+        <div class="contact-block fiche">
           <div class="contact-block-label">BUNKER IA</div>
           <p>Pour une question sur la survie, le prepping ou l'autonomie, le Bunker IA répond 24h/24 avec des informations sourcées.</p>
           <a href="/bunker" class="contact-btn">Poser une question au Bunker →</a>
         </div>
 
-        <div class="contact-block">
+        <div class="contact-block fiche">
           <div class="contact-block-label">SIGNALER UNE ERREUR</div>
           <p>Vous avez repéré une information incorrecte, une source douteuse ou un lien cassé ? Envoyez-nous un email avec le lien de la page concernée et le détail de l'erreur. On corrige rapidement.</p>
           <a href="mailto:contact@survivalix.fr?subject=Signalement erreur" class="contact-btn">Signaler une erreur →</a>
@@ -37,13 +37,13 @@ import Layout from '../layouts/Layout.astro';
 
       <div class="contact-sidebar">
 
-        <div class="sidebar-block">
+        <div class="sidebar-block fiche">
           <div class="sidebar-label">TEMPS DE RÉPONSE</div>
           <p>Nous répondons généralement sous 48 à 72 heures ouvrées.</p>
         </div>
 
-        <div class="sidebar-block">
-          <div class="sidebar-label">URGENCE</div>
+        <div class="sidebar-block encadre-consigne">
+          <span class="tampon">Urgence</span>
           <p>Pour toute urgence vitale, ne nous contactez pas — appelez les secours directement.</p>
           <div class="urgence-nums">
             <span><strong>112</strong> — Urgences</span>
@@ -52,7 +52,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
 
-        <div class="sidebar-block">
+        <div class="sidebar-block fiche">
           <div class="sidebar-label">PARTENARIATS</div>
           <p>Pour toute demande de partenariat ou collaboration, précisez-le dans l'objet de votre email.</p>
           <a href="mailto:contact@survivalix.fr?subject=Partenariat" class="contact-btn-small">Écrire →</a>
@@ -124,8 +124,6 @@ import Layout from '../layouts/Layout.astro';
 
   .contact-block {
     background-color: #111;
-    border: 1px solid #1e1e1e;
-    border-top: 3px solid #F5A623;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -189,8 +187,6 @@ import Layout from '../layouts/Layout.astro';
 
   .sidebar-block {
     background-color: #0d0d0d;
-    border: 1px solid #1e1e1e;
-    border-top: 3px solid #6B7C45;
     padding: 1.2rem;
     display: flex;
     flex-direction: column;

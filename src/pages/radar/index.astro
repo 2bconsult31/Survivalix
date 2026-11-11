@@ -22,7 +22,7 @@ const articlesTries = articlesPublies.sort((a, b) => new Date(b.data.date).getTi
   {articlesTries.length > 0 ? (
     <div class="manuel-grid">
       {articlesTries.map((article, index) => (
-        <a href={`/radar/${article.id}`} class="article-card article-card-link">
+        <a href={`/radar/${article.id}`} class="article-card article-card-link fiche" data-onglet={String(index + 1).padStart(2, '0')}>
           <div class="card-image card-image-placeholder">
             {article.data.image ? (
               <img src={article.data.image} alt={article.data.image_alt || article.data.title} />
@@ -59,7 +59,7 @@ const articlesTries = articlesPublies.sort((a, b) => new Date(b.data.date).getTi
               <span class="card-temps">~{Math.max(1, Math.round((article.body ?? '').split(/\s+/).length / 200))} min</span>
             </div>
             <div class="card-tags">
-              {article.data.tags.map((tag: string) => (
+              {article.data.tags.slice(0, 3).map((tag: string) => (
                 <span class="card-tag">#{tag}</span>
               ))}
             </div>
@@ -175,15 +175,13 @@ const articlesTries = articlesPublies.sort((a, b) => new Date(b.data.date).getTi
 
   .article-card {
     background-color: #0d0d0d;
-    border: 1px solid #222;
-    border-top: 3px solid #F5A623;
     display: flex;
     flex-direction: column;
-    transition: border-color 0.2s, transform 0.2s;
-    position: relative;
+    transition: background-color 0.2s;
     text-decoration: none;
   }
-  .article-card-link:hover { border-color: #333; transform: translateY(-3px); }
+  .article-card-link:hover { background-color: #141414; }
+  .article-card-link:hover .card-titre { text-decoration: underline; text-underline-offset: 3px; }
 
   .card-image {
     width: 100%;
