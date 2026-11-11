@@ -46,7 +46,7 @@ const outils = [
 
   <div class="manuel-grid">
     {outils.map((outil, index) => (
-      <a href={outil.slug} class="article-card article-card-link">
+      <a href={outil.slug} class="article-card article-card-link fiche" data-onglet={`0${index + 1}`}>
         <div class="card-image">
           <svg aria-hidden="true" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;position:absolute;top:0;left:0;">
             <defs>
@@ -156,7 +156,6 @@ const outils = [
         </div>
         <div class="card-body">
           <div class="card-top">
-            <span class="card-num" aria-hidden="true" data-num={`0${index + 1}`}></span>
             <span class="card-temps">~{outil.temps}</span>
           </div>
           <div class="card-tags">
@@ -238,18 +237,13 @@ const outils = [
   }
   .article-card {
     background-color: #0d0d0d;
-    border: 1px solid #222;
-    border-top: 3px solid #F5A623;
     display: flex;
     flex-direction: column;
-    transition: border-color 0.2s, transform 0.2s;
-    position: relative;
+    transition: background-color 0.2s;
     text-decoration: none;
   }
-  .article-card-link:hover {
-    border-color: #333;
-    transform: translateY(-3px);
-  }
+  .article-card-link:hover { background-color: #141414; }
+  .article-card-link:hover .card-titre { text-decoration: underline; text-underline-offset: 3px; }
   .card-image {
     width: 100%;
     height: 160px;
@@ -266,17 +260,8 @@ const outils = [
   }
   .card-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-  }
-  /* Numéro purement décoratif : affiché en CSS, ignoré des lecteurs d'écran */
-  .card-num::before { content: attr(data-num); }
-
-  .card-num {
-    font-family: 'Special Elite', cursive;
-    font-size: 1.8rem;
-    color: #2a2a2a;
-    line-height: 1;
   }
   .card-temps {
     font-family: 'Oswald', sans-serif;

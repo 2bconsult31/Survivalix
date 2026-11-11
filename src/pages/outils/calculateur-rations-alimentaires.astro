@@ -20,7 +20,7 @@ import Layout from '../../layouts/Layout.astro';
 
     <div class="calc-form">
 
-      <div class="form-section">
+      <div class="form-section fiche">
         <div class="form-section-label">TON FOYER</div>
 
         <div class="form-group">
@@ -43,7 +43,7 @@ import Layout from '../../layouts/Layout.astro';
 
       </div>
 
-      <div class="form-section">
+      <div class="form-section fiche">
         <div class="form-section-label">OPTIONS</div>
 
         <div class="form-group">
@@ -80,7 +80,7 @@ import Layout from '../../layouts/Layout.astro';
 
     </div>
 
-    <div class="calc-result" id="result">
+    <div class="calc-result fiche" id="result">
 
       <div class="result-header">
         <div class="result-label">CALORIES TOTALES</div>
@@ -110,7 +110,8 @@ import Layout from '../../layouts/Layout.astro';
         </div>
       </div>
 
-      <div class="result-conseil">
+      <div class="result-conseil encadre-consigne">
+        <span class="tampon">À retenir</span>
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12" cy="12" r="10" stroke="#F5A623" stroke-width="1.5"/>
           <line x1="12" y1="8" x2="12" y2="12" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round"/>
@@ -336,8 +337,6 @@ import Layout from '../../layouts/Layout.astro';
 
   .form-section {
     background-color: #111;
-    border: 1px solid #1e1e1e;
-    border-top: 3px solid #F5A623;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -452,8 +451,6 @@ import Layout from '../../layouts/Layout.astro';
 
   .calc-result {
     background-color: #111;
-    border: 1px solid #1e1e1e;
-    border-top: 3px solid #F5A623;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -567,9 +564,6 @@ import Layout from '../../layouts/Layout.astro';
     gap: 0.8rem;
     align-items: flex-start;
     background-color: #0d0d0d;
-    border: 1px solid var(--filet);
-    border-top: 3px solid #F5A623;
-    padding: 0.8rem 1rem;
   }
 
   .result-conseil svg {

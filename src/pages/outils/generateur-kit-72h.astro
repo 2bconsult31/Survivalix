@@ -31,7 +31,7 @@ import Layout from '../../layouts/Layout.astro';
     </div>
   </div>
 
-  <div class="foyer-card">
+  <div class="foyer-card fiche">
     <div class="foyer-grid">
 
       <div class="foyer-item">
@@ -261,7 +261,7 @@ import Layout from '../../layouts/Layout.astro';
 
     categories.forEach((cat) => {
       const catEl = document.createElement('div');
-      catEl.className = 'checklist-category';
+      catEl.className = 'checklist-category fiche';
 
       const labelEl = document.createElement('div');
       labelEl.className = 'checklist-category-label';
@@ -391,8 +391,6 @@ import Layout from '../../layouts/Layout.astro';
     max-width: 900px;
     margin: 0 auto 1.5rem;
     background-color: #111;
-    border: 1px solid #1e1e1e;
-    border-top: 3px solid #F5A623;
     padding: 1.5rem;
   }
 
@@ -547,14 +545,13 @@ import Layout from '../../layouts/Layout.astro';
     .checklist-container { grid-template-columns: repeat(2, 1fr); }
   }
 
-  .checklist-category {
+  /* :global : les catégories sont créées en JavaScript */
+  .checklist-container :global(.checklist-category) {
     background-color: #0d0d0d;
-    border: 1px solid var(--filet);
-    border-top: 3px solid #F5A623;
     padding: 1.2rem;
   }
 
-  .checklist-category-label {
+  .checklist-container :global(.checklist-category-label) {
     font-family: 'Oswald', sans-serif;
     font-size: 0.75rem;
     color: var(--kaki-texte);
@@ -562,7 +559,7 @@ import Layout from '../../layouts/Layout.astro';
     margin-bottom: 0.9rem;
   }
 
-  .checklist-item {
+  .checklist-container :global(.checklist-item) {
     display: flex;
     align-items: flex-start;
     gap: 0.7rem;
@@ -570,7 +567,7 @@ import Layout from '../../layouts/Layout.astro';
     cursor: pointer;
   }
 
-  .checklist-item input[type="checkbox"] {
+  .checklist-container :global(.checklist-item input[type="checkbox"]) {
     width: 18px;
     height: 18px;
     accent-color: #F5A623;
@@ -579,7 +576,7 @@ import Layout from '../../layouts/Layout.astro';
     cursor: pointer;
   }
 
-  .checklist-item span {
+  .checklist-container :global(.checklist-item span) {
     font-family: 'Oswald', sans-serif;
     font-size: 0.85rem;
     color: #F5E6C8;
@@ -589,8 +586,8 @@ import Layout from '../../layouts/Layout.astro';
     transition: opacity 0.2s;
   }
 
-  .checked-text {
-    opacity: 0.4 !important;
+  .checklist-container :global(.checked-text) {
+    opacity: 0.65 !important;
     text-decoration: line-through;
   }
 
