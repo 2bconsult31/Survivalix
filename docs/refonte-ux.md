@@ -15,7 +15,7 @@ Mis à jour à la fin de chaque lot : statut, numéro de PR, décisions prises.
 | 1 | Les tics visuels | fait | #61 | après accord écrit de Boris (donné) |
 | 2 | La page d'accueil | fait | #62 | après accord écrit de Boris (donné) |
 | 3 | La lecture des articles | fait | #64 | après accord écrit de Boris (donné) |
-| 4 | Le système « manuel de défense civile » | en attente de validation | #69 | après accord écrit de Boris |
+| 4 | Le système « manuel de défense civile » | fait | #69 | après accord écrit de Boris (donné) |
 
 Statuts possibles : à faire / en cours / en attente de validation / fait.
 
@@ -98,7 +98,7 @@ Statuts possibles : à faire / en cours / en attente de validation / fait.
 - Titres en gras (demande de Boris) : h2, h3 et h4 de la zone crème épaissis par un fin contour de la même couleur (-webkit-text-stroke 0,035em pour les h2, 0,025em pour les h3 et h4), car Special Elite n'a qu'une graisse et Oswald est déjà en 700. Texte courant inchangé.
 - Colonne de texte élargie (demande de Boris : trop étroite, trop de défilement) : 30rem → 42rem (≈ 85 à 90 caractères par ligne sur ordinateur), marges intérieures de la feuille ramenées de 3rem à 2,5rem. Sac d'évacuation sur ordinateur : page de 10 064 px à 8 473 px de haut. Mobile inchangé.
 
-### Lot 4 — Le système « manuel de défense civile » (PR #69)
+### Lot 4 — Le système « manuel de défense civile » (PR #69, fusionnée après accord écrit de Boris)
 - Document de référence : docs/systeme-graphique.md (couleurs et contrastes, typographie, fiche à onglet, tampon, encadrés, zone papier, étiquettes, boutons, illustrations, pièges techniques).
 - Nouvelles classes globales : .tampon, .encadre-consigne (version fond noir de l'encadré « À retenir »), .papier (feuille crème hors article).
 - Outils : cartes de /outils en fiches à onglet numéroté 01 à 04 (gros numéros pâles supprimés) ; panneaux des calculateurs, du générateur et de l'évaluateur en fiches ; conseils des calculateurs en encadré de consigne avec tampon « À retenir » ; questions de l'évaluateur avec onglet « Q. 01 » ; « // Rien à signaler » sans barres.
