@@ -545,13 +545,13 @@ button {
 @media (min-width: 768px) {
   .article-content.lecture-papier {
     margin: 0;
-    padding: 3.5rem 3rem 4rem;
+    padding: 3.5rem 2.5rem 4rem;
     border: 1px solid #000;
   }
 }
 
-/* Longueur de ligne : environ 65 à 75 caractères */
-.lecture-papier > * { max-width: 30rem; margin-left: auto; margin-right: auto; }
+/* Largeur de la colonne de texte : élargie à la demande de Boris (30rem jugé trop étroit) */
+.lecture-papier > * { max-width: 42rem; margin-left: auto; margin-right: auto; }
 .lecture-papier > table { max-width: none; }
 
 .lecture-papier p,
