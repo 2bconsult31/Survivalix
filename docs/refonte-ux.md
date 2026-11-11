@@ -14,7 +14,7 @@ Mis à jour à la fin de chaque lot : statut, numéro de PR, décisions prises.
 | 0 | Nettoyage | fait | #60 | automatique |
 | 1 | Les tics visuels | fait | #61 | après accord écrit de Boris (donné) |
 | 2 | La page d'accueil | fait | #62 | après accord écrit de Boris (donné) |
-| 3 | La lecture des articles | à faire | — | après accord écrit de Boris |
+| 3 | La lecture des articles | en attente de validation (test sur sac-evacuation) | #64 | après accord écrit de Boris |
 | 4 | Le système « manuel de défense civile » | à faire (sur feu vert) | — | à définir |
 
 Statuts possibles : à faire / en cours / en attente de validation / fait.
@@ -84,3 +84,12 @@ Statuts possibles : à faire / en cours / en attente de validation / fait.
 - Étiquettes au-dessus des titres supprimées (protocole de démarrage, secteurs d'activité, identification du citoyen).
 - Rubriques : la carte affiche public/images/rubriques/<slug>.jpg dès que le fichier existe (1200 × 900), sinon garde son pictogramme. 6 illustrations demandées à Boris ; 5 livrées et en place (manuel, cantine, bunker, atelier, outils, 1200 × 896). Radar : illustration livrée ensuite et ajoutée (public/images/rubriques/radar.jpg) ; les 6 cartes sont illustrées.
 - body { overflow-x: clip } dans global.css, pour que les blocs bord à bord ne créent jamais de défilement horizontal.
+
+### Lot 3 — La lecture des articles (en cours, test sur /manuel/sac-evacuation)
+- Activation : Article.astro, liste PAGES_PAPIER (une seule page pour le test) → classe .lecture-papier sur .article-content. Styles dans global.css (section « ZONE DE LECTURE PAGE IMPRIMÉE »).
+- Fond #FAF1DE (variante plus claire du crème #F5E6C8) avec grain très léger ; texte encre #1a1a1a (15,5:1) ; intertitres h2 et liens en rouge brique #8B2500 (7,9:1) ; h3 en encre avec l'onglet numéroté du lot 1. Ambre jamais utilisé pour du texte sur le crème.
+- Typographie : Oswald 400 (au lieu de 300), 18 px (chapeau 20 px), interlignage 1,75, colonne de 30rem ≈ 68 à 75 caractères par ligne (Oswald est étroite), h2 plus grands avec filet noir de 2 px.
+- Encadré « À retenir » : double filet noir façon fiche de consigne, tampon « À retenir » rouge brique légèrement de travers. Style appliqué aux citations markdown (>). Dans sac-evacuation.md, le paragraphe « Un conseil pratique » passe en citation (texte inchangé, mise en forme seulement).
+- Cadre noir inchangé : en-tête, image principale, titre, colonne latérale, articles liés, pied de page.
+- Contrôle axe-core WCAG 2.2 AA : zéro erreur (ordinateur et mobile).
+- Prochaine étape après validation : généraliser aux 4 gabarits (Article, ArticleRadar, ArticleCantine, ArticleAtelier).

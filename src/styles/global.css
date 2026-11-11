@@ -516,3 +516,124 @@ button {
 }
 
 .article-content blockquote::before { content: ''; }
+
+/* ============================================================
+   ZONE DE LECTURE « PAGE IMPRIMÉE » (refonte UX, lot 3)
+   Fond crème papier, texte noir d'encre. Le cadre du site
+   (en-tête, image principale, colonne latérale, pied) reste noir.
+   Contrastes sur #FAF1DE : encre #1a1a1a 15,5:1 ; brique #8B2500 7,9:1.
+   ============================================================ */
+.article-content.lecture-papier {
+  --papier: #FAF1DE;
+  --encre: #1a1a1a;
+  --brique: #8B2500;
+  --filet-papier: #c8b68e;
+  position: relative;
+  color: var(--encre);
+  background-color: var(--papier);
+  /* grain papier très léger */
+  background-image: radial-gradient(rgba(26, 26, 26, 0.045) 1px, transparent 1.2px);
+  background-size: 4px 4px;
+  margin: 0 -1.5rem;
+  padding: 2.5rem 1.25rem 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+@media (min-width: 768px) {
+  .article-content.lecture-papier {
+    margin: 0;
+    padding: 3.5rem 3rem 4rem;
+    border: 1px solid #000;
+  }
+}
+
+/* Longueur de ligne : environ 65 à 75 caractères */
+.lecture-papier > * { max-width: 30rem; margin-left: auto; margin-right: auto; }
+.lecture-papier > table { max-width: none; }
+
+.lecture-papier p,
+.lecture-papier li {
+  color: var(--encre) !important;
+  opacity: 1;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  letter-spacing: 0.2px;
+}
+
+.lecture-papier p { margin-bottom: 1.4rem; }
+.lecture-papier > p:first-child { font-size: 1.25rem; line-height: 1.7; }
+
+.lecture-papier h2 {
+  color: var(--brique);
+  font-size: clamp(1.55rem, 3.6vw, 2.05rem);
+  line-height: 1.2;
+  margin-top: 3.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 2px solid var(--encre);
+}
+
+.lecture-papier h3 {
+  color: var(--encre);
+  font-size: 1.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.lecture-papier strong { color: var(--encre); font-weight: 700; }
+.lecture-papier em { opacity: 1; }
+
+.lecture-papier a {
+  color: var(--brique);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.lecture-papier a:hover { opacity: 1; text-decoration-thickness: 2px; }
+
+.lecture-papier ul,
+.lecture-papier ol { margin: 0 auto 1.6rem !important; padding-left: 1.4rem; }
+.lecture-papier li { margin-bottom: 0.35rem; }
+.lecture-papier li::marker { color: var(--brique); font-weight: 700; }
+
+.lecture-papier :is(td, th) { color: var(--encre) !important; border-color: var(--filet-papier) !important; }
+.lecture-papier th { background-color: var(--encre) !important; color: var(--papier) !important; }
+
+.lecture-papier img { border: 1px solid var(--encre); }
+
+/* Encadré « À retenir » : fiche de consigne officielle, avec tampon */
+.lecture-papier blockquote {
+  margin: 3rem auto 2.75rem;
+  padding: 2.1rem 1.4rem 1.3rem;
+  background: #FFF8E9;
+  border: 2px solid var(--encre);
+  outline: 1px solid var(--encre);
+  outline-offset: 4px;
+  font-style: normal;
+  opacity: 1;
+}
+
+.lecture-papier blockquote::before {
+  content: 'À retenir';
+  top: -0.95rem;
+  left: 1rem;
+  height: auto;
+  min-width: 0;
+  padding: 0.1rem 0.7rem;
+  line-height: 1.4;
+  clip-path: none;
+  transform: rotate(-2.5deg);
+  background-color: var(--papier);
+  color: var(--brique);
+  border: 2px solid var(--brique);
+  border-radius: 2px;
+  font-family: var(--font-titre);
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.lecture-papier blockquote p { margin-bottom: 0; }
+.lecture-papier blockquote p + p { margin-top: 0.8rem; }
