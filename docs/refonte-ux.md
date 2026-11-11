@@ -16,6 +16,10 @@ Mis à jour à la fin de chaque lot : statut, numéro de PR, décisions prises.
 | 2 | La page d'accueil | fait | #62 | après accord écrit de Boris (donné) |
 | 3 | La lecture des articles | fait | #64 | après accord écrit de Boris (donné) |
 | 4 | Le système « manuel de défense civile » | fait | #69 | après accord écrit de Boris (donné) |
+| 5 | Pages de liste des rubriques et pages annexes | en attente de validation | #70 | après accord écrit de Boris |
+| 6 | Poids des images (WebP, tailles adaptées) | à faire | — | après accord écrit de Boris |
+| 7 | Illustrations des cartes d'outils | à faire | — | après accord écrit de Boris |
+| 8 | Gabarits d'article : en-tête, menu et pied partagés | à faire | — | après accord écrit de Boris |
 
 Statuts possibles : à faire / en cours / en attente de validation / fait.
 
@@ -53,6 +57,18 @@ Statuts possibles : à faire / en cours / en attente de validation / fait.
 
 ### Lot 4 — Le système « manuel de défense civile » (plus tard, sur feu vert)
 - Formaliser le système graphique (fiches, onglets, tampons, couleurs, typographie) dans un document de référence, puis l'étendre aux pages outils, au Bunker et au quiz.
+
+### Lot 5 — Pages de liste des rubriques et pages annexes
+- /manuel, /radar, /cantine, /atelier, /commencer-ici, /a-propos, /contact, /ressources : appliquer le système graphique (docs/systeme-graphique.md).
+
+### Lot 6 — Poids des images
+- Versions WebP et tailles adaptées au mobile pour les illustrations (accueil en priorité), sans changer leur rendu. Mesurer le gain.
+
+### Lot 7 — Illustrations des cartes d'outils
+- Remplacer les 4 visuels génériques « écran radar » de /outils par une illustration par outil (prompts fournis, Boris génère).
+
+### Lot 8 — Gabarits d'article
+- En-tête, menu et pied de page recopiés dans les 4 gabarits d'article : les partager (composants communs), sans changement visible ni régression SEO.
 
 ## Journal des décisions
 
@@ -106,3 +122,12 @@ Statuts possibles : à faire / en cours / en attente de validation / fait.
 - Quiz : onglet « Q. 01 » à la place du gros numéro pâle ; résultat : cartes en fiches, conseil en encadré de consigne avec tampon « Conseil Survivalix ». Corrige deux défauts existants : la page de résultat n'était presque pas stylée (éléments créés en JavaScript) et le nom de 7 profils sur 10 n'avait pas assez de contraste (la couleur du profil colore désormais le cadre du badge et le filet sous le nom, le texte est en ambre et crème).
 - Générateur kit 72h : corrige un défaut existant, les cases à cocher n'étaient pas mises en page (éléments créés en JavaScript).
 - Contrôle axe-core WCAG 2.2 AA : zéro erreur sur les 8 pages touchées, ordinateur et mobile (et générateur avec cases cochées).
+
+### Lot 5 — Pages de liste des rubriques et pages annexes (PR #70)
+- Lots 5 à 8 ajoutés au plan sur proposition de Claude, validés par Boris dans l'ordre.
+- /manuel, /radar, /cantine, /atelier : cartes en fiches à onglet numéroté (01, 02… ; corrige au passage « 010 », « 011 » au-delà de 9), gros numéros pâles supprimés, 3 étiquettes au plus par carte (au lieu de 4 à 6), survol sans déplacement.
+- /commencer-ici : l'introduction ne laisse plus de grand vide à gauche ; texte en tête, puis les 3 repères (72h, 5 semaines, 6 L) côte à côte.
+- /a-propos : le texte passe sur une feuille crème (zone papier), titres en noir épaissi, chapeau souligné d'ambre ; bloc « Par où commencer ? » en fiche sur fond noir.
+- /contact : blocs en fiches ; « Urgence » en encadré de consigne avec tampon.
+- /ressources (lexique) : déjà au système depuis le lot 1, inchangé.
+- Contrôle axe-core WCAG 2.2 AA : zéro erreur sur les 8 pages, ordinateur et mobile ; aucun défilement horizontal.
