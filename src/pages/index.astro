@@ -1,4 +1,5 @@
 ---
+import { imageDispo } from '../utils/image';
 import ImageOpt from '../components/ImageOpt.astro';
 import { existsSync } from 'node:fs';
 import { getCollection } from 'astro:content';
@@ -21,7 +22,7 @@ const tous = (
         collection,
         titre: a.data.title,
         description: a.data.description,
-        image: a.data.image,
+        image: imageDispo(a.data.image),
         date: a.data.date,
         updated: a.data.updated,
       })),

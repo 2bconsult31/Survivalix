@@ -14,7 +14,7 @@ La France compte bien plus que trois ou quatre numéros d'urgence : on en a rete
 
 ## Les cinq numéros vitaux
 
-**15 : le SAMU.** Malaise grave, douleur thoracique, difficulté à respirer, intoxication, hémorragie. Toute situation où une équipe médicale doit intervenir vite.
+**15 : le SAMU.** Malaise grave, douleur thoracique, difficulté à respirer, intoxication (au [monoxyde de carbone](/manuel/monoxyde-carbone-logement), par exemple), hémorragie. Toute situation où une équipe médicale doit intervenir vite.
 
 **17 : police secours.** Agression, cambriolage en cours, vol à l'arraché, ou toute situation où quelqu'un est en danger immédiat face à une personne. Pour un fait déjà terminé, sans urgence, le commissariat ou la brigade de gendarmerie du coin suffit.
 

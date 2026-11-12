@@ -65,7 +65,7 @@ Tout se joue dans l'usage. Un détecteur mal placé, à pile morte ou vieux de d
 
 **La durée de vie.** Environ 10 ans, capteur compris. Regarde la date imprimée au dos du tien ce soir ; s'il est plus vieux, remplace-le. Un [détecteur de fumée conforme NF EN 14604](https://www.amazon.fr/s?k=detecteur+de+fumee+nf+en+14604&tag=survivalix31-21) se trouve pour une quinzaine d'euros.
 
-À part : le monoxyde de carbone. C'est un risque différent, invisible et inodore, lié aux appareils de combustion (chaudière, poêle, chauffe-eau gaz, chauffage d'appoint). Un détecteur de fumée ne le voit pas. Si tu as un appareil à combustion chez toi, il te faut un [détecteur de monoxyde de carbone](https://www.amazon.fr/s?k=detecteur+monoxyde+de+carbone&tag=survivalix31-21) en plus, installé en suivant les indications de sa notice.
+À part : le monoxyde de carbone. C'est un risque différent, invisible et inodore, lié aux appareils de combustion (chaudière, poêle, chauffe-eau gaz, chauffage d'appoint). Un détecteur de fumée ne le voit pas. Si tu as un appareil à combustion chez toi, il te faut un [détecteur de monoxyde de carbone](https://www.amazon.fr/s?k=detecteur+monoxyde+de+carbone&tag=survivalix31-21) en plus, installé en suivant les indications de sa notice. Les sources, les symptômes et les bons réflexes sont rassemblés dans notre article sur le [monoxyde de carbone dans le logement](/manuel/monoxyde-carbone-logement).
 
 ## Extincteur et couverture anti-feu : utiles, mais pas dans le rôle qu'on imagine
 
