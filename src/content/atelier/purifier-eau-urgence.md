@@ -16,15 +16,15 @@ fiche_png: "/ressources/atelier/purifier-eau-urgence.png"
 
 Il y a une date précise où l'eau potable est devenue un problème en France métropolitaine : le 9 novembre 2019, à Sainte-Sigolène en Haute-Loire. Une contamination à l'E. coli a rendu l'eau du robinet de 4 000 habitants non potable pendant plusieurs jours. Interdiction de boire, de cuisiner, de se brosser les dents avec l'eau du robinet. Les gens faisaient la queue devant les camions citerne. Personne n'avait prévu ça.
 
-Ce n'est pas un cas isolé. En France, les avis de ne pas consommer l'eau du robinet touchent des dizaines de communes chaque année pour des raisons variées : contamination bactériologique, rupture de canalisation, [inondation](/manuel/inondation-logement-que-faire), panne de station d'épuration. Sans parler des situations de crise plus larges où l'infrastructure entière peut être compromise.
+Et chaque année en France, les avis de ne pas consommer l'eau du robinet touchent des dizaines de communes chaque année pour des raisons variées : contamination bactériologique, rupture de canalisation, [inondation](/manuel/inondation-logement-que-faire), panne de station d'épuration. Sans parler des situations de crise plus larges où l'infrastructure entière peut être compromise.
 
-La bonne nouvelle : rendre de l'eau douteuse potable n'est pas sorcier. Il existe quatre méthodes fiables, accessibles, avec du matériel qui tient dans un sac à dos. Voilà ce qu'il faut savoir.
+Rendre potable une eau douteuse reste à ta portée : quatre méthodes fiables existent, avec du matériel qui tient dans un sac à dos.
 
 ## Pourquoi l'eau devient un problème en crise
 
 Trois familles de micro-organismes sont à neutraliser : les bactéries (E. coli, choléra), les virus (rotavirus, norovirus) et les protozoaires (Giardia, Cryptosporidium). Par-dessus, il y a les polluants chimiques, pesticides ou métaux lourds, dont le matériel de base a bien du mal à venir à bout.
 
-Le problème que la plupart des gens ignorent : filtrer et purifier, ce n'est pas la même chose. Un filtre, c'est une barrière physique : sa membrane bloque les sédiments, les bactéries et une partie des protozoaires. La purification va plus loin et s'attaque aussi aux pathogènes les plus redoutables, virus en tête.
+Ce que beaucoup ignorent : filtrer et purifier sont deux opérations différentes. Un filtre, c'est une barrière physique : sa membrane bloque les sédiments, les bactéries et une partie des protozoaires. La purification va plus loin et s'attaque aussi aux pathogènes les plus redoutables, virus en tête.
 
 En clair : un filtre seul ne suffit pas toujours. Un traitement chimique seul ne suffit pas toujours. La règle d'or : on filtre d'abord, on désinfecte ensuite. Débarrassée de ses particules, l'eau se désinfecte beaucoup mieux, que ce soit par ébullition, aux UV ou avec un traitement chimique.
 
@@ -37,14 +37,14 @@ C'est la méthode la plus ancienne de l'humanité et la plus fiable toutes condi
 **Ce que ça n'élimine pas :** les polluants chimiques (pesticides, métaux lourds, hydrocarbures). Si ton eau vient d'une zone industrielle ou agricole contaminée, l'ébullition ne règle pas tout.
 
 **La procédure :**
-1. Pré-filtre l'eau à travers un tissu, un filtre à café ou une microfibre pour éliminer les débris visibles — cette étape est obligatoire si l'eau est trouble
+1. Pré-filtre l'eau à travers un tissu, un filtre à café ou une microfibre pour éliminer les débris visibles (étape obligatoire si l'eau est trouble)
 2. Porte à ébullition complète (les grosses bulles, pas juste les petites)
 3. Maintiens l'ébullition 5 minutes, couvercle posé
 4. Laisse refroidir dans un récipient couvert pour éviter la recontamination
 
 **Avantages :** zéro matériel spécifique, fonctionne sur n'importe quelle source d'eau biologique, efficacité totale sur tous les pathogènes.
 
-**Inconvénients :** nécessite une source de chaleur, consomme du carburant, ne traite pas les polluants chimiques, laisse un goût "plat" (l'oxygène dissous disparaît à l'ébullition — agite l'eau refroidie ou verse-la d'un récipient à l'autre pour le retrouver).
+**Inconvénients :** nécessite une source de chaleur, consomme du carburant, ne traite pas les polluants chimiques, laisse un goût "plat" (l'oxygène dissous disparaît à l'ébullition : agite l'eau refroidie ou verse-la d'un récipient à l'autre pour le retrouver).
 
 ## Méthode 2 — Les pastilles de purification
 
@@ -52,12 +52,12 @@ La solution la plus légère à transporter. Quelques grammes au fond de ta poch
 
 Les deux types de pastilles qu'on trouve en France :
 
-**[Pastilles au dioxyde de chlore](https://www.amazon.fr/s?k=pastilles+dioxyde+de+chlore+purification+eau&tag=survivalix31-21) (Micropur Forte, Aquatabs)** — le meilleur choix. Efficaces contre bactéries, virus et Giardia. Dose et temps d'attente : suis la notice du fabricant. Elles laissent un léger goût chloré mais très supportable.
+**[Pastilles au dioxyde de chlore](https://www.amazon.fr/s?k=pastilles+dioxyde+de+chlore+purification+eau&tag=survivalix31-21) (Micropur Forte, Aquatabs)** : le meilleur choix. Efficaces contre bactéries, virus et Giardia. Dose et temps d'attente : suis la notice du fabricant. Elles laissent un léger goût chloré mais très supportable.
 
-**Pastilles à l'iode** — efficaces mais déconseillées pour un usage prolongé (effet thyroïde), et moins efficaces contre le Cryptosporidium. Réserver pour le kit d'urgence de secours uniquement.
+**Pastilles à l'iode** : efficaces mais déconseillées pour un usage prolongé (effet thyroïde), et moins efficaces contre le Cryptosporidium. Réserver pour le kit d'urgence de secours uniquement.
 
 **La procédure :**
-1. Pré-filtre l'eau si elle est trouble — les particules en suspension neutralisent l'efficacité des pastilles
+1. Pré-filtre l'eau si elle est trouble, car les particules en suspension neutralisent l'efficacité des pastilles
 2. Dissous le comprimé dans le volume indiqué sur la notice
 3. Referme le bouchon et secoue
 4. Respecte le temps d'attente indiqué sur la notice avant de boire
@@ -69,15 +69,15 @@ Les deux types de pastilles qu'on trouve en France :
 
 ## Méthode 3 — Le filtre portable
 
-Une paille filtrante type LifeStraw arrête les bactéries et les sédiments, mais pas les virus : pour eux, il faut un traitement chimique ou des UV. Ce point est crucial et souvent mal compris — un filtre seul ne rend pas l'eau totalement sûre dans tous les contextes.
+Une paille filtrante type LifeStraw arrête les bactéries et les sédiments, mais pas les virus : pour eux, il faut un traitement chimique ou des UV. Ce point est crucial et souvent mal compris : un filtre seul ne rend pas l'eau totalement sûre dans tous les contextes.
 
 **Les types de filtres :**
 
-**Paille filtrante (LifeStraw, Sawyer Squeeze)** — tu bois directement à travers. Ultra-portable, elle arrête bactéries et parasites, mais pas les virus. Pour couvrir aussi les virus, associe-la à des pastilles.
+**Paille filtrante (LifeStraw, Sawyer Squeeze).** Tu bois directement à travers. Ultra-portable, elle arrête bactéries et parasites, mais pas les virus. Pour couvrir aussi les virus, associe-la à des pastilles.
 
-**Filtre à pompe** — tu pompes l'eau à travers une cartouche. Plus volumineux mais plus puissant. Certains modèles intègrent du charbon actif qui améliore le goût et capte certains polluants chimiques.
+**Filtre à pompe.** Tu pompes l'eau à travers une cartouche. Plus volumineux mais plus puissant. Certains modèles intègrent du charbon actif qui améliore le goût et capte certains polluants chimiques.
 
-**Filtre gravitaire** — pour le camp de base ou la maison. Si la crise s'éternise, le trio qui tient sur la durée : un filtre gravitaire, une réserve de pastilles et des récipients propres et bien fermés.
+**Filtre gravitaire.** Pour le camp de base ou la maison. Si la crise s'éternise, le trio qui tient sur la durée : un filtre gravitaire, une réserve de pastilles et des récipients propres et bien fermés.
 
 **La procédure avec paille filtrante :**
 1. Plonge la paille directement dans l'eau source
@@ -93,7 +93,7 @@ Une paille filtrante type LifeStraw arrête les bactéries et les sédiments, ma
 
 La méthode la plus high-tech et la plus rapide. Les stylos UV (SteriPen®, CrazyCap®) envoient des UV-C qui abîment l'ADN des micro-organismes : ils ne peuvent plus se multiplier. Le traitement est rapide ; sa durée dépend du modèle.
 
-**Ce que ça élimine :** bactéries, virus et protozoaires — tout le spectre biologique. Les UV-C neutralisent bactéries, virus et parasites. C'est rapide, simple à utiliser, et l'eau ne garde aucun arrière-goût.
+**Ce que ça élimine :** bactéries, virus et protozoaires, soit tout le spectre biologique. C'est rapide, simple à utiliser, et l'eau ne garde aucun arrière-goût.
 
 **Ce que ça n'élimine pas :** polluants chimiques et métaux lourds. Et sur une eau trouble, les UV ne servent à rien : les particules leur font écran. Pré-filtrer est donc indispensable.
 
@@ -117,7 +117,7 @@ Quelques erreurs classiques qui peuvent transformer un effort de purification en
 
 **Croire que le filtre seul suffit dans tous les contextes.** Un filtre arrête bactéries et parasites, mais pas les virus. La bonne pratique, la plus prudente : combiner filtre + pastilles (ou ébullition).
 
-**Contaminer l'eau traitée.** Utiliser un récipient mal rincé, boire directement à la gourde puis remettre de l'eau non traitée dedans, ne pas rincer le bouchon — tous ces gestes recontaminent l'eau que tu viens de traiter.
+**Contaminer l'eau traitée.** Utiliser un récipient mal rincé, boire directement à la gourde puis remettre de l'eau non traitée dedans, ne pas rincer le bouchon : tous ces gestes recontaminent l'eau que tu viens de traiter.
 
 ## Ce qu'il faut stocker
 
@@ -136,7 +136,7 @@ Le principe de redondance s'applique ici comme pour l'allumage du feu : plusieur
 
 ## Télécharge la fiche technique illustrée
 
-Les 4 méthodes en image prête à imprimer — à garder dans ton kit ou coller dans ta cuisine.
+Les 4 méthodes en une image prête à imprimer, à garder dans ton kit ou à coller dans ta cuisine.
 
 [Télécharger la fiche technique](/ressources/atelier/purifier-eau-urgence.png)
 
