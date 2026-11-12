@@ -14,9 +14,9 @@ Il y a quelques années, le terme "bug out bag" appartenait au vocabulaire des s
 
 Avec son dispositif ORSEC, le gouvernement pousse chacun à se tenir prêt à évacuer, en commençant par un kit d'urgence de 72 heures pensé selon les risques propres à sa commune.
 
-Ce n'est pas de la paranoia — c'est de la logistique. Ce sac sert dès que rester chez soi devient dangereux, voire impossible. Et la liste est longue : coupure d'électricité qui dure, inondation, feu de végétation, évacuation préventive, pollution industrielle, grosse tempête, accident de transport de matières dangereuses, confinement en ville, panne des réseaux essentiels.
+Ce sac sert dès que rester chez soi devient dangereux, voire impossible. Et la liste est longue : coupure d'électricité qui dure, inondation, feu de végétation, évacuation préventive, pollution industrielle, grosse tempête, accident de transport de matières dangereuses, confinement en ville, panne des réseaux essentiels.
 
-Autrement dit : pas besoin d'imaginer l'apocalypse. Un incendie dans votre immeuble, [une inondation qui monte vite](/manuel/inondation-logement-que-faire), un accident industriel dans votre quartier — et vous avez 5 minutes pour partir. Qu'est-ce que vous prenez ?
+Inutile d'imaginer l'apocalypse : un incendie dans votre immeuble, [une inondation qui monte vite](/manuel/inondation-logement-que-faire), un accident industriel dans votre quartier, et vous avez 5 minutes pour partir. Qu'est-ce que vous prenez ?
 
 ## Pourquoi avoir un sac d'évacuation prêt
 
@@ -38,19 +38,19 @@ Inutile de viser le matériel sophistiqué et hors de prix : ce qu'il vous faut,
 
 ### Abri et chaleur
 
-Le minimum absolu : **une couverture de survie isothermique par personne** — elle fait partie du kit d'urgence officiel. Légère, peu coûteuse, et elle peut littéralement sauver des vies en hypothermie. Si l'espace le permet : un poncho imperméable (qui sert aussi de bâche d'abri), une paire de vêtements de rechange adaptés à la saison, des chaussettes chaudes supplémentaires.
+Le minimum absolu : **une couverture de survie isothermique par personne**, qui fait partie du kit d'urgence officiel. Légère, peu coûteuse, et elle peut littéralement sauver des vies en hypothermie. Si l'espace le permet : un poncho imperméable (qui sert aussi de bâche d'abri), une paire de vêtements de rechange adaptés à la saison, des chaussettes chaudes supplémentaires.
 
 Léger et compact, un tapis de sol rend service aussi bien en forêt que sur le sol d'un gymnase. Si vous êtes évacué vers un centre d'hébergement collectif, dormir sur un sol froid en béton sans isolation, c'est une mauvaise nuit garantie.
 
 ### Communication et éclairage
 
-**Lampe frontale** avec piles neuves — les deux mains libres restent essentielles. **Batterie externe chargée** pour maintenir votre téléphone en vie. Une radio FM/AM, à piles ou à manivelle, vous garde branché en continu : point sur la situation, alertes et consignes des secours.
+**Lampe frontale** avec piles neuves, pour garder les deux mains libres. **Batterie externe chargée** pour maintenir votre téléphone en vie. Une radio FM/AM, à piles ou à manivelle, vous garde branché en continu : point sur la situation, alertes et consignes des secours.
 
-Un **[sifflet](https://www.amazon.fr/s?k=sifflet+de+survie&tag=survivalix31-21)** — signal sonore audible à plusieurs centaines de mètres, utile si vous êtes bloqué ou blessé. Un **miroir de signalisation** si vous partez en zone outdoor. Une **boussole** et une **carte papier** de votre région — si les réseaux mobiles tombent, votre GPS est inutile.
+Un **[sifflet](https://www.amazon.fr/s?k=sifflet+de+survie&tag=survivalix31-21)** : un signal sonore audible à plusieurs centaines de mètres, utile si vous êtes bloqué ou blessé. Un **miroir de signalisation** si vous partez en zone outdoor. Une **boussole** et une **carte papier** de votre région : si les réseaux mobiles tombent, votre GPS ne sert plus à rien.
 
 ### Documents et argent
 
-C'est la catégorie la plus sous-estimée — et la plus importante pour la suite. Le sac idéal contient au minimum vos papiers d'identité, vos médicaments personnels, de l'argent liquide et un chargeur portable.
+C'est la catégorie la plus sous-estimée, et la plus importante pour la suite. Le sac idéal contient au minimum vos papiers d'identité, vos médicaments personnels, de l'argent liquide et un chargeur portable.
 
 **Ce qu'il faut avoir dans une pochette étanche :**
 - Photocopies de la carte d'identité, passeport, carte vitale, carte de groupe sanguin
@@ -61,7 +61,7 @@ C'est la catégorie la plus sous-estimée — et la plus importante pour la suit
 
 ### Premiers secours et médicaments
 
-Une trousse de premiers secours compacte : compresses stériles, pansements variés, désinfectant, sparadrap, gants nitrile, coussin hémostatique (notre guide de la [trousse de premiers secours maison](/atelier/trousse-premiers-secours) détaille quoi y mettre et quoi laisser de côté). Et **vos médicaments sur ordonnance** pour au moins 3 jours — c'est souvent la chose la plus difficile à récupérer en urgence.
+Une trousse de premiers secours compacte : compresses stériles, pansements variés, désinfectant, sparadrap, gants nitrile, coussin hémostatique (notre guide de la [trousse de premiers secours maison](/atelier/trousse-premiers-secours) détaille quoi y mettre et quoi laisser de côté). Et **vos médicaments sur ordonnance** pour au moins 3 jours : c'est souvent la chose la plus difficile à récupérer en urgence.
 
 ## Le sac — comment bien le choisir
 
@@ -69,11 +69,11 @@ Oubliez le sac taillé pour Instagram. Ce qu'il faut :
 
 **Volume :** 30 à 45L pour un adulte seul. Au-delà, le sac devient trop lourd à porter sur la durée. En dessous, vous ne pourrez pas tout mettre.
 
-**Matière :** nylon ou polyester résistant, coutures renforcées, fermetures éclair de qualité. Pas besoin de dépenser une fortune en matériel tactique militaire — un sac de randonnée classique d'une marque sérieuse fait très bien l'affaire.
+**Matière :** nylon ou polyester résistant, coutures renforcées, fermetures éclair de qualité. Inutile de dépenser une fortune en matériel tactique militaire : un sac de randonnée classique d'une marque sérieuse fait très bien l'affaire.
 
 **Ergonomie :** sangles rembourrées, ceinture de portage, dos aéré. Un sac mal réglé devient une torture au bout de 2h de marche.
 
-**Couleur :** évitez le camouflage militaire en contexte urbain — ça attire l'attention et peut créer des malentendus. Noir, gris, bleu marine : discrets et pratiques.
+**Couleur :** évitez le camouflage militaire en contexte urbain : ça attire l'attention et peut créer des malentendus. Noir, gris, bleu marine : discrets et pratiques.
 
 **Emplacement :** rangez le sac sur le chemin de la sortie que vous emprunteriez en cas de départ précipité : à une patère près de l'entrée, dans le placard d'à côté, ou dans votre chambre si sa fenêtre peut servir d'issue.
 
@@ -84,11 +84,11 @@ C'est le piège dans lequel tombent presque tous les débutants : un sac trop lo
 Gardez-le aussi léger que possible, d'autant plus si vous avez peu l'habitude de charger, régler et porter un sac à dos. Le vrai test : pouvoir marcher longtemps avec sans vous épuiser. Le poids grimpe plus vite qu'on ne le croit quand on additionne eau, nourriture, vêtements et matériel.
 
 La hiérarchie du poids :
-1. Eau — lourd mais incompressible
-2. Nourriture — choisissez dense en calories, léger en poids (oléagineux > conserves)
-3. Abri — couverture de survie plutôt que sac de couchage
-4. Électronique — batterie externe, pas générateur portable
-5. Documents — léger, mais prioritaire
+1. Eau : lourde mais incompressible
+2. Nourriture : choisissez dense en calories, léger en poids (oléagineux > conserves)
+3. Abri : couverture de survie plutôt que sac de couchage
+4. Électronique : batterie externe, pas générateur portable
+5. Documents : légers, mais prioritaires
 
 > **Un conseil pratique :** une fois le sac bouclé, partez marcher 45 à 60 minutes avec, chargé comme le jour J. Même un test approximatif fait vite apparaître ce qui cloche.
 
@@ -98,7 +98,7 @@ La hiérarchie du poids :
 
 **Acheter un kit tout fait.** Les kits commerciaux "clé en main" contiennent généralement du matériel bas de gamme qui lâche au mauvais moment et des items inutiles qui prennent de la place. Composez le vôtre.
 
-**Négliger les documents.** En situation d'évacuation, retrouver un hébergement, accéder à ses comptes bancaires, prouver son identité — tout ça nécessite des papiers. C'est la catégorie la plus souvent oubliée.
+**Négliger les documents.** En situation d'évacuation, retrouver un hébergement, accéder à ses comptes bancaires, prouver son identité : tout ça nécessite des papiers. C'est la catégorie la plus souvent oubliée.
 
 **Oublier les médicaments.** Particulièrement critique pour les personnes sous traitement chronique. En cas de crise, les pharmacies peuvent être fermées ou en rupture pendant plusieurs jours.
 
@@ -117,7 +117,7 @@ Un sac bouclé ne doit pas devenir un sac oublié : rouvrez-le régulièrement. 
 - Adapter les vêtements à la saison et aux changements de poids
 - Mettre à jour les documents (nouvelles ordonnances, changements de situation)
 
-Un sac d'évacuation n'est jamais fini : il évolue avec vous, avec les saisons, avec l'endroit où vous vivez. L'important n'est pas qu'il soit parfait aujourd'hui, c'est qu'il soit déjà prêt le jour où vous n'aurez plus le temps de réfléchir.
+Un sac d'évacuation évolue avec vous, avec les saisons, avec l'endroit où vous vivez : notez dès maintenant dans votre agenda la date de sa prochaine vérification.
 
 ---
 

@@ -11,26 +11,20 @@ image_alt: "Kit d'urgence 72h : radio, lampe, trousse de secours, conserves et e
 checklist: "/ressources/checklist-kit-72h.png"
 ---
 
-Soyons honnêtes une seconde.
-
-Tu n'as pas prévu de devenir survivaliste. Tu n'as pas de bunker dans ta cave, pas de générateur diesel dans le garage, et tu ne stockes pas de munitions dans le garde-manger.
-
-Et pourtant.
-
 Il y a eu cette tempête qui a coupé l'électricité trois jours. Ces inondations qui ont bloqué les routes. Ce long weekend où les supermarchés étaient vides avant même qu'on comprenne ce qui se passait.
 
-Le kit 72h, c'est pas de la paranoia. C'est du bon sens. C'est l'équivalent de l'extinction d'incendie dans ta cuisine — tu espères ne jamais t'en servir, mais tu es drôlement content de l'avoir le jour où ça brûle.
+Le kit 72h sert à traverser ce genre de moment, sans bunker dans la cave ni générateur dans le garage. Il joue le même rôle que l'extincteur de ta cuisine : tu espères ne jamais t'en servir, et tu es drôlement content de l'avoir le jour où ça brûle.
 
-72 heures. Trois jours d'autonomie. Voilà ce qu'on va construire ensemble.
+L'objectif : 72 heures d'autonomie, en commençant par ce qui compte le plus.
 
 ## La règle des 4 priorités
 
 Avant de parler liste, comprends la logique. En situation de crise, tes besoins suivent en général le même ordre, à adapter selon ce qui t'arrive.
 
-**1. S'hydrater** — Le corps encaisse très mal le manque d'eau, surtout quand il fait chaud ou que tu fais des efforts. C'est la priorité absolue.
-**2. Se nourrir** — On tient bien plus longtemps sans manger que sans boire. Mais le ventre vide, tu prends de mauvaises décisions bien plus vite.
-**3. Rester au chaud** — L'hypothermie en appartement sans chauffage, c'est plus fréquent qu'on le croit.
-**4. Communiquer** — Savoir ce qui se passe et pouvoir prévenir tes proches.
+**1. S'hydrater.** Le corps encaisse très mal le manque d'eau, surtout quand il fait chaud ou que tu fais des efforts. C'est la priorité absolue.
+**2. Se nourrir.** On tient bien plus longtemps sans manger que sans boire. Mais le ventre vide, tu prends de mauvaises décisions bien plus vite.
+**3. Rester au chaud.** L'hypothermie en appartement sans chauffage, c'est plus fréquent qu'on le croit.
+**4. Communiquer.** Savoir ce qui se passe et pouvoir prévenir tes proches.
 
 Tout le reste est secondaire. Garde ça en tête quand tu fais tes achats.
 
@@ -45,9 +39,9 @@ Le minimum recommandé par les autorités est de **6 litres par personne pour 72
 Pour connaître le total de ton foyer, notre [calculateur de stock d'eau](/outils/calculateur-stock-eau) fait la multiplication à ta place.
 
 **Ce qu'il faut avoir :**
-- Bouteilles d'eau minérale fermées (format 1,5L — plus maniables qu'un bidon)
-- Pastilles de purification d'eau type Micropur — au cas où tu dois utiliser une source douteuse
-- Gourde filtrante type LifeStraw — optionnel, mais excellent si tu dois évacuer à pied
+- Bouteilles d'eau minérale fermées (format 1,5L, plus maniables qu'un bidon)
+- Pastilles de purification d'eau type Micropur, au cas où tu dois utiliser une source douteuse
+- Gourde filtrante type LifeStraw : optionnelle, mais excellente si tu dois évacuer à pied
 
 **Le conseil qu'on ne te donne jamais :**
 Le repère officiel est un minimum. Si tu dois évacuer et marcher, tu boiras davantage : prévois de quoi traiter l'eau trouvée en route.
@@ -58,15 +52,15 @@ La contrainte : tout doit se consommer sans cuisson ni réfrigération. Contrain
 
 **Ce qu'il faut avoir :**
 - Conserves de légumineuses : haricots, lentilles, pois chiches
-- Thon, sardines, maquereau en boîte — protéines rapides, longue conservation
+- Thon, sardines, maquereau en boîte : protéines rapides, longue conservation
 - Biscuits secs, crackers, pain de mie longue conservation
 - Barres de céréales et barres énergétiques
 - Fruits secs : amandes, noix, abricots, raisins
-- Chocolat noir — calories denses + moral (c'est scientifique, ou presque)
+- Chocolat noir : calories denses + moral (c'est scientifique, ou presque)
 - **Un ouvre-boîte manuel.** On te le dit maintenant parce que tout le monde l'oublie. Tout le monde.
 
 **L'approche Survivalix :**
-Stocke ce que tu manges normalement. Le piège classique du débutant : acheter des trucs "survie" spéciaux qu'on n'a jamais goûtés. En situation de stress, manger quelque chose de familier fait une différence réelle — psychologiquement et physiquement.
+Stocke ce que tu manges normalement. Le piège classique du débutant : acheter des trucs "survie" spéciaux qu'on n'a jamais goûtés. En situation de stress, manger quelque chose de familier aide vraiment, psychologiquement et physiquement.
 
 Pour savoir quelle quantité prévoir selon la taille de ton foyer, notre [calculateur de rations alimentaires](/outils/calculateur-rations-alimentaires) fait le compte en calories.
 
@@ -78,36 +72,36 @@ Compotes en gourde, petits gâteaux, céréales sèches. Et prévois un peu de m
 Une coupure d'électricité la nuit, dans un appartement, c'est immédiatement déstabilisant. La lumière, c'est le premier truc qui change tout psychologiquement.
 
 **Ce qu'il faut avoir :**
-- **Lampe frontale** avec piles neuves de rechange — les deux mains libres, c'est indispensable
+- **Lampe frontale** avec piles neuves de rechange, pour garder les deux mains libres
 - Bougies + briquet ou allumettes imperméables
 - **Batterie externe 20 000 mAh minimum** + câbles pour ton téléphone
-- **[Radio à manivelle ou à piles](https://www.amazon.fr/s?k=radio+manivelle+piles+urgence&tag=survivalix31-21)** — recommandée par les autorités pour suivre les consignes officielles, même quand internet et le réseau mobile flanchent
+- **[Radio à manivelle ou à piles](https://www.amazon.fr/s?k=radio+manivelle+piles+urgence&tag=survivalix31-21)** : recommandée par les autorités pour suivre les consignes officielles, même quand internet et le réseau mobile flanchent
 
 **La batterie externe c'est la nouvelle lampe de poche.**
-Ton téléphone est ta carte, ta lampe de secours, ta radio et ton seul moyen de communication. Une batterie de 20 000 mAh permet plusieurs recharges complètes d'un smartphone, selon le modèle. Achètes-en deux et garde-les chargées en permanence.
+Ton téléphone est ta carte, ta lampe de secours, ta radio et ton seul moyen de communication. Une batterie de 20 000 mAh permet plusieurs recharges complètes d'un smartphone, selon le modèle. Achète-en deux et garde-les chargées en permanence.
 
 ### Santé & Premiers secours — Pas besoin d'être médecin
 
-Le kit de base couvre l'essentiel des petits bobos du quotidien. Coupures, brûlures légères, fièvre, diarrhée — les situations les plus fréquentes en cas de crise ne nécessitent pas de chirurgie.
+Le kit de base couvre l'essentiel des petits bobos du quotidien. Coupures, brûlures légères, fièvre, diarrhée : les situations les plus fréquentes en cas de crise ne nécessitent pas de chirurgie.
 
 **Ce qu'il faut avoir :**
 - Pansements de différentes tailles, compresses stériles, bandages
 - Désinfectant (Bétadine ou Biseptine)
 - Sparadrap résistant
 - Paracétamol, ibuprofène, antihistaminique, antidiarrhéique
-- Tes médicaments sur ordonnance — minimum 3 jours de réserve
+- Tes médicaments sur ordonnance (minimum 3 jours de réserve)
 - Thermomètre
 - Pince à épiler (échardes, tiques)
-- Masques FFP2 — utiles lors de crises spécifiques
+- Masques FFP2, utiles lors de crises spécifiques
 
 ### Chaleur & Vêtements — L'ennemi invisible
 
 En ville, on pense rarement à l'hypothermie, et pourtant les autorités sanitaires rappellent que le froid touche d'abord les plus fragiles. Une nuit sans chauffage en hiver peut rapidement mettre en danger un enfant ou une personne âgée.
 
 **Ce qu'il faut avoir :**
-- **Couverture de survie** (dorée/argentée) — pas chère, tient dans une poche, figure dans la liste officielle du kit
+- **Couverture de survie** (dorée/argentée) : pas chère, tient dans une poche, figure dans la liste officielle du kit
 - Pull chaud et vêtements de rechange pour 3 jours
-- Chaussures de marche solides — si tu dois évacuer à pied
+- Chaussures de marche solides, si tu dois évacuer à pied
 - Imperméable ou poncho
 
 ### Documents — Ce qu'on oublie toujours
@@ -117,9 +111,9 @@ En cas d'évacuation, avoir ses documents sous la main évite les situations kaf
 **Ce qu'il faut avoir :**
 - Photocopies dans une pochette étanche : carte d'identité, passeport, carte vitale
 - Ordonnances et liste des médicaments
-- Numéros de téléphone importants **écrits sur papier** — si ton téléphone est mort et que tu n'en connais aucun par cœur (et franchement, qui les connaît encore ?)
+- Numéros de téléphone importants **écrits sur papier**, pour le jour où ton téléphone est mort (qui connaît encore ses numéros par cœur ?)
 - Double des clés de la maison et de la voiture
-- Espèces en petites coupures — les terminaux de paiement tombent en panne lors des coupures électriques
+- Espèces en petites coupures : les terminaux de paiement tombent en panne lors des coupures électriques
 
 **L'astuce numérique :**
 Scanne tous tes documents et enregistre-les dans un cloud sécurisé. Accessible depuis n'importe quel téléphone, même emprunté.
@@ -127,12 +121,12 @@ Scanne tous tes documents et enregistre-les dans un cloud sécurisé. Accessible
 ### Divers — Petit mais indispensable
 
 - Couteau multifonction type Swiss Army
-- Sifflet — pour signaler ta présence si tu es bloqué
-- Ruban adhésif résistant (Duct tape) — répare à peu près tout, vraiment
-- Sacs poubelle résistants — imperméabilisation d'urgence
+- Sifflet, pour signaler ta présence si tu es bloqué
+- Ruban adhésif résistant (duct tape) : il répare à peu près tout
+- Sacs poubelle résistants, pour imperméabiliser en urgence
 - Papier hygiénique et lingettes humides
 - Savon et gel hydroalcoolique
-- Jeu de cartes ou livre — parce que l'ennui en situation de crise génère de l'anxiété, et que l'anxiété génère de mauvaises décisions
+- Jeu de cartes ou livre, parce que l'ennui en situation de crise génère de l'anxiété, et que l'anxiété génère de mauvaises décisions
 
 ## Les 5 erreurs classiques
 
@@ -169,7 +163,7 @@ Ce parcours est détaillé semaine par semaine dans notre [liste de courses du d
 
 ## Télécharge la checklist complète
 
-Toute cette liste en image prête à imprimer — format A4, design Survivalix.
+Toute cette liste tient sur une image au format A4 : imprime-la et coche au fil de tes achats.
 
 [Télécharger la checklist Kit 72h](/ressources/checklist-kit-72h.png)
 

@@ -14,7 +14,7 @@ Demande autour de toi ce que les gens feraient si un feu se déclarait chez eux.
 
 Les consignes officielles des préfectures disent l'inverse, mot pour mot : fermer la porte de la pièce en feu, fermer la porte d'entrée, **ne rien emporter**, sortir, et n'appeler les pompiers qu'une fois dehors. Rien sur les papiers. Rien sur l'extincteur.
 
-Cet écart entre ce qu'on croit qu'on fera et ce qu'il faut faire, c'est tout le sujet de cet article. Et il se résume à une seule décision, prise en quelques secondes.
+Entre ce qu'on croit qu'on fera et ce qu'il faut faire, tout se joue sur une seule décision, prise en quelques secondes.
 
 ## Pourquoi le temps disponible s'est effondré
 
@@ -34,7 +34,7 @@ Oublie tout le reste pendant dix secondes. Quand l'alarme se déclenche, tu as u
 
 **Le chemin est enfumé.** Une fumée épaisse à hauteur de visage, c'est un couloir infranchissable, pas un couloir difficile. Quelques inspirations suffisent à faire perdre l'orientation. Tu ne traverses pas : tu te replies dans une pièce, tu fermes la porte et tu passes au confinement décrit juste après.
 
-**Tu habites en immeuble et le feu est chez un voisin ou dans les communs.** C'est le cas le plus mal compris. Si la cage d'escalier est enfumée, l'évacuation est le mauvais réflexe. La doctrine, en France, est de rester chez soi, porte fermée, et d'attendre les secours — l'escalier fait cheminée et concentre les fumées vers le haut. Ce n'est pas de la passivité : le confinement derrière une porte est une mesure active.
+**Tu habites en immeuble et le feu est chez un voisin ou dans les communs.** C'est le cas le plus mal compris. Si la cage d'escalier est enfumée, l'évacuation est le mauvais réflexe. La doctrine, en France, est de rester chez soi, porte fermée, et d'attendre les secours : l'escalier fait cheminée et concentre les fumées vers le haut. Rester confiné derrière une porte fermée est une mesure active.
 
 **Tu es sorti.** Tu ne rentres plus. Jamais. Pour rien.
 
@@ -42,7 +42,7 @@ Oublie tout le reste pendant dix secondes. Quand l'alarme se déclenche, tu as u
 
 C'est la donnée la plus utile de cet article, et elle est chiffrée par la recherche.
 
-Dans les essais de la Fire Safety Research Institute (UL Research Institutes) sur la ventilation horizontale, menés depuis 2008 sur des maisons instrumentées, les chambres restées porte fermée pendant la propagation du feu affichaient des températures moyennes **inférieures à 100 °F, soit moins de 38 °C**, contre **plus de 1 000 °F — soit plus de 530 °C — dans les chambres porte ouverte**.
+Dans les essais de la Fire Safety Research Institute (UL Research Institutes) sur la ventilation horizontale, menés depuis 2008 sur des maisons instrumentées, les chambres restées porte fermée pendant la propagation du feu affichaient des températures moyennes **inférieures à 100 °F, soit moins de 38 °C**, contre **plus de 1 000 °F (soit plus de 530 °C) dans les chambres porte ouverte**.
 
 Les concentrations de gaz suivent le même écart. Dans la chambre porte ouverte, les chercheurs mesuraient **10 000 ppm de monoxyde de carbone**, un niveau franchement mortel. Derrière la porte fermée : **environ 100 ppm**. Un facteur cent.
 
@@ -57,35 +57,35 @@ Une précision qui compte : cette même logique explique pourquoi ouvrir portes 
 
 Depuis la loi du 9 mars 2010, appliquée à partir du 8 mars 2015, tout logement en France doit être équipé d'au moins un détecteur avertisseur autonome de fumée. L'appareil doit porter le marquage CE et être conforme à la norme NF EN 14604.
 
-Le problème n'est pas l'équipement, c'est l'usage. Un détecteur mal placé, à pile morte ou vieux de douze ans coche la case légale sans protéger personne. Les trois points qui font la différence :
+Tout se joue dans l'usage. Un détecteur mal placé, à pile morte ou vieux de douze ans coche la case légale sans protéger personne. Les trois points qui font la différence :
 
-**Le placement.** Au plafond, dans les circulations qui desservent les chambres — le couloir de nuit en priorité. On évite la cuisine et la salle de bains, où vapeur et fumées de cuisson déclenchent des fausses alertes, et où les gens finissent par débrancher l'appareil. La loi n'en exige qu'un par logement, mais sur plusieurs niveaux, en ajouter un par étage aide à ce que l'alarme soit entendue partout.
+**Le placement.** Au plafond, dans les circulations qui desservent les chambres, le couloir de nuit en priorité. On évite la cuisine et la salle de bains, où vapeur et fumées de cuisson déclenchent des fausses alertes, et où les gens finissent par débrancher l'appareil. La loi n'en exige qu'un par logement, mais sur plusieurs niveaux, en ajouter un par étage aide à ce que l'alarme soit entendue partout.
 
 **La pile et le test.** Un test par pression sur le bouton, une fois par mois. C'est trente secondes. Un modèle à pile scellée au lithium 10 ans supprime le principal mode de défaillance : la pile qu'on retire pour arrêter le bip et qu'on ne remet jamais.
 
 **La durée de vie.** Environ 10 ans, capteur compris. Regarde la date imprimée au dos du tien ce soir ; s'il est plus vieux, remplace-le. Un [détecteur de fumée conforme NF EN 14604](https://www.amazon.fr/s?k=detecteur+de+fumee+nf+en+14604&tag=survivalix31-21) se trouve pour une quinzaine d'euros.
 
-À part : le monoxyde de carbone. C'est un risque différent, invisible et inodore, lié aux appareils de combustion — chaudière, poêle, chauffe-eau gaz, chauffage d'appoint. Un détecteur de fumée ne le voit pas. Si tu as un appareil à combustion chez toi, il te faut un [détecteur de monoxyde de carbone](https://www.amazon.fr/s?k=detecteur+monoxyde+de+carbone&tag=survivalix31-21) en plus, installé en suivant les indications de sa notice.
+À part : le monoxyde de carbone. C'est un risque différent, invisible et inodore, lié aux appareils de combustion (chaudière, poêle, chauffe-eau gaz, chauffage d'appoint). Un détecteur de fumée ne le voit pas. Si tu as un appareil à combustion chez toi, il te faut un [détecteur de monoxyde de carbone](https://www.amazon.fr/s?k=detecteur+monoxyde+de+carbone&tag=survivalix31-21) en plus, installé en suivant les indications de sa notice.
 
 ## Extincteur et couverture anti-feu : utiles, mais pas dans le rôle qu'on imagine
 
 Un extincteur domestique sert à traiter un départ de feu de la taille d'une corbeille à papier, dans les toutes premières secondes, quand tu as la sortie dans le dos. Il ne sert pas à combattre un incendie déclaré. Dès que les flammes montent au plafond ou que la fumée s'accumule, on lâche l'extincteur et on sort.
 
-Pour un logement, un [extincteur à poudre ABC de 2 kg](https://www.amazon.fr/s?k=extincteur+poudre+abc+2kg&tag=survivalix31-21) est le modèle qu'on croise le plus souvent dans les logements : sa poudre dite polyvalente vise les feux de solides, de liquides et de gaz. Avant d'acheter, vérifie sur l'étiquette les classes de feu et les usages prévus par le fabricant, notamment près d'appareils sous tension. La poudre est salissante — c'est le prix de la polyvalence, et c'est totalement secondaire face à un feu.
+Pour un logement, un [extincteur à poudre ABC de 2 kg](https://www.amazon.fr/s?k=extincteur+poudre+abc+2kg&tag=survivalix31-21) est le modèle qu'on croise le plus souvent dans les logements : sa poudre dite polyvalente vise les feux de solides, de liquides et de gaz. Avant d'acheter, vérifie sur l'étiquette les classes de feu et les usages prévus par le fabricant, notamment près d'appareils sous tension. La poudre est salissante : c'est le prix de la polyvalence, et un détail face à un feu.
 
 En cuisine, la friteuse et la poêle d'huile méritent une règle à part : **jamais d'eau sur de l'huile en feu.** L'eau se vaporise instantanément et projette l'huile enflammée en une gerbe de flammes. On coupe la source de chaleur, et on étouffe avec un couvercle ou une [couverture anti-feu certifiée EN 1869](https://www.amazon.fr/s?k=couverture+anti+feu+en+1869&tag=survivalix31-21). Une couverture accrochée au mur de la cuisine est probablement l'achat le plus rentable de cette liste.
 
-Le geste connexe à connaître : où couper l'électricité. Si tu ne sais pas identifier ton disjoncteur général en dix secondes, dans le noir, va lire [comment lire ton tableau électrique](/atelier/comprendre-tableau-electrique-disjoncteur) — c'est une compétence de vingt minutes qui sert bien au-delà du cas incendie.
+Le geste connexe à connaître : où couper l'électricité. Si tu ne sais pas identifier ton disjoncteur général en dix secondes, dans le noir, va lire [comment lire ton tableau électrique](/atelier/comprendre-tableau-electrique-disjoncteur) : une compétence de vingt minutes qui sert bien au-delà du cas incendie.
 
 ## Le plan de sortie, à faire ce soir en vingt minutes
 
 C'est la partie que personne ne fait, et c'est celle qui a le meilleur rendement. À l'américaine, avec un papier et toute la maisonnée autour de la table.
 
-1. Dessine le plan du logement. Pour chaque pièce où l'on dort, marque **deux sorties** : la porte, et la deuxième option — fenêtre, balcon, autre pièce. Une seule sortie possible, c'est une information à connaître avant, pas à découvrir pendant.
+1. Dessine le plan du logement. Pour chaque pièce où l'on dort, marque **deux sorties** : la porte, et la deuxième option (fenêtre, balcon, autre pièce). S'il n'existe qu'une seule sortie, mieux vaut le savoir avant que le découvrir pendant.
 2. Marque l'emplacement des détecteurs et vérifie qu'on les entend depuis chaque chambre, porte fermée. Si l'alarme ne réveille pas quelqu'un au fond du couloir, elle ne sert à rien pour lui.
 3. Fixe **un point de rassemblement dehors**, précis et visible : le lampadaire d'en face, le portail du voisin. Pas « devant la maison ». C'est ce point qui permet de dire aux pompiers en arrivant si tout le monde est sorti.
 4. Répète-le une fois, en marchant. Avec des enfants, fais-le de jour, sans dramatiser : ils retiennent le trajet, pas le discours.
-5. Attribue les rôles : qui prend les plus petits, qui ferme les portes, qui appelle. Le même principe que le plan familial que tu utilises pour ton [kit d'urgence 72 h](/manuel/kit-urgence-72h) et ton [sac d'évacuation](/manuel/sac-evacuation) — sauf qu'ici, on part sans le sac s'il n'est pas sur le chemin de la sortie.
+5. Attribue les rôles : qui prend les plus petits, qui ferme les portes, qui appelle. Le même principe que le plan familial que tu utilises pour ton [kit d'urgence 72 h](/manuel/kit-urgence-72h) et ton [sac d'évacuation](/manuel/sac-evacuation), sauf qu'ici on part sans le sac s'il n'est pas sur le chemin de la sortie.
 
 Une chose à trancher franchement : l'attachement aux objets tue. Les papiers se refont, les photos se scannent à l'avance, les disques durs se sauvegardent en ligne. Fais ce travail un dimanche, une fois, et tu n'auras plus jamais de raison de remonter un escalier enfumé.
 

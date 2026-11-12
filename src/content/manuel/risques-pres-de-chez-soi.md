@@ -12,9 +12,9 @@ image_alt: "Carte avec zones de risques surlignées et une maison en arrière-pl
 
 Avant de partir en vacances, presque tout le monde vérifie la météo, lit deux ou trois avis sur le quartier de l'Airbnb, regarde si la zone est sûre. Le réflexe est presque automatique.
 
-Chez soi, dans le quartier où on vit depuis dix ans ? Personne ne fait ça. On connaît le nom des rues, le boulanger, le meilleur itinéraire pour éviter les bouchons — mais si on te demandait "est-ce que ta rue est en zone inondable" ou "y a-t-il un site classé à risque industriel à moins de 2km de chez toi", la plupart des gens n'en ont aucune idée.
+Chez soi, dans le quartier où on vit depuis dix ans ? Personne ne fait ça. On connaît le nom des rues, le boulanger, le meilleur itinéraire pour éviter les bouchons. Mais si on te demandait "est-ce que ta rue est en zone inondable" ou "y a-t-il un site classé à risque industriel à moins de 2km de chez toi", la plupart des gens n'en ont aucune idée.
 
-Ce n'est pas un manque d'intérêt. C'est simplement que personne ne sait qu'un outil gratuit, officiel et très précis existe déjà pour répondre à cette question en quelques minutes, montre en main.
+La plupart ignorent simplement qu'un outil gratuit, officiel et très précis répond à cette question en quelques minutes, montre en main.
 
 ## L'outil qui existe déjà : Géorisques
 
@@ -27,7 +27,7 @@ Ce que ça révèle concrètement pour une adresse donnée :
 - La proximité d'un site industriel classé Seveso (les installations présentant un risque chimique ou d'explosion)
 - Les anciens sites industriels ou sols potentiellement pollués
 
-Le chiffre qui remet les idées en place : **deux communes françaises sur trois sont exposées à au moins un risque naturel.** Ce n'est donc pas une question réservée à quelques zones isolées — c'est une question qui concerne la quasi-totalité du territoire, à des degrés différents.
+Le chiffre qui remet les idées en place : **deux communes françaises sur trois sont exposées à au moins un risque naturel.** La question concerne donc la quasi-totalité du territoire, à des degrés différents.
 
 ## Le risque qui touche le plus de monde, et de loin
 
@@ -37,9 +37,9 @@ Ce qui change une fois qu'on sait qu'on est en zone à risque : la vigilance dev
 
 ## Les autres risques à connaître selon ta zone
 
-**Le risque industriel.** Les sites classés Seveso existent dans de nombreuses zones urbaines et périurbaines, souvent sans que les habitants du quartier le sachent. L'exemple le plus marquant reste l'explosion de l'usine AZF à Toulouse en 2001, qui a fait 31 morts et plusieurs milliers de blessés — un rappel que ce risque, bien que rare, n'est pas théorique. Si Géorisques t'indique un site classé à proximité, le réflexe à connaître est la mise à l'abri : rejoindre un bâtiment en dur, fermer et calfeutrer portes et fenêtres (un rouleau de [ruban adhésif large](https://www.amazon.fr/s?k=ruban+adhesif+toile+large&tag=survivalix31-21) rangé avec ton kit fait gagner un temps précieux), couper ventilation et clim, ne pas aller chercher les enfants à l'école (les enseignants s'en occupent), garder le téléphone pour les urgences, et suivre les consignes officielles diffusées par [FR-Alert](/manuel/communiquer-situation-crise) en cas d'incident.
+**Le risque industriel.** Les sites classés Seveso existent dans de nombreuses zones urbaines et périurbaines, souvent sans que les habitants du quartier le sachent. L'exemple le plus marquant reste l'explosion de l'usine AZF à Toulouse en 2001, qui a fait 31 morts et plusieurs milliers de blessés : ce risque, bien que rare, a déjà frappé une grande ville. Si Géorisques t'indique un site classé à proximité, le réflexe à connaître est la mise à l'abri : rejoindre un bâtiment en dur, fermer et calfeutrer portes et fenêtres (un rouleau de [ruban adhésif large](https://www.amazon.fr/s?k=ruban+adhesif+toile+large&tag=survivalix31-21) rangé avec ton kit fait gagner un temps précieux), couper ventilation et clim, ne pas aller chercher les enfants à l'école (les enseignants s'en occupent), garder le téléphone pour les urgences, et suivre les consignes officielles diffusées par [FR-Alert](/manuel/communiquer-situation-crise) en cas d'incident.
 
-**Le retrait-gonflement des argiles.** Moins spectaculaire qu'une inondation, mais bien plus répandu qu'on ne le croit — ce phénomène fissure les murs et fondations selon l'humidité du sol. Depuis 2025, l'État expérimente même un fonds de prévention dédié à ce risque dans plusieurs départements.
+**Le retrait-gonflement des argiles.** Moins spectaculaire qu'une inondation, mais bien plus répandu qu'on ne le croit : ce phénomène fissure les murs et fondations selon l'humidité du sol. Depuis 2025, l'État expérimente même un fonds de prévention dédié à ce risque dans plusieurs départements.
 
 **Les mouvements de terrain et la sismicité.** Moins fréquents en plaine, mais bien réels en zone de montagne ou dans certaines régions au sous-sol instable. Géorisques donne un niveau de sismicité précis par commune, utile notamment pour toute décision de travaux ou de construction.
 
@@ -51,7 +51,7 @@ Une fois que tu sais quel risque concerne réellement ta zone, la préparation c
 - **Près d'un site Seveso** : le premier réflexe est la mise à l'abri, pas la fuite en voiture ou à pied. Partir de ta propre initiative peut t'exposer au nuage toxique : tu ne sors que si les autorités ordonnent l'évacuation.
 - **En zone à sismicité non négligeable ou soumise au retrait-gonflement des argiles** : garde un œil sur l'apparition de fissures, renseigne-toi avant tout gros travaux, et apprends les gestes à faire pendant une secousse. Pas de quoi paniquer, juste de quoi ne pas être pris au dépourvu.
 
-Dans tous les cas, ces informations complètent utilement ce qu'il y a dans ton [sac d'évacuation](/manuel/sac-evacuation) — pas en ajoutant du poids, mais en sachant plus précisément pourquoi chaque élément est là.
+Dans tous les cas, ces informations complètent utilement ce qu'il y a dans ton [sac d'évacuation](/manuel/sac-evacuation) : sans ajouter de poids, elles t'aident à comprendre pourquoi chaque élément s'y trouve.
 
 ## Le test à faire maintenant, pas plus tard
 

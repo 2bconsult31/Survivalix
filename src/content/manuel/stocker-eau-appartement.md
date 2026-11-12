@@ -10,11 +10,9 @@ image: "/images/articles/stocker-eau-appartement.jpg"
 image_alt: "Étagère en bois avec des bocaux en verre remplis d'eau, des bouteilles en inox et un pack de bouteilles d'eau du commerce"
 ---
 
-L'eau du robinet est tellement intégrée à notre quotidien qu'on ne l'imagine même pas en train de disparaître. Et pourtant.
+Chez la grande majorité des Français, la réserve d'eau à domicile est tout simplement inexistante, alors que les coupures d'eau touchent des dizaines de communes chaque année en France pour des raisons variées : contamination bactériologique, rupture de canalisation, [inondation](/manuel/inondation-logement-que-faire), travaux d'urgence sur le réseau. Sans parler des scénarios plus larges où le réseau peut être compromis plusieurs jours d'affilée.
 
-Chez la grande majorité des Français, la réserve d'eau à domicile est tout simplement inexistante — alors que les coupures d'eau touchent des dizaines de communes chaque année en France pour des raisons variées : contamination bactériologique, rupture de canalisation, [inondation](/manuel/inondation-logement-que-faire), travaux d'urgence sur le réseau. Sans parler des scénarios plus larges où le réseau peut être compromis plusieurs jours d'affilée.
-
-La bonne nouvelle : stocker de l'eau en appartement est simple, peu coûteux, et prend bien moins de place qu'on ne le croit. Voici comment le faire correctement.
+Stocker de l'eau en appartement est pourtant simple, peu coûteux, et prend bien moins de place qu'on ne le croit.
 
 ## Combien d'eau stocker exactement ?
 
@@ -24,7 +22,7 @@ Pour deux personnes : 12 litres. Deux packs de 6×1,5L achetés en grande surfac
 
 Mais 6 litres, c'est le strict minimum vital. Pas le confort. Prévoyez davantage s'il fait très chaud, si un nourrisson vit au foyer ou si un traitement médical vous oblige à boire plus.
 
-Pour tenir plus longtemps, le calcul ne change pas : 2 litres par personne et par jour, multipliés par le nombre de jours visés. Les volumes montent vite — c'est un objectif à atteindre progressivement, pas en une seule session de courses. Notre [calculateur de stock d'eau](/outils/calculateur-stock-eau) fait le calcul pour votre foyer, et notre [liste de courses du débutant](/manuel/liste-courses-prepper-debutant) montre comment étaler l'effort sur plusieurs semaines.
+Pour tenir plus longtemps, le calcul ne change pas : 2 litres par personne et par jour, multipliés par le nombre de jours visés. Les volumes montent vite : vise cet objectif progressivement, sur plusieurs sessions de courses. Notre [calculateur de stock d'eau](/outils/calculateur-stock-eau) fait le calcul pour votre foyer, et notre [liste de courses du débutant](/manuel/liste-courses-prepper-debutant) montre comment étaler l'effort sur plusieurs semaines.
 
 **Le stock selon la durée visée (2 L par personne et par jour) :**
 
@@ -48,7 +46,7 @@ Avantages : disponibles partout, aucun équipement spécial, aucune manipulation
 
 Si vous mettez de l'eau du robinet de côté, oubliez la bouteille en plastique. L'ANSES le déconseille : le chlore de l'eau du robinet peut réagir avec le plastique. Préférez des contenants en **verre** ou en **inox** (une [bouteille en inox](https://www.amazon.fr/s?k=bouteille+inox+alimentaire&tag=survivalix31-21) fait très bien l'affaire).
 
-Et gardez en tête que ce n'est pas une réserve longue durée : selon l'ANSES, l'eau du robinet se conserve 24 à 48 heures au réfrigérateur. C'est une réserve de dépannage, par exemple quand une coupure d'eau est annoncée, pas un stock de fond.
+Et gardez en tête que ce n'est pas une réserve longue durée : selon l'ANSES, l'eau du robinet se conserve 24 à 48 heures au réfrigérateur. Réserve-la au dépannage, par exemple quand une coupure d'eau est annoncée.
 
 ### Ce qu'il ne faut jamais utiliser
 
@@ -58,7 +56,7 @@ Idem pour le plastique non alimentaire (arrosoir, bidon d'huile moteur, bidon d'
 
 ## Eau du robinet ou eau en bouteille ?
 
-La question qui divise — et la réponse est : les deux, mais pas pour le même usage.
+La question qui divise a une réponse simple : les deux, chacun pour son usage.
 
 **Eau en bouteille du commerce** : c'est votre stock de fond. Pratique, rotation simple, aucune manipulation. Limitation : coût à long terme et déchets plastiques.
 
@@ -101,7 +99,7 @@ Comment savoir si l'eau est encore bonne ? Une eau saine n'a ni odeur, ni dépô
 
 Suivez la règle FIFO (First In, First Out, « premier entré, premier sorti ») : on consomme d'abord les réserves les plus anciennes. Notez la date d'achat sur chaque pack, au marqueur indélébile.
 
-La rotation est la partie que tout le monde néglige — et c'est là que le stock devient inutile. Deux approches :
+La rotation est la partie que tout le monde néglige, et c'est faute de rotation que le stock devient inutile. Deux approches :
 
 **Le stock tournant** : intégrez vos bouteilles de réserve dans votre consommation quotidienne. Vous buvez une bouteille de votre stock, vous la remplacez dans les courses suivantes. Le stock reste frais en permanence, vous ne perdez jamais rien.
 
@@ -111,7 +109,7 @@ La rotation est la partie que tout le monde néglige — et c'est là que le sto
 
 L'erreur classique : vouloir constituer un stock parfait d'un coup et se décourager devant le budget ou la logistique. Voici l'approche progressive :
 
-**Semaine 1** : des bouteilles du commerce, 6L par personne au minimum (un pack de 6×1,5L en fait 9) — c'est le repère du kit d'urgence officiel pour 72h.
+**Semaine 1** : des bouteilles du commerce, 6L par personne au minimum (un pack de 6×1,5L en fait 9) : c'est le repère du kit d'urgence officiel pour 72h.
 
 **Semaine 2** : un ou deux packs de plus, pour vous donner de la marge au-delà du minimum.
 
@@ -121,7 +119,7 @@ L'erreur classique : vouloir constituer un stock parfait d'un coup et se décour
 
 ## Ce que le stock d'eau ne remplace pas
 
-Un point important souvent oublié : votre stock couvre la consommation normale à domicile. Pensez aussi aux réserves que vous avez déjà sans le savoir (chauffe-eau, baignoire, récipients de cuisine), et complétez-les en stockant à l'avance. En cas de coupure annoncée, remplissez votre baignoire immédiatement (de l'eau utilisable pour l'hygiène et les chasses d'eau) — ça rallonge significativement votre autonomie.
+Un point important souvent oublié : votre stock couvre la consommation normale à domicile. Pensez aussi aux réserves que vous avez déjà sans le savoir (chauffe-eau, baignoire, récipients de cuisine), et complétez-les en stockant à l'avance. En cas de coupure annoncée, remplissez votre baignoire immédiatement (de l'eau utilisable pour l'hygiène et les chasses d'eau) : ça rallonge nettement votre autonomie.
 
 Et si vous devez puiser dans une source extérieure (pluie, fontaine, rivière), lisez notre guide sur la purification de l'eau en urgence : le stock, c'est bien, savoir traiter n'importe quelle eau c'est mieux.
 
