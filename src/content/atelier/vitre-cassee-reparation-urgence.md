@@ -11,7 +11,7 @@ image: "/images/atelier/vitre-cassee-reparation-urgence.jpg"
 image_alt: "Fenêtre cassée colmatée avec une plaque de contreplaqué et du ruban adhésif"
 ---
 
-On pense souvent qu'une vitre cassée est surtout un problème d'esthétique — un trou disgracieux à faire réparer dès que possible. En réalité, c'est un problème de sécurité qui commence à courir dès la première minute : la pluie qui s'infiltre dans le parquet, le froid qui s'engouffre en hiver, et une ouverture béante qui signale de loin qu'un logement est vulnérable. Le vitrier, lui, ne viendra probablement pas avant plusieurs jours — surtout si une tempête vient de casser la moitié des fenêtres du quartier en même temps que la tienne.
+Une vitre cassée pose un problème de sécurité dès la première minute : la pluie s'infiltre dans le parquet, le froid s'engouffre en hiver, et l'ouverture béante signale de loin un logement vulnérable. Le vitrier, lui, ne viendra probablement pas avant plusieurs jours, surtout si une tempête vient de casser la moitié des fenêtres du quartier en même temps que la tienne.
 
 ## Sécuriser avant de réparer
 
@@ -27,18 +27,18 @@ Si la casse vient d'une effraction ou d'un acte de vandalisme, porte plainte san
 
 Tous les matériaux de fortune ne se valent pas, et le piège classique est de sous-estimer à quel point certains cèdent vite.
 
-**Le carton, même rigide** : la solution la plus rapide à poser, mais aussi la moins durable — il ne résiste ni à la pluie ni à un vent un peu soutenu, et rend généralement les armes dès la première averse sérieuse.
+**Le carton, même rigide** : la solution la plus rapide à poser, mais aussi la moins durable : il ne résiste ni à la pluie ni à un vent un peu soutenu, et rend généralement les armes dès la première averse sérieuse.
 
 **Le film ou la bâche en polyéthylène** : bien plus résistant à l'eau, il peut tenir le temps de faire venir le vitrier à condition d'être correctement tendu et fixé, et d'être vérifié régulièrement.
 
-**Le contreplaqué** : la solution la plus robuste des trois, celle qui tient le plus longtemps si l'ouverture n'est pas trop grande et que la fixation est solide — c'est la vraie "forteresse temporaire" en attendant le vitrier.
+**Le contreplaqué** : la solution la plus robuste des trois, celle qui tient le plus longtemps si l'ouverture n'est pas trop grande et que la fixation est solide. C'est la vraie "forteresse temporaire" en attendant le vitrier.
 
-Le piège le plus fréquent, cependant, ne concerne pas le matériau de couverture, mais ce qui le maintient en place : **le ruban adhésif classique (scotch d'emballage) décroche très vite**, surtout en extérieur ou par temps humide. Il faut du ruban adhésif toilé résistant (type gaffer ou adhésif de réparation renforcé), pensé pour l'extérieur.
+Le piège le plus fréquent se cache dans ce qui maintient le matériau en place : **le ruban adhésif classique (scotch d'emballage) décroche très vite**, surtout en extérieur ou par temps humide. Il faut du ruban adhésif toilé résistant (type gaffer ou adhésif de réparation renforcé), pensé pour l'extérieur.
 
 ## La technique de pose qui tient
 
 1. Mesure précisément l'ouverture à couvrir
-2. Découpe ton matériau (bâche, film ou contreplaqué) légèrement plus grand que l'ouverture — mieux vaut un centimètre de trop qu'un espace laissé libre
+2. Découpe ton matériau (bâche, film ou contreplaqué) légèrement plus grand que l'ouverture : mieux vaut un centimètre de trop qu'un espace laissé libre
 3. Retire soigneusement les éclats de verre encore accrochés au châssis avant de poser quoi que ce soit
 4. Positionne le matériau bien tendu, sans mou ni pli qui laisserait prise au vent
 5. Fixe avec le ruban adhésif toilé tout autour, en débordant largement sur le cadre de la fenêtre pour une meilleure accroche
@@ -48,9 +48,9 @@ Pour une ouverture large ou très exposée au vent, superposer une planche de bo
 
 ## Ce qui doit vraiment attendre un professionnel
 
-**Le type de vitrage change la donne.** Un simple vitrage cassé, sur une petite fenêtre facilement accessible, peut parfois être remplacé par un bricoleur expérimenté. Un double vitrage ou un vitrage feuilleté/trempé (portes, baies, vérandas) demande en revanche un vitrier — la pose et l'étanchéité sont nettement plus techniques.
+**Le type de vitrage change la donne.** Un simple vitrage cassé, sur une petite fenêtre facilement accessible, peut parfois être remplacé par un bricoleur expérimenté. Un double vitrage ou un vitrage feuilleté/trempé (portes, baies, vérandas) demande en revanche un vitrier, car la pose et l'étanchéité sont nettement plus techniques.
 
-**Le châssis endommagé change l'interlocuteur.** Si le cadre lui-même est fissuré, déformé ou ne ferme plus correctement, ce n'est plus un vitrier qu'il faut appeler, mais un menuisier — deux métiers différents pour deux problèmes différents.
+**Le châssis endommagé change l'interlocuteur.** Si le cadre lui-même est fissuré, déformé ou ne ferme plus correctement, appelle un menuisier : réparer le cadre n'est pas le métier du vitrier.
 
 **Une réparation mal faite peut aussi coûter cher côté assurance** : avant de remplacer toi-même la vitre, relis ton contrat ou appelle ton assureur pour savoir ce qu'il exige pour la réparation définitive. Le colmatage provisoire, lui, sert surtout à limiter les dégâts en attendant l'intervention.
 
@@ -61,7 +61,7 @@ Pour une ouverture large ou très exposée au vent, superposer une planche de bo
 - Une chute de contreplaqué de taille correcte, gardée au garage ou à la cave
 - Gants épais dédiés au ramassage de débris
 
-Autant d'éléments qui trouvent naturellement leur place à côté du reste de ton [kit d'urgence 72h](/manuel/kit-urgence-72h) — pas pour un scénario de fin du monde, juste pour le jour où un ballon, une tempête ou une mauvaise surprise transforme ta soirée en chantier improvisé.
+Range-les à côté de ton [kit d'urgence 72h](/manuel/kit-urgence-72h) : ils serviront le jour où un ballon, une tempête ou une mauvaise surprise transformera ta soirée en chantier improvisé.
 
 *Sources : Code des assurances, article L113-2 (Légifrance) ; DGCCRF (« Assurance multirisque habitation : renseignez-vous ») ; ministère de l'Intérieur (portail Ma Sécurité, plainte en ligne) ; INRS (« Risques de coupure : solutions de prévention ») ; Allianz, Matmut, ChronoServe, Le Juste Pro.*
 

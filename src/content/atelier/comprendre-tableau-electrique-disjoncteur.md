@@ -27,11 +27,11 @@ Cette hiérarchie est ta meilleure alliée pour comprendre en un coup d'œil ce 
 
 ## Identifier la cause avant de réarmer
 
-Ne réarme jamais dans la précipitation — comprendre d'abord évite de reproduire immédiatement le même déclenchement, ou pire, de masquer un vrai défaut.
+Ne réarme jamais dans la précipitation. Comprendre d'abord évite de reproduire immédiatement le même déclenchement, ou pire, de masquer un vrai défaut.
 
-**Si un seul disjoncteur divisionnaire est tombé** : le problème est sur ce circuit précis. Débranche tous les appareils qui y sont connectés, puis réarme. S'il tient, un appareil était en cause — rebranche-les un par un pour identifier le coupable. S'il retombe même sans rien de branché, le défaut est dans le câblage fixe lui-même : c'est le signal d'appeler un électricien.
+**Si un seul disjoncteur divisionnaire est tombé** : le problème est sur ce circuit précis. Débranche tous les appareils qui y sont connectés, puis réarme. S'il tient, un appareil était en cause : rebranche-les un par un pour identifier le coupable. S'il retombe même sans rien de branché, le défaut est dans le câblage fixe lui-même : c'est le signal d'appeler un électricien.
 
-**Si le différentiel est tombé** (toute une rangée est éteinte) : baisse tous les disjoncteurs divisionnaires de cette rangée, puis remonte le différentiel seul. S'il tient, remonte les divisionnaires un par un — celui qui fait retomber le différentiel désigne le circuit fautif. Débranche alors les appareils de ce circuit spécifique et recommence le test.
+**Si le différentiel est tombé** (toute une rangée est éteinte) : baisse tous les disjoncteurs divisionnaires de cette rangée, puis remonte le différentiel seul. S'il tient, remonte les divisionnaires un par un. Celui qui fait retomber le différentiel désigne le circuit fautif. Débranche alors les appareils de ce circuit spécifique et recommence le test.
 
 **Si le disjoncteur de branchement est tombé** : tu as probablement dépassé ta puissance souscrite. Débranche les appareils les plus énergivores (four, cumulus, sèche-linge) avant de réarmer. Si ça se reproduit régulièrement sans que tu n'aies rien changé à tes habitudes, c'est le signe qu'il faut revoir ta puissance souscrite auprès de ton fournisseur.
 
@@ -39,8 +39,8 @@ Ne réarme jamais dans la précipitation — comprendre d'abord évite de reprod
 
 Si la coupure t'a plongé dans le noir, une [lampe frontale](https://www.amazon.fr/s?k=lampe+frontale+led&tag=survivalix31-21) te laisse les deux mains libres pour t'occuper du tableau.
 
-1. Repère le levier qui n'est pas aligné avec les autres — position basse ("0") ou intermédiaire
-2. Vérifie visuellement qu'aucun fil n'est apparent, noirci ou fondu autour du disjoncteur — sans toucher à l'intérieur du tableau
+1. Repère le levier qui n'est pas aligné avec les autres (position basse "0" ou intermédiaire)
+2. Vérifie visuellement qu'aucun fil n'est apparent, noirci ou fondu autour du disjoncteur, sans toucher à l'intérieur du tableau
 3. Débranche les appareils suspects sur le circuit concerné, selon le diagnostic ci-dessus
 4. Remonte fermement le levier en position haute ("I")
 5. Si ça tient, rebranche les appareils un par un pour confirmer que tout fonctionne normalement
@@ -51,10 +51,10 @@ Certains signaux doivent t'arrêter immédiatement et faire appel à un électri
 
 - Le disjoncteur retombe systématiquement, même circuit totalement vide de tout appareil
 - Il est chaud au toucher, présente des traces noircies, ou dégage une odeur de brûlé
-- Plusieurs étages tombent en cascade (différentiel et divisionnaires en même temps) — signe d'un défaut sérieux
+- Plusieurs étages tombent en cascade (différentiel et divisionnaires en même temps) : c'est le signe d'un défaut sérieux
 - Le disjoncteur refuse tout simplement de rester en position haute après plusieurs tentatives
 
-Bloquer mécaniquement un disjoncteur qui "saute trop souvent" pour l'empêcher de couper est le geste le plus dangereux qui soit — ça revient à désactiver volontairement une sécurité, avec un vrai risque d'incendie ou d'électrocution à la clé.
+Bloquer mécaniquement un disjoncteur qui "saute trop souvent" pour l'empêcher de couper est le geste le plus dangereux qui soit : ça revient à désactiver volontairement une sécurité, avec un vrai risque d'incendie ou d'électrocution à la clé.
 
 ## Pour aller plus loin
 

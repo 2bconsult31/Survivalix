@@ -34,6 +34,11 @@
 - Structure propre à chaque article. Liens internes vers des pages existantes. Un lien Amazon affilié pertinent par article, au format https://www.amazon.fr/s?k=<recherche>&tag=survivalix31-21.
 - Cantine : le seo_title et la description contiennent le mot « recette ».
 - Toute nouvelle recette de la Cantine doit renseigner les champs de recette (temps, portions, ingrédients, étapes). Aucune note ni aucun avis inventés. Les extraits enrichis FAQ n'existent plus dans Google depuis mai 2026 : le balisage FAQ est conservé mais n'est plus une priorité.
+- Style (anti « écriture IA ») :
+  1. Tirets cadratins (—) : 2 maximum par article. Remplacer les autres par une virgule, des parenthèses, deux-points ou un point, selon le sens.
+  2. Supprimer les constructions « ce n'est pas X, c'est Y » et « pas de X, pas de Y » quand elles servent d'effet : dire directement la chose.
+  3. Éviter les introductions et les conclusions génériques. L'article commence par une situation concrète ou une information utile, et se termine sur une action, pas sur une morale.
+  4. Varier la longueur des phrases et la structure des paragraphes d'un article à l'autre. Pas de formules répétées entre articles (même accroche, même transition, même chute).
 - Frontmatter : seo_title de 60 caractères maximum, description de 140 à 160 caractères.
 - À chaque modification de fond d'un article, mettre à jour le champ updated.
 - Liens partagés (réseaux sociaux) : URL simple, jamais de paramètres UTM.
