@@ -14,7 +14,7 @@ Parmi les consignes officielles en cas de pluies méditerranéennes intenses, il
 
 Elle va contre l'instinct. Elle est pourtant l'une des plus importantes, et elle résume à elle seule la logique de ces épisodes : le danger n'est pas là où tu es abrité, il est sur le trajet. Chaque école dispose d'un plan particulier de mise en sûreté, avec des adultes formés pour garder les enfants à l'abri. Toi, sur une route qui se transforme en torrent, tu n'as aucun plan.
 
-La saison est ouverte. Voici ce qu'il faut savoir avant l'alerte, pas pendant.
+La saison est ouverte. Ce qui suit se prépare avant l'alerte.
 
 ## Un phénomène d'automne, pas une exception
 
@@ -54,6 +54,6 @@ Ensuite, prépare de quoi tenir sans bouger. Quand la consigne est de rester che
 
 Enfin, mets tes papiers à l'abri de l'eau. Si un jour l'ordre d'évacuer tombe, tu n'auras pas le temps de chercher ta carte d'identité. Une [pochette étanche](https://www.amazon.fr/s?k=pochette+etanche+documents&tag=survivalix31-21) rangée dans ton [sac d'évacuation](/manuel/sac-evacuation) règle la question une fois pour toutes.
 
-L'automne méditerranéen ne prévient pas longtemps à l'avance. Ceux qui s'en sortent le mieux ne sont pas les plus équipés : ce sont ceux qui savent déjà quoi ne pas faire.
+L'automne méditerranéen ne prévient pas longtemps à l'avance : dès la prochaine vigilance orange pluie-inondation, relis les réflexes ci-dessus avant de prendre la route.
 
 *Sources : Préfecture de l'Aveyron, communiqué « Pluies méditerranéennes intenses, épisodes cévenols » (septembre 2020) ; ministère de la Transition écologique, dossiers de presse de la campagne « pluie-inondation » (2017-2021, DREAL PACA) ; Météo-France, présentation « Les épisodes de pluies intenses méditerranéennes » (2017) ; Vigicrues, service public de prévision des crues.*
