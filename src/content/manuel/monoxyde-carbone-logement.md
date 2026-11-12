@@ -7,7 +7,7 @@ updated: 2026-11-12
 tags: ["monoxyde-de-carbone", "chauffage", "hiver", "intoxication", "manuel"]
 rubrique: "manuel"
 image: "/images/manuel/monoxyde-carbone-logement.jpg"
-image_alt: "Illustration rétro d'une chaudière murale dans une cuisine, un détecteur de monoxyde de carbone fixé au mur et une fenêtre entrouverte"
+image_alt: "Illustration rétro : un soir d'hiver, une femme ouvre la fenêtre de sa cuisine, à côté d'une chaudière murale et d'un détecteur de monoxyde de carbone allumé"
 ---
 
 Un soir d'hiver, tout le monde dans l'appartement a mal à la tête. L'un se sent nauséeux, l'autre a la tête qui tourne, et même le chien reste couché. On pense à un virus attrapé au bureau. Pendant ce temps, la chaudière tourne dans le placard de la cuisine.
