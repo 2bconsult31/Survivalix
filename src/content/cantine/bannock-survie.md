@@ -45,9 +45,7 @@ keywords:
   - "poêle"
 ---
 
-Il y a des recettes qui méritent d'être tatouées sur l'avant-bras. Le Bannock est de celles-là.
-
-Farine, eau, sel, un peu de graisse. C'est tout. Pas de levure de boulanger, pas de four, pas de temps de repos. Juste une poêle, une source de chaleur, et une vingtaine de minutes de patience. Le résultat : un pain chaud, nourrissant, qui sent bon le feu de camp et qui peut littéralement te sauver la mise quand il n'y a plus rien d'autre à manger.
+Farine, eau, sel, un peu de graisse : la recette du Bannock mériterait presque d'être tatouée sur l'avant-bras. Elle se passe de levure de boulanger, de four et de temps de repos. Une poêle, une source de chaleur et une vingtaine de minutes de patience suffisent. Le résultat : un pain chaud, nourrissant, qui sent bon le feu de camp et qui peut littéralement te sauver la mise quand il n'y a plus rien d'autre à manger.
 
 D'après le récit le plus répandu, ce sont des commerçants de fourrures écossais qui l'ont fait traverser l'Atlantique, et leur raison était simple : des ingrédients secs, légers et faciles à transporter. Les peuples autochtones d'Amérique du Nord se le sont ensuite approprié, souvent avec de la farine de maïs ou des plantes locales, et chacun y a mis sa touche. Des Highlands au Grand Nord canadien, le Bannock a nourri des générations entières de gens qui n'avaient ni supermarché ni four à portée de main.
 
@@ -55,9 +53,9 @@ D'après le récit le plus répandu, ce sont des commerçants de fourrures écos
 
 Le mot "bannock" vient du gaélique "bannach", une galette épaisse cuite sur l'âtre. Certains linguistes y voient un emprunt au latin "panis", le pain. Pas plus mystérieux que ça. C'est un pain de très vieille tradition en Écosse, longtemps fait à l'avoine ou à l'orge sur une plaque posée sur le feu.
 
-Le Bannock est un pain plat simple qui cuit avec une texture proche d'un scone ou d'un biscuit — légèrement friable, avec un centre moelleux. Il n'est pas censé être spectaculaire. Il est censé être là quand tu en as besoin, fait avec ce que tu as sous la main.
+Le Bannock est un pain plat simple qui cuit avec une texture proche d'un scone ou d'un biscuit, légèrement friable, avec un centre moelleux. Il ne cherche pas à impressionner : il est là quand tu en as besoin, fait avec ce que tu as sous la main.
 
-Ce qui le distingue du Hardtack (notre autre recette de pain de survie) : le Bannock se mange frais et chaud. Là où le Hardtack est conçu pour se garder très longtemps, le Bannock apporte un confort immédiat — un pain chaud qui remonte le moral autant qu'il nourrit le corps. En situation de crise, c'est une différence qui compte.
+Ce qui le distingue du Hardtack (notre autre recette de pain de survie) : le Bannock se mange frais et chaud. Là où le Hardtack est conçu pour se garder très longtemps, le Bannock apporte un confort immédiat : un pain chaud qui remonte le moral autant qu'il nourrit le corps. En situation de crise, c'est une différence qui compte.
 
 ## Pourquoi c'est la recette de pain parfaite en survie
 
@@ -67,17 +65,17 @@ Trois raisons qui font la différence quand les choses deviennent sérieuses.
 
 **Zéro technique avancée.** Contrairement à un pain levé qui nécessite du pétrissage, du temps de pousse et une gestion précise de la chaleur, le Bannock tolère les approximations. Trop de farine ? Ajoute de l'eau. Trop liquide ? Ajoute de la farine. La pâte est prête en deux minutes.
 
-**Un mix prêt à l'avance.** Tu peux préparer ton mélange d'ingrédients secs à l'avance, le stocker dans un sachet hermétique ou un bocal, et n'avoir plus qu'à ajouter de l'eau au moment de cuisiner. C'est l'équivalent survie du "juste ajouter de l'eau" — sauf que là, ça marche vraiment.
+**Un mix prêt à l'avance.** Tu peux préparer ton mélange d'ingrédients secs à l'avance, le stocker dans un sachet hermétique ou un bocal, et n'avoir plus qu'à ajouter de l'eau au moment de cuisiner. C'est l'équivalent survie du "juste ajouter de l'eau", en version qui marche vraiment.
 
 ## Les ingrédients — trois trucs que t'as forcément
 
 **Pour 4 portions :**
 
-- **300g de farine** (blanche de préférence — la farine complète marche aussi mais donne un résultat plus dense)
+- **300g de farine** (blanche de préférence ; la farine complète marche aussi mais donne un résultat plus dense)
 - **1 cuillère à café de levure chimique** (à défaut, un peu de bicarbonate de soude associé à un acide comme du jus de citron ou du vinaigre, ajouté avec l'eau)
 - **1 cuillère à café de sel**
-- **2 cuillères à soupe d'huile ou de graisse** (huile végétale, beurre fondu, graisse d'oie, saindoux — tout fonctionne)
-- **150-180ml d'eau** (ajoute progressivement — la quantité varie selon la farine)
+- **2 cuillères à soupe d'huile ou de graisse** (huile végétale, beurre fondu, graisse d'oie, saindoux : tout fonctionne)
+- **150-180ml d'eau** (ajoute progressivement, la quantité varie selon la farine)
 
 C'est la version minimaliste de survie. La version confort ajoute du lait en poudre, un peu de sucre, des flocons d'avoine pour remplacer une partie de la farine. Mais avec juste ces cinq ingrédients, tu as déjà un pain qui nourrit.
 
@@ -87,13 +85,13 @@ C'est la version minimaliste de survie. La version confort ajoute du lait en pou
 
 Le Bannock traditionnel des trappeurs et l'approche la plus fiable en situation de survie.
 
-1. Mélange farine, levure et sel dans un bol ou directement dans ton sachet zip refermable — secoue le sachet pour mélanger
+1. Mélange farine, levure et sel dans un bol ou directement dans ton sachet zip refermable, puis secoue le sachet pour mélanger
 2. Creuse un puits au centre, ajoute l'huile et la moitié de l'eau
-3. Mélange avec une fourchette ou les mains jusqu'à obtenir une pâte qui se tient — ni trop collante ni trop sèche. Ajoute l'eau restante progressivement
+3. Mélange avec une fourchette ou les mains jusqu'à obtenir une pâte qui se tient, ni trop collante ni trop sèche. Ajoute l'eau restante progressivement
 4. **Ne pétris pas.** Forme juste une galette de 2 cm d'épaisseur environ à la main
-5. Chauffe ta poêle à feu moyen avec un filet d'huile — la pâte doit grésiller légèrement au contact mais la poêle ne doit pas fumer
+5. Chauffe ta poêle à feu moyen avec un filet d'huile : la pâte doit grésiller légèrement au contact mais la poêle ne doit pas fumer
 6. Dépose la galette, couvre si possible (un couvercle ou une feuille d'aluminium accélère la cuisson)
-7. Cuis 10-12 minutes sur la première face sans toucher — jusqu'à ce que les bords soient secs et que le dessus commence à se solidifier
+7. Cuis 10-12 minutes sur la première face sans toucher, jusqu'à ce que les bords soient secs et que le dessus commence à se solidifier
 8. Retourne délicatement et cuis encore 8-10 minutes
 9. Teste la cuisson en plantant un couteau au centre : il doit ressortir propre
 
@@ -101,12 +99,12 @@ Le Bannock traditionnel des trappeurs et l'approche la plus fiable en situation 
 
 ### Version bâton sur feu de camp
 
-La version la plus satisfaisante moralement — et la plus utile si tu n'as pas de poêle.
+La version la plus satisfaisante moralement, et la plus utile si tu n'as pas de poêle.
 
-1. Prépare la pâte selon la même méthode mais avec un peu moins d'eau — elle doit être plus ferme
+1. Prépare la pâte selon la même méthode mais avec un peu moins d'eau : elle doit être plus ferme
 2. Taille un bâton vert (pas de bois mort qui risque de se casser) d'environ 2 cm de diamètre, épluche l'écorce sur 20 cm
 3. Enroule la pâte en spirale autour du bâton en appuyant bien pour qu'elle adhère
-4. Tiens le bâton à 20-30 cm au-dessus des braises — pas des flammes
+4. Tiens le bâton à 20-30 cm au-dessus des braises, jamais des flammes
 5. Tourne régulièrement pendant 10-15 minutes jusqu'à coloration uniforme
 6. La pâte se détache facilement du bâton quand elle est cuite
 
@@ -120,7 +118,7 @@ Pour une version plus épaisse et moelleuse, proche d'un vrai pain. Réchaud de 
 
 1. Prépare la pâte classique
 2. Verse-la dans une casserole légèrement huilée
-3. Couvre hermétiquement — c'est la vapeur piégée qui fait lever le pain
+3. Couvre hermétiquement : c'est la vapeur piégée qui fait lever le pain
 4. Cuis à feu très doux pendant 25-30 minutes sans soulever le couvercle avant 20 minutes
 5. Retourne et cuis encore 10 minutes à découvert pour former une croûte
 
@@ -134,7 +132,7 @@ Le Bannock de base est bon. Avec quelques ajouts, il devient excellent.
 
 **Version sucrée camping :** ajoute deux cuillères à soupe de sucre et une poignée de raisins secs ou de fruits secs. Parfait pour le petit-déjeuner au feu de camp.
 
-**Version flocons d'avoine :** la recette traditionnelle écossaise utilisait de l'avoine ou de l'orge — remplace jusqu'à moitié de la farine par des flocons d'avoine mixés grossièrement pour un résultat plus rustique et nutritif.
+**Version flocons d'avoine :** la recette traditionnelle écossaise utilisait de l'avoine ou de l'orge : remplace jusqu'à moitié de la farine par des flocons d'avoine mixés grossièrement pour un résultat plus rustique et nutritif.
 
 ## Ce qu'il faut stocker
 
@@ -154,7 +152,7 @@ Vérifie régulièrement ta levure chimique, surtout une fois la boîte ouverte 
 
 ## Télécharge la fiche recette illustrée
 
-La recette complète en image prête à imprimer — colle-la dans ta cuisine ou glisse-la dans ton kit 72h.
+Imprime la recette complète et colle-la dans ta cuisine, ou glisse-la dans ton kit 72h.
 
 [Télécharger la fiche recette Bannock](/ressources/recettes/bannock-survie.png)
 
