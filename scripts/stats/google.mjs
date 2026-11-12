@@ -1,6 +1,7 @@
 // Accès en LECTURE SEULE aux API Google (Analytics Data, Search Console) via un compte de service.
 // La clé n'est JAMAIS dans le dépôt : elle est lue dans une variable d'environnement de l'environnement
-// Claude Code (GOOGLE_SA_KEY_B64 = fichier JSON de la clé encodé en base64), ou dans un fichier
+// Claude Code (GOOGLE_SA_EMAIL + GOOGLE_SA_PRIVATE_KEY recopiées du fichier JSON, ou GOOGLE_SA_KEY_B64 =
+// fichier JSON encodé en base64), ou dans un fichier
 // situé HORS du dépôt (GOOGLE_SA_KEY_FILE). Aucune valeur secrète n'est jamais affichée.
 import { createSign } from 'node:crypto';
 import { readFileSync } from 'node:fs';
@@ -15,6 +16,12 @@ const PORTEES = [
 
 function chargerCle() {
   let texte;
+  // Variante « copier-coller » : les deux valeurs recopiées depuis le fichier JSON de la clé.
+  if (process.env.GOOGLE_SA_EMAIL && process.env.GOOGLE_SA_PRIVATE_KEY) {
+    const privee = process.env.GOOGLE_SA_PRIVATE_KEY.trim().replace(/^"|",?$/g, '').replace(/\\n/g, '\n');
+    if (!privee.includes('BEGIN PRIVATE KEY')) throw new Error('GOOGLE_SA_PRIVATE_KEY illisible : copier la valeur complète, de -----BEGIN à END PRIVATE KEY-----\\n.');
+    return { client_email: process.env.GOOGLE_SA_EMAIL.trim().replace(/^"|",?$/g, ''), private_key: privee };
+  }
   if (process.env.GOOGLE_SA_KEY_B64) {
     texte = Buffer.from(process.env.GOOGLE_SA_KEY_B64.trim(), 'base64').toString('utf8');
   } else if (process.env.GOOGLE_SA_KEY_FILE) {
@@ -24,7 +31,7 @@ function chargerCle() {
     }
     texte = readFileSync(chemin, 'utf8');
   } else {
-    throw new Error('Clé absente : la variable GOOGLE_SA_KEY_B64 n\'est pas définie dans cet environnement.');
+    throw new Error('Clé absente : ni GOOGLE_SA_EMAIL + GOOGLE_SA_PRIVATE_KEY, ni GOOGLE_SA_KEY_B64 ne sont définies dans cet environnement.');
   }
   let cle;
   try { cle = JSON.parse(texte); } catch { throw new Error('Clé illisible : GOOGLE_SA_KEY_B64 doit contenir le fichier JSON encodé en base64.'); }
