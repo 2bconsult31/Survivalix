@@ -49,6 +49,7 @@
 - « Bilan hebdo » : lancer node scripts/stats/rapport.mjs hebdo (7 jours contre 7, 28 jours contre 28, top pages et requêtes, indexation, Analytics), puis livrer le rapport dans la session avec 3 actions prioritaires.
 - « Opportunités du mois » : lancer node scripts/stats/rapport.mjs opportunites (requêtes en position 8 à 40, taux de clic faibles, requêtes sans article), puis livrer le rapport dans la session avec 3 actions prioritaires.
 - Les rapports sont écrits dans rapports-stats/ (exclu par le .gitignore) : ne jamais les commiter.
+- Lecture d'Analytics : aucune donnée du 14 octobre au 12 novembre 2026 (Consent Mode actif sans bandeau ; message RGPD publié dans AdSense, Confidentialité et messages, le 12 novembre 2026). Seuls les visiteurs qui acceptent sont comptés : Search Console reste la référence pour le trafic. Si Analytics retombe à 0, vérifier d'abord que le bandeau s'affiche en navigation privée.
 
 ## Images
 - Style : illustration rétro années 50, trait dense, hachures fines, ombrage travaillé, halos lumineux chauds, grain papier, halftone, contours noirs, palette ambre #F5A623, kaki #6B7C45, noir #0d0d0d, crème #F5E6C8, rouge brique. Objets et décors modernes français.
