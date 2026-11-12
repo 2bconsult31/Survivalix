@@ -100,7 +100,8 @@ const CANAUX = {
 };
 async function totauxGA(cur, prev) {
   const r = await ga4({ dateRanges: [cur, prev], metrics: [{ name: 'totalUsers' }, { name: 'sessions' }, { name: 'screenPageViews' }] });
-  const val = (i) => { const l = (r.rows || []).find((x) => x.dimensionValues?.[0]?.value === `date_range_${i}`) || (r.rows || [])[i]; return (l?.metricValues || []).map((m) => Number(m.value)); };
+  // Avec deux périodes, GA4 ajoute la dimension « dateRange » ; une période sans aucune donnée n'a pas de ligne : elle vaut 0.
+  const val = (i) => { const l = (r.rows || []).find((x) => x.dimensionValues?.[0]?.value === `date_range_${i}`); return (l?.metricValues || []).map((m) => Number(m.value)); };
   return [val(0), val(1)].map((v) => ({ visiteurs: v[0] || 0, sessions: v[1] || 0, vues: v[2] || 0 }));
 }
 async function sourcesGA(cur, prev) {
@@ -209,7 +210,12 @@ async function bilanHebdo() {
   if (proche) actions.push(`Renforcer la page qui se classe sur « ${proche.cles[0]} » (position ${pos(proche.position)}, ${n(proche.impressions)} impressions) pour la faire entrer dans le top 7.`);
   const faible = [...req7].filter((l) => l.impressions >= 20 && l.position <= 10).sort((a, b) => a.ctr - b.ctr)[0];
   if (faible && actions.length < 3) actions.push(`Retravailler le titre et la description de la page qui sort sur « ${faible.cles[0]} » : ${pct(faible.ctr)} de clics pour une position ${pos(faible.position)}.`);
-  while (actions.length < 3) actions.push('Publier un nouvel article Radar sur un sujet d\'actualité de la semaine (priorité éditoriale du site).');
+  const parDefaut = [
+    'Publier un nouvel article Radar sur un sujet d\'actualité de la semaine (priorité éditoriale du site).',
+    'Ajouter des liens internes vers les pages les moins vues depuis les articles qui reçoivent déjà des clics.',
+    'Relancer ce bilan la semaine prochaine pour confirmer les tendances (volumes encore faibles).',
+  ];
+  for (const d of parDefaut) if (actions.length < 3 && !actions.includes(d)) actions.push(d);
   sortie.push('## 3 actions prioritaires\n\n' + actions.slice(0, 3).map((a, i) => `${i + 1}. ${a}`).join('\n'));
   return sortie.join('\n\n');
 }
