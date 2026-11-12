@@ -9,6 +9,8 @@ const { frontmatter } = Astro.props;
 const SITE_URL = Astro.site ?? new URL('https://www.survivalix.fr');
 const pageTitle = frontmatter.seo_title || frontmatter.title;
 const canonicalURL = new URL(Astro.url.pathname, SITE_URL).toString();
+// Auteur des articles (même nom que dans les mentions légales), relié à la page À propos.
+const auteur = { "@type": "Person", "name": "Boris Bendjemla", "url": new URL('/a-propos', SITE_URL).toString() };
 const ogImageURL = new URL(imageDispo(frontmatter.image) || '/og-image.jpg', SITE_URL).toString();
 const logoURL = new URL('/LOGO_OK.svg', SITE_URL).toString();
 // Questions fréquentes : extraites de la section « Questions fréquentes » de l'article
@@ -57,7 +59,7 @@ if (estRecette) {
     "description": frontmatter.description,
     "datePublished": frontmatter.date,
     "dateModified": frontmatter.updated ?? frontmatter.date,
-    "author": { "@type": "Organization", "name": "Survivalix", "url": new URL('/', SITE_URL).toString() },
+    "author": auteur,
     ...facultatif('prepTime', frontmatter.prepTime),
     ...facultatif('cookTime', frontmatter.cookTime),
     ...facultatif('totalTime', frontmatter.totalTime),
@@ -104,7 +106,7 @@ if (estRecette) {
   "image": ogImageURL,
   "datePublished": frontmatter.date,
   "dateModified": frontmatter.updated ?? frontmatter.date,
-  "author": { "@type": "Organization", "name": "Survivalix" },
+  "author": auteur,
   "publisher": {
     "@type": "Organization",
     "name": "Survivalix",
