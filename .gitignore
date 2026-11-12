@@ -39,3 +39,16 @@ survivalix-social/**/*.m4a
 survivalix-social/**/*.aac
 survivalix-social/**/*.ogg
 survivalix-social/**/*.flac
+
+# Statistiques Google (dépôt PUBLIC) : aucun rapport, aucune donnée, aucune clé dans git
+rapports-stats/
+*.pem
+*.p12
+*service-account*.json
+*-sa-key*.json
+# fichiers JSON à la racine : seuls ceux du projet sont suivis (une clé Google téléchargée est un .json)
+/*.json
+!/package.json
+!/package-lock.json
+!/tsconfig.json
+!/vercel.json

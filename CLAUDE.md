@@ -43,6 +43,13 @@
 - À chaque modification de fond d'un article, mettre à jour le champ updated.
 - Liens partagés (réseaux sociaux) : URL simple, jamais de paramètres UTM.
 
+## Statistiques Google (lecture seule)
+- RÈGLE DE SÉCURITÉ ABSOLUE : le dépôt est PUBLIC. Aucune clé, aucun identifiant secret et aucune donnée de statistiques (rapports, exports, résultats) n'est jamais enregistré dans le dépôt, ni affiché en clair dans la conversation. Vérifier le .gitignore (git status, git check-ignore) avant tout commit.
+- Accès : compte de service Google en lecture seule (Lecteur dans GA4, Restreint dans Search Console). Sa clé est dans la variable d'environnement GOOGLE_SA_KEY_B64 de l'environnement Claude Code « Survivalix » (fichier JSON encodé en base64), avec GA4_PROPERTY_ID (identifiant numérique de la propriété). Jamais de clé dans un fichier du dépôt.
+- « Bilan hebdo » : lancer node scripts/stats/rapport.mjs hebdo (7 jours contre 7, 28 jours contre 28, top pages et requêtes, indexation, Analytics), puis livrer le rapport dans la session avec 3 actions prioritaires.
+- « Opportunités du mois » : lancer node scripts/stats/rapport.mjs opportunites (requêtes en position 8 à 40, taux de clic faibles, requêtes sans article), puis livrer le rapport dans la session avec 3 actions prioritaires.
+- Les rapports sont écrits dans rapports-stats/ (exclu par le .gitignore) : ne jamais les commiter.
+
 ## Images
 - Style : illustration rétro années 50, trait dense, hachures fines, ombrage travaillé, halos lumineux chauds, grain papier, halftone, contours noirs, palette ambre #F5A623, kaki #6B7C45, noir #0d0d0d, crème #F5E6C8, rouge brique. Objets et décors modernes français.
 - Image hero : 1920 × 815 px, bord à bord, sans cadre, sans texte ni logo.
