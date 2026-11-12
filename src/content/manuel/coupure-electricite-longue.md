@@ -10,11 +10,9 @@ image: "/images/articles/coupure-electricite-longue.jpg"
 image_alt: "Appartement plongé dans l'obscurité lors d'une coupure d'électricité, bougies allumées"
 ---
 
-Il y a deux types de personnes face à une coupure d'électricité qui dure.
+Le courant vient de couper, et ça dure. Dans un logement préparé, on allume la lampe frontale, on vérifie l'état du frigo, on branche la radio à piles et on s'installe en attendant le retour de l'électricité. Ailleurs, on tâtonne dans le noir à la recherche d'une bougie, on découvre que les piles de la lampe sont mortes, on ne sait pas si les aliments du frigo sont encore bons, et on ne trouve aucune information sur la durée de la panne parce que le téléphone est à 8% de batterie.
 
-Ceux qui ont préparé : ils allument leur lampe frontale, vérifient l'état du frigo, branchent leur radio à piles et s'installent confortablement en attendant que ça revienne. Ceux qui n'ont pas préparé : ils tâtonnent dans le noir à la recherche d'une bougie, découvrent que les piles de leur lampe sont mortes, ne savent pas si les aliments du frigo sont encore bons, et ne trouvent aucune information sur la durée de la panne parce que leur téléphone est à 8% de batterie.
-
-La différence entre les deux ? Quelques heures de préparation, une fois. C'est tout.
+Entre les deux, il y a seulement quelques heures de préparation, faites une fois pour toutes.
 
 Le plus souvent, c'est la météo qui coupe le courant : une tempête, une vague de froid. Et il suffit de quelques jours pour que le quotidien devienne un parcours d'obstacles : plus de chauffage ni de clim, plus de téléphone, de radio ou de télé.
 
@@ -22,13 +20,13 @@ Ce guide couvre les deux scénarios : ce qu'il faut faire pendant une coupure, e
 
 ## Les premières minutes — ce qu'il faut faire immédiatement
 
-**1. Identifier l'origine de la panne.** Vérifiez d'abord votre tableau électrique — un disjoncteur déclenché est une panne locale que vous pouvez résoudre vous-même. Si le tableau est normal, regardez par la fenêtre : les lampadaires sont-ils éteints ? Les voisins sont-ils dans le noir ? Tant que vous ignorez d'où vient la coupure, une seule question compte : le problème s'arrête-t-il à votre porte, ou touche-t-il tout le quartier ?
+**1. Identifier l'origine de la panne.** Vérifiez d'abord votre tableau électrique : un disjoncteur déclenché est une panne locale que vous pouvez résoudre vous-même. Si le tableau est normal, regardez par la fenêtre : les lampadaires sont-ils éteints ? Les voisins sont-ils dans le noir ? Tant que vous ignorez d'où vient la coupure, une seule question compte : le problème s'arrête-t-il à votre porte, ou touche-t-il tout le quartier ?
 
-**2. Ne pas ouvrir le frigo ni le congélateur.** C'est le réflexe le plus contre-intuitif — et le plus important. Résistez à l'envie d'aller « jeter un œil » aux aliments : c'est la porte fermée qui les protège. Frigo et congélateur sont conçus pour garder le froid sans courant, environ 4 heures pour le premier, environ 48 heures pour un congélateur bien rempli (24 heures s'il est à moitié vide). Chaque ouverture réduit ce délai.
+**2. Ne pas ouvrir le frigo ni le congélateur.** C'est le réflexe le plus contre-intuitif, et le plus important. Résistez à l'envie d'aller « jeter un œil » aux aliments : c'est la porte fermée qui les protège. Frigo et congélateur sont conçus pour garder le froid sans courant, environ 4 heures pour le premier, environ 48 heures pour un congélateur bien rempli (24 heures s'il est à moitié vide). Chaque ouverture réduit ce délai.
 
 **3. S'informer.** Consultez le site Enedis ou appelez le dépannage d'Enedis (09 72 67 50 suivi des deux chiffres de votre département, joignable 24 h/24) pour connaître la durée estimée de la coupure. Si votre téléphone est déchargé, c'est le moment où vous allez regretter de ne pas avoir votre radio à piles.
 
-**4. Débrancher les appareils sensibles.** Ordinateurs, télévisions, box internet — les surtensions au moment du retour du courant peuvent endommager les équipements électroniques. Débranchez-les ou activez votre parasurtenseur si vous en avez un.
+**4. Débrancher les appareils sensibles.** Ordinateurs, télévisions, box internet : les surtensions au moment du retour du courant peuvent endommager les équipements électroniques. Débranchez-les ou activez votre parasurtenseur si vous en avez un.
 
 ## Éclairage — ne pas se retrouver dans le noir
 
@@ -36,11 +34,11 @@ Le noir total, c'est ce qui entame le moral le plus vite quand le courant saute.
 
 Les solutions par ordre de praticité :
 
-**[Lampe frontale](https://www.amazon.fr/s?k=lampe+frontale+led&tag=survivalix31-21)** — le meilleur outil d'éclairage en situation de crise. Les deux mains libres, autonomie de plusieurs heures, portable partout dans l'appartement. C'est l'achat numéro un si vous n'en avez pas encore.
+**[Lampe frontale](https://www.amazon.fr/s?k=lampe+frontale+led&tag=survivalix31-21)** : le meilleur outil d'éclairage en situation de crise. Les deux mains libres, autonomie de plusieurs heures, portable partout dans l'appartement. C'est l'achat numéro un si vous n'en avez pas encore.
 
-**Batterie externe chargée** — votre téléphone allumé en mode lampe de poche dépanne, mais à condition que la batterie externe soit là pour recharger. Une batterie de 20 000 mAh rechargée en permanence vous donne 5 à 6 recharges complètes de smartphone.
+**Batterie externe chargée.** Votre téléphone allumé en mode lampe de poche dépanne, mais à condition que la batterie externe soit là pour recharger. Une batterie de 20 000 mAh rechargée en permanence vous donne 5 à 6 recharges complètes de smartphone.
 
-**Bougies + briquet ou allumettes** — solution de dernier recours. Efficaces mais à manipuler avec précaution : ne laissez jamais une bougie sans surveillance, gardez-la à l'écart des rideaux et matières inflammables. Privilégiez les bougies dans des verres ou des lanternes.
+**Bougies + briquet ou allumettes**, en dernier recours. Efficaces mais à manipuler avec précaution : ne laissez jamais une bougie sans surveillance, gardez-la à l'écart des rideaux et matières inflammables. Privilégiez les bougies dans des verres ou des lanternes.
 
 **Conseil à contre-courant :** si la coupure s'installe dans la durée et que l'ambiance se tend autour de vous, occultez vos fenêtres à la tombée de la nuit. Être la seule fenêtre éclairée à des kilomètres, c'est le meilleur moyen de s'attirer de gros ennuis.
 
@@ -62,15 +60,15 @@ C'est souvent la première source de stress lors d'une coupure longue. Voici ce 
 
 ## Chauffage — l'hypothermie en appartement, ça existe
 
-C'est le point le plus critique en hiver — et le plus sous-estimé en milieu urbain.
+En hiver, c'est le point le plus critique, et le plus sous-estimé en ville.
 
 Sans électricité, la plupart des chauffages s'arrêtent. Même un chauffage central au gaz a généralement besoin d'électricité pour sa régulation et sa pompe de circulation. Une coupure d'électricité en hiver = pas de chauffage, dans la grande majorité des cas. (Si le courant est là et que seul le chauffage lâche, la marche à suivre est différente : on la détaille dans notre guide [panne de chauffage en hiver](/manuel/panne-chauffage-hiver-que-faire).)
 
 **La stratégie en cas de froid :**
 
-Regroupez-vous dans une seule pièce — idéalement la plus petite de l'appartement, avec le moins de surface vitrée possible. La chaleur corporelle de plusieurs personnes dans un espace réduit fait une différence réelle.
+Regroupez-vous dans une seule pièce, idéalement la plus petite de l'appartement, avec le moins de surface vitrée possible. La chaleur corporelle de plusieurs personnes dans un espace réduit fait une différence réelle.
 
-Habillez-vous en couches : sous-vêtements thermiques, pull en laine, couverture — c'est la base. La **couverture de survie** (couverture isothermique dorée/argentée) est l'outil le plus efficace au rapport encombrement/performance : elle aide à conserver la chaleur corporelle. Elle fait d'ailleurs partie du kit d'urgence officiel.
+Habillez-vous en couches : sous-vêtements thermiques, pull en laine, couverture : c'est la base. La **couverture de survie** (couverture isothermique dorée/argentée) est l'outil le plus efficace au rapport encombrement/performance : elle aide à conserver la chaleur corporelle. Elle fait d'ailleurs partie du kit d'urgence officiel.
 
 **Ce qu'il ne faut jamais faire :** chauffer le logement avec un appareil à combustion. Chauffage d'appoint à gaz ou à pétrole, barbecue, braséro, réchaud de camping : jamais à l'intérieur, même en aérant. Le monoxyde de carbone qu'ils dégagent est inodore, incolore, et mortel. Pour tenir au chaud, la seule bonne stratégie reste celle du dessus : vêtements chauds en couches, couvertures, et tout le monde dans une seule pièce.
 
@@ -78,7 +76,7 @@ Habillez-vous en couches : sous-vêtements thermiques, pull en laine, couverture
 
 C'est le point qu'on néglige jusqu'au moment où on en a besoin.
 
-**La radio à piles ou à manivelle** est l'outil de communication numéro un en cas de coupure. Une simple petite radio à piles suffit pour suivre la situation : c'est par elle que vous saurez combien de temps la coupure va durer, d'où elle vient et quelles consignes donnent les autorités. Les réseaux mobiles peuvent rapidement saturer en cas de coupure généralisée — la radio reste fonctionnelle.
+**La radio à piles ou à manivelle** est l'outil de communication numéro un en cas de coupure. Une simple petite radio à piles suffit pour suivre la situation : c'est par elle que vous saurez combien de temps la coupure va durer, d'où elle vient et quelles consignes donnent les autorités. Les réseaux mobiles peuvent rapidement saturer en cas de coupure généralisée, alors que la radio continue de fonctionner.
 
 **La batterie externe** est le deuxième outil essentiel. Ayez une batterie externe et gardez-la toujours chargée : c'est elle qui maintiendra votre smartphone en vie. Une batterie de 20 000 mAh chargée en permanence = plusieurs jours d'usage limité du téléphone.
 
@@ -101,14 +99,14 @@ La coupure d'électricité qui arrive sans prévenir est le test grandeur nature
 
 **Deux gestes préventifs à faire dès maintenant :**
 
-Repérez votre tableau électrique et assurez-vous de savoir comment réarmer un disjoncteur. Bien souvent, une « panne » chez soi n'est qu'un disjoncteur déclenché par une surcharge — réglable en quelques secondes si vous savez quoi faire.
+Repérez votre tableau électrique et assurez-vous de savoir comment réarmer un disjoncteur. Bien souvent, une « panne » chez soi n'est qu'un disjoncteur déclenché par une surcharge, réglable en quelques secondes si vous savez quoi faire.
 
-Notez le numéro de dépannage d'Enedis de votre département (09 72 67 50 + les deux chiffres du département) quelque part d'accessible — dans votre téléphone, mais aussi sur papier. En situation de stress avec téléphone déchargé, ce numéro vaut de l'or.
+Notez le numéro de dépannage d'Enedis de votre département (09 72 67 50 + les deux chiffres du département) quelque part d'accessible : dans votre téléphone, mais aussi sur papier. En situation de stress avec téléphone déchargé, ce numéro vaut de l'or.
 
 ## La règle des 3 jours
 
-Une coupure d'électricité qui dure plus de 72 heures change de catégorie. Ce n'est plus une gêne — c'est une situation de crise. Les commerces ferment, les distributeurs automatiques sont hors service, les stations-service ne pompent plus, les réseaux mobiles peuvent être perturbés.
+Une coupure d'électricité qui dure plus de 72 heures change de catégorie et devient une situation de crise. Les commerces ferment, les distributeurs automatiques sont hors service, les stations-service ne pompent plus, les réseaux mobiles peuvent être perturbés.
 
-C'est exactement pour ça que le kit 72h existe — et pourquoi il intègre éclairage, communication, alimentation sans frigo et de quoi rester au chaud. Si vous l'avez, vous traversez ces 72 premières heures sans stress. Si vous ne l'avez pas, c'est le moment de le constituer.
+Le kit 72h est pensé pour cette durée : il intègre éclairage, communication, alimentation sans frigo et de quoi rester au chaud. Si vous l'avez, vous traversez ces 72 premières heures sans stress. Si vous ne l'avez pas, c'est le moment de le constituer.
 
 *Sources : Enedis (« Je n'ai plus d'électricité : les bons gestes à adopter »), Santé publique France (« Comment réduire le risque d'intoxication au monoxyde de carbone ? »), Gouvernement — kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Generali, Résilience-Urbaine.com, Mouton-Résilient.com, Darty, EcoFlow.*

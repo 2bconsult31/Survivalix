@@ -14,7 +14,7 @@ L'eau commence à entrer sous la porte du garage. Ta voiture est en bas, tes car
 
 C'est exactement le geste que toutes les consignes officielles interdisent. En cas d'inondation, les sous-sols, les garages et les parkings souterrains sont les premiers à se remplir, et ce sont les endroits où l'on se fait piéger. Même logique dehors : la voiture, qui donne l'impression d'être à l'abri, devient un piège dès que l'eau monte.
 
-Une inondation ne se gère donc pas d'abord avec du matériel, mais avec des réflexes. Les bons, et surtout l'absence des mauvais. Voici lesquels, avant, pendant et après.
+Une inondation se gère donc d'abord avec des réflexes : connaître les bons et, surtout, éviter les mauvais, avant, pendant et après.
 
 ## Ton logement est-il exposé ?
 
@@ -100,6 +100,6 @@ L'eau est partie, mais le logement n'est pas redevenu sûr pour autant. Le guide
 4. **Remettre l'électricité ou le gaz soi-même** au retour, avant le contrôle d'un professionnel.
 5. **Boire l'eau du robinet** avant l'autorisation de la mairie ou du service des eaux.
 
-Une inondation ne prévient pas toujours longtemps à l'avance. Ceux qui s'en sortent le mieux ne sont pas les mieux équipés : ce sont ceux qui savent déjà ce qu'il ne faut pas faire.
+Une inondation ne prévient pas toujours longtemps à l'avance : relis ces cinq erreurs maintenant, et montre-les à toute la maison.
 
 *Sources : Géorisques — « Que faire en cas d'inondation ? », « L'information des acquéreurs et des locataires (IAL) », « Le dispositif d'indemnisation des catastrophes naturelles » ; ministère de la Transition écologique — « Pluie-inondation : les bons réflexes », « Inondations : guide de remise en état des bâtiments », « Changements en vigueur au 1er janvier 2023 », application Vigicrues ; Vigicrues ; economie.gouv.fr — « Catastrophe naturelle : comment fonctionnent les indemnisations ? » ; France Assureurs — « Inondations : l'indemnisation des dommages en cas de catastrophe naturelle ».*

@@ -14,22 +14,22 @@ Tu es à un repas de famille. Ton oncle porte soudain les mains à sa gorge, le 
 
 Dans ces trois secondes-là, personne ne va chercher son téléphone pour lire un article de blog. Soit tu sais quoi faire, soit tu regardes.
 
-Et face à un accident, beaucoup de témoins restent les bras ballants. Pas par indifférence : souvent, personne ne leur a jamais montré, en vrai, les trois ou quatre gestes qui font la différence.
+Et face à un accident, beaucoup de témoins restent les bras ballants. Rarement par indifférence : le plus souvent, personne ne leur a jamais montré, en vrai, les trois ou quatre gestes qui font la différence.
 
 Cet article ne remplace pas une formation. Mais il peut faire la différence entre "je ne savais pas quoi faire" et "j'ai au moins essayé quelque chose".
 
 ## Avant le geste : la logique PAS
 
-Les secouristes professionnels raisonnent toujours dans le même ordre, quelle que soit la situation. Cette logique s'appelle PAS, et elle mérite d'être gravée quelque part dans ta tête — au sens propre, avant même de connaître le moindre geste technique.
+Les secouristes professionnels raisonnent toujours dans le même ordre, quelle que soit la situation. Cette logique s'appelle PAS, et elle mérite d'être gravée dans ta tête avant même le moindre geste technique.
 
-**Protéger.** Le danger qui a blessé la première personne peut te blesser aussi : voiture qui arrive, fil électrique à nu, fuite de gaz. Un regard rapide autour de toi avant d'agir n'est pas une perte de temps, c'est ce qui évite d'avoir deux victimes au lieu d'une.
+**Protéger.** Le danger qui a blessé la première personne peut te blesser aussi : voiture qui arrive, fil électrique à nu, fuite de gaz. Un regard rapide autour de toi avant d'agir évite d'avoir deux victimes au lieu d'une.
 
-**Alerter.** Le plus tôt possible, et avec les bonnes informations. Trois numéros à connaître par cœur — le détail de [lequel appeler selon la situation](/manuel/numeros-urgence-france-lequel-appeler) mérite son propre guide, mais voici l'essentiel :
+**Alerter.** Le plus tôt possible, et avec les bonnes informations. Trois numéros à connaître par cœur. Le détail de [lequel appeler selon la situation](/manuel/numeros-urgence-france-lequel-appeler) mérite son propre guide ; voici l'essentiel :
 - **15** pour le SAMU
 - **18** pour les pompiers
 - **112**, le numéro d'urgence européen, qui marche en France comme dans toute l'Union européenne
 
-Donne ton adresse, décris ce que tu vois, et reste en ligne — le régulateur peut te guider geste par geste si besoin.
+Donne ton adresse, décris ce que tu vois, et reste en ligne : le régulateur peut te guider geste par geste si besoin.
 
 **Secourir.** Seulement après les deux premières étapes. C'est là qu'interviennent les gestes détaillés plus bas.
 
@@ -45,7 +45,7 @@ Si elle perd connaissance à un moment donné, allonge-la au sol et commence un 
 
 ### Une hémorragie qui ne ralentit pas
 
-Compresse directement la plaie — avec une compresse, un tissu propre, ou simplement ta main s'il n'y a rien d'autre sous la main. Appuie fort, sans relâcher pour "vérifier", et tiens bon jusqu'à l'arrivée des secours.
+Compresse directement la plaie avec une compresse, un tissu propre, ou simplement ta main s'il n'y a rien d'autre sous la main. Appuie fort, sans relâcher pour "vérifier", et tiens bon jusqu'à l'arrivée des secours.
 
 Un objet planté dans une plaie (couteau, éclat de verre), on le laisse où il est : l'arracher peut aggraver la blessure et relancer le saignement. On n'y touche pas et on laisse les secours gérer.
 
@@ -55,11 +55,11 @@ Dans les cas les plus graves, où la compression ne suffit pas sur un membre, un
 
 La personne ne réagit à rien, ne respire pas ou émet des sortes de râles irréguliers (des "gasps"). C'est la situation où le massage cardiaque change tout.
 
-Place tes deux mains l'une sur l'autre, au centre de la poitrine, bras tendus. Appuie fort et vite — entre 100 et 120 compressions par minute, sur 5 à 6 centimètres de profondeur. Continue sans t'arrêter jusqu'à l'arrivée des secours, ou jusqu'à épuisement complet.
+Place tes deux mains l'une sur l'autre, au centre de la poitrine, bras tendus. Appuie fort et vite : entre 100 et 120 compressions par minute, sur 5 à 6 centimètres de profondeur. Continue sans t'arrêter jusqu'à l'arrivée des secours, ou jusqu'à épuisement complet.
 
 ![Schéma position des mains pour massage cardiaque et position latérale de sécurité](/images/articles/premiers-secours-schema-gestes.jpg)
 
-Si un défibrillateur automatisé externe traîne à proximité — dans un hall d'entreprise, une gare, un centre commercial — utilise-le sans hésiter. L'appareil te guide vocalement à chaque étape ; aucune formation préalable n'est nécessaire pour s'en servir.
+Si un défibrillateur automatisé externe traîne à proximité (dans un hall d'entreprise, une gare, un centre commercial), utilise-le sans hésiter. L'appareil te guide vocalement à chaque étape ; aucune formation préalable n'est nécessaire pour s'en servir.
 
 Chaque minute sans intervention fait chuter les chances de survie d'environ 10 %, selon la Fédération française de cardiologie.
 
@@ -75,15 +75,15 @@ Elle ne réagit ni à ta voix ni à une stimulation, mais respire sans difficult
 
 ## Ce que la lecture ne peut pas t'apprendre
 
-Tu viens de lire comment faire un massage cardiaque. Tu ne sais pas encore le faire. Ce n'est pas un manque de compréhension — c'est que le bon rythme, la bonne pression, ça se sent avec les mains, pas avec les yeux sur un écran.
+Tu viens de lire comment faire un massage cardiaque. Tu ne sais pas encore le faire. Le bon rythme et la bonne pression se sentent avec les mains, et aucun écran ne te les apprendra.
 
-La bonne nouvelle, c'est que combler cet écart prend deux heures et peut ne pas coûter un centime. La sensibilisation "Gestes qui sauvent" dure 2 heures, s'adresse à tout le monde dès 10 ans, et des sessions gratuites sont régulièrement organisées par les pompiers, les associations agréées ou les préfectures. Le PSC (Premiers secours citoyen, l'ex-PSC1 rebaptisé en 2024), plus complet, dure au moins 7 heures et est dispensé par la Croix-Rouge, les pompiers et d'autres organismes habilités partout en France.
+Combler cet écart prend deux heures et peut ne pas coûter un centime. La sensibilisation "Gestes qui sauvent" dure 2 heures, s'adresse à tout le monde dès 10 ans, et des sessions gratuites sont régulièrement organisées par les pompiers, les associations agréées ou les préfectures. Le PSC (Premiers secours citoyen, l'ex-PSC1 rebaptisé en 2024), plus complet, dure au moins 7 heures et est dispensé par la Croix-Rouge, les pompiers et d'autres organismes habilités partout en France.
 
 Et depuis la loi du 3 juillet 2020, toute personne qui vient bénévolement en aide à quelqu'un en danger grave a le statut de "citoyen sauveteur". Concrètement : on ne peut pas te reprocher un geste imparfait fait pour aider, sauf faute lourde ou intentionnelle. Bref, la maladresse de bonne foi n'est pas un délit.
 
-Une [trousse de premiers secours](https://www.amazon.fr/s?k=trousse+premiers+secours+complete&tag=survivalix31-21) à portée de main ne remplace pas ces deux heures de formation, mais elle fait partie des essentiels de ton [kit d'urgence 72h](/manuel/kit-urgence-72h) — avoir le matériel sous la main au moment où tu sais enfin quoi en faire change tout. Pour savoir quoi mettre dedans, et ce qui ne sert à rien, suis notre guide de la [trousse de premiers secours maison](/atelier/trousse-premiers-secours). Ces réflexes se combinent aussi avec les bons gestes pour [rester joignable en situation de crise](/manuel/communiquer-situation-crise), une fois les secours prévenus.
+Une [trousse de premiers secours](https://www.amazon.fr/s?k=trousse+premiers+secours+complete&tag=survivalix31-21) à portée de main ne remplace pas ces deux heures de formation, mais elle fait partie des essentiels de ton [kit d'urgence 72h](/manuel/kit-urgence-72h) : avoir le matériel sous la main au moment où tu sais enfin quoi en faire change tout. Pour savoir quoi mettre dedans, et ce qui ne sert à rien, suis notre guide de la [trousse de premiers secours maison](/atelier/trousse-premiers-secours). Ces réflexes se combinent aussi avec les bons gestes pour [rester joignable en situation de crise](/manuel/communiquer-situation-crise), une fois les secours prévenus.
 
-Un geste imparfait, tenté à temps, vaut toujours mieux qu'aucun geste. C'est probablement la seule chose à retenir vraiment de tout cet article.
+Un geste imparfait, tenté à temps, vaut toujours mieux qu'aucun geste. Prochaine étape : trouve une session « Gestes qui sauvent » près de chez toi et inscris-toi.
 
 *Sources : Croix-Rouge française (dont « Que faire en cas de brûlure ? »), Fédération française de cardiologie (« Arrêt cardiaque : le pire est de ne rien faire »), Ministère de l'Intérieur — Sécurité civile (dont « Gestes qui sauvent »), DGSCGC (« Recommandations de premiers secours », 2021), SGDSN, Légifrance (loi n° 2020-840 du 3 juillet 2020 sur le citoyen sauveteur ; arrêté du 15 juin 2024 sur les Premiers secours citoyen).*
 
