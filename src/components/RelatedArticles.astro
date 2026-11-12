@@ -1,4 +1,5 @@
 ---
+import { imageDispo } from '../utils/image';
 import ImageOpt from './ImageOpt.astro';
 // Bloc « À lire aussi » : 3 articles liés, même rubrique en priorité,
 // puis tags communs. L'article courant est toujours exclu.
@@ -51,7 +52,7 @@ const related = all
         {related.map(({ rubrique, entry }) => (
           <a href={`/${rubrique}/${entry.id}`} class="related-card">
             <div class="related-image">
-              {entry.data.image && (
+              {imageDispo(entry.data.image) && (
                 <ImageOpt src={entry.data.image} alt="" sizes="(min-width: 900px) 360px, 100vw" />
               )}
             </div>

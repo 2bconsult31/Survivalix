@@ -70,7 +70,7 @@ Regroupez-vous dans une seule pièce, idéalement la plus petite de l'appartemen
 
 Habillez-vous en couches : sous-vêtements thermiques, pull en laine, couverture : c'est la base. La **couverture de survie** (couverture isothermique dorée/argentée) est l'outil le plus efficace au rapport encombrement/performance : elle aide à conserver la chaleur corporelle. Elle fait d'ailleurs partie du kit d'urgence officiel.
 
-**Ce qu'il ne faut jamais faire :** chauffer le logement avec un appareil à combustion. Chauffage d'appoint à gaz ou à pétrole, barbecue, braséro, réchaud de camping : jamais à l'intérieur, même en aérant. Le monoxyde de carbone qu'ils dégagent est inodore, incolore, et mortel. Pour tenir au chaud, la seule bonne stratégie reste celle du dessus : vêtements chauds en couches, couvertures, et tout le monde dans une seule pièce.
+**Ce qu'il ne faut jamais faire :** chauffer le logement avec un appareil à combustion. Chauffage d'appoint à gaz ou à pétrole, barbecue, braséro, réchaud de camping : jamais à l'intérieur, même en aérant. Le monoxyde de carbone qu'ils dégagent est inodore, incolore, et mortel (tout ce qu'il faut savoir pour le repérer est dans notre fiche [monoxyde de carbone](/manuel/monoxyde-carbone-logement)). Pour tenir au chaud, la seule bonne stratégie reste celle du dessus : vêtements chauds en couches, couvertures, et tout le monde dans une seule pièce.
 
 ## Communication — rester informé et joignable
 

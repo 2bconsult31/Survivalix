@@ -1,4 +1,5 @@
 ---
+import { imageDispo } from '../utils/image';
 import ImageOpt from '../components/ImageOpt.astro';
 import Ticker from '../components/Ticker.astro';
 import SiteHeader from '../components/SiteHeader.astro';
@@ -13,7 +14,7 @@ interface Props {
 }
 
 const { frontmatter } = Astro.props;
-const hasImage = frontmatter.image && frontmatter.image !== '';
+const hasImage = !!imageDispo(frontmatter.image);
 const pageTitle = frontmatter.seo_title || frontmatter.title;
 ---
 
