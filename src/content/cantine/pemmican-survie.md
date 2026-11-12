@@ -44,13 +44,13 @@ En 1909, Robert Peary affirme avoir atteint le pôle Nord, un exploit encore dis
 
 Le mot vient du cri *pimîhkân*, formé sur pimî, « graisse », et qu'on peut traduire par quelque chose comme « graisse préparée ». Les tribus qui chassaient le bison en fabriquaient en grande quantité après chaque battue, pour tenir tout l'hiver. Les trappeurs et voyageurs de la traite des fourrures l'ont ensuite adopté à leur tour pour leurs longues expéditions.
 
-Ce qui rend le pemmican unique, ce n'est pas le goût — il est franchement rustique — c'est le rapport entre ce qu'il pèse et l'énergie qu'il fournit. Une poignée tient dans la poche et concentre beaucoup d'énergie, grâce aux graisses et aux protéines, sans passer par la case cuisson au moment de manger, même si, comme toute denrée maison, il ne se garde pas éternellement.
+Son goût est franchement rustique ; ce qui rend le pemmican unique, c'est le rapport entre ce qu'il pèse et l'énergie qu'il fournit. Une poignée tient dans la poche et concentre beaucoup d'énergie, grâce aux graisses et aux protéines, sans passer par la case cuisson au moment de manger, même si, comme toute denrée maison, il ne se garde pas éternellement.
 
 ## Pourquoi ça marche aussi bien pour un kit 72h
 
-Le sac d'évacuation classique contient souvent des barres de céréales ou des conserves — correct, mais lourd ou périssable au bout de quelques mois. Le pemmican bien préparé se garde bien plus longtemps qu'un sandwich, mais pour une version maison, vise plutôt quelques semaines dans un placard frais et sec, et range le gros de ta réserve au réfrigérateur ou au congélateur. Il ne demande aucune cuisson au moment de le manger : tu ouvres, tu manges, tu repars.
+Le sac d'évacuation classique contient souvent des barres de céréales ou des conserves : correct, mais lourd ou périssable au bout de quelques mois. Le pemmican bien préparé se garde bien plus longtemps qu'un sandwich, mais pour une version maison, vise plutôt quelques semaines dans un placard frais et sec, et range le gros de ta réserve au réfrigérateur ou au congélateur. Il ne demande aucune cuisson au moment de le manger : tu ouvres, tu manges, tu repars.
 
-C'est aussi une manière de valoriser ce que tu as peut-être déjà à la maison si tu fais du bannock (l'autre grand classique de la survie) — les deux se complètent bien dans une même réserve, l'un apportant les glucides, l'autre la densité calorique.
+C'est aussi une manière de valoriser ce que tu as peut-être déjà à la maison si tu fais du bannock (l'autre grand classique de la survie). Les deux se complètent bien dans une même réserve, l'un apportant les glucides, l'autre la densité calorique.
 
 ## Le ratio à retenir
 
@@ -66,15 +66,15 @@ La recette traditionnelle repose souvent sur une proportion simple : **un poids 
 
 ## Préparation
 
-**Étape 1 — Sécher la viande.** Coupe le bœuf en tranches très fines (le passage 30 minutes au congélateur avant de trancher facilite énormément le travail). Avant de sécher quoi que ce soit, fais une étape de sécurité qu'on oublie trop souvent : poche ou passe les tranches au four chaud jusqu'à ce qu'elles atteignent 71 °C à cœur, en vérifiant avec un [thermomètre de cuisine à sonde](https://www.amazon.fr/s?k=thermometre+cuisine+sonde&tag=survivalix31-21). C'est ce qui élimine salmonelles et autres E. coli, que la chaleur douce d'un four tiède ne suffit pas à neutraliser. Ensuite seulement, dispose les tranches sur une grille et fais-les sécher au four à basse température, porte légèrement entrouverte pour laisser partir l'humidité, pendant 6 à 8 heures. La viande est prête quand elle casse net au lieu de plier. C'est le même point de départ que notre [beef jerky maison](/cantine/beef-jerky-maison), mais sans marinade et poussé jusqu'au sec complet.
+**Étape 1 : sécher la viande.** Coupe le bœuf en tranches très fines (le passage 30 minutes au congélateur avant de trancher facilite énormément le travail). Avant de sécher quoi que ce soit, fais une étape de sécurité qu'on oublie trop souvent : poche ou passe les tranches au four chaud jusqu'à ce qu'elles atteignent 71 °C à cœur, en vérifiant avec un [thermomètre de cuisine à sonde](https://www.amazon.fr/s?k=thermometre+cuisine+sonde&tag=survivalix31-21). C'est ce qui élimine salmonelles et autres E. coli, que la chaleur douce d'un four tiède ne suffit pas à neutraliser. Ensuite seulement, dispose les tranches sur une grille et fais-les sécher au four à basse température, porte légèrement entrouverte pour laisser partir l'humidité, pendant 6 à 8 heures. La viande est prête quand elle casse net au lieu de plier. C'est le même point de départ que notre [beef jerky maison](/cantine/beef-jerky-maison), mais sans marinade et poussé jusqu'au sec complet.
 
-**Étape 2 — Réduire en poudre.** Une fois complètement sèche et refroidie, passe la viande au mixeur ou au robot jusqu'à obtenir une texture proche de la chapelure grossière.
+**Étape 2 : réduire en poudre.** Une fois complètement sèche et refroidie, passe la viande au mixeur ou au robot jusqu'à obtenir une texture proche de la chapelure grossière.
 
-**Étape 3 — Faire fondre la graisse.** Chauffe le suif à feu très doux dans une casserole à fond épais, pendant environ 1h à 1h30, jusqu'à ce qu'il soit entièrement liquide. Filtre-le à travers une passoire fine pour retirer les résidus solides — une graisse bien propre aide à limiter le rancissement.
+**Étape 3 : faire fondre la graisse.** Chauffe le suif à feu très doux dans une casserole à fond épais, pendant environ 1h à 1h30, jusqu'à ce qu'il soit entièrement liquide. Filtre-le à travers une passoire fine pour retirer les résidus solides : une graisse bien propre aide à limiter le rancissement.
 
-**Étape 4 — Assembler.** Mélange la poudre de viande avec les fruits secs hachés grossièrement, puis verse la graisse encore chaude par-dessus. Travaille le mélange à la cuillère en bois jusqu'à obtenir une pâte homogène et légèrement collante.
+**Étape 4 : assembler.** Mélange la poudre de viande avec les fruits secs hachés grossièrement, puis verse la graisse encore chaude par-dessus. Travaille le mélange à la cuillère en bois jusqu'à obtenir une pâte homogène et légèrement collante.
 
-**Étape 5 — Façonner et laisser durcir.** Forme des barres ou des petites boules avec les mains (humidifie légèrement tes paumes si le mélange colle). Dépose-les sur une plaque recouverte de papier cuisson et laisse durcir à température ambiante pendant 2 à 3 heures.
+**Étape 5 : façonner et laisser durcir.** Forme des barres ou des petites boules avec les mains (humidifie légèrement tes paumes si le mélange colle). Dépose-les sur une plaque recouverte de papier cuisson et laisse durcir à température ambiante pendant 2 à 3 heures.
 
 ## Ce qu'il faut savoir sur la conservation
 
@@ -85,7 +85,7 @@ La recette traditionnelle repose souvent sur une proportion simple : **un poids 
 | Congélateur | La solution la plus sûre pour une réserve longue |
 | Point de vigilance | Qualité et fraîcheur de la graisse au départ |
 
-Le point de vigilance principal, c'est la qualité de la graisse au départ : un suif mal filtré ou une graisse déjà légèrement rance donnera un pemmican qui tourne plus vite. Si l'odeur ou la couleur te semble suspecte à un moment donné, ne le mange pas — mieux vaut perdre une portion que prendre un risque inutile.
+Le point de vigilance principal, c'est la qualité de la graisse au départ : un suif mal filtré ou une graisse déjà légèrement rance donnera un pemmican qui tourne plus vite. Si l'odeur ou la couleur te semble suspecte à un moment donné, ne le mange pas : mieux vaut perdre une portion que prendre un risque inutile.
 
 ## Où acheter du pemmican ?
 
@@ -95,6 +95,6 @@ Fait maison ou acheté ? Le pemmican du commerce sort d'une fabrication encadré
 
 ## Une dernière chose
 
-Le pemmican ne cherchera jamais à concurrencer un bon plat cuisiné. Ce n'est pas sa fonction. C'est une réserve — la même logique qu'un extincteur dans la cuisine : tu espères ne jamais en avoir vraiment besoin, mais le jour où ton sac d'évacuation doit tenir 72 heures sans accès à une cuisine, tu seras content d'avoir pris le temps de le préparer un dimanche après-midi tranquille.
+Le pemmican ne rivalisera jamais avec un bon plat cuisiné : c'est une réserve. Prépare une première fournée à froid, sans urgence, pour que ton sac d'évacuation puisse tenir 72 heures sans accès à une cuisine.
 
 *Sources : tradition culinaire des peuples des Grandes Plaines d'Amérique du Nord, récits d'expédition de R. Peary et d'A. Mackenzie, USDA FSIS — « Jerky and Food Safety ».*
