@@ -1,0 +1,62 @@
+---
+// Mode d'emploi placé SOUS un outil (calculateurs, évaluateur, quiz, Bunker) : à quoi sert l'outil,
+// comment il calcule, ses sources, ses limites, les articles liés. Feuille « papier » du système graphique.
+// Le contenu (h2, h3, p, ul, a) est fourni par la page : styles en :global() sous .guide-outil.
+interface Props {
+  id: string;
+  class?: string;
+}
+const { id, class: classe } = Astro.props;
+---
+<section class:list={['guide-outil', 'papier', classe]} aria-labelledby={`${id}-titre`} id={id}>
+  <slot />
+</section>
+
+<style>
+  .guide-outil {
+    max-width: 46rem;
+    margin: 4rem auto 3rem;
+    padding: 2.5rem 1.5rem 2.75rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+  }
+  @media (min-width: 768px) {
+    .guide-outil { padding: 3rem 3rem 3.25rem; border: 1px solid #000; }
+  }
+  .guide-outil :global(h2) {
+    font-family: 'Special Elite', cursive;
+    font-size: clamp(1.5rem, 3.5vw, 1.9rem);
+    color: #000;
+    -webkit-text-stroke: 0.035em currentColor;
+    paint-order: stroke fill;
+    line-height: 1.2;
+    margin: 0 0 1.25rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 4px solid var(--ambre, #F5A623);
+  }
+  .guide-outil :global(h3) {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+    color: #000;
+    margin: 2rem 0 0.6rem;
+  }
+  .guide-outil :global(p),
+  .guide-outil :global(li) {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.75;
+  }
+  .guide-outil :global(p) { margin: 0 0 1rem; }
+  .guide-outil :global(ul) { margin: 0 0 1rem; padding-left: 1.25rem; }
+  .guide-outil :global(li) { margin-bottom: 0.35rem; }
+  .guide-outil :global(strong) { font-weight: 700; }
+  .guide-outil :global(.guide-sources) {
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+  }
+</style>

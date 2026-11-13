@@ -1,4 +1,5 @@
 ---
+import GuideOutil from '../../components/GuideOutil.astro';
 import Layout from '../../layouts/Layout.astro';
 ---
 
@@ -69,13 +70,6 @@ import Layout from '../../layouts/Layout.astro';
           </div>
         </div>
 
-        <div class="form-group form-group-checkbox">
-          <label>
-            <input type="checkbox" id="regime" onchange="calculer()" />
-            <span>Régime particulier (végétarien / sans gluten)</span>
-          </label>
-        </div>
-
       </div>
 
     </div>
@@ -134,6 +128,25 @@ import Layout from '../../layouts/Layout.astro';
 
   </div>
 
+  <GuideOutil id="guide-rations">
+    <h2 id="guide-rations-titre">D'où viennent ces calories</h2>
+    <p>Pour un adulte, l'outil part des repères de l'ANSES : environ 2 600 kcal par jour pour un homme et 2 100 kcal pour une femme, pour un niveau d'activité courant. Il retient la moyenne, 2 350 kcal. Pour un enfant de moins de 12 ans, il compte 1 800 kcal par jour, une valeur moyenne choisie par nos soins dans la fourchette de référence de l'EFSA pour les 6 à 12 ans. Elle surestime donc les besoins des plus petits, ce qui laisse de la marge.</p>
+    <p>Les deux niveaux d'activité supplémentaires (« modérée » et « évacuation ») multiplient ces besoins par 1,2 et 1,5. Ce sont des estimations de notre part, sans valeur officielle : garde-les pour te faire une idée.</p>
+
+    <h3>La liste de courses</h3>
+    <p>Le total de calories est réparti entre dix aliments qui se conservent bien : riz, pâtes, légumineuses, conserves de poisson, huile, oléagineux, chocolat, biscuits secs. La répartition est un choix de notre part pour varier les apports. Les quantités sont calculées à partir des valeurs énergétiques de la table Ciqual de l'ANSES. Libre à toi de remplacer un aliment par un autre de valeur proche.</p>
+
+    <h3>Ce que le calculateur ne fait pas</h3>
+    <ul>
+      <li>Il compte des calories, pas l'équilibre de tes repas ni tes apports en protéines et en vitamines.</li>
+      <li>Il ne gère ni les allergies, ni les régimes médicaux, ni la grossesse, ni les besoins des bébés : dans ces cas, demande conseil à un professionnel de santé. Pour les tout-petits, notre <a href="/manuel/kit-urgence-bebe-nourrisson">kit d'urgence bébé</a> prend le relais.</li>
+      <li>Riz, pâtes et légumes secs demandent de l'eau et de quoi cuire. Pour les 72 premières heures, prévois aussi des aliments qui se mangent sans cuisson. En cas de coupure, ne cuisine et ne te chauffe jamais à l'intérieur avec un appareil à combustion improvisé (réchaud, barbecue) : notre article sur le <a href="/manuel/monoxyde-carbone-logement">monoxyde de carbone</a> explique pourquoi.</li>
+    </ul>
+
+    <h3>Faire vivre ton stock</h3>
+    <p>Un stock se consomme et se renouvelle : place les achats récents derrière, utilise les plus anciens en premier, et note les dates. Notre <a href="/manuel/liste-courses-prepper-debutant">liste de courses pour débuter</a> t'aide à démarrer petit. Côté cuisine, la Cantine propose des recettes pensées pour ces ingrédients, comme le <a href="/cantine/riz-haricots-survie">riz aux haricots</a> ou le <a href="/cantine/bannock-survie">bannock</a>.</p>
+    <p class="guide-sources">Sources : ANSES (repères de consommation énergétique, table de composition nutritionnelle Ciqual) ; EFSA (valeurs nutritionnelles de référence pour l'énergie).</p>
+  </GuideOutil>
 </Layout>
 
 <script is:inline>
@@ -429,7 +442,9 @@ import Layout from '../../layouts/Layout.astro';
     line-height: 36px;
   }
 
-  .select-wrapper { flex-shrink: 0; min-width: 180px; }
+  /* Sur mobile, la liste déroulante passe sous son libellé au lieu de déborder de l'écran */
+  .select-wrapper { flex: 0 1 220px; min-width: 0; max-width: 100%; }
+  .form-group:has(.select-wrapper) { flex-wrap: wrap; }
 
   .select-wrapper select {
     width: 100%;

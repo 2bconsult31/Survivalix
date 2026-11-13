@@ -1,10 +1,11 @@
 ---
+import GuideOutil from '../../components/GuideOutil.astro';
 import Layout from '../../layouts/Layout.astro';
 ---
 
 <Layout
   title="Évaluateur de Préparation — Survivalix"
-  description="10 questions pour savoir où tu en es vraiment. Score sur 100, recommandations personnalisées. Honnête, sans bullshit."
+  description="10 questions pour savoir où tu en es vraiment : un score sur 100 et des recommandations personnalisées pour combler tes manques. Honnête, sans détour."
 >
 
   <div class="page-header">
@@ -73,6 +74,29 @@ import Layout from '../../layouts/Layout.astro';
 
   </div>
 
+  <GuideOutil id="guide-evaluateur">
+    <h2 id="guide-evaluateur-titre">Comment fonctionne l'évaluateur</h2>
+    <p>Dix questions, chacune sur un pilier de la préparation à domicile : l'eau, la nourriture, l'éclairage, la trousse de secours, les coupures d'eau, de gaz et d'électricité, la radio, les copies de documents, le plan d'évacuation, la batterie externe et la formation aux premiers secours. Chaque réponse vaut de 0 à 10 points. Le total donne ton score sur 100.</p>
+
+    <h3>Lire ton résultat</h3>
+    <p>Le score te place sur l'un des cinq paliers, de « Citoyen non préparé » à « Survivaliste urbain confirmé ». Le plus utile se trouve juste en dessous : toute réponse qui rapporte moins de 7 points apparaît dans la rubrique « Ce qui manque », avec le guide qui t'aide à combler le trou.</p>
+    <p>Un conseil pour la suite : traite les manques dans l'ordre des besoins vitaux. L'eau d'abord, puis la nourriture, puis la lumière et l'information. Le reste viendra plus facilement une fois ces trois-là réglés.</p>
+
+    <h3>Sur quoi reposent les questions</h3>
+    <p>Les objets cités viennent du kit d'urgence recommandé par le Gouvernement et du guide « Tous responsables » du SGDSN (novembre 2025) : 6 litres d'eau par personne pour 72 heures, radio à piles ou à manivelle, lampe, copies des documents importants. La question sur les premiers secours reprend les deux formations grand public définies par le ministère de l'Intérieur : la sensibilisation aux gestes qui sauvent (GQS), qui dure 2 heures, et la formation Premiers secours citoyen (PSC), d'au moins 7 heures.</p>
+
+    <h3>Ses limites</h3>
+    <p>Toutes les questions pèsent le même poids, alors que leur importance dépend de ta vie. Un traitement quotidien, un bébé, un animal, un logement en zone inondable ou au dixième étage changent les priorités. Prends le score comme une photo de départ, et refais le test dans quelques mois pour mesurer le chemin parcouru.</p>
+    <p>Tes réponses restent dans ton navigateur : rien n'est enregistré, et tout disparaît quand tu fermes la page.</p>
+
+    <h3>Les guides qui vont avec</h3>
+    <ul>
+      <li><a href="/manuel/kit-urgence-72h">Le kit d'urgence 72 h, poste par poste</a></li>
+      <li><a href="/atelier/trousse-premiers-secours">Monter sa trousse de premiers secours</a> et <a href="/manuel/premiers-secours-gestes-qui-sauvent">les gestes qui sauvent</a></li>
+      <li><a href="/atelier/comprendre-tableau-electrique-disjoncteur">Comprendre son tableau électrique</a></li>
+      <li><a href="/manuel/sac-evacuation">Préparer un sac d'évacuation</a> et <a href="/manuel/communiquer-situation-crise">communiquer en situation de crise</a></li>
+    </ul>
+  </GuideOutil>
 </Layout>
 
 <script is:inline>

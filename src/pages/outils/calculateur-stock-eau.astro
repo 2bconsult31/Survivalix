@@ -1,4 +1,5 @@
 ---
+import GuideOutil from '../../components/GuideOutil.astro';
 import Layout from '../../layouts/Layout.astro';
 ---
 
@@ -126,6 +127,25 @@ import Layout from '../../layouts/Layout.astro';
 
   </div>
 
+  <GuideOutil id="guide-eau">
+    <h2 id="guide-eau-titre">Comment le calcul est fait</h2>
+    <p>Le point de départ est le kit d'urgence recommandé par le Gouvernement : 6 litres d'eau par personne pour tenir 72 heures, soit 2 litres par jour. Le calculateur multiplie ce repère par le nombre de personnes et par le nombre de jours choisi. Les enfants sont comptés comme les adultes, par prudence. Le résultat est ensuite converti en bouteilles de 1,5 litre, en bidons de 5 litres et en packs, toujours arrondis au-dessus.</p>
+
+    <h3>Au-delà de 72 heures</h3>
+    <p>Le repère officiel porte sur trois jours. Pour une semaine, deux semaines ou un mois, l'outil applique simplement la même base de 2 litres par jour : c'est une projection de notre part, pas une consigne publiée. Garde aussi en tête le poids et la place. Un litre d'eau pèse environ un kilo, et un mois d'autonomie pour deux personnes représente déjà 120 litres à caser.</p>
+
+    <h3>Ce que le chiffre ne couvre pas</h3>
+    <ul>
+      <li>Les fortes chaleurs et les efforts physiques, qui augmentent les besoins : prévois une marge si tu peux.</li>
+      <li>Les biberons : un nourrisson a besoin d'une eau adaptée à son alimentation. Notre <a href="/manuel/kit-urgence-bebe-nourrisson">kit d'urgence bébé</a> détaille ce point.</li>
+      <li>Les animaux, à ajouter à part. Le <a href="/outils/generateur-kit-72h">générateur de kit 72 h</a> les prend en compte.</li>
+    </ul>
+
+    <h3>Stocker sans se tromper</h3>
+    <p>Le plus simple reste l'eau en bouteille du commerce, non ouverte, rangée à l'abri de la lumière et de la chaleur, en surveillant les dates. L'eau du robinet mise de côté, elle, se garde peu de temps : l'ANSES recommande un récipient en verre ou en inox et une conservation de 24 à 48 heures au réfrigérateur. Les pastilles de purification servent de dépannage face à une eau douteuse, jamais de stock.</p>
+    <p>Pour l'organisation pratique, lis notre guide pour <a href="/manuel/stocker-eau-appartement">stocker de l'eau en appartement</a>, et garde sous le coude celui sur <a href="/atelier/purifier-eau-urgence">la purification de l'eau en urgence</a>. Tout est rassemblé, avec le reste du kit, dans <a href="/manuel/kit-urgence-72h">le guide du kit 72 h</a>.</p>
+    <p class="guide-sources">Sources : Gouvernement, kit d'urgence et guide « Tous responsables » (SGDSN, novembre 2025) ; ANSES, conservation de l'eau du robinet.</p>
+  </GuideOutil>
 </Layout>
 
 <script is:inline>

@@ -1,4 +1,5 @@
 ---
+import GuideOutil from '../../components/GuideOutil.astro';
 import Layout from '../../layouts/Layout.astro';
 ---
 
@@ -109,6 +110,21 @@ import Layout from '../../layouts/Layout.astro';
     appareil (localStorage) — elle n'est jamais envoyée ni partagée.
   </p>
 
+  <GuideOutil id="guide-kit">
+    <h2 id="guide-kit-titre">Ce que contient ta checklist</h2>
+    <p>La liste suit les grandes familles du kit d'urgence recommandé par les autorités : eau, nourriture, lumière et énergie, santé, chaleur et vêtements, documents, et un dernier lot d'objets utiles. Les quantités changent avec ton foyer. L'eau est calculée sur la base officielle de 6 litres par personne pour 72 heures, bébés compris. Les lampes, batteries, couvertures et tenues de rechange suivent le nombre de personnes.</p>
+
+    <h3>Bébés et animaux</h3>
+    <p>Dès que tu ajoutes un bébé, un module dédié apparaît : lait adapté à son âge, biberons, couches, thermomètre, moyen de portage. Il dépend de la tranche d'âge choisie, et reprend les repères de notre <a href="/manuel/kit-urgence-bebe-nourrisson">kit d'urgence bébé et nourrisson</a>. Pour un animal, la liste ajoute sa nourriture et son eau pour trois jours, de quoi le transporter, et ses papiers d'identification.</p>
+
+    <h3>Comment l'utiliser</h3>
+    <p>Coche une ligne seulement quand l'objet est réellement chez toi, rangé avec le reste. Ta progression reste enregistrée sur cet appareil, dans ton navigateur : elle n'est envoyée nulle part, et le bouton « Réinitialiser » l'efface. Une fois tout coché, refais un tour de temps en temps : dates des conserves et des médicaments, état des piles, batteries à recharger.</p>
+
+    <h3>Ses limites</h3>
+    <p>La checklist couvre trois jours à la maison. Elle ne remplace pas un sac prêt à partir si tu dois quitter ton logement en urgence : vois pour ça notre guide du <a href="/manuel/sac-evacuation">sac d'évacuation</a>. Elle reste générale pour la santé. Si tu suis un traitement, parles-en à ton médecin ou à ton pharmacien pour savoir comment garder quelques jours d'avance. Pour la trousse elle-même, suis notre fiche <a href="/atelier/trousse-premiers-secours">trousse de premiers secours</a>.</p>
+    <p>Pour le détail de chaque poste et le pourquoi de chaque objet, tout est dans <a href="/manuel/kit-urgence-72h">le guide complet du kit 72 h</a>.</p>
+    <p class="guide-sources">Sources : Gouvernement, kit d'urgence et guide « Tous responsables » (SGDSN, novembre 2025) ; Sécurité civile ; Géorisques ; Croix-Rouge française ; pour les animaux, listes d'urgence de l'agence fédérale américaine Ready.gov et du gouvernement du Manitoba.</p>
+  </GuideOutil>
 </Layout>
 
 <script is:inline>
@@ -243,6 +259,18 @@ import Layout from '../../layouts/Layout.astro';
           { id: 'bebe-biberons', label: `${Math.max(2, vals.bebes * 2)} biberons` },
           { id: 'bebe-echarpe', label: 'Écharpe ou porte-bébé physiologique (pratique à l\'intérieur ; dehors par grand froid, préfère une poussette où il peut bouger)' },
           { id: 'bebe-thermometre', label: '1 thermomètre électronique adapté au bébé (demande conseil en pharmacie)' }
+        ]
+      });
+    }
+
+    if (vals.animaux > 0) {
+      categories.push({
+        nom: 'ANIMAUX',
+        items: [
+          { id: 'animaux-nourriture', label: `Nourriture et eau pour 3 jours, pour ${vals.animaux > 1 ? `tes ${vals.animaux} animaux` : 'ton animal'}` },
+          { id: 'animaux-transport', label: 'Laisse, harnais ou caisse de transport' },
+          { id: 'animaux-papiers', label: "Copie du carnet de santé et numéro d'identification (puce ou tatouage)" },
+          { id: 'animaux-traitement', label: 'Son traitement en cours, s\'il en a un' }
         ]
       });
     }

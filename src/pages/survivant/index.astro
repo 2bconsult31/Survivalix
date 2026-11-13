@@ -1,4 +1,5 @@
 ---
+import GuideOutil from '../../components/GuideOutil.astro';
 import Layout from '../../layouts/Layout.astro';
 ---
 
@@ -39,6 +40,27 @@ import Layout from '../../layouts/Layout.astro';
 
   </div>
 
+  <GuideOutil id="guide-survivant">
+    <h2 id="guide-survivant-titre">Comment le quiz choisit ton profil</h2>
+    <p>Chaque question te place dans une situation : une coupure de courant qui s'éternise, un repas à improviser, une blessure, un campement à organiser. Tes réponses donnent des points à un ou deux des dix profils (Bâtisseur, Chasseur, Soigneur, Bricoleur, Stratège, Nourricier, Explorateur, Technicien, Fantôme et Touriste). À la fin, le profil qui a cumulé le plus de points devient le tien. En cas d'égalité, un seul est retenu.</p>
+
+    <h3>Ce que ton profil dit de toi</h3>
+    <p>Il décrit tes réflexes spontanés face à l'imprévu : plutôt organiser, soigner, réparer, partir en repérage ou nourrir tout le monde. Il ne mesure pas ce que tu as chez toi. Pour savoir si tu tiendrais 72 heures, l'outil à utiliser est l'<a href="/outils/evaluateur-preparation">évaluateur de préparation</a>, qui te donne un score et la liste de ce qui manque.</p>
+
+    <h3>Ce que le quiz n'est pas</h3>
+    <p>C'est un jeu, sans prétention scientifique : il n'a rien d'un test psychologique validé, et aucun profil n'est meilleur qu'un autre. Même le Touriste a sa place dans un groupe, à condition de lire deux ou trois fiches avant la prochaine tempête.</p>
+    <p>Tes réponses sont comptées dans ton navigateur. Seul le nom du profil obtenu passe dans l'adresse de la page de résultat, et la carte collector est une image toute prête que tu télécharges si tu le veux. Survivalix n'enregistre ni tes réponses ni ton résultat.</p>
+
+    <h3>Et maintenant, selon ton profil</h3>
+    <ul>
+      <li><strong>Soigneur</strong> : <a href="/manuel/premiers-secours-gestes-qui-sauvent">les gestes qui sauvent</a> et <a href="/atelier/trousse-premiers-secours">la trousse de premiers secours</a>.</li>
+      <li><strong>Bâtisseur ou Stratège</strong> : <a href="/manuel/kit-urgence-72h">le kit d'urgence 72 h</a> et <a href="/manuel/communiquer-situation-crise">communiquer en situation de crise</a>.</li>
+      <li><strong>Nourricier</strong> : <a href="/cantine">les recettes de la Cantine</a>.</li>
+      <li><strong>Bricoleur ou Technicien</strong> : <a href="/atelier/comprendre-tableau-electrique-disjoncteur">le tableau électrique</a> et <a href="/atelier/reparer-fuite-eau-urgence">réparer une fuite d'eau</a>.</li>
+      <li><strong>Explorateur, Chasseur ou Fantôme</strong> : <a href="/manuel/risques-pres-de-chez-soi">les risques près de chez toi</a> et <a href="/manuel/sac-evacuation">le sac d'évacuation</a>.</li>
+      <li><strong>Touriste</strong> : on commence en douceur avec <a href="/commencer-ici">la page Commencer ici</a>.</li>
+    </ul>
+  </GuideOutil>
 </Layout>
 
 <script is:inline>
