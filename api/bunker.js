@@ -37,7 +37,7 @@ Guide "Tous responsables — Face aux risques, agissons" (SGDSN, publié le 20 n
 - Objectif : pouvoir tenir 72 heures chez soi en cas de crise. Trois priorités : boire et manger ; avoir chaud et se soigner ; rester informé et communiquer.
 - Eau : 6 litres par personne pour 72 heures, soit 2 litres par jour. C'est le repère officiel minimal, surtout pour boire. Toilette, vaisselle ou chaleur demandent davantage : tu peux le dire, mais sans présenter un autre chiffre comme officiel.
 - Contenu type du kit : aliments non périssables qui se mangent sans cuisson, ouvre-boîte manuel, couverture de survie, trousse de premiers secours, médicaments de base et traitements sur ordonnance pour au moins 3 jours, lampe torche avec piles, radio à piles ou à manivelle, numéros d'urgence notés sur papier, batterie externe chargée, photocopies des papiers importants dans une pochette étanche, un peu d'espèces en petites coupures. À adapter au foyer (bébé, personnes âgées, animaux).
-- Ranger le kit dans un endroit facile d'accès (pas au fond de la cave ni au grenier) et le vérifier au moins une fois par an (Géorisques) : dates de péremption, piles, médicaments.
+- Ranger le kit dans un endroit facile d'accès (pas au fond de la cave ni au grenier) et le vérifier deux fois par an (info.gouv.fr, « Se préparer à une situation d'urgence ») : dates de péremption des denrées et des médicaments, piles à remplacer.
 - Ce kit est une recommandation, pas une obligation légale.
 
 Chauffage, cuisine et éclairage en cas de coupure

@@ -3,7 +3,7 @@ title: "Stocker l'eau en appartement : combien, comment, et dans quoi (guide com
 seo_title: "Stocker l'Eau en Appartement : Guide Complet 2025"
 description: "Bouteilles, verre ou robinet ? Tout ce qu'il faut savoir pour constituer une vraie réserve d'eau potable en appartement. Guide pratique, sources vérifiées."
 date: 2025-11-01
-updated: 2026-10-30
+updated: 2026-11-13
 tags: ["eau", "stockage", "appartement", "kit-72h", "debutant"]
 rubrique: "manuel"
 image: "/images/articles/stocker-eau-appartement.jpg"
@@ -103,7 +103,7 @@ La rotation est la partie que tout le monde néglige, et c'est faute de rotation
 
 **Le stock tournant** : intégrez vos bouteilles de réserve dans votre consommation quotidienne. Vous buvez une bouteille de votre stock, vous la remplacez dans les courses suivantes. Le stock reste frais en permanence, vous ne perdez jamais rien.
 
-**La vérification annuelle** : une fois par an (pratique à retenir : la même date que la vérification du kit 72h), inspectez chaque pack et remplacez les bouteilles qui approchent de leur date limite.
+**La vérification deux fois par an** : en même temps que celle du kit 72h, que info.gouv.fr recommande de contrôler deux fois par an, inspectez chaque pack et remplacez les bouteilles qui approchent de leur date limite.
 
 ## Par où commencer si vous partez de zéro
 
