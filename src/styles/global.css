@@ -267,7 +267,8 @@ footer {
   list-style: none;
 }
 
-.footer-links a {
+.footer-links a,
+.footer-links .lien-cookies {
   font-family: var(--font-nav);
   font-size: 0.8rem;
   color: var(--creme);
@@ -277,7 +278,11 @@ footer {
   transition: opacity 0.2s;
 }
 
-.footer-links a:hover { opacity: 1; color: var(--ambre); }
+.footer-links a:hover,
+.footer-links .lien-cookies:hover { opacity: 1; color: var(--ambre); }
+
+/* « Gérer mes cookies » : un bouton (il rouvre le bandeau) qui a l'air d'un lien du pied de page. */
+.footer-links .lien-cookies { background: none; border: 0; padding: 0.3rem 0; cursor: pointer; }
 
 .footer-copy { font-size: 0.75rem; color: var(--gris-texte); }
 
@@ -478,6 +483,7 @@ button {
 .mission-lien,
 .etape-lien,
 .footer-links a,
+.footer-links .lien-cookies,
 .article-breadcrumb a {
   padding-block: 0.3rem;
 }

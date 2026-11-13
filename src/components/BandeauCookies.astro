@@ -1,0 +1,114 @@
+---
+// Bandeau de consentement « maison », limité à la mesure d'audience (Google Analytics).
+// Mis en place tant que le site n'est pas validé par AdSense (le bandeau RGPD de Google ne s'affiche pas).
+// À RETIRER dès que le bandeau de Google s'affiche, pour ne jamais en montrer deux (voir CLAUDE.md).
+// Règles CNIL : refuser aussi simple qu'accepter (deux boutons identiques), choix gardé 6 mois,
+// modifiable à tout moment (bouton « Gérer mes cookies » du pied de page).
+---
+<section id="bandeau-cookies" class="bandeau-cookies" aria-labelledby="bandeau-cookies-titre" hidden>
+  <h2 id="bandeau-cookies-titre">Mesure d'audience</h2>
+  <p>On aimerait compter les visites avec Google Analytics (cookies de mesure, aucune publicité ciblée) pour savoir quelles fiches te servent vraiment. Ton choix est gardé 6 mois, et tu peux en changer à tout moment avec « Gérer mes cookies », en bas de page. <a href="/politique-confidentialite">En savoir plus</a></p>
+  <div class="bandeau-cookies-boutons">
+    <button type="button" data-choix="oui">Accepter</button>
+    <button type="button" data-choix="non">Refuser</button>
+  </div>
+</section>
+
+<script>
+  const CLE = 'sx-consentement';
+  const SIX_MOIS = 182 * 864e5;
+  const bandeau = document.getElementById('bandeau-cookies') as HTMLElement | null;
+  const gtag = (...args: unknown[]) => (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag?.(...args);
+
+  function lire(): { mesure: boolean; date: number } | null {
+    try {
+      const c = JSON.parse(localStorage.getItem(CLE) || 'null');
+      return c && Date.now() - c.date < SIX_MOIS ? c : null;
+    } catch { return null; }
+  }
+
+  function effacerCookiesGA() {
+    for (const morceau of document.cookie.split(';')) {
+      const nom = morceau.split('=')[0].trim();
+      if (!nom.startsWith('_ga')) continue;
+      for (const domaine of ['', `; domain=${location.hostname}`, `; domain=.${location.hostname.replace(/^www\./, '')}`]) {
+        document.cookie = `${nom}=; Max-Age=0; path=/${domaine}`;
+      }
+    }
+  }
+
+  function choisir(mesure: boolean) {
+    const avant = lire();
+    try { localStorage.setItem(CLE, JSON.stringify({ mesure, date: Date.now() })); } catch { /* stockage indisponible */ }
+    gtag('consent', 'update', { analytics_storage: mesure ? 'granted' : 'denied' });
+    if (mesure && !avant?.mesure) gtag('event', 'page_view');
+    if (!mesure) effacerCookiesGA();
+    if (bandeau) bandeau.hidden = true;
+  }
+
+  if (bandeau) {
+    if (!lire()) bandeau.hidden = false;
+    bandeau.querySelectorAll<HTMLButtonElement>('[data-choix]').forEach((b) =>
+      b.addEventListener('click', () => choisir(b.dataset.choix === 'oui')));
+    document.querySelectorAll<HTMLElement>('[data-gerer-cookies]').forEach((lien) =>
+      lien.addEventListener('click', () => {
+        bandeau.hidden = false;
+        bandeau.querySelector<HTMLButtonElement>('[data-choix]')?.focus();
+      }));
+  }
+</script>
+
+<style>
+  .bandeau-cookies {
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+    width: min(42rem, calc(100% - 2rem));
+    background: #111;
+    border: 1px solid var(--filet, #4a4a4a);
+    border-top: 3px solid var(--ambre, #F5A623);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+    padding: 1.1rem 1.25rem 1.2rem;
+    color: #F5E6C8;
+  }
+  .bandeau-cookies[hidden] { display: none; }
+  .bandeau-cookies h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--ambre, #F5A623);
+    margin: 0 0 0.5rem;
+  }
+  .bandeau-cookies p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0 0 1rem;
+  }
+  .bandeau-cookies a { color: var(--ambre, #F5A623); text-decoration: underline; text-underline-offset: 2px; }
+  .bandeau-cookies-boutons { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+  /* Deux boutons strictement identiques : refuser est aussi simple qu'accepter. */
+  .bandeau-cookies button {
+    flex: 1 1 8rem;
+    min-height: 44px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--ambre, #F5A623);
+    border: 2px solid var(--ambre, #F5A623);
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  .bandeau-cookies button:hover,
+  .bandeau-cookies button:focus-visible { background: var(--ambre, #F5A623); color: #0d0d0d; }
+  .bandeau-cookies button:focus-visible { outline: 2px solid #F5E6C8; outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { .bandeau-cookies button { transition: none; } }
+</style>

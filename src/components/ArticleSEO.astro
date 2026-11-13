@@ -1,4 +1,5 @@
 ---
+import ConsentementDefaut from './ConsentementDefaut.astro';
 import { imageDispo } from '../utils/image';
 import { existsSync } from 'node:fs';
 // Balises SEO communes à TOUS les articles (manuel, radar, cantine, atelier).
@@ -134,19 +135,7 @@ if (estRecette) {
   })} />
 )}
 
-<!-- Google Consent Mode v2 : tout est refusé par défaut, AVANT tout script Google.
-     Le bandeau CMP de Google (AdSense) met ensuite à jour le consentement. -->
-<script is:inline>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('consent', 'default', {
-    ad_storage: 'denied',
-    ad_user_data: 'denied',
-    ad_personalization: 'denied',
-    analytics_storage: 'denied',
-    wait_for_update: 500
-  });
-</script>
+<ConsentementDefaut />
 
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3877882826995901" crossorigin="anonymous"></script>

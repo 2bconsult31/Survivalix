@@ -1,4 +1,5 @@
 ---
+import BandeauCookies from './BandeauCookies.astro';
 // Pied de page du site, partagé par Layout.astro et les 4 gabarits d'article
 // (refonte UX, lot 8). Une seule source à modifier.
 ---
@@ -11,6 +12,7 @@
       <a href="/contact">Contact</a>
       <a href="/mentions-legales">Mentions légales</a>
       <a href="/politique-confidentialite">Confidentialité</a>
+      <button type="button" class="lien-cookies" data-gerer-cookies>Gérer mes cookies</button>
       <a href="/ressources">Lexique</a>
     </div>
     <div class="footer-social">
@@ -31,6 +33,8 @@
     <p class="footer-copy">© {new Date().getFullYear()} Survivalix — Tous droits réservés</p>
   </div>
 </footer>
+
+<BandeauCookies />
 
 <style>
   /* RÉSEAUX SOCIAUX — FOOTER */
