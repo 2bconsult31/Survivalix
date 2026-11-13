@@ -1,7 +1,7 @@
 ---
 title: "Le sac d'évacuation : tout ce qu'il faut mettre dedans (et ce qu'il ne faut pas)"
 seo_title: "Sac d'Évacuation : Que Mettre Dedans et Comment le Préparer"
-description: "Incendie, inondation, évacuation d'urgence : votre sac doit être prêt à partir à tout moment. Contenu, poids, erreurs à éviter. Guide sourcé, sans bullshit."
+description: "Incendie, inondation, évacuation d'urgence : votre sac doit être prêt à partir à tout moment. Contenu, poids, erreurs à éviter. Guide sourcé, sans détour."
 date: 2025-12-15
 updated: 2026-10-30
 tags: ["evacuation", "sac", "bug-out-bag", "urgence", "kit", "debutant"]

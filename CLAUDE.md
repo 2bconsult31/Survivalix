@@ -12,6 +12,7 @@
 - Le Bunker IA en ligne est api/bunker.js (fonction Vercel à la racine). Toute règle éditoriale s'applique aussi à son SYSTEM_PROMPT.
 - Toutes les balises SEO des articles (canonical, Open Graph, Twitter, JSON-LD, Consent Mode, AdSense, GA) sont dans src/components/ArticleSEO.astro, utilisé par les 4 layouts d'article. Toute correction SEO se fait à cet endroit unique.
 - Consent Mode v2 : consentement refusé par défaut avant tout script Google (src/components/ConsentementDefaut.astro). Tant qu'AdSense n'a pas validé le site, son bandeau RGPD ne s'affiche pas : un bandeau maison limité à la mesure d'audience (src/components/BandeauCookies.astro, lien « Gérer mes cookies » dans le pied de page) met à jour analytics_storage ; la publicité reste toujours refusée. Dès que le bandeau de Google s'affiche (site « Prêt » dans AdSense), retirer le bandeau maison, le lien « Gérer mes cookies » et la relecture du choix dans ConsentementDefaut.astro, puis mettre à jour la politique de confidentialité : jamais deux bandeaux.
+- Le bandeau BandeauCookies.astro est provisoire. Dès l'approbation AdSense, quand le bandeau certifié de Google (Confidentialité et messages) s'affiche, retirer BandeauCookies.astro et la lecture de sx-consentement dans ConsentementDefaut.astro, pour ne jamais afficher deux bandeaux. Retirer aussi le lien « Gérer mes cookies » du pied de page et mettre à jour la politique de confidentialité.
 - Tout nouveau champ de frontmatter doit être déclaré à 3 endroits : content.config.ts, le fichier [slug].astro et le layout.
 - Styles du contenu markdown : utiliser :global() dans .article-content. Grilles contenant du markdown : minmax(0, 1fr) au lieu de 1fr.
 - Avant toute pull request : lancer npx astro build et vérifier qu'il n'y a aucune erreur.
@@ -41,6 +42,7 @@
   4. Varier la longueur des phrases et la structure des paragraphes d'un article à l'autre. Pas de formules répétées entre articles (même accroche, même transition, même chute).
 - Frontmatter : seo_title de 60 caractères maximum, description de 140 à 160 caractères.
 - À chaque modification de fond d'un article, mettre à jour le champ updated.
+- Pas de grossièretés dans les textes du site.
 - Liens partagés (réseaux sociaux) : URL simple, jamais de paramètres UTM.
 
 ## Statistiques Google (lecture seule)

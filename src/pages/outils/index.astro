@@ -1,4 +1,5 @@
 ---
+import GuideOutil from '../../components/GuideOutil.astro';
 import PlancheOutil from '../../components/PlancheOutil.astro';
 import Layout from '../../layouts/Layout.astro';
 
@@ -7,7 +8,7 @@ const outils = [
     slug: "/outils/calculateur-stock-eau",
     planche: "eau" as const,
     titre: "Calculateur de stock d'eau",
-    description: "Combien de litres stocker selon le nombre de personnes, la durée visée et les usages. Le calcul qu'on aurait dû faire avant.",
+    description: "Combien de litres stocker selon le nombre de personnes et la durée visée. Le calcul qu'on aurait dû faire avant.",
     tags: ["eau", "stock", "calcul", "kit-72h"],
     temps: "2 min"
   },
@@ -23,7 +24,7 @@ const outils = [
     slug: "/outils/evaluateur-preparation",
     planche: "evaluateur" as const,
     titre: "Évaluateur de préparation",
-    description: "10 questions pour savoir où tu en es vraiment. Score sur 100, recommandations personnalisées. Honnête, sans bullshit.",
+    description: "10 questions pour savoir où tu en es vraiment. Score sur 100, recommandations personnalisées. Honnête, sans détour.",
     tags: ["score", "évaluation", "bilan", "préparation"],
     temps: "3 min"
   },
@@ -43,7 +44,7 @@ const outils = [
   <div class="manuel-header">
     <div class="manuel-header-label">// SECTION 04 //</div>
     <h1>Les Outils</h1>
-    <p class="manuel-header-desc">Calculateurs et outils interactifs pour préparer ton autonomie. Concrets, rapides, sans bullshit.</p>
+    <p class="manuel-header-desc">Calculateurs et outils interactifs pour préparer ton autonomie. Concrets, rapides, sans blabla.</p>
     <div class="manuel-stats">
       <span><strong>{outils.length}</strong> outil{outils.length > 1 ? 's' : ''} disponible{outils.length > 1 ? 's' : ''}</span>
     </div>
@@ -80,6 +81,30 @@ const outils = [
     ))}
   </div>
 
+  <GuideOutil id="guide-outils">
+    <h2 id="guide-outils-titre">Par quel outil commencer ?</h2>
+    <p>Quatre outils, quatre questions que tout le monde finit par se poser : combien d'eau garder chez soi, combien de nourriture, où on en est vraiment, et quoi rassembler concrètement. Ils se complètent, et l'ordre compte.</p>
+    <ul>
+      <li><strong>L'évaluateur de préparation</strong> d'abord : dix questions, trois minutes, et tu vois tout de suite ce qui manque.</li>
+      <li><strong>Les calculateurs d'eau et de rations</strong> ensuite, pour chiffrer ces manques selon la taille de ton foyer et la durée visée.</li>
+      <li><strong>Le générateur de kit 72 h</strong> pour finir : il transforme tout ça en liste à cocher, au fur et à mesure de tes achats.</li>
+    </ul>
+
+    <h3>D'où viennent les chiffres</h3>
+    <p>Chaque outil part d'un repère publié par un organisme officiel. Pour l'eau, c'est le kit d'urgence du Gouvernement : 6 litres par personne pour 72 heures. Pour les calories, ce sont les repères de l'ANSES pour les adultes et la table de composition Ciqual pour les aliments. Les listes s'appuient sur le guide « Tous responsables » publié par le SGDSN en novembre 2025, sur les recommandations de la Sécurité civile et sur celles de la Croix-Rouge française. Quand un outil s'écarte d'un repère officiel (une durée plus longue que 72 heures, un niveau d'activité), la page le dit.</p>
+
+    <h3>Ce qu'ils ne font pas</h3>
+    <p>Ces outils donnent des ordres de grandeur pour s'organiser à l'avance. Ils ne remplacent ni un avis médical (traitement, grossesse, allergie, nourrisson), ni les consignes de ta préfecture le jour où une alerte tombe. Ils ne savent rien non plus des risques propres à ta commune : pour ça, regarde notre fiche sur les <a href="/manuel/risques-pres-de-chez-soi">risques près de chez toi</a>.</p>
+    <p>Côté données, les calculs se font dans ton navigateur et rien n'est envoyé. Seul le générateur de kit garde tes cases cochées, sur ton appareil uniquement.</p>
+
+    <h3>Pour aller plus loin</h3>
+    <ul>
+      <li><a href="/manuel/kit-urgence-72h">Le guide complet du kit d'urgence 72 h</a></li>
+      <li><a href="/manuel/stocker-eau-appartement">Stocker de l'eau en appartement</a></li>
+      <li><a href="/manuel/liste-courses-prepper-debutant">La liste de courses pour débuter</a></li>
+      <li><a href="/survivant">Le quiz « Quel survivant es-tu ? »</a>, pour la partie ludique, et <a href="/bunker">le Bunker</a> pour une question précise.</li>
+    </ul>
+  </GuideOutil>
 </Layout>
 
 <style>

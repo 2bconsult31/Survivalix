@@ -1,4 +1,5 @@
 ---
+import GuideOutil from '../../components/GuideOutil.astro';
 import Layout from '../../layouts/Layout.astro';
 
 const suggestions = [
@@ -95,7 +96,27 @@ const suggestions = [
 
   </section>
 
+  <GuideOutil id="guide-bunker" class="bunker-guide">
+    <h2 id="guide-bunker-titre">Ce que fait le Bunker</h2>
+    <p>Le Bunker est un assistant conversationnel : tu lui poses une question de préparation (kit 72 h, stock d'eau, coupure de courant, alerte météo, premiers gestes) et il répond en langage simple. Il fonctionne avec un modèle d'intelligence artificielle, Claude, de la société Anthropic, encadré par des consignes rédigées par Survivalix.</p>
+    <p>Ces consignes lui demandent de s'appuyer d'abord sur les sources officielles françaises : SGDSN et son guide « Tous responsables », Sécurité civile, ministères, préfectures, Santé publique France, ANSES, Météo-France, et la Croix-Rouge française. Pour une alerte en cours ou une information datée, il fait une recherche sur le web en privilégiant ces sources. Sur un conseil de sécurité, il doit retenir la consigne la plus prudente et ne jamais inventer un chiffre.</p>
+
+    <h3>Ce qu'il ne fait pas</h3>
+    <ul>
+      <li><strong>Il n'est pas un service d'urgence.</strong> Il ne prévient personne, ne sait pas où tu es et ne voit pas ta situation. En cas d'urgence vitale, appelle le 112, le 15 (SAMU) ou le 18 (pompiers). Pour les personnes sourdes ou malentendantes, le 114 permet de joindre les secours par écrit. Notre fiche sur les <a href="/manuel/numeros-urgence-france-lequel-appeler">numéros d'urgence</a> t'aide à choisir.</li>
+      <li><strong>Il ne remplace pas un médecin</strong> ni une formation aux premiers secours, et il ne pose aucun diagnostic.</li>
+      <li><strong>Il peut se tromper.</strong> Comme toute intelligence artificielle, il lui arrive de produire une réponse inexacte. Pour une décision importante, vérifie auprès de la source officielle qu'il cite. Pendant une alerte, ce sont les consignes de ta préfecture et la <a href="/radar/vigilance-meteo-comprendre-systeme-alertes">vigilance de Météo-France</a> qui font foi.</li>
+    </ul>
+
+    <h3>Tes données</h3>
+    <p>Tes questions passent par le serveur du site, puis sont transmises à Anthropic pour générer la réponse. Survivalix ne stocke pas les conversations. L'historique reste dans ton navigateur pendant environ 3 heures, puis s'efface ; le bouton « Nouvelle conversation » l'efface tout de suite. Pour éviter les abus, le nombre de questions est limité à 10 par minute et 60 par heure, grâce à un compteur temporaire lié à ton adresse IP. Évite d'écrire ton nom, ton adresse ou des informations de santé qui permettraient de t'identifier. Le détail se trouve dans la <a href="/politique-confidentialite">politique de confidentialité</a>.</p>
+
+    <h3>Bien démarrer</h3>
+    <p>Les suggestions proposées sous le champ de saisie sont un bon point de départ. Si tu préfères lire à ton rythme, commence par <a href="/commencer-ici">Commencer ici</a> ou par <a href="/manuel/kit-urgence-72h">le guide du kit 72 h</a>.</p>
+  </GuideOutil>
+
 </Layout>
+
 
 <script is:inline>
   const STORAGE_KEY = 'survivalix_bunker_chat';
@@ -350,6 +371,9 @@ const suggestions = [
   .bunker[data-state="accueil"] .bunker-toolbar,
   .bunker[data-state="accueil"] .bunker-chat,
   .bunker[data-state="accueil"] .bunker-status { display: none; }
+
+  /* Mode d'emploi sous l'outil : seulement à l'accueil, jamais pendant une conversation */
+  .bunker[data-state="conversation"] ~ :global(.bunker-guide) { display: none; }
 
   .bunker[data-state="conversation"] .bunker-hero,
   .bunker[data-state="conversation"] .bunker-suggestions { display: none; }
