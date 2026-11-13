@@ -11,7 +11,7 @@
 - Refonte UX en cours : lire docs/refonte-ux.md avant toute modification graphique. Quand Boris écrit « Lot suivant », reprendre le premier lot non terminé.
 - Le Bunker IA en ligne est api/bunker.js (fonction Vercel à la racine). Toute règle éditoriale s'applique aussi à son SYSTEM_PROMPT.
 - Toutes les balises SEO des articles (canonical, Open Graph, Twitter, JSON-LD, Consent Mode, AdSense, GA) sont dans src/components/ArticleSEO.astro, utilisé par les 4 layouts d'article. Toute correction SEO se fait à cet endroit unique.
-- Consent Mode v2 : consentement refusé par défaut avant tout script Google ; le bandeau CMP de Google met à jour le consentement.
+- Consent Mode v2 : consentement refusé par défaut avant tout script Google (src/components/ConsentementDefaut.astro). Tant qu'AdSense n'a pas validé le site, son bandeau RGPD ne s'affiche pas : un bandeau maison limité à la mesure d'audience (src/components/BandeauCookies.astro, lien « Gérer mes cookies » dans le pied de page) met à jour analytics_storage ; la publicité reste toujours refusée. Dès que le bandeau de Google s'affiche (site « Prêt » dans AdSense), retirer le bandeau maison, le lien « Gérer mes cookies » et la relecture du choix dans ConsentementDefaut.astro, puis mettre à jour la politique de confidentialité : jamais deux bandeaux.
 - Tout nouveau champ de frontmatter doit être déclaré à 3 endroits : content.config.ts, le fichier [slug].astro et le layout.
 - Styles du contenu markdown : utiliser :global() dans .article-content. Grilles contenant du markdown : minmax(0, 1fr) au lieu de 1fr.
 - Avant toute pull request : lancer npx astro build et vérifier qu'il n'y a aucune erreur.
@@ -49,7 +49,7 @@
 - « Bilan hebdo » : lancer node scripts/stats/rapport.mjs hebdo (7 jours contre 7, 28 jours contre 28, top pages et requêtes, indexation, Analytics), puis livrer le rapport dans la session avec 3 actions prioritaires.
 - « Opportunités du mois » : lancer node scripts/stats/rapport.mjs opportunites (requêtes en position 8 à 40, taux de clic faibles, requêtes sans article), puis livrer le rapport dans la session avec 3 actions prioritaires.
 - Les rapports sont écrits dans rapports-stats/ (exclu par le .gitignore) : ne jamais les commiter.
-- Lecture d'Analytics : aucune donnée du 14 octobre au 12 novembre 2026 (Consent Mode actif sans bandeau ; message RGPD publié dans AdSense, Confidentialité et messages, le 12 novembre 2026). Seuls les visiteurs qui acceptent sont comptés : Search Console reste la référence pour le trafic. Si Analytics retombe à 0, vérifier d'abord que le bandeau s'affiche en navigation privée.
+- Lecture d'Analytics : aucune donnée du 14 octobre au 12 novembre 2026 (Consent Mode actif sans bandeau ; message RGPD publié dans AdSense le 12 novembre 2026 mais non affiché tant que le site n'est pas validé ; bandeau maison en ligne le 13 novembre 2026). Seuls les visiteurs qui acceptent sont comptés : Search Console reste la référence pour le trafic. Si Analytics retombe à 0, vérifier d'abord que le bandeau s'affiche en navigation privée.
 
 ## Images
 - Style : illustration rétro années 50, trait dense, hachures fines, ombrage travaillé, halos lumineux chauds, grain papier, halftone, contours noirs, palette ambre #F5A623, kaki #6B7C45, noir #0d0d0d, crème #F5E6C8, rouge brique. Objets et décors modernes français.

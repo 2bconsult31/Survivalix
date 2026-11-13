@@ -1,0 +1,23 @@
+---
+// Google Consent Mode v2 : tout est refusé par défaut, AVANT tout script Google.
+// Puis, si le visiteur a déjà accepté la mesure d'audience dans notre bandeau (BandeauCookies.astro)
+// il y a moins de 6 mois, on l'applique tout de suite. La publicité reste toujours refusée.
+// Partagé par Layout.astro et ArticleSEO.astro : une seule source.
+---
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    wait_for_update: 500
+  });
+  try {
+    var choix = JSON.parse(localStorage.getItem('sx-consentement') || 'null');
+    if (choix && choix.mesure === true && Date.now() - choix.date < 182 * 864e5) {
+      gtag('consent', 'update', { analytics_storage: 'granted' });
+    }
+  } catch (e) {}
+</script>
