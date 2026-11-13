@@ -16,7 +16,7 @@ En juin 2026, la France a vécu quelque chose d'inédit : une canicule précoce,
 
 Le problème : Météo-France le constate, les canicules sont devenues nettement plus fréquentes et plus intenses. Ce qui était exceptionnel revient de plus en plus souvent. Et la plupart des Français, comme leurs logements, n'y sont pas préparés.
 
-## 2026 — la canicule n'est plus exceptionnelle
+## 2026 : la canicule n'est plus exceptionnelle
 
 Il y a à peine 50 ans, la même canicule de juin 2026 aurait affiché 3,5 °C de moins. Ce chiffre résume à lui seul pourquoi les records tombent les uns après les autres. Le changement climatique rend les canicules plus fréquentes, plus longues et plus intenses.
 
@@ -24,7 +24,7 @@ En juillet 2026, face à la répétition des vagues de chaleur, le gouvernement 
 
 Traduction concrète pour un citoyen ordinaire : l'État s'organise. Mais dans les premières heures d'un épisode caniculaire, vous êtes seul avec votre appartement, vos voisins vulnérables, et ce que vous avez préparé, ou pas.
 
-## L'îlot de chaleur urbain — pourquoi la ville tue plus que la campagne
+## L'îlot de chaleur urbain : pourquoi la ville tue plus que la campagne
 
 L'îlot de chaleur urbain, c'est l'écart de température nocturne entre la ville, plus chaude, et la campagne alentour, plus fraîche. Trop bétonnée, la ville part avec un handicap : des sols qui retiennent peu d'eau, peu d'arbres pour faire de l'ombre, des matériaux comme le béton ou le goudron qui emmagasinent la chaleur, et des bâtiments si serrés que l'air circule mal.
 
@@ -48,7 +48,7 @@ Pas les conseils génériques qu'on ressort chaque été. Les gestes qui font r�
 
 **Mouiller ses poignets et son cou.** Les zones où les vaisseaux sanguins sont proches de la peau (poignets, tempes, cou, creux des coudes) : y passer de l'eau fraîche rafraîchit le sang qui circule. Simple, efficace, zéro équipement.
 
-## Votre appartement — le transformer en refuge frais
+## Votre appartement : le transformer en refuge frais
 
 La stratégie contre-intuitive qui fonctionne : fenêtres fermées toute la journée, grandes ouvertes la nuit, quand l'air extérieur se rafraîchit. L'instinct est d'ouvrir pour faire entrer de l'air. En canicule, l'air extérieur est plus chaud que l'air intérieur : ouvrir les fenêtres en journée revient à chauffer l'appartement.
 
@@ -61,7 +61,7 @@ Appartement sous les toits, maison mal isolée, chambre plein sud : pendant une 
 
 **Un ventilateur ne refroidit pas l'air.** Il déplace l'air, ce qui accélère l'évaporation de la sueur et crée une sensation de fraîcheur. Au-delà de 40°C, un ventilateur peut devenir contre-productif en soufflant de l'air plus chaud que la température corporelle. Un ventilateur + un bol d'eau froide ou de glaçons devant = refroidissement par évaporation, beaucoup plus efficace.
 
-## Les personnes à risque — qui surveiller en priorité
+## Les personnes à risque : qui surveiller en priorité
 
 Le coup de chaleur, c'est l'hyperthermie dans sa forme la plus grave : le corps n'arrive plus à réguler sa température, qui peut passer au-dessus de 40 °C. Urgence vitale.
 
@@ -71,7 +71,7 @@ Garder un œil sur les plus fragiles : appeler régulièrement les proches âgé
 
 **Le numéro canicule :** le numéro vert "Canicule info service" est réactivé chaque été par le gouvernement. Gratuit, disponible en journée, pour toute question ou signalement.
 
-## Le coup de chaleur — reconnaître et agir vite
+## Le coup de chaleur : reconnaître et agir vite
 
 Ce qui doit alerter : plus de 40 °C de température corporelle, peau rouge et sèche (la personne ne transpire plus), confusion, violents maux de tête, nausées, parfois perte de connaissance. Au moindre doute, appelez tout de suite le 15 (SAMU). En attendant les secours : allongez la personne au frais, mouillez-la généreusement d'eau fraîche sur tout le corps et faites-lui de l'air. C'est le geste le plus important.
 
@@ -99,4 +99,4 @@ Si vous avez des proches âgés ou vulnérables dans votre entourage : créez d�
 
 ---
 
-*Sources : Météo-France (dont le « Bilan climatique de juin 2026 »), Santé publique France, info.gouv.fr — "Canicule, conseils et mesures" (juillet 2026), ministère de l'Intérieur, ELSAN, Greenly, adaptation-changement-climatique.gouv.fr.*
+*Sources : Météo-France (dont le « Bilan climatique de juin 2026 »), Santé publique France, info.gouv.fr, "Canicule, conseils et mesures" (juillet 2026), ministère de l'Intérieur, ELSAN, Greenly, adaptation-changement-climatique.gouv.fr.*

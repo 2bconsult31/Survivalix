@@ -63,7 +63,7 @@ C'est la catégorie la plus sous-estimée, et la plus importante pour la suite. 
 
 Une trousse de premiers secours compacte : compresses stériles, pansements variés, désinfectant, sparadrap, gants nitrile, coussin hémostatique (notre guide de la [trousse de premiers secours maison](/atelier/trousse-premiers-secours) détaille quoi y mettre et quoi laisser de côté). Et **vos médicaments sur ordonnance** pour au moins 3 jours : c'est souvent la chose la plus difficile à récupérer en urgence.
 
-## Le sac — comment bien le choisir
+## Le sac : comment bien le choisir
 
 Oubliez le sac taillé pour Instagram. Ce qu'il faut :
 
@@ -77,7 +77,7 @@ Oubliez le sac taillé pour Instagram. Ce qu'il faut :
 
 **Emplacement :** rangez le sac sur le chemin de la sortie que vous emprunteriez en cas de départ précipité : à une patère près de l'entrée, dans le placard d'à côté, ou dans votre chambre si sa fenêtre peut servir d'issue.
 
-## Le poids — léger avant tout
+## Le poids : léger avant tout
 
 C'est le piège dans lequel tombent presque tous les débutants : un sac trop lourd ne sert à rien si vous ne pouvez pas le porter longtemps.
 
@@ -129,4 +129,4 @@ Pas besoin de tout acheter d'un coup : constituez votre sac catégorie par caté
 
 Prévoyez un sac par adulte, et un petit sac à dos par enfant s'il est en âge de le porter, avec son doudou, une tenue de rechange et un en-cas. Les adultes portent l'essentiel : de l'eau pour toute la famille, les médicaments et ordonnances des enfants, leur carnet de santé avec les papiers, des vêtements chauds et de quoi les occuper. Pour un bébé, ajoutez le lait infantile, les couches et le nécessaire de change, comme détaillé dans notre guide du [kit d'urgence bébé](/manuel/kit-urgence-bebe-nourrisson). Gardez les sacs légers : avec des enfants à porter ou à tenir par la main, chaque kilo compte.
 
-*Sources : SGDSN/ORSEC, Gouvernement — kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Croix-Rouge française (« Le sac d'urgence »), FEMA, Ready.gov, NoPanic.fr, Mouton-Résilient.com, Urban Survival District, La Débrouille, Survivalisme-France.com.*
+*Sources : SGDSN/ORSEC, Gouvernement, kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Croix-Rouge française (« Le sac d'urgence »), FEMA, Ready.gov, NoPanic.fr, Mouton-Résilient.com, Urban Survival District, La Débrouille, Survivalisme-France.com.*

@@ -28,7 +28,7 @@ Ce que beaucoup ignorent : filtrer et purifier sont deux opérations différente
 
 En clair : un filtre seul ne suffit pas toujours. Un traitement chimique seul ne suffit pas toujours. La règle d'or : on filtre d'abord, on désinfecte ensuite. Débarrassée de ses particules, l'eau se désinfecte beaucoup mieux, que ce soit par ébullition, aux UV ou avec un traitement chimique.
 
-## Méthode 1 — L'ébullition (la plus fiable)
+## Méthode 1 : l'ébullition (la plus fiable)
 
 C'est la méthode la plus ancienne de l'humanité et la plus fiable toutes conditions confondues. En cas d'urgence, la consigne des agences régionales de santé (ARS) est claire : porter l'eau à gros bouillons et l'y maintenir **5 minutes, dans un récipient couvert**.
 
@@ -46,7 +46,7 @@ C'est la méthode la plus ancienne de l'humanité et la plus fiable toutes condi
 
 **Inconvénients :** nécessite une source de chaleur, consomme du carburant, ne traite pas les polluants chimiques, laisse un goût "plat" (l'oxygène dissous disparaît à l'ébullition : agite l'eau refroidie ou verse-la d'un récipient à l'autre pour le retrouver).
 
-## Méthode 2 — Les pastilles de purification
+## Méthode 2 : les pastilles de purification
 
 La solution la plus légère à transporter. Quelques grammes au fond de ta poche, et c'est peut-être ce qui te tirera d'affaire : aucun traitement n'est plus léger à glisser dans un sac de survie.
 
@@ -67,7 +67,7 @@ Les deux types de pastilles qu'on trouve en France :
 
 **Inconvénients :** elles perdent en efficacité dans une eau très froide ou trouble, d'où l'importance du pré-filtrage. Et une eau traitée chimiquement ne se garde en général que quelques jours.
 
-## Méthode 3 — Le filtre portable
+## Méthode 3 : le filtre portable
 
 Une paille filtrante type LifeStraw arrête les bactéries et les sédiments, mais pas les virus : pour eux, il faut un traitement chimique ou des UV. Ce point est crucial et souvent mal compris : un filtre seul ne rend pas l'eau totalement sûre dans tous les contextes.
 
@@ -89,7 +89,7 @@ Une paille filtrante type LifeStraw arrête les bactéries et les sédiments, ma
 
 **Inconvénients :** ne filtre pas les virus (solution : combiner avec pastilles), cartouche à changer selon usage, inutilisable si gelée.
 
-## Méthode 4 — La désinfection UV
+## Méthode 4 : la désinfection UV
 
 La méthode la plus high-tech et la plus rapide. Les stylos UV (SteriPen®, CrazyCap®) envoient des UV-C qui abîment l'ADN des micro-organismes : ils ne peuvent plus se multiplier. Le traitement est rapide ; sa durée dépend du modèle.
 

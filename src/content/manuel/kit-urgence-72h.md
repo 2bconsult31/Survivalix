@@ -30,7 +30,7 @@ Tout le reste est secondaire. Garde ça en tête quand tu fais tes achats.
 
 ## La liste complète
 
-### Eau — La priorité que personne ne prend au sérieux
+### Eau : la priorité que personne ne prend au sérieux
 
 Jusqu'à ce que le robinet ne coule plus.
 
@@ -46,7 +46,7 @@ Pour connaître le total de ton foyer, notre [calculateur de stock d'eau](/outil
 **Le conseil qu'on ne te donne jamais :**
 Le repère officiel est un minimum. Si tu dois évacuer et marcher, tu boiras davantage : prévois de quoi traiter l'eau trouvée en route.
 
-### Nourriture — Manger sans cuisiner (et sans se déprimer)
+### Nourriture : manger sans cuisiner (et sans se déprimer)
 
 La contrainte : tout doit se consommer sans cuisson ni réfrigération. Contrainte réelle car en cas de coupure électrique prolongée, ton four vitrocéramique devient une table basse très chère.
 
@@ -67,7 +67,7 @@ Pour savoir quelle quantité prévoir selon la taille de ton foyer, notre [calcu
 **Pour les familles avec enfants :**
 Compotes en gourde, petits gâteaux, céréales sèches. Et prévois un peu de marge : un enfant qui court partout a vite faim.
 
-### Lumière & Énergie — Voir dans le noir c'est sous-coté
+### Lumière & Énergie : voir dans le noir c'est sous-coté
 
 Une coupure d'électricité la nuit, dans un appartement, c'est immédiatement déstabilisant. La lumière, c'est le premier truc qui change tout psychologiquement.
 
@@ -80,7 +80,7 @@ Une coupure d'électricité la nuit, dans un appartement, c'est immédiatement d
 **La batterie externe c'est la nouvelle lampe de poche.**
 Ton téléphone est ta carte, ta lampe de secours, ta radio et ton seul moyen de communication. Une batterie de 20 000 mAh permet plusieurs recharges complètes d'un smartphone, selon le modèle. Achète-en deux et garde-les chargées en permanence.
 
-### Santé & Premiers secours — Pas besoin d'être médecin
+### Santé & Premiers secours : pas besoin d'être médecin
 
 Le kit de base couvre l'essentiel des petits bobos du quotidien. Coupures, brûlures légères, fièvre, diarrhée : les situations les plus fréquentes en cas de crise ne nécessitent pas de chirurgie.
 
@@ -94,7 +94,7 @@ Le kit de base couvre l'essentiel des petits bobos du quotidien. Coupures, brûl
 - Pince à épiler (échardes, tiques)
 - Masques FFP2, utiles lors de crises spécifiques
 
-### Chaleur & Vêtements — L'ennemi invisible
+### Chaleur & Vêtements : l'ennemi invisible
 
 En ville, on pense rarement à l'hypothermie, et pourtant les autorités sanitaires rappellent que le froid touche d'abord les plus fragiles. Une nuit sans chauffage en hiver peut rapidement mettre en danger un enfant ou une personne âgée.
 
@@ -104,7 +104,7 @@ En ville, on pense rarement à l'hypothermie, et pourtant les autorités sanitai
 - Chaussures de marche solides, si tu dois évacuer à pied
 - Imperméable ou poncho
 
-### Documents — Ce qu'on oublie toujours
+### Documents : ce qu'on oublie toujours
 
 En cas d'évacuation, avoir ses documents sous la main évite les situations kafkaïennes qui transforment une crise en cauchemar administratif.
 
@@ -118,7 +118,7 @@ En cas d'évacuation, avoir ses documents sous la main évite les situations kaf
 **L'astuce numérique :**
 Scanne tous tes documents et enregistre-les dans un cloud sécurisé. Accessible depuis n'importe quel téléphone, même emprunté.
 
-### Divers — Petit mais indispensable
+### Divers : petit mais indispensable
 
 - Couteau multifonction type Swiss Army
 - Sifflet, pour signaler ta présence si tu es bloqué
@@ -175,4 +175,4 @@ Tu préfères une liste calculée pour ton foyer, enfants, bébé et animaux com
 
 Les autorités ne recommandent aucune marque de kit : elles donnent une liste à rassembler soi-même, ce qui reste l'option la plus compacte, puisque tu choisis chaque objet. Regroupe le tout dans un seul sac à dos ou une boîte, rangé près de l'entrée, jamais à la cave. Si tu tiens malgré tout à un kit tout prêt (on t'a dit plus haut ce qu'on pense de beaucoup de kits vendus en ligne), la Croix-Rouge française propose le sien : vérifie quand même son contenu par rapport à la liste officielle et complète-le (eau, médicaments, copies de papiers).
 
-*Sources : Ministère de la Transition écologique — « Préparer son kit d'urgence 72 h » ; Croix-Rouge française — « Catakit : préparer son sac d'urgence » ; Géorisques — « Kit 72h » ; info.gouv.fr — « Se préparer à une situation d'urgence » ; SGDSN — « Tous responsables » ; Croix-Rouge française ; Santé publique France — « Grand froid ».*
+*Sources : Ministère de la Transition écologique, « Préparer son kit d'urgence 72 h » ; Croix-Rouge française, « Catakit : préparer son sac d'urgence » ; Géorisques, « Kit 72h » ; info.gouv.fr, « Se préparer à une situation d'urgence » ; SGDSN, « Tous responsables » ; Croix-Rouge française ; Santé publique France, « Grand froid ».*

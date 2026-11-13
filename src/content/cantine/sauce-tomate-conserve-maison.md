@@ -50,7 +50,7 @@ Chaque été, des kilos de tomates finissent à la poubelle parce que le jardin 
 - Un entonnoir à conserve
 - Une pince à bocaux (ou de longues pinces de cuisine)
 
-## Les ingrédients (pour environ 1 bocal d'1 litre de sauce épaisse — multiplie tout si ton jardin déborde)
+## Les ingrédients (pour environ 1 bocal d'1 litre de sauce épaisse ; multiplie tout si ton jardin déborde)
 
 - Environ 3 kg de tomates bien mûres, à chair dense de préférence
 - Sel selon le goût (facultatif)
@@ -84,4 +84,4 @@ Une fois refroidis, vérifie la fermeture selon ton type de bocal : avec un couv
 
 Tes bocaux feront une base précieuse pour des pâtes, une ratatouille ou une base de plat mijoté, y compris en période où les rayons du supermarché seraient soudainement moins garnis. Étiquette-les, date-les, range-les dans un endroit frais, sec et à l'abri de la lumière, et consomme-les dans l'année pour profiter de leur meilleure qualité.
 
-*Sources : ANSES — « Botulisme : comment le prévenir ? » ; Santé Canada — « Conseils de salubrité sur la mise en conserve des aliments » ; USDA / National Center for Home Food Preservation — « Standard Tomato Sauce » et « Using Boiling Water Canners ».*
+*Sources : ANSES, « Botulisme : comment le prévenir ? » ; Santé Canada, « Conseils de salubrité sur la mise en conserve des aliments » ; USDA / National Center for Home Food Preservation, « Standard Tomato Sauce » et « Using Boiling Water Canners ».*

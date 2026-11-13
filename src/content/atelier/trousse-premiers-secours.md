@@ -26,7 +26,7 @@ Les kits du commerce ont deux défauts majeurs. D'abord, ils sont calibrés pour
 
 La solution : construire la tienne, pièce par pièce, avec une logique claire.
 
-## Les incontournables — ce que toute trousse doit avoir
+## Les incontournables : ce que toute trousse doit avoir
 
 ### Pour les plaies et coupures
 
@@ -70,7 +70,7 @@ C'est le niveau critique, celui qui fait la différence entre une situation stab
 
 **Épingles de sûreté** : pour fixer les bandes.
 
-## Le niveau supérieur — pour aller plus loin
+## Le niveau supérieur : pour aller plus loin
 
 Ces éléments ne sont pas obligatoires dans une trousse de base, mais ils font sens si tu veux couvrir les situations plus sérieuses ou si ta famille présente des risques spécifiques.
 
@@ -110,7 +110,7 @@ Le choix de la boîte compte plus qu'on ne le croit : elle doit rendre le matér
 
 **La fiche de synthèse :** colle à l'intérieur du couvercle les numéros d'urgence (15, 18, 112) et un aide-mémoire des 3 gestes essentiels : compression directe pour les hémorragies, refroidissement à l'eau pour les brûlures, position latérale de sécurité pour les personnes inconscientes qui respirent.
 
-## Le renouvellement — quand et comment
+## Le renouvellement : quand et comment
 
 Vérifie régulièrement les dates de péremption et l'état du matériel, comme le recommande la Croix-Rouge. La plupart des trousses ne sont jamais vérifiées jusqu'au jour où on en a besoin.
 
@@ -126,4 +126,4 @@ La liste complète tient sur une image : imprime-la, puis glisse-la dans ta trou
 
 [Télécharger la fiche technique](/ressources/atelier/trousse-premiers-secours.png)
 
-*Sources : Légifrance — arrêté du 24 décembre 1998 (thermomètres médicaux à mercure), DGSCGC — statistiques des services d'incendie et de secours (données 2025), Croix-Rouge française (« Trousse de secours : que doit-elle contenir ? », « Que faire en cas de brûlure ? »), Sifflet de Survie, La Boutique du Survivaliste, Matériel-Aventure, France-Pharmacies, HiFamilies.*
+*Sources : Légifrance, arrêté du 24 décembre 1998 (thermomètres médicaux à mercure), DGSCGC, statistiques des services d'incendie et de secours (données 2025), Croix-Rouge française (« Trousse de secours : que doit-elle contenir ? », « Que faire en cas de brûlure ? »), Sifflet de Survie, La Boutique du Survivaliste, Matériel-Aventure, France-Pharmacies, HiFamilies.*
