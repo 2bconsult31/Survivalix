@@ -3,7 +3,7 @@ title: "Kit d'urgence 72h : la liste complète (sourcée, sans blabla)"
 seo_title: "Kit d'urgence 72h : la liste complète et sourcée"
 description: "La liste complète du kit 72h, poste par poste et sourcée, plus une checklist à imprimer gratuitement. Pour être prêt sans jouer les survivalistes."
 date: 2025-01-15
-updated: 2026-10-30
+updated: 2026-11-13
 tags: ["debutant", "kit", "urgence", "appartement"]
 rubrique: "manuel"
 image: "/images/articles/kit-urgence-72h.jpg"
@@ -140,7 +140,7 @@ Les kits "survie" en ligne sont généralement sur-évalués et sous-équipés. 
 On l'a déjà dit. On le redit quand même. Parce que tu allais l'oublier.
 
 **4. Remplir le kit et ne plus y toucher.**
-Un kit non vérifié est un faux sentiment de sécurité. Vérifie-le au moins une fois par an : dates de péremption, piles, médicaments.
+Un kit non vérifié est un faux sentiment de sécurité. Vérifie-le deux fois par an, comme le recommande info.gouv.fr : dates de péremption des denrées et des médicaments, piles à remplacer.
 
 **5. Ne jamais tester.**
 Passe une nuit sans électricité chez toi volontairement. Tu vas découvrir ce qui manque avant que ça compte vraiment.

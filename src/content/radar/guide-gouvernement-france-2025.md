@@ -3,7 +3,7 @@ title: "On a lu le guide de survie du gouvernement français pour vous (et c'est
 seo_title: "Guide Survie Gouvernement Français 2025 : Tous Responsables SGDSN"
 description: "Le gouvernement français a publié son premier guide de survie en novembre 2025 : un kit 72h, des réflexes concrets. On l'a lu et décortiqué pour vous."
 date: 2025-12-01
-updated: 2026-10-17
+updated: 2026-11-13
 tags: ["guide", "gouvernement", "SGDSN", "kit-72h", "France", "radar"]
 rubrique: "radar"
 image: "/images/radar/guide-gouvernement-sgdsn.jpg"
@@ -36,7 +36,7 @@ C'est le cœur du guide. Trois priorités, dans l'ordre :
 
 **3. Rester informé et communiquer.** Une [radio à piles](https://www.amazon.fr/s?k=radio+a+piles+portable&tag=survivalix31-21) pour suivre les informations officielles, les numéros d'urgence notés sur papier (pas juste dans le téléphone), une batterie externe chargée.
 
-Le guide recommande également de placer le kit dans un endroit facile d'accès, ni au fond de la cave ni au grenier. Côté entretien, Géorisques conseille de le vérifier au moins une fois par an.
+Le guide recommande également de placer le kit dans un endroit facile d'accès, ni au fond de la cave ni au grenier. Côté entretien, la page « Se préparer à une situation d'urgence » d'info.gouv.fr demande de le vérifier deux fois par an : dates de péremption des denrées et des médicaments, et piles à remplacer.
 
 Rien de révolutionnaire pour quiconque s'intéresse au sujet. Mais c'est la première fois que l'État français valide officiellement ces recommandations dans un document grand public.
 
@@ -82,4 +82,4 @@ Le guide "Tous responsables" est disponible gratuitement en PDF sur le site offi
 
 ---
 
-*Source principale : SGDSN — "Tous responsables", publié le 20 novembre 2025 (sgdsn.gouv.fr, page « Guide "Tous responsables" »). Informations complémentaires : MSB (Suède) — brochure « Om krisen eller kriget kommer », 2018, ministère de l'Intérieur, ministère de la Transition écologique, info.gouv.fr.*
+*Source principale : SGDSN — "Tous responsables", publié le 20 novembre 2025 (sgdsn.gouv.fr, page « Guide "Tous responsables" »). Informations complémentaires : info.gouv.fr (« Se préparer à une situation d'urgence »), MSB (Suède) — brochure « Om krisen eller kriget kommer », 2018, ministère de l'Intérieur, ministère de la Transition écologique, info.gouv.fr.*

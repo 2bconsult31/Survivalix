@@ -3,7 +3,7 @@ title: "Le sac d'évacuation : tout ce qu'il faut mettre dedans (et ce qu'il ne 
 seo_title: "Sac d'Évacuation : Que Mettre Dedans et Comment le Préparer"
 description: "Incendie, inondation, évacuation d'urgence : votre sac doit être prêt à partir à tout moment. Contenu, poids, erreurs à éviter. Guide sourcé, sans détour."
 date: 2025-12-15
-updated: 2026-10-30
+updated: 2026-11-13
 tags: ["evacuation", "sac", "bug-out-bag", "urgence", "kit", "debutant"]
 rubrique: "manuel"
 image: "/images/articles/sac-evacuation.jpg"
@@ -110,7 +110,7 @@ La hiérarchie du poids :
 
 Un sac bouclé ne doit pas devenir un sac oublié : rouvrez-le régulièrement. Le passer en revue vous remet son contenu en tête, et c'est utile, parce qu'avec le temps on finit par ne plus savoir ce qu'il y a dedans.
 
-**Check annuel minimum :**
+**Vérification deux fois par an** (le rythme recommandé par info.gouv.fr pour le kit d'urgence) :
 - Vérifier les dates de péremption (nourriture, médicaments, pastilles de purification)
 - Recharger la batterie externe
 - Vérifier l'état des piles (lampe frontale, radio)
