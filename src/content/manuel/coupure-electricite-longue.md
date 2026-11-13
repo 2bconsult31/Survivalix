@@ -18,7 +18,7 @@ Le plus souvent, c'est la météo qui coupe le courant : une tempête, une vague
 
 Ce guide couvre les deux scénarios : ce qu'il faut faire pendant une coupure, et ce qu'il faut préparer avant pour ne jamais être pris au dépourvu.
 
-## Les premières minutes — ce qu'il faut faire immédiatement
+## Les premières minutes : ce qu'il faut faire immédiatement
 
 **1. Identifier l'origine de la panne.** Vérifiez d'abord votre tableau électrique : un disjoncteur déclenché est une panne locale que vous pouvez résoudre vous-même. Si le tableau est normal, regardez par la fenêtre : les lampadaires sont-ils éteints ? Les voisins sont-ils dans le noir ? Tant que vous ignorez d'où vient la coupure, une seule question compte : le problème s'arrête-t-il à votre porte, ou touche-t-il tout le quartier ?
 
@@ -28,7 +28,7 @@ Ce guide couvre les deux scénarios : ce qu'il faut faire pendant une coupure, e
 
 **4. Débrancher les appareils sensibles.** Ordinateurs, télévisions, box internet : les surtensions au moment du retour du courant peuvent endommager les équipements électroniques. Débranchez-les ou activez votre parasurtenseur si vous en avez un.
 
-## Éclairage — ne pas se retrouver dans le noir
+## Éclairage : ne pas se retrouver dans le noir
 
 Le noir total, c'est ce qui entame le moral le plus vite quand le courant saute. L'éclairage de secours n'a donc rien d'un gadget : c'est la base.
 
@@ -42,7 +42,7 @@ Les solutions par ordre de praticité :
 
 **Conseil à contre-courant :** si la coupure s'installe dans la durée et que l'ambiance se tend autour de vous, occultez vos fenêtres à la tombée de la nuit. Être la seule fenêtre éclairée à des kilomètres, c'est le meilleur moyen de s'attirer de gros ennuis.
 
-## Alimentation — que faire de son frigo et congélateur
+## Alimentation : que faire de son frigo et congélateur
 
 C'est souvent la première source de stress lors d'une coupure longue. Voici ce que les données disent réellement.
 
@@ -58,7 +58,7 @@ C'est souvent la première source de stress lors d'une coupure longue. Voici ce 
 
 **Jamais de réchaud dans le logement :** réchaud de camping, barbecue, appareil au gaz ou au charbon de bois ne s'utilisent jamais à l'intérieur, même en aérant. Ils dégagent du monoxyde de carbone, un gaz toxique, invisible et inodore. C'est la consigne d'Enedis en cas de coupure.
 
-## Chauffage — l'hypothermie en appartement, ça existe
+## Chauffage : l'hypothermie en appartement, ça existe
 
 En hiver, c'est le point le plus critique, et le plus sous-estimé en ville.
 
@@ -72,7 +72,7 @@ Habillez-vous en couches : sous-vêtements thermiques, pull en laine, couverture
 
 **Ce qu'il ne faut jamais faire :** chauffer le logement avec un appareil à combustion. Chauffage d'appoint à gaz ou à pétrole, barbecue, braséro, réchaud de camping : jamais à l'intérieur, même en aérant. Le monoxyde de carbone qu'ils dégagent est inodore, incolore, et mortel (tout ce qu'il faut savoir pour le repérer est dans notre fiche [monoxyde de carbone](/manuel/monoxyde-carbone-logement)). Pour tenir au chaud, la seule bonne stratégie reste celle du dessus : vêtements chauds en couches, couvertures, et tout le monde dans une seule pièce.
 
-## Communication — rester informé et joignable
+## Communication : rester informé et joignable
 
 C'est le point qu'on néglige jusqu'au moment où on en a besoin.
 
@@ -109,4 +109,4 @@ Une coupure d'électricité qui dure plus de 72 heures change de catégorie et d
 
 Le kit 72h est pensé pour cette durée : il intègre éclairage, communication, alimentation sans frigo et de quoi rester au chaud. Si vous l'avez, vous traversez ces 72 premières heures sans stress. Si vous ne l'avez pas, c'est le moment de le constituer.
 
-*Sources : Enedis (« Je n'ai plus d'électricité : les bons gestes à adopter »), Santé publique France (« Comment réduire le risque d'intoxication au monoxyde de carbone ? »), Gouvernement — kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Generali, Résilience-Urbaine.com, Mouton-Résilient.com, Darty, EcoFlow.*
+*Sources : Enedis (« Je n'ai plus d'électricité : les bons gestes à adopter »), Santé publique France (« Comment réduire le risque d'intoxication au monoxyde de carbone ? »), Gouvernement, kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Generali, Résilience-Urbaine.com, Mouton-Résilient.com, Darty, EcoFlow.*

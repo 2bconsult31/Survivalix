@@ -32,7 +32,7 @@ Pour tenir plus longtemps, le calcul ne change pas : 2 litres par personne et pa
 | 1 semaine (2 L × 7 jours) | 14L | 28L | 56L |
 | 2 semaines (2 L × 14 jours) | 28L | 56L | 112L |
 
-## Dans quoi stocker — le guide des contenants
+## Dans quoi stocker : le guide des contenants
 
 Le choix du contenant est aussi important que la quantité stockée. L'eau elle-même ne se périme pas : ce qui s'abîme, c'est le contenant et la qualité microbiologique.
 
@@ -137,4 +137,4 @@ Le repère officiel est de 6 litres par personne pour 72 heures, soit 2 litres p
 
 Gardez des bouteilles du commerce fermées, dans un endroit frais et sombre : sous un lit, au fond d'un placard ou d'une armoire, recouvertes d'un drap ou d'un carton. Tenez-les à distance des sources de chaleur et des produits ménagers, et ne les posez pas directement sur un sol froid. Elles se conservent jusqu'à la date imprimée : consommez les plus anciennes et remplacez-les au fur et à mesure.
 
-*Sources : SGDSN — "Tous responsables" (2025), ANSES (« Bonnes pratiques de consommation de l'eau du robinet »), ARS Guadeloupe (« Procédure de désinfection de l'eau hors réseau », 2017), ARS Mayotte et ARS Provence-Alpes-Côte d'Azur (ébullition 5 minutes à couvert), Gouvernement — kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Résilience-Urbaine.com, Mouton-Résilient.com, Urban Survival District, La Survie.*
+*Sources : SGDSN, "Tous responsables" (2025), ANSES (« Bonnes pratiques de consommation de l'eau du robinet »), ARS Guadeloupe (« Procédure de désinfection de l'eau hors réseau », 2017), ARS Mayotte et ARS Provence-Alpes-Côte d'Azur (ébullition 5 minutes à couvert), Gouvernement, kit d'urgence 72 h (info.gouv.fr, georisques.gouv.fr), Résilience-Urbaine.com, Mouton-Résilient.com, Urban Survival District, La Survie.*

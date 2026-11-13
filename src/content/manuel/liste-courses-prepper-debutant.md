@@ -22,7 +22,7 @@ Et si tu découvres tout juste le sujet, fais d'abord un tour sur notre page [Pa
 
 La logique reste la même que celle qu'on détaille dans notre [guide du kit 72h](/manuel/kit-urgence-72h) : l'eau d'abord, la nourriture ensuite, puis la chaleur et l'information. Ce qui change ici, c'est qu'on l'étale dans le temps au lieu de tout vouloir cocher le même week-end.
 
-### Semaine 1 — L'eau
+### Semaine 1 : l'eau
 
 Rien d'autre ne compte tant que ce point n'est pas réglé. Direction ton supermarché habituel :
 - Des packs de bouteilles d'eau 1,5L, format que tu utilises déjà : vise 6 litres par personne minimum (le repère officiel pour 72 heures), et plus si tu veux de la marge
@@ -30,7 +30,7 @@ Rien d'autre ne compte tant que ce point n'est pas réglé. Direction ton superm
 
 Si tu veux calculer précisément ton besoin selon la taille de ton foyer, notre [calculateur de stock d'eau](/outils/calculateur-stock-eau) fait le calcul en 30 secondes.
 
-### Semaine 2 — La nourriture qui se garde longtemps
+### Semaine 2 : la nourriture qui se garde longtemps
 
 Toujours en supermarché classique :
 - Conserves de légumineuses, thon, sardines
@@ -39,19 +39,19 @@ Toujours en supermarché classique :
 
 Pour ne pas acheter au hasard, notre [calculateur de rations alimentaires](/outils/calculateur-rations-alimentaires) te donne une quantité précise selon ton foyer et la durée visée.
 
-### Semaine 3 — La lumière et l'énergie
+### Semaine 3 : la lumière et l'énergie
 
 Première sortie du rayon supermarché classique :
 - Une [lampe frontale à LED](https://www.amazon.fr/s?k=lampe+frontale+led&tag=survivalix31-21) avec piles de rechange
 - Une [batterie externe 20 000 mAh minimum](https://www.amazon.fr/s?k=batterie+externe+20000+mah&tag=survivalix31-21)
 - Une [radio à piles ou à manivelle](https://www.amazon.fr/s?k=radio+manivelle+urgence&tag=survivalix31-21) pour rester informé si le réseau mobile flanche (voir notre article sur [comment communiquer en situation de crise](/manuel/communiquer-situation-crise))
 
-### Semaine 4 — La chaleur et les premiers secours
+### Semaine 4 : la chaleur et les premiers secours
 
 - Une ou deux [couvertures de survie](https://www.amazon.fr/s?k=couverture+de+survie&tag=survivalix31-21), un des articles les moins chers de toute la liste
 - Une trousse de premiers secours basique (pansements, désinfectant, paracétamol). Pour la composer sans payer le superflu des trousses du commerce, suis notre guide de la [trousse de premiers secours maison](/atelier/trousse-premiers-secours) ; et notre [guide des gestes qui sauvent](/manuel/premiers-secours-gestes-qui-sauvent) détaille ce qu'il faut savoir faire avec
 
-### Semaine 5 — Les documents et le sac lui-même
+### Semaine 5 : les documents et le sac lui-même
 
 - Une pochette étanche pour les photocopies de papiers d'identité
 - Si ce n'est pas déjà fait, le sac qui va contenir tout ça : voir notre article sur le [sac d'évacuation](/manuel/sac-evacuation) pour bien le choisir

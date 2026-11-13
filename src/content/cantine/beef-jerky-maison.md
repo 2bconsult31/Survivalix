@@ -87,4 +87,4 @@ Stocké dans un contenant hermétique, à l'abri de la lumière et de la chaleur
 
 Léger, dense en protéines, ne nécessitant ni cuisson ni eau pour être consommé, le beef jerky coche toutes les cases d'un bon complément à ton [kit d'urgence 72h](/manuel/kit-urgence-72h). Contrairement au [pemmican](/cantine/pemmican-survie), plus calorique grâce à sa graisse ajoutée mais plus long à préparer, le jerky est la version rapide et simple à faire un dimanche après-midi sans y passer la journée.
 
-*Sources : USDA FSIS (département de l'Agriculture des États-Unis) — « Jerky and Food Safety » ; National Center for Home Food Preservation — « Jerky » ; USDA NIFA — « Making Jerky » ; Ohio State University Extension — « Making Jerky at Home Safely » (recette du National Center for Home Food Preservation).*
+*Sources : USDA FSIS (département de l'Agriculture des États-Unis), « Jerky and Food Safety » ; National Center for Home Food Preservation, « Jerky » ; USDA NIFA, « Making Jerky » ; Ohio State University Extension, « Making Jerky at Home Safely » (recette du National Center for Home Food Preservation).*

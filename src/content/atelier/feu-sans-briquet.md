@@ -29,7 +29,7 @@ Avant d'entrer dans les méthodes, un point crucial que tous les tutoriels débu
 
 Les meilleurs amadous naturels : toile de jute effilochée, écorce de bouleau effilée, herbe très sèche et fine, champignon polypore séché (le meilleur de tous), coton carbonisé fait maison. Tous doivent être absolument secs : compte plusieurs heures de séchage minimum avant utilisation.
 
-## Méthode 1 — Le firesteel (la plus fiable, celle qu'il faut avoir)
+## Méthode 1 : le firesteel (la plus fiable, celle qu'il faut avoir)
 
 On commence par une légère tricherie : le firesteel est un outil moderne, rien de "primitif". Mais c'est de loin la méthode la plus fiable pour quiconque n'est pas bushcrafter professionnel, et c'est ce qu'on recommande comme priorité dans un kit de survie.
 
@@ -46,7 +46,7 @@ Le firesteel (aussi appelé pierre à feu ou ferrocerium) est une baguette d'all
 
 **L'erreur classique :** pousser le firesteel au lieu de maintenir et tirer le grattoir. Le mouvement juste maintient la baguette fixe et déplace uniquement le grattoir.
 
-## Méthode 2 — Le silex et l'acier (la technique ancestrale)
+## Méthode 2 : le silex et l'acier (la technique ancestrale)
 
 C'est un procédé très ancien, resté pendant des siècles le moyen d'allumage du quotidien en Europe, jusqu'à ce que les allumettes s'imposent au XIXe siècle. C'est la méthode la plus "pure" mais elle demande un peu plus de pratique que le firesteel.
 
@@ -67,7 +67,7 @@ C'est un procédé très ancien, resté pendant des siècles le moyen d'allumage
 
 **Note importante :** l'acier inoxydable ne produit pas d'étincelles utilisables. Il faut de l'acier au carbone : le dos d'un couteau en acier au carbone fait l'affaire (vérifie avant : beaucoup de couteaux de camp sont en inox).
 
-## Méthode 3 — La lentille (la plus simple en plein soleil)
+## Méthode 3 : la lentille (la plus simple en plein soleil)
 
 La seule méthode qui ne demande aucun geste technique particulier. Son défaut est rédhibitoire : elle ne fonctionne qu'en plein soleil. La nuit ou sous les nuages, elle ne sert à rien, alors garde-la en complément d'une autre méthode.
 
@@ -90,7 +90,7 @@ La seule méthode qui ne demande aucun geste technique particulier. Son défaut 
 
 **Le piège principal :** bouger la lentille et perdre le point focal. Cale ton bras ou pose la lentille sur quelque chose de stable si tu peux.
 
-## L'archet de feu — la 4e méthode, pour les courageux
+## L'archet de feu : la 4e méthode, pour les courageux
 
 On en parle séparément parce que c'est dans une autre catégorie de difficulté. L'archet de feu (bow drill) est la technique de friction la plus enseignée en bushcraft, et de très loin la plus exigeante, physiquement comme techniquement.
 

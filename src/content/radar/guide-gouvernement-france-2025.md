@@ -8,7 +8,7 @@ tags: ["guide", "gouvernement", "SGDSN", "kit-72h", "France", "radar"]
 rubrique: "radar"
 image: "/images/radar/guide-gouvernement-sgdsn.jpg"
 image_alt: "Guide Tous Responsables SGDSN - Guide de survie du gouvernement français 2025"
-source: "SGDSN — sgdsn.gouv.fr"
+source: "SGDSN (sgdsn.gouv.fr)"
 source_url: "https://www.sgdsn.gouv.fr/publications/guide-tous-responsables"
 ---
 
@@ -16,9 +16,9 @@ Le 20 novembre 2025, le gouvernement français a fait quelque chose d'inhabituel
 
 Un vrai guide pratique, bien plus qu'un communiqué sur les risques d'inondation ou une liste de numéros sur Légifrance, avec des conseils concrets sur comment tenir 72 heures en cas de crise majeure. Le genre de document que la Suède envoie à tous ses foyers depuis 1943 et que la France publiait pour la première fois de son histoire moderne.
 
-Il s'appelle **"Tous responsables — Face aux risques, agissons"**. Il est disponible gratuitement en PDF. Et il méritait qu'on le lise sérieusement.
+Il s'appelle **« Tous responsables : face aux risques, agissons »**. Il est disponible gratuitement en PDF. Et il méritait qu'on le lise sérieusement.
 
-## Ce que dit le guide — et pourquoi c'est important
+## Ce que dit le guide, et pourquoi c'est important
 
 Le SGDSN (Secrétariat général de la défense et de la sécurité nationale, placé auprès de Matignon) présente ce guide comme une réponse à "un monde traversé par des crises multiples : risques naturels, cyberattaques, bouleversements climatiques." Pour lui, une Nation résiliente, c'est une Nation où chacun prend sa part.
 
@@ -26,7 +26,7 @@ En clair : l'État français reconnaît officiellement qu'il ne peut pas tout g�
 
 Le guide explique comment composer un kit d'urgence pour tenir 72 heures, et quels réflexes adopter face aux risques naturels, technologiques, sanitaires et humains, cyberattaques et désinformation comprises.
 
-## Le kit 72h officiel — ce que recommande le gouvernement
+## Le kit 72h officiel : ce que recommande le gouvernement
 
 C'est le cœur du guide. Trois priorités, dans l'ordre :
 
@@ -72,14 +72,14 @@ Si vous partez de zéro, notre page [Par où commencer ?](/commencer-ici) remet 
 
 Le guide "Tous responsables" est disponible gratuitement en PDF sur le site officiel du SGDSN et sur info.gouv.fr :
 
-**[Télécharger le guide "Tous responsables" — version web (PDF)](https://www.sgdsn.gouv.fr/files/files/Publications/Tous%20responsables%20-%20Web.pdf)**
+**[Télécharger le guide « Tous responsables », version web (PDF)](https://www.sgdsn.gouv.fr/files/files/Publications/Tous%20responsables%20-%20Web.pdf)**
 
 **[Télécharger la version impression (PDF)](https://www.sgdsn.gouv.fr/files/files/Publications/Tous%20responsables%20%20-%20Print.pdf)**
 
-**[Version FALC — Facile à Lire et à Comprendre (PDF)](https://www.sgdsn.gouv.fr/files/files/Publications/Tous%20responsables_FALC.pdf)**
+**[Version FALC, Facile à Lire et à Comprendre (PDF)](https://www.sgdsn.gouv.fr/files/files/Publications/Tous%20responsables_FALC.pdf)**
 
-**[Page officielle du guide — info.gouv.fr](https://www.info.gouv.fr/actualite/tous-responsables-un-guide-pour-mieux-faire-face-aux-risques)**
+**[Page officielle du guide sur info.gouv.fr](https://www.info.gouv.fr/actualite/tous-responsables-un-guide-pour-mieux-faire-face-aux-risques)**
 
 ---
 
-*Source principale : SGDSN — "Tous responsables", publié le 20 novembre 2025 (sgdsn.gouv.fr, page « Guide "Tous responsables" »). Informations complémentaires : info.gouv.fr (« Se préparer à une situation d'urgence »), MSB (Suède) — brochure « Om krisen eller kriget kommer », 2018, ministère de l'Intérieur, ministère de la Transition écologique, info.gouv.fr.*
+*Source principale : SGDSN, "Tous responsables", publié le 20 novembre 2025 (sgdsn.gouv.fr, page « Guide "Tous responsables" »). Informations complémentaires : info.gouv.fr (« Se préparer à une situation d'urgence »), MSB (Suède), brochure « Om krisen eller kriget kommer », 2018, ministère de l'Intérieur, ministère de la Transition écologique, info.gouv.fr.*
