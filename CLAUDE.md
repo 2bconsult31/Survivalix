@@ -35,6 +35,7 @@
 - Structure propre à chaque article. Liens internes vers des pages existantes. Un lien Amazon affilié pertinent par article, au format https://www.amazon.fr/s?k=<recherche>&tag=survivalix31-21.
 - Cantine : le seo_title et la description contiennent le mot « recette ».
 - Toute nouvelle recette de la Cantine doit renseigner les champs de recette (temps, portions, ingrédients, étapes). Aucune note ni aucun avis inventés. Les extraits enrichis FAQ n'existent plus dans Google depuis mai 2026 : le balisage FAQ est conservé mais n'est plus une priorité.
+- Données structurées Recipe : Search Console signale comme « non critiques » les champs video, nutrition, aggregateRating, et name / image dans recipeInstructions. Ils restent volontairement absents (pas de vidéo, pas de valeur nutritionnelle sourcée par la table Ciqual de l'ANSES, aucune note inventée, pas de photo par étape). Ne jamais les remplir avec des données inventées ; recipeCuisine et recipeCategory sont renseignés pour chaque recette.
 - Style (anti « écriture IA ») :
   1. Tirets cadratins (—) : 2 maximum par article. Remplacer les autres par une virgule, des parenthèses, deux-points ou un point, selon le sens.
   2. Supprimer les constructions « ce n'est pas X, c'est Y » et « pas de X, pas de Y » quand elles servent d'effet : dire directement la chose.

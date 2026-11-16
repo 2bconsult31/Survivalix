@@ -20,6 +20,7 @@ cookTime: "PT30M"
 totalTime: "PT40M"
 recipeYield: "2 portions"
 recipeCategory: "Plat principal"
+recipeCuisine: "Internationale"
 recipeIngredient:
   - "200 g de riz blanc"
   - "400 g de haricots en conserve"
