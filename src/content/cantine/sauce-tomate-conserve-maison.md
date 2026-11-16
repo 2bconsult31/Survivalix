@@ -19,6 +19,7 @@ cookTime: "PT2H10M"
 totalTime: "PT2H55M"
 recipeYield: "environ 1 bocal d'1 litre"
 recipeCategory: "Sauce"
+recipeCuisine: "Française"
 recipeIngredient:
   - "Environ 3 kg de tomates bien mûres"
   - "Sel selon le goût (facultatif)"
