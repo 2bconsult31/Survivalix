@@ -16,6 +16,7 @@
 - Tout nouveau champ de frontmatter doit être déclaré à 3 endroits : content.config.ts, le fichier [slug].astro et le layout.
 - Styles du contenu markdown : utiliser :global() dans .article-content. Grilles contenant du markdown : minmax(0, 1fr) au lieu de 1fr.
 - Avant toute pull request : lancer npx astro build et vérifier qu'il n'y a aucune erreur.
+- Hooks Claude Code (.claude/settings.json) : après chaque modification d'un article, scripts/hooks/verifier-article.mjs contrôle les règles mesurables (balises de citation, tirets cadratins, seo_title, description, updated, « recette » en Cantine, format des liens Amazon, UTM, grossièretés) et renvoie les écarts à corriger ; avant chaque git commit ou git push, scripts/hooks/garde-fou-commit.mjs bloque tout fichier de statistiques, fichier de clé ou clé privée. Ne jamais les désactiver pour faire passer une modification : corriger l'écart.
 - Chaque modification va jusqu'à la mise en ligne, systématiquement, sans attendre Boris :
   1. travailler sur une branche et ouvrir une pull request (pour garder une trace et pouvoir annuler) ;
   2. lancer npx astro build : s'il échoue, corriger ; si l'échec persiste, ne pas fusionner et prévenir Boris avec l'erreur ;
