@@ -1,6 +1,6 @@
 ---
 title: "On a lu le guide de survie du gouvernement français pour vous (et c'est surprenant)"
-seo_title: "Guide Survie Gouvernement Français 2025 : Tous Responsables SGDSN"
+seo_title: "Guide de survie du gouvernement 2025 : Tous responsables"
 description: "Le gouvernement français a publié son premier guide de survie en novembre 2025 : un kit 72h, des réflexes concrets. On l'a lu et décortiqué pour vous."
 date: 2025-12-01
 updated: 2026-11-13

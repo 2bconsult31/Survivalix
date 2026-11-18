@@ -1,10 +1,10 @@
 # File d'attente éditoriale Survivalix
 
 ## MANUEL (guides de fond)
-- [ ] Sujet: Réagir en cas d'incendie domestique — évacuation, extincteur, détecteur | Collection: manuel | Recherche concurrentielle: OUI
-- [ ] Sujet: Kit d'urgence spécifique pour bébé et nourrisson | Collection: manuel | Recherche concurrentielle: OUI
-- [ ] Sujet: Les numéros d'urgence en France, lequel appeler et quand (15/17/18/112/114) | Collection: manuel | Recherche concurrentielle: NON
-- [ ] Sujet: Se préparer à une panne de chauffage en plein hiver | Collection: manuel | Recherche concurrentielle: OUI
+- [x] Sujet: Réagir en cas d'incendie domestique — évacuation, extincteur, détecteur | Collection: manuel | Recherche concurrentielle: OUI | Publié : /manuel/reagir-incendie-domestique
+- [x] Sujet: Kit d'urgence spécifique pour bébé et nourrisson | Collection: manuel | Recherche concurrentielle: OUI | Publié : /manuel/kit-urgence-bebe-nourrisson
+- [x] Sujet: Les numéros d'urgence en France, lequel appeler et quand (15/17/18/112/114) | Collection: manuel | Recherche concurrentielle: NON | Publié : /manuel/numeros-urgence-france-lequel-appeler
+- [x] Sujet: Se préparer à une panne de chauffage en plein hiver | Collection: manuel | Recherche concurrentielle: OUI | Publié : /manuel/panne-chauffage-hiver-que-faire
 - [ ] Sujet: Le plan familial d'urgence — qui fait quoi, où se retrouver | Collection: manuel | Recherche concurrentielle: OUI
 - [ ] Sujet: Protéger ses animaux de compagnie en cas de crise | Collection: manuel | Recherche concurrentielle: OUI
 - [ ] Sujet: Se préparer à un confinement sanitaire (leçons post-Covid) | Collection: manuel | Recherche concurrentielle: OUI
@@ -46,6 +46,7 @@
 - [ ] Sujet: Pénuries de médicaments en pharmacie — comment réagir | Collection: radar | Recherche concurrentielle: OUI
 - [ ] Sujet: Nouvelles règles de sécurité incendie en copropriété | Collection: radar | Recherche concurrentielle: OUI
 - [ ] Sujet: Le point sur les zones à risque industriel Seveso en France | Collection: radar | Recherche concurrentielle: OUI
-- [ ] Sujet: Vigilance orange/rouge — comprendre le système d'alerte météo France | Collection: radar | Recherche concurrentielle: OUI
+- [x] Sujet: Vigilance orange/rouge — comprendre le système d'alerte météo France | Collection: radar | Recherche concurrentielle: OUI | Publié : /radar/vigilance-meteo-comprendre-systeme-alertes
 
-## Traité
+## Traités
+Les sujets publiés sont cochés [x] dans leur rubrique, avec le lien de l'article.
