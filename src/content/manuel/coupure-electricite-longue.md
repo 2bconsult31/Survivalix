@@ -54,7 +54,7 @@ C'est souvent la première source de stress lors d'une coupure longue. Voici ce 
 
 **Une astuce pour détecter une coupure en votre absence :** laissez dans le congélateur un verre rempli de glaçons. Si, en rentrant, vous les retrouvez fondus et tassés au fond du verre, le courant a sauté pendant votre absence et la température est remontée.
 
-**Pour manger sans électricité :** misez sur ce qui se mange sans cuisson. Conserves prêtes à consommer, pain, biscuits, fruits secs, oléagineux : c'est exactement ce que demande le kit d'urgence officiel, de la nourriture non périssable qui ne nécessite aucune cuisson.
+**Pour manger sans électricité :** misez sur ce qui se mange sans cuisson. Conserves prêtes à consommer, pain, biscuits, fruits secs, oléagineux : c'est exactement ce que demande le kit d'urgence officiel, de la nourriture non périssable qui ne nécessite aucune cuisson. Notre guide pour [manger sans cuisson pendant une coupure](/manuel/manger-sans-cuisson-coupure) propose trois repas froids et les boîtes à écarter.
 
 **Jamais de réchaud dans le logement :** réchaud de camping, barbecue, appareil au gaz ou au charbon de bois ne s'utilisent jamais à l'intérieur, même en aérant. Ils dégagent du monoxyde de carbone, un gaz toxique, invisible et inodore. C'est la consigne d'Enedis en cas de coupure.
 

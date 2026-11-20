@@ -62,7 +62,7 @@ La contrainte : tout doit se consommer sans cuisson ni réfrigération. Contrain
 **L'approche Survivalix :**
 Stocke ce que tu manges normalement. Le piège classique du débutant : acheter des trucs "survie" spéciaux qu'on n'a jamais goûtés. En situation de stress, manger quelque chose de familier aide vraiment, psychologiquement et physiquement.
 
-Pour savoir quelle quantité prévoir selon la taille de ton foyer, notre [calculateur de rations alimentaires](/outils/calculateur-rations-alimentaires) fait le compte en calories.
+Pour savoir quelle quantité prévoir selon la taille de ton foyer, notre [calculateur de rations alimentaires](/outils/calculateur-rations-alimentaires) fait le compte en calories. Et pour en faire de vrais repas sans allumer une plaque, lis notre guide pour [manger sans cuisson pendant une coupure](/manuel/manger-sans-cuisson-coupure).
 
 **Pour les familles avec enfants :**
 Compotes en gourde, petits gâteaux, céréales sèches. Et prévois un peu de marge : un enfant qui court partout a vite faim.
