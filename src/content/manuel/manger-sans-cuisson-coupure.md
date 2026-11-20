@@ -7,7 +7,7 @@ updated: 2026-11-20
 tags: ["alimentation", "coupure", "sans-cuisson", "conserves", "manuel"]
 rubrique: "manuel"
 image: "/images/manuel/manger-sans-cuisson-coupure.jpg"
-image_alt: "Illustration rétro d'une table de cuisine éclairée à la lampe frontale, avec des conserves ouvertes, du pain, une salade de pois chiches et un ouvre-boîte manuel"
+image_alt: "Illustration rétro d'une table de cuisine plongée dans le noir, éclairée par une lampe frontale posée sur des livres : conserves ouvertes de pois chiches, thon et sardines, pain de mie, saladier, compote en gourde et ouvre-boîte manuel"
 ---
 
 Mardi, 19 h 30. Le quartier vient de sauter, les plaques à induction affichent un écran noir et le four ne répond plus. Les pâtes sont dans le placard, l'eau est dans la casserole, et rien ne chauffe. Il va falloir dîner avec ce qui se mange tel quel.
