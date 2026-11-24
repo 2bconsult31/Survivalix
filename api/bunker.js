@@ -123,7 +123,7 @@ export function validateMessages(body) {
 // Upstash Redis (gratuit) si configuré, sinon mémoire de l'instance (filet de secours, moins fiable).
 // Noms posés par l'intégration Vercel/Upstash, éventuellement précédés d'un préfixe personnalisé
 // (ex. STORAGE_KV_REST_API_URL). URL et jeton doivent partager le même préfixe.
-function findRedisConfig(env) {
+export function findRedisConfig(env) {
   const pairs = [['UPSTASH_REDIS_REST_URL', 'UPSTASH_REDIS_REST_TOKEN'], ['KV_REST_API_URL', 'KV_REST_API_TOKEN']];
   for (const [urlName, tokenName] of pairs) {
     if (env[urlName] && env[tokenName]) return { url: env[urlName], token: env[tokenName] };
