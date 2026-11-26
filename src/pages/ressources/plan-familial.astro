@@ -1,0 +1,143 @@
+---
+// Modèle imprimable du plan familial de mise en sûreté (PFMS), test de l'intérêt du public
+// avant un éventuel outil interactif. Rien n'est saisi en ligne : on imprime, on remplit au stylo.
+// Le bouton envoie l'événement GA « plan_familial_impression » (visiteurs ayant accepté la mesure).
+import Layout from '../../layouts/Layout.astro';
+
+const lignes = (n: number) => Array.from({ length: n });
+---
+<Layout
+  title="Plan familial de mise en sûreté à imprimer — Survivalix"
+  description="Modèle gratuit de plan familial de mise en sûreté à imprimer : contacts, rendez-vous, abri, école, coupures et documents, sur une feuille A4 recto verso."
+>
+  <div class="pf-ecran">
+    <div class="page-header">
+      <h1>Plan familial de mise en sûreté</h1>
+      <p class="page-desc">
+        La version à imprimer, à remplir au stylo en famille et à ranger avec ton kit d'urgence.
+        Rien n'est saisi en ligne : ta feuille reste chez toi.
+      </p>
+      <button type="button" class="pf-bouton" id="pf-imprimer">Imprimer ou enregistrer en PDF</button>
+      <p class="pf-aide">Pour remplir chaque rubrique sans rien oublier, lis notre guide :
+        <a href="/manuel/plan-familial-mise-en-surete">le plan familial de mise en sûreté, rempli en 10 minutes</a>.</p>
+    </div>
+  </div>
+
+  <article class="pf-feuille papier" aria-label="Modèle de plan familial à imprimer">
+    <div class="pf-entete">
+      <h2>Notre plan familial de mise en sûreté</h2>
+      <p>Mis à jour le : ...... / ...... / ............ &nbsp;·&nbsp; À revoir deux fois par an, avec le kit d'urgence</p>
+    </div>
+
+    <section class="pf-bloc">
+      <h3>1. Qui vit à la maison</h3>
+      <table class="pf-table">
+        <thead><tr><th>Prénom</th><th>Âge</th><th>Besoins particuliers (traitement, allergie, mobilité, bébé)</th></tr></thead>
+        <tbody>{lignes(5).map(() => <tr><td></td><td></td><td></td></tr>)}</tbody>
+      </table>
+      <p class="pf-ligne">Animaux (nom, espèce, numéro d'identification) : ..................................................................................................</p>
+    </section>
+
+    <section class="pf-bloc">
+      <h3>2. Numéros à garder sur papier</h3>
+      <p class="pf-fixe">Urgences : <strong>112</strong> (numéro européen) · <strong>15</strong> SAMU · <strong>18</strong> pompiers · <strong>17</strong> police · <strong>114</strong> par écrit, pour les personnes sourdes ou malentendantes</p>
+      <table class="pf-table">
+        <tbody>
+          {['Contact relais hors de la région', 'Voisin de confiance', 'Médecin traitant', 'Pharmacie', 'École / crèche / employeur', 'Assurance habitation (n° de contrat)', 'Mairie'].map((l) => <tr><th scope="row">{l}</th><td></td></tr>)}
+        </tbody>
+      </table>
+    </section>
+
+    <section class="pf-bloc pf-deux">
+      <div>
+        <h3>3. Nos points de rendez-vous</h3>
+        <p class="pf-ligne">Près de la maison : ..........................................................</p>
+        <p class="pf-ligne">Hors du quartier : ...........................................................</p>
+      </div>
+      <div>
+        <h3>4. Où se mettre à l'abri chez nous</h3>
+        <p class="pf-ligne">Pièce pour se confiner : ...................................................</p>
+        <p class="pf-ligne">Étage pour une inondation : ..............................................</p>
+      </div>
+    </section>
+
+    <section class="pf-bloc">
+      <h3>5. Les risques de notre commune</h3>
+      <p class="pf-note">À relever sur georisques.gouv.fr ou dans le document d'information de la mairie (DICRIM).</p>
+      <p class="pf-ligne">.................................................................................................................................................</p>
+      <p class="pf-ligne">.................................................................................................................................................</p>
+    </section>
+
+    <section class="pf-bloc">
+      <h3>6. Les enfants à l'école</h3>
+      <p class="pf-fixe">Pendant une alerte, on ne va pas chercher les enfants : l'école applique son plan de mise en sûreté. On attend que les autorités ou l'école disent de venir.</p>
+      <p class="pf-ligne">École et téléphone : ........................................................ &nbsp; Qui les récupère ensuite : .....................................</p>
+    </section>
+
+    <section class="pf-bloc pf-deux">
+      <div>
+        <h3>7. Couper eau, gaz, électricité</h3>
+        <p class="pf-ligne">Robinet d'eau : ..................................................................</p>
+        <p class="pf-ligne">Robinet de gaz : .................................................................</p>
+        <p class="pf-ligne">Tableau électrique : ..........................................................</p>
+      </div>
+      <div>
+        <h3>8. Documents et kit</h3>
+        <p class="pf-case">☐ Copies des papiers d'identité, carte vitale, ordonnances</p>
+        <p class="pf-case">☐ Kit d'urgence 72 h prêt (6 L d'eau par personne)</p>
+        <p class="pf-case">☐ Radio à piles ou à manivelle, piles de rechange</p>
+      </div>
+    </section>
+
+    <div class="pf-pied">
+      En cas d'alerte : écouter la radio locale et suivre les consignes des autorités · Ne pas téléphoner sauf urgence, pour laisser les réseaux aux secours · Modèle Survivalix (survivalix.fr), d'après le plan familial de mise en sûreté de la Sécurité civile
+    </div>
+  </article>
+</Layout>
+
+<script>
+  document.getElementById('pf-imprimer')?.addEventListener('click', () => {
+    (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag?.('event', 'plan_familial_impression');
+    window.print();
+  });
+</script>
+
+<style>
+  .pf-ecran .page-header { text-align: center; padding: 3rem 1.5rem 2rem; max-width: 46rem; margin: 0 auto; }
+  .pf-ecran h1 { font-family: 'Special Elite', cursive; font-size: clamp(1.8rem, 5vw, 2.8rem); color: var(--ambre, #F5A623); line-height: 1.2; margin-bottom: 1rem; }
+  .pf-ecran .page-desc { font-family: 'Oswald', sans-serif; font-weight: 300; font-size: 1.05rem; line-height: 1.6; color: #F5E6C8; margin-bottom: 1.5rem; }
+  .pf-bouton { font-family: 'Oswald', sans-serif; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; background: var(--ambre, #F5A623); color: #0d0d0d; border: 0; padding: 0.9rem 1.6rem; min-height: 44px; cursor: pointer; }
+  .pf-bouton:hover, .pf-bouton:focus-visible { background: var(--ambre-fonce, #c4811a); }
+  .pf-bouton:focus-visible { outline: 2px solid #F5E6C8; outline-offset: 3px; }
+  .pf-aide { font-family: 'Oswald', sans-serif; font-weight: 300; color: #F5E6C8; margin-top: 1.25rem; line-height: 1.6; }
+  .pf-aide a { color: var(--ambre, #F5A623); text-decoration: underline; text-underline-offset: 2px; }
+
+  /* La feuille : papier crème à l'écran, noir sur blanc à l'impression */
+  .pf-feuille { max-width: 52rem; margin: 0 auto 4rem; background: #FAF1DE; color: #000; padding: 2rem 1.5rem; font-family: 'Oswald', sans-serif; box-shadow: 0 20px 40px rgba(0,0,0,.45); }
+  @media (min-width: 768px) { .pf-feuille { padding: 2.5rem 3rem; border: 1px solid #000; } }
+  /* Encre noire sur toute la feuille (les styles globaux du thème sombre colorent h3, th et p) */
+  .pf-feuille :is(h2, h3, p, th, td, strong, span) { color: #000; opacity: 1; }
+  .pf-entete { border-bottom: 4px solid var(--ambre, #F5A623); padding-bottom: .6rem; margin-bottom: 1.2rem; }
+  .pf-entete h2 { font-family: 'Special Elite', cursive; font-size: 1.7rem; -webkit-text-stroke: .035em currentColor; paint-order: stroke fill; }
+  .pf-entete p, .pf-note { font-size: .9rem; }
+  .pf-bloc { margin-bottom: 1.1rem; break-inside: avoid; }
+  .pf-bloc h3 { font-weight: 700; font-size: 1.05rem; margin-bottom: .4rem; }
+  .pf-deux { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+  @media (min-width: 640px) { .pf-deux { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+  .pf-table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+  .pf-table th, .pf-table td { border: 1px solid #000; padding: .35rem .5rem; text-align: left; height: 1.9rem; }
+  .pf-table tbody th { width: 42%; font-weight: 400; }
+  .pf-ligne, .pf-case, .pf-fixe { font-size: .92rem; line-height: 1.9; overflow-wrap: anywhere; }
+  .pf-fixe { background: rgba(245,166,35,.18); padding: .3rem .5rem; line-height: 1.5; margin-bottom: .4rem; }
+  .pf-pied { margin-top: 1rem; padding-top: .6rem; border-top: 1px solid #000; font-size: .78rem; line-height: 1.4; }
+
+  @media print {
+    @page { size: A4; margin: 10mm; }
+    :global(header), :global(footer), :global(.hero-band), :global(.scanlines), :global(#bandeau-cookies), .pf-ecran { display: none !important; }
+    :global(html), :global(body) { background: #fff !important; color: #000 !important; }
+    :global(main) { padding: 0 !important; margin: 0 !important; }
+    .pf-feuille { max-width: none; margin: 0; padding: 0; box-shadow: none; border: 0; background: #fff; font-size: 10.5pt; }
+    .pf-fixe { background: #eee; }
+    .pf-table th, .pf-table td { height: 1.6rem; }
+  }
+</style>

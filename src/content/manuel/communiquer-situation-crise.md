@@ -54,6 +54,6 @@ Les stations de radio locales (le réseau ici, ex-France Bleu, en tête) et les 
 
 ## Ce qu'il faut faire, concrètement, cette semaine
 
-Fais-le cette semaine. Réunis les gens avec qui tu veux rester en contact en cas de coup dur, et décidez ensemble de qui sera le contact hors-zone. Écrivez ce numéro sur un papier que chacun garde dans son portefeuille, en plus du téléphone, qui peut être à plat ou hors service.
+Fais-le cette semaine. Réunis les gens avec qui tu veux rester en contact en cas de coup dur, et décidez ensemble de qui sera le contact hors-zone. Écrivez ce numéro sur un papier que chacun garde dans son portefeuille, en plus du téléphone, qui peut être à plat ou hors service. Le [plan familial de mise en sûreté](/manuel/plan-familial-mise-en-surete) réunit ce contact, le point de rendez-vous et les autres consignes sur une seule feuille à imprimer.
 
 *Sources : Ministère de l'Intérieur (« FR-Alert : être informé en temps réel pour mieux se protéger » ; convention avec Radio France), SGDSN (guide « Tous responsables face aux risques, agissons »), info.gouv.fr (« Se préparer à une situation d'urgence »), Arcep (note « Résilience des réseaux télécoms », 2025).*
