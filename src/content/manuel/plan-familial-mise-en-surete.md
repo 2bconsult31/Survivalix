@@ -7,7 +7,7 @@ updated: 2026-11-26
 tags: ["plan-familial", "pfms", "famille", "preparation", "manuel"]
 rubrique: "manuel"
 image: "/images/manuel/plan-familial-mise-en-surete.jpg"
-image_alt: "Illustration rétro d'une famille autour d'une table de cuisine, qui remplit une feuille de plan d'urgence à côté d'une radio et d'un kit d'urgence"
+image_alt: "Illustration rétro d'une famille le soir dans sa cuisine : deux parents et leur fille remplissent une feuille de plan d'urgence, avec un chat, une radio à manivelle, une lampe frontale, une pochette de documents et un sac d'urgence sur la table"
 ---
 
 Une alerte tombe un mardi à 16 h. Toi au bureau, l'autre parent dans le train, les enfants à l'école, le chat à la maison. Les téléphones saturent. Qui fait quoi ? Où se retrouve-t-on ? Si la réponse tient dans un « on verra bien », c'est exactement ce que ce document est fait pour régler.
