@@ -6,6 +6,7 @@ date: 2026-11-26
 updated: 2026-11-26
 tags: ["plan-familial", "pfms", "famille", "preparation", "manuel"]
 rubrique: "manuel"
+modele: "/ressources/plan-familial"
 image: "/images/manuel/plan-familial-mise-en-surete.jpg"
 image_alt: "Illustration rétro d'une famille le soir dans sa cuisine : deux parents et leur fille remplissent une feuille de plan d'urgence, avec un chat, une radio à manivelle, une lampe frontale, une pochette de documents et un sac d'urgence sur la table"
 ---
@@ -13,6 +14,8 @@ image_alt: "Illustration rétro d'une famille le soir dans sa cuisine : deux par
 Une alerte tombe un mardi à 16 h. Toi au bureau, l'autre parent dans le train, les enfants à l'école, le chat à la maison. Les téléphones saturent. Qui fait quoi ? Où se retrouve-t-on ? Si la réponse tient dans un « on verra bien », c'est exactement ce que ce document est fait pour régler.
 
 Le plan familial de mise en sûreté, ou PFMS, est un document officiel. La Direction de la sécurité civile l'a conçu avec l'Institut des risques majeurs de Grenoble pour que chaque foyer le remplisse lui-même, et il fait partie du dispositif ORSEC, l'organisation des secours en France. Les mairies et les préfectures le diffusent en PDF. Ici, tu le remplis rubrique par rubrique, puis tu imprimes notre [modèle de plan familial](/ressources/plan-familial).
+
+<p class="cta-article"><a class="bouton-article" href="/ressources/plan-familial">Ouvrir le modèle à imprimer</a></p>
 
 ## Avant de commencer : réunis la famille dix minutes
 
@@ -63,6 +66,8 @@ Le plan prépare, les consignes du moment décident. Pendant une alerte, écoute
 ## Le garder à jour
 
 Un plan rempli il y a trois ans, avec l'ancien numéro de la nounou, induit en erreur. Relis-le **deux fois par an**, au même moment que ton kit d'urgence, que info.gouv.fr recommande de vérifier à ce rythme. Change ce qui a bougé : nouveau téléphone, nouvelle école, nouveau traitement.
+
+<p class="cta-article"><a class="bouton-article" href="/ressources/plan-familial">Imprimer mon plan familial</a></p>
 
 ## Questions fréquentes
 

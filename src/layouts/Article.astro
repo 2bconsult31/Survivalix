@@ -121,6 +121,13 @@ const pageTitle = frontmatter.seo_title || frontmatter.title;
             <a href={frontmatter.checklist} class="sidebar-btn" download>⬇ Télécharger la checklist</a>
           </div>
         )}
+        {frontmatter.modele && (
+          <div class="sidebar-block">
+            <div class="sidebar-label">À IMPRIMER</div>
+            <p>Le modèle à remplir au stylo, sur une feuille A4 recto verso.</p>
+            <a href={frontmatter.modele} class="sidebar-btn">Ouvrir le modèle →</a>
+          </div>
+        )}
         <div class="sidebar-block">
           <div class="sidebar-label">QUEL SURVIVANT ?</div>
           <p>Découvre ton profil et télécharge ta carte collector.</p>
