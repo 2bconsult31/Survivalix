@@ -1,0 +1,91 @@
+---
+// Page institutionnelle, volontairement sobre (sans illustration ni humour), destinée aux mairies,
+// écoles, associations et journalistes. Vouvoiement. Tout ce qui y est affirmé doit rester vrai :
+// la mettre à jour si la publicité est activée, si un outil change ou si une source évolue.
+import Layout from '../layouts/Layout.astro';
+
+const texteCourt = "Préparer sa famille à une coupure, une inondation ou une alerte : le plan familial de mise en sûreté se remplit désormais en ligne, gratuitement, sur survivalix.fr/outils/plan-familial. En dix minutes, il réunit les contacts utiles, les points de rendez-vous, le lieu de mise à l'abri et les consignes pour les enfants à l'école. Aucun compte n'est demandé et aucune donnée n'est envoyée : le plan reste sur votre appareil, prêt à imprimer.";
+---
+<Layout
+  title="Collectivités, écoles et associations — Survivalix"
+  description="Outils gratuits de préparation aux risques à recommander à vos habitants ou aux familles : plan familial en ligne, kit d'urgence 72 h, sans collecte de données."
+>
+  <div class="inst">
+    <div class="inst-feuille papier">
+      <p class="inst-surtitre">Collectivités, écoles, associations et presse</p>
+      <h1>Des outils gratuits pour aider les familles à se préparer aux risques</h1>
+      <p class="inst-chapo">Survivalix est un site d'information grand public sur la préparation aux risques du quotidien : coupure d'électricité, inondation, alerte météo, premiers secours. Ses outils et ses guides sont gratuits, s'appuient sur les consignes officielles, et peuvent être recommandés à vos habitants, aux familles de vos élèves ou à vos adhérents.</p>
+
+      <section>
+        <h2>Ce que vous pouvez recommander</h2>
+        <ul>
+          <li><strong><a href="/outils/plan-familial">Mon plan familial</a></strong> : le plan familial de mise en sûreté, rempli en ligne en huit étapes (contacts, points de rendez-vous, mise à l'abri, école, coupures d'eau, de gaz et d'électricité), puis imprimé. Une <a href="/ressources/plan-familial">version papier vierge</a> est aussi disponible.</li>
+          <li><strong><a href="/outils/generateur-kit-72h">Le générateur de kit d'urgence 72 h</a></strong> : la liste du kit adaptée à la composition du foyer (enfants, bébés, animaux), à cocher au fil des achats.</li>
+          <li><strong>Des guides pratiques</strong>, par exemple <a href="/manuel/plan-familial-mise-en-surete">remplir le plan familial de mise en sûreté</a>, <a href="/manuel/kit-urgence-72h">le kit d'urgence 72 h</a>, <a href="/manuel/inondation-logement-que-faire">que faire en cas d'inondation</a> ou <a href="/manuel/numeros-urgence-france-lequel-appeler">quel numéro d'urgence appeler</a>.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Des contenus fondés sur les consignes officielles</h2>
+        <p>Chaque conseil s'appuie sur des sources institutionnelles, citées en bas de chaque article : SGDSN (guide « Tous responsables »), ministère de l'Intérieur et Sécurité civile, ministère de l'Éducation nationale, Santé publique France, ANSES, Météo-France, Géorisques, info.gouv.fr, Croix-Rouge française. Quand des sources officielles divergent sur une consigne de sécurité, le site retient la plus prudente. Les articles sont relus et mis à jour lorsque les consignes évoluent, et leur date de mise à jour est indiquée.</p>
+        <p>Le site ne remplace pas les consignes des autorités en cas d'alerte : il invite toujours à suivre les instructions du préfet et de la mairie, et à écouter la radio locale.</p>
+      </section>
+
+      <section>
+        <h2>Aucune donnée collectée par les outils</h2>
+        <p>Les outils fonctionnent dans le navigateur. Ce que les familles y saisissent (composition du foyer, contacts, informations de santé) reste uniquement sur leur appareil : aucun compte n'est demandé et rien n'est transmis à Survivalix ni à un tiers. Un bouton permet d'effacer le plan à tout moment. La mesure d'audience n'est activée qu'avec l'accord du visiteur. Le détail figure dans la <a href="/politique-confidentialite">politique de confidentialité</a>.</p>
+        <p>Le site n'affiche pas de publicité à ce jour. Certains articles contiennent des liens d'affiliation vers des produits, signalés comme tels ; les outils n'en contiennent pas.</p>
+      </section>
+
+      <section>
+        <h2>Qui édite le site</h2>
+        <p>Survivalix est édité par Boris Bendjemla, formateur et consultant en marketing digital à Toulouse, à titre indépendant. Le site n'est ni un service public ni un organisme de secours. La présentation complète se trouve sur la page <a href="/a-propos">À propos</a>, et les informations légales dans les <a href="/mentions-legales">mentions légales</a>.</p>
+      </section>
+
+      <section>
+        <h2>Texte prêt à reprendre</h2>
+        <p>Pour un bulletin municipal, une lettre aux familles ou une page web. Vous pouvez l'adapter librement.</p>
+        <blockquote class="inst-texte" id="inst-texte">{texteCourt}</blockquote>
+        <button type="button" class="inst-copier" id="inst-copier">Copier le texte</button>
+        <span class="inst-copie" id="inst-copie" aria-live="polite"></span>
+      </section>
+
+      <section>
+        <h2>Nous contacter</h2>
+        <p>Pour une question, un partenariat, une demande d'adaptation ou le signalement d'une erreur : <a href="mailto:contact@survivalix.fr">contact@survivalix.fr</a>.</p>
+      </section>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  const bouton = document.getElementById('inst-copier');
+  const retour = document.getElementById('inst-copie');
+  bouton?.addEventListener('click', async () => {
+    const texte = document.getElementById('inst-texte')?.textContent?.trim() || '';
+    try { await navigator.clipboard.writeText(texte); if (retour) retour.textContent = 'Texte copié.'; }
+    catch { if (retour) retour.textContent = 'Copie impossible : sélectionnez le texte ci-dessus.'; }
+  });
+</script>
+
+<style>
+  .inst { padding: 3rem 1.25rem 4rem; }
+  .inst-feuille { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; box-shadow: 0 20px 40px rgba(0, 0, 0, .45); font-family: 'Oswald', sans-serif; }
+  @media (min-width: 768px) { .inst-feuille { padding: 3rem 3.25rem 3.5rem; border: 1px solid #000; } }
+  .inst-feuille :is(h1, h2, p, li, blockquote, span) { color: #000; }
+  .inst-surtitre { font-size: .8rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: .75rem; }
+  .inst-feuille h1 { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: clamp(1.6rem, 4vw, 2.2rem); line-height: 1.2; margin-bottom: 1rem; }
+  .inst-chapo { font-size: 1.15rem; line-height: 1.7; padding-bottom: 1.25rem; border-bottom: 2px solid #000; margin-bottom: 1.75rem; }
+  .inst-feuille section { margin-bottom: 1.75rem; }
+  .inst-feuille h2 { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.25rem; margin-bottom: .6rem; }
+  .inst-feuille p, .inst-feuille li { font-size: 1.05rem; line-height: 1.75; font-weight: 400; }
+  .inst-feuille p { margin-bottom: .8rem; }
+  .inst-feuille ul { padding-left: 1.2rem; }
+  .inst-feuille li { margin-bottom: .6rem; }
+  .inst-feuille a { color: #000; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+  .inst-texte { border-left: 0; border: 1px solid #000; background: #fff; padding: 1rem 1.1rem; font-size: 1rem; line-height: 1.7; margin: .5rem 0 .9rem; }
+  .inst-copier { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: .9rem; letter-spacing: 1px; text-transform: uppercase; min-height: 44px; padding: .6rem 1.2rem; background: #000; color: #FAF1DE; border: 2px solid #000; cursor: pointer; }
+  .inst-copier:hover, .inst-copier:focus-visible { background: #fff; color: #000; }
+  .inst-copier:focus-visible { outline: 3px solid #000; outline-offset: 3px; }
+  .inst-copie { margin-left: .75rem; font-size: .95rem; }
+</style>
