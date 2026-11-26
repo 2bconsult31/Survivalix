@@ -13,9 +13,9 @@ image_alt: "Illustration rétro d'une famille le soir dans sa cuisine : deux par
 
 Une alerte tombe un mardi à 16 h. Toi au bureau, l'autre parent dans le train, les enfants à l'école, le chat à la maison. Les téléphones saturent. Qui fait quoi ? Où se retrouve-t-on ? Si la réponse tient dans un « on verra bien », c'est exactement ce que ce document est fait pour régler.
 
-Le plan familial de mise en sûreté, ou PFMS, est un document officiel. La Direction de la sécurité civile l'a conçu avec l'Institut des risques majeurs de Grenoble pour que chaque foyer le remplisse lui-même, et il fait partie du dispositif ORSEC, l'organisation des secours en France. Les mairies et les préfectures le diffusent en PDF. Ici, tu le remplis rubrique par rubrique, puis tu imprimes notre [modèle de plan familial](/ressources/plan-familial).
+Le plan familial de mise en sûreté, ou PFMS, est un document officiel. La Direction de la sécurité civile l'a conçu avec l'Institut des risques majeurs de Grenoble pour que chaque foyer le remplisse lui-même, et il fait partie du dispositif ORSEC, l'organisation des secours en France. Les mairies et les préfectures le diffusent en PDF. Ici, tu le remplis rubrique par rubrique, soit directement en ligne avec notre outil [Mon plan familial](/outils/plan-familial), soit au stylo sur notre [modèle de plan familial](/ressources/plan-familial) à imprimer.
 
-<p class="cta-article"><a class="bouton-article" href="/ressources/plan-familial">Ouvrir le modèle à imprimer</a></p>
+<p class="cta-article"><a class="bouton-article" href="/outils/plan-familial">Remplir mon plan en ligne</a></p>
 
 ## Avant de commencer : réunis la famille dix minutes
 
@@ -67,7 +67,9 @@ Le plan prépare, les consignes du moment décident. Pendant une alerte, écoute
 
 Un plan rempli il y a trois ans, avec l'ancien numéro de la nounou, induit en erreur. Relis-le **deux fois par an**, au même moment que ton kit d'urgence, que info.gouv.fr recommande de vérifier à ce rythme. Change ce qui a bougé : nouveau téléphone, nouvelle école, nouveau traitement.
 
-<p class="cta-article"><a class="bouton-article" href="/ressources/plan-familial">Imprimer mon plan familial</a></p>
+<p class="cta-article"><a class="bouton-article" href="/outils/plan-familial">Remplir mon plan en ligne</a></p>
+
+Tu préfères le papier ? Le [modèle vierge à imprimer](/ressources/plan-familial) reprend les mêmes rubriques.
 
 ## Questions fréquentes
 
@@ -79,7 +81,7 @@ Non. C'est un document que les autorités recommandent et diffusent, mais que ch
 
 Garde l'original avec ton kit d'urgence et une copie dans un endroit que tout le monde connaît, par exemple sur la porte du frigo. Prends aussi le plan en photo avec chaque téléphone de la famille.
 
-> **Un plan familial tient sur une feuille.** Un contact relais hors de la région, deux points de rendez-vous, la pièce où s'abriter, les risques de ta commune, l'emplacement des coupures, et la consigne de ne pas aller chercher les enfants pendant une alerte. Ce soir, imprime le [modèle de plan familial](/ressources/plan-familial) et remplis-le à table avec toute la famille.
+> **Un plan familial tient sur une feuille.** Un contact relais hors de la région, deux points de rendez-vous, la pièce où s'abriter, les risques de ta commune, l'emplacement des coupures, et la consigne de ne pas aller chercher les enfants pendant une alerte. Ce soir, remplis [ton plan familial en ligne](/outils/plan-familial) à table avec toute la famille, puis imprime-le.
 
 Pour garder tes copies de documents au sec, une [pochette étanche pour documents](https://www.amazon.fr/s?k=pochette+etanche+documents&tag=survivalix31-21) suffit.
 

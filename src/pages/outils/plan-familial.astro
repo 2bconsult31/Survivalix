@@ -1,0 +1,391 @@
+---
+// Outil interactif : le plan familial de mise en sûreté (PFMS), rempli en ligne, étape par étape.
+// Données gardées UNIQUEMENT dans le navigateur (localStorage « sx-plan-familial ») : aucun compte,
+// aucun envoi. Analytics ne reçoit que trois événements sans contenu : début, fin, impression.
+// Sans JavaScript, toutes les étapes s'affichent l'une sous l'autre (amélioration progressive).
+import Layout from '../../layouts/Layout.astro';
+import GuideOutil from '../../components/GuideOutil.astro';
+
+const numeros = [
+  { id: 'relais', label: 'Contact relais hors de la région', aide: 'Un proche qui habite loin : chacun lui donne des nouvelles si la famille est séparée.' },
+  { id: 'voisin', label: 'Voisin de confiance' },
+  { id: 'medecin', label: 'Médecin traitant' },
+  { id: 'pharmacie', label: 'Pharmacie' },
+  { id: 'travail', label: 'Employeur(s)' },
+  { id: 'assurance', label: 'Assurance habitation (et numéro de contrat)' },
+  { id: 'mairie', label: 'Mairie' },
+];
+---
+<Layout
+  title="Mon plan familial de mise en sûreté en ligne — Survivalix"
+  description="Remplis ton plan familial de mise en sûreté en ligne, étape par étape : contacts, rendez-vous, abri, école, coupures. Gratuit, sans compte, rien n'est envoyé."
+>
+  <div class="page-header">
+    <div class="page-label">OUTIL INTERACTIF</div>
+    <h1>Mon plan familial</h1>
+    <p class="page-desc">
+      Huit étapes, une dizaine de minutes, et ta famille sait quoi faire si une crise tombe.
+      Ton plan s'enregistre sur cet appareil au fil de la saisie : rien n'est envoyé, aucun compte n'est demandé.
+    </p>
+  </div>
+
+  <div class="pf-outil" id="pf-outil">
+    <div class="pf-progression" id="pf-progression" hidden>
+      <div class="pf-progression-haut">
+        <span id="pf-etape-label">Étape 1 sur 8</span>
+        <span class="pf-sauve" id="pf-sauve" aria-live="polite"></span>
+      </div>
+      <div class="pf-piste"><div class="pf-barre" id="pf-barre"></div></div>
+    </div>
+
+    <form id="pf-form" class="pf-form" autocomplete="off" novalidate>
+
+      <fieldset class="pf-etape" data-etape="1">
+        <legend tabindex="-1">1. Qui vit à la maison</legend>
+        <p class="pf-intro">Note chaque personne avec ce qui compte en cas de crise : un traitement, une allergie, une difficulté pour se déplacer, un bébé.</p>
+        <div id="pf-membres" class="pf-membres"></div>
+        <button type="button" class="pf-btn-secondaire" id="pf-ajouter">+ Ajouter une personne</button>
+        <label class="pf-champ">
+          <span>Animaux (nom, espèce, numéro d'identification)</span>
+          <textarea name="animaux" rows="2"></textarea>
+        </label>
+      </fieldset>
+
+      <fieldset class="pf-etape" data-etape="2">
+        <legend tabindex="-1">2. Les numéros à garder</legend>
+        <p class="pf-encadre">Urgences : <strong>112</strong> (numéro européen) · <strong>15</strong> SAMU · <strong>18</strong> pompiers · <strong>17</strong> police · <strong>114</strong> par écrit, pour les personnes sourdes ou malentendantes. Déjà imprimés sur ton plan.</p>
+        {numeros.map((n) => (
+          <label class="pf-champ">
+            <span>{n.label}</span>
+            {n.aide && <small>{n.aide}</small>}
+            <input type="text" name={`num_${n.id}`} />
+          </label>
+        ))}
+      </fieldset>
+
+      <fieldset class="pf-etape" data-etape="3">
+        <legend tabindex="-1">3. Nos points de rendez-vous</legend>
+        <p class="pf-intro">Un lieu proche, en cas d'incendie par exemple, et un lieu hors du quartier si le quartier entier doit être évacué. Des endroits que tout le monde sait rejoindre à pied.</p>
+        <label class="pf-champ"><span>Près de la maison</span><input type="text" name="rdv_proche" /></label>
+        <label class="pf-champ"><span>Hors du quartier</span><input type="text" name="rdv_loin" /></label>
+      </fieldset>
+
+      <fieldset class="pf-etape" data-etape="4">
+        <legend tabindex="-1">4. Où se mettre à l'abri chez nous</legend>
+        <p class="pf-intro">Selon le risque, la consigne change : se confiner dans une pièce fermée, ou monter à l'étage en cas d'inondation.</p>
+        <label class="pf-champ"><span>Pièce pour se confiner (peu d'ouvertures)</span><input type="text" name="abri_piece" /></label>
+        <label class="pf-champ"><span>Point le plus haut accessible, pour une inondation</span><input type="text" name="abri_etage" /></label>
+      </fieldset>
+
+      <fieldset class="pf-etape" data-etape="5">
+        <legend tabindex="-1">5. Les risques de notre commune</legend>
+        <p class="pf-intro">Tape ton adresse sur <a href="https://www.georisques.gouv.fr/citoyen-recherche-map" target="_blank" rel="noopener">Géorisques</a> (nouvel onglet) ou consulte le document d'information de ta mairie (DICRIM), puis note les deux ou trois risques qui te concernent vraiment. Notre fiche <a href="/manuel/risques-pres-de-chez-soi">risques près de chez soi</a> t'aide à les lire.</p>
+        <label class="pf-champ"><span>Risques relevés (inondation, site industriel, séisme…)</span><textarea name="risques" rows="3"></textarea></label>
+      </fieldset>
+
+      <fieldset class="pf-etape" data-etape="6">
+        <legend tabindex="-1">6. Les enfants à l'école</legend>
+        <p class="pf-encadre">Pendant une alerte, on ne va pas chercher les enfants : l'école applique son plan particulier de mise en sûreté. On attend que l'école ou les autorités disent de venir.</p>
+        <label class="pf-champ"><span>École, crèche ou collège (et téléphone)</span><input type="text" name="ecole" /></label>
+        <label class="pf-champ"><span>Qui récupère les enfants une fois l'alerte levée</span><input type="text" name="ecole_qui" /></label>
+      </fieldset>
+
+      <fieldset class="pf-etape" data-etape="7">
+        <legend tabindex="-1">7. Couper l'eau, le gaz, l'électricité</legend>
+        <p class="pf-intro">Repère les trois emplacements dès maintenant et montre-les à chaque adulte du foyer. Pour l'électricité, notre fiche <a href="/atelier/comprendre-tableau-electrique-disjoncteur">comprendre son tableau électrique</a> explique quoi couper.</p>
+        <label class="pf-champ"><span>Robinet d'arrivée d'eau</span><input type="text" name="coupure_eau" /></label>
+        <label class="pf-champ"><span>Robinet de gaz (si le logement en a)</span><input type="text" name="coupure_gaz" /></label>
+        <label class="pf-champ"><span>Tableau électrique</span><input type="text" name="coupure_elec" /></label>
+      </fieldset>
+
+      <fieldset class="pf-etape" data-etape="8">
+        <legend tabindex="-1">8. Documents et kit</legend>
+        <label class="pf-case"><input type="checkbox" name="kit_documents" /> <span>Copies des papiers d'identité, cartes vitales et ordonnances, dans une pochette étanche</span></label>
+        <label class="pf-case"><input type="checkbox" name="kit_72h" /> <span>Kit d'urgence 72 h prêt, avec 6 litres d'eau par personne (notre <a href="/outils/generateur-kit-72h">générateur de kit</a> fait la liste)</span></label>
+        <label class="pf-case"><input type="checkbox" name="kit_radio" /> <span>Radio à piles ou à manivelle, avec des piles de rechange</span></label>
+      </fieldset>
+
+      <div class="pf-nav" id="pf-nav" hidden>
+        <button type="button" class="pf-btn-secondaire" id="pf-prec">← Précédent</button>
+        <button type="button" class="pf-btn" id="pf-suiv">Suivant →</button>
+      </div>
+    </form>
+
+    <section class="pf-resultat" id="pf-resultat" hidden aria-labelledby="pf-resultat-titre">
+      <h2 id="pf-resultat-titre" tabindex="-1">Ton plan est prêt</h2>
+      <p class="pf-intro">Imprime-le ou enregistre-le en PDF, range l'original avec ton kit, et prends-le en photo avec chaque téléphone de la famille. Relis-le deux fois par an.</p>
+      <div class="pf-actions">
+        <button type="button" class="pf-btn" id="pf-imprimer">Imprimer ou enregistrer en PDF</button>
+        <button type="button" class="pf-btn-secondaire" id="pf-modifier">Modifier mon plan</button>
+        <button type="button" class="pf-btn-danger" id="pf-effacer">Effacer mes données</button>
+      </div>
+      <div id="pf-feuille" class="pf-feuille papier"></div>
+    </section>
+
+    <p class="pf-vie-privee">
+      Ton plan est enregistré uniquement dans ce navigateur, sur cet appareil. Sur un ordinateur partagé, pense à cliquer sur « Effacer mes données » à la fin.
+      Tu préfères le papier ? <a href="/ressources/plan-familial">Imprime le modèle vierge</a>.
+    </p>
+  </div>
+
+  <GuideOutil id="guide-plan" class="pf-guide">
+    <h2 id="guide-plan-titre">À quoi sert ce plan</h2>
+    <p>Le plan familial de mise en sûreté est un document officiel, conçu par la Direction de la sécurité civile avec l'Institut des risques majeurs pour que chaque foyer le remplisse lui-même. Les mairies le diffusent en PDF. Cet outil reprend ses rubriques et les présente une à une, pour que tu n'oublies rien : qui vit à la maison, les numéros à garder sur papier, les points de rendez-vous, l'abri, les risques de ta commune, l'école, les coupures et les documents.</p>
+    <h3>Ce que fait l'outil, et ce qu'il ne fait pas</h3>
+    <p>Il enregistre tes réponses au fil de la saisie, sur cet appareil, et compose à la fin un plan prêt à imprimer. Il ne connaît pas les risques de ton adresse : c'est à toi de les relever sur Géorisques ou auprès de ta mairie. Il ne remplace pas les consignes des autorités le jour d'une alerte : écoute alors la radio locale, suis les instructions, et ne téléphone qu'en cas d'urgence pour laisser les réseaux aux secours.</p>
+    <h3>Tes données</h3>
+    <p>Rien n'est envoyé à Survivalix ni à personne. Si tu as accepté la mesure d'audience, Google Analytics compte seulement trois actions, sans leur contenu : commencer le plan, le terminer, l'imprimer. Le bouton « Effacer mes données » supprime tout de cet appareil.</p>
+    <p>Pour comprendre chaque rubrique en détail, lis notre guide <a href="/manuel/plan-familial-mise-en-surete">le plan familial de mise en sûreté, rempli en 10 minutes</a>, puis complète ton <a href="/manuel/kit-urgence-72h">kit d'urgence 72 h</a>.</p>
+    <p class="guide-sources">Sources : DREAL Nouvelle-Aquitaine (« Plan familial de mise en sûreté ») ; ministère de l'Intérieur (« Comment se préparer ») ; ministère de l'Éducation nationale, Éduscol (plan particulier de mise en sûreté) ; info.gouv.fr (« Se préparer à une situation d'urgence »).</p>
+  </GuideOutil>
+</Layout>
+
+<script>
+  const CLE = 'sx-plan-familial';
+  const NB_ETAPES = 8;
+  const NUMEROS: [string, string][] = [
+    ['relais', 'Contact relais hors de la région'], ['voisin', 'Voisin de confiance'], ['medecin', 'Médecin traitant'],
+    ['pharmacie', 'Pharmacie'], ['travail', 'Employeur(s)'], ['assurance', 'Assurance habitation'], ['mairie', 'Mairie'],
+  ];
+  type Membre = { prenom: string; age: string; besoins: string };
+  type Etat = { champs: Record<string, string | boolean>; membres: Membre[]; etape: number; maj?: string };
+
+  const gtag = (...a: unknown[]) => (window as unknown as { gtag?: (...x: unknown[]) => void }).gtag?.(...a);
+  const form = document.getElementById('pf-form') as HTMLFormElement;
+  const etapes = [...document.querySelectorAll<HTMLFieldSetElement>('.pf-etape')];
+  const membresBox = document.getElementById('pf-membres')!;
+  const resultat = document.getElementById('pf-resultat')!;
+  const feuille = document.getElementById('pf-feuille')!;
+  const nav = document.getElementById('pf-nav')!;
+  const prec = document.getElementById('pf-prec') as HTMLButtonElement;
+  const suiv = document.getElementById('pf-suiv') as HTMLButtonElement;
+  const sauve = document.getElementById('pf-sauve')!;
+
+  function lire(): Etat {
+    try {
+      const e = JSON.parse(localStorage.getItem(CLE) || 'null');
+      if (e && typeof e === 'object') return { champs: e.champs || {}, membres: Array.isArray(e.membres) ? e.membres : [], etape: Number(e.etape) || 1, maj: e.maj };
+    } catch { /* stockage indisponible */ }
+    return { champs: {}, membres: [{ prenom: '', age: '', besoins: '' }], etape: 1 };
+  }
+  let etat = lire();
+  if (!etat.membres.length) etat.membres = [{ prenom: '', age: '', besoins: '' }];
+  let commence = Object.values(etat.champs).some(Boolean) || etat.membres.some((m) => m.prenom);
+
+  function enregistrer() {
+    etat.maj = new Date().toISOString().slice(0, 10);
+    try { localStorage.setItem(CLE, JSON.stringify(etat)); sauve.textContent = 'Enregistré sur cet appareil'; }
+    catch { sauve.textContent = 'Enregistrement impossible sur ce navigateur : imprime ton plan avant de fermer la page'; }
+  }
+
+  // ----- Membres du foyer -----
+  function dessinerMembres() {
+    membresBox.replaceChildren();
+    etat.membres.forEach((m, i) => {
+      const ligne = document.createElement('div');
+      ligne.className = 'pf-membre';
+      const champ = (cle: keyof Membre, libelle: string, classe: string) => {
+        const l = document.createElement('label'); l.className = `pf-champ ${classe}`;
+        const s = document.createElement('span'); s.textContent = libelle;
+        const inp = document.createElement('input'); inp.type = 'text'; inp.value = m[cle] || '';
+        inp.setAttribute('aria-label', `${libelle}, personne ${i + 1}`);
+        inp.addEventListener('input', () => { etat.membres[i][cle] = inp.value; marquerDebut(); enregistrer(); });
+        l.append(s, inp); return l;
+      };
+      ligne.append(champ('prenom', 'Prénom', 'pf-m-prenom'), champ('age', 'Âge', 'pf-m-age'), champ('besoins', 'Besoins particuliers', 'pf-m-besoins'));
+      if (etat.membres.length > 1) {
+        const suppr = document.createElement('button'); suppr.type = 'button'; suppr.className = 'pf-suppr';
+        suppr.textContent = 'Retirer'; suppr.setAttribute('aria-label', `Retirer la personne ${i + 1}`);
+        suppr.addEventListener('click', () => { etat.membres.splice(i, 1); enregistrer(); dessinerMembres(); });
+        ligne.append(suppr);
+      }
+      membresBox.append(ligne);
+    });
+  }
+  document.getElementById('pf-ajouter')!.addEventListener('click', () => {
+    if (etat.membres.length >= 10) return;
+    etat.membres.push({ prenom: '', age: '', besoins: '' }); enregistrer(); dessinerMembres();
+    (membresBox.lastElementChild?.querySelector('input') as HTMLInputElement | null)?.focus();
+  });
+
+  // ----- Champs simples -----
+  function marquerDebut() { if (!commence) { commence = true; gtag('event', 'plan_familial_debut'); } }
+  form.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('[name]').forEach((el) => {
+    const v = etat.champs[el.name];
+    if (el instanceof HTMLInputElement && el.type === 'checkbox') el.checked = v === true;
+    else if (typeof v === 'string') el.value = v;
+    el.addEventListener(el instanceof HTMLInputElement && el.type === 'checkbox' ? 'change' : 'input', () => {
+      etat.champs[el.name] = el instanceof HTMLInputElement && el.type === 'checkbox' ? el.checked : el.value;
+      marquerDebut(); enregistrer();
+    });
+  });
+
+  // ----- Navigation par étapes -----
+  function afficher(n: number, focus = true, garder = true) {
+    etat.etape = n;
+    const fin = n > NB_ETAPES;
+    etapes.forEach((f) => { f.hidden = Number(f.dataset.etape) !== n; });
+    nav.hidden = fin; resultat.hidden = !fin;
+    document.getElementById('pf-progression')!.hidden = fin;
+    document.getElementById('pf-etape-label')!.textContent = `Étape ${n} sur ${NB_ETAPES}`;
+    (document.getElementById('pf-barre') as HTMLElement).style.width = `${(Math.min(n, NB_ETAPES) / NB_ETAPES) * 100}%`;
+    prec.disabled = n === 1;
+    suiv.textContent = n === NB_ETAPES ? 'Voir mon plan →' : 'Suivant →';
+    if (fin) { composer(); gtag('event', 'plan_familial_fin'); }
+    if (garder && commence) { try { localStorage.setItem(CLE, JSON.stringify(etat)); } catch { /* rien */ } }
+    if (focus) (fin ? document.getElementById('pf-resultat-titre') : etapes[n - 1].querySelector('legend'))?.focus();
+  }
+  prec.addEventListener('click', () => afficher(Math.max(1, etat.etape - 1)));
+  suiv.addEventListener('click', () => afficher(etat.etape + 1));
+  document.getElementById('pf-modifier')!.addEventListener('click', () => afficher(1));
+  document.getElementById('pf-imprimer')!.addEventListener('click', () => { gtag('event', 'plan_familial_impression'); window.print(); });
+  document.getElementById('pf-effacer')!.addEventListener('click', () => {
+    if (!confirm('Effacer ton plan familial de cet appareil ? Cette action est définitive.')) return;
+    try { localStorage.removeItem(CLE); } catch { /* rien */ }
+    etat = { champs: {}, membres: [{ prenom: '', age: '', besoins: '' }], etape: 1 };
+    form.reset(); commence = false; sauve.textContent = 'Plan effacé de cet appareil'; dessinerMembres(); afficher(1, true, false);
+  });
+
+  // ----- Plan final (texte inséré avec textContent : aucun HTML saisi n'est interprété) -----
+  function el(tag: string, texte?: string, classe?: string) {
+    const e = document.createElement(tag); if (texte !== undefined) e.textContent = texte; if (classe) e.className = classe; return e;
+  }
+  const val = (k: string) => { const v = etat.champs[k]; return typeof v === 'string' && v.trim() ? v.trim() : '—'; };
+  function bloc(titre: string, lignes: [string, string][]) {
+    const s = el('section', undefined, 'pf-f-bloc'); s.append(el('h3', titre));
+    const dl = el('dl');
+    lignes.forEach(([k, v]) => { dl.append(el('dt', k), el('dd', v)); });
+    s.append(dl); return s;
+  }
+  function composer() {
+    feuille.replaceChildren();
+    const ent = el('div', undefined, 'pf-f-entete');
+    ent.append(el('h2', 'Notre plan familial de mise en sûreté'), el('p', `Mis à jour le ${etat.maj ? etat.maj.split('-').reverse().join('/') : '—'} · À revoir deux fois par an, avec le kit d'urgence`));
+    feuille.append(ent);
+
+    const foyer = el('section', undefined, 'pf-f-bloc'); foyer.append(el('h3', '1. Qui vit à la maison'));
+    const tab = el('table'); const tete = el('tr');
+    ['Prénom', 'Âge', 'Besoins particuliers'].forEach((t) => tete.append(el('th', t)));
+    const thead = el('thead'); thead.append(tete); tab.append(thead);
+    const corps = el('tbody');
+    const membres = etat.membres.filter((m) => m.prenom || m.age || m.besoins);
+    (membres.length ? membres : [{ prenom: '—', age: '', besoins: '' }]).forEach((m) => {
+      const tr = el('tr'); [m.prenom, m.age, m.besoins].forEach((c) => tr.append(el('td', c || ''))); corps.append(tr);
+    });
+    tab.append(corps); foyer.append(tab);
+    foyer.append(el('p', `Animaux : ${val('animaux')}`));
+    feuille.append(foyer);
+
+    const num = bloc('2. Numéros à garder', NUMEROS.map(([k, l]) => [l, val(`num_${k}`)] as [string, string]));
+    num.insertBefore(el('p', 'Urgences : 112 (européen) · 15 SAMU · 18 pompiers · 17 police · 114 par écrit (personnes sourdes ou malentendantes)', 'pf-f-fixe'), num.children[1]);
+    feuille.append(num);
+    feuille.append(bloc('3. Points de rendez-vous', [['Près de la maison', val('rdv_proche')], ['Hors du quartier', val('rdv_loin')]]));
+    feuille.append(bloc('4. Se mettre à l\'abri chez nous', [['Pièce pour se confiner', val('abri_piece')], ['Pour une inondation', val('abri_etage')]]));
+    feuille.append(bloc('5. Risques de notre commune', [['Risques relevés', val('risques')]]));
+    const ecole = bloc('6. Les enfants à l\'école', [['École', val('ecole')], ['Qui les récupère après l\'alerte', val('ecole_qui')]]);
+    ecole.insertBefore(el('p', 'Pendant une alerte, on ne va pas chercher les enfants : l\'école applique son plan de mise en sûreté.', 'pf-f-fixe'), ecole.children[1]);
+    feuille.append(ecole);
+    feuille.append(bloc('7. Couper eau, gaz, électricité', [['Eau', val('coupure_eau')], ['Gaz', val('coupure_gaz')], ['Électricité', val('coupure_elec')]]));
+    const coche = (k: string) => (etat.champs[k] === true ? '☑' : '☐');
+    const kit = el('section', undefined, 'pf-f-bloc'); kit.append(el('h3', '8. Documents et kit'));
+    [[coche('kit_documents'), 'Copies des papiers, cartes vitales, ordonnances'],
+     [coche('kit_72h'), 'Kit d\'urgence 72 h (6 L d\'eau par personne)'],
+     [coche('kit_radio'), 'Radio à piles ou à manivelle']].forEach(([c, t]) => kit.append(el('p', `${c} ${t}`)));
+    feuille.append(kit);
+    feuille.append(el('p', 'En cas d\'alerte : écouter la radio locale et suivre les consignes des autorités · Ne pas téléphoner sauf urgence · Plan rempli sur survivalix.fr, d\'après le plan familial de mise en sûreté de la Sécurité civile', 'pf-f-pied'));
+  }
+
+  // ----- Démarrage : mode étapes (sans JavaScript, tout reste visible) -----
+  dessinerMembres();
+  document.getElementById('pf-outil')!.classList.add('pf-js');
+  document.getElementById('pf-progression')!.hidden = false;
+  if (commence) sauve.textContent = 'Plan retrouvé sur cet appareil';
+  afficher(Math.min(Math.max(etat.etape, 1), NB_ETAPES + 1), false);
+</script>
+
+<style>
+  .page-header { text-align: center; padding: 3rem 1.5rem 2rem; max-width: 46rem; margin: 0 auto; }
+  .page-label { font-family: 'Oswald', sans-serif; font-size: .75rem; color: var(--kaki-texte); letter-spacing: 4px; margin-bottom: 1rem; }
+  .page-header h1 { font-family: 'Special Elite', cursive; font-size: clamp(2rem, 5vw, 3rem); color: var(--ambre); line-height: 1.15; margin-bottom: 1rem; }
+  .page-desc { font-family: 'Oswald', sans-serif; font-weight: 300; font-size: 1.05rem; line-height: 1.65; color: var(--creme); }
+
+  .pf-outil { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+  .pf-progression { margin-bottom: 1.5rem; }
+  .pf-progression-haut { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-family: 'Oswald', sans-serif; font-size: .85rem; letter-spacing: 1px; color: var(--creme); margin-bottom: .5rem; }
+  .pf-sauve { color: var(--kaki-texte); }
+  .pf-piste { height: 6px; background: #1a1a1a; }
+  .pf-barre { height: 100%; width: 12.5%; background: var(--ambre); transition: width .3s; }
+
+  .pf-etape { border: 1px solid var(--filet); border-top: 3px solid var(--ambre); background: #111; padding: 1.5rem 1.25rem 1.25rem; margin: 0 0 1.5rem; min-width: 0; }
+  .pf-etape legend { font-family: 'Special Elite', cursive; font-size: 1.35rem; color: var(--ambre); padding: 0 .4rem; }
+  .pf-etape legend:focus { outline: none; }
+  .pf-etape legend:focus-visible { outline: 2px solid var(--creme); outline-offset: 2px; }
+  .pf-intro { font-family: 'Oswald', sans-serif; font-weight: 300; color: var(--creme); line-height: 1.65; margin-bottom: 1rem; }
+  .pf-intro a, .pf-case a, .pf-vie-privee a { color: var(--ambre); text-decoration: underline; text-underline-offset: 2px; }
+  .pf-encadre { font-family: 'Oswald', sans-serif; font-weight: 300; color: var(--creme); line-height: 1.6; border: 2px solid var(--ambre); padding: .75rem 1rem; margin-bottom: 1.1rem; }
+  .pf-encadre strong { color: var(--ambre); }
+
+  .pf-champ, .pf-membres :global(.pf-champ) { display: block; margin-bottom: 1rem; }
+  .pf-champ > span, .pf-membres :global(.pf-champ > span) { display: block; font-family: 'Oswald', sans-serif; font-size: .95rem; color: #fff; margin-bottom: .35rem; }
+  .pf-champ small { display: block; font-family: 'Oswald', sans-serif; font-weight: 300; font-size: .85rem; color: var(--creme); margin: -.15rem 0 .4rem; }
+  .pf-champ input, .pf-champ textarea, .pf-membres :global(.pf-champ input) { width: 100%; background: #0d0d0d; border: 1px solid #555; color: #fff; font-family: 'Oswald', sans-serif; font-size: 1rem; padding: .65rem .75rem; min-height: 44px; }
+  .pf-champ input:focus, .pf-champ textarea:focus, .pf-membres :global(.pf-champ input:focus) { outline: 2px solid var(--ambre); outline-offset: 1px; border-color: var(--ambre); }
+  .pf-membres { display: grid; gap: .75rem; margin-bottom: .75rem; }
+  .pf-membres :global(.pf-membre) { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 .75rem; border-bottom: 1px dashed #333; padding-bottom: .5rem; }
+  @media (min-width: 640px) { .pf-membres :global(.pf-membre) { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 3fr) auto; align-items: end; } }
+  .pf-membres :global(.pf-membre .pf-champ) { margin-bottom: .5rem; }
+  .pf-membres :global(.pf-suppr) { background: none; border: 1px solid #555; color: var(--creme); font-family: 'Oswald', sans-serif; min-height: 44px; padding: 0 .8rem; margin-bottom: .5rem; cursor: pointer; }
+  .pf-case { display: flex; gap: .6rem; align-items: flex-start; font-family: 'Oswald', sans-serif; font-weight: 300; color: var(--creme); line-height: 1.5; margin-bottom: .9rem; cursor: pointer; }
+  .pf-case input { width: 22px; height: 22px; margin-top: .15rem; accent-color: var(--ambre); flex: none; }
+
+  .pf-nav, .pf-actions { display: flex; gap: .75rem; flex-wrap: wrap; justify-content: space-between; margin-bottom: 1.5rem; }
+  .pf-actions { justify-content: flex-start; }
+  .pf-btn, .pf-btn-secondaire, .pf-btn-danger { font-family: 'Oswald', sans-serif; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; font-size: .9rem; min-height: 44px; padding: .7rem 1.3rem; cursor: pointer; }
+  .pf-btn { background: var(--ambre); color: #0d0d0d; border: 2px solid var(--ambre); }
+  .pf-btn:hover, .pf-btn:focus-visible { background: var(--ambre-fonce); border-color: var(--ambre-fonce); }
+  .pf-btn-secondaire { background: none; color: var(--ambre); border: 2px solid var(--ambre); }
+  .pf-btn-secondaire:hover, .pf-btn-secondaire:focus-visible { background: var(--ambre); color: #0d0d0d; }
+  .pf-btn-secondaire:disabled { opacity: .4; cursor: default; background: none; color: var(--ambre); }
+  .pf-btn-danger { background: none; color: var(--creme); border: 2px solid #777; }
+  .pf-btn-danger:hover, .pf-btn-danger:focus-visible { border-color: var(--creme); }
+  :is(.pf-btn, .pf-btn-secondaire, .pf-btn-danger):focus-visible { outline: 2px solid var(--creme); outline-offset: 3px; }
+
+  .pf-resultat h2 { font-family: 'Special Elite', cursive; font-size: 1.8rem; color: var(--ambre); margin-bottom: .75rem; }
+  .pf-resultat h2:focus { outline: none; }
+  .pf-vie-privee { font-family: 'Oswald', sans-serif; font-weight: 300; font-size: .9rem; color: var(--creme); line-height: 1.6; margin: 1rem 0 0; }
+
+  /* Le plan rendu (créé en JavaScript : :global obligatoire) */
+  .pf-feuille { background: #FAF1DE; color: #000; padding: 1.75rem 1.25rem; font-family: 'Oswald', sans-serif; box-shadow: 0 20px 40px rgba(0,0,0,.45); margin-bottom: 1.5rem; }
+  @media (min-width: 768px) { .pf-feuille { padding: 2.25rem 2.5rem; border: 1px solid #000; } }
+  .pf-feuille :global(:is(h2, h3, p, th, td, dt, dd)) { color: #000; opacity: 1; }
+  .pf-feuille :global(.pf-f-entete) { border-bottom: 4px solid var(--ambre); padding-bottom: .5rem; margin-bottom: 1rem; }
+  .pf-feuille :global(.pf-f-entete h2) { font-family: 'Special Elite', cursive; font-size: 1.5rem; -webkit-text-stroke: .035em currentColor; paint-order: stroke fill; }
+  .pf-feuille :global(.pf-f-entete p) { font-size: .85rem; }
+  .pf-feuille :global(.pf-f-bloc) { margin-bottom: .9rem; break-inside: avoid; }
+  .pf-feuille :global(h3) { font-weight: 700; font-size: 1rem; margin-bottom: .3rem; }
+  .pf-feuille :global(table) { width: 100%; border-collapse: collapse; font-size: .9rem; margin-bottom: .3rem; }
+  .pf-feuille :global(th), .pf-feuille :global(td) { border: 1px solid #000; padding: .3rem .45rem; text-align: left; overflow-wrap: anywhere; }
+  .pf-feuille :global(th) { overflow-wrap: normal; }
+  .pf-feuille :global(dl) { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); border-top: 1px solid #000; font-size: .9rem; }
+  .pf-feuille :global(dt), .pf-feuille :global(dd) { border-bottom: 1px solid #000; padding: .3rem .4rem; overflow-wrap: anywhere; white-space: pre-line; }
+  .pf-feuille :global(dt) { font-weight: 700; }
+  .pf-feuille :global(.pf-f-fixe) { background: rgba(245,166,35,.2); padding: .3rem .5rem; font-size: .88rem; margin-bottom: .35rem; }
+  .pf-feuille :global(p) { font-size: .9rem; line-height: 1.5; }
+  .pf-feuille :global(.pf-f-pied) { border-top: 1px solid #000; padding-top: .5rem; margin-top: .8rem; font-size: .75rem; }
+
+  /* L'attribut hidden l'emporte sur les styles de .fiche. Sans JavaScript, rien n'est masqué : tout le formulaire s'affiche. */
+  .pf-outil [hidden] { display: none !important; }
+
+  @media (prefers-reduced-motion: reduce) { .pf-barre { transition: none; } }
+
+  @media print {
+    @page { size: A4; margin: 10mm; }
+    :global(header), :global(footer), :global(.hero-band), :global(.scanlines), :global(#bandeau-cookies), :global(.guide-outil),
+    .page-header, .pf-progression, .pf-form, .pf-resultat > :not(.pf-feuille), .pf-vie-privee { display: none !important; }
+    :global(html), :global(body) { background: #fff !important; }
+    :global(main) { padding: 0 !important; margin: 0 !important; }
+    .pf-outil { max-width: none; padding: 0; }
+    .pf-feuille { box-shadow: none; border: 0; padding: 0; background: #fff; font-size: 10pt; }
+    .pf-feuille :global(.pf-f-fixe) { background: #eee; }
+  }
+</style>

@@ -35,6 +35,14 @@ const outils = [
     description: "Adultes, enfants, bébés, animaux : ton kit ajusté à ton vrai foyer, module bébé inclus. Plus rapide que de tout recalculer à la main.",
     tags: ["kit-72h", "famille", "bébé", "personnalisé"],
     temps: "2 min"
+  },
+  {
+    slug: "/outils/plan-familial",
+    planche: "plan" as const,
+    titre: "Mon plan familial",
+    description: "Le plan familial de mise en sûreté, rempli en ligne en 8 étapes : contacts, rendez-vous, abri, école. Prêt à imprimer, et rien n'est envoyé.",
+    tags: ["famille", "plan", "organisation", "pfms"],
+    temps: "10 min"
   }
 ]
 ---
@@ -83,11 +91,12 @@ const outils = [
 
   <GuideOutil id="guide-outils">
     <h2 id="guide-outils-titre">Par quel outil commencer ?</h2>
-    <p>Quatre outils, quatre questions que tout le monde finit par se poser : combien d'eau garder chez soi, combien de nourriture, où on en est vraiment, et quoi rassembler concrètement. Ils se complètent, et l'ordre compte.</p>
+    <p>Cinq outils, cinq questions que tout le monde finit par se poser : combien d'eau garder chez soi, combien de nourriture, où on en est vraiment, quoi rassembler concrètement, et qui fait quoi dans la famille le jour où ça arrive. Ils se complètent, et l'ordre compte.</p>
     <ul>
       <li><strong>L'évaluateur de préparation</strong> d'abord : dix questions, trois minutes, et tu vois tout de suite ce qui manque.</li>
       <li><strong>Les calculateurs d'eau et de rations</strong> ensuite, pour chiffrer ces manques selon la taille de ton foyer et la durée visée.</li>
-      <li><strong>Le générateur de kit 72 h</strong> pour finir : il transforme tout ça en liste à cocher, au fur et à mesure de tes achats.</li>
+      <li><strong>Le générateur de kit 72 h</strong> ensuite : il transforme tout ça en liste à cocher, au fur et à mesure de tes achats.</li>
+      <li><strong>Mon plan familial</strong> pour finir : contacts, points de rendez-vous, abri, école, coupures, réunis sur une feuille à imprimer.</li>
     </ul>
 
     <h3>D'où viennent les chiffres</h3>
@@ -95,7 +104,7 @@ const outils = [
 
     <h3>Ce qu'ils ne font pas</h3>
     <p>Ces outils donnent des ordres de grandeur pour s'organiser à l'avance. Ils ne remplacent ni un avis médical (traitement, grossesse, allergie, nourrisson), ni les consignes de ta préfecture le jour où une alerte tombe. Ils ne savent rien non plus des risques propres à ta commune : pour ça, regarde notre fiche sur les <a href="/manuel/risques-pres-de-chez-soi">risques près de chez toi</a>.</p>
-    <p>Côté données, les calculs se font dans ton navigateur et rien n'est envoyé. Seul le générateur de kit garde tes cases cochées, sur ton appareil uniquement.</p>
+    <p>Côté données, les calculs se font dans ton navigateur et rien n'est envoyé. Le générateur de kit et le plan familial gardent tes saisies sur ton appareil uniquement, et le plan familial a un bouton pour tout effacer.</p>
 
     <h3>Pour aller plus loin</h3>
     <ul>
