@@ -618,6 +618,25 @@ button {
 }
 .lecture-papier a:hover { opacity: 1; background-color: rgba(245, 166, 35, 0.35); }
 
+/* Bouton d'appel à l'action dans un article (ex. modèle à imprimer) : <p class="cta-article"><a class="bouton-article" href="...">…</a></p> */
+.lecture-papier .cta-article { text-align: center; margin: 1.8rem 0 2rem; }
+.lecture-papier a.bouton-article {
+  display: inline-block;
+  min-height: 44px;
+  padding: 0.85rem 1.6rem;
+  background-color: var(--ambre);
+  color: var(--noir);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid var(--noir);
+}
+.lecture-papier a.bouton-article:hover,
+.lecture-papier a.bouton-article:focus-visible { background-color: var(--ambre-fonce); color: var(--noir); }
+.lecture-papier a.bouton-article:focus-visible { outline: 3px solid var(--noir); outline-offset: 3px; }
+
 .lecture-papier ul,
 .lecture-papier ol { margin: 0 auto 1.6rem !important; padding-left: 1.4rem; }
 .lecture-papier li { margin-bottom: 0.35rem; }

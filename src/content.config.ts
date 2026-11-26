@@ -14,6 +14,8 @@ const manuel = defineCollection({
     image_alt: z.string().optional(),
     rubrique: z.string().optional(),
     checklist: z.string().optional(),
+    // Lien vers un modèle à imprimer (page du site), affiché en bouton dans la colonne de droite
+    modele: z.string().optional(),
   })
 });
 

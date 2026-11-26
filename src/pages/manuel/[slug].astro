@@ -26,7 +26,8 @@ const { Content } = await render(article);
   image_alt: article.data.image_alt,
   faq: extractFaq(article.body),
   rubrique: article.data.rubrique,
-  checklist: article.data.checklist
+  checklist: article.data.checklist,
+  modele: article.data.modele
 }}>
   <Content />
 </Article>
