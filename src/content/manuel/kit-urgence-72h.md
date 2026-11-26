@@ -106,7 +106,7 @@ En ville, on pense rarement à l'hypothermie, et pourtant les autorités sanitai
 
 ### Documents : ce qu'on oublie toujours
 
-En cas d'évacuation, avoir ses documents sous la main évite les situations kafkaïennes qui transforment une crise en cauchemar administratif.
+En cas d'évacuation, avoir ses documents sous la main évite les situations kafkaïennes qui transforment une crise en cauchemar administratif. Ajoute-y ton [plan familial de mise en sûreté](/manuel/plan-familial-mise-en-surete) imprimé, avec les numéros et les points de rendez-vous de la famille.
 
 **Ce qu'il faut avoir :**
 - Photocopies dans une pochette étanche : carte d'identité, passeport, carte vitale

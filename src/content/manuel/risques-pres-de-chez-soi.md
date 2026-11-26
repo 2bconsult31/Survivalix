@@ -57,6 +57,6 @@ Dans tous les cas, ces informations complètent utilement ce qu'il y a dans ton 
 
 Ouvre [Géorisques](https://www.georisques.gouv.fr/citoyen-recherche-map), tape ton adresse exacte, et prends deux minutes pour lire le rapport généré. C'est gratuit, ça ne demande aucune compétence particulière, et c'est probablement la vérification la plus rapide et la plus utile que tu puisses faire aujourd'hui sur ta propre préparation.
 
-Ensuite, notre page [Par où commencer ?](/commencer-ici) t'indique les étapes suivantes, dans l'ordre.
+Note ensuite ces risques dans ton [plan familial de mise en sûreté](/manuel/plan-familial-mise-en-surete), avec le point de rendez-vous et la pièce où t'abriter. Notre page [Par où commencer ?](/commencer-ici) t'indique les étapes suivantes, dans l'ordre.
 
 *Sources : Géorisques (Ministère de la Transition écologique / BRGM), dont « Que faire en cas d'inondation ? » et « Accident industriel » ; ministère de la Transition écologique, « Prévention des risques naturels », « Prévision des inondations et vigilance crues », « Risques technologiques : la directive Seveso et la loi Risques » ; BARPI, fiche ARIA n° 21329 (explosion de l'usine AZF, Toulouse) ; ministère de l'Intérieur, « FR-Alert » ; Vigicrues ; Service-public.fr.*
