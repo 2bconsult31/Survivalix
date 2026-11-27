@@ -1,7 +1,7 @@
 ---
 title: "Hardtack : le biscuit qui a survécu à des siècles de guerres (et il est toujours là)"
 seo_title: "Recette du hardtack, le biscuit de survie des soldats"
-description: "Hard tack, le biscuit de soldat et de marin : notre recette pas à pas de ce pain de survie à trois ingrédients, qui se garde des années au sec."
+description: "Hardtack, cousin du pain de guerre des poilus : la recette pas à pas de ce biscuit de soldat et de marin à trois ingrédients, qui se garde des années."
 date: 2025-03-01
 updated: 2026-10-30
 tags: ["recette", "biscuit", "conservation", "historique", "survie", "cantine"]
